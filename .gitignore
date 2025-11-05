@@ -1,3 +1,19 @@
+# Environment variables and secrets
+.env
+*.env
+GITHUB_TOKEN
+*.token
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
 # Python
 __pycache__/
 *.py[cod]
@@ -7,46 +23,6 @@ __pycache__/
 .venv/
 venv/
 ENV/
-env/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Docker
-.dockerignore
-
-# Data & temp files
-*.csv
-*.pdf
+# Logs
 *.log
-data/
-tmp/
-temp/
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Build artifacts
-*.egg-info/
-dist/
-build/
-
-# Helm
-*.tgz
-
-# Fonts (keep structure but ignore large binaries if needed)
-# Uncomment if you want to exclude fonts:
-# *.ttf
-# *.otf
-
