@@ -15,10 +15,22 @@ class Point(BaseModel):
 class ForecastReq(BaseModel):
     series: List[Point]
     horizon: int
+    meterId: str | None = None
 
 @app.post("/analytics/forecast")
 def forecast(req: ForecastReq):
     if not req.series:
-        raise HTTPException(400, "series required")
-    last = req.series[-1].value
-    return {"forecast": [last for _ in range(req.horizon)]}
+        raise HTTPException(status_code=400, detail="series required")
+    if req.horizon <= 0:
+        raise HTTPException(status_code=400, detail="horizon must be positive")
+    
+    try:
+        last = req.series[-1].value
+        forecast_values = [last for _ in range(req.horizon)]
+        return {
+            "forecast": forecast_values,
+            "meterId": req.meterId,
+            "horizon": req.horizon
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Forecast generation failed: {str(e)}")

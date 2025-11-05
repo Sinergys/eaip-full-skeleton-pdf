@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, Response
+from fastapi import FastAPI, Request, Response, HTTPException
 from pydantic import BaseModel
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -142,26 +142,42 @@ def generate_pdf_content(req: PassportReq) -> bytes:
 
 @app.post("/reports/passport")
 async def generate_passport(req: PassportReq, request: Request):
-    # Проверяем заголовок Accept или параметр format
-    accept_header = request.headers.get("Accept", "")
-    format_param = request.query_params.get("format", "")
-    
-    # Если запрашивается PDF
-    if "application/pdf" in accept_header or format_param.lower() == "pdf":
-        pdf_content = generate_pdf_content(req)
-        return Response(
-            content=pdf_content,
-            media_type="application/pdf",
-            headers={
-                "Content-Disposition": f"attachment; filename=passport_{req.auditId}.pdf"
-            }
-        )
-    
-    # Иначе возвращаем JSON
-    return {
-        "auditId": req.auditId,
-        "version": "v2.1",
-        "compliance": ["Decree 690 (19.10.2024)", "ISO 50001:2018", "O'z DSt 1987:2010"],
-        "sections": ["General", "Baseline", "Consumption", "Findings", "Measures", "KPIs"],
-        "summary": req.summary or {}
-    }
+    try:
+        if not req.auditId or not req.auditId.strip():
+            raise HTTPException(status_code=400, detail="auditId is required and cannot be empty")
+        
+        # Проверяем заголовок Accept или параметр format
+        accept_header = request.headers.get("Accept", "")
+        format_param = request.query_params.get("format", "")
+        
+        # Если запрашивается PDF
+        if "application/pdf" in accept_header or format_param.lower() == "pdf":
+            try:
+                pdf_content = generate_pdf_content(req)
+                if not pdf_content or len(pdf_content) == 0:
+                    raise HTTPException(status_code=500, detail="PDF generation produced empty content")
+                
+                return Response(
+                    content=pdf_content,
+                    media_type="application/pdf",
+                    headers={
+                        "Content-Disposition": f"attachment; filename=passport_{req.auditId}.pdf"
+                    }
+                )
+            except HTTPException:
+                raise
+            except Exception as e:
+                raise HTTPException(status_code=500, detail=f"PDF generation failed: {str(e)}")
+        
+        # Иначе возвращаем JSON
+        return {
+            "auditId": req.auditId,
+            "version": "v2.1",
+            "compliance": ["Decree 690 (19.10.2024)", "ISO 50001:2018", "O'z DSt 1987:2010"],
+            "sections": ["General", "Baseline", "Consumption", "Findings", "Measures", "KPIs"],
+            "summary": req.summary or {}
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")

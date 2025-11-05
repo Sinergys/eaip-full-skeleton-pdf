@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 app = FastAPI(title="EAIP validate", version="0.1.0")
@@ -12,5 +12,18 @@ def health():
 
 @app.post("/validate/run")
 def validate_run(req: ValidateReq):
-    # Заглушка: всегда «passed»
-    return {"batchId": req.batchId, "passed": True, "issues": []}
+    try:
+        if not req.batchId or not req.batchId.strip():
+            raise HTTPException(status_code=400, detail="batchId is required and cannot be empty")
+        
+        # Заглушка: всегда «passed»
+        # В реальной реализации здесь будет проверка данных
+        return {
+            "batchId": req.batchId,
+            "passed": True,
+            "issues": []
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Validation failed: {str(e)}")
