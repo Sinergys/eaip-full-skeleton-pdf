@@ -1,0 +1,57 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+  redis:
+    image: redis:7
+    ports: ["6379:6379"]
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    ports: ["9000:9000","9001:9001"]
+    volumes: ["minio:/data"]
+  gateway-auth:
+    build:
+      context: ../services/gateway-auth
+      dockerfile: Dockerfile
+    environment:
+      - POSTGRES_HOST=${POSTGRES_HOST}
+    ports: ["8000:8000"]
+    depends_on: [postgres, redis]
+  ingest:
+    build: { context: ../services/ingest, dockerfile: Dockerfile }
+    ports: ["8001:8001"]
+    depends_on: [postgres, redis, minio]
+  validate:
+    build: { context: ../services/validate, dockerfile: Dockerfile }
+    ports: ["8002:8002"]
+    depends_on: [postgres, redis]
+  analytics:
+    build: { context: ../services/analytics, dockerfile: Dockerfile }
+    ports: ["8003:8003"]
+    depends_on: [postgres, redis]
+  recommend:
+    build: { context: ../services/recommend, dockerfile: Dockerfile }
+    ports: ["8004:8004"]
+    depends_on: [postgres, redis]
+  reports:
+    build: { context: ../services/reports, dockerfile: Dockerfile }
+    ports: ["8005:8005"]
+    depends_on: [postgres, redis, minio]
+  management:
+    build: { context: ../services/management, dockerfile: Dockerfile }
+    ports: ["8006:8006"]
+    depends_on: [postgres, redis]
+
+volumes:
+  pgdata: {}
+  minio: {}

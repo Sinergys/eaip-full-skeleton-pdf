@@ -1,0 +1,28 @@
+{
+  "name": "EAIP",
+  "language": "python",
+  "services": {
+    "gateway-auth": {
+      "port": 8000
+    },
+    "ingest": {
+      "port": 8001
+    },
+    "validate": {
+      "port": 8002
+    },
+    "analytics": {
+      "port": 8003
+    },
+    "recommend": {
+      "port": 8004
+    },
+    "reports": {
+      "port": 8005
+    },
+    "management": {
+      "port": 8006
+    }
+  },
+  "devcontainers": false
+}

@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docker
+.dockerignore
+
+# Data & temp files
+*.csv
+*.pdf
+*.log
+data/
+tmp/
+temp/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Helm
+*.tgz
+
+# Fonts (keep structure but ignore large binaries if needed)
+# Uncomment if you want to exclude fonts:
+# *.ttf
+# *.otf
+
