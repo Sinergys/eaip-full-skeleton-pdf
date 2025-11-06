@@ -32,7 +32,7 @@ jobs:
 
   build:
     needs: detect-changes
-    if: needs.detect-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+    if: needs.detect-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -64,13 +64,13 @@ jobs:
         with:
           images: ${{ env.DOCKERHUB_REPOSITORY }}-${{ matrix.service }}
           tags: |
+            type=ref,event=branch
             type=ref,event=tag
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
-            type=raw,value=latest,enable={{is_default_branch}}
-            type=raw,value=latest,enable={{is_tag}}
-            type=sha,prefix={{branch}}-,format=short,enable={{is_default_branch}}
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch' }}
+            type=sha,prefix={{branch}}-,format=short
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -86,7 +86,7 @@ jobs:
 
   build-summary:
     needs: [detect-changes, build]
-    if: always() && (needs.detect-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch')
+    if: always() && (needs.detect-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main'))
     runs-on: ubuntu-latest
     steps:
       - name: Build Summary
