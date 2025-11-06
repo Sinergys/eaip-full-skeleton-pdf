@@ -50,8 +50,8 @@ jobs:
               -t ecosinergys/eaip-full-skeleton-$s:${{ github.ref_name }} \
               -t ecosinergys/eaip-full-skeleton-$s:latest \
               -f services/$s/Dockerfile \
-              --push \
-              services/$s
+              services/$s \
+              --push
           done
 
       - name: Vulnerability Scan
