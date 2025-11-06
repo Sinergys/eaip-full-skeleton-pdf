@@ -1,0 +1,56 @@
+name: smoke
+
+on:
+  workflow_run:
+    workflows: [release]
+    types: [completed]
+
+jobs:
+  run:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull images
+        run: |
+          TAG=${{ github.event.workflow_run.head_branch || 'latest' }}
+          TAG=${TAG#refs/tags/}
+          svcs=(gateway-auth ingest validate analytics recommend reports management)
+          for s in "${svcs[@]}"; do
+            docker pull ecosinergys/eaip-full-skeleton-$s:$TAG
+          done
+
+      - name: Smoke each service
+        run: |
+          TAG=${{ github.event.workflow_run.head_branch || 'latest' }}
+          TAG=${TAG#refs/tags/}
+          svcs=(gateway-auth ingest validate analytics recommend reports management)
+          ports=(8000 8001 8002 8003 8004 8005 8006)
+          base=18000
+          i=0
+          for s in "${svcs[@]}"; do
+            hp=$((base+i))
+            port=${ports[$i]}
+            echo "Testing $s on port $hp (container port $port)..."
+            docker run -d --rm --name eaip-$s -p ${hp}:${port} \
+              ecosinergys/eaip-full-skeleton-$s:$TAG
+            ok=0
+            for t in {1..30}; do
+              if curl -fsS http://127.0.0.1:${hp}/health > /dev/null 2>&1; then
+                ok=1
+                echo "✅ $s is healthy"
+                break
+              else
+                sleep 1
+              fi
+            done
+            if [ "$ok" != "1" ]; then
+              echo "❌ $s failed health check"
+              docker logs eaip-$s
+              docker rm -f eaip-$s
+              exit 1
+            fi
+            docker rm -f eaip-$s
+            i=$((i+1))
+          done
+          echo "✅ All services passed smoke tests"
+
