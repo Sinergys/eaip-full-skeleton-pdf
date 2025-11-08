@@ -1,0 +1,32 @@
+{$DOMAIN} {
+  encode zstd gzip
+
+  @grafana path / /login /logout /public* /api* /avatars* /dashboard* /d* /explore* /metrics*
+
+  reverse_proxy @grafana grafana:3000
+
+  handle_path /prometheus/* {
+    reverse_proxy prometheus:9090
+  }
+
+  handle_path /alertmanager/* {
+    reverse_proxy alertmanager:9093
+  }
+
+  handle_path /loki/* {
+    reverse_proxy loki:3100
+  }
+
+  tls {
+    # автоматический Let's Encrypt
+  }
+
+  header {
+    Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options "nosniff"
+    X-Frame-Options "DENY"
+    X-XSS-Protection "1; mode=block"
+    Referrer-Policy "no-referrer"
+  }
+}
+

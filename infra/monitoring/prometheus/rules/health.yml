@@ -1,0 +1,61 @@
+groups:
+  - name: eaip-health
+    interval: 30s
+    rules:
+      - alert: EAIPServiceDown
+        expr: probe_success{job="blackbox-http"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "EAIP service down: {{ $labels.service }}"
+          description: "Blackbox probe failed for {{ $labels.service }} ({{ $labels.instance }}) for more than 2 minutes."
+
+      - alert: InfrastructureServiceDown
+        expr: probe_success{job="blackbox-tcp"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Infrastructure service down: {{ $labels.service }}"
+          description: "TCP connection failed for {{ $labels.service }} ({{ $labels.instance }}) for more than 2 minutes."
+
+      - alert: HighResponseTime
+        expr: probe_http_duration_seconds{job="blackbox-http"} > 2
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High response time: {{ $labels.service }}"
+          description: "Service {{ $labels.service }} has response time above 2 seconds (current: {{ $value }}s)"
+
+  - name: eaip-system
+    interval: 30s
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(container_cpu_usage_seconds_total[5m])) * 100) < 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is above 90% for more than 5 minutes"
+
+      - alert: HighMemoryUsage
+        expr: (container_memory_usage_bytes / container_spec_memory_limit_bytes) * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is above 90% for more than 5 minutes"
+
+      - alert: LowDiskSpace
+        expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100 < 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low disk space"
+          description: "Disk space is below 10%"
+
