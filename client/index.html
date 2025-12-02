@@ -1,8 +1,585 @@
-<!doctype html>
-<html>
-  <head><meta charset="utf-8"/><title>EAIP Client</title></head>
-  <body>
-    <h1>EAIP Client Placeholder</h1>
-    <p>React app placeholder. Connect to services on ports 8000–8006.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAIP - Загрузка файлов</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            background: #f8f9ff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .upload-area:hover {
+            border-color: #764ba2;
+            background: #f0f2ff;
+        }
+        
+        .upload-area.dragover {
+            border-color: #764ba2;
+            background: #e8ebff;
+            transform: scale(1.02);
+        }
+        
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        .upload-text {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .upload-hint {
+            color: #999;
+            font-size: 12px;
+        }
+        
+        input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .file-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9ff;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .file-info.show {
+            display: block;
+        }
+        
+        .file-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+            word-break: break-all;
+        }
+        
+        .file-size {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 20px;
+        }
+        
+        button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        #cancelBtn {
+            background: #dc3545;
+        }
+        
+        #cancelBtn:hover:not(:disabled) {
+            background: #c82333;
+        }
+        
+        .form-group {
+            margin-top: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .progress {
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .progress.show {
+            display: block;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .result.show {
+            display: block;
+        }
+        
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .result-content {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        
+        .links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        .status.checking {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .status.online {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status.offline {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📤 Импорт файлов EAIP</h1>
+        <p class="subtitle">Загрузите файл для обработки в системе</p>
+        
+        <div id="serviceStatus" class="status checking">Проверка сервиса...</div>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Перетащите файл сюда или нажмите для выбора</div>
+            <div class="upload-hint">Поддерживаются все типы файлов</div>
+            <input type="file" id="fileInput" name="file" />
+        </div>
+        
+        <div class="file-info" id="fileInfo">
+            <div class="file-name" id="fileName"></div>
+            <div class="file-size" id="fileSize"></div>
+        </div>
+        
+        <div class="form-group" id="enterpriseGroup" style="display: none;">
+            <label for="enterpriseName">Название предприятия:</label>
+            <input type="text" id="enterpriseName" placeholder="Введите название предприятия" />
+        </div>
+        
+        <div class="form-group" id="resourceGroup" style="display: none;">
+            <label for="resourceType">Вид энергоресурса:</label>
+            <select id="resourceType">
+                <option value="">Выберите вид ресурса</option>
+                <option value="electricity">Электроэнергия</option>
+                <option value="heat">Тепловая энергия</option>
+                <option value="gas">Газ</option>
+                <option value="water">Вода</option>
+                <option value="fuel">Топливо и ГСМ</option>
+                <option value="equipment">Оборудование</option>
+                <option value="envelope">Ограждающие конструкции</option>
+                <option value="nodes">Узлы учета</option>
+                <option value="other">Прочее</option>
+            </select>
+        </div>
+        
+        <button id="uploadBtn" disabled>Загрузить файл</button>
+        <button id="cancelBtn" style="display: none; margin-top: 10px; background: #dc3545;">Отменить обработку</button>
+        
+        <div class="progress" id="progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText" style="margin-top: 8px; font-size: 13px; color: #666; text-align: center;"></div>
+        </div>
+        
+        <div class="result" id="result">
+            <div class="result-content" id="resultContent"></div>
+        </div>
+        
+        <div class="links">
+            <a href="http://localhost:8001/docs" target="_blank">📚 API Документация</a>
+            <a href="http://localhost:3000" target="_blank">📊 Grafana</a>
+            <a href="http://localhost:9090" target="_blank">📈 Prometheus</a>
+        </div>
+    </div>
+    
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const fileSize = document.getElementById('fileSize');
+        const progress = document.getElementById('progress');
+        const progressFill = document.getElementById('progressFill');
+        const result = document.getElementById('result');
+        const resultContent = document.getElementById('resultContent');
+        const serviceStatus = document.getElementById('serviceStatus');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const progressText = document.getElementById('progressText');
+        const enterpriseGroup = document.getElementById('enterpriseGroup');
+        const resourceGroup = document.getElementById('resourceGroup');
+        const enterpriseName = document.getElementById('enterpriseName');
+        const resourceType = document.getElementById('resourceType');
+        
+        let selectedFile = null;
+        let currentBatchId = null;
+        let progressInterval = null;
+        
+        // Проверка доступности сервиса
+        async function checkService() {
+            try {
+                const response = await fetch('http://localhost:8001/health');
+                if (response.ok) {
+                    serviceStatus.className = 'status online';
+                    serviceStatus.textContent = '✅ Сервис ingest доступен';
+                } else {
+                    throw new Error('Service not available');
+                }
+            } catch (error) {
+                serviceStatus.className = 'status offline';
+                serviceStatus.textContent = '❌ Сервис ingest недоступен. Проверьте, что он запущен на порту 8001';
+            }
+        }
+        
+        checkService();
+        setInterval(checkService, 30000); // Проверка каждые 30 секунд
+        
+        // Click to select file
+        uploadArea.addEventListener('click', (e) => {
+            if (e.target !== fileInput) {
+                fileInput.click();
+            }
+        });
+        
+        // Drag and drop
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFileSelect(files[0]);
+            }
+        });
+        
+        // File input change
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileSelect(e.target.files[0]);
+            }
+        });
+        
+        function handleFileSelect(file) {
+            selectedFile = file;
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            fileInfo.classList.add('show');
+            enterpriseGroup.style.display = 'block';
+            resourceGroup.style.display = 'block';
+            uploadBtn.disabled = false;
+            result.classList.remove('show');
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+        }
+        
+        // Upload button
+        uploadBtn.addEventListener('click', async () => {
+            if (!selectedFile) return;
+            
+            // Проверка обязательных полей
+            if (!enterpriseName.value.trim()) {
+                showResult('error', '<strong>❌ Ошибка:</strong> Введите название предприятия');
+                return;
+            }
+            
+            if (!resourceType.value) {
+                showResult('error', '<strong>❌ Ошибка:</strong> Выберите вид энергоресурса');
+                return;
+            }
+            
+            uploadBtn.disabled = true;
+            uploadBtn.textContent = 'Загрузка...';
+            cancelBtn.style.display = 'block';
+            cancelBtn.disabled = false;
+            progress.classList.add('show');
+            progressFill.style.width = '0%';
+            progressText.textContent = 'Начало загрузки...';
+            result.classList.remove('show');
+            
+            const formData = new FormData();
+            formData.append('file', selectedFile);
+            formData.append('enterprise_name', enterpriseName.value.trim());
+            formData.append('resource_type', resourceType.value);
+            
+            try {
+                const response = await fetch('http://localhost:8001/web/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    currentBatchId = data.batch_id;
+                    
+                    // Начинаем отслеживание прогресса
+                    startProgressTracking(currentBatchId);
+                    
+                    showResult('success', `
+                        <strong>✅ Файл успешно загружен!</strong><br><br>
+                        <strong>Batch ID:</strong> ${data.batch_id}<br>
+                        <strong>Файл:</strong> ${data.saved}<br>
+                        <strong>Статус парсинга:</strong> ${data.parsing_status}<br>
+                        ${data.parsing_summary ? `<strong>Детали:</strong> ${JSON.stringify(data.parsing_summary, null, 2)}<br>` : ''}
+                    `);
+                } else {
+                    const error = await response.json().catch(() => ({ detail: response.statusText }));
+                    showResult('error', `<strong>❌ Ошибка:</strong> ${error.detail || 'Неизвестная ошибка'}`);
+                    resetUploadState();
+                }
+            } catch (error) {
+                showResult('error', `<strong>❌ Ошибка соединения:</strong> ${error.message}`);
+                resetUploadState();
+            }
+        });
+        
+        // Cancel button
+        cancelBtn.addEventListener('click', async () => {
+            if (!currentBatchId) return;
+            
+            cancelBtn.disabled = true;
+            cancelBtn.textContent = 'Отмена...';
+            
+            try {
+                const response = await fetch(`http://localhost:8001/web/upload/${currentBatchId}/cancel`, {
+                    method: 'POST'
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.cancelled) {
+                        showResult('error', '<strong>⏹️ Обработка отменена</strong>');
+                        stopProgressTracking();
+                        resetUploadState();
+                    }
+                } else {
+                    const error = await response.json().catch(() => ({ detail: response.statusText }));
+                    showResult('error', `<strong>❌ Ошибка отмены:</strong> ${error.detail || 'Неизвестная ошибка'}`);
+                    cancelBtn.disabled = false;
+                    cancelBtn.textContent = 'Отменить обработку';
+                }
+            } catch (error) {
+                showResult('error', `<strong>❌ Ошибка:</strong> ${error.message}`);
+                cancelBtn.disabled = false;
+                cancelBtn.textContent = 'Отменить обработку';
+            }
+        });
+        
+        function startProgressTracking(batchId) {
+            if (progressInterval) {
+                clearInterval(progressInterval);
+            }
+            
+            progressInterval = setInterval(async () => {
+                try {
+                    const response = await fetch(`http://localhost:8001/api/progress/${batchId}`);
+                    if (response.ok) {
+                        const progressData = await response.json();
+                        
+                        // Обновляем прогресс
+                        progressFill.style.width = progressData.overall_progress + '%';
+                        const currentStage = progressData.current_stage;
+                        const stageMessage = currentStage && progressData.stages && progressData.stages[currentStage]
+                            ? progressData.stages[currentStage].message
+                            : 'Обработка...';
+                        progressText.textContent = `${stageMessage} (${progressData.overall_progress}%)`;
+                        
+                        // Проверяем завершение или ошибку
+                        if (progressData.is_completed || progressData.is_cancelled || progressData.has_error) {
+                            stopProgressTracking();
+                            resetUploadState();
+                            
+                            if (progressData.is_cancelled) {
+                                showResult('error', '<strong>⏹️ Обработка отменена</strong>');
+                            } else if (progressData.has_error) {
+                                showResult('error', `<strong>❌ Ошибка:</strong> ${progressData.error || 'Неизвестная ошибка'}`);
+                            } else {
+                                showResult('success', '<strong>✅ Обработка завершена успешно!</strong>');
+                            }
+                        }
+                    }
+                } catch (error) {
+                    console.error('Ошибка получения прогресса:', error);
+                }
+            }, 1000); // Обновляем каждую секунду
+        }
+        
+        function stopProgressTracking() {
+            if (progressInterval) {
+                clearInterval(progressInterval);
+                progressInterval = null;
+            }
+        }
+        
+        function resetUploadState() {
+            uploadBtn.disabled = false;
+            uploadBtn.textContent = 'Загрузить файл';
+            cancelBtn.style.display = 'none';
+            cancelBtn.disabled = false;
+            cancelBtn.textContent = 'Отменить обработку';
+            currentBatchId = null;
+            progressFill.style.width = '0%';
+            progressText.textContent = '';
+        }
+        
+        function showResult(type, content) {
+            result.className = `result show ${type}`;
+            resultContent.innerHTML = content;
+        }
+    </script>
+</body>
 </html>

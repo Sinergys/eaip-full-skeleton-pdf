@@ -22,14 +22,13 @@ inhibit_rules:
 
 receivers:
   - name: telegram
-    telegram_configs:
-      - bot_token: <PUT_TOKEN>
-        chat_id: <PUT_CHAT_ID>
-        parse_mode: HTML
-        message: |
-          <b>{{ .Status | toUpper }}</b> — {{ .CommonAnnotations.summary }}
-          {{ range .Alerts -}}
-          <b>{{ .Labels.alertname }}</b>: {{ .Annotations.description }}
-          instance={{ .Labels.instance }} severity={{ .Labels.severity }}
-          {{ end }}
+    webhook_configs:
+      - url: 'http://localhost:5001/webhook'
+        send_resolved: true
+    # Telegram notifications disabled - use webhook instead
+    # To enable Telegram, uncomment and configure:
+    # telegram_configs:
+    #   - bot_token: YOUR_BOT_TOKEN
+    #     chat_id: YOUR_CHAT_ID
+    #     parse_mode: HTML
 
