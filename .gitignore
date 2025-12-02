@@ -1,6 +1,7 @@
 # Environment variables and secrets
 .env
 *.env
+!*.env.example
 GITHUB_TOKEN
 *.token
 
@@ -26,3 +27,21 @@ ENV/
 
 # Logs
 *.log
+
+# Local databases and large data files
+ingest_data.db
+*.db
+
+# Test / cache directories
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
+
+# Temporary / editor
+*.tmp
+*.bak
