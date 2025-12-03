@@ -1,0 +1,108 @@
+{
+  "ref_error_cell": "AF13",
+  "sheet": "Баланс",
+  "current_formula": "None",
+  "context": {
+    "row_13_values": {
+      "Z": "='Структура пр 2 '!AY14",
+      "AA": "=Z13+Y13+X13+W13",
+      "AB": "='Структура пр 2 '!I14",
+      "AC": "='Структура пр 2 '!J14",
+      "AD": "='Структура пр 2 '!AM14",
+      "AE": "='Структура пр 2 '!Y14",
+      "AF": "='Структура пр 2 '!#REF!",
+      "AG": "='Структура пр 2 '!AN14"
+    },
+    "col_AF_values": {
+      "AF10": "='Структура пр 2 '!AM11",
+      "AF11": "='Структура пр 2 '!AM12",
+      "AF12": "='Структура пр 2 '!AM13",
+      "AF13": "='Структура пр 2 '!#REF!",
+      "AF14": "='Структура пр 2 '!AM15",
+      "AF15": "None"
+    }
+  },
+  "similar_formulas": [
+    {
+      "cell": "V7",
+      "formula": "=U7+T7+S7+R7"
+    },
+    {
+      "cell": "AA7",
+      "formula": "=Z7+Y7+X7+W7"
+    },
+    {
+      "cell": "AJ7",
+      "formula": "=AH7+AF7+AD7+AB7"
+    },
+    {
+      "cell": "AP7",
+      "formula": "=AO7+AN7+AM7+AL7"
+    },
+    {
+      "cell": "BA7",
+      "formula": "=AQ7+AV7"
+    },
+    {
+      "cell": "BB7",
+      "formula": "=AR7+AW7"
+    },
+    {
+      "cell": "BC7",
+      "formula": "=AS7+AX7"
+    },
+    {
+      "cell": "BD7",
+      "formula": "=AT7+AY7"
+    },
+    {
+      "cell": "BE7",
+      "formula": "=AU7+AZ7"
+    },
+    {
+      "cell": "V8",
+      "formula": "=U8+T8+S8+R8"
+    },
+    {
+      "cell": "AA8",
+      "formula": "=Z8+Y8+X8+W8"
+    },
+    {
+      "cell": "AJ8",
+      "formula": "=AH8+AF8+AD8+AB8"
+    },
+    {
+      "cell": "AP8",
+      "formula": "=AO8+AN8+AM8+AL8"
+    },
+    {
+      "cell": "BA8",
+      "formula": "=AQ8+AV8"
+    },
+    {
+      "cell": "BB8",
+      "formula": "=AR8+AW8"
+    },
+    {
+      "cell": "BC8",
+      "formula": "=AS8+AX8"
+    },
+    {
+      "cell": "BD8",
+      "formula": "=AT8+AY8"
+    },
+    {
+      "cell": "BE8",
+      "formula": "=AU8+AZ8"
+    },
+    {
+      "cell": "V9",
+      "formula": "=U9+T9+S9+R9"
+    },
+    {
+      "cell": "AA9",
+      "formula": "=Z9+Y9+X9+W9"
+    }
+  ],
+  "recommendation": "Need to analyze what AF13 should reference"
+}

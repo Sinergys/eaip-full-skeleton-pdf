@@ -1,0 +1,1050 @@
+{
+  "file_path": "C:\\Users\\DELL\\Downloads\\Telegram Desktop\\ЭНЕРГО_ПАСПОРТ_23102025.xlsm",
+  "analysis": {
+    "Структура пр 2 ": {
+      "missing_formulas": [],
+      "ref_errors": [],
+      "potential_formulas": [
+        {
+          "cell": "C8",
+          "row": 8,
+          "col": 3,
+          "value": 1200000,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "D8",
+          "row": 8,
+          "col": 4,
+          "value": 441600,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R8",
+          "row": 8,
+          "col": 18,
+          "value": 1200000,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "S8",
+          "row": 8,
+          "col": 19,
+          "value": 441600,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AG8",
+          "row": 8,
+          "col": 33,
+          "value": 1200000,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AH8",
+          "row": 8,
+          "col": 34,
+          "value": 441600,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AV8",
+          "row": 8,
+          "col": 48,
+          "value": 1350000,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AW8",
+          "row": 8,
+          "col": 49,
+          "value": 500200,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "C10",
+          "row": 10,
+          "col": 3,
+          "value": 1013524,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "F10",
+          "row": 10,
+          "col": 6,
+          "value": 15.667,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "L10",
+          "row": 10,
+          "col": 12,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "N10",
+          "row": 10,
+          "col": 14,
+          "value": 2400,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U10",
+          "row": 10,
+          "col": 21,
+          "value": 3.736,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AA10",
+          "row": 10,
+          "col": 27,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AC10",
+          "row": 10,
+          "col": 29,
+          "value": 2400,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AG10",
+          "row": 10,
+          "col": 33,
+          "value": 1112516,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AJ10",
+          "row": 10,
+          "col": 36,
+          "value": 2.487,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AP10",
+          "row": 10,
+          "col": 42,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AR10",
+          "row": 10,
+          "col": 44,
+          "value": 2675,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AV10",
+          "row": 10,
+          "col": 48,
+          "value": 1046422,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AY10",
+          "row": 10,
+          "col": 51,
+          "value": 9.021,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BE10",
+          "row": 10,
+          "col": 57,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BG10",
+          "row": 10,
+          "col": 59,
+          "value": 2400,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "C11",
+          "row": 11,
+          "col": 3,
+          "value": 895144,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R11",
+          "row": 11,
+          "col": 18,
+          "value": 810731,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AG11",
+          "row": 11,
+          "col": 33,
+          "value": 982575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AV11",
+          "row": 11,
+          "col": 48,
+          "value": 924200,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "C12",
+          "row": 12,
+          "col": 3,
+          "value": 30405,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "F12",
+          "row": 12,
+          "col": 6,
+          "value": 1.296,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "L12",
+          "row": 12,
+          "col": 12,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "N12",
+          "row": 12,
+          "col": 14,
+          "value": 2400,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R12",
+          "row": 12,
+          "col": 18,
+          "value": 27538,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U12",
+          "row": 12,
+          "col": 21,
+          "value": 1.296,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AA12",
+          "row": 12,
+          "col": 27,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AC12",
+          "row": 12,
+          "col": 29,
+          "value": 2400,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AG12",
+          "row": 12,
+          "col": 33,
+          "value": 33375,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AJ12",
+          "row": 12,
+          "col": 36,
+          "value": 1.296,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AP12",
+          "row": 12,
+          "col": 42,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AR12",
+          "row": 12,
+          "col": 44,
+          "value": 2675,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AV12",
+          "row": 12,
+          "col": 48,
+          "value": 31392,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AY12",
+          "row": 12,
+          "col": 51,
+          "value": 1.296,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BE12",
+          "row": 12,
+          "col": 57,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BG12",
+          "row": 12,
+          "col": 59,
+          "value": 1575,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "C13",
+          "row": 13,
+          "col": 3,
+          "value": 77838,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R13",
+          "row": 13,
+          "col": 18,
+          "value": 70498,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AG13",
+          "row": 13,
+          "col": 33,
+          "value": 85441,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AV13",
+          "row": 13,
+          "col": 48,
+          "value": 80365,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "C14",
+          "row": 14,
+          "col": 3,
+          "value": 10135,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "F14",
+          "row": 14,
+          "col": 6,
+          "value": 14.371,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R14",
+          "row": 14,
+          "col": 18,
+          "value": 9179,
+          "sheet": "Структура пр 2 ",
+          "reason": "potential_calculation"
+        }
+      ]
+    },
+    "Баланс": {
+      "missing_formulas": [],
+      "ref_errors": [
+        {
+          "cell": "AF13",
+          "row": 13,
+          "col": 32,
+          "formula": "='Структура пр 2 '!#REF!",
+          "sheet": "Баланс"
+        }
+      ],
+      "potential_formulas": [
+        {
+          "cell": "BA4",
+          "row": 4,
+          "col": 53,
+          "value": " итого в т.у.т",
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R6",
+          "row": 6,
+          "col": 18,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "S6",
+          "row": 6,
+          "col": 19,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "T6",
+          "row": 6,
+          "col": 20,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U6",
+          "row": 6,
+          "col": 21,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "W6",
+          "row": 6,
+          "col": 23,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "X6",
+          "row": 6,
+          "col": 24,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "Y6",
+          "row": 6,
+          "col": 25,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "Z6",
+          "row": 6,
+          "col": 26,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AB6",
+          "row": 6,
+          "col": 28,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AD6",
+          "row": 6,
+          "col": 30,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AF6",
+          "row": 6,
+          "col": 32,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AH6",
+          "row": 6,
+          "col": 34,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AL6",
+          "row": 6,
+          "col": 38,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AM6",
+          "row": 6,
+          "col": 39,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AN6",
+          "row": 6,
+          "col": 40,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AO6",
+          "row": 6,
+          "col": 41,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AQ6",
+          "row": 6,
+          "col": 43,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AR6",
+          "row": 6,
+          "col": 44,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AS6",
+          "row": 6,
+          "col": 45,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AT6",
+          "row": 6,
+          "col": 46,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AV6",
+          "row": 6,
+          "col": 48,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AW6",
+          "row": 6,
+          "col": 49,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AX6",
+          "row": 6,
+          "col": 50,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AY6",
+          "row": 6,
+          "col": 51,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BA6",
+          "row": 6,
+          "col": 53,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BB6",
+          "row": 6,
+          "col": 54,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BC6",
+          "row": 6,
+          "col": 55,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "BD6",
+          "row": 6,
+          "col": 56,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R24",
+          "row": 24,
+          "col": 18,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "S24",
+          "row": 24,
+          "col": 19,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "T24",
+          "row": 24,
+          "col": 20,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U24",
+          "row": 24,
+          "col": 21,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "W24",
+          "row": 24,
+          "col": 23,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "X24",
+          "row": 24,
+          "col": 24,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "Y24",
+          "row": 24,
+          "col": 25,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "Z24",
+          "row": 24,
+          "col": 26,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AB24",
+          "row": 24,
+          "col": 28,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AD24",
+          "row": 24,
+          "col": 30,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AF24",
+          "row": 24,
+          "col": 32,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AH24",
+          "row": 24,
+          "col": 34,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AL24",
+          "row": 24,
+          "col": 38,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AM24",
+          "row": 24,
+          "col": 39,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AN24",
+          "row": 24,
+          "col": 40,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AO24",
+          "row": 24,
+          "col": 41,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AQ24",
+          "row": 24,
+          "col": 43,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AR24",
+          "row": 24,
+          "col": 44,
+          "value": 2,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AS24",
+          "row": 24,
+          "col": 45,
+          "value": 3,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AT24",
+          "row": 24,
+          "col": 46,
+          "value": 4,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "AV24",
+          "row": 24,
+          "col": 48,
+          "value": 1,
+          "sheet": "Баланс",
+          "reason": "potential_calculation"
+        }
+      ]
+    },
+    "Динамика ср": {
+      "missing_formulas": [],
+      "ref_errors": [],
+      "potential_formulas": [
+        {
+          "cell": "A1",
+          "row": 1,
+          "col": 1,
+          "value": "2022 г.Сравнителные показатели динамика расходов энергии",
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "B5",
+          "row": 5,
+          "col": 2,
+          "value": " удельный расход за прошлый год (факт)",
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "T38",
+          "row": 38,
+          "col": 20,
+          "value": 8.6,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U38",
+          "row": 38,
+          "col": 21,
+          "value": 5.75,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "W38",
+          "row": 38,
+          "col": 23,
+          "value": 1.383,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "X38",
+          "row": 38,
+          "col": 24,
+          "value": 3.4,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "T39",
+          "row": 39,
+          "col": 20,
+          "value": 8.6,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U39",
+          "row": 39,
+          "col": 21,
+          "value": 6.59,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "W39",
+          "row": 39,
+          "col": 23,
+          "value": 1.949,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "X39",
+          "row": 39,
+          "col": 24,
+          "value": 3.4,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "T40",
+          "row": 40,
+          "col": 20,
+          "value": 8.6,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U40",
+          "row": 40,
+          "col": 21,
+          "value": 8.12,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "W40",
+          "row": 40,
+          "col": 23,
+          "value": 3.413,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "X40",
+          "row": 40,
+          "col": 24,
+          "value": 3.4,
+          "sheet": "Динамика ср",
+          "reason": "potential_calculation"
+        }
+      ]
+    },
+    "Расход  на ед.п": {
+      "missing_formulas": [],
+      "ref_errors": [],
+      "potential_formulas": [
+        {
+          "cell": "R16",
+          "row": 16,
+          "col": 18,
+          "value": 8.6,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "S16",
+          "row": 16,
+          "col": 19,
+          "value": 5.75,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U16",
+          "row": 16,
+          "col": 21,
+          "value": 1.383,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "V16",
+          "row": 16,
+          "col": 22,
+          "value": 3.4,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R17",
+          "row": 17,
+          "col": 18,
+          "value": 8.6,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "S17",
+          "row": 17,
+          "col": 19,
+          "value": 6.59,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U17",
+          "row": 17,
+          "col": 21,
+          "value": 1.949,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "V17",
+          "row": 17,
+          "col": 22,
+          "value": 3.4,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "R18",
+          "row": 18,
+          "col": 18,
+          "value": 8.6,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "S18",
+          "row": 18,
+          "col": 19,
+          "value": 8.12,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "U18",
+          "row": 18,
+          "col": 21,
+          "value": 3.413,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        },
+        {
+          "cell": "V18",
+          "row": 18,
+          "col": 22,
+          "value": 3.4,
+          "sheet": "Расход  на ед.п",
+          "reason": "potential_calculation"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "sheets_analyzed": 4,
+    "total_ref_errors": 1,
+    "total_potential_formulas": 126
+  }
+}

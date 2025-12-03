@@ -1,0 +1,259 @@
+{
+  "version": "1.0",
+  "created": "2025-11-16",
+  "description": "Универсальный шаблон формул для энергопаспорта",
+  
+  "formula_templates": {
+    "удельный_расход": {
+      "pattern": "{общий_расход} / {объем_продукции}",
+      "description": "Удельный расход энергии на единицу продукции",
+      "required_fields": ["общий_расход", "объем_продукции"],
+      "unit": "кВт·ч/ед",
+      "applicable_to": ["промышленность", "производство"],
+      "logic": "Расчет удельного показателя по стандартной методике",
+      "formula_excel": "={energy_cell} / {production_cell}",
+      "validation": {
+        "min_value": 0,
+        "max_value": 1000,
+        "check_zero_division": true
+      },
+      "example": {
+        "energy_cell": "C11",
+        "production_cell": "C15",
+        "result_formula": "=C11/C15",
+        "sheet": "Расход на ед.п"
+      }
+    },
+    
+    "баланс_итого": {
+      "pattern": "SUM({category1}:{category4})",
+      "description": "Итого по балансу энергопотребления",
+      "required_fields": ["технологические", "собственные_нужды", "производственные", "хоз_бытовые"],
+      "unit": "кВт·ч",
+      "applicable_to": ["electricity", "gas", "water"],
+      "logic": "Итого = Сумма всех категорий потребления",
+      "formula_excel": "=SUM({tech_cell}:{household_cell})",
+      "validation": {
+        "must_be_positive": true,
+        "should_match_total": "total_consumption_cell"
+      },
+      "example": {
+        "tech_cell": "C10",
+        "own_cell": "C11",
+        "prod_cell": "C12",
+        "household_cell": "C13",
+        "result_formula": "=SUM(C10:C13)",
+        "sheet": "Баланс"
+      }
+    },
+    
+    "энергоэффективность": {
+      "pattern": "{полезная_энергия} / {затраченная_энергия}",
+      "description": "Коэффициент энергоэффективности",
+      "required_fields": ["полезная_энергия", "затраченная_энергия"],
+      "unit": "безразмерный (0-1)",
+      "applicable_to": ["equipment", "processes"],
+      "logic": "Эффективность = Выход / Вход",
+      "formula_excel": "={output_cell} / {input_cell}",
+      "validation": {
+        "min_value": 0,
+        "max_value": 1,
+        "check_zero_division": true
+      }
+    },
+    
+    "соответствие_нормативу": {
+      "pattern": "IF({показатель} <= {норматив}, \"Соответствует\", \"Превышает\")",
+      "description": "Проверка соответствия нормативу",
+      "required_fields": ["показатель", "норматив"],
+      "unit": "текст",
+      "applicable_to": ["all_resources"],
+      "logic": "Если показатель <= норматив, то соответствует, иначе превышает",
+      "formula_excel": "=IF({indicator_cell} <= {normative_cell}, \"Соответствует\", \"Превышает\")",
+      "validation": {
+        "allowed_values": ["Соответствует", "Превышает"]
+      }
+    },
+    
+    "потери": {
+      "pattern": "{вход} - {выход}",
+      "description": "Расчет потерь энергии",
+      "required_fields": ["вход", "выход"],
+      "unit": "кВт·ч",
+      "applicable_to": ["electricity", "gas", "heat"],
+      "logic": "Потери = Вход - Выход",
+      "formula_excel": "={input_cell} - {output_cell}",
+      "validation": {
+        "must_be_positive": true,
+        "max_percentage": 20
+      }
+    },
+    
+    "кпд": {
+      "pattern": "({выход} / {вход}) * 100",
+      "description": "Коэффициент полезного действия",
+      "required_fields": ["вход", "выход"],
+      "unit": "%",
+      "applicable_to": ["equipment", "transformers"],
+      "logic": "КПД = (Выход / Вход) * 100",
+      "formula_excel": "=({output_cell} / {input_cell}) * 100",
+      "validation": {
+        "min_value": 0,
+        "max_value": 100,
+        "check_zero_division": true
+      }
+    },
+    
+    "квартальные_итоги": {
+      "pattern": "SUM({месяц1}:{месяц3})",
+      "description": "Итого по кварталу",
+      "required_fields": ["месяц1", "месяц2", "месяц3"],
+      "unit": "кВт·ч",
+      "applicable_to": ["electricity", "gas", "water"],
+      "logic": "Квартал = Сумма месяцев квартала",
+      "formula_excel": "=SUM({month1_cell}:{month3_cell})",
+      "validation": {
+        "must_be_positive": true,
+        "should_match_quarter_total": "quarter_total_cell"
+      }
+    },
+    
+    "годовые_итоги": {
+      "pattern": "SUM({квартал1}:{квартал4})",
+      "description": "Итого за год",
+      "required_fields": ["квартал1", "квартал2", "квартал3", "квартал4"],
+      "unit": "кВт·ч",
+      "applicable_to": ["electricity", "gas", "water"],
+      "logic": "Год = Сумма кварталов года",
+      "formula_excel": "=SUM({quarter1_cell}:{quarter4_cell})",
+      "validation": {
+        "must_be_positive": true,
+        "should_match_year_total": "year_total_cell"
+      }
+    },
+    
+    "темп_роста": {
+      "pattern": "(({текущий} - {предыдущий}) / {предыдущий}) * 100",
+      "description": "Темп роста потребления",
+      "required_fields": ["текущий", "предыдущий"],
+      "unit": "%",
+      "applicable_to": ["electricity", "gas", "water"],
+      "logic": "Темп роста = ((Текущий - Предыдущий) / Предыдущий) * 100",
+      "formula_excel": "=(({current_cell} - {previous_cell}) / {previous_cell}) * 100",
+      "validation": {
+        "check_zero_division": true,
+        "allowed_range": [-100, 1000]
+      }
+    },
+    
+    "cross_sheet_reference": {
+      "pattern": "'{source_sheet}'!{cell}",
+      "description": "Ссылка на ячейку другого листа",
+      "required_fields": ["source_sheet", "cell"],
+      "unit": "зависит от типа данных",
+      "applicable_to": ["all_sheets"],
+      "logic": "Ссылка на значение из другого листа",
+      "formula_excel": "='{source_sheet}'!{cell}",
+      "validation": {
+        "check_sheet_exists": true,
+        "check_cell_exists": true
+      },
+      "example": {
+        "source_sheet": "Структура пр 2",
+        "cell": "AM14",
+        "result_formula": "='Структура пр 2'!AM14",
+        "sheet": "Баланс"
+      }
+    }
+  },
+  
+  "business_rules": {
+    "промышленность": {
+      "required_formulas": [
+        "удельный_расход",
+        "энергоэффективность",
+        "баланс_итого"
+      ],
+      "industry_specific": [
+        "технологические_потери",
+        "коэффициент_использования_оборудования"
+      ]
+    },
+    "производство": {
+      "required_formulas": [
+        "удельный_расход",
+        "баланс_итого",
+        "соответствие_нормативу"
+      ],
+      "industry_specific": [
+        "производственные_потери",
+        "удельный_расход_по_видам_продукции"
+      ]
+    }
+  },
+  
+  "sheet_mappings": {
+    "Структура пр 2": {
+      "total_consumption_cell": {
+        "should_link_to": "Баланс!C10",
+        "formula_template": "cross_sheet_reference",
+        "description": "Итого по предприятию"
+      },
+      "quarter_totals": {
+        "formula_template": "квартальные_итоги",
+        "description": "Итого по кварталу"
+      }
+    },
+    "Баланс": {
+      "categories_total": {
+        "formula_template": "баланс_итого",
+        "description": "Итого по категориям"
+      },
+      "should_link_from": {
+        "source_sheet": "Структура пр 2",
+        "description": "Данные по кварталам",
+        "pattern": {
+          "AF10": "AM11",
+          "AF11": "AM12",
+          "AF12": "AM13",
+          "AF13": "AM14",
+          "AF14": "AM15"
+        }
+      }
+    },
+    "Динамика ср": {
+      "specific_consumption": {
+        "formula_template": "удельный_расход",
+        "description": "Удельный расход"
+      },
+      "growth_rate": {
+        "formula_template": "темп_роста",
+        "description": "Темп роста"
+      }
+    },
+    "Расход на ед.п": {
+      "specific_consumption": {
+        "formula_template": "удельный_расход",
+        "description": "Расход на единицу продукции"
+      },
+      "compliance": {
+        "formula_template": "соответствие_нормативу",
+        "description": "Соответствие нормативу"
+      }
+    }
+  },
+  
+  "restored_examples": [
+    {
+      "cell": "AF13",
+      "sheet": "Баланс",
+      "old_formula": "='Структура пр 2 '!#REF!",
+      "new_formula": "='Структура пр 2'!AM14",
+      "template_used": "cross_sheet_reference",
+      "method": "pattern_analysis",
+      "confidence": "high",
+      "date": "2025-11-16"
+    }
+  ]
+}
+

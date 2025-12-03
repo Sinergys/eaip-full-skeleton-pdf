@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-11-16T00:04:34.626978",
+  "original_file": "C:\\Users\\DELL\\Downloads\\Telegram Desktop\\ЭНЕРГО_ПАСПОРТ_23102025.xlsm",
+  "backup_file": "C:\\Users\\DELL\\Downloads\\Telegram Desktop\\ЭНЕРГО_ПАСПОРТ_23102025_backup_20251116_000432.xlsm",
+  "restored_file": "C:\\Users\\DELL\\Downloads\\Telegram Desktop\\ЭНЕРГО_ПАСПОРТ_23102025_restored.xlsm",
+  "restored_formulas": [
+    {
+      "cell": "AF13",
+      "sheet": "Баланс",
+      "old_formula": "='Структура пр 2 '!#REF!",
+      "new_formula": "='Структура пр 2 '!AM14",
+      "confidence": "high"
+    }
+  ]
+}

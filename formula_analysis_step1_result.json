@@ -1,0 +1,90 @@
+{
+  "file_path": "C:\\Users\\DELL\\Downloads\\Telegram Desktop\\ЭНЕРГО_ПАСПОРТ_23102025.xlsm",
+  "sheets_analysis": {
+    "Sheet1": {
+      "max_row": 121,
+      "max_column": 9,
+      "formulas": 0,
+      "values": 237,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "Узел учета ": {
+      "max_row": 11,
+      "max_column": 10,
+      "formulas": 0,
+      "values": 43,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "Структура пр 2 ": {
+      "max_row": 54,
+      "max_column": 61,
+      "formulas": 45,
+      "values": 600,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "Баланс": {
+      "max_row": 76,
+      "max_column": 59,
+      "formulas": 1128,
+      "values": 317,
+      "ref_errors": 1,
+      "ref_error_cells": [
+        "AF13"
+      ]
+    },
+    "Динамика ср": {
+      "max_row": 48,
+      "max_column": 25,
+      "formulas": 187,
+      "values": 143,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "мазут,уголь 5 ": {
+      "max_row": 42,
+      "max_column": 22,
+      "formulas": 15,
+      "values": 117,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "Расход  на ед.п": {
+      "max_row": 18,
+      "max_column": 28,
+      "formulas": 141,
+      "values": 85,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "паспорт здание ": {
+      "max_row": 56,
+      "max_column": 8,
+      "formulas": 0,
+      "values": 144,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "Мероприятия": {
+      "max_row": 21,
+      "max_column": 9,
+      "formulas": 0,
+      "values": 63,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    },
+    "Лист1": {
+      "max_row": 12,
+      "max_column": 6,
+      "formulas": 0,
+      "values": 72,
+      "ref_errors": 0,
+      "ref_error_cells": []
+    }
+  },
+  "total_sheets": 10,
+  "total_formulas": 1516,
+  "total_ref_errors": 1
+}

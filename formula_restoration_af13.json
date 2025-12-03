@@ -1,0 +1,19 @@
+{
+  "error_cell": "AF13",
+  "sheet": "Баланс",
+  "current_formula": "='Структура пр 2 '!#REF!",
+  "restored_formula": "='Структура пр 2 '!AM14",
+  "target_cell": "AM14",
+  "target_sheet": "Структура пр 2",
+  "target_value": null,
+  "target_data_type": "n",
+  "pattern_analysis": {
+    "af10_refers_to": "AM11",
+    "af11_refers_to": "AM12",
+    "af12_refers_to": "AM13",
+    "af13_should_refer_to": "AM14",
+    "af14_refers_to": "AM15"
+  },
+  "confidence": "high",
+  "reasoning": "Pattern shows each AF row references corresponding AM row in Структура пр 2 sheet"
+}
