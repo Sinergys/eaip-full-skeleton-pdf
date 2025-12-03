@@ -1,0 +1,165 @@
+groups:
+  - name: eaip_health_alerts
+    interval: 30s
+    rules:
+      # Gateway Auth Health Check (using Blackbox Exporter)
+      - alert: EAIPGatewayAuthDown
+        expr: probe_success{job="blackbox-http",service="gateway-auth"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: gateway-auth
+        annotations:
+          summary: "Gateway Auth service is down"
+          description: "Gateway Auth service health check failed for more than 1 minute (instance: {{ $labels.instance }})"
+
+      # Ingest Health Check (using Blackbox Exporter)
+      - alert: EAIPIngestDown
+        expr: probe_success{job="blackbox-http",service="ingest"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: ingest
+        annotations:
+          summary: "Ingest service is down"
+          description: "Ingest service health check failed for more than 1 minute (instance: {{ $labels.instance }})"
+
+      # Validate Health Check (using Blackbox Exporter)
+      - alert: EAIPValidateDown
+        expr: probe_success{job="blackbox-http",service="validate"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: validate
+        annotations:
+          summary: "Validate service is down"
+          description: "Validate service health check failed for more than 1 minute (instance: {{ $labels.instance }})"
+
+      # Analytics Health Check (using Blackbox Exporter)
+      - alert: EAIPAnalyticsDown
+        expr: probe_success{job="blackbox-http",service="analytics"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: analytics
+        annotations:
+          summary: "Analytics service is down"
+          description: "Analytics service health check failed for more than 1 minute (instance: {{ $labels.instance }})"
+
+      # Recommend Health Check (using Blackbox Exporter)
+      - alert: EAIPRecommendDown
+        expr: probe_success{job="blackbox-http",service="recommend"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: recommend
+        annotations:
+          summary: "Recommend service is down"
+          description: "Recommend service health check failed for more than 1 minute (instance: {{ $labels.instance }})"
+
+      # Reports Health Check (using Blackbox Exporter)
+      - alert: EAIPReportsDown
+        expr: probe_success{job="blackbox-http",service="reports"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: reports
+        annotations:
+          summary: "Reports service is down"
+          description: "Reports service health check failed for more than 1 minute (instance: {{ $labels.instance }})"
+
+      # Management Health Check (using Blackbox Exporter)
+      - alert: EAIPManagementDown
+        expr: probe_success{job="blackbox-http",service="management"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: management
+        annotations:
+          summary: "Management service is down"
+          description: "Management service health check failed for more than 1 minute (instance: {{ $labels.instance }})"
+
+      # Infrastructure services health checks (TCP)
+      - alert: PostgresDown
+        expr: probe_success{job="blackbox-tcp",service="postgres"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: postgres
+        annotations:
+          summary: "PostgreSQL is down"
+          description: "PostgreSQL TCP connection failed for more than 1 minute"
+
+      - alert: RedisDown
+        expr: probe_success{job="blackbox-tcp",service="redis"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: redis
+        annotations:
+          summary: "Redis is down"
+          description: "Redis TCP connection failed for more than 1 minute"
+
+      - alert: MinIODown
+        expr: probe_success{job="blackbox-tcp",service="minio"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: minio
+        annotations:
+          summary: "MinIO is down"
+          description: "MinIO TCP connection failed for more than 1 minute"
+
+      # High response time alerts
+      - alert: HighResponseTime
+        expr: probe_http_duration_seconds{job="blackbox-http"} > 2
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High response time detected"
+          description: "Service {{ $labels.service }} has response time above 2 seconds (current: {{ $value }}s)"
+
+  - name: eaip_system_alerts
+    interval: 30s
+    rules:
+      # High CPU Usage
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(container_cpu_usage_seconds_total{name=~"infra-.*"}[5m])) * 100) < 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is above 90% for more than 5 minutes"
+
+      # High Memory Usage
+      - alert: HighMemoryUsage
+        expr: (container_memory_usage_bytes{name=~"infra-.*"} / container_spec_memory_limit_bytes{name=~"infra-.*"}) * 100 > 90
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is above 90% for more than 5 minutes"
+
+      # Disk Space
+      - alert: LowDiskSpace
+        expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100 < 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low disk space"
+          description: "Disk space is below 10%"
+
+      # Container Restarts
+      - alert: ContainerRestarting
+        expr: rate(container_start_time_seconds{name=~"infra-.*"}[15m]) > 0
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Container is restarting frequently"
+          description: "Container {{ $labels.name }} has restarted more than once in 15 minutes"
+
