@@ -1,0 +1,764 @@
+{
+  "source": "database",
+  "generated_at": "2025-11-15T20:58:58.590809+00:00",
+  "resources": {
+    "electricity": {},
+    "gas": {
+      "2022-Q1": {
+        "year": 2022,
+        "quarter": 1,
+        "months": [
+          {
+            "month": "Январь",
+            "values": {
+              "cost_sum": 4646,
+              "volume_m3": 4439160
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 6703,
+              "volume_m3": 4212120
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": 4318,
+              "volume_m3": 1129260
+            }
+          },
+          {
+            "month": "Январь ",
+            "values": {
+              "cost_sum": 6311,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 7306,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Январь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": 853
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": 853
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": 853
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 29284.0,
+          "volume_m3": 9783099.0
+        }
+      },
+      "2023-Q1": {
+        "year": 2023,
+        "quarter": 1,
+        "months": [
+          {
+            "month": "Январь",
+            "values": {
+              "cost_sum": 6726,
+              "volume_m3": 11343000
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 6382,
+              "volume_m3": 13251000
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": 1711,
+              "volume_m3": 8523000
+            }
+          },
+          {
+            "month": "Январь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": "Примерное потребление газа на отопление за год"
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": "Сумма"
+            }
+          },
+          {
+            "month": "Январь ",
+            "values": {
+              "cost_sum": 4646,
+              "volume_m3": 3793
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 6703,
+              "volume_m3": 5850
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": 4318,
+              "volume_m3": 3465
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 30486.0,
+          "volume_m3": 33130108.0
+        }
+      },
+      "2024-Q1": {
+        "year": 2024,
+        "quarter": 1,
+        "months": [
+          {
+            "month": "Январь",
+            "values": {
+              "cost_sum": 7562,
+              "volume_m3": 6282840
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 8834,
+              "volume_m3": 7295700
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": 5682,
+              "volume_m3": 4167380
+            }
+          },
+          {
+            "month": "Январь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": "м3",
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Январь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 22078.0,
+          "volume_m3": 17745920.0
+        }
+      },
+      "2022-Q2": {
+        "year": 2022,
+        "quarter": 2,
+        "months": [
+          {
+            "month": "Апрель",
+            "values": {
+              "cost_sum": 1960,
+              "volume_m3": 1079100
+            }
+          },
+          {
+            "month": "Май",
+            "values": {
+              "cost_sum": 936,
+              "volume_m3": 647460
+            }
+          },
+          {
+            "month": "Июнь",
+            "values": {
+              "cost_sum": 840,
+              "volume_m3": 505560
+            }
+          },
+          {
+            "month": "Май ",
+            "values": {
+              "cost_sum": 955,
+              "volume_m3": 4577880
+            }
+          },
+          {
+            "month": "Июнь ",
+            "values": {
+              "cost_sum": 829,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Май ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июнь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 5520.0,
+          "volume_m3": 6810000.0
+        }
+      },
+      "2023-Q2": {
+        "year": 2023,
+        "quarter": 2,
+        "months": [
+          {
+            "month": "Апрель",
+            "values": {
+              "cost_sum": 1635,
+              "volume_m3": 1320000
+            }
+          },
+          {
+            "month": "Май",
+            "values": {
+              "cost_sum": 981,
+              "volume_m3": 1422000
+            }
+          },
+          {
+            "month": "Июнь",
+            "values": {
+              "cost_sum": 766,
+              "volume_m3": 1320000
+            }
+          },
+          {
+            "month": "Май ",
+            "values": {
+              "cost_sum": 3574,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июнь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Май ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июнь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 6956.0,
+          "volume_m3": 4062000.0
+        }
+      },
+      "2024-Q2": {
+        "year": 2024,
+        "quarter": 2,
+        "months": [
+          {
+            "month": "Апрель",
+            "values": {
+              "cost_sum": 880,
+              "volume_m3": 1230900
+            }
+          },
+          {
+            "month": "Май",
+            "values": {
+              "cost_sum": 948,
+              "volume_m3": 895740
+            }
+          },
+          {
+            "month": "Июнь",
+            "values": {
+              "cost_sum": 880,
+              "volume_m3": 793320
+            }
+          },
+          {
+            "month": "Май ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июнь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Май ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июнь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 2708.0,
+          "volume_m3": 2919960.0
+        }
+      },
+      "2022-Q3": {
+        "year": 2022,
+        "quarter": 3,
+        "months": [
+          {
+            "month": "Июль",
+            "values": {
+              "cost_sum": 826,
+              "volume_m3": 669900
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": 862,
+              "volume_m3": 4307821
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": 799,
+              "volume_m3": 594660
+            }
+          },
+          {
+            "month": "Июль ",
+            "values": {
+              "cost_sum": 942,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": 848,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июль ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 4277.0,
+          "volume_m3": 5572381.0
+        }
+      },
+      "2023-Q3": {
+        "year": 2023,
+        "quarter": 3,
+        "months": [
+          {
+            "month": "Июль",
+            "values": {
+              "cost_sum": 1015,
+              "volume_m3": 1477500
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": 946,
+              "volume_m3": 1102500
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": 901,
+              "volume_m3": 676500
+            }
+          },
+          {
+            "month": "Июль ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июль ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 2862.0,
+          "volume_m3": 3256500.0
+        }
+      },
+      "2024-Q3": {
+        "year": 2024,
+        "quarter": 3,
+        "months": [
+          {
+            "month": "Июль",
+            "values": {
+              "cost_sum": 985,
+              "volume_m3": 897520
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": 735,
+              "volume_m3": 1993080.3333333333
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": 451,
+              "volume_m3": 599500
+            }
+          },
+          {
+            "month": "Июль ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Июль ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 2171.0,
+          "volume_m3": 3490100.333333333
+        }
+      },
+      "2022-Q4": {
+        "year": 2022,
+        "quarter": 4,
+        "months": [
+          {
+            "month": "Октябрь",
+            "values": {
+              "cost_sum": 664,
+              "volume_m3": 844800
+            }
+          },
+          {
+            "month": "Ноябрь",
+            "values": {
+              "cost_sum": 2882,
+              "volume_m3": 6363000
+            }
+          },
+          {
+            "month": "Декабрь",
+            "values": {
+              "cost_sum": 5475,
+              "volume_m3": 8497500
+            }
+          },
+          {
+            "month": "Ноябрь ",
+            "values": {
+              "cost_sum": 3590,
+              "volume_m3": 26054980
+            }
+          },
+          {
+            "month": "Декабрь ",
+            "values": {
+              "cost_sum": 6283,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Ноябрь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": 852.6
+            }
+          },
+          {
+            "month": "Декабрь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": 853
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 18894.0,
+          "volume_m3": 41761985.6
+        }
+      },
+      "2023-Q4": {
+        "year": 2023,
+        "quarter": 4,
+        "months": [
+          {
+            "month": "Октябрь",
+            "values": {
+              "cost_sum": 1280,
+              "volume_m3": 669000
+            }
+          },
+          {
+            "month": "Ноябрь",
+            "values": {
+              "cost_sum": 4242,
+              "volume_m3": 5469000
+            }
+          },
+          {
+            "month": "Декабрь",
+            "values": {
+              "cost_sum": 5665,
+              "volume_m3": 11584200
+            }
+          },
+          {
+            "month": "Ноябрь ",
+            "values": {
+              "cost_sum": 23490,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Декабрь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Ноябрь ",
+            "values": {
+              "cost_sum": 2882,
+              "volume_m3": 2029.4
+            }
+          },
+          {
+            "month": "Декабрь ",
+            "values": {
+              "cost_sum": 5475,
+              "volume_m3": 4622
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 43034.0,
+          "volume_m3": 17728851.4
+        }
+      },
+      "2024-Q4": {
+        "year": 2024,
+        "quarter": 4,
+        "months": [
+          {
+            "month": "Октябрь",
+            "values": {
+              "cost_sum": 446,
+              "volume_m3": 650680
+            }
+          },
+          {
+            "month": "Ноябрь",
+            "values": {
+              "cost_sum": 3646,
+              "volume_m3": 4578040
+            }
+          },
+          {
+            "month": "Декабрь",
+            "values": {
+              "cost_sum": 7710,
+              "volume_m3": 7898400
+            }
+          },
+          {
+            "month": "Ноябрь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Декабрь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Ноябрь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          },
+          {
+            "month": "Декабрь ",
+            "values": {
+              "cost_sum": null,
+              "volume_m3": null
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 11802.0,
+          "volume_m3": 13127120.0
+        }
+      }
+    },
+    "water": {},
+    "fuel": {},
+    "coal": {},
+    "heat": {},
+    "production": {}
+  }
+}

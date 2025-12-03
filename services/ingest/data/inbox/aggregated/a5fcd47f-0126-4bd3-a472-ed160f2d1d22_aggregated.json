@@ -1,0 +1,13 @@
+{
+  "source": "database",
+  "generated_at": "2025-11-15T20:58:58.470767+00:00",
+  "resources": {
+    "electricity": {},
+    "gas": {},
+    "water": {},
+    "fuel": {},
+    "coal": {},
+    "heat": {},
+    "production": {}
+  }
+}

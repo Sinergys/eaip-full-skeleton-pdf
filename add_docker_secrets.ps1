@@ -10,7 +10,7 @@ $repo = "eaip-full-skeleton-pdf"
 
 # Docker Hub credentials
 $dockerhubUsername = "ecosinergys"
-$dockerhubToken = "***REMOVED***"
+$dockerhubToken = "YOUR_DOCKERHUB_TOKEN_HERE"
 
 # Get GitHub token from environment
 $githubToken = [System.Environment]::GetEnvironmentVariable("GITHUB_TOKEN", "User")

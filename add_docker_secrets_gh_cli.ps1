@@ -6,7 +6,7 @@ Write-Host ""
 
 # Docker Hub credentials
 $dockerhubUsername = "ecosinergys"
-$dockerhubToken = "***REMOVED***"
+$dockerhubToken = "YOUR_DOCKERHUB_TOKEN_HERE"
 
 # Repository
 $repo = "Sinergys/eaip-full-skeleton-pdf"

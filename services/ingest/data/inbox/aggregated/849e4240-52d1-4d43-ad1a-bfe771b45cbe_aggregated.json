@@ -1,0 +1,487 @@
+{
+  "source": "database",
+  "generated_at": "2025-11-15T20:58:58.517289+00:00",
+  "resources": {
+    "electricity": {
+      "2022-Q1": {
+        "year": 2022,
+        "quarter": 1,
+        "months": [
+          {
+            "month": "Январь",
+            "values": {
+              "cost_sum": 136622934,
+              "active_kwh": 95509.53,
+              "reactive_kvarh": 99948.64,
+              "active_other": 93323.24
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 172832720,
+              "active_kwh": 119984.35,
+              "reactive_kvarh": 127343.68,
+              "active_other": 117826.31
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": 169692642,
+              "active_kwh": 119071,
+              "reactive_kvarh": 126127,
+              "active_other": 114390.7
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 479148296.0,
+          "active_kwh": 334564.88,
+          "reactive_kvarh": 353419.32,
+          "active_other": 325540.25
+        }
+      },
+      "2022-Q2": {
+        "year": 2022,
+        "quarter": 2,
+        "months": [
+          {
+            "month": "Апрель",
+            "values": {
+              "cost_sum": 136398856,
+              "active_kwh": 91337.73,
+              "reactive_kvarh": 105394.31,
+              "active_other": 91214.96
+            }
+          },
+          {
+            "month": "Май",
+            "values": {
+              "cost_sum": 134575301,
+              "active_kwh": 98025.63,
+              "reactive_kvarh": 97631.31,
+              "active_other": 90716.33
+            }
+          },
+          {
+            "month": "Июнь",
+            "values": {
+              "cost_sum": 162752779,
+              "active_kwh": 113204,
+              "reactive_kvarh": 118862.97,
+              "active_other": 111560.36
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 433726936.0,
+          "active_kwh": 302567.36,
+          "reactive_kvarh": 321888.58999999997,
+          "active_other": 293491.65
+        }
+      },
+      "2022-Q3": {
+        "year": 2022,
+        "quarter": 3,
+        "months": [
+          {
+            "month": "Июль",
+            "values": {
+              "cost_sum": 153640641,
+              "active_kwh": 111618.68,
+              "reactive_kvarh": 109110.5,
+              "active_other": 105267.13
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": 195838155,
+              "active_kwh": 134195.28,
+              "reactive_kvarh": 146967.11,
+              "active_other": 132510.18
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": 175986930,
+              "active_kwh": 123634.1,
+              "reactive_kvarh": 130323.96,
+              "active_other": 118890.25
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 525465726.0,
+          "active_kwh": 369448.06,
+          "reactive_kvarh": 386401.57,
+          "active_other": 356667.56
+        }
+      },
+      "2022-Q4": {
+        "year": 2022,
+        "quarter": 4,
+        "months": [
+          {
+            "month": "Октябрь",
+            "values": {
+              "cost_sum": 161214849,
+              "active_kwh": 111470.74,
+              "reactive_kvarh": 118566.32,
+              "active_other": 110250
+            }
+          },
+          {
+            "month": "Ноябрь",
+            "values": {
+              "cost_sum": 188038787,
+              "active_kwh": 127759.63,
+              "reactive_kvarh": 145271.93,
+              "active_other": 124945.97
+            }
+          },
+          {
+            "month": "Декабрь",
+            "values": {
+              "cost_sum": 144953731,
+              "active_kwh": 105394.22,
+              "reactive_kvarh": 104577.77,
+              "active_other": 98185.88
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 494207367.0,
+          "active_kwh": 344624.58999999997,
+          "reactive_kvarh": 368416.02,
+          "active_other": 333381.85
+        }
+      },
+      "2023-Q1": {
+        "year": 2023,
+        "quarter": 1,
+        "months": [
+          {
+            "month": "Январь",
+            "values": {
+              "cost_sum": 92422719,
+              "active_kwh": 63362.82,
+              "reactive_kvarh": 69404.63,
+              "active_other": 62491.54
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 158222115,
+              "active_kwh": 110349.25,
+              "reactive_kvarh": 114840.5,
+              "active_other": 108798.69
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": 209719383,
+              "active_kwh": 147586.43,
+              "reactive_kvarh": 153623.84,
+              "active_other": 142685.52
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 460364217.0,
+          "active_kwh": 321298.5,
+          "reactive_kvarh": 337868.97,
+          "active_other": 313975.75
+        }
+      },
+      "2023-Q2": {
+        "year": 2023,
+        "quarter": 2,
+        "months": [
+          {
+            "month": "Апрель",
+            "values": {
+              "cost_sum": 199395351,
+              "active_kwh": 146192.92,
+              "reactive_kvarh": 143297.61,
+              "active_other": 134894.15
+            }
+          },
+          {
+            "month": "Май",
+            "values": {
+              "cost_sum": 224138668,
+              "active_kwh": 157363.53,
+              "reactive_kvarh": 167459.49,
+              "active_other": 150478.28
+            }
+          },
+          {
+            "month": "Июнь",
+            "values": {
+              "cost_sum": 197560452,
+              "active_kwh": 139840.9,
+              "reactive_kvarh": 157970.52,
+              "active_other": 125216.96
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 621094471.0,
+          "active_kwh": 443397.35,
+          "reactive_kvarh": 468727.62,
+          "active_other": 410589.39
+        }
+      },
+      "2023-Q3": {
+        "year": 2023,
+        "quarter": 3,
+        "months": [
+          {
+            "month": "Июль",
+            "values": {
+              "cost_sum": 211774178,
+              "active_kwh": 160476.96,
+              "reactive_kvarh": 147976.26,
+              "active_other": 143765.59
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": 261786353,
+              "active_kwh": 185506.84,
+              "reactive_kvarh": 186157.58,
+              "active_other": 172654.44
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": 234801720,
+              "active_kwh": 162620.2,
+              "reactive_kvarh": 172153.47,
+              "active_other": 157618.55
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 708362251.0,
+          "active_kwh": 508604.0,
+          "reactive_kvarh": 506287.30999999994,
+          "active_other": 474038.58
+        }
+      },
+      "2023-Q4": {
+        "year": 2023,
+        "quarter": 4,
+        "months": [
+          {
+            "month": "Октябрь",
+            "values": {
+              "cost_sum": 510774448,
+              "active_kwh": 179896.17,
+              "reactive_kvarh": 189754.1,
+              "active_other": 171894.83
+            }
+          },
+          {
+            "month": "Ноябрь",
+            "values": {
+              "cost_sum": 517143112,
+              "active_kwh": 180087.77,
+              "reactive_kvarh": 193265.09,
+              "active_other": 174186.57
+            }
+          },
+          {
+            "month": "Декабрь",
+            "values": {
+              "cost_sum": 373624723,
+              "active_kwh": 139785.25,
+              "reactive_kvarh": 134309.53,
+              "active_other": 125092.59
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 1401542283.0,
+          "active_kwh": 499769.19,
+          "reactive_kvarh": 517328.72,
+          "active_other": 471173.99
+        }
+      },
+      "2024-Q1": {
+        "year": 2024,
+        "quarter": 1,
+        "months": [
+          {
+            "month": "Январь",
+            "values": {
+              "cost_sum": 336771157,
+              "active_kwh": 121527.9,
+              "reactive_kvarh": 124397.2,
+              "active_other": 112516.25
+            }
+          },
+          {
+            "month": "Февраль",
+            "values": {
+              "cost_sum": 436274416,
+              "active_kwh": 152154.6,
+              "reactive_kvarh": 149654.23,
+              "active_other": 162170.11
+            }
+          },
+          {
+            "month": "Март",
+            "values": {
+              "cost_sum": 313478664,
+              "active_kwh": 119831.53,
+              "reactive_kvarh": 105759.93,
+              "active_other": 108441.34
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 1086524237.0,
+          "active_kwh": 393514.03,
+          "reactive_kvarh": 379811.36,
+          "active_other": 383127.69999999995
+        }
+      },
+      "2024-Q2": {
+        "year": 2024,
+        "quarter": 2,
+        "months": [
+          {
+            "month": "Апрель",
+            "values": {
+              "cost_sum": 289784244,
+              "active_kwh": 102126.35,
+              "reactive_kvarh": 105761.23,
+              "active_other": 98758.02
+            }
+          },
+          {
+            "month": "Май",
+            "values": {
+              "cost_sum": 414510553,
+              "active_kwh": 144494.41,
+              "reactive_kvarh": 147669.82,
+              "active_other": 144378.57
+            }
+          },
+          {
+            "month": "Июнь",
+            "values": {
+              "cost_sum": 279610501,
+              "active_kwh": 97469.39,
+              "reactive_kvarh": 97054.33,
+              "active_other": 101129.88
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 983905298.0,
+          "active_kwh": 344090.15,
+          "reactive_kvarh": 350485.38,
+          "active_other": 344266.47000000003
+        }
+      },
+      "2024-Q3": {
+        "year": 2024,
+        "quarter": 3,
+        "months": [
+          {
+            "month": "Июль",
+            "values": {
+              "cost_sum": 363107191,
+              "active_kwh": 124020.69,
+              "reactive_kvarh": 129404.78,
+              "active_other": 132024.93
+            }
+          },
+          {
+            "month": "Август",
+            "values": {
+              "cost_sum": 448506473,
+              "active_kwh": 162876.17,
+              "reactive_kvarh": 151906.86,
+              "active_other": 158568.06
+            }
+          },
+          {
+            "month": "Сентябрь",
+            "values": {
+              "cost_sum": 409787101,
+              "active_kwh": 152263.58,
+              "reactive_kvarh": 138924.46,
+              "active_other": 143256.98
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 1221400765.0,
+          "active_kwh": 439160.43999999994,
+          "reactive_kvarh": 420236.1,
+          "active_other": 433849.97
+        }
+      },
+      "2024-Q4": {
+        "year": 2024,
+        "quarter": 4,
+        "months": [
+          {
+            "month": "Октябрь",
+            "values": {
+              "cost_sum": 500033165,
+              "active_kwh": 175870.11,
+              "reactive_kvarh": 178009.97,
+              "active_other": 173557.12
+            }
+          },
+          {
+            "month": "Ноябрь",
+            "values": {
+              "cost_sum": 422661031,
+              "active_kwh": 154907.97,
+              "reactive_kvarh": 144581.93,
+              "active_other": 147846.3
+            }
+          },
+          {
+            "month": "Декабрь",
+            "values": {
+              "cost_sum": 381609949,
+              "active_kwh": 143075.614,
+              "reactive_kvarh": 128317.617,
+              "active_other": 133539.79
+            }
+          }
+        ],
+        "quarter_totals": {
+          "cost_sum": 1304304145.0,
+          "active_kwh": 473853.69399999996,
+          "reactive_kvarh": 450909.517,
+          "active_other": 454943.20999999996
+        }
+      }
+    },
+    "gas": {},
+    "water": {},
+    "fuel": {},
+    "coal": {},
+    "heat": {},
+    "production": {}
+  },
+  "missing_sheets": [
+    "Килограмм да",
+    "ГАЗ",
+    "СУВ"
+  ]
+}

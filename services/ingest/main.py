@@ -935,23 +935,6 @@ def validate_file(file: UploadFile):
     logger.info(f"📋 [VALIDATE] Расширение файла: {file_ext}")
     logger.info(f"📋 [VALIDATE] Разрешенные расширения: {sorted(ALLOWED_EXTENSIONS)}")
 
-    # КРИТИЧЕСКИЙ ОБХОДНОЙ ПУТЬ: всегда разрешаем .xlsm файлы
-    if file_ext == ".xlsm":
-        logger.warning(
-            f"✅ [VALIDATE] ОБХОДНОЙ ПУТЬ: .xlsm файл {file.filename} принудительно разрешен"
-        )
-        # Принудительно добавляем в список, если отсутствует
-        if ".xlsm" not in ALLOWED_EXTENSIONS:
-            ALLOWED_EXTENSIONS.add(".xlsm")
-            logger.warning(
-                "⚠️ [VALIDATE] .xlsm принудительно добавлен в ALLOWED_EXTENSIONS"
-            )
-        # Пропускаем ВСЮ проверку для .xlsm - сразу возвращаем успех
-        logger.info(
-            "✅ [VALIDATE] .xlsm файл разрешен, возвращаем успех без дальнейших проверок"
-        )
-        return True, None  # ВАЖНО: сразу возвращаем успех для .xlsm
-    
     # Проверка 2: Расширение файла
     if file_ext not in ALLOWED_EXTENSIONS:
         allowed_str = ", ".join(sorted(ALLOWED_EXTENSIONS))
@@ -1055,28 +1038,12 @@ async def upload_file(
     system_mode: Optional[str] = Form(None),
 ):
     """Приём файла через веб-интерфейс с привязкой к предприятию"""
-    # КРИТИЧЕСКИЙ ОБХОДНОЙ ПУТЬ: проверяем .xlsm ДО всех проверок
     if file.filename:
         file_ext = Path(file.filename).suffix.lower()
-        if file_ext == ".xlsm":
-            logger.warning(
-                "🚨 [UPLOAD] КРИТИЧЕСКИЙ ОБХОДНОЙ ПУТЬ: .xlsm файл обнаружен - ПРИНУДИТЕЛЬНО разрешаем"
-            )
-            # Принудительно добавляем в список
-            ALLOWED_EXTENSIONS.add(".xlsm")
-            logger.warning(
-                f"✅ [UPLOAD] .xlsm принудительно добавлен в ALLOWED_EXTENSIONS: {sorted(ALLOWED_EXTENSIONS)}"
-            )
-            # Пропускаем ВСЮ валидацию для .xlsm - переходим сразу к проверке размера
-            logger.info("✅ [UPLOAD] Пропускаем валидацию формата для .xlsm файла")
-        else:
-            # Логируем информацию о файле ДО валидации
-            logger.info(f"📤 [UPLOAD] Начало загрузки файла: {file.filename}")
-            logger.info(f"📤 [UPLOAD] Расширение файла: {file_ext}")
-            logger.info(f"📤 [UPLOAD] ALLOWED_EXTENSIONS: {sorted(ALLOWED_EXTENSIONS)}")
-            logger.info(
-                f"📤 [UPLOAD] MIME type: {getattr(file, 'content_type', 'не указан')}"
-            )
+        logger.info(f"📤 [UPLOAD] Начало загрузки файла: {file.filename}")
+        logger.info(f"📤 [UPLOAD] Расширение файла: {file_ext}")
+        logger.info(f"📤 [UPLOAD] Разрешенные расширения: {sorted(ALLOWED_EXTENSIONS)}")
+        logger.info(f"📤 [UPLOAD] MIME type: {getattr(file, 'content_type', 'не указан')}")
 
     if enterprise_name and enterprise_name.strip():
         enterprise = database.get_or_create_enterprise(enterprise_name)
@@ -1101,25 +1068,13 @@ async def upload_file(
             "other"  # Временное значение, будет переопределено после парсинга
         )
 
-    # ОБХОДНОЙ ПУТЬ: для .xlsm файлов пропускаем стандартную валидацию
-    # Проверяем расширение еще раз (на случай, если file.filename был None выше)
-    file_ext_check = Path(file.filename).suffix.lower() if file.filename else None
-    if file_ext_check == ".xlsm":
-        logger.warning(
-            f"🚨 [UPLOAD] ОБХОДНОЙ ПУТЬ: пропускаем ВСЮ валидацию для .xlsm файла {file.filename}"
+    is_valid, error_msg = validate_file(file)
+    if not is_valid:
+        logger.error(
+            f"❌ [UPLOAD] Валидация не пройдена для {file.filename}: {error_msg}"
         )
-        logger.info(
-            f"✅ [UPLOAD] .xlsm файл {file.filename} принят через обходной путь - валидация пропущена"
-        )
-        # НЕ вызываем validate_file для .xlsm - сразу переходим к проверке размера
-    else:
-        is_valid, error_msg = validate_file(file)
-        if not is_valid:
-            logger.error(
-                f"❌ [UPLOAD] Валидация не пройдена для {file.filename}: {error_msg}"
-            )
-            raise HTTPException(status_code=400, detail=error_msg)
-        logger.info(f"✅ [UPLOAD] Валидация пройдена для {file.filename}")
+        raise HTTPException(status_code=400, detail=error_msg)
+    logger.info(f"✅ [UPLOAD] Валидация пройдена для {file.filename}")
 
     # Проверка размера файла для всех типов
     size_valid, size_error = await validate_file_size(file)
@@ -1691,9 +1646,21 @@ async def upload_file(
                             )
 
                         # Распределяем категории по кварталам и добавляем в aggregation_data
+                        logger.info("📊 [DIAG] Данные агрегации ДО распределения по категориям: "
+                                    f"keys={list(aggregation_data.get('resources', {}).keys())}")
+                        
                         aggregation_data = distribute_categories_by_quarter(
                             aggregation_data, usage_categories
                         )
+                        
+                        # Ключевая проверка после распределения
+                        electricity_data_after = aggregation_data.get("resources", {}).get("electricity")
+                        if electricity_data_after:
+                            logger.info("✅ [DIAG] Данные по электроэнергии ПРИСУТСТВУЮТ после распределения по категориям. "
+                                        f"Кол-во записей: {len(electricity_data_after)}")
+                        else:
+                            logger.warning("⚠️ [DIAG] Данные по электроэнергии ОТСУТСТВУЮТ после распределения по категориям.")
+                        
                         logger.info("Категории использования распределены по кварталам")
 
                     aggregated_file = write_aggregation_json(
@@ -2953,6 +2920,10 @@ async def generate_energy_passport(
             if not balans_sheet:
                 logger.info("Лист 'Баланс' не найден, создаем новый")
                 balans_sheet = workbook.create_sheet(title="04_Баланс")
+                # КРИТИЧЕСКОЕ ИСПРАВЛЕНИЕ: вызываем fill_balans_sheet для нового листа
+                logger.info(f"Заполнение нового листа '{balans_sheet.title}'")
+                fill_balans_sheet(balans_sheet, resources_data)
+                logger.info(f"✅ Новый лист '{balans_sheet.title}' заполнен")
 
             if balans_sheet:
                 # ========== ДЕТАЛЬНАЯ ДИАГНОСТИКА ПЕРЕД fill_balans_sheet ==========

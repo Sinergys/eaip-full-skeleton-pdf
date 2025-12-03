@@ -1,0 +1,19 @@
+{
+  "source": "database",
+  "generated_at": "2025-11-15T20:58:58.646425+00:00",
+  "resources": {
+    "electricity": {},
+    "gas": {},
+    "water": {},
+    "fuel": {},
+    "coal": {},
+    "heat": {},
+    "production": {}
+  },
+  "missing_sheets": [
+    "Килограмм да",
+    "ЭЛЕКТР (или альтернативные названия)",
+    "ГАЗ",
+    "СУВ"
+  ]
+}
