@@ -1,0 +1,148 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.0.1, pluggy-1.6.0 -- C:\Program Files\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\eaip\eaip_full_skeleton\services\ingest
+plugins: anyio-3.7.1
+collecting ... collected 1 item
+
+tests/test_passport_e2e_audit_sinergys.py::test_passport_generation_e2e 
+================================================================================
+ЗАГРУЗКА ФАЙЛОВ ДЛЯ E2E ТЕСТА
+================================================================================
+
+📤 Загрузка: pererashod.xlsx
+   Тип ресурса: electricity
+   ✅ Batch ID: 472d922a-081a-45c7-bcf4-872dda9260d9
+   ⏳ Ожидание парсинга...
+   ✅ Парсинг завершен
+
+📤 Загрузка: gaz.xlsx
+   Тип ресурса: gas
+   ✅ Batch ID: f192f3f7-b247-4e4b-ad25-e938df3aeec9
+   ⏳ Ожидание парсинга...
+   ✅ Парсинг завершен
+
+📤 Загрузка: voda.xlsx
+   Тип ресурса: water
+   ✅ Batch ID: bb2e9573-1c88-4003-b2e4-0ecadd2370ae
+   ⏳ Ожидание парсинга...
+   ✅ Парсинг завершен
+
+📤 Загрузка: otoplenie.xlsx
+   Тип ресурса: heat
+   ✅ Batch ID: a5fcd47f-0126-4bd3-a472-ed160f2d1d22
+   ⏳ Ожидание парсинга...
+   ✅ Парсинг завершен
+
+📤 Загрузка: oborudovanie.xlsx
+   ✅ Batch ID: 55be5441-a7fa-405d-8c3f-0623bee4c830
+   ⏳ Ожидание парсинга...
+   ✅ Парсинг завершен
+
+📤 Загрузка: schetchiki.xlsx
+   ✅ Batch ID: e1f9ce34-5e7f-4f2b-bac0-bd9cd9ffb49a
+   ⏳ Ожидание парсинга...
+   ✅ Парсинг завершен
+
+📤 Загрузка: teploprovodnost.xlsx
+   ✅ Batch ID: 1f8011a4-8a38-4042-856c-7f0a6e1ace4e
+   ⏳ Ожидание парсинга...
+   ✅ Парсинг завершен
+
+✅ Всего загружено файлов: 7
+
+================================================================================
+E2E ТЕСТ ГЕНЕРАЦИИ ЭНЕРГОПАСПОРТА
+================================================================================
+Enterprise ID: 1
+Загружено batches: 7
+
+📋 Шаг 1: Проверка readiness...
+   Overall status: unknown
+   Completeness: 96.00%
+
+📋 Шаг 2: Генерация паспорта...
+   ✅ Паспорт сохранен: C:\Users\DELL\AppData\Local\Temp\tmpkd9u71jk.xlsx
+   Размер: 16951 байт
+
+📋 Шаг 3: Проверка структуры файла...
+   Всего листов: 9
+   Листы: Title, Enterprise, Energy, Equipment, Monthly, Calculations, Normatives, Measures, Summary
+   ❌ Struktura pr2: НЕ НАЙДЕН
+   ❌ Balans: НЕ НАЙДЕН
+   ✅ Equipment: Equipment
+   ❌ Nodes: НЕ НАЙДЕН
+FAILED
+
+================================== FAILURES ===================================
+________________________ test_passport_generation_e2e _________________________
+tests\test_passport_e2e_audit_sinergys.py:257: in test_passport_generation_e2e
+    assert not missing_sheets, f"Не найдены листы: {missing_sheets}"
+E   AssertionError: Не найдены листы: ['Struktura pr2', 'Balans', 'Nodes']
+E   assert not ['Struktura pr2', 'Balans', 'Nodes']
+------------------------------ Captured log call ------------------------------
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла energopasport_filled.xlsx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла otchet.docx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла energopasport.xlsx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла energopasport.xlsm. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла electro act react.xlsx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла МЕТИН ИРОДА ОТЧЕТ Финал 3.docx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла 2022-2024 electroenergiya.xlsx. Используется 'other'
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1', 'Uzel ucheta', 'Struktura pr2', 'Balans', 'Meropriyatiya', 'AggregatedData']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Лист1', 'Лист2', 'Лист3']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1640 Неподдерживаемый формат данных для агрегации
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1', 'Uzel ucheta', 'Struktura pr2', 'Balans', 'Meropriyatiya', 'AggregatedData']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1640 Неподдерживаемый формат данных для агрегации
+WARNING  utils.readiness_validator:readiness_validator.py:408 ⚠️ Режим canonical: 'off'. Попытка собрать canonical может не удаться. Рекомендуется установить EXCEL_SEMANTIC_AI_MODE=assist
+WARNING  utils.readiness_validator:readiness_validator.py:476 ⚠️ Canonical данные с оборудованием не найдены
+WARNING  utils.readiness_validator:readiness_validator.py:477    Рекомендации:
+WARNING  utils.readiness_validator:readiness_validator.py:478    1. Установите EXCEL_SEMANTIC_AI_MODE=assist для включения canonical mode
+WARNING  utils.readiness_validator:readiness_validator.py:479    2. Убедитесь, что файл оборудования загружен и обработан
+WARNING  utils.readiness_validator:readiness_validator.py:480    3. Проверьте наличие {batch_id}_equipment.json в aggregated директории
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла energopasport_filled.xlsx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла otchet.docx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла energopasport.xlsx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла energopasport.xlsm. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла electro act react.xlsx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла МЕТИН ИРОДА ОТЧЕТ Финал 3.docx. Используется 'other'
+WARNING  utils.resource_classifier:resource_classifier.py:111 Не удалось определить тип ресурса для файла 2022-2024 electroenergiya.xlsx. Используется 'other'
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1', 'Uzel ucheta', 'Struktura pr2', 'Balans', 'Meropriyatiya', 'AggregatedData']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Лист1', 'Лист2', 'Лист3']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1640 Неподдерживаемый формат данных для агрегации
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1', 'Uzel ucheta', 'Struktura pr2', 'Balans', 'Meropriyatiya', 'AggregatedData']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1640 Неподдерживаемый формат данных для агрегации
+WARNING  utils.readiness_validator:readiness_validator.py:408 ⚠️ Режим canonical: 'off'. Попытка собрать canonical может не удаться. Рекомендуется установить EXCEL_SEMANTIC_AI_MODE=assist
+WARNING  utils.readiness_validator:readiness_validator.py:476 ⚠️ Canonical данные с оборудованием не найдены
+WARNING  utils.readiness_validator:readiness_validator.py:477    Рекомендации:
+WARNING  utils.readiness_validator:readiness_validator.py:478    1. Установите EXCEL_SEMANTIC_AI_MODE=assist для включения canonical mode
+WARNING  utils.readiness_validator:readiness_validator.py:479    2. Убедитесь, что файл оборудования загружен и обработан
+WARNING  utils.readiness_validator:readiness_validator.py:480    3. Проверьте наличие {batch_id}_equipment.json в aggregated директории
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1', 'Uzel ucheta', 'Struktura pr2', 'Balans', 'Meropriyatiya', 'AggregatedData']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Лист1', 'Лист2', 'Лист3']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1640 Неподдерживаемый формат данных для агрегации
+WARNING  utils.energy_aggregator:energy_aggregator.py:1597 ⚠️ [DIAG] Лист с электроэнергией не найден. Доступные листы: ['Sheet1', 'Uzel ucheta', 'Struktura pr2', 'Balans', 'Meropriyatiya', 'AggregatedData']
+WARNING  utils.energy_aggregator:energy_aggregator.py:1640 Неподдерживаемый формат данных для агрегации
+WARNING  utils.readiness_validator:readiness_validator.py:408 ⚠️ Режим canonical: 'off'. Попытка собрать canonical может не удаться. Рекомендуется установить EXCEL_SEMANTIC_AI_MODE=assist
+WARNING  utils.readiness_validator:readiness_validator.py:476 ⚠️ Canonical данные с оборудованием не найдены
+WARNING  utils.readiness_validator:readiness_validator.py:477    Рекомендации:
+WARNING  utils.readiness_validator:readiness_validator.py:478    1. Установите EXCEL_SEMANTIC_AI_MODE=assist для включения canonical mode
+WARNING  utils.readiness_validator:readiness_validator.py:479    2. Убедитесь, что файл оборудования загружен и обработан
+WARNING  utils.readiness_validator:readiness_validator.py:480    3. Проверьте наличие {batch_id}_equipment.json в aggregated директории
+ERROR    main:main.py:2438 Ошибка генерации через fill_energy_passport: cannot access local variable 'json' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\eaip\eaip_full_skeleton\services\ingest\main.py", line 2041, in generate_energy_passport
+    envelope_data = json.loads(envelope_json_path.read_text(encoding="utf-8"))
+                    ^^^^
+UnboundLocalError: cannot access local variable 'json' where it is not associated with a value
+============================== warnings summary ===============================
+..\..\..\..\Users\DELL\AppData\Roaming\Python\Python311\site-packages\PyPDF2\__init__.py:21
+  C:\Users\DELL\AppData\Roaming\Python\Python311\site-packages\PyPDF2\__init__.py:21: DeprecationWarning: PyPDF2 is deprecated. Please move to the pypdf library instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_passport_e2e_audit_sinergys.py::test_passport_generation_e2e
+======================== 1 failed, 1 warning in 11.17s ========================

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAIP - Импорт файлов</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            background: #f8f9ff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        
+        .upload-area:hover {
+            border-color: #764ba2;
+            background: #f0f2ff;
+        }
+        
+        .upload-area.dragover {
+            border-color: #764ba2;
+            background: #e8ebff;
+            transform: scale(1.02);
+        }
+        
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        .upload-text {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .upload-hint {
+            color: #999;
+            font-size: 12px;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .file-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9ff;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .file-info.show {
+            display: block;
+        }
+        
+        .file-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .file-size {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 20px;
+        }
+        
+        button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .progress {
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .progress.show {
+            display: block;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .result.show {
+            display: block;
+        }
+        
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .result-content {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        
+        .links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📤 Импорт файлов EAIP</h1>
+        <p class="subtitle">Загрузите файл для обработки в системе</p>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Перетащите файл сюда или нажмите для выбора</div>
+            <div class="upload-hint">Поддерживаются все типы файлов</div>
+        </div>
+        
+        <input type="file" id="fileInput" />
+        
+        <div class="file-info" id="fileInfo">
+            <div class="file-name" id="fileName"></div>
+            <div class="file-size" id="fileSize"></div>
+        </div>
+        
+        <button id="uploadBtn" disabled>Загрузить файл</button>
+        
+        <div class="progress" id="progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+        
+        <div class="result" id="result">
+            <div class="result-content" id="resultContent"></div>
+        </div>
+        
+        <div class="links">
+            <a href="http://localhost:8001/docs" target="_blank">📚 API Документация</a>
+            <a href="http://localhost:3000" target="_blank">📊 Grafana</a>
+            <a href="http://localhost:9090" target="_blank">📈 Prometheus</a>
+        </div>
+    </div>
+    
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const fileSize = document.getElementById('fileSize');
+        const progress = document.getElementById('progress');
+        const progressFill = document.getElementById('progressFill');
+        const result = document.getElementById('result');
+        const resultContent = document.getElementById('resultContent');
+        
+        let selectedFile = null;
+        
+        // Click to select file
+        uploadArea.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        // Drag and drop
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFileSelect(files[0]);
+            }
+        });
+        
+        // File input change
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileSelect(e.target.files[0]);
+            }
+        });
+        
+        function handleFileSelect(file) {
+            selectedFile = file;
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            fileInfo.classList.add('show');
+            uploadBtn.disabled = false;
+            result.classList.remove('show');
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+        }
+        
+        // Upload button
+        uploadBtn.addEventListener('click', async () => {
+            if (!selectedFile) return;
+            
+            uploadBtn.disabled = true;
+            progress.classList.add('show');
+            progressFill.style.width = '0%';
+            result.classList.remove('show');
+            
+            const formData = new FormData();
+            formData.append('file', selectedFile);
+            
+            try {
+                const xhr = new XMLHttpRequest();
+                
+                xhr.upload.addEventListener('progress', (e) => {
+                    if (e.lengthComputable) {
+                        const percentComplete = (e.loaded / e.total) * 100;
+                        progressFill.style.width = percentComplete + '%';
+                    }
+                });
+                
+                xhr.addEventListener('load', () => {
+                    progressFill.style.width = '100%';
+                    
+                    if (xhr.status === 200) {
+                        const response = JSON.parse(xhr.responseText);
+                        showResult('success', `
+                            <strong>✅ Файл успешно загружен!</strong><br><br>
+                            <strong>Batch ID:</strong> ${response.batchId}<br>
+                            <strong>Файл:</strong> ${response.filename}<br>
+                            ${response.validate && response.validate.error ? 
+                                `<strong>⚠️ Валидация:</strong> ${response.validate.error}<br>` : 
+                                '<strong>✅ Валидация:</strong> Запущена успешно<br>'
+                            }
+                        `);
+                    } else {
+                        let errorMsg = 'Ошибка загрузки';
+                        try {
+                            const error = JSON.parse(xhr.responseText);
+                            errorMsg = error.detail || errorMsg;
+                        } catch (e) {
+                            errorMsg = `HTTP ${xhr.status}: ${xhr.statusText}`;
+                        }
+                        showResult('error', `<strong>❌ Ошибка:</strong> ${errorMsg}`);
+                    }
+                    
+                    uploadBtn.disabled = false;
+                });
+                
+                xhr.addEventListener('error', () => {
+                    showResult('error', '<strong>❌ Ошибка соединения</strong><br>Проверьте, что сервис ingest запущен на порту 8001');
+                    uploadBtn.disabled = false;
+                    progress.classList.remove('show');
+                });
+                
+                // Используем fetch API для лучшей поддержки CORS
+                fetch('http://localhost:8001/ingest/files', {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'cors'
+                })
+                .then(response => {
+                    progressFill.style.width = '100%';
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        return response.json().then(err => Promise.reject(err));
+                    }
+                })
+                .then(data => {
+                    showResult('success', `
+                        <strong>✅ Файл успешно загружен!</strong><br><br>
+                        <strong>Batch ID:</strong> ${data.batchId}<br>
+                        <strong>Файл:</strong> ${data.filename}<br>
+                        ${data.validate && data.validate.error ? 
+                            `<strong>⚠️ Валидация:</strong> ${data.validate.error}<br>` : 
+                            '<strong>✅ Валидация:</strong> Запущена успешно<br>'
+                        }
+                    `);
+                    uploadBtn.disabled = false;
+                    progress.classList.remove('show');
+                })
+                .catch(error => {
+                    let errorMsg = 'Ошибка загрузки';
+                    if (error.detail) {
+                        errorMsg = error.detail;
+                    } else if (error.message) {
+                        errorMsg = error.message;
+                    }
+                    showResult('error', `<strong>❌ Ошибка:</strong> ${errorMsg}<br><br>Проверьте:<br>1. Сервис ingest запущен на порту 8001<br>2. Файл не пустой<br>3. Консоль браузера для деталей (F12)`);
+                    uploadBtn.disabled = false;
+                    progress.classList.remove('show');
+                });
+                
+                // Fallback на XHR для старых браузеров
+                return;
+                
+                xhr.open('POST', 'http://localhost:8001/ingest/files');
+                xhr.send(formData);
+                
+            } catch (error) {
+                showResult('error', `<strong>❌ Ошибка:</strong> ${error.message}`);
+                uploadBtn.disabled = false;
+                progress.classList.remove('show');
+            }
+        });
+        
+        function showResult(type, content) {
+            result.className = `result show ${type}`;
+            resultContent.innerHTML = content;
+        }
+    </script>
+</body>
+</html>
+

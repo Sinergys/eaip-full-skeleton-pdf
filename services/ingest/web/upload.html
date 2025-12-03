@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EAIP · Загрузка файла</title>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 32px 16px;
+        }
+        .container {
+            background: #ffffff;
+            width: min(960px, 100%);
+            border-radius: 18px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+            padding: 32px;
+        }
+        h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+            color: #1f2937;
+        }
+        p {
+            margin: 0 0 24px;
+            color: #4b5563;
+        }
+        form {
+            display: grid;
+            gap: 18px;
+        }
+        label {
+            font-weight: 600;
+            color: #374151;
+        }
+        select,
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            font-size: 15px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        select:focus,
+        input[type="text"]:focus,
+        input[type="file"]:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+        }
+        .actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 20px rgba(79, 70, 229, 0.25);
+        }
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        .status {
+            margin-top: 16px;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            display: none;
+        }
+        .status.success {
+            display: block;
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #86efac;
+        }
+        .status.error {
+            display: block;
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+        .progress-container {
+            margin-top: 16px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            display: none;
+        }
+        .progress-container.active {
+            display: block;
+        }
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .progress-title {
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 15px;
+        }
+        .progress-percent {
+            font-weight: 700;
+            color: #6366f1;
+            font-size: 18px;
+        }
+        .progress-bar-wrapper {
+            width: 100%;
+            height: 12px;
+            background: #e5e7eb;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+            border-radius: 6px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        .progress-message {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+        .progress-stages {
+            display: grid;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .progress-stage {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #4b5563;
+        }
+        .progress-stage-icon {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            flex-shrink: 0;
+        }
+        .progress-stage-icon.pending {
+            background: #e5e7eb;
+            color: #9ca3af;
+        }
+        .progress-stage-icon.active {
+            background: #6366f1;
+            color: white;
+        }
+        .progress-stage-icon.completed {
+            background: #10b981;
+            color: white;
+        }
+        .progress-stage-icon.error {
+            background: #ef4444;
+            color: white;
+        }
+        .history-card {
+            margin-top: 32px;
+            padding: 24px;
+            border-radius: 14px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+        }
+        .history-card h2 {
+            margin: 0 0 12px;
+            font-size: 20px;
+            color: #1f2937;
+        }
+        .history-card p {
+            margin-bottom: 16px;
+        }
+        .history-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 12px;
+        }
+        .history-item {
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .history-item span {
+            font-size: 13px;
+            color: #4b5563;
+        }
+        .history-item a {
+            font-size: 13px;
+            text-decoration: none;
+            color: #4f46e5;
+            font-weight: 600;
+        }
+        .hint {
+            font-size: 13px;
+            color: #6b7280;
+        }
+        @media (max-width: 720px) {
+            .container {
+                padding: 20px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Загрузка файла</h1>
+        <p>Выберите предприятие, добавьте файл (XLSX, XLSM, DOCX, PDF или изображение) и отправьте на распознавание.</p>
+
+        <form id="uploadForm" method="post" enctype="multipart/form-data" onsubmit="return false;">
+            <div class="enterprise-field">
+                <label for="enterpriseInput">Предприятие</label>
+                <input
+                    type="text"
+                    id="enterpriseInput"
+                    name="enterprise"
+                    placeholder="Например: ООО Синергис"
+                    list="enterpriseSuggestions"
+                    autocomplete="organization"
+                    required
+                />
+                <datalist id="enterpriseSuggestions"></datalist>
+                <p class="hint">Начните вводить название — выберите из списка или добавьте новое предприятие.</p>
+            </div>
+
+            <div>
+                <label for="resourceType">Вид энергоресурса (для всех файлов или автоопределение)</label>
+                <select id="resourceType" name="resource_type">
+                    <option value="">— Автоматическое определение —</option>
+                    <option value="electricity">Электроэнергия</option>
+                    <option value="gas">Газ</option>
+                    <option value="heat">Тепловая энергия</option>
+                    <option value="water">Вода</option>
+                    <option value="fuel">Топливо и ГСМ</option>
+                    <option value="equipment">Оборудование</option>
+                    <option value="envelope">Расчет теплопотерь по зданиям</option>
+                    <option value="nodes">Узлы учета</option>
+                    <option value="other">Прочее</option>
+                </select>
+                <p class="hint">Если не указано, тип определяется автоматически по имени файла и содержимому. При множественной загрузке каждый файл может иметь свой тип.</p>
+            </div>
+
+            <div>
+                <label for="systemMode">Режим работы системы</label>
+                <select id="systemMode" name="system_mode">
+                    <option value="production">🚀 Работа (пропускать файлы без изменений)</option>
+                    <option value="debug" selected>🔧 Отладка (всегда переобрабатывать)</option>
+                </select>
+                <p class="hint">В режиме отладки все файлы переобрабатываются, даже если уже загружены. В режиме работы файлы без изменений пропускаются.</p>
+            </div>
+
+            <div>
+                <label for="fileInput">Файлы для распознавания</label>
+                <input
+                    type="file"
+                    id="fileInput"
+                    name="file"
+                    accept=".xlsx,.xlsm,.docx,.pdf,.jpg,.jpeg,.png"
+                    multiple
+                    required
+                />
+                <div id="selectedFilesList" style="margin-top: 12px; display: none;">
+                    <div style="font-size: 13px; font-weight: 600; color: #374151; margin-bottom: 8px;">Выбранные файлы:</div>
+                    <ul id="selectedFiles" style="list-style: none; padding: 0; margin: 0; display: grid; gap: 8px;"></ul>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="button" id="submitButton">Загрузить файлы</button>
+                <span class="hint">Поддерживаемые форматы: XLSX, XLSM (Excel с макросами), DOCX, PDF, JPG, PNG. Размер до 50 МБ каждый. Можно выбрать несколько файлов.</span>
+            </div>
+        </form>
+
+        <div id="status" class="status"></div>
+
+        <div id="progressContainer" class="progress-container">
+            <div class="progress-header">
+                <div class="progress-title">Обработка файла</div>
+                <div class="progress-percent" id="progressPercent">0%</div>
+            </div>
+            <div class="progress-bar-wrapper">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-message" id="progressMessage">Инициализация...</div>
+            <div class="progress-stages" id="progressStages"></div>
+            <div style="margin-top: 12px; text-align: center;">
+                <button id="cancelButton" type="button" style="background: #dc3545; display: none;">Отменить обработку</button>
+            </div>
+        </div>
+
+        <div class="history-card">
+            <h2>Последние загрузки предприятия</h2>
+            <p class="hint">Выберите предприятие, чтобы увидеть 20 последних загрузок и перейти к результатам.</p>
+            <ul id="historyList" class="history-list"></ul>
+        </div>
+    </div>
+
+    <script>
+        // Глобальная обработка необработанных Promise rejections
+        window.addEventListener('unhandledrejection', function(event) {
+            console.warn('Необработанное отклонение Promise:', event.reason);
+            // Предотвращаем вывод ошибки в консоль для известных проблем с расширениями браузера
+            if (event.reason && typeof event.reason === 'string' && 
+                event.reason.includes('message channel closed')) {
+                event.preventDefault();
+                return;
+            }
+        });
+
+        // Обработка ошибок загрузки скриптов
+        window.addEventListener('error', function(event) {
+            // Игнорируем ошибки от расширений браузера
+            if (event.message && event.message.includes('message channel closed')) {
+                event.preventDefault();
+                return false;
+            }
+        }, true);
+
+        // Ждем загрузки DOM
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("DOM загружен, инициализация обработчиков...");
+            
+            const enterpriseInput = document.getElementById("enterpriseInput");
+            const enterpriseSuggestions = document.getElementById("enterpriseSuggestions");
+            const fileInput = document.getElementById("fileInput");
+            const resourceTypeSelect = document.getElementById("resourceType");
+            const statusBox = document.getElementById("status");
+            const submitButton = document.getElementById("submitButton");
+            const uploadForm = document.getElementById("uploadForm");
+            const historyList = document.getElementById("historyList");
+            const cancelButton = document.getElementById("cancelButton");
+            const selectedFilesList = document.getElementById("selectedFilesList");
+            const selectedFiles = document.getElementById("selectedFiles");
+            
+            // Проверяем наличие элементов
+            if (!uploadForm || !submitButton || !fileInput || !enterpriseInput) {
+                console.error("Критические элементы не найдены:", {
+                    uploadForm: !!uploadForm,
+                    submitButton: !!submitButton,
+                    fileInput: !!fileInput,
+                    enterpriseInput: !!enterpriseInput
+                });
+                return;
+            }
+            
+            console.log("Все элементы найдены, инициализация...");
+            
+        // Глобальные переменные для отслеживания прогресса
+        let currentBatchId = null;
+        let progressInterval = null;
+        let uploadTasks = []; // Массив задач загрузки для множественной загрузки
+        
+        // Функция обновления прогресс-бара (доступна глобально)
+        function updateProgress(data) {
+            const progressContainer = document.getElementById("progressContainer");
+            const progressBar = document.getElementById("progressBar");
+            const progressPercent = document.getElementById("progressPercent");
+            const progressMessage = document.getElementById("progressMessage");
+            const progressStages = document.getElementById("progressStages");
+            
+            // Проверяем существование элементов перед использованием
+            if (!progressBar || !progressPercent || !progressMessage || !progressStages) {
+                console.warn("Элементы прогресс-бара недоступны");
+                return;
+            }
+            
+            // Дополнительная проверка - элементы должны быть в DOM
+            if (!progressBar.isConnected || !progressPercent.isConnected || 
+                !progressMessage.isConnected || !progressStages.isConnected) {
+                console.warn("Элементы прогресс-бара удалены из DOM");
+                return;
+            }
+            
+            try {
+                // Обновляем общий прогресс
+                const overallProgress = Math.min(100, Math.max(0, data.overall_progress || 0));
+                progressBar.style.width = `${overallProgress}%`;
+                if (progressPercent) {
+                    progressPercent.textContent = `${overallProgress}%`;
+                }
+                
+                // Обновляем сообщение
+                const currentStage = data.current_stage;
+                if (progressMessage) {
+                    if (currentStage && data.stages && data.stages[currentStage]) {
+                        const stageData = data.stages[currentStage];
+                        progressMessage.textContent = stageData.message || `Этап: ${currentStage}`;
+                    } else if (data.has_error) {
+                        progressMessage.textContent = `Ошибка: ${data.error || "Неизвестная ошибка"}`;
+                    } else {
+                        progressMessage.textContent = "Обработка файла...";
+                    }
+                }
+            } catch (e) {
+                console.error("Ошибка при обновлении прогресс-бара:", e);
+            }
+            
+            // Обновляем этапы
+            try {
+                if (!progressStages || !progressStages.isConnected) {
+                    return; // Элемент удален из DOM
+                }
+                
+                const stageNames = {
+                    upload: "Загрузка файла",
+                    validation: "Валидация",
+                    parsing: "Парсинг",
+                    ocr: "OCR распознавание",
+                    ai_analysis: "Анализ ИИ",
+                    specialized_parsing: "Специализированный парсинг",
+                    aggregation: "Агрегация данных",
+                    saving: "Сохранение",
+                    completed: "Завершено",
+                    error: "Ошибка"
+                };
+                
+                progressStages.innerHTML = "";
+                const stages = Object.keys(data.stages || {});
+                if (stages.length === 0) {
+                    // Если этапов еще нет, показываем сообщение
+                    if (progressMessage && progressMessage.isConnected) {
+                        progressMessage.textContent = "Инициализация обработки...";
+                    }
+                    return;
+                }
+                
+                stages.forEach(stageKey => {
+                    const stage = data.stages[stageKey];
+                    if (!stage || !progressStages || !progressStages.isConnected) return; // Пропускаем невалидные этапы
+                    
+                    try {
+                        const stageDiv = document.createElement("div");
+                        stageDiv.className = "progress-stage";
+                        
+                        const icon = document.createElement("div");
+                        icon.className = "progress-stage-icon";
+                        
+                        let iconClass = "pending";
+                        let iconText = "○";
+                        
+                        if (stageKey === currentStage && !data.is_completed) {
+                            iconClass = "active";
+                            iconText = "⟳";
+                        } else if (stage.progress === 100) {
+                            iconClass = "completed";
+                            iconText = "✓";
+                        } else if (data.has_error && stageKey === "error") {
+                            iconClass = "error";
+                            iconText = "✗";
+                        }
+                        
+                        icon.className = `progress-stage-icon ${iconClass}`;
+                        icon.textContent = iconText;
+                        
+                        const label = document.createElement("span");
+                        const stageName = stageNames[stageKey] || stageKey;
+                        const stageProgress = stage.progress || 0;
+                        label.textContent = `${stageName}: ${stageProgress}%`;
+                        
+                        stageDiv.appendChild(icon);
+                        stageDiv.appendChild(label);
+                        progressStages.appendChild(stageDiv);
+                    } catch (e) {
+                        console.warn(`Ошибка при создании элемента этапа ${stageKey}:`, e);
+                    }
+                });
+            } catch (e) {
+                console.error("Ошибка при обновлении этапов прогресс-бара:", e);
+            }
+        }
+        
+        // Функция автоматического определения типа ресурса по имени файла
+        function detectResourceType(filename) {
+            const name = filename.toLowerCase();
+            
+            // Энергопаспорты и готовые документы - обычно "other"
+            if (name.includes("energopasport") || name.includes("энергопаспорт") ||
+                name.includes("паспорт") || name.includes("passport")) {
+                return "other"; // Готовые паспорта - тип "other"
+            }
+            
+            // Word документы с отчетами и готовыми документами - обычно "other"
+            if (name.endsWith(".docx") || name.endsWith(".doc")) {
+                // Проверяем, содержит ли файл ключевые слова отчетов
+                if (name.includes("отчет") || name.includes("report") || 
+                    name.includes("аудит") || name.includes("audit") ||
+                    name.includes("финал") || name.includes("final")) {
+                    return "other"; // Отчеты и готовые документы - тип "other"
+                }
+                // Если это Word файл, но не отчет, пробуем определить по содержимому
+                // (будет определено на сервере при парсинге)
+                return "other";
+            }
+            
+            // Электроэнергия
+            if (name.includes("электр") || name.includes("electricity") || 
+                name.includes("эл ") || name.includes("pererashod") || 
+                name.includes("потребление") || name.includes("энерго") ||
+                name.includes("edenic") || name.includes("единиц") ||
+                name.includes("kvt") || name.includes("квт") || 
+                name.includes("единиц на") || name.includes("единицы") ||
+                name.includes("electro") || name.includes("электро") ||
+                (name.includes("act") && name.includes("react")) ||
+                name.includes("актив") || name.includes("реактив")) {
+                return "electricity";
+            }
+            // Газ
+            if (name.includes("газ") || name.includes("gaz") || name.includes("gas")) {
+                return "gas";
+            }
+            // Вода
+            if (name.includes("вода") || name.includes("voda") || name.includes("water") ||
+                name.includes("сув") || name.includes("водоснабжение")) {
+                return "water";
+            }
+            // Тепло
+            if (name.includes("отопление") || name.includes("otoplenie") || 
+                name.includes("тепло") || name.includes("heat") || 
+                name.includes("котел") || name.includes("kotel")) {
+                return "heat";
+            }
+            // Топливо
+            if (name.includes("мазут") || name.includes("mazut") || 
+                name.includes("топливо") || name.includes("fuel")) {
+                return "fuel";
+            }
+            // Уголь
+            if (name.includes("уголь") || name.includes("coal") || name.includes("ugol")) {
+                return "coal";
+            }
+            // Акты балансов (содержат данные по узлам учёта)
+            if (name.includes("реализация") || name.includes("realizatsiya") ||
+                name.includes("акт баланс") || name.includes("акт баланса") ||
+                name.includes("акт реализации") || name.includes("баланс") ||
+                name.includes("коммерческий учёт") || name.includes("коммерческий учет") ||
+                name.includes("узел учёта") || name.includes("узел учета") ||
+                name.includes("реализация нэс") || name.includes("нэс руз")) {
+                // Акты балансов - это документы с данными по узлам, но тип ресурса остается "other"
+                // для правильной обработки на сервере
+                return "other"; // Акты балансов обрабатываются отдельно на сервере
+            }
+            // Узлы учета
+            if (name.includes("узлы") || name.includes("uzly") || name.includes("nodes") ||
+                name.includes("счетчик") || name.includes("schetchiki") || 
+                name.includes("счётчик") || name.includes("metering") ||
+                name.includes("прибор")) {
+                return "nodes";
+            }
+            // Расчет теплопотерь по зданиям
+            if (name.includes("ограждающие") || name.includes("ograjdayuschie") ||
+                name.includes("envelope") || name.includes("конструкции") ||
+                name.includes("teploprovodnost") || name.includes("теплопроводность")) {
+                return "envelope";
+            }
+            // Оборудование
+            if (name.includes("оборудование") || name.includes("oborudovanie") ||
+                name.includes("equipment")) {
+                return "equipment";
+            }
+            
+            return null; // Не определен
+        }
+        
+        // Обновляем список выбранных файлов
+        fileInput.addEventListener("change", function() {
+            const files = Array.from(fileInput.files);
+            if (files.length === 0) {
+                selectedFilesList.style.display = "none";
+                return;
+            }
+            
+            selectedFilesList.style.display = "block";
+            selectedFiles.innerHTML = "";
+            
+            files.forEach((file, index) => {
+                const li = document.createElement("li");
+                li.style.cssText = "padding: 8px 12px; border-radius: 8px; background: #f3f4f6; display: flex; justify-content: space-between; align-items: center; gap: 12px;";
+                
+                const fileInfo = document.createElement("span");
+                fileInfo.style.cssText = "font-size: 13px; color: #4b5563; flex: 1;";
+                const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
+                
+                // Определяем тип ресурса для этого файла
+                const detectedType = detectResourceType(file.name);
+                const resourceTypeLabel = detectedType ? 
+                    resourceTypeSelect.querySelector(`option[value="${detectedType}"]`)?.textContent || detectedType :
+                    "❓ Не определен";
+                
+                fileInfo.textContent = `${index + 1}. ${file.name} (${fileSizeMB} МБ)`;
+                
+                const typeLabel = document.createElement("span");
+                typeLabel.style.cssText = "font-size: 11px; color: #6366f1; font-weight: 600; padding: 2px 8px; border-radius: 4px; background: #e0e7ff;";
+                typeLabel.textContent = resourceTypeLabel;
+                
+                li.appendChild(fileInfo);
+                li.appendChild(typeLabel);
+                selectedFiles.appendChild(li);
+            });
+            
+            submitButton.textContent = files.length > 1 ? `Загрузить ${files.length} файлов` : "Загрузить файл";
+        });
+
+        async function fetchJSON(url, options) {
+            try {
+                console.log(`[DEBUG] Запрос к ${url}`, options);
+                const response = await fetch(url, options);
+                console.log(`[DEBUG] Ответ получен:`, {
+                    status: response.status,
+                    statusText: response.statusText,
+                    ok: response.ok,
+                    headers: Object.fromEntries(response.headers.entries())
+                });
+                
+                if (!response.ok) {
+                    const text = await response.text();
+                    console.error(`[DEBUG] Ошибка ответа:`, text);
+                    let detail = text;
+                    try {
+                        const data = JSON.parse(text);
+                        detail = data.detail || JSON.stringify(data);
+                    } catch (_) {
+                        /* ignore */
+                    }
+                    throw new Error(`HTTP ${response.status}: ${detail}`);
+                }
+                const jsonData = await response.json();
+                console.log(`[DEBUG] JSON ответ получен:`, jsonData);
+                return jsonData;
+            } catch (error) {
+                console.error(`[DEBUG] Ошибка fetchJSON:`, error);
+                // Обрабатываем ошибки сети и парсинга
+                if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+                    const detailedError = new Error('Ошибка соединения с сервером. Проверьте:\n1. Запущен ли сервер (порт 8001)?\n2. Правильный ли URL?\n3. Нет ли блокировки файрволом?');
+                    detailedError.originalError = error;
+                    throw detailedError;
+                }
+                throw error;
+            }
+        }
+
+        async function loadEnterprises() {
+            try {
+                const data = await fetchJSON("/api/enterprises");
+                enterpriseSuggestions.innerHTML = "";
+                (data.items || []).forEach((item) => {
+                    const option = document.createElement("option");
+                    option.value = item.name;
+                    option.dataset.id = item.id;
+                    enterpriseSuggestions.appendChild(option);
+                });
+            } catch (error) {
+                console.error("Не удалось загрузить список предприятий", error);
+                showStatus(`Не удалось загрузить предприятия: ${error.message}`, false);
+            }
+        }
+
+        async function loadHistory(enterpriseId) {
+            historyList.innerHTML = "";
+            if (!enterpriseId) {
+                return;
+            }
+            try {
+                const data = await fetchJSON(`/api/enterprises/${enterpriseId}/uploads`);
+                const uploads = data.uploads || [];
+                if (uploads.length === 0) {
+                    const li = document.createElement("li");
+                    li.className = "history-item";
+                    li.innerHTML = '<span>Пока нет загруженных файлов.</span>';
+                    historyList.appendChild(li);
+                    return;
+                }
+                uploads.forEach((upload) => {
+                    const li = document.createElement("li");
+                    li.className = "history-item";
+
+                    const infoSpan = document.createElement("span");
+                    let infoText = `${upload.filename} · ${upload.status} · ${new Date(upload.created_at).toLocaleString()}`;
+                    const summary = upload.parsing_summary;
+                    if (summary && summary.resource_type_label) {
+                        infoText = `${summary.resource_type_label} · ${infoText}`;
+                    }
+                    infoSpan.textContent = infoText;
+
+                    const link = document.createElement("a");
+                    link.href = `/web/results?batchId=${encodeURIComponent(upload.batch_id)}`;
+                    link.textContent = "Открыть";
+
+                    li.appendChild(infoSpan);
+                    li.appendChild(link);
+                    historyList.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Не удалось загрузить историю", error);
+                showStatus(`Не удалось загрузить историю: ${error.message}`, false);
+            }
+        }
+
+        function showStatus(message, isSuccess) {
+            statusBox.textContent = message;
+            statusBox.className = "status " + (isSuccess ? "success" : "error");
+        }
+
+        enterpriseInput.addEventListener("change", () => {
+            const value = enterpriseInput.value.trim();
+            const suggestion = Array.from(enterpriseSuggestions.options).find((opt) => opt.value === value);
+            if (suggestion && suggestion.dataset.id) {
+                loadHistory(suggestion.dataset.id);
+            } else {
+                historyList.innerHTML = "";
+            }
+        });
+
+        // Функция для выполнения загрузки (выносим в отдельную функцию для переиспользования)
+        async function handleUpload() {
+            if (submitButton.disabled) {
+                console.log("Кнопка уже отключена, игнорируем отправку");
+                return;
+            }
+
+            try {
+                const enterpriseNameInput = enterpriseInput.value.trim();
+                const files = Array.from(fileInput.files);
+                const resourceType = resourceTypeSelect.value || "";
+
+                console.log("=== НАЧАЛО ЗАГРУЗКИ ===", {
+                    enterprise: enterpriseNameInput,
+                    filesCount: files.length,
+                    resourceType: resourceType,
+                    files: files.map(f => f.name)
+                });
+
+                if (!enterpriseNameInput) {
+                    showStatus("Укажите название предприятия", false);
+                    alert("Пожалуйста, укажите название предприятия!");
+                    return;
+                }
+                if (files.length === 0) {
+                    showStatus("Выберите файлы для загрузки", false);
+                    alert("Пожалуйста, выберите файлы для загрузки!");
+                    return;
+                }
+
+                submitButton.disabled = true;
+                submitButton.textContent = "Загрузка...";
+                
+                // Определяем enterprise_id
+                const suggestion = Array.from(enterpriseSuggestions.options).find((opt) => opt.value === enterpriseNameInput);
+                const enterpriseId = suggestion && suggestion.dataset.id ? suggestion.dataset.id : null;
+                const enterpriseName = enterpriseId ? null : enterpriseNameInput;
+
+                console.log("Определенные параметры:", {
+                    enterpriseId: enterpriseId,
+                    enterpriseName: enterpriseName,
+                    filesCount: files.length
+                });
+
+                // Если один файл, используем старую логику
+                if (files.length === 1) {
+                    await uploadSingleFile(files[0], enterpriseId, enterpriseName, resourceType);
+                } else {
+                    // Множественная загрузка
+                    await uploadMultipleFiles(files, enterpriseId, enterpriseName, resourceType);
+                }
+            } catch (error) {
+                console.error("Критическая ошибка при обработке загрузки:", error);
+                showStatus(`Ошибка: ${error.message}`, false);
+                alert(`Ошибка: ${error.message}`);
+                submitButton.disabled = false;
+                submitButton.textContent = "Загрузить файлы";
+            }
+        }
+        
+        // Обработчик отправки формы (на случай, если форма отправится стандартным способом)
+        uploadForm.addEventListener("submit", async function(event) {
+            console.log("=== СОБЫТИЕ SUBMIT ФОРМЫ ===");
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+            
+            try {
+                await handleUpload();
+            } catch (error) {
+                console.error("Ошибка при отправке формы:", error);
+                showStatus(`Ошибка: ${error.message || 'Неизвестная ошибка'}`, false);
+            }
+            return false;
+        }, false);
+        
+        async function uploadSingleFile(file, enterpriseId, enterpriseName, resourceType) {
+            // Определяем тип ресурса для файла
+            let fileResourceType = resourceType || detectResourceType(file.name) || "other";
+            
+            console.log(`Загрузка одного файла: ${file.name}, тип: ${fileResourceType}`);
+            
+            const formData = new FormData();
+            formData.append("file", file);
+            
+            // КРИТИЧЕСКИ ВАЖНО: проверяем, что enterpriseId или enterpriseName не пустые
+            if (enterpriseId) {
+                formData.append("enterprise_id", String(enterpriseId));
+                console.log(`Добавлен enterprise_id в FormData: ${enterpriseId}`);
+            } else if (enterpriseName && enterpriseName.trim()) {
+                formData.append("enterprise_name", enterpriseName.trim());
+                console.log(`Добавлен enterprise_name в FormData: ${enterpriseName}`);
+            } else {
+                throw new Error("Предприятие не указано! Проверьте поле 'Предприятие'.");
+            }
+            
+            formData.append("resource_type", fileResourceType);
+            console.log(`Добавлен resource_type в FormData: ${fileResourceType}`);
+            
+            // Добавляем режим работы системы
+            const systemMode = document.getElementById("systemMode").value;
+            formData.append("system_mode", systemMode);
+            console.log(`Добавлен system_mode в FormData: ${systemMode}`);
+
+            showStatus(`Загрузка файла: ${file.name}...`, true);
+            
+            // Показываем прогресс-бар
+            const progressContainer = document.getElementById("progressContainer");
+            const progressBar = document.getElementById("progressBar");
+            const progressPercent = document.getElementById("progressPercent");
+            const progressMessage = document.getElementById("progressMessage");
+            const progressStages = document.getElementById("progressStages");
+            
+            // Проверяем, что все элементы существуют
+            if (!progressContainer || !progressBar || !progressPercent || !progressMessage || !progressStages) {
+                console.error("Элементы прогресс-бара не найдены в DOM");
+                showStatus("Ошибка: элементы интерфейса не найдены", false);
+                submitButton.disabled = false;
+                return;
+            }
+            
+            progressContainer.classList.add("active");
+            
+            // Показываем кнопку отмены
+            if (cancelButton) {
+                cancelButton.style.display = "block";
+                cancelButton.disabled = false;
+            }
+            
+            // Очищаем предыдущий интервал, если он есть
+            if (progressInterval) {
+                clearInterval(progressInterval);
+                progressInterval = null;
+            }
+
+            try {
+                await processUpload(formData, file.name);
+            } catch (error) {
+                console.error("Ошибка загрузки:", error);
+                showStatus(`Ошибка загрузки файла ${file.name}: ${error.message}`, false);
+                submitButton.disabled = false;
+            }
+        }
+        
+        async function uploadMultipleFiles(files, enterpriseId, enterpriseName, resourceType) {
+            console.log(`Начало множественной загрузки ${files.length} файлов`);
+            
+            try {
+                showStatus(`Загрузка ${files.length} файлов...`, true);
+                
+                // Показываем контейнер для множественной загрузки
+                let multiUploadContainer = document.getElementById("multiUploadContainer");
+                if (!multiUploadContainer) {
+                    // Создаем контейнер для отображения прогресса множественной загрузки
+                    multiUploadContainer = document.createElement("div");
+                    multiUploadContainer.id = "multiUploadContainer";
+                    multiUploadContainer.style.cssText = "margin-top: 24px; padding: 20px; border-radius: 12px; background: #f9fafb; border: 1px solid #e5e7eb;";
+                    multiUploadContainer.innerHTML = `
+                        <h3 style="margin: 0 0 16px; font-size: 18px; color: #1f2937;">Загрузка файлов</h3>
+                        <div id="multiUploadProgress" style="display: grid; gap: 12px;"></div>
+                    `;
+                    uploadForm.parentNode.insertBefore(multiUploadContainer, uploadForm.nextSibling);
+                }
+                
+                const multiUploadProgress = document.getElementById("multiUploadProgress");
+                if (!multiUploadProgress) {
+                    throw new Error("Не удалось создать контейнер прогресса");
+                }
+                
+                multiUploadProgress.innerHTML = "";
+                
+                // Создаем элементы прогресса для каждого файла
+                const fileProgress = {};
+                files.forEach((file, index) => {
+                    const fileItem = document.createElement("div");
+                    fileItem.style.cssText = "padding: 12px; border-radius: 8px; background: #ffffff; border: 1px solid #e5e7eb;";
+                    fileItem.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-size: 14px; font-weight: 600; color: #374151;">${index + 1}. ${file.name}</span>
+                            <span id="fileStatus_${index}" style="font-size: 12px; color: #6b7280;">Ожидание...</span>
+                        </div>
+                        <div style="width: 100%; height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden;">
+                            <div id="fileProgress_${index}" style="height: 100%; background: #6366f1; width: 0%; transition: width 0.3s;"></div>
+                        </div>
+                    `;
+                    multiUploadProgress.appendChild(fileItem);
+                    
+                    fileProgress[index] = {
+                        status: document.getElementById(`fileStatus_${index}`),
+                        progress: document.getElementById(`fileProgress_${index}`),
+                        item: fileItem
+                    };
+                });
+                
+                // Загружаем файлы последовательно
+                let successCount = 0;
+                let errorCount = 0;
+                const batchIds = [];
+                
+                console.log(`Начинаем загрузку ${files.length} файлов последовательно`);
+                
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    console.log(`Загрузка файла ${i + 1}/${files.length}: ${file.name}`);
+                    
+                    fileProgress[i].status.textContent = "Загрузка...";
+                    fileProgress[i].progress.style.width = "10%";
+                    
+                    try {
+                        // Определяем тип ресурса для этого файла
+                        let fileResourceType = resourceType || detectResourceType(file.name) || "other";
+                        
+                        console.log(`Определен тип ресурса для ${file.name}: ${fileResourceType}`);
+                        
+                        // Обновляем статус с указанием типа
+                        fileProgress[i].status.textContent = `Загрузка (${fileResourceType})...`;
+                        
+                        const formData = new FormData();
+                        formData.append("file", file);
+                        
+                        // КРИТИЧЕСКИ ВАЖНО: проверяем, что enterpriseId или enterpriseName не пустые
+                        if (enterpriseId) {
+                            formData.append("enterprise_id", String(enterpriseId));
+                            console.log(`Добавлен enterprise_id в FormData: ${enterpriseId}`);
+                        } else if (enterpriseName && enterpriseName.trim()) {
+                            formData.append("enterprise_name", enterpriseName.trim());
+                            console.log(`Добавлен enterprise_name в FormData: ${enterpriseName}`);
+                        } else {
+                            throw new Error("Предприятие не указано! Проверьте поле 'Предприятие'.");
+                        }
+                        
+                        formData.append("resource_type", fileResourceType);
+                        console.log(`Добавлен resource_type в FormData: ${fileResourceType}`);
+                        
+                        // Добавляем режим работы системы
+                        const systemMode = document.getElementById("systemMode").value;
+                        formData.append("system_mode", systemMode);
+                        console.log(`Добавлен system_mode в FormData: ${systemMode}`);
+                        
+                        // Логируем содержимое FormData для отладки
+                        console.log("FormData создан для файла:", file.name);
+                        for (let pair of formData.entries()) {
+                            console.log(`  ${pair[0]}: ${pair[1]}`);
+                        }
+                        
+                        console.log(`Отправка запроса для ${file.name}...`);
+                        const response = await fetchJSON("/web/upload", { method: "POST", body: formData });
+                        
+                        if (response.batch_id) {
+                            batchIds.push(response.batch_id);
+                            console.log(`Файл ${file.name} загружен успешно, batch_id: ${response.batch_id}`);
+                        }
+                        
+                        successCount++;
+                        fileProgress[i].status.textContent = `✓ Загружено (${fileResourceType})`;
+                        fileProgress[i].status.style.color = "#10b981";
+                        fileProgress[i].progress.style.width = "100%";
+                        fileProgress[i].progress.style.background = "#10b981";
+                    } catch (error) {
+                        errorCount++;
+                        console.error(`Ошибка загрузки файла ${file.name}:`, error);
+                        const errorMsg = error.message || String(error);
+                        fileProgress[i].status.textContent = `✗ Ошибка: ${errorMsg.substring(0, 40)}...`;
+                        fileProgress[i].status.style.color = "#ef4444";
+                        fileProgress[i].progress.style.width = "100%";
+                        fileProgress[i].progress.style.background = "#ef4444";
+                        fileProgress[i].item.style.borderColor = "#ef4444";
+                    }
+                }
+                
+                console.log(`Загрузка завершена: ${successCount} успешно, ${errorCount} с ошибками`);
+                
+                // Показываем итоговый статус
+                showStatus(
+                    `Загрузка завершена: ${successCount} успешно, ${errorCount} с ошибками`,
+                    errorCount === 0
+                );
+                
+                // Обновляем историю
+                const suggestion = Array.from(enterpriseSuggestions.options).find((opt) => opt.value === enterpriseInput.value.trim());
+                const finalEnterpriseId = suggestion && suggestion.dataset.id ? suggestion.dataset.id : null;
+                if (finalEnterpriseId) {
+                    await loadHistory(finalEnterpriseId);
+                }
+                
+                submitButton.disabled = false;
+                submitButton.textContent = "Загрузить файлы";
+                
+                // Очищаем поле выбора файлов после успешной загрузки
+                if (errorCount === 0) {
+                    fileInput.value = "";
+                    selectedFilesList.style.display = "none";
+                    
+                    // Показываем кнопку "Далее" для перехода к генерации паспорта
+                    let nextButton = document.getElementById("nextToGenerationButton");
+                    if (!nextButton) {
+                        nextButton = document.createElement("button");
+                        nextButton.id = "nextToGenerationButton";
+                        nextButton.type = "button";
+                        nextButton.style.cssText = `
+                            margin-top: 20px;
+                            padding: 14px 28px;
+                            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+                            color: #ffffff;
+                            border: none;
+                            border-radius: 10px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            cursor: pointer;
+                            transition: transform 0.2s ease, box-shadow 0.2s ease;
+                            width: 100%;
+                            max-width: 300px;
+                        `;
+                        nextButton.textContent = "Далее → Генерация паспорта";
+                        
+                        nextButton.addEventListener("mouseenter", function() {
+                            this.style.transform = "translateY(-1px)";
+                            this.style.boxShadow = "0 12px 20px rgba(16, 185, 129, 0.25)";
+                        });
+                        
+                        nextButton.addEventListener("mouseleave", function() {
+                            this.style.transform = "translateY(0)";
+                            this.style.boxShadow = "none";
+                        });
+                        
+                        // Добавляем кнопку после контейнера множественной загрузки
+                        if (multiUploadContainer) {
+                            multiUploadContainer.appendChild(nextButton);
+                        } else {
+                            // Если контейнера нет, создаем его или добавляем после формы
+                            const container = document.createElement("div");
+                            container.style.cssText = "margin-top: 24px; text-align: center;";
+                            container.appendChild(nextButton);
+                            uploadForm.parentNode.insertBefore(container, uploadForm.nextSibling);
+                        }
+                    }
+                    
+                    // Обработчик кнопки "Далее"
+                    nextButton.onclick = function() {
+                        // Используем последний загруженный batchId (самый свежий)
+                        if (batchIds.length > 0) {
+                            const lastBatchId = batchIds[batchIds.length - 1];
+                            console.log(`Переход к результатам с batchId: ${lastBatchId}`);
+                            window.location.href = `/web/results?batchId=${encodeURIComponent(lastBatchId)}`;
+                        } else {
+                            alert("Не удалось определить параметры для перехода. Пожалуйста, выберите файл из списка загрузок ниже.");
+                        }
+                    };
+                    
+                    nextButton.style.display = "block";
+                } else {
+                    // Скрываем кнопку при ошибках
+                    const nextButton = document.getElementById("nextToGenerationButton");
+                    if (nextButton) {
+                        nextButton.style.display = "none";
+                    }
+                }
+            } catch (error) {
+                console.error("Критическая ошибка при множественной загрузке:", error);
+                showStatus(`Критическая ошибка: ${error.message}`, false);
+                submitButton.disabled = false;
+                submitButton.textContent = "Загрузить файлы";
+            }
+        }
+        
+        async function processUpload(formData, fileName) {
+            const progressContainer = document.getElementById("progressContainer");
+            const progressBar = document.getElementById("progressBar");
+            const progressPercent = document.getElementById("progressPercent");
+            const progressMessage = document.getElementById("progressMessage");
+            const progressStages = document.getElementById("progressStages");
+            
+            progressContainer.classList.add("active");
+            if (cancelButton) {
+                cancelButton.style.display = "block";
+                cancelButton.disabled = false;
+            }
+            
+            if (progressInterval) {
+                clearInterval(progressInterval);
+                progressInterval = null;
+            }
+            
+            try {
+                const response = await fetchJSON("/web/upload", { method: "POST", body: formData });
+                const batchId = response.batch_id;
+                currentBatchId = batchId;
+                
+                if (cancelButton && batchId) {
+                    cancelButton.dataset.batchId = batchId;
+                }
+                
+                // Если это дубликат, обрабатываем
+                if (response.duplicate) {
+                    if (progressContainer) {
+                        progressContainer.classList.add("active");
+                    }
+                    if (progressBar && progressPercent && progressMessage) {
+                        progressBar.style.width = "100%";
+                        progressPercent.textContent = "100%";
+                        progressMessage.textContent = "Файл уже был загружен ранее. Перенаправление...";
+                    }
+                    setTimeout(() => {
+                        if (progressContainer) {
+                            progressContainer.classList.remove("active");
+                        }
+                        if (cancelButton) {
+                            cancelButton.style.display = "none";
+                        }
+                        window.location.href = `/web/results?batchId=${encodeURIComponent(batchId)}`;
+                    }, 1500);
+                    return;
+                }
+                
+                await loadEnterprises();
+                const enterpriseId = response.enterprise?.id;
+                const enterpriseName = response.enterprise?.name || enterpriseInput.value.trim();
+                enterpriseInput.value = enterpriseName;
+                if (enterpriseId) {
+                    await loadHistory(enterpriseId);
+                } else {
+                    const newSuggestion = Array.from(enterpriseSuggestions.options).find((opt) => opt.value === enterpriseName);
+                    if (newSuggestion && newSuggestion.dataset.id) {
+                        await loadHistory(newSuggestion.dataset.id);
+                    }
+                }
+                
+                // Начинаем опрос прогресса с retry логикой
+                const MAX_RETRIES = 10; // Максимум 10 попыток при ошибках
+                let consecutiveErrors = 0;
+                
+                // Используем глобальную переменную currentBatchId
+                progressInterval = setInterval(async () => {
+                    try {
+                        // Проверяем, что элементы все еще существуют
+                        if (!progressContainer || !progressBar || !progressPercent || !progressMessage || !progressStages) {
+                            console.warn("Элементы прогресс-бара были удалены из DOM, останавливаем опрос");
+                            clearInterval(progressInterval);
+                            progressInterval = null;
+                            return;
+                        }
+                        
+                        // Используем currentBatchId вместо локальной переменной batchId
+                        if (!currentBatchId) {
+                            console.warn("Batch ID не найден, останавливаем опрос");
+                            clearInterval(progressInterval);
+                            progressInterval = null;
+                            return;
+                        }
+                        
+                        const progressData = await fetchJSON(`/api/progress/${currentBatchId}`);
+                        consecutiveErrors = 0; // Сбрасываем счетчик ошибок при успехе
+                        
+                        // Логируем для отладки
+                        console.log("Прогресс обновлен:", {
+                            overall_progress: progressData.overall_progress,
+                            current_stage: progressData.current_stage,
+                            is_completed: progressData.is_completed,
+                            is_cancelled: progressData.is_cancelled
+                        });
+                        
+                        updateProgress(progressData);
+                        
+                        // Если обработка завершена или отменена, останавливаем опрос
+                        if (progressData.is_completed || progressData.has_error || progressData.is_cancelled) {
+                            clearInterval(progressInterval);
+                            progressInterval = null;
+                            if (progressContainer) {
+                                progressContainer.classList.remove("active");
+                            }
+                            if (cancelButton) {
+                                cancelButton.style.display = "none";
+                            }
+                            if (progressData.is_cancelled) {
+                                showStatus("Обработка отменена пользователем", false);
+                            } else if (progressData.has_error) {
+                                showStatus(`Ошибка обработки: ${progressData.error}`, false);
+                            } else {
+                                showStatus("Файл обработан успешно. Перенаправление...", true);
+                                setTimeout(() => {
+                                    window.location.href = `/web/results?batchId=${encodeURIComponent(currentBatchId)}`;
+                                }, 1000);
+                            }
+                        }
+                    } catch (error) {
+                        consecutiveErrors++;
+                        console.warn(`Не удалось получить прогресс (попытка ${consecutiveErrors}):`, error);
+                        
+                        // Если много ошибок подряд, останавливаем опрос
+                        if (consecutiveErrors >= MAX_RETRIES) {
+                            clearInterval(progressInterval);
+                            progressInterval = null;
+                            if (progressContainer) {
+                                progressContainer.classList.remove("active");
+                            }
+                            if (cancelButton) {
+                                cancelButton.style.display = "none";
+                            }
+                            showStatus("Не удалось отследить прогресс обработки. Проверьте результаты позже.", false);
+                            // Показываем ссылку на результаты
+                            setTimeout(() => {
+                                if (currentBatchId) {
+                                    window.location.href = `/web/results?batchId=${encodeURIComponent(currentBatchId)}`;
+                                }
+                            }, 3000);
+                        } else {
+                            // Показываем предупреждение после 3 ошибок
+                            if (consecutiveErrors === 3 && progressMessage) {
+                                try {
+                                    progressMessage.textContent = "Проблемы с соединением. Продолжаю попытки...";
+                                } catch (e) {
+                                    console.warn("Не удалось обновить сообщение прогресса:", e);
+                                }
+                            }
+                        }
+                    }
+                }, 1000); // Опрашиваем каждую секунду
+            } catch (error) {
+                console.error("Ошибка при загрузке", error);
+                console.error("Детали ошибки:", {
+                    name: error.name,
+                    message: error.message,
+                    stack: error.stack,
+                    originalError: error.originalError
+                });
+                
+                if (progressInterval) {
+                    clearInterval(progressInterval);
+                    progressInterval = null;
+                }
+                if (progressContainer) {
+                    progressContainer.classList.remove("active");
+                }
+                if (cancelButton) {
+                    cancelButton.style.display = "none";
+                }
+                currentBatchId = null;
+                
+                // Детальное сообщение об ошибке
+                let errorMessage = `Ошибка: ${error.message}`;
+                if (error.message.includes('Failed to fetch') || error.message.includes('соединения')) {
+                    errorMessage = `❌ Не удалось подключиться к серверу.\n\n` +
+                        `Возможные причины:\n` +
+                        `1. Сервер не запущен (проверьте порт 8001)\n` +
+                        `2. Неправильный URL\n` +
+                        `3. Блокировка файрволом\n\n` +
+                        `Проверьте консоль браузера (F12) для деталей.`;
+                } else if (error.message.includes('HTTP 400')) {
+                    errorMessage = `❌ Ошибка валидации файла: ${error.message}\n\n` +
+                        `Проверьте:\n` +
+                        `- Формат файла (поддерживаются: .xlsx, .xlsm, .docx, .pdf, .jpg, .png)\n` +
+                        `- Размер файла (максимум 50 МБ)\n` +
+                        `- Целостность файла`;
+                } else if (error.message.includes('HTTP 500')) {
+                    errorMessage = `❌ Ошибка сервера: ${error.message}\n\n` +
+                        `Проверьте логи сервера для деталей.`;
+                }
+                
+                showStatus(errorMessage, false);
+                alert(errorMessage); // Показываем alert для важных ошибок
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = "Загрузить файлы";
+            }
+        }
+        
+        // Обработчик кнопки отмены
+        if (cancelButton) {
+            cancelButton.addEventListener("click", async () => {
+                const batchId = cancelButton.dataset.batchId || currentBatchId;
+                if (!batchId) {
+                    console.warn("Batch ID не найден для отмены");
+                    return;
+                }
+                
+                cancelButton.disabled = true;
+                cancelButton.textContent = "Отмена...";
+                
+                try {
+                    const response = await fetch(`/web/upload/${batchId}/cancel`, {
+                        method: "POST"
+                    });
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (data.cancelled) {
+                            showStatus("Обработка отменена", false);
+                            // Останавливаем опрос прогресса
+                            if (progressInterval) {
+                                clearInterval(progressInterval);
+                                progressInterval = null;
+                            }
+                            const progressContainer = document.getElementById("progressContainer");
+                            if (progressContainer) {
+                                progressContainer.classList.remove("active");
+                            }
+                            cancelButton.style.display = "none";
+                            currentBatchId = null;
+                        }
+                    } else {
+                        const error = await response.json().catch(() => ({ detail: response.statusText }));
+                        showStatus(`Ошибка отмены: ${error.detail || "Неизвестная ошибка"}`, false);
+                        cancelButton.disabled = false;
+                        cancelButton.textContent = "Отменить обработку";
+                    }
+                } catch (error) {
+                    console.error("Ошибка при отмене:", error);
+                    showStatus(`Ошибка: ${error.message}`, false);
+                    cancelButton.disabled = false;
+                    cancelButton.textContent = "Отменить обработку";
+                }
+            });
+        }
+
+        loadEnterprises().then(() => {
+            const value = enterpriseInput.value.trim();
+            const suggestion = Array.from(enterpriseSuggestions.options).find((opt) => opt.value === value);
+            if (suggestion && suggestion.dataset.id) {
+                loadHistory(suggestion.dataset.id);
+            }
+        });
+        
+        // Добавляем обработчик на кнопку (основной способ)
+        if (!submitButton) {
+            console.error("КРИТИЧЕСКАЯ ОШИБКА: submitButton не найден!");
+            alert("Ошибка: кнопка загрузки не найдена. Перезагрузите страницу.");
+            } else {
+                console.log("Кнопка найдена, добавляем обработчик...");
+                
+                // Используем только один обработчик для избежания дублирования
+                const handleButtonClick = async function(event) {
+                    console.log("=== КНОПКА НАЖАТА ===");
+                    event.preventDefault();
+                    event.stopPropagation();
+                    event.stopImmediatePropagation();
+                    
+                    try {
+                        await handleUpload();
+                    } catch (error) {
+                        console.error("Ошибка при загрузке:", error);
+                        showStatus(`Ошибка: ${error.message || 'Неизвестная ошибка'}`, false);
+                    }
+                };
+                
+                submitButton.addEventListener("click", handleButtonClick, false);
+                console.log("Обработчик кнопки добавлен успешно");
+            }
+        
+        console.log("Обработчики событий добавлены успешно");
+        
+        }); // Конец DOMContentLoaded
+    </script>
+</body>
+</html>
+

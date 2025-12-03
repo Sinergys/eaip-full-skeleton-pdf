@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EAIP · Загруженные файлы</title>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 32px 16px;
+        }
+        .container {
+            background: #ffffff;
+            width: min(1200px, 100%);
+            margin: 0 auto;
+            border-radius: 18px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+            padding: 32px;
+        }
+        h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+            color: #1f2937;
+        }
+        .subtitle {
+            margin: 0 0 24px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        select {
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            font-size: 14px;
+            min-width: 200px;
+        }
+        .stats {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        .stat-card {
+            flex: 1;
+            min-width: 150px;
+            padding: 16px;
+            border-radius: 12px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+        }
+        .stat-card .label {
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        .stat-card .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .files-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        .files-table th {
+            text-align: left;
+            padding: 12px;
+            background: #f9fafb;
+            border-bottom: 2px solid #e5e7eb;
+            font-weight: 600;
+            font-size: 13px;
+            color: #374151;
+        }
+        .files-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 14px;
+        }
+        .files-table tr:hover {
+            background: #f9fafb;
+        }
+        .filename {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .file-type {
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .file-type.excel {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .file-type.word {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .file-type.pdf {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .file-type.image {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .status {
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .status.success {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .status.partial {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .confidence {
+            font-size: 12px;
+            color: #6b7280;
+        }
+        .confidence.high {
+            color: #10b981;
+            font-weight: 600;
+        }
+        .confidence.medium {
+            color: #f59e0b;
+            font-weight: 600;
+        }
+        .confidence.low {
+            color: #ef4444;
+            font-weight: 600;
+        }
+        .actions {
+            display: flex;
+            gap: 8px;
+        }
+        .btn {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: none;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #6366f1;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #4f46e5;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+        }
+        .error {
+            padding: 16px;
+            border-radius: 8px;
+            background: #fee2e2;
+            color: #991b1b;
+            margin-bottom: 16px;
+        }
+        .nav-links {
+            margin-bottom: 24px;
+            display: flex;
+            gap: 12px;
+        }
+        .nav-links a {
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            background: #f3f4f6;
+            color: #374151;
+        }
+        .nav-links a:hover {
+            background: #e5e7eb;
+        }
+        .nav-links a.active {
+            background: #6366f1;
+            color: white;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 24px;
+            padding: 16px;
+        }
+        .pagination button {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+            background: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .pagination button:hover:not(:disabled) {
+            background: #f3f4f6;
+        }
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .pagination .page-info {
+            padding: 8px 16px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📁 Загруженные файлы</h1>
+        <p class="subtitle">Просмотр всех загруженных файлов в системе</p>
+
+        <div class="nav-links">
+            <a href="/web/upload.html">📤 Загрузить файлы</a>
+            <a href="/web/files.html" class="active">📁 Список файлов</a>
+        </div>
+
+        <div class="controls">
+            <select id="enterpriseSelect">
+                <option value="">Загрузка предприятий...</option>
+            </select>
+            <button class="btn btn-primary" onclick="loadFiles(1)">🔄 Обновить</button>
+        </div>
+
+        <div id="stats" class="stats" style="display: none;">
+            <div class="stat-card">
+                <div class="label">Всего файлов</div>
+                <div class="value" id="totalFiles">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Успешно</div>
+                <div class="value" id="successFiles" style="color: #10b981;">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">С ошибками</div>
+                <div class="value" id="errorFiles" style="color: #ef4444;">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">С routing_map</div>
+                <div class="value" id="routingFiles" style="color: #6366f1;">0</div>
+            </div>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="loading" class="loading">Загрузка файлов...</div>
+
+        <div id="filesContainer" style="display: none;">
+            <table class="files-table">
+                <thead>
+                    <tr>
+                        <th>Файл</th>
+                        <th>Тип</th>
+                        <th>Размер</th>
+                        <th>Статус</th>
+                        <th>Тип документа</th>
+                        <th>Ресурс</th>
+                        <th>Уверенность</th>
+                        <th>Дата загрузки</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody id="filesTableBody">
+                </tbody>
+            </table>
+            <div class="pagination" id="pagination" style="display: none;">
+                <button id="prevPage" onclick="changePage(-1)">← Назад</button>
+                <span class="page-info" id="pageInfo">Страница 1 из 1</span>
+                <button id="nextPage" onclick="changePage(1)">Вперед →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentEnterpriseId = null;
+        let currentPage = 1;
+        const pageSize = 50; // Файлов на странице
+        let totalFiles = 0;
+
+        // Загрузка списка предприятий
+        async function loadEnterprises() {
+            try {
+                const response = await fetch('/api/enterprises');
+                const data = await response.json();
+                const select = document.getElementById('enterpriseSelect');
+                select.innerHTML = '<option value="">Выберите предприятие...</option>';
+                
+                data.items.forEach(enterprise => {
+                    const option = document.createElement('option');
+                    option.value = enterprise.id;
+                    option.textContent = enterprise.name;
+                    select.appendChild(option);
+                });
+
+                // Если есть только одно предприятие, выбираем его автоматически
+                if (data.items.length === 1) {
+                    select.value = data.items[0].id;
+                    currentEnterpriseId = data.items[0].id;
+                    loadFiles();
+                }
+
+                select.addEventListener('change', (e) => {
+                    currentEnterpriseId = e.target.value;
+                    if (currentEnterpriseId) {
+                        loadFiles(1);
+                    }
+                });
+            } catch (error) {
+                showError('Ошибка загрузки предприятий: ' + error.message);
+            }
+        }
+
+        // Загрузка файлов
+        async function loadFiles(page = 1) {
+            if (!currentEnterpriseId) {
+                showError('Выберите предприятие');
+                return;
+            }
+
+            currentPage = page;
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('filesContainer').style.display = 'none';
+            document.getElementById('error').style.display = 'none';
+
+            try {
+                // Загружаем все файлы для статистики
+                const allResponse = await fetch(`/api/enterprises/${currentEnterpriseId}/uploads`);
+                const allData = await allResponse.json();
+                const allUploads = allData.uploads || [];
+                totalFiles = allUploads.length;
+                
+                // Для отображения берем только нужную страницу
+                const start = (page - 1) * pageSize;
+                const end = start + pageSize;
+                const pageUploads = allUploads.slice(start, end);
+                
+                displayFiles(pageUploads);
+                updateStats(allUploads);
+                updatePagination();
+            } catch (error) {
+                showError('Ошибка загрузки файлов: ' + error.message);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+
+        // Изменение страницы
+        function changePage(delta) {
+            const newPage = currentPage + delta;
+            const totalPages = Math.ceil(totalFiles / pageSize);
+            if (newPage >= 1 && newPage <= totalPages) {
+                loadFiles(newPage);
+            }
+        }
+
+        // Обновление пагинации
+        function updatePagination() {
+            const totalPages = Math.ceil(totalFiles / pageSize);
+            const pagination = document.getElementById('pagination');
+            const pageInfo = document.getElementById('pageInfo');
+            const prevBtn = document.getElementById('prevPage');
+            const nextBtn = document.getElementById('nextPage');
+            
+            if (totalPages <= 1) {
+                pagination.style.display = 'none';
+                return;
+            }
+            
+            pagination.style.display = 'flex';
+            pageInfo.textContent = `Страница ${currentPage} из ${totalPages} (${totalFiles} файлов)`;
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === totalPages;
+        }
+
+        // Отображение файлов
+        function displayFiles(uploads) {
+            const tbody = document.getElementById('filesTableBody');
+            tbody.innerHTML = '';
+
+            if (uploads.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="9" style="text-align: center; padding: 40px; color: #6b7280;">Файлы не найдены</td></tr>';
+                document.getElementById('filesContainer').style.display = 'block';
+                return;
+            }
+
+            uploads.forEach(upload => {
+                const tr = document.createElement('tr');
+                
+                const routingMap = upload.parsing_summary?.routing_map || {};
+                const confidence = routingMap.confidence || 0;
+                const confidenceClass = confidence >= 0.7 ? 'high' : confidence >= 0.4 ? 'medium' : 'low';
+                
+                const fileTypeClass = getFileTypeClass(upload.file_type);
+                const statusClass = upload.status || 'unknown';
+
+                tr.innerHTML = `
+                    <td>
+                        <div class="filename">${escapeHtml(upload.filename)}</div>
+                        <div style="font-size: 11px; color: #6b7280; margin-top: 4px;">
+                            Batch ID: ${upload.batch_id.substring(0, 8)}...
+                        </div>
+                    </td>
+                    <td><span class="file-type ${fileTypeClass}">${upload.file_type || 'Unknown'}</span></td>
+                    <td>${formatFileSize(upload.file_size || 0)}</td>
+                    <td><span class="status ${statusClass}">${upload.status || 'unknown'}</span></td>
+                    <td>${routingMap.document_type || 'unknown'}</td>
+                    <td>${routingMap.resource_type || 'unknown'}</td>
+                    <td>
+                        <span class="confidence ${confidenceClass}">
+                            ${(confidence * 100).toFixed(0)}%
+                        </span>
+                    </td>
+                    <td>${formatDate(upload.created_at)}</td>
+                    <td>
+                        <div class="actions">
+                            <a href="/api/uploads/${upload.batch_id}" class="btn btn-primary" target="_blank">📄 Просмотр</a>
+                        </div>
+                    </td>
+                `;
+                
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('filesContainer').style.display = 'block';
+        }
+
+        // Обновление статистики
+        function updateStats(uploads) {
+            const total = uploads.length;
+            const success = uploads.filter(u => u.status === 'success').length;
+            const error = uploads.filter(u => u.status === 'error' || u.status === 'partial').length;
+            const routing = uploads.filter(u => u.parsing_summary?.routing_map).length;
+
+            document.getElementById('totalFiles').textContent = total;
+            document.getElementById('successFiles').textContent = success;
+            document.getElementById('errorFiles').textContent = error;
+            document.getElementById('routingFiles').textContent = routing;
+            document.getElementById('stats').style.display = 'flex';
+        }
+
+        // Вспомогательные функции
+        function getFileTypeClass(fileType) {
+            const type = (fileType || '').toLowerCase();
+            if (type.includes('excel')) return 'excel';
+            if (type.includes('word')) return 'word';
+            if (type.includes('pdf')) return 'pdf';
+            if (type.includes('изображение') || type.includes('image')) return 'image';
+            return '';
+        }
+
+        function formatFileSize(bytes) {
+            if (!bytes) return '0 B';
+            const k = 1024;
+            const sizes = ['B', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return '-';
+            const date = new Date(dateString);
+            return date.toLocaleString('ru-RU', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+
+        // Инициализация
+        loadEnterprises();
+    </script>
+</body>
+</html>
+

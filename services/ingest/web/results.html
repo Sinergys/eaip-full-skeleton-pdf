@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EAIP · Результаты распознавания</title>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f3f4f6;
+            min-height: 100vh;
+            padding: 32px 16px 48px;
+        }
+        .container {
+            width: min(1040px, 100%);
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 24px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #111827;
+        }
+        .meta-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 18px 20px;
+            border: 1px solid #e5e7eb;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .meta-card strong {
+            color: #111827;
+        }
+        .meta-card .status-badge {
+            margin-left: 4px;
+        }
+        .meta-label {
+            font-weight: 600;
+            color: #374151;
+        }
+        .meta-value {
+            color: #4b5563;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .status-success {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .status-error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .status-pending {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 24px;
+            background: #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 12px 0;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #059669);
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .checklist {
+            margin: 16px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+        .checklist-item-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            font-size: 16px;
+        }
+        .checklist-item-content {
+            flex: 1;
+        }
+        .checklist-item-name {
+            font-weight: 600;
+            color: #111827;
+        }
+        .checklist-item-description {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 2px;
+        }
+        .checklist-item-status {
+            font-size: 12px;
+            color: #6b7280;
+        }
+        .warnings {
+            margin-top: 16px;
+            padding: 12px;
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            border-radius: 8px;
+        }
+        .warnings.success {
+            background: #d1fae5;
+            border-left-color: #10b981;
+        }
+        .warnings.success h4 {
+            color: #065f46;
+        }
+        .warnings.success ul {
+            color: #047857;
+        }
+        .warnings h4 {
+            margin: 0 0 8px;
+            color: #92400e;
+            font-size: 14px;
+        }
+        .warnings ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #78350f;
+        }
+        .warnings li {
+            margin: 4px 0;
+        }
+        .readiness-card {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .readiness-card.not-ready {
+            background: #fef2f2;
+            border-color: #ef4444;
+        }
+        .card {
+            margin-top: 24px;
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+        }
+        .card h2 {
+            margin: 0 0 12px;
+            font-size: 20px;
+            color: #1f2937;
+        }
+        .card pre {
+            background: #111827;
+            color: #f9fafb;
+            padding: 16px;
+            border-radius: 12px;
+            overflow-x: auto;
+            font-size: 13px;
+            max-height: 320px;
+        }
+        textarea {
+            width: 100%;
+            min-height: 280px;
+            border-radius: 12px;
+            border: 1px solid #d1d5db;
+            padding: 14px;
+            font-family: "Fira Code", "Courier New", monospace;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+        }
+        .actions {
+            margin-top: 16px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        button.primary {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+        }
+        button.secondary {
+            background: #e5e7eb;
+            color: #111827;
+        }
+        button.success {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 20px rgba(79, 70, 229, 0.18);
+        }
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        .status-message {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #4b5563;
+        }
+        .alert {
+            margin-top: 24px;
+            padding: 16px;
+            border-radius: 12px;
+            background: #fef3c7;
+            border: 1px solid #fde68a;
+            color: #92400e;
+        }
+        /* Стили для детального чек-листа готовности */
+        .detailed-readiness-checklist {
+            margin-top: 24px;
+        }
+        .readiness-summary {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .readiness-summary h5 {
+            margin: 0 0 12px;
+            font-size: 16px;
+            color: #111827;
+        }
+        .readiness-summary .progress {
+            height: 24px;
+            background: #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .readiness-summary .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #059669);
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .status-badge {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .badge-success {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .badge-warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .sheet-validation-section {
+            margin-top: 24px;
+        }
+        .sheet-validation-section h4 {
+            margin: 0 0 16px;
+            font-size: 18px;
+            color: #111827;
+        }
+        .sheet-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            background: #ffffff;
+            transition: border-color 0.2s ease;
+        }
+        .sheet-card.border-success {
+            border-color: #10b981;
+            background: #f0fdf4;
+        }
+        .sheet-card.border-warning {
+            border-color: #f59e0b;
+            background: #fffbeb;
+        }
+        .sheet-card .card-title {
+            margin: 0 0 8px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #111827;
+        }
+        .sheet-card .card-text {
+            margin: 0 0 12px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+        .sheet-card .errors {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e5e7eb;
+        }
+        .sheet-card .errors strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #991b1b;
+        }
+        .sheet-card .errors ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .sheet-card .errors li {
+            margin: 4px 0;
+            font-size: 12px;
+            color: #991b1b;
+        }
+        .text-success {
+            color: #166534;
+        }
+        .text-warning {
+            color: #92400e;
+        }
+        .text-danger {
+            color: #991b1b;
+        }
+        .text-muted {
+            color: #6b7280;
+        }
+        .missing-data-section {
+            margin-top: 24px;
+        }
+        .missing-data-section h4 {
+            margin: 0 0 12px;
+            font-size: 18px;
+            color: #111827;
+        }
+        .missing-data-section .alert {
+            background: #fef3c7;
+            border: 1px solid #fde68a;
+            border-left: 4px solid #f59e0b;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .missing-data-section .alert ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #92400e;
+        }
+        .missing-data-section .alert li {
+            margin: 4px 0;
+        }
+        /* Модальное окно для предупреждений */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .modal-content h3 {
+            margin: 0 0 16px;
+            font-size: 20px;
+            color: #111827;
+        }
+        .modal-content p {
+            margin: 8px 0;
+            color: #4b5563;
+        }
+        .modal-content button {
+            margin-top: 16px;
+            padding: 10px 20px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .modal-content button:hover {
+            background: #4f46e5;
+        }
+        @media (max-width: 720px) {
+            body {
+                padding: 16px 12px 32px;
+            }
+            .meta-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            button {
+                width: 100%;
+            }
+            .sheet-card {
+                margin-bottom: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Результаты распознавания</h1>
+            <p id="description" style="color:#4b5563;margin-top:8px;"></p>
+        </header>
+
+        <section class="meta-card" id="metaGrid">
+            <div id="metaSummary">—</div>
+        </section>
+
+        <section class="card" id="readinessCard" style="display:none;">
+            <h2>Готовность данных для генерации паспорта</h2>
+            <div id="readinessContent">
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" id="readinessProgress" style="width: 0%;">0%</div>
+                </div>
+                <div id="readinessStatus" style="margin-top: 12px; font-weight: 600;"></div>
+                <div id="checklistContainer" class="checklist"></div>
+                <div id="warningsContainer" class="warnings" style="display:none;"></div>
+                
+                <!-- Детальный чек-лист готовности -->
+                <div id="detailedReadinessContainer" class="detailed-readiness-checklist" style="display:none;"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Редактирование данных</h2>
+            <p class="status-message">
+                Ниже отображается текстовое представление данных. Внесите корректировки и сохраните изменения.
+            </p>
+            <textarea id="editableArea" spellcheck="false" placeholder="Данные пока не доступны..."></textarea>
+            <div class="actions">
+                <button class="primary" id="saveButton">Сохранить изменения</button>
+                <button class="secondary" id="reloadButton">Обновить данные</button>
+                <div style="margin-bottom: 10px;">
+                    <label for="templateSelect" style="display: block; margin-bottom: 5px; font-weight: 600;">Выбор шаблона:</label>
+                    <select id="templateSelect" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%; max-width: 400px;">
+                        <option value="new_energy_passport">Новый шаблон (new_energy_passport)</option>
+                        <option value="metin">Шаблон METIN (metin)</option>
+                        <option value="default">Шаблон по умолчанию (default)</option>
+                    </select>
+                </div>
+                <button class="success" id="generatePassportButton">📊 Сгенерировать энергопаспорт (Excel)</button>
+                <button class="success" id="generateWordReportButton" style="background: #2563eb; margin-left: 8px;">📄 Сгенерировать Word отчет</button>
+                <a class="secondary" href="/web/upload" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">Вернуться к загрузке</a>
+            </div>
+            <div id="saveStatus" class="status-message"></div>
+            <div id="passportStatus" class="status-message"></div>
+            <div id="wordReportStatus" class="status-message"></div>
+        </section>
+
+        <section class="card" id="rawDataCard" style="display:none;">
+            <h2>Сырые данные (JSON)</h2>
+            <pre id="rawJson">Загрузка...</pre>
+        </section>
+
+        <div class="actions" style="margin-top:16px;">
+            <button class="secondary" id="toggleRawButton">Показать сырые данные</button>
+        </div>
+
+        <div id="missingMessage" class="alert" style="display:none;">
+            Не указан batchId. Вернитесь на страницу загрузки и выберите файл.
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const batchId = params.get("batchId");
+
+        const batchIdValue = document.getElementById("batchIdValue");
+        const enterpriseValue = document.getElementById("enterpriseValue");
+        const fileValue = document.getElementById("fileValue");
+        const resourceValue = document.getElementById("resourceValue");
+        const statusBadge = document.getElementById("statusBadge");
+        const description = document.getElementById("description");
+        const metaSummary = document.getElementById("metaSummary");
+        const editableArea = document.getElementById("editableArea");
+        const saveButton = document.getElementById("saveButton");
+        const reloadButton = document.getElementById("reloadButton");
+        const generatePassportButton = document.getElementById("generatePassportButton");
+        const generateWordReportButton = document.getElementById("generateWordReportButton");
+        const saveStatus = document.getElementById("saveStatus");
+        const passportStatus = document.getElementById("passportStatus");
+        const wordReportStatus = document.getElementById("wordReportStatus");
+        const rawJson = document.getElementById("rawJson");
+        const rawDataCard = document.getElementById("rawDataCard");
+        const toggleRawButton = document.getElementById("toggleRawButton");
+        const missingMessage = document.getElementById("missingMessage");
+        const readinessCard = document.getElementById("readinessCard");
+        const readinessProgress = document.getElementById("readinessProgress");
+        const readinessStatus = document.getElementById("readinessStatus");
+        const checklistContainer = document.getElementById("checklistContainer");
+        const warningsContainer = document.getElementById("warningsContainer");
+        const detailedReadinessContainer = document.getElementById("detailedReadinessContainer");
+
+        function fmtBytes(bytes) {
+            if (!Number.isFinite(bytes)) return "—";
+            if (bytes < 1024) return `${bytes} B`;
+            const units = ["KB", "MB", "GB"];
+            let i = -1;
+            do {
+                bytes /= 1024;
+                ++i;
+            } while (bytes >= 1024 && i < units.length - 1);
+            return `${bytes.toFixed(1)} ${units[i]}`;
+        }
+
+        function setStatusBadge(status) {
+            if (!statusBadge) return;
+            const normalized = (status || "").toLowerCase();
+            statusBadge.textContent = normalized || "unknown";
+            statusBadge.className = "status-badge";
+            if (normalized === "success") {
+                statusBadge.classList.add("status-success");
+            } else if (normalized === "error") {
+                statusBadge.classList.add("status-error");
+            } else {
+                statusBadge.classList.add("status-pending");
+            }
+        }
+
+        function renderSummary(summary, metaRecord) {
+            const parts = [];
+            const resourceLabel = metaRecord?.parsing_summary?.resource_type_label;
+            if (resourceLabel) {
+                parts.push(`<strong>Ресурс:</strong> ${resourceLabel}`);
+            }
+            parts.push(`<strong>Batch ID:</strong> ${batchId}`);
+            const enterpriseName = metaRecord?.enterprise_name || "—";
+            parts.push(`<strong>Предприятие:</strong> ${enterpriseName}`);
+            parts.push(`<strong>Файл:</strong> ${metaRecord?.filename || "—"} (${fmtBytes(metaRecord?.file_size || 0)})`);
+            const statusText = (metaRecord?.status || "pending").toLowerCase();
+            const badgeClass = statusText === "success" ? "status-badge status-success" : statusText === "error" ? "status-badge status-error" : "status-badge status-pending";
+            parts.push(`<strong>Статус:</strong> <span class="${badgeClass}">${statusText}</span>`);
+
+            const dataBlocks = [];
+            if (metaRecord?.parsing_summary) {
+                dataBlocks.push(metaRecord.parsing_summary);
+            }
+            if (summary) {
+                dataBlocks.push(summary);
+            }
+
+            dataBlocks.forEach((block) => {
+                Object.entries(block).forEach(([key, value]) => {
+                    if (value === null || typeof value === "undefined") {
+                        return;
+                    }
+                    if (key === "batch_id" || key === "status" || key === "parsed" || key === "resource_type" || key === "resource_type_label") {
+                        return;
+                    }
+                    const formattedValue = typeof value === "object"
+                        ? JSON.stringify(value)
+                        : typeof value === "number" && key.toLowerCase().includes("size")
+                            ? fmtBytes(value)
+                            : String(value);
+                    parts.push(`<strong>${key}:</strong> ${formattedValue}`);
+                });
+            });
+
+            if (metaSummary) {
+                metaSummary.innerHTML = parts.join(" · ");
+            }
+        }
+
+        async function fetchJSON(url, options) {
+            const response = await fetch(url, options);
+            if (!response.ok) {
+                const text = await response.text();
+                try {
+                    const data = JSON.parse(text);
+                    throw new Error(data.detail || text);
+                } catch (_) {
+                    throw new Error(text);
+                }
+            }
+            return response.json();
+        }
+
+        let metaRecordCache = null;
+
+        async function loadMetadata() {
+            const record = await fetchJSON(`/api/uploads/${encodeURIComponent(batchId)}`);
+            metaRecordCache = record;
+            
+            // Безопасное обновление элементов, если они существуют
+            if (batchIdValue) batchIdValue.textContent = batchId;
+            const enterpriseName = record.enterprise_name || "—";
+            if (enterpriseValue) enterpriseValue.textContent = enterpriseName;
+            const fileInfo = `${record.filename || "—"} · ${record.file_type || "unknown"} · ${fmtBytes(record.file_size)}`;
+            if (fileValue) fileValue.textContent = fileInfo;
+            const resourceLabel = record.parsing_summary?.resource_type_label || "—";
+            if (resourceValue) resourceValue.textContent = resourceLabel;
+            if (statusBadge) setStatusBadge(record.status);
+            if (description) description.textContent = `Файл загружен ${new Date(record.created_at).toLocaleString()} для предприятия «${enterpriseName}».`;
+            
+            // Загружаем данные о готовности, если есть enterprise_id
+            if (record.enterprise_id) {
+                await loadReadiness(record.enterprise_id);
+            }
+        }
+
+        async function loadReadiness(enterpriseId) {
+            try {
+                // Загружаем чек-лист и готовность
+                const [checklistData, readinessData] = await Promise.all([
+                    fetchJSON(`/api/enterprises/${enterpriseId}/upload-checklist`).catch(() => null),
+                    fetchJSON(`/api/enterprises/${enterpriseId}/generation-readiness`).catch(() => null)
+                ]);
+
+                if (readinessCard) readinessCard.style.display = "block";
+
+                if (readinessData && readinessProgress && readinessStatus) {
+                    const progress = readinessData.progress_percentage || 0;
+                    const ready = readinessData.ready || false;
+                    
+                    readinessProgress.style.width = `${progress}%`;
+                    readinessProgress.textContent = `${progress}%`;
+                    
+                    if (ready) {
+                        readinessStatus.textContent = `✅ Данные готовы к генерации (${progress}%)`;
+                        readinessStatus.style.color = "#166534";
+                        if (generatePassportButton) generatePassportButton.disabled = false;
+                    } else {
+                        readinessStatus.textContent = `⏳ Данные не готовы к генерации (${progress}%)`;
+                        readinessStatus.style.color = "#92400e";
+                        if (generatePassportButton) generatePassportButton.disabled = true;
+                    }
+                }
+
+                // Отображаем чек-лист
+                if (checklistData && checklistContainer) {
+                    renderChecklist(checklistData);
+                }
+
+                // Отображаем предупреждения
+                if (readinessData && readinessData.warnings && warningsContainer) {
+                    renderWarnings(readinessData.warnings);
+                }
+
+                // Отображаем детальный чек-лист готовности
+                if (readinessData && detailedReadinessContainer) {
+                    renderDetailedReadiness(readinessData);
+                }
+            } catch (error) {
+                console.warn("Не удалось загрузить данные о готовности:", error);
+                if (readinessCard) readinessCard.style.display = "none";
+            }
+        }
+
+        function renderChecklist(checklistData) {
+            if (!checklistContainer) return;
+
+            const required = checklistData.required_files || [];
+            const optional = checklistData.optional_files || [];
+
+            let html = "";
+
+            if (required.length > 0) {
+                html += "<h3 style='margin: 16px 0 8px; font-size: 16px; color: #111827;'>Обязательные файлы:</h3>";
+                required.forEach(file => {
+                    const icon = file.uploaded ? "✅" : "❌";
+                    const statusText = file.uploaded ? "Загружен" : "Отсутствует";
+                    const statusColor = file.uploaded ? "#166534" : "#991b1b";
+                    
+                    html += `
+                        <div class="checklist-item">
+                            <div class="checklist-item-icon">${icon}</div>
+                            <div class="checklist-item-content">
+                                <div class="checklist-item-name">${file.description || file.resource}</div>
+                                <div class="checklist-item-description">${file.file_patterns.join(", ")}</div>
+                            </div>
+                            <div class="checklist-item-status" style="color: ${statusColor}">${statusText}</div>
+                        </div>
+                    `;
+                });
+            }
+
+            if (optional.length > 0) {
+                html += "<h3 style='margin: 24px 0 8px; font-size: 16px; color: #111827;'>Опциональные файлы:</h3>";
+                optional.forEach(file => {
+                    const icon = file.uploaded ? "✅" : "⚪";
+                    const statusText = file.uploaded ? "Загружен" : "Не требуется";
+                    const statusColor = file.uploaded ? "#166534" : "#6b7280";
+                    
+                    html += `
+                        <div class="checklist-item">
+                            <div class="checklist-item-icon">${icon}</div>
+                            <div class="checklist-item-content">
+                                <div class="checklist-item-name">${file.description || file.resource}</div>
+                                <div class="checklist-item-description">${file.file_patterns.join(", ")}</div>
+                            </div>
+                            <div class="checklist-item-status" style="color: ${statusColor}">${statusText}</div>
+                        </div>
+                    `;
+                });
+            }
+
+            checklistContainer.innerHTML = html;
+        }
+
+        function renderWarnings(warnings) {
+            if (!warningsContainer || !warnings || warnings.length === 0) {
+                if (warningsContainer) warningsContainer.style.display = "none";
+                return;
+            }
+
+            // Определяем, все ли данные загружены
+            const allLoaded = warnings.length === 1 && 
+                             warnings[0].toLowerCase().includes("все необходимые данные загружены");
+            
+            // Добавляем класс success, если все данные загружены
+            const successClass = allLoaded ? " success" : "";
+            
+            warningsContainer.style.display = "block";
+            warningsContainer.className = "warnings" + successClass;
+            warningsContainer.innerHTML = `
+                <h4>Предупреждения:</h4>
+                <ul>
+                    ${warnings.map(w => `<li>${w}</li>`).join("")}
+                </ul>
+            `;
+        }
+
+        // Функция рендеринга детального чек-листа готовности
+        function renderDetailedReadiness(readiness) {
+            if (!detailedReadinessContainer || !readiness) {
+                return;
+            }
+
+            const progress = readiness.progress_percentage || 0;
+            const ready = readiness.ready || false;
+            const sheetValidation = readiness.sheet_validation || {};
+            const missingSheetData = readiness.missing_sheet_data || [];
+
+            let html = `
+                <div class="readiness-summary">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <div style="flex: 1;">
+                            <h5>Общий статус готовности</h5>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: ${progress}%">${progress}%</div>
+                            </div>
+                        </div>
+                        <div class="status-badge ${ready ? 'badge-success' : 'badge-warning'}">
+                            ${ready ? '✅ Готово к генерации' : '⚠️ Требуются данные'}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Валидация по листам
+            const sheetEntries = Object.entries(sheetValidation);
+            if (sheetEntries.length > 0) {
+                html += `
+                    <div class="sheet-validation-section">
+                        <h4>📊 Валидация листов паспорта</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px;">
+                            ${sheetEntries.map(([sheetName, validation]) => {
+                                const isValid = validation.valid !== false;
+                                const errors = validation.errors || [];
+                                const description = validation.description || '';
+                                
+                                return `
+                                    <div class="sheet-card ${isValid ? 'border-success' : 'border-warning'}">
+                                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px;">
+                                            <h6 class="card-title">${sheetName}</h6>
+                                            <span class="${isValid ? 'text-success' : 'text-warning'}" style="font-size: 18px;">
+                                                ${isValid ? '✅' : '⚠️'}
+                                            </span>
+                                        </div>
+                                        <p class="card-text">
+                                            <small class="text-muted">${description}</small>
+                                        </p>
+                                        ${!isValid && errors.length > 0 ? `
+                                            <div class="errors">
+                                                <strong>Ошибки:</strong>
+                                                <ul>
+                                                    ${errors.map(error => `<li class="text-danger">${error}</li>`).join('')}
+                                                </ul>
+                                            </div>
+                                        ` : ''}
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Недостающие данные
+            if (missingSheetData.length > 0) {
+                html += `
+                    <div class="missing-data-section">
+                        <h4>❌ Недостающие данные</h4>
+                        <div class="alert">
+                            <ul>
+                                ${missingSheetData.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            }
+
+            detailedReadinessContainer.innerHTML = html;
+            detailedReadinessContainer.style.display = "block";
+        }
+
+        // Функция проверки готовности перед генерацией (опционально, для улучшения UX)
+        async function checkReadinessBeforeGeneration(enterpriseId) {
+            try {
+                const response = await fetch(`/api/enterprises/${enterpriseId}/generation-readiness`);
+                if (!response.ok) {
+                    // Если endpoint недоступен, продолжить (fallback на серверную проверку)
+                    console.warn('Проверка готовности недоступна, продолжаем...');
+                    return true;
+                }
+                const readiness = await response.json();
+                
+                if (!readiness.ready) {
+                    // Показать модальное окно с деталями
+                    showReadinessWarning(readiness);
+                    return false;
+                }
+                return true;
+            } catch (error) {
+                console.error('Ошибка проверки готовности:', error);
+                // Продолжить в случае ошибки (сервер все равно проверит)
+                return true;
+            }
+        }
+
+        // Функция показа предупреждения о неготовности
+        function showReadinessWarning(readiness) {
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <h3>⚠️ Данные не готовы к генерации</h3>
+                    <p><strong>Готовность:</strong> ${readiness.progress_percentage || 0}%</p>
+                    ${readiness.missing_resources && readiness.missing_resources.length > 0 ? 
+                        `<p><strong>Недостающие ресурсы:</strong> ${readiness.missing_resources.join(', ')}</p>` : ''}
+                    ${readiness.missing_files && readiness.missing_files.length > 0 ? 
+                        `<p><strong>Необходимо загрузить файлы:</strong> ${readiness.missing_files.join(', ')}</p>` : ''}
+                    ${readiness.warnings && readiness.warnings.length > 0 ? 
+                        `<div class="warnings" style="margin-top: 16px;">
+                            <strong>Предупреждения:</strong>
+                            <ul>${readiness.warnings.map(w => `<li>${w}</li>`).join('')}</ul>
+                        </div>` : ''}
+                    <button onclick="this.closest('.modal').remove()">Понятно</button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Закрытие по клику вне модального окна
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.remove();
+                }
+            });
+        }
+
+        async function loadSummary() {
+            try {
+                const summary = await fetchJSON(`/ingest/parse/${encodeURIComponent(batchId)}/summary`);
+                renderSummary(summary, metaRecordCache);
+            } catch (error) {
+                console.warn("Не удалось получить сводку", error);
+                if (metaSummary) {
+                    metaSummary.textContent = `Ошибка: ${error.message}`;
+                }
+            }
+        }
+
+        async function loadEditable() {
+            if (!editableArea) {
+                console.error("Элемент editableArea не найден");
+                return;
+            }
+            try {
+                const data = await fetchJSON(`/api/uploads/${encodeURIComponent(batchId)}/editable`);
+                editableArea.value = data.editable_text || "";
+                if (saveStatus) {
+                    saveStatus.textContent = data.updated_at ? `Последнее сохранение: ${new Date(data.updated_at).toLocaleString()}` : ""; 
+                }
+            } catch (error) {
+                console.warn("Не удалось получить редактируемый текст", error);
+                editableArea.value = "";
+                if (saveStatus) {
+                    saveStatus.textContent = "Не удалось загрузить редактируемый текст."; 
+                }
+            }
+        }
+
+        let rawDataLoaded = false;
+        let rawDataVisible = false;
+
+        async function loadRawJson() {
+            if (rawDataLoaded) return;
+            if (!rawJson) {
+                console.error("Элемент rawJson не найден");
+                return;
+            }
+            try {
+                const data = await fetchJSON(`/ingest/parse/${encodeURIComponent(batchId)}`);
+                rawJson.textContent = JSON.stringify(data, null, 2);
+                rawDataLoaded = true;
+            } catch (error) {
+                rawJson.textContent = `Ошибка: ${error.message}`;
+            }
+        }
+
+        async function saveEditable() {
+            if (!saveButton || !editableArea) {
+                console.error("Элементы saveButton или editableArea не найдены");
+                return;
+            }
+            saveButton.disabled = true;
+            if (saveStatus) saveStatus.textContent = "Сохранение..."; 
+            try {
+                await fetchJSON(`/api/uploads/${encodeURIComponent(batchId)}/editable`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ text: editableArea.value }),
+                });
+                if (saveStatus) saveStatus.textContent = "Изменения сохранены"; 
+            } catch (error) {
+                console.error("Ошибка сохранения", error);
+                if (saveStatus) saveStatus.textContent = `Ошибка сохранения: ${error.message}`; 
+            } finally {
+                saveButton.disabled = false;
+            }
+        }
+
+        async function reloadAll() {
+            const metadata = await loadMetadata();
+            await Promise.all([loadSummary(), loadEditable()]);
+            // Перезагружаем готовность, если есть enterprise_id
+            if (metaRecordCache && metaRecordCache.enterprise_id) {
+                await loadReadiness(metaRecordCache.enterprise_id);
+            }
+        }
+
+        if (saveButton) {
+            saveButton.addEventListener("click", async () => {
+                await saveEditable();
+                await loadEditable();
+            });
+        }
+
+        if (reloadButton) {
+            reloadButton.addEventListener("click", reloadAll);
+        }
+
+                // Обработчик генерации энергопаспорта
+        if (generatePassportButton) {
+            generatePassportButton.addEventListener("click", async () => {
+                if (!batchId) {
+                    if (passportStatus) {
+                        passportStatus.textContent = "❌ Ошибка: batch_id не найден";
+                        passportStatus.style.color = "#991b1b";
+                    }
+                    return;
+                }
+
+                // Проверка готовности перед генерацией (опционально, для улучшения UX)
+                if (metaRecordCache && metaRecordCache.enterprise_id) {
+                    const isReady = await checkReadinessBeforeGeneration(metaRecordCache.enterprise_id);
+                    if (!isReady) {
+                        // Пользователь увидел предупреждение, не продолжаем генерацию
+                        return;
+                    }
+                }
+
+                generatePassportButton.disabled = true;
+                if (passportStatus) {
+                    passportStatus.textContent = "⏳ Генерация энергопаспорта...";
+                    passportStatus.style.color = "#92400e";
+                }
+
+            try {
+                // Получаем выбранный шаблон
+                const templateSelect = document.getElementById("templateSelect");
+                const templateName = templateSelect ? templateSelect.value : "new_energy_passport";
+                
+                const response = await fetch(`/api/generate-passport/${batchId}?template_name=${encodeURIComponent(templateName)}`, {
+                    method: "POST"
+                });
+
+                if (!response.ok) {
+                    let errorMessage = `Ошибка ${response.status}`;
+                    try {
+                        const errorData = await response.json();
+                        if (errorData.detail) {
+                            if (typeof errorData.detail === "object" && errorData.detail.message) {
+                                errorMessage = errorData.detail.message;
+                                // Отображаем детали о недостающих файлах
+                                if (errorData.detail.missing_resources) {
+                                    errorMessage += `\n\nОтсутствуют ресурсы: ${errorData.detail.missing_resources.join(", ")}`;
+                                }
+                                if (errorData.detail.missing_files) {
+                                    errorMessage += `\n\nНеобходимо загрузить файлы: ${errorData.detail.missing_files.join(", ")}`;
+                                }
+                            } else {
+                                errorMessage = errorData.detail;
+                            }
+                        }
+                    } catch (e) {
+                        const errorText = await response.text();
+                        errorMessage = errorText || errorMessage;
+                    }
+                    throw new Error(errorMessage);
+                }
+
+                // Скачиваем файл
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `energy_passport_${batchId.substring(0, 8)}.xlsx`;
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+
+                if (passportStatus) {
+                    passportStatus.textContent = `✅ Энергопаспорт успешно сгенерирован и скачан!`;
+                    passportStatus.style.color = "#166534";
+                }
+            } catch (error) {
+                console.error("Ошибка генерации паспорта:", error);
+                if (passportStatus) {
+                    passportStatus.textContent = `❌ Ошибка: ${error.message}`;
+                    passportStatus.style.color = "#991b1b";
+                }
+            } finally {
+                generatePassportButton.disabled = false;
+            }
+            });
+        }
+
+        // Обработчик генерации Word отчета
+        if (generateWordReportButton) {
+            generateWordReportButton.addEventListener("click", async () => {
+                if (!batchId) {
+                    if (wordReportStatus) {
+                        wordReportStatus.textContent = "❌ Ошибка: batch_id не найден";
+                        wordReportStatus.style.color = "#991b1b";
+                    }
+                    return;
+                }
+
+                generateWordReportButton.disabled = true;
+                if (wordReportStatus) {
+                    wordReportStatus.textContent = "⏳ Генерация Word отчета...";
+                    wordReportStatus.style.color = "#92400e";
+                }
+
+                try {
+                    const response = await fetch(`/api/generate-word-report/${batchId}`, {
+                        method: "POST"
+                    });
+
+                    if (!response.ok) {
+                        let errorMessage = `Ошибка ${response.status}`;
+                        try {
+                            const errorData = await response.json();
+                            if (errorData.detail) {
+                                if (typeof errorData.detail === "object" && errorData.detail.message) {
+                                    errorMessage = errorData.detail.message;
+                                    if (errorData.detail.missing_resources) {
+                                        errorMessage += `\n\nОтсутствуют ресурсы: ${errorData.detail.missing_resources.join(", ")}`;
+                                    }
+                                } else {
+                                    errorMessage = errorData.detail;
+                                }
+                            }
+                        } catch (e) {
+                            const errorText = await response.text();
+                            errorMessage = errorText || errorMessage;
+                        }
+                        throw new Error(errorMessage);
+                    }
+
+                    // Скачиваем файл
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.href = url;
+                    a.download = `energy_report_${batchId.substring(0, 8)}.docx`;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    document.body.removeChild(a);
+
+                    if (wordReportStatus) {
+                        wordReportStatus.textContent = `✅ Word отчет успешно сгенерирован и скачан!`;
+                        wordReportStatus.style.color = "#166534";
+                    }
+                } catch (error) {
+                    console.error("Ошибка генерации Word отчета:", error);
+                    if (wordReportStatus) {
+                        wordReportStatus.textContent = `❌ Ошибка: ${error.message}`;
+                        wordReportStatus.style.color = "#991b1b";
+                    }
+                } finally {
+                    generateWordReportButton.disabled = false;
+                }
+            });
+        }
+
+        if (toggleRawButton) {
+            toggleRawButton.addEventListener("click", async () => {
+            rawDataVisible = !rawDataVisible;
+            if (rawDataVisible) {
+                toggleRawButton.textContent = "Скрыть сырые данные";
+                rawDataCard.style.display = "block";
+                await loadRawJson();
+            } else {
+                toggleRawButton.textContent = "Показать сырые данные";
+                if (rawDataCard) rawDataCard.style.display = "none";
+            }
+            });
+        }
+
+        if (!batchId) {
+            document.querySelectorAll("section, header").forEach((el) => (el.style.display = "none")); 
+            if (missingMessage) missingMessage.style.display = "block";
+        } else {
+            reloadAll().catch((error) => {
+                console.error(error);
+                if (missingMessage) {
+                    missingMessage.style.display = "block";
+                    missingMessage.textContent = `Не удалось загрузить данные: ${error.message}`; 
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

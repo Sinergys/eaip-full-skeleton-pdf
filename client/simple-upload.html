@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAIP - Простая загрузка файлов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px dashed #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+        }
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            display: block;
+        }
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            display: block;
+        }
+        .info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📤 Загрузка файла в EAIP</h1>
+        
+        <div class="info">
+            <strong>Инструкция:</strong><br>
+            1. Выберите файл ниже<br>
+            2. Нажмите "Загрузить"<br>
+            3. Дождитесь результата
+        </div>
+        
+        <form id="uploadForm">
+            <input type="file" id="fileInput" name="file" required />
+            <button type="submit" id="uploadBtn">Загрузить файл</button>
+        </form>
+        
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script>
+        const form = document.getElementById('uploadForm');
+        const fileInput = document.getElementById('fileInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const result = document.getElementById('result');
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const file = fileInput.files[0];
+            if (!file) {
+                showResult('error', 'Пожалуйста, выберите файл');
+                return;
+            }
+            
+            uploadBtn.disabled = true;
+            uploadBtn.textContent = 'Загрузка...';
+            result.className = 'result';
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            try {
+                const response = await fetch('http://localhost:8001/ingest/files', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult('success', `
+                        <strong>✅ Файл успешно загружен!</strong><br><br>
+                        <strong>Batch ID:</strong> ${data.batchId}<br>
+                        <strong>Файл:</strong> ${data.filename}<br>
+                        ${data.validate && data.validate.error ? 
+                            `<strong>⚠️ Валидация:</strong> ${data.validate.error}` : 
+                            '<strong>✅ Валидация:</strong> Запущена успешно'
+                        }
+                    `);
+                } else {
+                    showResult('error', `<strong>❌ Ошибка:</strong> ${data.detail || 'Неизвестная ошибка'}`);
+                }
+            } catch (error) {
+                showResult('error', `
+                    <strong>❌ Ошибка соединения</strong><br><br>
+                    ${error.message}<br><br>
+                    <strong>Возможные причины:</strong><br>
+                    1. Сервис ingest не запущен (проверьте: http://localhost:8001/health)<br>
+                    2. Проблема с CORS (откройте консоль браузера F12)<br>
+                    3. Файл слишком большой<br><br>
+                    <strong>Альтернатива:</strong> Используйте Swagger UI: <a href="http://localhost:8001/docs" target="_blank">http://localhost:8001/docs</a>
+                `);
+            } finally {
+                uploadBtn.disabled = false;
+                uploadBtn.textContent = 'Загрузить файл';
+            }
+        });
+        
+        function showResult(type, message) {
+            result.className = `result ${type}`;
+            result.innerHTML = message;
+        }
+    </script>
+</body>
+</html>
+

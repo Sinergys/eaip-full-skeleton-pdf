@@ -1,0 +1,20 @@
+# Дополнительные зависимости для улучшенных модулей
+
+# Для image_enhancement.py
+opencv-python>=4.8.0  # Для deskew, бинаризации, удаления шума
+scikit-image>=0.21.0  # Для дополнительных методов улучшения (опционально)
+
+# Для table_detector.py
+camelot-py[cv]>=0.11.0  # Для извлечения структурированных таблиц
+tabula-py>=2.5.0  # Альтернативный метод извлечения таблиц (опционально)
+
+# Примечания:
+# - opencv-python: обязательно для image_enhancement (deskew, бинаризация)
+# - scikit-image: опционально, добавляет метод Sauvola и фильтр Винера
+# - camelot-py: рекомендуется для table_detector (лучше для структурированных таблиц)
+# - tabula-py: опционально, требует Java (для сложных случаев)
+
+# Установка:
+# pip install opencv-python camelot-py[cv]
+# pip install scikit-image tabula-py  # опционально
+

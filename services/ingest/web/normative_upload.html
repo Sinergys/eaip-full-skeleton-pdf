@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EAIP · Загрузка нормативных документов</title>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 32px 16px;
+        }
+        .container {
+            background: #ffffff;
+            width: min(960px, 100%);
+            border-radius: 18px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+            padding: 32px;
+        }
+        h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+            color: #1f2937;
+        }
+        p {
+            margin: 0 0 24px;
+            color: #4b5563;
+        }
+        form {
+            display: grid;
+            gap: 18px;
+        }
+        label {
+            font-weight: 600;
+            color: #374151;
+        }
+        select,
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            font-size: 15px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        select:focus,
+        input[type="text"]:focus,
+        input[type="file"]:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+        }
+        .actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .status {
+            margin-top: 24px;
+            padding: 16px;
+            border-radius: 10px;
+            display: none;
+        }
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+            display: block;
+        }
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+            display: block;
+        }
+        .status.info {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #3b82f6;
+            display: block;
+        }
+        .hint {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+        .status code {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        .status a {
+            color: inherit;
+            text-decoration: underline;
+        }
+        .document-list {
+            margin-top: 32px;
+            padding: 24px;
+            border-radius: 14px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+        }
+        .document-list h2 {
+            margin: 0 0 16px;
+            font-size: 20px;
+            color: #1f2937;
+        }
+        .document-item {
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+            margin-bottom: 12px;
+        }
+        .document-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 8px;
+        }
+        .document-item-title {
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 16px;
+        }
+        .document-item-type {
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: #e0e7ff;
+            color: #4338ca;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .document-item-meta {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 8px;
+        }
+        .document-item-rules {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #10b981;
+            font-weight: 600;
+        }
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #e5e7eb;
+            border-top-color: #6366f1;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .nav-links {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .nav-links a {
+            color: #6366f1;
+            text-decoration: none;
+            margin-right: 16px;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 720px) {
+            .container {
+                padding: 20px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="/web/upload">Загрузка файлов</a>
+            <a href="/web/results">Результаты</a>
+            <a href="/web/normative">Нормативные документы</a>
+        </div>
+
+        <h1>Загрузка нормативных документов</h1>
+        <p>Загрузите нормативные документы (ПКМ 690, ГОСТ, СНиП и др.) для извлечения формул, нормативов и правил с помощью AI.</p>
+
+        <div id="aiStatus" class="status" style="display: none;">
+            <div id="aiStatusContent"></div>
+        </div>
+
+        <form id="uploadForm" method="post" enctype="multipart/form-data" onsubmit="return false;">
+            <div>
+                <label for="fileInput">Файл документа</label>
+                <input
+                    type="file"
+                    id="fileInput"
+                    name="file"
+                    accept=".pdf,.docx,.xlsx,.xlsm"
+                    required
+                />
+                <p class="hint">Поддерживаемые форматы: PDF, Word (.docx), Excel (.xlsx, .xlsm). Размер до 50 МБ.</p>
+            </div>
+
+            <div>
+                <label for="titleInput">Название документа</label>
+                <input
+                    type="text"
+                    id="titleInput"
+                    name="title"
+                    placeholder="Например: ПКМ №690"
+                />
+                <p class="hint">Если не указано, название будет взято из имени файла.</p>
+            </div>
+
+            <div>
+                <label for="documentType">Тип документа</label>
+                <select id="documentType" name="document_type">
+                    <option value="">— Автоматическое определение —</option>
+                    <option value="PKM690">ПКМ №690</option>
+                    <option value="GOST">ГОСТ</option>
+                    <option value="SNiP">СНиП</option>
+                    <option value="SanPiN">СанПиН</option>
+                    <option value="PUE">ПУЭ</option>
+                    <option value="PTEEP">ПТЭЭП</option>
+                    <option value="normative">Общий нормативный документ</option>
+                </select>
+                <p class="hint">Тип документа может быть определен автоматически по имени файла.</p>
+            </div>
+
+            <div class="actions">
+                <button type="button" id="submitButton">Загрузить и проанализировать</button>
+            </div>
+        </form>
+
+        <div id="status" class="status"></div>
+
+        <div class="document-list">
+            <h2>Загруженные документы</h2>
+            <div id="documentsList">
+                <div style="text-align: center; padding: 24px; color: #6b7280;">
+                    <span class="loading"></span> Загрузка списка...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = window.location.origin;
+        
+        // Проверка доступности API при загрузке страницы
+        async function testAPI() {
+            try {
+                const response = await fetch(`${API_BASE}/api/normative/test`);
+                if (response.ok) {
+                    console.log('✅ API нормативных документов доступен');
+                } else {
+                    console.warn('⚠️ API вернул ошибку:', response.status);
+                }
+            } catch (error) {
+                console.error('❌ Ошибка подключения к API:', error);
+                const statusDiv = document.getElementById('status');
+                if (statusDiv) {
+                    statusDiv.className = 'status error';
+                    statusDiv.textContent = `⚠️ Не удалось подключиться к серверу. Проверьте, что сервер запущен на ${API_BASE}`;
+                    statusDiv.style.display = 'block';
+                }
+            }
+        }
+
+        // Загрузка списка документов
+        async function loadDocuments() {
+            try {
+                const response = await fetch(`${API_BASE}/api/normative/documents`);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const data = await response.json();
+                renderDocuments(data.documents || []);
+            } catch (error) {
+                console.error('Ошибка загрузки списка документов:', error);
+                const errorMsg = error.message || 'Неизвестная ошибка';
+                document.getElementById('documentsList').innerHTML = 
+                    `<div style="color: #ef4444; text-align: center; padding: 24px;">
+                        Ошибка загрузки списка документов: ${errorMsg}<br>
+                        <small>Проверьте, что сервер запущен на ${API_BASE}</small>
+                    </div>`;
+            }
+        }
+
+        function renderDocuments(documents) {
+            const container = document.getElementById('documentsList');
+            
+            if (documents.length === 0) {
+                container.innerHTML = '<div style="text-align: center; padding: 24px; color: #6b7280;">Нет загруженных документов</div>';
+                return;
+            }
+
+            container.innerHTML = documents.map(doc => {
+                const uploadedDate = new Date(doc.uploaded_at).toLocaleString('ru-RU');
+                const statusBadge = doc.ai_processed ? 
+                    '<span style="color: #10b981; font-weight: 600;">✓ Обработан</span>' : 
+                    '<span style="color: #f59e0b; font-weight: 600;">⏳ Ожидает обработки</span>';
+                
+                return `
+                    <div class="document-item">
+                        <div class="document-item-header">
+                            <div class="document-item-title">${doc.title || doc.file_path.split('/').pop()}</div>
+                            <span class="document-item-type">${doc.document_type || 'normative'}</span>
+                        </div>
+                        <div class="document-item-meta">
+                            Загружен: ${uploadedDate} • 
+                            Размер: ${formatBytes(doc.file_size || 0)} • 
+                            ${statusBadge}
+                        </div>
+                        ${doc.rules_count > 0 ? 
+                            `<div class="document-item-rules">Извлечено правил: ${doc.rules_count}</div>` : 
+                            ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function formatBytes(bytes) {
+            if (bytes === 0) return '0 Б';
+            const k = 1024;
+            const sizes = ['Б', 'КБ', 'МБ', 'ГБ'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+        }
+
+        // Обработка загрузки файла
+        document.getElementById('submitButton').addEventListener('click', async () => {
+            const fileInput = document.getElementById('fileInput');
+            const titleInput = document.getElementById('titleInput');
+            const documentTypeSelect = document.getElementById('documentType');
+            const statusDiv = document.getElementById('status');
+            const submitButton = document.getElementById('submitButton');
+
+            if (!fileInput.files || fileInput.files.length === 0) {
+                showStatus('Выберите файл для загрузки', 'error');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            if (titleInput.value.trim()) {
+                formData.append('title', titleInput.value.trim());
+            }
+            
+            if (documentTypeSelect.value) {
+                formData.append('document_type', documentTypeSelect.value);
+            }
+
+            submitButton.disabled = true;
+            submitButton.textContent = 'Загрузка...';
+            statusDiv.className = 'status info';
+            statusDiv.textContent = 'Загрузка и анализ документа...';
+            statusDiv.style.display = 'block';
+
+            try {
+                const uploadUrl = `${API_BASE}/api/normative/upload`;
+                console.log('Отправка запроса на:', uploadUrl);
+                
+                const response = await fetch(uploadUrl, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                console.log('Получен ответ:', response.status, response.statusText);
+
+                // Проверяем тип ответа
+                const contentType = response.headers.get('content-type');
+                let result;
+                
+                if (contentType && contentType.includes('application/json')) {
+                    result = await response.json();
+                } else {
+                    // Если не JSON, читаем как текст
+                    const text = await response.text();
+                    console.error('Неожиданный формат ответа:', text);
+                    showStatus(`❌ Ошибка: Неожиданный формат ответа сервера (${response.status})`, 'error');
+                    return;
+                }
+
+                if (response.ok) {
+                    showStatus(
+                        `✅ Документ успешно загружен и обработан! Извлечено правил: ${result.rules_extracted || 0}`,
+                        'success'
+                    );
+                    
+                    // Очистить форму
+                    fileInput.value = '';
+                    titleInput.value = '';
+                    documentTypeSelect.value = '';
+                    
+                    // Обновить список документов
+                    loadDocuments();
+                } else {
+                    const errorMsg = result.detail || result.error || result.message || 'Неизвестная ошибка';
+                    console.error('Ошибка сервера:', result);
+                    showStatus(`❌ Ошибка (${response.status}): ${errorMsg}`, 'error');
+                }
+            } catch (error) {
+                console.error('Ошибка загрузки:', error);
+                
+                // Более детальное сообщение об ошибке
+                let errorMessage = 'Ошибка загрузки: ';
+                if (error.name === 'TypeError' && error.message.includes('fetch')) {
+                    errorMessage += 'Не удалось подключиться к серверу. Проверьте, что сервер запущен на ' + API_BASE;
+                } else if (error.message) {
+                    errorMessage += error.message;
+                } else {
+                    errorMessage += 'Неизвестная ошибка сети';
+                }
+                
+                showStatus(errorMessage, 'error');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Загрузить и проанализировать';
+            }
+        });
+
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.className = `status ${type}`;
+            statusDiv.textContent = message;
+            statusDiv.style.display = 'block';
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    statusDiv.style.display = 'none';
+                }, 5000);
+            }
+        }
+
+        // Проверка статуса AI
+        async function checkAIStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/normative/ai-status`);
+                if (!response.ok) {
+                    console.warn('Не удалось проверить статус AI:', response.status);
+                    return;
+                }
+                const status = await response.json();
+                displayAIStatus(status);
+            } catch (error) {
+                console.error('Ошибка проверки статуса AI:', error);
+                // Не показываем ошибку пользователю, просто не отображаем статус
+            }
+        }
+
+        function displayAIStatus(status) {
+            const statusDiv = document.getElementById('aiStatus');
+            const statusContent = document.getElementById('aiStatusContent');
+            
+            // Используем has_valid_config или ai_parser_available (для обратной совместимости)
+            const isConfigured = status.has_valid_config || status.ai_parser_available;
+            
+            if (isConfigured) {
+                statusDiv.className = 'status success';
+                statusContent.innerHTML = `
+                    ✅ <strong>AI настроен и готов к работе</strong><br>
+                    Провайдер: ${(status.ai_provider || 'unknown').toUpperCase()} | 
+                    Извлечение формул и нормативов будет выполнено автоматически
+                `;
+            } else {
+                statusDiv.className = 'status error';
+                const provider = status.ai_provider || 'deepseek';
+                const apiKeyVar = provider === 'openai' ? 'OPENAI_API_KEY' : 
+                                 provider === 'anthropic' ? 'ANTHROPIC_API_KEY' : 
+                                 'DEEPSEEK_API_KEY';
+                
+                statusContent.innerHTML = `
+                    ⚠️ <strong>AI не настроен</strong><br>
+                    Документы будут загружены, но формулы и нормативы не будут извлечены.<br>
+                    <strong>Как настроить:</strong><br>
+                    1. Установите переменные окружения:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<code>AI_ENABLED=true</code><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<code>AI_PROVIDER=${provider}</code> (или openai, anthropic)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<code>${apiKeyVar}=sk-ваш-ключ</code><br>
+                    2. Перезапустите приложение (uvicorn)<br>
+                    3. Подробнее: <a href="../docs/AI_QUICK_START.md" target="_blank">быстрый старт</a> | 
+                    <a href="../docs/AI_CONFIGURATION_GUIDE.md" target="_blank">полное руководство</a>
+                `;
+            }
+            
+            statusDiv.style.display = 'block';
+        }
+
+        // Загрузить список документов при загрузке страницы
+        testAPI();  // Проверяем доступность API первым делом
+        loadDocuments();
+        checkAIStatus();
+
+        // Обновлять список каждые 30 секунд
+        setInterval(loadDocuments, 30000);
+    </script>
+</body>
+</html>
+
