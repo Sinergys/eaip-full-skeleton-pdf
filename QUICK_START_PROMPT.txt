@@ -1,0 +1,116 @@
+🚀 ПРОМПТ ДЛЯ НОВОГО ОКНА CURSOR - EAIP Full Skeleton v0.3.0
+
+КОНТЕКСТ:
+Проект EAIP (Energy Audit Intelligence Platform) - платформа энергоаудита.
+GitHub: Sinergys/eaip-full-skeleton-pdf | Docker Hub: ecosinergys
+Версия: v0.3.0 | Дата: 2025-11-08 | Статус: ✅ Все основные задачи выполнены
+
+ВЫПОЛНЕНО:
+
+1. ✅ GITHUB CI/CD И РЕЛИЗЫ
+   - Автоматическая сборка Docker образов (docker.yml)
+   - Release workflow: multi-arch, Trivy scanning, Cosign подпись (release.yml)
+   - Smoke tests после релиза (smoke.yml)
+   - Все 7 сервисов на Docker Hub: ecosinergys/eaip-full-skeleton-{service}:v0.3.0
+   - Скрипты: create_release.ps1, check_workflow_status.ps1
+
+2. ✅ OBSERVABILITY & MONITORING
+   - Prometheus, Grafana, Loki, Alertmanager
+   - Алерты для всех сервисов
+   - Файлы: infra/docker-compose.monitoring.yml, infra/prometheus.yml, infra/alerts.yml
+   - Документация: infra/MONITORING.md
+
+3. ✅ INGEST SERVICE - ВАЛИДАЦИЯ, ПАРСИНГ, OCR
+   - Валидация: XLSX, DOCX, PDF, JPG, PNG до 50 МБ (ТЗ 4.1, 4.2)
+   - Парсинг: PDF (PyPDF2+pdfplumber), Excel (openpyxl), Word (python-docx)
+   - OCR: Tesseract (русский+английский), автоопределение сканов
+   - Веб-интерфейс: 4 секции (распознавание, редактирование, проверка, отправка)
+   - API: POST /web/upload, GET /ingest/parse/{batch_id}, POST /ingest/validate
+   - Файлы: services/ingest/main.py, services/ingest/file_parser.py
+
+4. ✅ PDF GENERATION С ПОДДЕРЖКОЙ CYRILLIC
+   - DejaVuSans TTF font вместо UnicodeCIDFont
+   - Исправлена проблема с квадратиками в PDF
+   - Файл: services/reports/main.py, services/reports/assets/fonts/DejaVuSans.ttf
+
+5. ✅ ИНФРАСТРУКТУРА И КОНФИГУРАЦИЯ
+   - Локальная: docker-compose.yml (PostgreSQL, Redis, MinIO)
+   - Staging: docker-compose.staging.yml, deploy-staging.sh
+   - Local Mini-Prod: docker-compose.local.yml, launch-local-mini-prod.sh
+   - Переменные: infra/.env.example (шаблон)
+
+6. ✅ ДОКУМЕНТАЦИЯ
+   - SESSION_SUMMARY.md - полное резюме сессии
+   - QUICK_CONTEXT.md - быстрый контекст
+   - GITHUB_TOKEN_SETUP.md, RELEASE_INSTRUCTIONS.md
+   - infra/STAGING_DEPLOYMENT.md, infra/LOCAL_MINI_PROD.md
+
+7. ✅ ТЕСТИРОВАНИЕ PDF И OCR
+   - Создан test_pdf_ocr.py - автоматический тест загрузки и OCR
+   - Проверена работа сервиса ingest (health check OK)
+   - Увеличен таймаут до 300 сек для больших файлов
+   - Документация: TEST_PDF_OCR.md, QUICK_TEST_PDF.md
+   - Статус: ✅ OCR проверен и работает
+
+8. ✅ ИНТЕГРАЦИЯ ИИ (DEEPSEEK API)
+   - Создан ai_parser.py - модуль для работы с ИИ API
+   - Поддержка DeepSeek (OpenAI-совместимый, дешевле в 200+ раз)
+   - Поддержка OpenAI GPT-4 Vision и Anthropic Claude
+   - Интеграция в file_parser.py для автоматического распознавания
+   - Распознавание PDF и изображений через Vision API
+   - Протестировано подключение: API ключ работает ✅
+   - Документация: AI_SETUP.md, AI_INTEGRATION_PLAN.md, DEEPSEEK_TEST_RESULT.md
+   - Статус: ✅ Базовая интеграция выполнена, API ключ проверен и готов к использованию
+
+9. ✅ БАЗОВАЯ СТРУКТУРА БД
+   - Создан init.sql - SQL скрипт инициализации всех таблиц
+   - Таблицы для всех 7 сервисов (ingest, validate, analytics, gateway-auth, reports, management, recommend)
+   - Индексы и триггеры настроены
+   - Обновлены docker-compose файлы для автоматической инициализации
+   - Документация: infra/db/DATABASE_SCHEMA.md, infra/db/README.md
+   - Статус: ✅ Структура БД создана, готова к интеграции в сервисы
+
+ТЕХНОЛОГИИ:
+- Backend: Python 3.11, FastAPI, Docker
+- Ingest: pytesseract, pdf2image, openpyxl, pdfplumber, python-docx, Tesseract OCR
+- CI/CD: GitHub Actions, Docker Hub, Trivy, Syft, Cosign
+- Monitoring: Prometheus, Grafana, Loki, Alertmanager
+
+ЗАПУСК:
+Локально: cd infra && docker compose up -d
+Mini-Prod: cd infra && bash launch-local-mini-prod.sh
+Staging: cd /opt/eaip && bash deploy-staging.sh
+Веб ingest: http://localhost:8001/web/upload
+
+СЕРВИСЫ (порты):
+gateway-auth(8000), ingest(8001), validate(8002), analytics(8003), 
+recommend(8004), reports(8005), management(8006)
+
+СТАТУС: ✅ Все работает, готово к использованию
+
+ПРОБЛЕМЫ: 
+- Секции веб-интерфейса могут не появляться - проверить консоль браузера (F12)
+- Результаты парсинга в памяти - нужна интеграция с Redis/PostgreSQL
+
+ВАЖНЫЕ ФАЙЛЫ:
+- SESSION_SUMMARY.md - полное резюме
+- services/ingest/main.py - ingest service
+- services/ingest/ai_parser.py - ИИ модуль для распознавания
+- infra/db/init.sql - SQL скрипт инициализации БД ✅
+- test_pdf_ocr.py - тест загрузки PDF и OCR
+- test_deepseek_simple.py - тест DeepSeek API подключения ✅
+- .github/workflows/ - CI/CD workflows
+- infra/docker-compose*.yml - конфигурации окружений
+
+ТЕСТИРОВАНИЕ:
+python test_pdf_ocr.py "путь/к/файлу.pdf"
+python test_deepseek_simple.py  # Проверка DeepSeek API
+Веб: http://localhost:8001/web/upload
+
+ИИ НАСТРОЙКА (ПРОВЕРЕНО ✅):
+AI_PROVIDER=deepseek
+AI_ENABLED=true
+AI_PREFER_FOR_PDF=true
+DEEPSEEK_API_KEY=sk-fa4d5adfd79d4307809a34b153fc0ab7  # Работает!
+Документация: services/ingest/AI_SETUP.md, DEEPSEEK_TEST_RESULT.md
+

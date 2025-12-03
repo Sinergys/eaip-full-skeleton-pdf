@@ -1,0 +1,1019 @@
+Отчёт проверки кода
+Проект: C:\eaip\eaip_full_skeleton
+Дата: 2025-11-15 21:28:50
+----------------------------------------
+
+=== Python compileall (синтаксис) ===
+Listing '.'...
+Listing '.\\.git'...
+Listing '.\\.git\\hooks'...
+Listing '.\\.git\\info'...
+Listing '.\\.git\\logs'...
+Listing '.\\.git\\logs\\refs'...
+Listing '.\\.git\\logs\\refs\\heads'...
+Listing '.\\.git\\logs\\refs\\remotes'...
+Listing '.\\.git\\logs\\refs\\remotes\\origin'...
+Listing '.\\.git\\objects'...
+Listing '.\\.git\\objects\\00'...
+Listing '.\\.git\\objects\\01'...
+Listing '.\\.git\\objects\\02'...
+Listing '.\\.git\\objects\\03'...
+Listing '.\\.git\\objects\\04'...
+Listing '.\\.git\\objects\\05'...
+Listing '.\\.git\\objects\\0b'...
+Listing '.\\.git\\objects\\0c'...
+Listing '.\\.git\\objects\\13'...
+Listing '.\\.git\\objects\\14'...
+Listing '.\\.git\\objects\\18'...
+Listing '.\\.git\\objects\\19'...
+Listing '.\\.git\\objects\\1b'...
+Listing '.\\.git\\objects\\20'...
+Listing '.\\.git\\objects\\24'...
+Listing '.\\.git\\objects\\25'...
+Listing '.\\.git\\objects\\28'...
+Listing '.\\.git\\objects\\29'...
+Listing '.\\.git\\objects\\2f'...
+Listing '.\\.git\\objects\\30'...
+Listing '.\\.git\\objects\\31'...
+Listing '.\\.git\\objects\\32'...
+Listing '.\\.git\\objects\\34'...
+Listing '.\\.git\\objects\\35'...
+Listing '.\\.git\\objects\\36'...
+Listing '.\\.git\\objects\\37'...
+Listing '.\\.git\\objects\\38'...
+Listing '.\\.git\\objects\\3b'...
+Listing '.\\.git\\objects\\3d'...
+Listing '.\\.git\\objects\\41'...
+Listing '.\\.git\\objects\\42'...
+Listing '.\\.git\\objects\\43'...
+Listing '.\\.git\\objects\\48'...
+Listing '.\\.git\\objects\\49'...
+Listing '.\\.git\\objects\\4b'...
+Listing '.\\.git\\objects\\4c'...
+Listing '.\\.git\\objects\\4f'...
+Listing '.\\.git\\objects\\51'...
+Listing '.\\.git\\objects\\52'...
+Listing '.\\.git\\objects\\53'...
+Listing '.\\.git\\objects\\55'...
+Listing '.\\.git\\objects\\57'...
+Listing '.\\.git\\objects\\58'...
+Listing '.\\.git\\objects\\59'...
+Listing '.\\.git\\objects\\5b'...
+Listing '.\\.git\\objects\\5d'...
+Listing '.\\.git\\objects\\5f'...
+Listing '.\\.git\\objects\\63'...
+Listing '.\\.git\\objects\\66'...
+Listing '.\\.git\\objects\\68'...
+Listing '.\\.git\\objects\\6a'...
+Listing '.\\.git\\objects\\6c'...
+Listing '.\\.git\\objects\\6d'...
+Listing '.\\.git\\objects\\74'...
+Listing '.\\.git\\objects\\78'...
+Listing '.\\.git\\objects\\7b'...
+Listing '.\\.git\\objects\\7e'...
+Listing '.\\.git\\objects\\81'...
+Listing '.\\.git\\objects\\82'...
+Listing '.\\.git\\objects\\83'...
+Listing '.\\.git\\objects\\87'...
+Listing '.\\.git\\objects\\8a'...
+Listing '.\\.git\\objects\\8d'...
+Listing '.\\.git\\objects\\91'...
+Listing '.\\.git\\objects\\95'...
+Listing '.\\.git\\objects\\97'...
+Listing '.\\.git\\objects\\98'...
+Listing '.\\.git\\objects\\99'...
+Listing '.\\.git\\objects\\9b'...
+Listing '.\\.git\\objects\\9c'...
+Listing '.\\.git\\objects\\9f'...
+Listing '.\\.git\\objects\\a1'...
+Listing '.\\.git\\objects\\a2'...
+Listing '.\\.git\\objects\\a3'...
+Listing '.\\.git\\objects\\a5'...
+Listing '.\\.git\\objects\\a6'...
+Listing '.\\.git\\objects\\a7'...
+Listing '.\\.git\\objects\\ab'...
+Listing '.\\.git\\objects\\ae'...
+Listing '.\\.git\\objects\\af'...
+Listing '.\\.git\\objects\\b1'...
+Listing '.\\.git\\objects\\b5'...
+Listing '.\\.git\\objects\\b6'...
+Listing '.\\.git\\objects\\ba'...
+Listing '.\\.git\\objects\\bb'...
+Listing '.\\.git\\objects\\be'...
+Listing '.\\.git\\objects\\bf'...
+Listing '.\\.git\\objects\\c4'...
+Listing '.\\.git\\objects\\c6'...
+Listing '.\\.git\\objects\\c8'...
+Listing '.\\.git\\objects\\ca'...
+Listing '.\\.git\\objects\\cf'...
+Listing '.\\.git\\objects\\d1'...
+Listing '.\\.git\\objects\\d2'...
+Listing '.\\.git\\objects\\d3'...
+Listing '.\\.git\\objects\\d4'...
+Listing '.\\.git\\objects\\d5'...
+Listing '.\\.git\\objects\\d6'...
+Listing '.\\.git\\objects\\d8'...
+Listing '.\\.git\\objects\\da'...
+Listing '.\\.git\\objects\\dc'...
+Listing '.\\.git\\objects\\dd'...
+Listing '.\\.git\\objects\\de'...
+Listing '.\\.git\\objects\\e5'...
+Listing '.\\.git\\objects\\e6'...
+Listing '.\\.git\\objects\\e7'...
+Listing '.\\.git\\objects\\ed'...
+Listing '.\\.git\\objects\\ef'...
+Listing '.\\.git\\objects\\f0'...
+Listing '.\\.git\\objects\\f1'...
+Listing '.\\.git\\objects\\f3'...
+Listing '.\\.git\\objects\\f4'...
+Listing '.\\.git\\objects\\f5'...
+Listing '.\\.git\\objects\\fb'...
+Listing '.\\.git\\objects\\fc'...
+Listing '.\\.git\\objects\\info'...
+Listing '.\\.git\\objects\\pack'...
+Listing '.\\.git\\refs'...
+Listing '.\\.git\\refs\\heads'...
+Listing '.\\.git\\refs\\remotes'...
+Listing '.\\.git\\refs\\remotes\\origin'...
+Listing '.\\.git\\refs\\tags'...
+Listing '.\\.github'...
+Listing '.\\.github\\workflows'...
+Listing '.\\.ruff_cache'...
+Listing '.\\.ruff_cache\\0.14.0'...
+Listing '.\\client'...
+Compiling '.\\client\\server.py'...
+Listing '.\\code_check_logs'...
+Compiling '.\\create_test_image.py'...
+Listing '.\\docs'...
+Listing '.\\infra'...
+Listing '.\\infra\\data'...
+Listing '.\\infra\\data\\inbox'...
+Listing '.\\infra\\db'...
+Listing '.\\infra\\grafana-dashboards'...
+Listing '.\\infra\\grafana-datasources'...
+Listing '.\\infra\\helm'...
+Listing '.\\infra\\monitoring'...
+Listing '.\\infra\\monitoring\\alertmanager'...
+Listing '.\\infra\\monitoring\\caddy'...
+Listing '.\\infra\\monitoring\\grafana'...
+Listing '.\\infra\\monitoring\\grafana\\dashboards'...
+Listing '.\\infra\\monitoring\\grafana\\provisioning'...
+Listing '.\\infra\\monitoring\\grafana\\provisioning\\dashboards'...
+Listing '.\\infra\\monitoring\\grafana\\provisioning\\datasources'...
+Listing '.\\infra\\monitoring\\loki'...
+Listing '.\\infra\\monitoring\\prometheus'...
+Listing '.\\infra\\monitoring\\prometheus\\rules'...
+Listing '.\\infra\\monitoring\\promtail'...
+Listing '.\\infra\\nginx'...
+Listing '.\\infra\\nginx\\conf.d'...
+Listing '.\\infra\\prometheus'...
+Listing '.\\infra\\prometheus\\rules'...
+Listing '.\\scripts'...
+Listing '.\\services'...
+Listing '.\\services\\analytics'...
+Listing '.\\services\\gateway-auth'...
+Listing '.\\services\\ingest'...
+Compiling '.\\services\\ingest\\ai_anomaly_detector.py'...
+Compiling '.\\services\\ingest\\ai_client_factory.py'...
+Compiling '.\\services\\ingest\\ai_compliance_checker.py'...
+Compiling '.\\services\\ingest\\ai_data_validator.py'...
+Compiling '.\\services\\ingest\\ai_efficiency_analyzer.py'...
+Compiling '.\\services\\ingest\\ai_energy_analysis.py'...
+Compiling '.\\services\\ingest\\ai_energy_verifier.py'...
+Compiling '.\\services\\ingest\\ai_ocr_enhancer.py'...
+Compiling '.\\services\\ingest\\ai_parser.py'...
+Compiling '.\\services\\ingest\\ai_table_parser.py'...
+Listing '.\\services\\ingest\\config'...
+Listing '.\\services\\ingest\\domain'...
+Compiling '.\\services\\ingest\\domain\\energy_passport_calculations.py'...
+Compiling '.\\services\\ingest\\domain\\normative_importer.py'...
+Compiling '.\\services\\ingest\\domain\\passport_validator.py'...
+Compiling '.\\services\\ingest\\domain\\pkm690_sections.py'...
+Compiling '.\\services\\ingest\\domain\\unit_converters.py'...
+Compiling '.\\services\\ingest\\file_parser.py'...
+Listing '.\\services\\ingest\\logs'...
+Compiling '.\\services\\ingest\\main.py'...
+Listing '.\\services\\ingest\\parsers'...
+Compiling '.\\services\\ingest\\parsers\\excel_passport_parser.py'...
+Listing '.\\services\\ingest\\settings'...
+Compiling '.\\services\\ingest\\settings\\ai_settings.py'...
+Listing '.\\services\\ingest\\utils'...
+Compiling '.\\services\\ingest\\utils\\data_validator.py'...
+Compiling '.\\services\\ingest\\utils\\image_enhancement.py'...
+Compiling '.\\services\\ingest\\utils\\ocr_memory_optimizer.py'...
+Compiling '.\\services\\ingest\\utils\\ocr_table_extractor.py'...
+Compiling '.\\services\\ingest\\utils\\pdf_classifier.py'...
+Compiling '.\\services\\ingest\\utils\\pdf_diagnostics.py'...
+Compiling '.\\services\\ingest\\utils\\readiness_validator.py'...
+Compiling '.\\services\\ingest\\utils\\table_detector.py'...
+Compiling '.\\services\\ingest\\utils\\test_pdf_scenarios.py'...
+Compiling '.\\services\\ingest\\utils\\word_readiness_validator.py'...
+Compiling '.\\services\\ingest\\utils\\word_report_generator.py'...
+Listing '.\\services\\ingest\\web'...
+Listing '.\\services\\management'...
+Listing '.\\services\\recommend'...
+Listing '.\\services\\reports'...
+Listing '.\\services\\reports\\assets'...
+Listing '.\\services\\reports\\assets\\fonts'...
+Compiling '.\\services\\reports\\main.py'...
+Listing '.\\services\\validate'...
+Compiling '.\\test_deepseek_connection.py'...
+Compiling '.\\test_deepseek_simple.py'...
+Compiling '.\\test_image_ocr.py'...
+Compiling '.\\test_pdf_ocr.py'...
+Listing '.\\tests'...
+Compiling '.\\tests\\conftest.py'...
+Listing '.\\tests\\fixtures'...
+Listing '.\\tests\\integration'...
+Compiling '.\\tests\\integration\\test_pdf_pipeline.py'...
+Listing '.\\tests\\performance'...
+Compiling '.\\tests\\performance\\test_ocr_performance.py'...
+Listing '.\\tests\\unit'...
+Compiling '.\\tests\\unit\\test_ai_anomaly_detector.py'...
+Compiling '.\\tests\\unit\\test_ai_base_client.py'...
+Compiling '.\\tests\\unit\\test_ai_client_factory.py'...
+Compiling '.\\tests\\unit\\test_ai_config.py'...
+Compiling '.\\tests\\unit\\test_ai_parser.py'...
+[OK] Python compileall (синтаксис)
+
+=== ruff check (линтер) ===
+E722 Do not use bare `except`
+  --> client\server.py:51:9
+   |
+49 |         try:
+50 |             webbrowser.open(url)
+51 |         except:
+   |         ^^^^^^
+52 |             pass
+   |
+
+E722 Do not use bare `except`
+  --> create_test_image.py:57:5
+   |
+55 |                     # Fallback на стандартный шрифт
+56 |                     font = ImageFont.load_default()
+57 |     except:
+   |     ^^^^^^
+58 |         font = ImageFont.load_default()
+   |
+
+F841 Local variable `electricity` is assigned to but never used
+   --> services\ingest\ai_energy_verifier.py:294:13
+    |
+292 | …     # Проверка баланса электроэнергии
+293 | …     if "electricity" in data:
+294 | …         electricity = data["electricity"]
+    |           ^^^^^^^^^^^
+295 | …         # Простая проверка: если есть технологические и собственные нужды, их сумма должна быть равна общему
+296 | …         # Это упрощенная проверка, в реальности нужно учитывать структуру данных
+    |
+help: Remove assignment to unused variable `electricity`
+
+F401 `google.generativeai` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\ai_parser.py:29:35
+   |
+27 | HAS_GOOGLE = False
+28 | try:
+29 |     import google.generativeai as genai
+   |                                   ^^^^^
+30 |     HAS_GOOGLE = True
+31 | except ImportError:
+   |
+help: Remove unused import: `google.generativeai`
+
+F401 `.energy_units.to_kwh` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:13:9
+   |
+11 | try:
+12 |     from .energy_units import (
+13 |         to_kwh, to_mwh, to_kvarh,
+   |         ^^^^^^
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |
+help: Remove unused import
+
+F401 `.energy_units.to_mwh` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:13:17
+   |
+11 | try:
+12 |     from .energy_units import (
+13 |         to_kwh, to_mwh, to_kvarh,
+   |                 ^^^^^^
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |
+help: Remove unused import
+
+F401 `.energy_units.to_kvarh` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:13:25
+   |
+11 | try:
+12 |     from .energy_units import (
+13 |         to_kwh, to_mwh, to_kvarh,
+   |                         ^^^^^^^^
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |
+help: Remove unused import
+
+F401 `.energy_units.to_m3` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:14:9
+   |
+12 |     from .energy_units import (
+13 |         to_kwh, to_mwh, to_kvarh,
+14 |         to_m3, to_ton, to_gcal,
+   |         ^^^^^
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |
+help: Remove unused import
+
+F401 `.energy_units.to_ton` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:14:16
+   |
+12 |     from .energy_units import (
+13 |         to_kwh, to_mwh, to_kvarh,
+14 |         to_m3, to_ton, to_gcal,
+   |                ^^^^^^
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |
+help: Remove unused import
+
+F401 `.energy_units.to_gcal` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:14:24
+   |
+12 |     from .energy_units import (
+13 |         to_kwh, to_mwh, to_kvarh,
+14 |         to_m3, to_ton, to_gcal,
+   |                        ^^^^^^^
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |
+help: Remove unused import
+
+F401 `.energy_units.normalize_energy_to_kwh` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:15:9
+   |
+13 |         to_kwh, to_mwh, to_kvarh,
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+17 |         MONTHS_PER_QUARTER
+   |
+help: Remove unused import
+
+F401 `.energy_units.normalize_volume_to_m3` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:15:34
+   |
+13 |         to_kwh, to_mwh, to_kvarh,
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |                                  ^^^^^^^^^^^^^^^^^^^^^^
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+17 |         MONTHS_PER_QUARTER
+   |
+help: Remove unused import
+
+F401 `.energy_units.normalize_mass_to_ton` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:15:58
+   |
+13 |         to_kwh, to_mwh, to_kvarh,
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |                                                          ^^^^^^^^^^^^^^^^^^^^^
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+17 |         MONTHS_PER_QUARTER
+   |
+help: Remove unused import
+
+F401 `.energy_units.hours_in_period` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:16:9
+   |
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |         ^^^^^^^^^^^^^^^
+17 |         MONTHS_PER_QUARTER
+18 |     )
+   |
+help: Remove unused import
+
+F401 `.energy_units.HOURS_PER_QUARTER` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:16:42
+   |
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |                                          ^^^^^^^^^^^^^^^^^
+17 |         MONTHS_PER_QUARTER
+18 |     )
+   |
+help: Remove unused import
+
+F401 `.energy_units.HOURS_PER_MONTH` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\energy_passport_calculations.py:16:61
+   |
+14 |         to_m3, to_ton, to_gcal,
+15 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+16 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |                                                             ^^^^^^^^^^^^^^^
+17 |         MONTHS_PER_QUARTER
+18 |     )
+   |
+help: Remove unused import
+
+F841 Local variable `norm1` is assigned to but never used
+   --> services\ingest\domain\energy_units.py:285:5
+    |
+283 |     """
+284 |     # Нормализуем к базовой единице
+285 |     norm1 = normalize_energy_to_kwh(value1, unit1) if "кВт·ч" in expected_base_unit else value1
+    |     ^^^^^
+286 |     norm2 = normalize_energy_to_kwh(value2, unit2) if "кВт·ч" in expected_base_unit else value2
+    |
+help: Remove assignment to unused variable `norm1`
+
+F841 Local variable `norm2` is assigned to but never used
+   --> services\ingest\domain\energy_units.py:286:5
+    |
+284 |     # Нормализуем к базовой единице
+285 |     norm1 = normalize_energy_to_kwh(value1, unit1) if "кВт·ч" in expected_base_unit else value1
+286 |     norm2 = normalize_energy_to_kwh(value2, unit2) if "кВт·ч" in expected_base_unit else value2
+    |     ^^^^^
+287 |     
+288 |     # Проверяем, что после нормализации значения имеют смысл
+    |
+help: Remove assignment to unused variable `norm2`
+
+F402 Import `field` from line 6 shadowed by loop variable
+   --> services\ingest\domain\passport_field_mapping.py:426:17
+    |
+424 |         calculated = []
+425 |         for sheet_fields in self._mappings.values():
+426 |             for field in sheet_fields:
+    |                 ^^^^^
+427 |                 if field.field_type == FieldType.CALCULATED:
+428 |                     calculated.append(field)
+    |
+
+F402 Import `field` from line 6 shadowed by loop variable
+   --> services\ingest\domain\passport_field_mapping.py:435:17
+    |
+433 |         required = []
+434 |         for sheet_fields in self._mappings.values():
+435 |             for field in sheet_fields:
+    |                 ^^^^^
+436 |                 if field.is_required:
+437 |                     required.append(field)
+    |
+
+F402 Import `field` from line 6 shadowed by loop variable
+   --> services\ingest\domain\passport_field_mapping.py:444:17
+    |
+442 |         result = []
+443 |         for sheet_fields in self._mappings.values():
+444 |             for field in sheet_fields:
+    |                 ^^^^^
+445 |                 if field.data_source == data_source:
+446 |                     result.append(field)
+    |
+
+F401 `.passport_field_mapping.FieldType` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\passport_validator.py:14:60
+   |
+12 | # Импорт модулей
+13 | try:
+14 |     from .passport_field_mapping import get_field_mapping, FieldType
+   |                                                            ^^^^^^^^^
+15 |     from .energy_passport_calculations import (
+16 |         validate_balance,
+   |
+help: Remove unused import: `.passport_field_mapping.FieldType`
+
+F401 `.energy_passport_calculations.specific_consumption_kwh_per_kg` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\passport_validator.py:17:9
+   |
+15 |     from .energy_passport_calculations import (
+16 |         validate_balance,
+17 |         specific_consumption_kwh_per_kg,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+18 |         sum_categories,
+19 |     )
+   |
+help: Remove unused import: `.energy_passport_calculations.specific_consumption_kwh_per_kg`
+
+E722 Do not use bare `except`
+   --> services\ingest\domain\pkm690_sections.py:382:5
+    |
+380 |                 return False
+381 |         return value is not None
+382 |     except:
+    |     ^^^^^^
+383 |         return False
+    |
+
+F401 `.energy_passport_calculations.extract_quarter_data` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\report_data.py:18:9
+   |
+16 |         calculate_average_payback_period,
+17 |         extract_equipment_data,
+18 |         extract_quarter_data,
+   |         ^^^^^^^^^^^^^^^^^^^^
+19 |         calculate_specific_consumption,
+20 |         EquipmentData,
+   |
+help: Remove unused import
+
+F401 `.energy_passport_calculations.calculate_specific_consumption` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\report_data.py:19:9
+   |
+17 |         extract_equipment_data,
+18 |         extract_quarter_data,
+19 |         calculate_specific_consumption,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+20 |         EquipmentData,
+21 |         QuarterData,
+   |
+help: Remove unused import
+
+F401 `openpyxl` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\file_parser.py:66:12
+   |
+65 | try:
+66 |     import openpyxl
+   |            ^^^^^^^^
+67 |     from openpyxl import load_workbook
+68 |     HAS_OPENPYXL = True
+   |
+help: Remove unused import: `openpyxl`
+
+F401 `pandas` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\file_parser.py:74:22
+   |
+73 | try:
+74 |     import pandas as pd
+   |                      ^^
+75 |     HAS_PANDAS = True
+76 | except ImportError:
+   |
+help: Remove unused import: `pandas`
+
+F401 `PIL.ImageFilter` imported but unused; consider using `importlib.util.find_spec` to test for availability
+   --> services\ingest\file_parser.py:104:42
+    |
+102 |     import pytesseract
+103 |     from pdf2image import convert_from_path
+104 |     from PIL import Image, ImageEnhance, ImageFilter
+    |                                          ^^^^^^^^^^^
+105 |     # Увеличиваем лимит PIL для больших изображений (для сканированных PDF с высоким DPI)
+106 |     Image.MAX_IMAGE_PIXELS = 200000000  # 200 миллионов пикселей (было 89 миллионов)
+    |
+help: Remove unused import: `PIL.ImageFilter`
+
+F821 Undefined name `logger`
+  --> services\ingest\main.py:61:5
+   |
+59 |     HAS_GENERATOR = True
+60 | except ImportError as e:
+61 |     logger.warning(f"PKM690 генератор не доступен: {e}")
+   |     ^^^^^^
+62 |     HAS_GENERATOR = False
+   |
+
+F821 Undefined name `logger`
+  --> services\ingest\main.py:80:5
+   |
+78 |     HAS_FILLER = True
+79 | except ImportError as e:
+80 |     logger.warning(f"fill_energy_passport недоступен: {e}")
+   |     ^^^^^^
+81 |     HAS_FILLER = False
+   |
+
+F821 Undefined name `logger`
+  --> services\ingest\main.py:87:5
+   |
+85 |     HAS_WORD_GENERATOR = True
+86 | except ImportError as e:
+87 |     logger.warning(f"WordReportGenerator недоступен: {e}")
+   |     ^^^^^^
+88 |     HAS_WORD_GENERATOR = False
+   |
+
+F841 Local variable `ai_settings` is assigned to but never used
+   --> services\ingest\main.py:329:9
+    |
+327 |         # Получаем статус AI из единого модуля настроек
+328 |         ai_status = get_ai_status()
+329 |         ai_settings = get_ai_settings()
+    |         ^^^^^^^^^^^
+330 |         
+331 |         # Проверяем доступность импортера
+    |
+help: Remove assignment to unused variable `ai_settings`
+
+F841 Local variable `ocr_used` is assigned to but never used
+   --> services\ingest\main.py:818:13
+    |
+816 |             is_scanned = pdf_data.get("is_scanned", False)
+817 |             ocr_attempted = pdf_data.get("ocr_attempted", False)
+818 |             ocr_used = pdf_data.get("ocr_used", False)
+    |             ^^^^^^^^
+819 |             ocr_success = pdf_data.get("ocr_success", False)
+820 |             ocr_error = pdf_data.get("ocr_error")
+    |
+help: Remove assignment to unused variable `ocr_used`
+
+E722 Do not use bare `except`
+   --> services\ingest\parsers\excel_passport_parser.py:348:13
+    |
+346 |                 cleaned = value.replace(' ', '').replace(',', '.')
+347 |                 return float(cleaned)
+348 |             except:
+    |             ^^^^^^
+349 |                 pass
+350 |         return None
+    |
+
+F401 `sqlalchemy.orm.Session` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\connection_pool.py:14:46
+   |
+12 | try:
+13 |     from sqlalchemy import create_engine, pool
+14 |     from sqlalchemy.orm import sessionmaker, Session
+   |                                              ^^^^^^^
+15 |     HAS_SQLALCHEMY = True
+16 | except ImportError:
+   |
+help: Remove unused import: `sqlalchemy.orm.Session`
+
+F401 `psycopg2` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\connection_pool.py:22:12
+   |
+20 | # Попытка использовать psycopg2 для PostgreSQL
+21 | try:
+22 |     import psycopg2
+   |            ^^^^^^^^
+23 |     from psycopg2 import pool as pg_pool
+24 |     HAS_PSYCOPG2 = True
+   |
+help: Remove unused import: `psycopg2`
+
+F841 Local variable `units_row` is assigned to but never used
+   --> services\ingest\utils\energy_aggregator.py:160:9
+    |
+158 |         year_cols = {}
+159 |         header_row = list(sheet.iter_rows(min_row=2, max_row=2, values_only=True))[0]
+160 |         units_row = list(sheet.iter_rows(min_row=3, max_row=3, values_only=True))[0]
+    |         ^^^^^^^^^
+161 |         
+162 |         for col_idx, value in enumerate(header_row):
+    |
+help: Remove assignment to unused variable `units_row`
+
+F401 `PIL.ImageOps` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\image_enhancement.py:14:55
+   |
+12 | # Импорты с проверкой доступности
+13 | try:
+14 |     from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+   |                                                       ^^^^^^^^
+15 |     from PIL.Image import Image as PILImage
+16 |     HAS_PIL = True
+   |
+help: Remove unused import: `PIL.ImageOps`
+
+F401 `skimage.transform` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\image_enhancement.py:29:34
+   |
+28 | try:
+29 |     from skimage import filters, transform, restoration
+   |                                  ^^^^^^^^^
+30 |     HAS_SKIMAGE = True
+31 | except ImportError:
+   |
+help: Remove unused import: `skimage.transform`
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\pdf_classifier.py:179:25
+    |
+177 |                             if hasattr(page, 'images') and page.images:
+178 |                                 image_objects += len(page.images)
+179 |                         except:
+    |                         ^^^^^^
+180 |                             pass
+    |
+
+F401 `pkm690_sections.PKM690Section` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\section_template_filler.py:20:37
+   |
+18 |         if str(_domain_path) not in sys.path:
+19 |             sys.path.insert(0, str(_domain_path))
+20 |         from pkm690_sections import PKM690Section, get_section_by_number
+   |                                     ^^^^^^^^^^^^^
+21 |         from report_data import ReportData
+22 |         HAS_SECTIONS = True
+   |
+help: Remove unused import: `pkm690_sections.PKM690Section`
+
+F401 `report_data.ReportData` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\section_template_filler.py:21:33
+   |
+19 |             sys.path.insert(0, str(_domain_path))
+20 |         from pkm690_sections import PKM690Section, get_section_by_number
+21 |         from report_data import ReportData
+   |                                 ^^^^^^^^^^
+22 |         HAS_SECTIONS = True
+23 |     except ImportError:
+   |
+help: Remove unused import: `report_data.ReportData`
+
+E722 Do not use bare `except`
+  --> services\ingest\utils\section_template_filler.py:73:9
+   |
+71 |             filled_text = template.format(**{k: v for k, v in context.items() if k in template})
+72 |             return filled_text
+73 |         except:
+   |         ^^^^^^
+74 |             return template
+75 |     except Exception as e:
+   |
+
+F401 `signal` imported but unused; consider using `importlib.util.find_spec` to test for availability
+   --> services\ingest\utils\table_detector.py:503:16
+    |
+501 |     """
+502 |     try:
+503 |         import signal
+    |                ^^^^^^
+504 |         import sys
+505 |         from pathlib import Path
+    |
+help: Remove unused import: `signal`
+
+F401 `report_data.ReportData` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_readiness_validator.py:34:33
+   |
+32 |             SectionType,
+33 |         )
+34 |         from report_data import ReportData
+   |                                 ^^^^^^^^^^
+35 |         HAS_SECTIONS = True
+36 |     except ImportError:
+   |
+help: Remove unused import: `report_data.ReportData`
+
+F401 `.reference_tables_loader.get_equipment_by_section` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_readiness_validator.py:42:9
+   |
+40 |     from .reference_tables_loader import (
+41 |         get_all_measures,
+42 |         get_equipment_by_section,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^
+43 |         get_losses_data,
+44 |     )
+   |
+help: Remove unused import
+
+F401 `.reference_tables_loader.get_losses_data` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_readiness_validator.py:43:9
+   |
+41 |         get_all_measures,
+42 |         get_equipment_by_section,
+43 |         get_losses_data,
+   |         ^^^^^^^^^^^^^^^
+44 |     )
+45 |     HAS_REFERENCE_TABLES = True
+   |
+help: Remove unused import
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_readiness_validator.py:255:5
+    |
+253 |                 return False
+254 |         return value is not None and value != 0
+255 |     except:
+    |     ^^^^^^
+256 |         return False
+    |
+
+F401 `docx.shared.Inches` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_report_generator.py:42:29
+   |
+40 | try:
+41 |     from docx import Document
+42 |     from docx.shared import Inches, Pt, RGBColor
+   |                             ^^^^^^
+43 |     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+44 |     from docx.enum.style import WD_STYLE_TYPE
+   |
+help: Remove unused import
+
+F401 `docx.shared.RGBColor` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_report_generator.py:42:41
+   |
+40 | try:
+41 |     from docx import Document
+42 |     from docx.shared import Inches, Pt, RGBColor
+   |                                         ^^^^^^^^
+43 |     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+44 |     from docx.enum.style import WD_STYLE_TYPE
+   |
+help: Remove unused import
+
+F401 `docx.enum.text.WD_BREAK` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_report_generator.py:43:52
+   |
+41 |     from docx import Document
+42 |     from docx.shared import Inches, Pt, RGBColor
+43 |     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+   |                                                    ^^^^^^^^
+44 |     from docx.enum.style import WD_STYLE_TYPE
+45 |     HAS_DOCX = True
+   |
+help: Remove unused import: `docx.enum.text.WD_BREAK`
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:209:9
+    |
+207 |             table_font.name = 'Times New Roman'
+208 |             table_font.size = Pt(12)
+209 |         except:
+    |         ^^^^^^
+210 |             pass  # Стиль уже существует
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:219:9
+    |
+217 |             table_header_font.size = Pt(12)
+218 |             table_header_font.bold = True
+219 |         except:
+    |         ^^^^^^
+220 |             pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:415:21
+    |
+413 |                     try:
+414 |                         paragraph.style = 'Table Header'
+415 |                     except:
+    |                     ^^^^^^
+416 |                         pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:435:25
+    |
+433 |                         try:
+434 |                             paragraph.style = 'Table Text'
+435 |                         except:
+    |                         ^^^^^^
+436 |                             pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:495:21
+    |
+493 |                     try:
+494 |                         paragraph.style = 'Table Header'
+495 |                     except:
+    |                     ^^^^^^
+496 |                         pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:517:33
+    |
+515 |                                 try:
+516 |                                     paragraph.style = 'Table Text'
+517 |                                 except:
+    |                                 ^^^^^^
+518 |                                     pass
+519 |                         item_count += 1
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:543:21
+    |
+541 |                     try:
+542 |                         paragraph.style = 'Table Header'
+543 |                     except:
+    |                     ^^^^^^
+544 |                         pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:569:25
+    |
+567 |                         try:
+568 |                             paragraph.style = 'Table Text'
+569 |                         except:
+    |                         ^^^^^^
+570 |                             pass
+571 |         else:
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:647:13
+    |
+645 |             try:
+646 |                 table.style = table_style
+647 |             except:
+    |             ^^^^^^
+648 |                 table.style = 'Table Grid'
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:658:21
+    |
+656 |                     try:
+657 |                         paragraph.style = 'Table Header'
+658 |                     except:
+    |                     ^^^^^^
+659 |                         pass
+    |
+
+F841 Local variable `total_saving_money` is assigned to but never used
+   --> services\ingest\utils\word_report_generator.py:664:13
+    |
+662 |             total_capex = 0.0
+663 |             total_saving_kwh = 0.0
+664 |             total_saving_money = 0.0
+    |             ^^^^^^^^^^^^^^^^^^
+665 |             
+666 |             for idx, measure in enumerate(measures_data, 1):
+    |
+help: Remove assignment to unused variable `total_saving_money`
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:698:25
+    |
+696 |                         try:
+697 |                             paragraph.style = 'Table Text'
+698 |                         except:
+    |                         ^^^^^^
+699 |                             pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:727:25
+    |
+725 |                         try:
+726 |                             paragraph.runs[0].bold = True
+727 |                         except:
+    |                         ^^^^^^
+728 |                             pass
+    |
+
+F841 Local variable `unicode_font_bold` is assigned to but never used
+  --> services\reports\main.py:63:5
+   |
+61 |     # Create Unicode-enabled styles with DejaVuSans
+62 |     unicode_font_name = 'DejaVuSans'
+63 |     unicode_font_bold = 'DejaVuSans-Bold'
+   |     ^^^^^^^^^^^^^^^^^
+64 |     
+65 |     title_style = ParagraphStyle(
+   |
+help: Remove assignment to unused variable `unicode_font_bold`
+
+F841 Local variable `results` is assigned to but never used
+   --> test_image_ocr.py:203:5
+    |
+202 |     # Проверяем результаты парсинга
+203 |     results = check_parsing_results(batch_id)
+    |     ^^^^^^^
+204 |     
+205 |     # Получаем сводку
+    |
+help: Remove assignment to unused variable `results`
+
+F841 Local variable `result` is assigned to but never used
+  --> tests\performance\test_ocr_performance.py:48:9
+   |
+47 |         # Выполняем OCR
+48 |         result = apply_ocr_to_image(sample_image)
+   |         ^^^^^^
+49 |         
+50 |         final_memory = process.memory_info().rss / 1024 / 1024  # MB
+   |
+help: Remove assignment to unused variable `result`
+
+Found 68 errors.
+No fixes available (10 hidden fixes can be enabled with the `--unsafe-fixes` option).
+[FAIL] ruff check (линтер) (код 1)
+mypy не найден, проверка типов пропущена
+
+=== python -m pip check (зависимости) ===
+No broken requirements found.
+[OK] python -m pip check (зависимости)
+
+----------------------------------------
+ИТОГ:
+Шагов всего : 3
+Провалено   : 1

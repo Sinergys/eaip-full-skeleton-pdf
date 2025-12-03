@@ -1,0 +1,2451 @@
+Отчёт проверки кода
+Проект: C:\eaip\eaip_full_skeleton
+Дата: 2025-11-15 21:24:46
+----------------------------------------
+
+=== Python compileall (синтаксис) ===
+Listing '.'...
+Listing '.\\.git'...
+Listing '.\\.git\\hooks'...
+Listing '.\\.git\\info'...
+Listing '.\\.git\\logs'...
+Listing '.\\.git\\logs\\refs'...
+Listing '.\\.git\\logs\\refs\\heads'...
+Listing '.\\.git\\logs\\refs\\remotes'...
+Listing '.\\.git\\logs\\refs\\remotes\\origin'...
+Listing '.\\.git\\objects'...
+Listing '.\\.git\\objects\\00'...
+Listing '.\\.git\\objects\\01'...
+Listing '.\\.git\\objects\\02'...
+Listing '.\\.git\\objects\\03'...
+Listing '.\\.git\\objects\\04'...
+Listing '.\\.git\\objects\\05'...
+Listing '.\\.git\\objects\\0b'...
+Listing '.\\.git\\objects\\0c'...
+Listing '.\\.git\\objects\\13'...
+Listing '.\\.git\\objects\\14'...
+Listing '.\\.git\\objects\\18'...
+Listing '.\\.git\\objects\\19'...
+Listing '.\\.git\\objects\\1b'...
+Listing '.\\.git\\objects\\20'...
+Listing '.\\.git\\objects\\24'...
+Listing '.\\.git\\objects\\25'...
+Listing '.\\.git\\objects\\28'...
+Listing '.\\.git\\objects\\29'...
+Listing '.\\.git\\objects\\2f'...
+Listing '.\\.git\\objects\\30'...
+Listing '.\\.git\\objects\\31'...
+Listing '.\\.git\\objects\\32'...
+Listing '.\\.git\\objects\\34'...
+Listing '.\\.git\\objects\\35'...
+Listing '.\\.git\\objects\\36'...
+Listing '.\\.git\\objects\\37'...
+Listing '.\\.git\\objects\\38'...
+Listing '.\\.git\\objects\\3b'...
+Listing '.\\.git\\objects\\3d'...
+Listing '.\\.git\\objects\\41'...
+Listing '.\\.git\\objects\\42'...
+Listing '.\\.git\\objects\\43'...
+Listing '.\\.git\\objects\\48'...
+Listing '.\\.git\\objects\\49'...
+Listing '.\\.git\\objects\\4b'...
+Listing '.\\.git\\objects\\4c'...
+Listing '.\\.git\\objects\\4f'...
+Listing '.\\.git\\objects\\51'...
+Listing '.\\.git\\objects\\52'...
+Listing '.\\.git\\objects\\53'...
+Listing '.\\.git\\objects\\55'...
+Listing '.\\.git\\objects\\57'...
+Listing '.\\.git\\objects\\58'...
+Listing '.\\.git\\objects\\59'...
+Listing '.\\.git\\objects\\5b'...
+Listing '.\\.git\\objects\\5d'...
+Listing '.\\.git\\objects\\5f'...
+Listing '.\\.git\\objects\\63'...
+Listing '.\\.git\\objects\\66'...
+Listing '.\\.git\\objects\\68'...
+Listing '.\\.git\\objects\\6a'...
+Listing '.\\.git\\objects\\6c'...
+Listing '.\\.git\\objects\\6d'...
+Listing '.\\.git\\objects\\74'...
+Listing '.\\.git\\objects\\78'...
+Listing '.\\.git\\objects\\7b'...
+Listing '.\\.git\\objects\\7e'...
+Listing '.\\.git\\objects\\81'...
+Listing '.\\.git\\objects\\82'...
+Listing '.\\.git\\objects\\83'...
+Listing '.\\.git\\objects\\87'...
+Listing '.\\.git\\objects\\8a'...
+Listing '.\\.git\\objects\\8d'...
+Listing '.\\.git\\objects\\91'...
+Listing '.\\.git\\objects\\95'...
+Listing '.\\.git\\objects\\97'...
+Listing '.\\.git\\objects\\98'...
+Listing '.\\.git\\objects\\99'...
+Listing '.\\.git\\objects\\9b'...
+Listing '.\\.git\\objects\\9c'...
+Listing '.\\.git\\objects\\9f'...
+Listing '.\\.git\\objects\\a1'...
+Listing '.\\.git\\objects\\a2'...
+Listing '.\\.git\\objects\\a3'...
+Listing '.\\.git\\objects\\a5'...
+Listing '.\\.git\\objects\\a6'...
+Listing '.\\.git\\objects\\a7'...
+Listing '.\\.git\\objects\\ab'...
+Listing '.\\.git\\objects\\ae'...
+Listing '.\\.git\\objects\\af'...
+Listing '.\\.git\\objects\\b1'...
+Listing '.\\.git\\objects\\b5'...
+Listing '.\\.git\\objects\\b6'...
+Listing '.\\.git\\objects\\ba'...
+Listing '.\\.git\\objects\\bb'...
+Listing '.\\.git\\objects\\be'...
+Listing '.\\.git\\objects\\bf'...
+Listing '.\\.git\\objects\\c4'...
+Listing '.\\.git\\objects\\c6'...
+Listing '.\\.git\\objects\\c8'...
+Listing '.\\.git\\objects\\ca'...
+Listing '.\\.git\\objects\\cf'...
+Listing '.\\.git\\objects\\d1'...
+Listing '.\\.git\\objects\\d2'...
+Listing '.\\.git\\objects\\d3'...
+Listing '.\\.git\\objects\\d4'...
+Listing '.\\.git\\objects\\d5'...
+Listing '.\\.git\\objects\\d6'...
+Listing '.\\.git\\objects\\d8'...
+Listing '.\\.git\\objects\\da'...
+Listing '.\\.git\\objects\\dc'...
+Listing '.\\.git\\objects\\dd'...
+Listing '.\\.git\\objects\\de'...
+Listing '.\\.git\\objects\\e5'...
+Listing '.\\.git\\objects\\e6'...
+Listing '.\\.git\\objects\\e7'...
+Listing '.\\.git\\objects\\ed'...
+Listing '.\\.git\\objects\\ef'...
+Listing '.\\.git\\objects\\f0'...
+Listing '.\\.git\\objects\\f1'...
+Listing '.\\.git\\objects\\f3'...
+Listing '.\\.git\\objects\\f4'...
+Listing '.\\.git\\objects\\f5'...
+Listing '.\\.git\\objects\\fb'...
+Listing '.\\.git\\objects\\fc'...
+Listing '.\\.git\\objects\\info'...
+Listing '.\\.git\\objects\\pack'...
+Listing '.\\.git\\refs'...
+Listing '.\\.git\\refs\\heads'...
+Listing '.\\.git\\refs\\remotes'...
+Listing '.\\.git\\refs\\remotes\\origin'...
+Listing '.\\.git\\refs\\tags'...
+Listing '.\\.github'...
+Listing '.\\.github\\workflows'...
+Listing '.\\client'...
+Compiling '.\\client\\server.py'...
+Listing '.\\code_check_logs'...
+Compiling '.\\create_test_image.py'...
+Listing '.\\docs'...
+Listing '.\\infra'...
+Listing '.\\infra\\data'...
+Listing '.\\infra\\data\\inbox'...
+Listing '.\\infra\\db'...
+Listing '.\\infra\\grafana-dashboards'...
+Listing '.\\infra\\grafana-datasources'...
+Listing '.\\infra\\helm'...
+Listing '.\\infra\\monitoring'...
+Listing '.\\infra\\monitoring\\alertmanager'...
+Listing '.\\infra\\monitoring\\caddy'...
+Listing '.\\infra\\monitoring\\grafana'...
+Listing '.\\infra\\monitoring\\grafana\\dashboards'...
+Listing '.\\infra\\monitoring\\grafana\\provisioning'...
+Listing '.\\infra\\monitoring\\grafana\\provisioning\\dashboards'...
+Listing '.\\infra\\monitoring\\grafana\\provisioning\\datasources'...
+Listing '.\\infra\\monitoring\\loki'...
+Listing '.\\infra\\monitoring\\prometheus'...
+Listing '.\\infra\\monitoring\\prometheus\\rules'...
+Listing '.\\infra\\monitoring\\promtail'...
+Listing '.\\infra\\nginx'...
+Listing '.\\infra\\nginx\\conf.d'...
+Listing '.\\infra\\prometheus'...
+Listing '.\\infra\\prometheus\\rules'...
+Listing '.\\scripts'...
+Listing '.\\services'...
+Listing '.\\services\\analytics'...
+Compiling '.\\services\\analytics\\main.py'...
+Listing '.\\services\\gateway-auth'...
+Compiling '.\\services\\gateway-auth\\main.py'...
+Listing '.\\services\\ingest'...
+Compiling '.\\services\\ingest\\ai_api_clients.py'...
+Compiling '.\\services\\ingest\\ai_base_client.py'...
+Compiling '.\\services\\ingest\\ai_client_factory.py'...
+Compiling '.\\services\\ingest\\ai_config.py'...
+Compiling '.\\services\\ingest\\ai_local_client.py'...
+Listing '.\\services\\ingest\\config'...
+Listing '.\\services\\ingest\\domain'...
+Compiling '.\\services\\ingest\\domain\\passport_field_mapping.py'...
+Compiling '.\\services\\ingest\\domain\\passport_validator.py'...
+Compiling '.\\services\\ingest\\domain\\report_data.py'...
+Compiling '.\\services\\ingest\\domain\\unit_converters.py'...
+Listing '.\\services\\ingest\\logs'...
+Compiling '.\\services\\ingest\\main.py'...
+Listing '.\\services\\ingest\\parsers'...
+Compiling '.\\services\\ingest\\parsers\\excel_passport_parser.py'...
+Listing '.\\services\\ingest\\settings'...
+Listing '.\\services\\ingest\\utils'...
+Compiling '.\\services\\ingest\\utils\\ai_cache.py'...
+Compiling '.\\services\\ingest\\utils\\batch_processor.py'...
+Compiling '.\\services\\ingest\\utils\\building_envelope_parser.py'...
+Compiling '.\\services\\ingest\\utils\\connection_pool.py'...
+Compiling '.\\services\\ingest\\utils\\content_analyzer.py'...
+Compiling '.\\services\\ingest\\utils\\energy_aggregator.py'...
+Compiling '.\\services\\ingest\\utils\\equipment_parser.py'...
+Compiling '.\\services\\ingest\\utils\\nodes_parser.py'...
+Compiling '.\\services\\ingest\\utils\\ocr_memory_optimizer.py'...
+Compiling '.\\services\\ingest\\utils\\ocr_table_extractor.py'...
+Compiling '.\\services\\ingest\\utils\\passport_diagnostics.py'...
+Compiling '.\\services\\ingest\\utils\\pdf_classifier.py'...
+Compiling '.\\services\\ingest\\utils\\pdf_diagnostics.py'...
+Compiling '.\\services\\ingest\\utils\\readiness_validator.py'...
+Compiling '.\\services\\ingest\\utils\\resource_classifier.py'...
+Compiling '.\\services\\ingest\\utils\\section_template_filler.py'...
+Compiling '.\\services\\ingest\\utils\\table_detector.py'...
+Compiling '.\\services\\ingest\\utils\\test_pdf_scenarios.py'...
+Listing '.\\services\\ingest\\web'...
+Listing '.\\services\\management'...
+Compiling '.\\services\\management\\main.py'...
+Listing '.\\services\\recommend'...
+Compiling '.\\services\\recommend\\main.py'...
+Listing '.\\services\\reports'...
+Listing '.\\services\\reports\\assets'...
+Listing '.\\services\\reports\\assets\\fonts'...
+Compiling '.\\services\\reports\\main.py'...
+Listing '.\\services\\validate'...
+Compiling '.\\services\\validate\\main.py'...
+Compiling '.\\test_deepseek_connection.py'...
+Compiling '.\\test_deepseek_simple.py'...
+Compiling '.\\test_image_ocr.py'...
+Compiling '.\\test_pdf_ocr.py'...
+Listing '.\\tests'...
+Compiling '.\\tests\\__init__.py'...
+Compiling '.\\tests\\conftest.py'...
+Listing '.\\tests\\fixtures'...
+Compiling '.\\tests\\fixtures\\mock_energy_passport_data.py'...
+Listing '.\\tests\\integration'...
+Compiling '.\\tests\\integration\\test_pdf_pipeline.py'...
+Listing '.\\tests\\performance'...
+Compiling '.\\tests\\performance\\test_ai_performance.py'...
+Compiling '.\\tests\\performance\\test_ocr_performance.py'...
+Listing '.\\tests\\unit'...
+Compiling '.\\tests\\unit\\test_ai_anomaly_detector.py'...
+Compiling '.\\tests\\unit\\test_ai_base_client.py'...
+Compiling '.\\tests\\unit\\test_ai_client_factory.py'...
+Compiling '.\\tests\\unit\\test_ai_compliance_checker.py'...
+Compiling '.\\tests\\unit\\test_ai_config.py'...
+Compiling '.\\tests\\unit\\test_ai_data_validator.py'...
+Compiling '.\\tests\\unit\\test_ai_efficiency_analyzer.py'...
+Compiling '.\\tests\\unit\\test_ai_energy_verifier.py'...
+Compiling '.\\tests\\unit\\test_ai_ocr_enhancer.py'...
+Compiling '.\\tests\\unit\\test_ai_parser.py'...
+Compiling '.\\tests\\unit\\test_ai_quality_reporter.py'...
+Compiling '.\\tests\\unit\\test_ai_table_parser.py'...
+[OK] Python compileall (синтаксис)
+
+=== ruff check (линтер) ===
+F541 [*] f-string without any placeholders
+  --> client\server.py:38:15
+   |
+36 |         print("🌐 HTTP сервер запущен!")
+37 |         print("=" * 60)
+38 |         print(f"📤 Интерфейс загрузки файлов:")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+39 |         print(f"   {url}")
+40 |         print("")
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> client\server.py:42:15
+   |
+40 |         print("")
+41 |         print("📚 Другие интерфейсы:")
+42 |         print(f"   Swagger UI: http://localhost:8001/docs")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+43 |         print(f"   Grafana: http://localhost:3000")
+44 |         print("")
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> client\server.py:43:15
+   |
+41 |         print("📚 Другие интерфейсы:")
+42 |         print(f"   Swagger UI: http://localhost:8001/docs")
+43 |         print(f"   Grafana: http://localhost:3000")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+44 |         print("")
+45 |         print("⚠️  Нажмите Ctrl+C для остановки сервера")
+   |
+help: Remove extraneous `f` prefix
+
+E722 Do not use bare `except`
+  --> client\server.py:51:9
+   |
+49 |         try:
+50 |             webbrowser.open(url)
+51 |         except:
+   |         ^^^^^^
+52 |             pass
+   |
+
+E722 Do not use bare `except`
+  --> create_test_image.py:57:5
+   |
+55 |                     # Fallback на стандартный шрифт
+56 |                     font = ImageFont.load_default()
+57 |     except:
+   |     ^^^^^^
+58 |         font = ImageFont.load_default()
+   |
+
+F541 [*] f-string without any placeholders
+  --> create_test_image.py:74:11
+   |
+72 |     print(f"   Размер: {width}x{height} пикселей")
+73 |     print(f"   Размер файла: {os.path.getsize(output_path) / 1024:.2f} КБ")
+74 |     print(f"\n💡 Теперь можно протестировать OCR:")
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+75 |     print(f"   python test_image_ocr.py {output_path}")
+   |
+help: Remove extraneous `f` prefix
+
+F401 [*] `os` imported but unused
+ --> services\ingest\ai_anomaly_detector.py:5:8
+  |
+3 | Выявляет скрытые аномалии и ошибки
+4 | """
+5 | import os
+  |        ^^
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |
+help: Remove unused import: `os`
+
+F401 [*] `typing.Dict` imported but unused
+ --> services\ingest\ai_client_factory.py:7:20
+  |
+5 | import os
+6 | import logging
+7 | from typing import Dict, Any, Optional
+  |                    ^^^^
+8 | from ai_base_client import BaseAIClient
+  |
+help: Remove unused import
+
+F401 [*] `typing.Any` imported but unused
+ --> services\ingest\ai_client_factory.py:7:26
+  |
+5 | import os
+6 | import logging
+7 | from typing import Dict, Any, Optional
+  |                          ^^^
+8 | from ai_base_client import BaseAIClient
+  |
+help: Remove unused import
+
+F401 [*] `os` imported but unused
+ --> services\ingest\ai_compliance_checker.py:5:8
+  |
+3 | Проверяет полноту и корректность энергетического паспорта
+4 | """
+5 | import os
+  |        ^^
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |
+help: Remove unused import: `os`
+
+F401 [*] `os` imported but unused
+ --> services\ingest\ai_data_validator.py:5:8
+  |
+3 | Проверяет правдоподобность данных энергопотребления
+4 | """
+5 | import os
+  |        ^^
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |
+help: Remove unused import: `os`
+
+F401 [*] `os` imported but unused
+ --> services\ingest\ai_efficiency_analyzer.py:5:8
+  |
+3 | Рассчитывает показатели энергоэффективности предприятия
+4 | """
+5 | import os
+  |        ^^
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |
+help: Remove unused import: `os`
+
+F401 [*] `typing.List` imported but unused
+ --> services\ingest\ai_efficiency_analyzer.py:7:41
+  |
+5 | import os
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |                                         ^^^^
+8 | import json
+  |
+help: Remove unused import: `typing.List`
+
+F401 [*] `typing.Optional` imported but unused
+ --> services\ingest\ai_energy_analysis.py:5:31
+  |
+3 | Объединяет верификацию, детекцию аномалий, анализ эффективности и проверку соответствия
+4 | """
+5 | from typing import Dict, Any, Optional
+  |                               ^^^^^^^^
+6 | import logging
+  |
+help: Remove unused import: `typing.Optional`
+
+F401 [*] `os` imported but unused
+ --> services\ingest\ai_energy_verifier.py:5:8
+  |
+3 | Проверяет корректность данных согласно ПКМ №690
+4 | """
+5 | import os
+  |        ^^
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |
+help: Remove unused import: `os`
+
+F401 [*] `typing.List` imported but unused
+ --> services\ingest\ai_energy_verifier.py:7:41
+  |
+5 | import os
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |                                         ^^^^
+8 | import json
+  |
+help: Remove unused import: `typing.List`
+
+F841 Local variable `electricity` is assigned to but never used
+   --> services\ingest\ai_energy_verifier.py:295:13
+    |
+293 | …     # Проверка баланса электроэнергии
+294 | …     if "electricity" in data:
+295 | …         electricity = data["electricity"]
+    |           ^^^^^^^^^^^
+296 | …         # Простая проверка: если есть технологические и собственные нужды, их сумма должна быть равна общему
+297 | …         # Это упрощенная проверка, в реальности нужно учитывать структуру данных
+    |
+help: Remove assignment to unused variable `electricity`
+
+F401 [*] `os` imported but unused
+ --> services\ingest\ai_ocr_enhancer.py:5:8
+  |
+3 | Использует AI для исправления типичных ошибок OCR и улучшения распознавания
+4 | """
+5 | import os
+  |        ^^
+6 | import logging
+7 | from typing import Dict, Any, Optional
+  |
+help: Remove unused import: `os`
+
+F401 [*] `pathlib.Path` imported but unused
+  --> services\ingest\ai_ocr_enhancer.py:8:21
+   |
+ 6 | import logging
+ 7 | from typing import Dict, Any, Optional
+ 8 | from pathlib import Path
+   |                     ^^^^
+ 9 |
+10 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `pathlib.Path`
+
+F401 [*] `pathlib.Path` imported but unused
+  --> services\ingest\ai_parser.py:9:21
+   |
+ 7 | from typing import Dict, Any, Optional, List
+ 8 | import logging
+ 9 | from pathlib import Path
+   |                     ^^^^
+10 |
+11 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `pathlib.Path`
+
+F401 `google.generativeai` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\ai_parser.py:30:35
+   |
+28 | HAS_GOOGLE = False
+29 | try:
+30 |     import google.generativeai as genai
+   |                                   ^^^^^
+31 |     HAS_GOOGLE = True
+32 | except ImportError:
+   |
+help: Remove unused import: `google.generativeai`
+
+F401 [*] `PIL.Image` imported but unused
+   --> services\ingest\ai_parser.py:140:29
+    |
+138 |         try:
+139 |             from pdf2image import convert_from_path
+140 |             from PIL import Image
+    |                             ^^^^^
+141 |             import io
+    |
+help: Remove unused import: `PIL.Image`
+
+F401 [*] `os` imported but unused
+ --> services\ingest\ai_table_parser.py:5:8
+  |
+3 | Помогает восстановить структуру таблиц после OCR
+4 | """
+5 | import os
+  |        ^^
+6 | import logging
+7 | from typing import Dict, Any, Optional, List
+  |
+help: Remove unused import: `os`
+
+F401 [*] `energy_units.to_kwh` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:22:9
+   |
+20 |     # Fallback для случаев, когда модуль импортируется напрямую
+21 |     from energy_units import (
+22 |         to_kwh, to_mwh, to_kvarh,
+   |         ^^^^^^
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.to_mwh` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:22:17
+   |
+20 |     # Fallback для случаев, когда модуль импортируется напрямую
+21 |     from energy_units import (
+22 |         to_kwh, to_mwh, to_kvarh,
+   |                 ^^^^^^
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.to_kvarh` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:22:25
+   |
+20 |     # Fallback для случаев, когда модуль импортируется напрямую
+21 |     from energy_units import (
+22 |         to_kwh, to_mwh, to_kvarh,
+   |                         ^^^^^^^^
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.to_m3` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:23:9
+   |
+21 |     from energy_units import (
+22 |         to_kwh, to_mwh, to_kvarh,
+23 |         to_m3, to_ton, to_gcal,
+   |         ^^^^^
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.to_ton` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:23:16
+   |
+21 |     from energy_units import (
+22 |         to_kwh, to_mwh, to_kvarh,
+23 |         to_m3, to_ton, to_gcal,
+   |                ^^^^^^
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.to_gcal` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:23:24
+   |
+21 |     from energy_units import (
+22 |         to_kwh, to_mwh, to_kvarh,
+23 |         to_m3, to_ton, to_gcal,
+   |                        ^^^^^^^
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.normalize_energy_to_kwh` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:24:9
+   |
+22 |         to_kwh, to_mwh, to_kvarh,
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+26 |         MONTHS_PER_QUARTER
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.normalize_volume_to_m3` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:24:34
+   |
+22 |         to_kwh, to_mwh, to_kvarh,
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |                                  ^^^^^^^^^^^^^^^^^^^^^^
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+26 |         MONTHS_PER_QUARTER
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.normalize_mass_to_ton` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:24:58
+   |
+22 |         to_kwh, to_mwh, to_kvarh,
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+   |                                                          ^^^^^^^^^^^^^^^^^^^^^
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+26 |         MONTHS_PER_QUARTER
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.hours_in_period` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:25:9
+   |
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |         ^^^^^^^^^^^^^^^
+26 |         MONTHS_PER_QUARTER
+27 |     )
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.HOURS_PER_QUARTER` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:25:42
+   |
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |                                          ^^^^^^^^^^^^^^^^^
+26 |         MONTHS_PER_QUARTER
+27 |     )
+   |
+help: Remove unused import
+
+F401 [*] `energy_units.HOURS_PER_MONTH` imported but unused
+  --> services\ingest\domain\energy_passport_calculations.py:25:61
+   |
+23 |         to_m3, to_ton, to_gcal,
+24 |         normalize_energy_to_kwh, normalize_volume_to_m3, normalize_mass_to_ton,
+25 |         hours_in_period, HOURS_PER_YEAR, HOURS_PER_QUARTER, HOURS_PER_MONTH,
+   |                                                             ^^^^^^^^^^^^^^^
+26 |         MONTHS_PER_QUARTER
+27 |     )
+   |
+help: Remove unused import
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\domain\energy_passport_calculations.py:344:13
+    |
+342 |     if yearly_total <= 0:
+343 |         logger.warning(
+344 |             f"Годовой итог по категориям = 0. Равномерно распределяю квартальное потребление."
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+345 |         )
+346 |         # Равномерное распределение
+    |
+help: Remove extraneous `f` prefix
+
+F841 Local variable `norm1` is assigned to but never used
+   --> services\ingest\domain\energy_units.py:285:5
+    |
+283 |     """
+284 |     # Нормализуем к базовой единице
+285 |     norm1 = normalize_energy_to_kwh(value1, unit1) if "кВт·ч" in expected_base_unit else value1
+    |     ^^^^^
+286 |     norm2 = normalize_energy_to_kwh(value2, unit2) if "кВт·ч" in expected_base_unit else value2
+    |
+help: Remove assignment to unused variable `norm1`
+
+F841 Local variable `norm2` is assigned to but never used
+   --> services\ingest\domain\energy_units.py:286:5
+    |
+284 |     # Нормализуем к базовой единице
+285 |     norm1 = normalize_energy_to_kwh(value1, unit1) if "кВт·ч" in expected_base_unit else value1
+286 |     norm2 = normalize_energy_to_kwh(value2, unit2) if "кВт·ч" in expected_base_unit else value2
+    |     ^^^^^
+287 |     
+288 |     # Проверяем, что после нормализации значения имеют смысл
+    |
+help: Remove assignment to unused variable `norm2`
+
+F401 [*] `os` imported but unused
+ --> services\ingest\domain\normative_importer.py:5:8
+  |
+3 | Извлекает формулы, нормативы и требования из документов (PDF, Word, Excel)
+4 | """
+5 | import os
+  |        ^^
+6 | import json
+7 | import hashlib
+  |
+help: Remove unused import: `os`
+
+F401 [*] `datetime.datetime` imported but unused
+  --> services\ingest\domain\normative_importer.py:11:22
+   |
+ 9 | from pathlib import Path
+10 | from typing import Dict, Any, Optional, List
+11 | from datetime import datetime
+   |                      ^^^^^^^^
+12 |
+13 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `datetime.datetime`
+
+F402 Import `field` from line 6 shadowed by loop variable
+   --> services\ingest\domain\passport_field_mapping.py:426:17
+    |
+424 |         calculated = []
+425 |         for sheet_fields in self._mappings.values():
+426 |             for field in sheet_fields:
+    |                 ^^^^^
+427 |                 if field.field_type == FieldType.CALCULATED:
+428 |                     calculated.append(field)
+    |
+
+F402 Import `field` from line 6 shadowed by loop variable
+   --> services\ingest\domain\passport_field_mapping.py:435:17
+    |
+433 |         required = []
+434 |         for sheet_fields in self._mappings.values():
+435 |             for field in sheet_fields:
+    |                 ^^^^^
+436 |                 if field.is_required:
+437 |                     required.append(field)
+    |
+
+F402 Import `field` from line 6 shadowed by loop variable
+   --> services\ingest\domain\passport_field_mapping.py:444:17
+    |
+442 |         result = []
+443 |         for sheet_fields in self._mappings.values():
+444 |             for field in sheet_fields:
+    |                 ^^^^^
+445 |                 if field.data_source == data_source:
+446 |                     result.append(field)
+    |
+
+F401 [*] `typing.Tuple` imported but unused
+ --> services\ingest\domain\passport_validator.py:6:47
+  |
+4 | """
+5 |
+6 | from typing import Dict, Any, List, Optional, Tuple
+  |                                               ^^^^^
+7 | import logging
+8 | from dataclasses import dataclass
+  |
+help: Remove unused import: `typing.Tuple`
+
+F401 `.passport_field_mapping.FieldType` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\passport_validator.py:14:60
+   |
+12 | # Импорт модулей
+13 | try:
+14 |     from .passport_field_mapping import get_field_mapping, FieldType
+   |                                                            ^^^^^^^^^
+15 |     from .energy_passport_calculations import (
+16 |         validate_balance,
+   |
+help: Remove unused import: `.passport_field_mapping.FieldType`
+
+F401 `.energy_passport_calculations.specific_consumption_kwh_per_kg` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\passport_validator.py:17:9
+   |
+15 |     from .energy_passport_calculations import (
+16 |         validate_balance,
+17 |         specific_consumption_kwh_per_kg,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+18 |         sum_categories,
+19 |     )
+   |
+help: Remove unused import: `.energy_passport_calculations.specific_consumption_kwh_per_kg`
+
+F401 [*] `typing.Dict` imported but unused
+ --> services\ingest\domain\pkm690_sections.py:8:20
+  |
+6 | """
+7 | from dataclasses import dataclass, field
+8 | from typing import Dict, Any, Optional, List, Callable
+  |                    ^^^^
+9 | from enum import Enum
+  |
+help: Remove unused import: `typing.Dict`
+
+E722 Do not use bare `except`
+   --> services\ingest\domain\pkm690_sections.py:382:5
+    |
+380 |                 return False
+381 |         return value is not None
+382 |     except:
+    |     ^^^^^^
+383 |         return False
+    |
+
+F401 `.energy_passport_calculations.extract_quarter_data` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\report_data.py:18:9
+   |
+16 |         calculate_average_payback_period,
+17 |         extract_equipment_data,
+18 |         extract_quarter_data,
+   |         ^^^^^^^^^^^^^^^^^^^^
+19 |         calculate_specific_consumption,
+20 |         EquipmentData,
+   |
+help: Remove unused import
+
+F401 `.energy_passport_calculations.calculate_specific_consumption` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\domain\report_data.py:19:9
+   |
+17 |         extract_equipment_data,
+18 |         extract_quarter_data,
+19 |         calculate_specific_consumption,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+20 |         EquipmentData,
+21 |         QuarterData,
+   |
+help: Remove unused import
+
+F401 [*] `typing.Optional` imported but unused
+ --> services\ingest\domain\unit_converters.py:6:27
+  |
+4 | """
+5 |
+6 | from typing import Union, Optional
+  |                           ^^^^^^^^
+7 | from enum import Enum
+  |
+help: Remove unused import: `typing.Optional`
+
+F401 `openpyxl` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\file_parser.py:66:12
+   |
+65 | try:
+66 |     import openpyxl
+   |            ^^^^^^^^
+67 |     from openpyxl import load_workbook
+68 |     HAS_OPENPYXL = True
+   |
+help: Remove unused import: `openpyxl`
+
+F401 `pandas` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\file_parser.py:74:22
+   |
+73 | try:
+74 |     import pandas as pd
+   |                      ^^
+75 |     HAS_PANDAS = True
+76 | except ImportError:
+   |
+help: Remove unused import: `pandas`
+
+F401 `PIL.ImageFilter` imported but unused; consider using `importlib.util.find_spec` to test for availability
+   --> services\ingest\file_parser.py:104:42
+    |
+102 |     import pytesseract
+103 |     from pdf2image import convert_from_path
+104 |     from PIL import Image, ImageEnhance, ImageFilter
+    |                                          ^^^^^^^^^^^
+105 |     # Увеличиваем лимит PIL для больших изображений (для сканированных PDF с высоким DPI)
+106 |     Image.MAX_IMAGE_PIXELS = 200000000  # 200 миллионов пикселей (было 89 миллионов)
+    |
+help: Remove unused import: `PIL.ImageFilter`
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:459:33
+    |
+457 | …     result["ocr_error"] = "poppler_not_installed"
+458 | …     logger.warning(
+459 | …         f"PDF похож на сканированный документ, но OCR недоступен или не извлек текст. "
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+460 | …         f"Установите poppler для обработки сканированных PDF."
+461 | …     )
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:460:33
+    |
+458 | …                 logger.warning(
+459 | …                     f"PDF похож на сканированный документ, но OCR недоступен или не извлек текст. "
+460 | …                     f"Установите poppler для обработки сканированных PDF."
+    |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+461 | …                 )
+462 | …     else:
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:589:33
+    |
+587 | …     result["ocr_error"] = "poppler_not_installed"
+588 | …     logger.warning(
+589 | …         f"PDF похож на сканированный документ, но OCR недоступен или не извлек текст. "
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+590 | …         f"Установите poppler для обработки сканированных PDF."
+591 | …     )
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:590:33
+    |
+588 | …                 logger.warning(
+589 | …                     f"PDF похож на сканированный документ, но OCR недоступен или не извлек текст. "
+590 | …                     f"Установите poppler для обработки сканированных PDF."
+    |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+591 | …                 )
+592 | …     else:
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:786:21
+    |
+784 |             if "poppler" in error_msg or "page count" in error_msg:
+785 |                 logger.warning(
+786 |                     f"Poppler не установлен или не найден в PATH. OCR для PDF недоступен.\n"
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+787 |                     f"Для установки на Windows:\n"
+788 |                     f"  1. Скачайте poppler: https://github.com/oschwartz10612/poppler-windows/releases/\n"
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:787:21
+    |
+785 |                 logger.warning(
+786 |                     f"Poppler не установлен или не найден в PATH. OCR для PDF недоступен.\n"
+787 |                     f"Для установки на Windows:\n"
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+788 |                     f"  1. Скачайте poppler: https://github.com/oschwartz10612/poppler-windows/releases/\n"
+789 |                     f"  2. Распакуйте и добавьте папку 'bin' в PATH\n"
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:788:21
+    |
+786 |                     f"Poppler не установлен или не найден в PATH. OCR для PDF недоступен.\n"
+787 |                     f"Для установки на Windows:\n"
+788 |                     f"  1. Скачайте poppler: https://github.com/oschwartz10612/poppler-windows/releases/\n"
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+789 |                     f"  2. Распакуйте и добавьте папку 'bin' в PATH\n"
+790 |                     f"  3. Или установите через conda: conda install -c conda-forge poppler\n"
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:789:21
+    |
+787 |                     f"Для установки на Windows:\n"
+788 |                     f"  1. Скачайте poppler: https://github.com/oschwartz10612/poppler-windows/releases/\n"
+789 |                     f"  2. Распакуйте и добавьте папку 'bin' в PATH\n"
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+790 |                     f"  3. Или установите через conda: conda install -c conda-forge poppler\n"
+791 |                     f"  4. Или через chocolatey: choco install poppler\n"
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:790:21
+    |
+788 |                     f"  1. Скачайте poppler: https://github.com/oschwartz10612/poppler-windows/releases/\n"
+789 |                     f"  2. Распакуйте и добавьте папку 'bin' в PATH\n"
+790 |                     f"  3. Или установите через conda: conda install -c conda-forge poppler\n"
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+791 |                     f"  4. Или через chocolatey: choco install poppler\n"
+792 |                     f"Файл будет обработан без OCR."
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:791:21
+    |
+789 |                     f"  2. Распакуйте и добавьте папку 'bin' в PATH\n"
+790 |                     f"  3. Или установите через conda: conda install -c conda-forge poppler\n"
+791 |                     f"  4. Или через chocolatey: choco install poppler\n"
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+792 |                     f"Файл будет обработан без OCR."
+793 |                 )
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:792:21
+    |
+790 |                     f"  3. Или установите через conda: conda install -c conda-forge poppler\n"
+791 |                     f"  4. Или через chocolatey: choco install poppler\n"
+792 |                     f"Файл будет обработан без OCR."
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+793 |                 )
+794 |             else:
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:827:25
+    |
+825 |                 if tesseract_available:  # Выводим сообщение только один раз
+826 |                     logger.error(
+827 |                         f"Tesseract OCR не установлен или не найден в PATH.\n"
+    |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+828 |                         f"Установите Tesseract для работы OCR:\n"
+829 |                         f"  Windows: https://github.com/UB-Mannheim/tesseract/wiki\n"
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:828:25
+    |
+826 |                     logger.error(
+827 |                         f"Tesseract OCR не установлен или не найден в PATH.\n"
+828 |                         f"Установите Tesseract для работы OCR:\n"
+    |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+829 |                         f"  Windows: https://github.com/UB-Mannheim/tesseract/wiki\n"
+830 |                         f"  Или через chocolatey: choco install tesseract\n"
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:829:25
+    |
+827 |                         f"Tesseract OCR не установлен или не найден в PATH.\n"
+828 |                         f"Установите Tesseract для работы OCR:\n"
+829 |                         f"  Windows: https://github.com/UB-Mannheim/tesseract/wiki\n"
+    |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+830 |                         f"  Или через chocolatey: choco install tesseract\n"
+831 |                         f"  После установки перезапустите сервер/скрипт"
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:830:25
+    |
+828 |                         f"Установите Tesseract для работы OCR:\n"
+829 |                         f"  Windows: https://github.com/UB-Mannheim/tesseract/wiki\n"
+830 |                         f"  Или через chocolatey: choco install tesseract\n"
+    |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+831 |                         f"  После установки перезапустите сервер/скрипт"
+832 |                     )
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:831:25
+    |
+829 |                         f"  Windows: https://github.com/UB-Mannheim/tesseract/wiki\n"
+830 |                         f"  Или через chocolatey: choco install tesseract\n"
+831 |                         f"  После установки перезапустите сервер/скрипт"
+    |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+832 |                     )
+833 |                     tesseract_available = False
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:891:17
+    |
+889 |         if "poppler" in error_msg or "page count" in error_msg:
+890 |             logger.warning(
+891 |                 f"Poppler не установлен. OCR для PDF недоступен.\n"
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+892 |                 f"Инструкции по установке см. в логах выше."
+893 |             )
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\file_parser.py:892:17
+    |
+890 |             logger.warning(
+891 |                 f"Poppler не установлен. OCR для PDF недоступен.\n"
+892 |                 f"Инструкции по установке см. в логах выше."
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+893 |             )
+894 |         else:
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `shutil` imported but unused
+  --> services\ingest\main.py:9:8
+   |
+ 7 | import os
+ 8 | import httpx
+ 9 | import shutil
+   |        ^^^^^^
+10 | import hashlib
+11 | from pathlib import Path
+   |
+help: Remove unused import: `shutil`
+
+F401 [*] `utils.progress_tracker.update_file_processing_progress` imported but unused
+  --> services\ingest\main.py:46:5
+   |
+44 |     create_progress_tracker,
+45 |     get_progress_tracker,
+46 |     update_file_processing_progress,
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+47 |     remove_progress_tracker,
+48 | )
+   |
+help: Remove unused import: `utils.progress_tracker.update_file_processing_progress`
+
+F401 [*] `utils.data_validator.DataValidationError` imported but unused
+  --> services\ingest\main.py:55:5
+   |
+53 | from utils.data_validator import (
+54 |     validate_data_for_template,
+55 |     DataValidationError,
+   |     ^^^^^^^^^^^^^^^^^^^
+56 | )
+   |
+help: Remove unused import: `utils.data_validator.DataValidationError`
+
+F821 Undefined name `logger`
+  --> services\ingest\main.py:64:5
+   |
+62 |     HAS_GENERATOR = True
+63 | except ImportError as e:
+64 |     logger.warning(f"PKM690 генератор не доступен: {e}")
+   |     ^^^^^^
+65 |     HAS_GENERATOR = False
+   |
+
+F821 Undefined name `logger`
+  --> services\ingest\main.py:83:5
+   |
+81 |     HAS_FILLER = True
+82 | except ImportError as e:
+83 |     logger.warning(f"fill_energy_passport недоступен: {e}")
+   |     ^^^^^^
+84 |     HAS_FILLER = False
+   |
+
+F821 Undefined name `logger`
+  --> services\ingest\main.py:90:5
+   |
+88 |     HAS_WORD_GENERATOR = True
+89 | except ImportError as e:
+90 |     logger.warning(f"WordReportGenerator недоступен: {e}")
+   |     ^^^^^^
+91 |     HAS_WORD_GENERATOR = False
+   |
+
+F841 Local variable `ai_settings` is assigned to but never used
+   --> services\ingest\main.py:332:9
+    |
+330 |         # Получаем статус AI из единого модуля настроек
+331 |         ai_status = get_ai_status()
+332 |         ai_settings = get_ai_settings()
+    |         ^^^^^^^^^^^
+333 |         
+334 |         # Проверяем доступность импортера
+    |
+help: Remove assignment to unused variable `ai_settings`
+
+F841 Local variable `ocr_used` is assigned to but never used
+   --> services\ingest\main.py:821:13
+    |
+819 |             is_scanned = pdf_data.get("is_scanned", False)
+820 |             ocr_attempted = pdf_data.get("ocr_attempted", False)
+821 |             ocr_used = pdf_data.get("ocr_used", False)
+    |             ^^^^^^^^
+822 |             ocr_success = pdf_data.get("ocr_success", False)
+823 |             ocr_error = pdf_data.get("ocr_error")
+    |
+help: Remove assignment to unused variable `ocr_used`
+
+F401 [*] `openpyxl` imported but unused
+  --> services\ingest\parsers\excel_passport_parser.py:9:8
+   |
+ 7 | """
+ 8 |
+ 9 | import openpyxl
+   |        ^^^^^^^^
+10 | from openpyxl import load_workbook
+11 | from typing import Dict, List, Optional, Any
+   |
+help: Remove unused import: `openpyxl`
+
+F401 [*] `re` imported but unused
+  --> services\ingest\parsers\excel_passport_parser.py:14:8
+   |
+12 | import logging
+13 | from datetime import datetime
+14 | import re
+   |        ^^
+15 |
+16 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `re`
+
+E722 Do not use bare `except`
+   --> services\ingest\parsers\excel_passport_parser.py:350:13
+    |
+348 |                 cleaned = value.replace(' ', '').replace(',', '.')
+349 |                 return float(cleaned)
+350 |             except:
+    |             ^^^^^^
+351 |                 pass
+352 |         return None
+    |
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\parsers\excel_passport_parser.py:447:19
+    |
+445 |         try:
+446 |             data = parse_passport_file(file_path)
+447 |             print(f"\n✅ Успешно извлечено:")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+448 |             print(f"   - Предприятие: {data.get('enterprise', {}).get('name')}")
+449 |             print(f"   - Формул: {len(data.get('formulas', []))}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `typing.Tuple` imported but unused
+  --> services\ingest\settings\ai_settings.py:12:41
+   |
+10 | import os
+11 | import logging
+12 | from typing import Dict, Any, Optional, Tuple
+   |                                         ^^^^^
+13 | from pathlib import Path
+   |
+help: Remove unused import: `typing.Tuple`
+
+F401 `sqlalchemy.orm.Session` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\connection_pool.py:14:46
+   |
+12 | try:
+13 |     from sqlalchemy import create_engine, pool
+14 |     from sqlalchemy.orm import sessionmaker, Session
+   |                                              ^^^^^^^
+15 |     HAS_SQLALCHEMY = True
+16 | except ImportError:
+   |
+help: Remove unused import: `sqlalchemy.orm.Session`
+
+F401 `psycopg2` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\connection_pool.py:22:12
+   |
+20 | # Попытка использовать psycopg2 для PostgreSQL
+21 | try:
+22 |     import psycopg2
+   |            ^^^^^^^^
+23 |     from psycopg2 import pool as pg_pool
+24 |     HAS_PSYCOPG2 = True
+   |
+help: Remove unused import: `psycopg2`
+
+F401 [*] `typing.Optional` imported but unused
+  --> services\ingest\utils\data_validator.py:12:37
+   |
+11 | import logging
+12 | from typing import Dict, List, Any, Optional, Tuple
+   |                                     ^^^^^^^^
+13 | from datetime import datetime
+   |
+help: Remove unused import: `typing.Optional`
+
+F401 [*] `datetime.datetime` imported but unused
+  --> services\ingest\utils\data_validator.py:13:22
+   |
+11 | import logging
+12 | from typing import Dict, List, Any, Optional, Tuple
+13 | from datetime import datetime
+   |                      ^^^^^^^^
+14 |
+15 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `datetime.datetime`
+
+F841 Local variable `units_row` is assigned to but never used
+   --> services\ingest\utils\energy_aggregator.py:160:9
+    |
+158 |         year_cols = {}
+159 |         header_row = list(sheet.iter_rows(min_row=2, max_row=2, values_only=True))[0]
+160 |         units_row = list(sheet.iter_rows(min_row=3, max_row=3, values_only=True))[0]
+    |         ^^^^^^^^^
+161 |         
+162 |         for col_idx, value in enumerate(header_row):
+    |
+help: Remove assignment to unused variable `units_row`
+
+F401 [*] `typing.Tuple` imported but unused
+ --> services\ingest\utils\image_enhancement.py:7:20
+  |
+5 | """
+6 | import logging
+7 | from typing import Tuple, Optional
+  |                    ^^^^^
+8 | import numpy as np
+  |
+help: Remove unused import: `typing.Tuple`
+
+F401 `PIL.ImageOps` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\image_enhancement.py:14:55
+   |
+12 | # Импорты с проверкой доступности
+13 | try:
+14 |     from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+   |                                                       ^^^^^^^^
+15 |     from PIL.Image import Image as PILImage
+16 |     HAS_PIL = True
+   |
+help: Remove unused import: `PIL.ImageOps`
+
+F401 `skimage.transform` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\image_enhancement.py:29:34
+   |
+28 | try:
+29 |     from skimage import filters, transform, restoration
+   |                                  ^^^^^^^^^
+30 |     HAS_SKIMAGE = True
+31 | except ImportError:
+   |
+help: Remove unused import: `skimage.transform`
+
+F401 [*] `typing.Optional` imported but unused
+ --> services\ingest\utils\ocr_memory_optimizer.py:6:20
+  |
+4 | import logging
+5 | import gc
+6 | from typing import Optional
+  |                    ^^^^^^^^
+7 | from PIL import Image
+8 | import io
+  |
+help: Remove unused import: `typing.Optional`
+
+F401 [*] `io` imported but unused
+  --> services\ingest\utils\ocr_memory_optimizer.py:8:8
+   |
+ 6 | from typing import Optional
+ 7 | from PIL import Image
+ 8 | import io
+   |        ^^
+ 9 |
+10 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `io`
+
+F401 [*] `typing.Optional` imported but unused
+ --> services\ingest\utils\ocr_table_extractor.py:7:37
+  |
+5 | import logging
+6 | import re
+7 | from typing import Dict, Any, List, Optional
+  |                                     ^^^^^^^^
+8 |
+9 | logger = logging.getLogger(__name__)
+  |
+help: Remove unused import: `typing.Optional`
+
+F401 [*] `pathlib.Path` imported but unused
+  --> services\ingest\utils\pdf_classifier.py:10:21
+   |
+ 8 | import subprocess
+ 9 | from typing import Dict, Any, Literal
+10 | from pathlib import Path
+   |                     ^^^^
+11 |
+12 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `pathlib.Path`
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\pdf_classifier.py:180:25
+    |
+178 |                             if hasattr(page, 'images') and page.images:
+179 |                                 image_objects += len(page.images)
+180 |                         except:
+    |                         ^^^^^^
+181 |                             pass
+    |
+
+F401 [*] `pathlib.Path` imported but unused
+ --> services\ingest\utils\pdf_diagnostics.py:7:21
+  |
+5 | import os
+6 | import logging
+7 | from pathlib import Path
+  |                     ^^^^
+8 | from typing import Dict, Any, List, Optional, Tuple
+9 | from PIL import Image
+  |
+help: Remove unused import: `pathlib.Path`
+
+F401 [*] `typing.List` imported but unused
+ --> services\ingest\utils\pdf_diagnostics.py:8:31
+  |
+6 | import logging
+7 | from pathlib import Path
+8 | from typing import Dict, Any, List, Optional, Tuple
+  |                               ^^^^
+9 | from PIL import Image
+  |
+help: Remove unused import
+
+F401 [*] `typing.Optional` imported but unused
+ --> services\ingest\utils\pdf_diagnostics.py:8:37
+  |
+6 | import logging
+7 | from pathlib import Path
+8 | from typing import Dict, Any, List, Optional, Tuple
+  |                                     ^^^^^^^^
+9 | from PIL import Image
+  |
+help: Remove unused import
+
+F401 [*] `typing.Tuple` imported but unused
+ --> services\ingest\utils\pdf_diagnostics.py:8:47
+  |
+6 | import logging
+7 | from pathlib import Path
+8 | from typing import Dict, Any, List, Optional, Tuple
+  |                                               ^^^^^
+9 | from PIL import Image
+  |
+help: Remove unused import
+
+F401 [*] `PIL.Image` imported but unused
+  --> services\ingest\utils\pdf_diagnostics.py:9:17
+   |
+ 7 | from pathlib import Path
+ 8 | from typing import Dict, Any, List, Optional, Tuple
+ 9 | from PIL import Image
+   |                 ^^^^^
+10 |
+11 | logger = logging.getLogger(__name__)
+   |
+help: Remove unused import: `PIL.Image`
+
+F401 [*] `config.required_data_matrix.get_resource_for_file` imported but unused
+  --> services\ingest\utils\readiness_validator.py:17:5
+   |
+15 |     get_required_resources,
+16 |     get_optional_resources,
+17 |     get_resource_for_file,
+   |     ^^^^^^^^^^^^^^^^^^^^^
+18 |     get_resource_config,
+19 |     is_resource_required,
+   |
+help: Remove unused import
+
+F401 [*] `config.required_data_matrix.is_resource_required` imported but unused
+  --> services\ingest\utils\readiness_validator.py:19:5
+   |
+17 |     get_resource_for_file,
+18 |     get_resource_config,
+19 |     is_resource_required,
+   |     ^^^^^^^^^^^^^^^^^^^^
+20 | )
+21 | from domain.passport_requirements import (
+   |
+help: Remove unused import
+
+F401 [*] `domain.passport_requirements.get_sheet_requirement` imported but unused
+  --> services\ingest\utils\readiness_validator.py:23:5
+   |
+21 | from domain.passport_requirements import (
+22 |     PASSPORT_SHEET_REQUIREMENTS,
+23 |     get_sheet_requirement,
+   |     ^^^^^^^^^^^^^^^^^^^^^
+24 |     get_required_sheets,
+25 |     validate_sheet_data,
+   |
+help: Remove unused import
+
+F401 [*] `domain.passport_requirements.get_required_sheets` imported but unused
+  --> services\ingest\utils\readiness_validator.py:24:5
+   |
+22 |     PASSPORT_SHEET_REQUIREMENTS,
+23 |     get_sheet_requirement,
+24 |     get_required_sheets,
+   |     ^^^^^^^^^^^^^^^^^^^
+25 |     validate_sheet_data,
+26 |     DataSource,
+   |
+help: Remove unused import
+
+F401 [*] `domain.passport_requirements.DataSource` imported but unused
+  --> services\ingest\utils\readiness_validator.py:26:5
+   |
+24 |     get_required_sheets,
+25 |     validate_sheet_data,
+26 |     DataSource,
+   |     ^^^^^^^^^^
+27 |     FieldRequirement,
+28 | )
+   |
+help: Remove unused import
+
+F401 [*] `domain.passport_requirements.FieldRequirement` imported but unused
+  --> services\ingest\utils\readiness_validator.py:27:5
+   |
+25 |     validate_sheet_data,
+26 |     DataSource,
+27 |     FieldRequirement,
+   |     ^^^^^^^^^^^^^^^^
+28 | )
+29 | from utils.energy_aggregator import aggregate_from_db_json
+   |
+help: Remove unused import
+
+F401 `pkm690_sections.PKM690Section` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\section_template_filler.py:20:37
+   |
+18 |         if str(_domain_path) not in sys.path:
+19 |             sys.path.insert(0, str(_domain_path))
+20 |         from pkm690_sections import PKM690Section, get_section_by_number
+   |                                     ^^^^^^^^^^^^^
+21 |         from report_data import ReportData
+22 |         HAS_SECTIONS = True
+   |
+help: Remove unused import: `pkm690_sections.PKM690Section`
+
+F401 `report_data.ReportData` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\section_template_filler.py:21:33
+   |
+19 |             sys.path.insert(0, str(_domain_path))
+20 |         from pkm690_sections import PKM690Section, get_section_by_number
+21 |         from report_data import ReportData
+   |                                 ^^^^^^^^^^
+22 |         HAS_SECTIONS = True
+23 |     except ImportError:
+   |
+help: Remove unused import: `report_data.ReportData`
+
+E722 Do not use bare `except`
+  --> services\ingest\utils\section_template_filler.py:73:9
+   |
+71 |             filled_text = template.format(**{k: v for k, v in context.items() if k in template})
+72 |             return filled_text
+73 |         except:
+   |         ^^^^^^
+74 |             return template
+75 |     except Exception as e:
+   |
+
+F401 `signal` imported but unused; consider using `importlib.util.find_spec` to test for availability
+   --> services\ingest\utils\table_detector.py:503:16
+    |
+501 |     """
+502 |     try:
+503 |         import signal
+    |                ^^^^^^
+504 |         import sys
+505 |         from pathlib import Path
+    |
+help: Remove unused import: `signal`
+
+F541 [*] f-string without any placeholders
+   --> services\ingest\utils\table_detector.py:699:24
+    |
+697 |     else:
+698 |         # UNKNOWN: пробуем все методы
+699 |         logger.warning(f"Неизвестный тип PDF, пробую все методы")
+    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+700 |         all_tables = extract_tables_from_pdf(pdf_path)
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `os` imported but unused
+ --> services\ingest\utils\test_pdf_scenarios.py:4:8
+  |
+2 | Создание тестовых сценариев для проверки обработки PDF
+3 | """
+4 | import os
+  |        ^^
+5 | from pathlib import Path
+6 | from typing import List, Dict, Any
+  |
+help: Remove unused import: `os`
+
+F401 [*] `pathlib.Path` imported but unused
+ --> services\ingest\utils\test_pdf_scenarios.py:5:21
+  |
+3 | """
+4 | import os
+5 | from pathlib import Path
+  |                     ^^^^
+6 | from typing import List, Dict, Any
+  |
+help: Remove unused import: `pathlib.Path`
+
+F541 [*] f-string without any placeholders
+  --> services\ingest\utils\test_pdf_scenarios.py:96:15
+   |
+94 |         print(f"\n{i}. {scenario['name']}")
+95 |         print(f"   Описание: {scenario['description']}")
+96 |         print(f"   Ожидаемое поведение:")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+97 |         for key, value in scenario['expected_behavior'].items():
+98 |             print(f"     - {key}: {value}")
+   |
+help: Remove extraneous `f` prefix
+
+F401 [*] `typing.Optional` imported but unused
+ --> services\ingest\utils\word_readiness_validator.py:8:37
+  |
+6 | """
+7 | import logging
+8 | from typing import Dict, Any, List, Optional, Tuple
+  |                                     ^^^^^^^^
+9 | from pathlib import Path
+  |
+help: Remove unused import: `typing.Optional`
+
+F401 `report_data.ReportData` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_readiness_validator.py:34:33
+   |
+32 |             SectionType,
+33 |         )
+34 |         from report_data import ReportData
+   |                                 ^^^^^^^^^^
+35 |         HAS_SECTIONS = True
+36 |     except ImportError:
+   |
+help: Remove unused import: `report_data.ReportData`
+
+F401 `.reference_tables_loader.get_equipment_by_section` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_readiness_validator.py:42:9
+   |
+40 |     from .reference_tables_loader import (
+41 |         get_all_measures,
+42 |         get_equipment_by_section,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^
+43 |         get_losses_data,
+44 |     )
+   |
+help: Remove unused import
+
+F401 `.reference_tables_loader.get_losses_data` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_readiness_validator.py:43:9
+   |
+41 |         get_all_measures,
+42 |         get_equipment_by_section,
+43 |         get_losses_data,
+   |         ^^^^^^^^^^^^^^^
+44 |     )
+45 |     HAS_REFERENCE_TABLES = True
+   |
+help: Remove unused import
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_readiness_validator.py:255:5
+    |
+253 |                 return False
+254 |         return value is not None and value != 0
+255 |     except:
+    |     ^^^^^^
+256 |         return False
+    |
+
+F401 `docx.shared.Inches` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_report_generator.py:42:29
+   |
+40 | try:
+41 |     from docx import Document
+42 |     from docx.shared import Inches, Pt, RGBColor
+   |                             ^^^^^^
+43 |     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+44 |     from docx.enum.style import WD_STYLE_TYPE
+   |
+help: Remove unused import
+
+F401 `docx.shared.RGBColor` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_report_generator.py:42:41
+   |
+40 | try:
+41 |     from docx import Document
+42 |     from docx.shared import Inches, Pt, RGBColor
+   |                                         ^^^^^^^^
+43 |     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+44 |     from docx.enum.style import WD_STYLE_TYPE
+   |
+help: Remove unused import
+
+F401 `docx.enum.text.WD_BREAK` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> services\ingest\utils\word_report_generator.py:43:52
+   |
+41 |     from docx import Document
+42 |     from docx.shared import Inches, Pt, RGBColor
+43 |     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+   |                                                    ^^^^^^^^
+44 |     from docx.enum.style import WD_STYLE_TYPE
+45 |     HAS_DOCX = True
+   |
+help: Remove unused import: `docx.enum.text.WD_BREAK`
+
+F841 [*] Local variable `e` is assigned to but never used
+   --> services\ingest\utils\word_report_generator.py:128:34
+    |
+126 | …     except ImportError as e:
+127 | …         logger.warning(f"Модуль проверки готовности недоступен: {e}. Продолжаем генерацию без проверки.")
+128 | …     except ValueError as e:
+    |                            ^
+129 | …         # Пробрасываем ошибку валидации наверх
+130 | …         raise
+    |
+help: Remove assignment to unused variable `e`
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:209:9
+    |
+207 |             table_font.name = 'Times New Roman'
+208 |             table_font.size = Pt(12)
+209 |         except:
+    |         ^^^^^^
+210 |             pass  # Стиль уже существует
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:219:9
+    |
+217 |             table_header_font.size = Pt(12)
+218 |             table_header_font.bold = True
+219 |         except:
+    |         ^^^^^^
+220 |             pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:415:21
+    |
+413 |                     try:
+414 |                         paragraph.style = 'Table Header'
+415 |                     except:
+    |                     ^^^^^^
+416 |                         pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:435:25
+    |
+433 |                         try:
+434 |                             paragraph.style = 'Table Text'
+435 |                         except:
+    |                         ^^^^^^
+436 |                             pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:495:21
+    |
+493 |                     try:
+494 |                         paragraph.style = 'Table Header'
+495 |                     except:
+    |                     ^^^^^^
+496 |                         pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:517:33
+    |
+515 |                                 try:
+516 |                                     paragraph.style = 'Table Text'
+517 |                                 except:
+    |                                 ^^^^^^
+518 |                                     pass
+519 |                         item_count += 1
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:543:21
+    |
+541 |                     try:
+542 |                         paragraph.style = 'Table Header'
+543 |                     except:
+    |                     ^^^^^^
+544 |                         pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:569:25
+    |
+567 |                         try:
+568 |                             paragraph.style = 'Table Text'
+569 |                         except:
+    |                         ^^^^^^
+570 |                             pass
+571 |         else:
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:647:13
+    |
+645 |             try:
+646 |                 table.style = table_style
+647 |             except:
+    |             ^^^^^^
+648 |                 table.style = 'Table Grid'
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:658:21
+    |
+656 |                     try:
+657 |                         paragraph.style = 'Table Header'
+658 |                     except:
+    |                     ^^^^^^
+659 |                         pass
+    |
+
+F841 Local variable `total_saving_money` is assigned to but never used
+   --> services\ingest\utils\word_report_generator.py:664:13
+    |
+662 |             total_capex = 0.0
+663 |             total_saving_kwh = 0.0
+664 |             total_saving_money = 0.0
+    |             ^^^^^^^^^^^^^^^^^^
+665 |             
+666 |             for idx, measure in enumerate(measures_data, 1):
+    |
+help: Remove assignment to unused variable `total_saving_money`
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:698:25
+    |
+696 |                         try:
+697 |                             paragraph.style = 'Table Text'
+698 |                         except:
+    |                         ^^^^^^
+699 |                             pass
+    |
+
+E722 Do not use bare `except`
+   --> services\ingest\utils\word_report_generator.py:727:25
+    |
+725 |                         try:
+726 |                             paragraph.runs[0].bold = True
+727 |                         except:
+    |                         ^^^^^^
+728 |                             pass
+    |
+
+F541 [*] f-string without any placeholders
+  --> services\reports\main.py:33:15
+   |
+31 |     if os.path.exists(font_path):
+32 |         pdfmetrics.registerFont(TTFont('DejaVuSans-Bold', font_path))
+33 |         print(f"⚠ Warning: Bold font not found, using regular font for bold text")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+34 |
+35 | # Register font family for bold text support in Paragraph
+   |
+help: Remove extraneous `f` prefix
+
+F841 Local variable `unicode_font_bold` is assigned to but never used
+  --> services\reports\main.py:63:5
+   |
+61 |     # Create Unicode-enabled styles with DejaVuSans
+62 |     unicode_font_name = 'DejaVuSans'
+63 |     unicode_font_bold = 'DejaVuSans-Bold'
+   |     ^^^^^^^^^^^^^^^^^
+64 |     
+65 |     title_style = ParagraphStyle(
+   |
+help: Remove assignment to unused variable `unicode_font_bold`
+
+F541 [*] f-string without any placeholders
+  --> services\reports\main.py:96:28
+   |
+94 |     # Основная информация
+95 |     story.append(Paragraph(f"<b>Audit ID:</b> {req.auditId}", normal_style))
+96 |     story.append(Paragraph(f"<b>Версия:</b> v2.1", normal_style))
+   |                            ^^^^^^^^^^^^^^^^^^^^^^
+97 |     story.append(Spacer(1, 0.5*cm))
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_deepseek_connection.py:30:15
+   |
+28 |         print("📡 Создаю клиент DeepSeek API...")
+29 |         print(f"   API Key: {DEEPSEEK_API_KEY[:10]}...{DEEPSEEK_API_KEY[-4:]}")
+30 |         print(f"   Base URL: https://api.deepseek.com")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+31 |         
+32 |         # Создаем клиент с правильными параметрами
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_deepseek_connection.py:55:19
+   |
+54 |             answer = response.choices[0].message.content
+55 |             print(f"✅ Запрос выполнен успешно!")
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+56 |             print(f"📝 Ответ: {answer}")
+57 |             print()
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_deepseek_connection.py:83:19
+   |
+82 |             answer = response.choices[0].message.content
+83 |             print(f"✅ Модель отвечает корректно")
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+84 |             print(f"📝 Ответ: {answer}")
+85 |             print()
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_deepseek_connection.py:111:19
+    |
+110 |             answer = response.choices[0].message.content
+111 |             print(f"✅ Структурированный запрос выполнен")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+112 |             print(f"📝 Ответ: {answer}")
+113 |             print()
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `json` imported but unused
+ --> test_deepseek_simple.py:5:8
+  |
+3 | """
+4 | import httpx
+5 | import json
+  |        ^^^^
+6 |
+7 | DEEPSEEK_API_KEY = "sk-fa4d5adfd79d4307809a34b153fc0ab7"
+  |
+help: Remove unused import: `json`
+
+F541 [*] f-string without any placeholders
+  --> test_image_ocr.py:26:15
+   |
+24 |     except requests.exceptions.ConnectionError:
+25 |         print("❌ Не удалось подключиться к сервису ingest")
+26 |         print(f"   Убедитесь, что сервис запущен на порту 8001")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+27 |         print(f"   Команда: cd eaip_full_skeleton/services/ingest && python -m uvicorn main:app --reload --port 8001")
+28 |         return False
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_image_ocr.py:27:15
+   |
+25 |         print("❌ Не удалось подключиться к сервису ingest")
+26 |         print(f"   Убедитесь, что сервис запущен на порту 8001")
+27 |         print(f"   Команда: cd eaip_full_skeleton/services/ingest && python -m uvicorn main:app --reload --port 8001")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+28 |         return False
+29 |     except Exception as e:
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_image_ocr.py:98:27
+   |
+97 |                 if ocr_used:
+98 |                     print(f"🔍 OCR: Использовано")
+   |                           ^^^^^^^^^^^^^^^^^^^^^^^
+99 |                     print(f"📊 Символов распознано: {char_count}")
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:104:31
+    |
+102 |                     if text:
+103 |                         preview = text[:200].replace('\n', ' ')
+104 |                         print(f"\n📝 Превью текста (первые 200 символов):")
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+105 |                         print(f"   {preview}...")
+106 |                     else:
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:117:27
+    |
+115 |                 image_mode = parsed_data.get("image_mode")
+116 |                 if image_size:
+117 |                     print(f"\n🖼️  Метаданные изображения:")
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+118 |                     print(f"   Размер: {image_size[0]}x{image_size[1]} пикселей")
+119 |                     print(f"   Режим: {image_mode}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:143:19
+    |
+141 |         if response.status_code == 200:
+142 |             summary = response.json()
+143 |             print(f"\n📊 Краткая сводка:")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^
+144 |             print(f"   Batch ID: {summary.get('batch_id')}")
+145 |             print(f"   Статус: {summary.get('status')}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:172:15
+    |
+170 |     else:
+171 |         print("\n❌ Не указан путь к изображению")
+172 |         print(f"   Использование: python test_image_ocr.py [путь_к_изображению]")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+173 |         print(f"\n   Поддерживаемые форматы: .jpg, .jpeg, .png")
+174 |         print(f"\n   Пример:")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:173:15
+    |
+171 |         print("\n❌ Не указан путь к изображению")
+172 |         print(f"   Использование: python test_image_ocr.py [путь_к_изображению]")
+173 |         print(f"\n   Поддерживаемые форматы: .jpg, .jpeg, .png")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+174 |         print(f"\n   Пример:")
+175 |         print(f"   python test_image_ocr.py test_image.jpg")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:174:15
+    |
+172 |         print(f"   Использование: python test_image_ocr.py [путь_к_изображению]")
+173 |         print(f"\n   Поддерживаемые форматы: .jpg, .jpeg, .png")
+174 |         print(f"\n   Пример:")
+    |               ^^^^^^^^^^^^^^^
+175 |         print(f"   python test_image_ocr.py test_image.jpg")
+176 |         sys.exit(1)
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:175:15
+    |
+173 |         print(f"\n   Поддерживаемые форматы: .jpg, .jpeg, .png")
+174 |         print(f"\n   Пример:")
+175 |         print(f"   python test_image_ocr.py test_image.jpg")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+176 |         sys.exit(1)
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:186:15
+    |
+184 |     if ext not in ['.jpg', '.jpeg', '.png']:
+185 |         print(f"\n❌ Неподдерживаемый формат: {ext}")
+186 |         print(f"   Поддерживаются: .jpg, .jpeg, .png")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+187 |         sys.exit(1)
+    |
+help: Remove extraneous `f` prefix
+
+F841 Local variable `results` is assigned to but never used
+   --> test_image_ocr.py:203:5
+    |
+202 |     # Проверяем результаты парсинга
+203 |     results = check_parsing_results(batch_id)
+    |     ^^^^^^^
+204 |     
+205 |     # Получаем сводку
+    |
+help: Remove assignment to unused variable `results`
+
+F541 [*] f-string without any placeholders
+   --> test_image_ocr.py:213:11
+    |
+211 |     print(f"\n🌐 Веб-интерфейс: {INGEST_URL}/web/upload")
+212 |     print(f"📚 API документация: {INGEST_URL}/docs")
+213 |     print(f"\n💡 Совет: Вы также можете загрузить изображение через веб-интерфейс")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `pathlib.Path` imported but unused
+ --> test_pdf_ocr.py:7:21
+  |
+5 | import sys
+6 | import os
+7 | from pathlib import Path
+  |                     ^^^^
+8 |
+9 | # URL сервиса ingest
+  |
+help: Remove unused import: `pathlib.Path`
+
+F541 [*] f-string without any placeholders
+  --> test_pdf_ocr.py:25:15
+   |
+23 |     except requests.exceptions.ConnectionError:
+24 |         print("❌ Не удалось подключиться к сервису ingest")
+25 |         print(f"   Убедитесь, что сервис запущен: docker compose up -d ingest")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+26 |         return False
+27 |     except Exception as e:
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_pdf_ocr.py:76:19
+   |
+74 |             parsed_data = parsing.get("data", {})
+75 |             
+76 |             print(f"\n📊 Статистика:")
+   |                   ^^^^^^^^^^^^^^^^^^^
+77 |             print(f"   Тип файла: {parsing.get('file_type', 'unknown')}")
+78 |             print(f"   Распознано: {'✅ Да' if parsing.get('parsed') else '❌ Нет'}")
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_pdf_ocr.py:93:27
+   |
+92 |                 if ocr_used:
+93 |                     print(f"\n🎉 OCR успешно применен!")
+   |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+94 |                     text_preview = pdf_data.get("text", "")[:200]
+95 |                     if text_preview:
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> test_pdf_ocr.py:96:31
+   |
+94 |                     text_preview = pdf_data.get("text", "")[:200]
+95 |                     if text_preview:
+96 |                         print(f"\n📝 Превью текста (первые 200 символов):")
+   |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+97 |                         print(f"   {text_preview}...")
+98 |                 else:
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_pdf_ocr.py:101:31
+    |
+ 99 |                     text_preview = pdf_data.get("text", "")[:200]
+100 |                     if text_preview:
+101 |                         print(f"\n📝 Превью текста (первые 200 символов):")
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+102 |                         print(f"   {text_preview}...")
+103 |                     else:
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_pdf_ocr.py:104:31
+    |
+102 |                         print(f"   {text_preview}...")
+103 |                     else:
+104 |                         print(f"\n⚠️ Текст не извлечен. Возможно, документ требует OCR.")
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+105 |                         print(f"   Среднее символов на страницу: {chars / pages if pages > 0 else 0:.0f}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_pdf_ocr.py:123:19
+    |
+121 |         if response.status_code == 200:
+122 |             summary = response.json()
+123 |             print(f"\n📋 Краткая сводка:")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^
+124 |             print(f"   Файл: {summary.get('filename', 'unknown')}")
+125 |             print(f"   Статус: {summary.get('status', 'unknown')}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_pdf_ocr.py:166:15
+    |
+165 |     if not pdf_path or not os.path.exists(pdf_path):
+166 |         print(f"\n❌ Тестовый PDF файл не найден")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+167 |         print(f"   Использование: python test_pdf_ocr.py [путь_к_pdf_файлу]")
+168 |         print(f"\n   Искал файлы:")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_pdf_ocr.py:167:15
+    |
+165 |     if not pdf_path or not os.path.exists(pdf_path):
+166 |         print(f"\n❌ Тестовый PDF файл не найден")
+167 |         print(f"   Использование: python test_pdf_ocr.py [путь_к_pdf_файлу]")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+168 |         print(f"\n   Искал файлы:")
+169 |         for path in test_files:
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_pdf_ocr.py:168:15
+    |
+166 |         print(f"\n❌ Тестовый PDF файл не найден")
+167 |         print(f"   Использование: python test_pdf_ocr.py [путь_к_pdf_файлу]")
+168 |         print(f"\n   Искал файлы:")
+    |               ^^^^^^^^^^^^^^^^^^^^
+169 |         for path in test_files:
+170 |             print(f"   - {path}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> test_pdf_ocr.py:199:15
+    |
+198 |     if results:
+199 |         print(f"\n💡 Для просмотра полных результатов:")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+200 |         print(f"   curl {INGEST_URL}/ingest/parse/{batch_id}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `unittest.mock.MagicMock` imported but unused
+  --> tests\conftest.py:8:33
+   |
+ 6 | import sys
+ 7 | from pathlib import Path
+ 8 | from unittest.mock import Mock, MagicMock, patch
+   |                                 ^^^^^^^^^
+ 9 | import tempfile
+10 | import shutil
+   |
+help: Remove unused import
+
+F401 [*] `unittest.mock.patch` imported but unused
+  --> tests\conftest.py:8:44
+   |
+ 6 | import sys
+ 7 | from pathlib import Path
+ 8 | from unittest.mock import Mock, MagicMock, patch
+   |                                            ^^^^^
+ 9 | import tempfile
+10 | import shutil
+   |
+help: Remove unused import
+
+F401 [*] `pathlib.Path` imported but unused
+ --> tests\integration\test_pdf_pipeline.py:6:21
+  |
+4 | import pytest
+5 | import os
+6 | from pathlib import Path
+  |                     ^^^^
+7 | from unittest.mock import Mock, patch
+8 | import tempfile
+  |
+help: Remove unused import: `pathlib.Path`
+
+F401 [*] `unittest.mock.Mock` imported but unused
+ --> tests\integration\test_pdf_pipeline.py:7:27
+  |
+5 | import os
+6 | from pathlib import Path
+7 | from unittest.mock import Mock, patch
+  |                           ^^^^
+8 | import tempfile
+  |
+help: Remove unused import: `unittest.mock.Mock`
+
+F401 [*] `pathlib.Path` imported but unused
+ --> tests\performance\test_ocr_performance.py:6:21
+  |
+4 | import pytest
+5 | import time
+6 | from pathlib import Path
+  |                     ^^^^
+7 | from unittest.mock import Mock, patch
+8 | from PIL import Image
+  |
+help: Remove unused import: `pathlib.Path`
+
+F401 [*] `unittest.mock.Mock` imported but unused
+ --> tests\performance\test_ocr_performance.py:7:27
+  |
+5 | import time
+6 | from pathlib import Path
+7 | from unittest.mock import Mock, patch
+  |                           ^^^^
+8 | from PIL import Image
+9 | import tempfile
+  |
+help: Remove unused import
+
+F401 [*] `unittest.mock.patch` imported but unused
+ --> tests\performance\test_ocr_performance.py:7:33
+  |
+5 | import time
+6 | from pathlib import Path
+7 | from unittest.mock import Mock, patch
+  |                                 ^^^^^
+8 | from PIL import Image
+9 | import tempfile
+  |
+help: Remove unused import
+
+F401 [*] `tempfile` imported but unused
+ --> tests\performance\test_ocr_performance.py:9:8
+  |
+7 | from unittest.mock import Mock, patch
+8 | from PIL import Image
+9 | import tempfile
+  |        ^^^^^^^^
+  |
+help: Remove unused import: `tempfile`
+
+F841 Local variable `result` is assigned to but never used
+  --> tests\performance\test_ocr_performance.py:51:9
+   |
+50 |         # Выполняем OCR
+51 |         result = apply_ocr_to_image(sample_image)
+   |         ^^^^^^
+52 |         
+53 |         final_memory = process.memory_info().rss / 1024 / 1024  # MB
+   |
+help: Remove assignment to unused variable `result`
+
+F401 [*] `unittest.mock.MagicMock` imported but unused
+ --> tests\unit\test_ai_anomaly_detector.py:5:40
+  |
+3 | """
+4 | import pytest
+5 | from unittest.mock import Mock, patch, MagicMock
+  |                                        ^^^^^^^^^
+  |
+help: Remove unused import: `unittest.mock.MagicMock`
+
+F401 [*] `abc.ABC` imported but unused
+ --> tests\unit\test_ai_base_client.py:5:17
+  |
+3 | """
+4 | import pytest
+5 | from abc import ABC
+  |                 ^^^
+  |
+help: Remove unused import: `abc.ABC`
+
+F401 [*] `pytest` imported but unused
+ --> tests\unit\test_ai_client_factory.py:4:8
+  |
+2 | Unit-тесты для ai_client_factory.py
+3 | """
+4 | import pytest
+  |        ^^^^^^
+5 | from unittest.mock import Mock, patch
+  |
+help: Remove unused import: `pytest`
+
+F401 [*] `pytest` imported but unused
+ --> tests\unit\test_ai_config.py:4:8
+  |
+2 | Unit-тесты для ai_config.py
+3 | """
+4 | import pytest
+  |        ^^^^^^
+5 | import os
+6 | from unittest.mock import patch
+  |
+help: Remove unused import: `pytest`
+
+F401 [*] `ai_config.is_ai_enabled` imported but unused
+  --> tests\unit\test_ai_config.py:32:31
+   |
+30 |     def test_is_ai_enabled_true(self):
+31 |         """Тест проверки включенности AI"""
+32 |         from ai_config import is_ai_enabled
+   |                               ^^^^^^^^^^^^^
+33 |         
+34 |         # Перезагружаем модуль для применения новых переменных окружения
+   |
+help: Remove unused import: `ai_config.is_ai_enabled`
+
+F401 [*] `ai_config.is_ai_enabled` imported but unused
+  --> tests\unit\test_ai_config.py:44:31
+   |
+42 |     def test_is_ai_enabled_false(self):
+43 |         """Тест проверки отключенности AI"""
+44 |         from ai_config import is_ai_enabled
+   |                               ^^^^^^^^^^^^^
+45 |         
+46 |         # Перезагружаем модуль
+   |
+help: Remove unused import: `ai_config.is_ai_enabled`
+
+F401 [*] `unittest.mock.MagicMock` imported but unused
+ --> tests\unit\test_ai_parser.py:6:40
+  |
+4 | import pytest
+5 | import os
+6 | from unittest.mock import Mock, patch, MagicMock
+  |                                        ^^^^^^^^^
+7 | import base64
+8 | from pathlib import Path
+  |
+help: Remove unused import: `unittest.mock.MagicMock`
+
+F401 [*] `base64` imported but unused
+ --> tests\unit\test_ai_parser.py:7:8
+  |
+5 | import os
+6 | from unittest.mock import Mock, patch, MagicMock
+7 | import base64
+  |        ^^^^^^
+8 | from pathlib import Path
+  |
+help: Remove unused import: `base64`
+
+F401 [*] `pathlib.Path` imported but unused
+  --> tests\unit\test_ai_parser.py:8:21
+   |
+ 6 | from unittest.mock import Mock, patch, MagicMock
+ 7 | import base64
+ 8 | from pathlib import Path
+   |                     ^^^^
+ 9 |
+10 | # Настройка окружения перед импортом
+   |
+help: Remove unused import: `pathlib.Path`
+
+Found 190 errors.
+[*] 134 fixable with the `--fix` option (10 hidden fixes can be enabled with the `--unsafe-fixes` option).
+[FAIL] ruff check (линтер) (код 1)
+mypy не найден, проверка типов пропущена
+
+=== python -m pip check (зависимости) ===
+No broken requirements found.
+[OK] python -m pip check (зависимости)
+
+----------------------------------------
+ИТОГ:
+Шагов всего : 3
+Провалено   : 1

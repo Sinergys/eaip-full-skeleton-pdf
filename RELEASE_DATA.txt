@@ -1,0 +1,29 @@
+ТЕГ (Tag):
+v0.2.0
+
+ЗАГОЛОВОК (Title):
+EAIP Full Skeleton — Stable Cyrillic PDF Build
+
+ОПИСАНИЕ (Description) - скопируйте весь текст ниже:
+---
+✅ Stable release v0.2.0
+
+What's new:
+
+- Added TTF font (DejaVuSans/Arial) for Cyrillic PDF generation
+- Improved reports service with full Unicode support
+- Added readiness check for reports (port 8005)
+- Updated analytics model with optional meterId
+- Updated documentation (README, CHANGELOG, PDF_GENERATION.md)
+- Cleaned up nested fonts and compose warnings
+
+---
+ШАГИ:
+1. Откройте: https://github.com/Sinergys/eaip-full-skeleton-pdf/releases/new
+2. В поле "Choose a tag" выберите: v0.2.0
+3. В поле "Release title" вставьте заголовок выше
+4. В поле "Description" вставьте описание выше
+5. Нажмите кнопку "Publish release"
+
+Готово! ✅
+
