@@ -1,7 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException, Form, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
-from pydantic import BaseModel
 from uuid import uuid4
 import json
 import os
@@ -84,6 +83,7 @@ from utils.readiness_validator import (
 from utils.data_validator import (
     validate_data_for_template,
 )
+from models.schemas import ValidateRequest, EnterpriseCreate, EditablePayload
 
 # Настройка логирования ДО использования logger
 # Уровень логирования можно изменить через переменную окружения LOG_LEVEL
@@ -158,19 +158,6 @@ WEB_DIR.mkdir(parents=True, exist_ok=True)
 database.init_db()
 
 app = FastAPI(title="EAIP ingest", version="0.1.0")
-
-
-class ValidateRequest(BaseModel):
-    batchId: str
-
-
-class EnterpriseCreate(BaseModel):
-    name: str
-
-
-class EditablePayload(BaseModel):
-    text: str
-
 
 # Inbox directory for uploaded files
 INBOX_DIR = os.getenv("INBOX_DIR", "/data/inbox")

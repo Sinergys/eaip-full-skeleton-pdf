@@ -104,12 +104,12 @@ except ImportError:
     logger.warning("python-docx не установлен. Парсинг DOCX недоступен.")
 
 try:
-    import PyPDF2
+    import fitz  # PyMuPDF
 
-    HAS_PYPDF2 = True
+    HAS_PYMUPDF = True
 except ImportError:
-    HAS_PYPDF2 = False
-    logger.warning("PyPDF2 не установлен. Базовый парсинг PDF недоступен.")
+    HAS_PYMUPDF = False
+    logger.warning("PyMuPDF не установлен. Базовый парсинг PDF недоступен.")
 
 try:
     import pdfplumber
