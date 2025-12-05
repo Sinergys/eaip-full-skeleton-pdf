@@ -17,3 +17,4 @@ openai>=1.0.0  # Для DeepSeek и OpenAI API
 opencv-python>=4.8.0  # Для улучшения изображений перед OCR
 scikit-image>=0.21.0  # Для дополнительных методов улучшения (Sauvola, Wiener)
 python-dotenv>=1.0.0  # Для загрузки переменных окружения из .env файла
+psycopg2-binary>=2.9.0  # Для работы с PostgreSQL

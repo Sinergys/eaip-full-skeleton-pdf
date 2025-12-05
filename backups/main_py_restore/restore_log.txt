@@ -1,0 +1,5 @@
+2025-12-05 04:49:57 | Восстановление main.py
+Путь: services/ingest/main.py
+Резервная копия: C:\eaip\eaip_full_skeleton\backups\main_py_restore\main.py.backup_20251205_044225
+Выбранный вариант: 1
+Пользователь: DELL
