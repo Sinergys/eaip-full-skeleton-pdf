@@ -1,0 +1,6 @@
+{
+  "extraPaths": [
+    "../tools"
+  ],
+  "reportMissingImports": "warning"
+}

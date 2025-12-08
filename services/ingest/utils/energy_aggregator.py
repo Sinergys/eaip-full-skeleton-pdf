@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import logging
@@ -9,6 +9,14 @@ from typing import Dict, Iterable, Optional, Union
 from openpyxl import load_workbook
 
 logger = logging.getLogger(__name__)
+
+
+def safe_strip(value):
+    """Нормализация строковых значений из данных (удаление пробелов)"""
+    if value is None:
+        return ""
+    return str(value).strip()
+
 
 # Project root (3 levels up from this file: utils/ -> ingest/ -> services/ -> eaip_full_skeleton/)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent.parent
@@ -326,7 +334,7 @@ def aggregate_single_resource_file(workbook_path: Union[str, Path]) -> Optional[
 
                 quarter_entry["months"].append(
                     {
-                        "month": month_name,
+                        "month": month_norm,  # Store normalized name
                         "values": {
                             "cost_sum": cost_sum,
                             "volume_m3": volume_m3,
@@ -354,7 +362,7 @@ def aggregate_single_resource_file(workbook_path: Union[str, Path]) -> Optional[
             if not current_year:
                 continue
 
-            month_name = row[2] if len(row) > 2 else None
+            month_name = safe_strip(row[2]) if len(row) > 2 else None
             volume = row[3] if len(row) > 3 else None
 
             if not isinstance(month_name, str):
@@ -372,7 +380,7 @@ def aggregate_single_resource_file(workbook_path: Union[str, Path]) -> Optional[
 
             quarter_entry["months"].append(
                 {
-                    "month": month_name,
+                    "month": month_norm,  # Store normalized name
                     "values": {
                         "volume_m3": volume,
                     },
@@ -493,7 +501,8 @@ def aggregate_energy_data(workbook_path: Union[str, Path]) -> Optional[Dict]:
         quarter_entry = target.setdefault(
             quarter_key, {"year": year, "quarter": quarter, "months": []}
         )
-        quarter_entry["months"].append({"month": month_name, "values": payload})
+        # Store normalized month name to prevent duplicates from inconsistent formatting
+        quarter_entry["months"].append({"month": month_key, "values": payload})
         logger.debug(
             f"📝 [DIAG] Добавлен месяц {month_name} ({year}) в квартал {quarter_key}: "
             f"поля={list(payload.keys())}, значения={[(k, v) for k, v in payload.items() if v is not None]}"
@@ -504,7 +513,7 @@ def aggregate_energy_data(workbook_path: Union[str, Path]) -> Optional[Dict]:
         sheet = workbook["Килограмм да"]
         current_year: Optional[int] = None
         for row in sheet.iter_rows(values_only=True):
-            first_cell = row[0]
+            first_cell = safe_strip(row[0])
             if isinstance(first_cell, int) and first_cell in (2022, 2023, 2024):
                 current_year = first_cell
                 continue
@@ -709,7 +718,7 @@ def aggregate_energy_data(workbook_path: Union[str, Path]) -> Optional[Dict]:
 
         # Парсим данные
         for row_idx, row in enumerate(sheet.iter_rows(values_only=True), start=1):
-            first_cell = row[0] if len(row) > 0 else None
+            first_cell = safe_strip(row[0]) if len(row) > 0 else None
 
             # Определяем год: из заголовка или из первой колонки строки
             if isinstance(first_cell, int) and first_cell in (2022, 2023, 2024):
@@ -770,7 +779,7 @@ def aggregate_energy_data(workbook_path: Union[str, Path]) -> Optional[Dict]:
         sheet = workbook["ГАЗ"]
         current_year = None
         for row in sheet.iter_rows(values_only=True):
-            first_cell = row[0]
+            first_cell = safe_strip(row[0])
             if isinstance(first_cell, int) and first_cell in (2022, 2023, 2024):
                 current_year = first_cell
                 continue
@@ -792,7 +801,7 @@ def aggregate_energy_data(workbook_path: Union[str, Path]) -> Optional[Dict]:
         sheet = workbook["СУВ"]
         current_year = None
         for row in sheet.iter_rows(values_only=True):
-            first_cell = row[0]
+            first_cell = safe_strip(row[0])
             if isinstance(first_cell, int) and first_cell in (2022, 2023, 2024):
                 current_year = first_cell
                 continue
@@ -874,6 +883,28 @@ def _compute_quarter_totals(result: Dict[str, Dict[str, Dict]]) -> None:
                 f"{len(months)} месяцев, "
                 f"year={quarter_data.get('year')}, quarter={quarter_data.get('quarter')}"
             )
+
+            # VALIDATION: Check for duplicate months (caused by inconsistent month names)
+            if months:
+                month_names = [m.get("month", "") for m in months]
+                normalized_names = [_normalise_month_name(name) for name in month_names]
+                unique_normalized = set(normalized_names)
+
+                if len(months) != len(unique_normalized):
+                    logger.warning(
+                        f"⚠️ VALIDATION ERROR: Квартал {quarter_key} для {key} содержит дублирующиеся месяцы! "
+                        f"Всего записей: {len(months)}, уникальных месяцев: {len(unique_normalized)}. "
+                        f"Месяцы: {month_names}. "
+                        f"Это вызвано несогласованными названиями месяцев (пробелы, опечатки). "
+                        f"ВАЖНО: Квартал должен содержать ровно 3 уникальных месяца!"
+                    )
+
+                if len(unique_normalized) > 3:
+                    logger.error(
+                        f"❌ CRITICAL: Квартал {quarter_key} для {key} содержит {len(unique_normalized)} уникальных месяцев "
+                        f"вместо ожидаемых 3! Это приведет к неверным квартальным итогам. "
+                        f"Нормализованные месяцы: {sorted(unique_normalized)}"
+                    )
 
             if not months:
                 logger.warning(
@@ -1493,13 +1524,13 @@ def distribute_categories_by_quarter(
         return aggregated_data
 
     years_categories = categories_data["years"]
-    
+
     # Ensure the basic structure exists
     if "resources" not in aggregated_data:
         aggregated_data["resources"] = {}
     if "electricity" not in aggregated_data["resources"]:
         aggregated_data["resources"]["electricity"] = {}
-        
+
     electricity_data = aggregated_data["resources"]["electricity"]
 
     # Check if electricity data is empty. If so, populate it from yearly categories.
@@ -1643,7 +1674,7 @@ def _aggregate_single_resource_from_db(
             if not row or len(row) == 0:
                 continue
 
-            month_name = row[0] if len(row) > 0 else None
+            month_name = safe_strip(row[0]) if len(row) > 0 else None
             if not isinstance(month_name, str):
                 continue
 
@@ -1672,7 +1703,7 @@ def _aggregate_single_resource_from_db(
 
                 quarter_entry["months"].append(
                     {
-                        "month": month_name,
+                        "month": month_norm,  # Store normalized name
                         "values": {
                             "cost_sum": cost_sum,
                             "volume_m3": volume_m3,
@@ -1699,7 +1730,7 @@ def _aggregate_single_resource_from_db(
             if not current_year:
                 continue
 
-            month_name = row[2] if len(row) > 2 else None
+            month_name = safe_strip(row[2]) if len(row) > 2 else None
             volume_m3 = row[3] if len(row) > 3 else None
 
             if not isinstance(month_name, str):
@@ -1717,7 +1748,7 @@ def _aggregate_single_resource_from_db(
 
             quarter_entry["months"].append(
                 {
-                    "month": month_name,
+                    "month": month_norm,  # Store normalized name
                     "values": {
                         "volume_m3": volume_m3,
                     },
@@ -1867,7 +1898,7 @@ def aggregate_from_db_json(parsed_json: Dict) -> Optional[Dict]:
                                 )
 
                     quarter_entry["months"].append(
-                        {"month": month_name, "values": values}
+                        {"month": month_key, "values": values}  # Store normalized name
                     )
                     added_months += 1
                     processed_rows += 1
@@ -1963,7 +1994,7 @@ def aggregate_from_db_json(parsed_json: Dict) -> Optional[Dict]:
                                 )
 
                     quarter_entry["months"].append(
-                        {"month": month_name, "values": values}
+                        {"month": month_key, "values": values}  # Store normalized name
                     )
                     added_months += 1
                     processed_rows += 1
@@ -2140,7 +2171,7 @@ def aggregate_from_db_json(parsed_json: Dict) -> Optional[Dict]:
             first_data_row = None
             for row in rows:
                 if row and len(row) > 0:
-                    first_cell = row[0]
+                    first_cell = safe_strip(row[0])
                     # Пропускаем заголовки
                     if isinstance(first_cell, str) and any(
                         keyword in first_cell.lower()
@@ -2266,3 +2297,4 @@ def write_aggregation_json(
         json.dumps(aggregation_data, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     return target_file
+

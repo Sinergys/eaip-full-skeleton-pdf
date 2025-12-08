@@ -100,7 +100,7 @@ logger.info(f"🔧 Уровень логирования установлен: {
 SYSTEM_MODE = os.getenv("SYSTEM_MODE", "debug").lower()  # По умолчанию debug для разработки
 if SYSTEM_MODE not in ["debug", "production"]:
     SYSTEM_MODE = "debug"
-    logger.warning(f"⚠️ Неверный SYSTEM_MODE, установлен режим 'debug'")
+    logger.warning("⚠️ Неверный SYSTEM_MODE, установлен режим 'debug'")
 logger.info(f"🔧 Режим работы системы: {SYSTEM_MODE.upper()} (для изменения установите SYSTEM_MODE=debug или SYSTEM_MODE=production, или используйте переключатель в веб-интерфейсе)")
 
 # Добавляем tools в путь для импорта генератора
@@ -1138,6 +1138,15 @@ async def upload_file(
         file_hash=file_digest,
     )
 
+    logger.info(
+        f"🔍 Проверка дубликатов: enterprise_id={enterprise['id']}, "
+        f"filename={safe_filename}, size={file_size}, hash={file_digest[:16]}..."
+    )
+    if existing_upload:
+        logger.info(f"✅ Дубликат найден: batch_id={existing_upload.get('batch_id')}")
+    else:
+        logger.info("ℹ️ Дубликат не найден, создаем новую загрузку")
+
     if existing_upload:
         existing_batch_id = existing_upload["batch_id"]
         
@@ -1155,7 +1164,7 @@ async def upload_file(
             )
             deleted = database.delete_upload_by_batch_id(existing_batch_id)
             if deleted:
-                logger.info(f"✅ Старая запись удалена, обрабатываем файл заново")
+                logger.info("✅ Старая запись удалена, обрабатываем файл заново")
             # Продолжаем обработку
         else:
             # РЕЖИМ РАБОТЫ: проверяем изменения по hash
@@ -1201,7 +1210,7 @@ async def upload_file(
                 )
                 deleted = database.delete_upload_by_batch_id(existing_batch_id)
                 if deleted:
-                    logger.info(f"✅ Старая запись удалена, обрабатываем обновленный файл")
+                    logger.info("✅ Старая запись удалена, обрабатываем обновленный файл")
                 # Продолжаем обработку
 
     tracker.complete_stage(ProcessingStage.VALIDATION, "Валидация пройдена")
@@ -2138,7 +2147,8 @@ async def generate_energy_passport(
     # 2. Проверка готовности данных (если не пропущена)
     # Преобразуем строку в bool
     skip_check = skip_readiness_check.lower() in ("true", "1", "yes", "on")
-    template_name_final = template_name if template_name else None
+    # Если template_name пустая строка или None, используем "metin" по умолчанию
+    template_name_final = template_name if template_name else "metin"
 
     if not skip_check:
         # Feature-flag gate via EXCEL_SEMANTIC_AI_MODE
@@ -2336,6 +2346,7 @@ async def generate_energy_passport(
                 sys.path.insert(0, str(templates_config_path))
             from templates_config import get_template_path
 
+            logger.info("🔍 Запрос шаблона по имени: '%s'", template_name_final)
             template_path = get_template_path(template_name_final)
             logger.info(
                 "✅ Используется шаблон по имени '%s': %s",
@@ -2370,6 +2381,17 @@ async def generate_energy_passport(
         if not template_path:
             raise FileNotFoundError("Шаблон энергопаспорта не найден в ожидаемых путях")
         logger.info("Используется дефолтный шаблон энергопаспорта: %s", template_path)
+
+    # Если указан template_name, ОБЯЗАТЕЛЬНО используем fill_energy_passport
+    # (генератор PKM690ExcelGenerator не использует шаблоны)
+    if template_name_final and not HAS_FILLER:
+        raise HTTPException(
+            status_code=503,
+            detail=(
+                f"Для использования шаблона '{template_name_final}' требуется fill_energy_passport. "
+                "Модуль недоступен. Проверьте установку зависимостей."
+            ),
+        )
 
     if HAS_FILLER:
         try:
@@ -3441,10 +3463,30 @@ async def generate_energy_passport(
             logger.exception(
                 "Ошибка генерации через fill_energy_passport: %s", filler_exc
             )
+            # Если был указан template_name, не переходим к PKM690ExcelGenerator
+            # (он не использует шаблоны)
+            if template_name_final:
+                raise HTTPException(
+                    status_code=500,
+                    detail=(
+                        f"Ошибка генерации паспорта с шаблоном '{template_name_final}': {filler_exc}"
+                    ),
+                ) from filler_exc
             if not HAS_GENERATOR:
                 raise HTTPException(
                     status_code=500, detail=f"Ошибка генерации: {filler_exc}"
                 ) from filler_exc
+
+    # Если был указан template_name, не используем PKM690ExcelGenerator
+    # (он создает файл с нуля и не использует шаблоны)
+    if template_name_final:
+        raise HTTPException(
+            status_code=503,
+            detail=(
+                f"Для использования шаблона '{template_name_final}' требуется fill_energy_passport. "
+                "Модуль недоступен или произошла ошибка. Проверьте установку зависимостей и логи."
+            ),
+        )
 
     if not HAS_GENERATOR:
         raise HTTPException(status_code=503, detail="Генератор паспортов недоступен")
