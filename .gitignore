@@ -31,6 +31,12 @@ ENV/
 # Local databases and large data files
 ingest_data.db
 *.db
+*.sqlite
+*.sqlite3
+
+# Database backups and cleanup
+backups/
+quarantine/
 
 # Test / cache directories
 .pytest_cache/
