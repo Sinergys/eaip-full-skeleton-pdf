@@ -45,3 +45,10 @@ build/
 # Temporary / editor
 *.tmp
 *.bak
+
+# Runtime logs
+*.jsonl
+logs/
+
+# Backup files
+*.backup
