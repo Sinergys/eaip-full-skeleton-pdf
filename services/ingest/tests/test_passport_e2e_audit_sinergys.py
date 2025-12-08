@@ -161,12 +161,48 @@ def client():
     return TestClient(app)
 
 
+def get_existing_batches_for_enterprise(client: TestClient, enterprise_id: int) -> List[str]:
+    """Получает существующие batch_id для предприятия из БД"""
+    import database
+    uploads = database.list_uploads_for_enterprise(enterprise_id, limit=20)
+    # Фильтруем только завершенные загрузки
+    batches = [
+        upload["batch_id"] 
+        for upload in uploads 
+        if upload.get("status") == "completed"
+    ]
+    return batches
+
+
 @pytest.fixture(scope="function")
 def uploaded_batches(client: TestClient) -> List[str]:
-    """Загружает все файлы и возвращает список batch_id"""
-    batches = []
+    """Загружает все файлы и возвращает список batch_id.
+    
+    В режиме PRODUCTION проверяет существующие загрузки и переиспользует их.
+    """
     enterprise_name = "METIN IRODA"
+    
+    # Получаем enterprise_id
+    enterprise_id = None
+    try:
+        import database
+        enterprise = database.get_or_create_enterprise(enterprise_name)
+        enterprise_id = enterprise["id"]
+        
+        # Проверяем существующие загрузки (в PRODUCTION режиме)
+        existing_batches = get_existing_batches_for_enterprise(client, enterprise_id)
+        if existing_batches and len(existing_batches) >= 5:  # Если есть достаточно загрузок
+            print(f"\n{'=' * 80}")
+            print("ИСПОЛЬЗОВАНИЕ СУЩЕСТВУЮЩИХ ЗАГРУЗОК")
+            print(f"{'=' * 80}")
+            print(f"✅ Найдено существующих загрузок: {len(existing_batches)}")
+            print(f"   Используем существующие batch_id (режим PRODUCTION)")
+            return existing_batches[:8]  # Возвращаем первые 8
+    except Exception as e:
+        print(f"⚠️ Ошибка при проверке существующих загрузок: {e}, загружаем файлы заново")
 
+    # Если существующих загрузок нет или их мало - загружаем файлы
+    batches = []
     test_files = get_test_files()
     if len(test_files) == 0:
         pytest.skip("Тестовые файлы не найдены в data/source_files/audit_sinergys")
@@ -454,4 +490,142 @@ def test_passport_generation_e2e(client: TestClient, uploaded_batches: List[str]
     # passport_path.unlink()
 
     # Возвращаем путь к файлу для возможной дальнейшей проверки
+    return passport_path
+
+
+def test_passport_generation_with_metin_template(
+    client: TestClient, uploaded_batches: List[str]
+):
+    """
+    E2E тест генерации энергопаспорта с шаблоном "metin".
+
+    Шаги:
+    1. Генерация паспорта с шаблоном metin
+    2. Проверка, что используется правильный шаблон (templates/pcm690/metin.xlsx)
+    3. Проверка структуры файла
+    4. Проверка, что паспорт создаётся без ошибок
+    """
+    # Получаем enterprise_id из первого batch
+    enterprise_id = get_enterprise_id_from_batch(client, uploaded_batches[0])
+
+    print(f"\n{'=' * 80}")
+    print("E2E ТЕСТ ГЕНЕРАЦИИ ЭНЕРГОПАСПОРТА С ШАБЛОНОМ 'metin'")
+    print(f"{'=' * 80}")
+    print(f"Enterprise ID: {enterprise_id}")
+    print(f"Загружено batches: {len(uploaded_batches)}")
+
+    # Шаг 1: Генерация паспорта с шаблоном metin
+    print("\n📋 Шаг 1: Генерация паспорта с шаблоном 'metin'...")
+    batch_id = uploaded_batches[-1]
+
+    # Генерируем с шаблоном metin
+    response = client.post(
+        f"/api/generate-passport/{batch_id}",
+        params={"template_name": "metin"},
+    )
+
+    assert response.status_code == 200, (
+        f"Ошибка генерации паспорта с шаблоном 'metin': {response.text}"
+    )
+
+    # Сохраняем файл во временный файл
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".xlsx") as tmp_file:
+        tmp_file.write(response.content)
+        passport_path = Path(tmp_file.name)
+
+    print(f"   ✅ Паспорт сохранен: {passport_path}")
+    print(f"   Размер: {passport_path.stat().st_size} байт")
+
+    # Шаг 2: Проверка структуры файла
+    print("\n📋 Шаг 2: Проверка структуры файла...")
+    wb = load_workbook(passport_path, data_only=False)
+
+    print(f"   Всего листов: {len(wb.sheetnames)}")
+    print(f"   Листы: {', '.join(wb.sheetnames)}")
+
+    # Проверяем наличие ключевых листов для шаблона metin
+    # В шаблоне metin.xlsx листы называются кириллицей:
+    # "Структура пр 2", "Баланс", "Узел учета ", "03_Оборудование" и т.д.
+    key_sheets = {
+        "Struktura pr2": [
+            "Структура пр 2",
+            "Struktura pr2",
+            "02_Структура",
+            "Структура пр 2 ",
+            "Struktura pr2 ",
+        ],
+        "Balans": ["04_Баланс", "Баланс", "Balance", "Balans", "Баланс ", "04_Баланс "],
+        "Equipment": [
+            "03_Оборудование",
+            "Equipment",
+            "Оборудование",
+            "Sheet1",
+            "03_Оборудование ",
+            "Equipment ",
+        ],
+        "Nodes": [
+            "01_Узлы учета",
+            "Узел учета",
+            "Узлы учета",
+            "Nodes",
+            "Uzel ucheta",
+            "Uzel ucheta ",
+        ],
+    }
+
+    found_sheets = {}
+    for category, names in key_sheets.items():
+        found = None
+        for name in names:
+            for sheet_name in wb.sheetnames:
+                if sheet_name.strip() == name.strip() or sheet_name == name:
+                    found = sheet_name
+                    break
+            if found:
+                break
+        found_sheets[category] = found
+        status = "✅" if found else "❌"
+        print(f"   {status} {category}: {found if found else 'НЕ НАЙДЕН'}")
+
+    # Проверяем, что хотя бы основные листы найдены
+    required_sheets = ["Struktura pr2", "Balans"]
+    missing_sheets = [
+        cat for cat in required_sheets if cat in required_sheets and not found_sheets.get(cat)
+    ]
+    assert not missing_sheets, f"Не найдены обязательные листы: {missing_sheets}"
+
+    # Шаг 3: Проверка, что файл не пустой и содержит данные
+    print("\n📋 Шаг 3: Проверка данных в паспорте...")
+
+    # Проверяем, что файл не пустой
+    assert passport_path.stat().st_size > 0, "Файл паспорта пустой!"
+
+    # Проверяем наличие формул или данных на листе Balans
+    if found_sheets.get("Balans"):
+        balans_sheet_name = found_sheets["Balans"]
+        balans_ws = wb[balans_sheet_name]
+        balans_formulas = []
+        balans_data = []
+        for row in balans_ws.iter_rows():
+            for cell in row:
+                if cell.data_type == "f" and cell.value:
+                    balans_formulas.append((cell.coordinate, str(cell.value)))
+                if cell.value is not None and cell.value != "":
+                    if isinstance(cell.value, (int, float)) and cell.value > 0:
+                        balans_data.append((cell.coordinate, cell.value))
+
+        print(f"   Balans: найдено формул: {len(balans_formulas)}, данных: {len(balans_data)}")
+        assert (
+            len(balans_formulas) > 0 or len(balans_data) > 0
+        ), "На листе Balans не найдено формул или данных!"
+
+    wb.close()
+
+    print(f"\n{'=' * 80}")
+    print("✅ ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ ДЛЯ ШАБЛОНА 'metin'!")
+    print(f"{'=' * 80}")
+    print(f"Временный файл паспорта: {passport_path}")
+    print("Для ручной проверки откройте файл в Excel")
+
+    # Не удаляем файл, чтобы можно было проверить вручную
     return passport_path

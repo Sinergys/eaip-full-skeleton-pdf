@@ -826,7 +826,7 @@ def find_duplicate_upload(
         row = conn.execute(
             """
             SELECT u.batch_id, u.filename, u.file_type, u.file_size, u.status,
-                   u.parsing_summary
+                   u.parsing_summary, s.file_hash
             FROM uploads u
             JOIN uploads_storage s ON s.upload_id = u.id
             WHERE u.enterprise_id = ?

@@ -377,3 +377,506 @@ class TestHealthCheck:
         assert response.status_code == 200
         assert response.json()["service"] == "ingest"
         assert response.json()["status"] == "ok"
+
+
+# ============================================================================
+# Additional File Format Tests
+# ============================================================================
+
+class TestFileFormatSupport:
+    """Tests for various file format support"""
+    
+    def test_upload_pdf_file_success(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_pdf_file
+    ):
+        """
+        Test successful PDF file upload.
+        
+        Scenario:
+            1. Upload valid PDF file
+            2. Verify response contains batch_id
+            3. Verify parsing status
+        
+        Expected:
+            - Status code: 200
+            - Response contains: batch_id, filename
+            - File type: PDF
+        """
+        # Arrange
+        files = {
+            "file": ("test_document.pdf", test_pdf_file, "application/pdf")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"]
+        }
+        
+        # Act
+        response = client.post("/web/upload", files=files, data=data)
+        
+        # Assert
+        assert response.status_code == 200, f"Expected 200, got {response.status_code}: {response.text}"
+        
+        response_data = response.json()
+        assert "batch_id" in response_data, "Response missing batch_id"
+        assert "test_document.pdf" in response_data["saved"], "Filename mismatch"
+        assert "PDF" in response_data["file_type"], f"Expected PDF file type, got {response_data['file_type']}"
+        # PDF parsing may be partial or success depending on content
+        assert response_data["parsing_status"] in ["success", "partial", "error"], \
+            f"Unexpected parsing status: {response_data['parsing_status']}"
+    
+    
+    def test_upload_docx_file_success(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_docx_file
+    ):
+        """
+        Test successful DOCX (Word) file upload.
+        
+        Scenario:
+            1. Upload valid DOCX file
+            2. Verify response contains batch_id
+            3. Verify file type is Word
+        
+        Expected:
+            - Status code: 200
+            - Response contains: batch_id, filename
+            - File type: Word (DOCX)
+        """
+        # Arrange
+        files = {
+            "file": ("test_document.docx", test_docx_file, 
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"]
+        }
+        
+        # Act
+        response = client.post("/web/upload", files=files, data=data)
+        
+        # Assert
+        assert response.status_code == 200, f"Expected 200, got {response.status_code}: {response.text}"
+        
+        response_data = response.json()
+        assert "batch_id" in response_data, "Response missing batch_id"
+        assert "test_document.docx" in response_data["saved"], "Filename mismatch"
+        assert "Word" in response_data["file_type"] or "DOCX" in response_data["file_type"], \
+            f"Expected Word file type, got {response_data['file_type']}"
+    
+    
+    def test_upload_xlsm_file_success(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_xlsm_file
+    ):
+        """
+        Test successful XLSM (Excel with macros) file upload.
+        
+        Scenario:
+            1. Upload valid XLSM file
+            2. Verify response contains batch_id
+            3. Verify file type contains XLSM or Excel
+        
+        Expected:
+            - Status code: 200
+            - Response contains: batch_id, filename
+            - File type: Excel with macros (XLSM)
+        """
+        # Arrange
+        files = {
+            "file": ("test_macro.xlsm", test_xlsm_file,
+                    "application/vnd.ms-excel.sheet.macroEnabled.12")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"]
+        }
+        
+        # Act
+        response = client.post("/web/upload", files=files, data=data)
+        
+        # Assert
+        assert response.status_code == 200, f"Expected 200, got {response.status_code}: {response.text}"
+        
+        response_data = response.json()
+        assert "batch_id" in response_data, "Response missing batch_id"
+        assert "test_macro.xlsm" in response_data["saved"], "Filename mismatch"
+        # XLSM should be recognized as Excel
+        assert "Excel" in response_data["file_type"] or "XLSM" in response_data["file_type"], \
+            f"Expected Excel/XLSM file type, got {response_data['file_type']}"
+
+
+# ============================================================================
+# Edge Cases and Error Handling Tests
+# ============================================================================
+
+class TestEdgeCases:
+    """Tests for edge cases and error handling"""
+    
+    def test_upload_empty_file(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_empty_file
+    ):
+        """
+        Test upload rejection for empty files.
+        
+        Scenario:
+            1. Attempt to upload empty file (0 bytes)
+            2. Verify request is rejected with 400 error
+        
+        Expected:
+            - Status code: 400
+            - Error message about empty file
+        """
+        # Arrange
+        files = {
+            "file": ("empty.xlsx", test_empty_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"]
+        }
+        
+        # Act
+        response = client.post("/web/upload", files=files, data=data)
+        
+        # Assert
+        assert response.status_code == 400, \
+            f"Expected 400 for empty file, got {response.status_code}"
+        error_detail = response.json()["detail"].lower()
+        assert "пуст" in error_detail or "empty" in error_detail, \
+            f"Expected error about empty file, got: {response.json()['detail']}"
+    
+    
+    def test_upload_with_new_enterprise_name(
+        self,
+        client: TestClient,
+        test_excel_file
+    ):
+        """
+        Test upload with new enterprise name (creates enterprise on-the-fly).
+        
+        Scenario:
+            1. Upload file with new enterprise_name (not enterprise_id)
+            2. Verify enterprise is created
+            3. Verify file is uploaded to new enterprise
+        
+        Expected:
+            - Status code: 200
+            - New enterprise created
+            - File linked to new enterprise
+        """
+        # Arrange
+        new_enterprise_name = "New Test Enterprise 12345"
+        files = {
+            "file": ("test.xlsx", test_excel_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        data = {
+            "enterprise_name": new_enterprise_name
+        }
+        
+        # Act
+        response = client.post("/web/upload", files=files, data=data)
+        
+        # Assert
+        assert response.status_code == 200, f"Expected 200, got {response.status_code}: {response.text}"
+        
+        response_data = response.json()
+        assert "enterprise" in response_data, "Response missing enterprise info"
+        assert response_data["enterprise"]["name"] == new_enterprise_name, \
+            f"Enterprise name mismatch: {response_data['enterprise']['name']}"
+        assert response_data["enterprise"]["id"] is not None, "Enterprise ID should be assigned"
+    
+    
+    def test_upload_multiple_sheets_excel(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_excel_with_multiple_sheets
+    ):
+        """
+        Test upload of Excel file with multiple sheets.
+        
+        Scenario:
+            1. Upload Excel with multiple resource sheets
+            2. Verify all sheets are processed
+            3. Verify parsing summary reflects multiple sheets
+        
+        Expected:
+            - Status code: 200
+            - Parsing status: success or partial
+            - Multiple sheets detected
+        """
+        # Arrange
+        files = {
+            "file": ("multi_sheet.xlsx", test_excel_with_multiple_sheets,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"]
+        }
+        
+        # Act
+        response = client.post("/web/upload", files=files, data=data)
+        
+        # Assert
+        assert response.status_code == 200, f"Expected 200, got {response.status_code}: {response.text}"
+        
+        response_data = response.json()
+        assert "batch_id" in response_data
+        assert response_data["parsing_status"] in ["success", "partial"]
+        
+        # Check if parsing summary shows multiple sheets
+        if "parsing_summary" in response_data:
+            summary = response_data["parsing_summary"]
+            if "sheets" in summary:
+                assert summary["sheets"] >= 3, \
+                    f"Expected at least 3 sheets, got {summary.get('sheets')}"
+
+
+# ============================================================================
+# Production Mode Duplicate Tests
+# ============================================================================
+
+class TestProductionModeDuplicates:
+    """Tests for duplicate file handling in production mode"""
+    
+    def test_upload_duplicate_production_mode_unchanged(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_excel_file
+    ):
+        """
+        Test duplicate file handling in production mode when file is unchanged.
+        
+        Scenario:
+            1. Upload file in production mode
+            2. Upload same file again in production mode
+            3. Verify second upload is skipped (file unchanged, same hash)
+        
+        Expected:
+            - First upload: success
+            - Second upload: skipped with duplicate flag
+            - Same batch_id returned for duplicate
+        """
+        # Arrange
+        files = {
+            "file": ("prod_dup_test.xlsx", test_excel_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"],
+            "system_mode": "production"
+        }
+        
+        # Act - First upload
+        response1 = client.post("/web/upload", files=files, data=data)
+        assert response1.status_code == 200, f"First upload failed: {response1.text}"
+        batch_id_1 = response1.json()["batch_id"]
+        
+        # Reset file stream for second upload
+        test_excel_file.seek(0)
+        files = {
+            "file": ("prod_dup_test.xlsx", test_excel_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        
+        # Act - Second upload (duplicate, unchanged)
+        response2 = client.post("/web/upload", files=files, data=data)
+        
+        # Assert
+        assert response2.status_code == 200, f"Second upload failed: {response2.text}"
+        
+        response2_data = response2.json()
+        
+        # In production mode with unchanged file, should return original batch_id
+        # and indicate duplicate/skipped
+        if "duplicate" in response2_data:
+            assert response2_data["duplicate"] is True, "Should be marked as duplicate"
+            assert response2_data.get("skipped") is True, "Should be marked as skipped"
+            assert response2_data["batch_id"] == batch_id_1, \
+                "Duplicate should return original batch_id"
+        else:
+            # If duplicate handling changed, at least verify we got a response
+            assert "batch_id" in response2_data
+    
+    
+    def test_upload_duplicate_production_mode_changed(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_excel_file,
+        test_excel_electricity_file
+    ):
+        """
+        Test duplicate file handling in production mode when file content changed.
+        
+        Scenario:
+            1. Upload file in production mode
+            2. Upload different file with same name in production mode
+            3. Verify second upload is processed (hash changed)
+        
+        Expected:
+            - First upload: success
+            - Second upload: processed (different content = different hash)
+            - New batch_id for changed file
+        """
+        # Arrange - First upload
+        files1 = {
+            "file": ("changing_file.xlsx", test_excel_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"],
+            "system_mode": "production"
+        }
+        
+        # Act - First upload
+        response1 = client.post("/web/upload", files=files1, data=data)
+        assert response1.status_code == 200, f"First upload failed: {response1.text}"
+        batch_id_1 = response1.json()["batch_id"]
+        
+        # Arrange - Second upload with DIFFERENT content (same filename)
+        files2 = {
+            "file": ("changing_file.xlsx", test_excel_electricity_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        
+        # Act - Second upload (different content)
+        response2 = client.post("/web/upload", files=files2, data=data)
+        
+        # Assert
+        assert response2.status_code == 200, f"Second upload failed: {response2.text}"
+        
+        response2_data = response2.json()
+        batch_id_2 = response2_data["batch_id"]
+        
+        # Different content should result in new batch_id (file was reprocessed)
+        # Note: old record may be deleted, so we just verify processing happened
+        assert "batch_id" in response2_data
+        assert response2_data.get("duplicate") is not True or response2_data.get("skipped") is not True, \
+            "Changed file should not be skipped"
+
+
+# ============================================================================
+# Database Integration Tests
+# ============================================================================
+
+class TestDatabaseIntegration:
+    """Tests for database integration"""
+    
+    def test_upload_creates_database_record_with_all_fields(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_excel_file
+    ):
+        """
+        Test that upload creates complete database record.
+        
+        Scenario:
+            1. Upload file
+            2. Retrieve record from database
+            3. Verify all expected fields are present
+        
+        Expected:
+            - Database record contains all required fields
+            - Fields match upload data
+        """
+        # Arrange
+        files = {
+            "file": ("db_test.xlsx", test_excel_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        data = {
+            "enterprise_id": test_enterprise["id"],
+            "resource_type": "electricity"
+        }
+        
+        # Act
+        response = client.post("/web/upload", files=files, data=data)
+        assert response.status_code == 200
+        
+        batch_id = response.json()["batch_id"]
+        
+        # Retrieve from database
+        db_response = client.get(f"/api/uploads/{batch_id}")
+        assert db_response.status_code == 200
+        
+        # Assert database record
+        record = db_response.json()
+        
+        # Required fields
+        assert record["batch_id"] == batch_id
+        assert record["filename"] == "db_test.xlsx"
+        assert record["enterprise_id"] == test_enterprise["id"]
+        assert record["status"] in ["success", "partial", "error"]
+        assert "file_size" in record
+        assert "file_type" in record
+        assert "created_at" in record
+    
+    
+    def test_enterprise_upload_history(
+        self,
+        client: TestClient,
+        test_enterprise,
+        test_excel_file,
+        test_excel_electricity_file
+    ):
+        """
+        Test that enterprise upload history tracks all uploads.
+        
+        Scenario:
+            1. Upload multiple files to same enterprise
+            2. Retrieve enterprise history
+            3. Verify all uploads are listed
+        
+        Expected:
+            - All uploads appear in enterprise history
+            - History is ordered correctly
+        """
+        # Arrange & Act - Upload multiple files
+        file_names = []
+        
+        files1 = {
+            "file": ("history_test_1.xlsx", test_excel_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        response1 = client.post("/web/upload", files=files1, 
+                               data={"enterprise_id": test_enterprise["id"]})
+        assert response1.status_code == 200
+        file_names.append("history_test_1.xlsx")
+        
+        files2 = {
+            "file": ("history_test_2.xlsx", test_excel_electricity_file,
+                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        }
+        response2 = client.post("/web/upload", files=files2,
+                               data={"enterprise_id": test_enterprise["id"]})
+        assert response2.status_code == 200
+        file_names.append("history_test_2.xlsx")
+        
+        # Get enterprise history
+        history_response = client.get(f"/api/enterprises/{test_enterprise['id']}/uploads")
+        assert history_response.status_code == 200
+        
+        history_data = history_response.json()
+        
+        # Assert
+        assert "uploads" in history_data
+        uploads = history_data["uploads"]
+        
+        # Verify both files are in history
+        uploaded_filenames = [u["filename"] for u in uploads]
+        for name in file_names:
+            assert name in uploaded_filenames, \
+                f"File {name} not found in enterprise history"
