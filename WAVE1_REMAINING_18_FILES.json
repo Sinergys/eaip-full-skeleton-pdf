@@ -1,0 +1,162 @@
+{
+  "project": "EAIP",
+  "analysis_date": "2025-12-12",
+  "wave": 1,
+  "analyst": "Claude Sonnet 4.5",
+  "note": "18 недостающих файлов для завершения Wave 1. Требуется физическая проверка.",
+  "total_remaining": 18,
+  "files": [
+    {
+      "id": 1,
+      "path": "eaip_full_skeleton/services/ingest/ai/ai_parser.py",
+      "op": "KEEP",
+      "risk": "CRITICAL",
+      "priority": "CRITICAL",
+      "note": "AI parser module"
+    },
+    {
+      "id": 2,
+      "path": "eaip_full_skeleton/services/ingest/ai/ai_excel_semantic_parser.py",
+      "op": "KEEP",
+      "risk": "CRITICAL",
+      "priority": "CRITICAL",
+      "note": "Excel semantic parser"
+    },
+    {
+      "id": 3,
+      "path": "eaip_full_skeleton/services/ingest/file_parser.py",
+      "op": "KEEP",
+      "risk": "CRITICAL",
+      "priority": "CRITICAL",
+      "note": "File parser"
+    },
+    {
+      "id": 4,
+      "path": "eaip_full_skeleton/services/ingest/utils/ai_content_classifier.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "HIGH",
+      "note": "AI content classifier"
+    },
+    {
+      "id": 5,
+      "path": "eaip_full_skeleton/services/ingest/utils/resource_classifier.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "HIGH",
+      "note": "Resource classifier"
+    },
+    {
+      "id": 6,
+      "path": "eaip_full_skeleton/services/ingest/ai_config.py",
+      "op": "DELETE",
+      "risk": "LOW",
+      "priority": "LOW",
+      "note": "CONFLICT with ai_settings.py - obsolete"
+    },
+    {
+      "id": 7,
+      "path": "eaip_full_skeleton/services/ingest/domain/passport_requirements.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "HIGH",
+      "note": "Passport requirements"
+    },
+    {
+      "id": 8,
+      "path": "eaip_full_skeleton/services/ingest/domain/passport_field_map.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "HIGH",
+      "note": "Field mapping"
+    },
+    {
+      "id": 9,
+      "path": "eaip_full_skeleton/services/ingest/domain/electricity_usage_classifier.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "MEDIUM",
+      "note": "Electricity classifier"
+    },
+    {
+      "id": 10,
+      "path": "eaip_full_skeleton/services/ingest/domain/energy_passport_calculations.py",
+      "op": "KEEP",
+      "risk": "CRITICAL",
+      "priority": "CRITICAL",
+      "note": "Core calculations"
+    },
+    {
+      "id": 11,
+      "path": "eaip_full_skeleton/services/ingest/config/required_data_matrix.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "HIGH",
+      "note": "Data requirements matrix"
+    },
+    {
+      "id": 12,
+      "path": "eaip_full_skeleton/services/reports/Dockerfile",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "MEDIUM",
+      "note": "Reports service docker"
+    },
+    {
+      "id": 13,
+      "path": "eaip_full_skeleton/services/analytics/Dockerfile",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "MEDIUM",
+      "note": "Analytics service docker"
+    },
+    {
+      "id": 14,
+      "path": "eaip_full_skeleton/services/recommend/Dockerfile",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "MEDIUM",
+      "note": "Recommend service docker"
+    },
+    {
+      "id": 15,
+      "path": "services/recommend/main.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "MEDIUM",
+      "note": "Recommend service entry"
+    },
+    {
+      "id": 16,
+      "path": "services/management/main.py",
+      "op": "KEEP",
+      "risk": "MEDIUM",
+      "priority": "HIGH",
+      "note": "Management service entry"
+    },
+    {
+      "id": 17,
+      "path": "docs/EAIP_ANALYSIS_SUMMARY.md",
+      "op": "KEEP",
+      "risk": "LOW",
+      "priority": "MEDIUM",
+      "note": "Project analysis summary"
+    },
+    {
+      "id": 18,
+      "path": "eaip_full_skeleton/infra/docker-compose.dev.yml",
+      "op": "FILE_MISSING",
+      "risk": "N/A",
+      "priority": "LOW",
+      "note": "File does not exist"
+    }
+  ],
+  "summary": {
+    "KEEP": 16,
+    "DELETE": 1,
+    "FILE_MISSING": 1,
+    "CRITICAL": 4,
+    "MEDIUM": 11,
+    "LOW": 2
+  }
+}
