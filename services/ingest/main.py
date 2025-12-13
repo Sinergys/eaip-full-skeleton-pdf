@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException, Form, Query
+﻿from fastapi import FastAPI, UploadFile, File, HTTPException, Form, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from uuid import uuid4
@@ -167,6 +167,9 @@ AGGREGATED_DIR = Path(
     os.getenv("AGGREGATED_DIR", os.path.join(INBOX_DIR, "aggregated"))
 )
 AGGREGATED_DIR.mkdir(parents=True, exist_ok=True)
+# Временная директория для обработки файлов (для Word валидации и т.д.)
+DATA_DIR = Path(os.getenv("DATA_DIR", os.path.join(INBOX_DIR, "temp")))
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # Константы согласно ТЗ (раздел 4.1, 4.2)
 ALLOWED_EXTENSIONS = {".xlsx", ".xlsm", ".docx", ".pdf", ".jpg", ".jpeg", ".png"}
@@ -4284,3 +4287,83 @@ def api_reaggregate_enterprise(enterprise_id: int):
             f"Ошибка при переагрегации для предприятия {enterprise_id}: {e}"
         )
         raise HTTPException(status_code=500, detail=f"Ошибка переагрегации: {e}")
+
+
+@app.post("/api/validate-word-document")
+async def validate_word_document(
+    file: UploadFile = File(...),
+    check_structure: bool = True,
+    check_calculations: bool = True,
+    check_compliance: bool = True
+):
+    """Проверить Word документ энергоаудита через AI"""
+    if not file.filename.endswith('.docx'):
+        raise HTTPException(status_code=400, detail="Только .docx файлы")
+    
+    try:
+        temp_path = DATA_DIR / f"temp_{uuid4().hex}.docx"
+        with open(temp_path, "wb") as f:
+            content = await file.read()
+            f.write(content)
+        
+        from docx import Document
+        doc = Document(temp_path)
+        text_content = "\n".join([p.text for p in doc.paragraphs if p.text.strip()])
+        
+        tables_data = []
+        for table in doc.tables:
+            table_text = [" | ".join([cell.text.strip() for cell in row.cells]) for row in table.rows]
+            tables_data.append("\n".join(table_text))
+        
+        prompt = f"""Проверь документ энергоаудита на ошибки.
+
+ТЕКСТ ({len(text_content)} символов):
+{text_content[:15000]}
+
+ТАБЛИЦЫ ({len(tables_data)} шт):
+{chr(10).join(tables_data[:5])}
+
+ЗАДАЧИ:
+{'✓ Структура ПКМ-690' if check_structure else ''}
+{'✓ Расчеты' if check_calculations else ''}
+{'✓ Нормативы' if check_compliance else ''}
+✓ Орфография
+
+JSON:
+{{"overall_status": "OK|WARNINGS|ERRORS", "summary": "резюме", 
+  "errors": [{{"type": "...", "severity": "...", "location": "...", "description": "...", "suggestion": "..."}}],
+  "statistics": {{"critical_errors": 0, "warnings": 0}},
+  "structure_check": {{"missing_sections": []}},
+  "calculations_check": {{"inconsistencies": []}},
+  "compliance_check": {{"pkm690_compliant": true}}
+}}"""
+
+        from ai_parser import AIParser
+        ai_parser = AIParser()
+        
+        if not ai_parser.enabled:
+            raise HTTPException(status_code=503, detail="AI не настроен")
+        
+        logger.info(f"🤖 Проверка через {ai_parser.provider}")
+        ai_response = await ai_parser.parse_text(prompt)
+        
+        try:
+            result = json.loads(ai_response)
+        except:
+            result = {"overall_status": "UNKNOWN", "summary": ai_response[:500]}
+        
+        temp_path.unlink()
+        
+        return {
+            "status": "checked",
+            "filename": file.filename,
+            "validation_result": result,
+            "ai_provider": ai_parser.provider
+        }
+        
+    except Exception as e:
+        logger.exception(f"Ошибка проверки: {e}")
+        if 'temp_path' in locals() and temp_path.exists():
+            temp_path.unlink()
+        raise HTTPException(status_code=500, detail=str(e))
+
