@@ -3,7 +3,7 @@
 """
 import httpx
 
-DEEPSEEK_API_KEY = "sk-fa4d5adfd79d4307809a34b153fc0ab7"
+DEEPSEEK_API_KEY = "sk-7e721c6a614842cebde0b4f892dbf1f4"
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
 def test_deepseek_direct():
