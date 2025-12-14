@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment
+.env
+.env.local
+
+# Temporary files
+/tmp/
+*.tmp
+temp_*
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Test coverage
+.coverage
+htmlcov/
+*.cover
+
+# Distribution
+build/
+dist/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Word Validator specific
+word_validator_cache.db
+*_Проверенный.docx
