@@ -331,9 +331,14 @@ class OrchestratorService:
             ProcessingError: При ошибках обработки
         """
         try:
-            # 1. Предварительный анализ через Ollama
-            logger.info(f"Ollama анализ чанка {chunk.index}")
-            ollama_result = await self.ai_processor.analyze_with_ollama(chunk.text)
+            # 1. Предварительный анализ через Ollama (если включен)
+            if self.settings.USE_OLLAMA:
+                logger.info(f"Ollama анализ чанка {chunk.index}")
+                ollama_result = await self.ai_processor.analyze_with_ollama(chunk.text)
+            else:
+                # Пропускаем Ollama, используем пустой результат
+                ollama_result = OllamaAnalysisResult(issues=[], fixes=[])
+                logger.debug(f"[Ollama DISABLED] Чанк {chunk.index} -> DeepSeek")
 
             # 2. Корректировка через DeepSeek
             logger.info(f"DeepSeek корректировка чанка {chunk.index}")

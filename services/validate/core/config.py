@@ -35,6 +35,7 @@ class Settings:
     OLLAMA_URL: str = os.getenv("OLLAMA_URL", "http://localhost:11434")
     OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "mistral:7b")
     OLLAMA_TIMEOUT: int = int(os.getenv("OLLAMA_TIMEOUT", "300"))  # 5 minutes
+    USE_OLLAMA: bool = os.getenv("USE_OLLAMA", "true").lower() == "true"  # Feature flag
     
     # DeepSeek API (Cloud AI)
     DEEPSEEK_API_KEY: str = os.getenv("DEEPSEEK_API_KEY", "")
