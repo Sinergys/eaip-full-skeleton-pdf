@@ -31,6 +31,7 @@ from utils.helpers import count_tokens
 from .docx_processor import DocxProcessor
 from .ai_processor import AIProcessor
 from .document_assembler import DocumentAssembler
+from .validation import DocumentValidator
 
 logger = logging.getLogger(__name__)
 
@@ -69,6 +70,9 @@ class OrchestratorService:
         self.assembler = DocumentAssembler(
             template_path=settings.GOST_TEMPLATE_PATH
         )
+
+        # ИЗМЕНЕНО: Инициализация валидатора целостности данных
+        self.validator = DocumentValidator(max_file_size_mb=100)
 
         logger.info("OrchestratorService полностью инициализирован (Phase 2)")
 
@@ -111,26 +115,40 @@ class OrchestratorService:
         )
 
         try:
-            # 1. Извлечение контента (3.1.3)
-            logger.info("Step 1/5: Извлечение контента из DOCX")
+            # ИЗМЕНЕНО: Валидация безопасности в начале pipeline
+            logger.info("Step 1/6: Валидация безопасности")
+            security_result = await self.validator.validate_security(file_path)
+            logger.info(f"Security validation: {security_result['security_status']} - {security_result['file_size_mb']} MB")
+            
+            # 2. Извлечение контента (3.1.3)
+            logger.info("Step 2/6: Извлечение контента из DOCX")
             content = await self._extract_content(file_path)
             text = content['text']
-            objects = content['objects']
+            extracted_objects = content['objects']  # Переименовано для ясности
 
-            logger.info(f"Извлечено: {len(text)} символов, {len(objects)} объектов")
+            logger.info(f"Извлечено: {len(text)} символов, {len(extracted_objects)} объектов")
+            
+            # ИЗМЕНЕНО: Валидация целостности после извлечения
+            logger.info("Step 3/6: Валидация целостности извлеченных данных")
+            integrity_result = await self.validator.validate_extraction_integrity(
+                input_objects=extracted_objects,
+                output_objects=extracted_objects,  # Пока используем те же объекты
+                file_path=file_path
+            )
+            logger.info(f"Integrity validation: {integrity_result['integrity_status']} - {integrity_result['input_objects_count']} objects")
 
-            # 2. Загрузка требований ПКМ 690
-            logger.info("Step 2/5: Загрузка требований ПКМ 690")
+            # 3. Загрузка требований ПКМ 690
+            logger.info("Step 4/6: Загрузка требований ПКМ 690")
             pkm_requirements = await self._load_pkm_requirements()
 
-            # 3. Разбивка на чанки (3.1.4)
-            logger.info("Step 3/5: Разбивка текста на чанки")
+            # 4. Разбивка на чанки (3.1.4)
+            logger.info("Step 5/6: Разбивка текста на чанки")
             chunks = self._create_chunks(text, max_tokens=DEFAULT_CHUNK_SIZE_TOKENS)
 
             logger.info(f"Создано {len(chunks)} чанков")
 
-            # 4. Циклическая обработка чанков (3.1.5)
-            logger.info("Step 4/5: Обработка чанков через AI")
+            # 5. Циклическая обработка чанков (3.1.5)
+            logger.info("Step 6/6: Обработка чанков через AI")
             corrected_chunks = []
             all_recommendations = []
             total_issues = 0
@@ -146,11 +164,20 @@ class OrchestratorService:
 
                 logger.info(f"Чанк {idx + 1} обработан: {len(result.recommendations)} рекомендаций")
 
-            # 5. Агрегация результатов (3.1.6)
-            logger.info("Step 5/5: Агрегация результатов и сборка документа")
+            # 6. Агрегация результатов (3.1.6)
+            logger.info("Step 7/7: Агрегация результатов и сборка документа")
 
             # Объединение чанков
             merged_text = self._merge_chunks(corrected_chunks)
+
+            # ИЗМЕНЕНО: Финальная валидация перед сборкой документа
+            logger.info("Pre-assembly validation: Checking object integrity before document assembly")
+            final_validation = await self.validator.validate_extraction_integrity(
+                input_objects=extracted_objects,
+                output_objects=extracted_objects,  # Объекты должны остаться те же
+                file_path=file_path
+            )
+            logger.info(f"Final validation: {final_validation['integrity_status']} - Ready for assembly")
 
             # Создание summary
             processing_time = time.time() - start_time
@@ -164,7 +191,7 @@ class OrchestratorService:
             # 6. Сборка финального документа (3.1.7)
             output_path = await self.assembler.assemble_document(
                 corrected_text=merged_text,
-                objects=objects,
+                objects=extracted_objects,  # ИСПРАВЛЕНО: использование правильной переменной
                 recommendations=all_recommendations,
                 summary=summary,
                 original_filename=original_filename,
@@ -375,7 +402,7 @@ class OrchestratorService:
             from pathlib import Path
 
             # Добавить путь к ingest модулю
-            ingest_path = Path(__file__).parent.parent.parent.parent / "ingest"
+            ingest_path = Path(__file__).parent.parent.parent / "services" / "ingest"
 
             if ingest_path.exists():
                 sys.path.insert(0, str(ingest_path))

@@ -189,34 +189,51 @@ class DocumentAssembler:
         try:
             objects_restored = 0
 
-            # Iterate через все параграфы
-            for paragraph in document.paragraphs:
+            # ИЗМЕНЕНО: Собрать все маркеры для обработки в обратном порядке
+            all_markers = []
+            
+            # Iterate через все параграфы для сбора маркеров
+            for para_idx, paragraph in enumerate(document.paragraphs):
                 para_text = paragraph.text
 
-                # Найти все маркеры в параграфе
-                markers = re.findall(OBJECT_MARKER_PATTERN, para_text)
-
-                for marker in markers:
-                    # Извлечь obj_id из маркера [[OBJ_XXX]]
+                # Найти все маркеры в параграфе с их позициями
+                for match in re.finditer(OBJECT_MARKER_PATTERN, para_text):
+                    marker = match.group()
                     obj_id = marker.strip('[]')
 
                     if obj_id in objects:
-                        obj = objects[obj_id]
+                        all_markers.append({
+                            'paragraph_idx': para_idx,
+                            'paragraph': paragraph,
+                            'marker': marker,
+                            'obj_id': obj_id,
+                            'position': match.start()
+                        })
 
-                        # Заменить маркер на объект
-                        if obj.object_type == "image":
-                            self._insert_image(paragraph, obj, marker)
-                            objects_restored += 1
+            # Обработать маркеры в обратном порядке (с конца к началу)
+            all_markers.sort(key=lambda x: (x['paragraph_idx'], -x['position']), reverse=True)
+            
+            for marker_info in all_markers:
+                obj_id = marker_info['obj_id']
+                marker = marker_info['marker']
+                paragraph = marker_info['paragraph']
+                
+                obj = objects[obj_id]
 
-                        elif obj.object_type == "table":
-                            self._insert_table(document, paragraph, obj, marker)
-                            objects_restored += 1
+                # Заменить маркер на объект
+                if obj.object_type == "image":
+                    self._insert_image(paragraph, obj, marker)
+                    objects_restored += 1
 
-                        elif obj.object_type == "chart":
-                            # Charts пока пропускаем (сложная вставка)
-                            logger.warning(f"Chart restoration not implemented: {obj_id}")
+                elif obj.object_type == "table":
+                    self._insert_table(document, paragraph, obj, marker)
+                    objects_restored += 1
 
-            logger.info(f"Restored {objects_restored} objects")
+                elif obj.object_type == "chart":
+                    # Charts пока пропускаем (сложная вставка)
+                    logger.warning(f"Chart restoration not implemented: {obj_id}")
+
+            logger.info(f"Restored {objects_restored} objects in reverse order")
 
         except Exception as e:
             logger.warning(f"Error restoring objects: {str(e)}")
@@ -237,8 +254,62 @@ class DocumentAssembler:
             marker: Маркер для замены
         """
         try:
-            # Очистить параграф от маркера
-            paragraph.clear()
+            # Сохранить исходный текст параграфа
+            original_text = paragraph.text
+            
+            # Проверить, что маркер присутствует в параграфе
+            if marker not in original_text:
+                logger.warning(f"Marker {marker} not found in paragraph text: {original_text}")
+                return
+
+            # ИЗМЕНЕНО: Безопасная замена маркера без paragraph.clear()
+            # Найти позицию маркера в параграфе
+            marker_pos = original_text.find(marker)
+            if marker_pos == -1:
+                logger.warning(f"Marker {marker} not found in paragraph text: {original_text}")
+                return
+
+            # ИЗМЕНЕНО: Найти и заменить конкретный run с маркером
+            marker_found = False
+            for run in paragraph.runs:
+                if marker in run.text:
+                    # Найден run с маркером
+                    run_text = run.text
+                    marker_pos_in_run = run_text.find(marker)
+                    
+                    # Разделить текст run на части
+                    before_marker = run_text[:marker_pos_in_run]
+                    after_marker = run_text[marker_pos_in_run + len(marker):]
+                    
+                    # Заменить содержимое run
+                    run.text = before_marker
+                    
+                    # Добавить изображение в новый run
+                    if obj.binary_data:
+                        image_stream = io.BytesIO(obj.binary_data)
+                        image_run = paragraph.add_run()
+                        image_run.add_picture(image_stream, width=Cm(14))
+                        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        
+                        # Caption
+                        if obj.caption:
+                            caption_para = paragraph._element.getparent().add_p()
+                            caption_run = caption_para.add_r()
+                            caption_run.text = obj.caption
+                            caption_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                            caption_run.font.size = Pt(12)
+                            caption_run.font.italic = True
+                    
+                    # Добавить текст после маркера
+                    if after_marker:
+                        paragraph.add_run(after_marker)
+                    
+                    marker_found = True
+                    break
+            
+            if not marker_found:
+                logger.warning(f"Could not find run with marker {marker} in paragraph")
+                return
 
             # Вставить изображение
             if obj.binary_data:
@@ -263,6 +334,10 @@ class DocumentAssembler:
                     caption_run.font.italic = True
 
                 logger.debug(f"Inserted image: {obj.id}")
+            
+            # Добавить текст после маркера
+            if after_marker:
+                paragraph.add_run(after_marker)
 
         except Exception as e:
             logger.warning(f"Failed to insert image {obj.id}: {str(e)}")
@@ -293,31 +368,69 @@ class DocumentAssembler:
                 logger.warning(f"No table data for {obj.id}")
                 return
 
-            # Очистить параграф от маркера
-            paragraph.clear()
-
-            # Создать таблицу
-            rows_count = len(table_data)
-            cols_count = len(table_data[0]) if table_data else 0
-
-            if rows_count == 0 or cols_count == 0:
-                logger.warning(f"Empty table data for {obj.id}")
+            # Сохранить исходный текст параграфа
+            original_text = paragraph.text
+            
+            # Проверить, что маркер присутствует в параграфе
+            if marker not in original_text:
+                logger.warning(f"Marker {marker} not found in paragraph text: {original_text}")
                 return
 
-            table = document.add_table(rows=rows_count, cols=cols_count)
-            table.style = 'Table Grid'  # Стиль с границами
+            # ИЗМЕНЕНО: Безопасная замена маркера без paragraph.clear()
+            # Найти позицию маркера в параграфе
+            marker_pos = original_text.find(marker)
+            if marker_pos == -1:
+                logger.warning(f"Marker {marker} not found in paragraph text: {original_text}")
+                return
 
-            # Заполнить таблицу
-            for row_idx, row_data in enumerate(table_data):
-                for col_idx, cell_text in enumerate(row_data):
-                    cell = table.rows[row_idx].cells[col_idx]
-                    cell.text = cell_text
+            # ИЗМЕНЕНО: Найти и заменить конкретный run с маркером
+            marker_found = False
+            for run in paragraph.runs:
+                if marker in run.text:
+                    # Найден run с маркером
+                    run_text = run.text
+                    marker_pos_in_run = run_text.find(marker)
+                    
+                    # Разделить текст run на части
+                    before_marker = run_text[:marker_pos_in_run]
+                    after_marker = run_text[marker_pos_in_run + len(marker):]
+                    
+                    # Заменить содержимое run
+                    run.text = before_marker
 
-                    # Применить форматирование
-                    for paragraph in cell.paragraphs:
-                        for run in paragraph.runs:
-                            run.font.name = 'Times New Roman'
-                            run.font.size = Pt(12)
+                    # Создать таблицу
+                    rows_count = len(table_data)
+                    cols_count = len(table_data[0]) if table_data else 0
+
+                    if rows_count == 0 or cols_count == 0:
+                        logger.warning(f"Empty table data for {obj.id}")
+                        return
+
+                    table = document.add_table(rows=rows_count, cols=cols_count)
+                    table.style = 'Table Grid'  # Стиль с границами
+
+                    # Заполнить таблицу
+                    for row_idx, row_data in enumerate(table_data):
+                        for col_idx, cell_text in enumerate(row_data):
+                            cell = table.rows[row_idx].cells[col_idx]
+                            cell.text = cell_text
+
+                            # Применить форматирование
+                            for cell_para in cell.paragraphs:
+                                for run in cell_para.runs:
+                                    run.font.name = 'Times New Roman'
+                                    run.font.size = Pt(12)
+
+                    # Добавить текст после маркера
+                    if after_marker:
+                        paragraph.add_run(after_marker)
+                    
+                    marker_found = True
+                    break
+            
+            if not marker_found:
+                logger.warning(f"Could not find run with marker {marker} in paragraph")
+                return
 
             # Если есть caption, добавить его
             if obj.caption:

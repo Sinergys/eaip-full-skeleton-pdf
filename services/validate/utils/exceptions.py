@@ -77,3 +77,13 @@ class DocumentAssemblyError(WordValidatorError):
 class PKMRequirementsError(WordValidatorError):
     """Raised when PKM 690 requirements cannot be loaded."""
     pass
+
+
+class ValidationError(WordValidatorError):
+    """Raised when data validation fails."""
+    pass
+
+
+class SecurityError(WordValidatorError):
+    """Raised when security validation fails."""
+    pass

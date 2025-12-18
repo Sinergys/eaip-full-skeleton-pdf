@@ -113,9 +113,15 @@ class DocxProcessor:
         images = {}
 
         try:
-            # Iterate через все relationships чтобы найти изображения
+            # ИЗМЕНЕНО: Последовательное извлечение изображений по XML порядку
+            # Получаем упорядоченный список relationships
+            image_rels = []
             for rel_id, rel in document.part.rels.items():
                 if "image" in rel.target_ref:
+                    image_rels.append((rel_id, rel))
+            
+            # Обрабатываем изображения в порядке их появления в XML
+            for rel_id, rel in image_rels:
                     self.obj_counter += 1
                     obj_id = f"OBJ_{self.obj_counter:03d}"
 
@@ -269,9 +275,15 @@ class DocxProcessor:
         charts = {}
 
         try:
-            # Поиск embedded objects (графики обычно embedded как OLE objects)
+            # ИЗМЕНЕНО: Последовательное извлечение графиков по XML порядку
+            # Получаем упорядоченный список relationships для графиков
+            chart_rels = []
             for rel_id, rel in document.part.rels.items():
                 if "chart" in rel.target_ref.lower() or "oleObject" in rel.target_ref:
+                    chart_rels.append((rel_id, rel))
+            
+            # Обрабатываем графики в порядке их появления в XML
+            for rel_id, rel in chart_rels:
                     self.obj_counter += 1
                     obj_id = f"OBJ_{self.obj_counter:03d}"
 
@@ -312,64 +324,85 @@ class DocxProcessor:
 
         # Создать mapping для быстрого поиска объектов
         table_obj_map = {}
+        image_obj_list = []
+        
+        # Подготовить mapping для таблиц и список изображений
         for obj_id, obj in objects.items():
             if obj.object_type == "table":
                 table_idx = obj.metadata.get('table_index')
                 if table_idx is not None:
                     table_obj_map[table_idx] = obj_id
+            elif obj.object_type == "image":
+                image_obj_list.append(obj_id)
 
-        # Track table index
-        table_counter = 0
-
+        # ИЗМЕНЕНО: Унифицированный подход к отслеживанию позиций объектов
+        # Создаем сортированный список всех объектов по ID для обеспечения последовательности
+        all_objects_sorted = sorted(objects.items(), key=lambda x: x[0])
+        
         # Iterate через все элементы документа в порядке появления
+        element_index = 0
         for element in document.element.body:
             if isinstance(element, CT_P):
-                # Параграф
+                # Параграф - передаем список доступных image IDs
                 paragraph = Paragraph(element, document)
-                para_text = self._process_paragraph_with_markers(paragraph)
+                para_text = self._process_paragraph_with_markers(paragraph, image_obj_list, element_index)
                 if para_text:
                     text_parts.append(para_text)
 
             elif isinstance(element, CT_Tbl):
                 # Таблица - заменить на маркер
-                if table_counter in table_obj_map:
-                    obj_id = table_obj_map[table_counter]
+                table_idx = len([e for e in document.element.body[:element_index] if isinstance(e, CT_Tbl)])
+                if table_idx in table_obj_map:
+                    obj_id = table_obj_map[table_idx]
                     marker = f"[[{obj_id}]]"
                     text_parts.append(marker)
                     logger.debug(f"Inserted table marker: {marker}")
-                table_counter += 1
+            
+            element_index += 1
 
         return '\n\n'.join(text_parts)
 
-    def _process_paragraph_with_markers(self, paragraph: Paragraph) -> str:
+    def _process_paragraph_with_markers(self, paragraph: Paragraph, image_obj_list: List[str], start_image_counter: int) -> str:
         """
         Обработать параграф и заменить inline изображения на маркеры.
 
         Args:
             paragraph: python-docx Paragraph объект
+            image_obj_list: Список доступных image IDs
+            start_image_counter: Начальный счетчик для image IDs
 
         Returns:
             str: Текст параграфа с маркерами
         """
-        # Проверить на inline shapes (картинки)
-        para_text = paragraph.text
-
-        # Если параграф содержит изображения, нужно вставить маркер
-        # Для простоты сейчас просто возвращаем текст
-        # В полной реализации нужно проверить runs на drawing elements
-
-        # TODO: Implement proper inline image detection and marker insertion
-        # Сейчас изображения уже извлечены в _extract_images
-        # Нужно проверить paragraph.runs для drawing elements
+        # Проверить на inline изображения
+        image_count = 0
+        image_markers = []
 
         for run in paragraph.runs:
-            # Проверить на inline shapes
+            # Проверить на inline shapes (drawing elements)
             if hasattr(run, '_element'):
-                # Check for drawing elements
                 drawings = run._element.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}drawing')
                 if drawings:
-                    # TODO: Insert image marker here
-                    # Для Phase 2 пропускаем inline изображения
-                    pass
+                    # Найдено изображение - получить obj_id из списка
+                    if start_image_counter + image_count < len(image_obj_list):
+                        obj_id = image_obj_list[start_image_counter + image_count]
+                        image_markers.append(obj_id)
+                        
+                        # ИЗМЕНЕНО: Безопасная замена содержимого run без clear()
+                        # Сохранить исходный текст run
+                        original_text = run.text
+                        # Заменить на маркер, сохраняя форматирование
+                        run.text = f"[[{obj_id}]]"
+                        
+                        logger.debug(f"Replaced inline image with marker: {obj_id}")
+                    else:
+                        logger.warning(f"Image index {start_image_counter + image_count} out of range for available images")
 
-        return para_text.strip()
+                    image_count += 1
+
+        # Если в параграфе были изображения, логируем
+        if image_count > 0:
+            logger.info(f"Found {image_count} inline images in paragraph, replaced with markers: {image_markers}")
+
+        # Возвращаем обработанный текст
+        return paragraph.text.strip()
