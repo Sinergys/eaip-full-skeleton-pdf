@@ -126,7 +126,9 @@ services:
       retries: 3
 
   validate:
-    image: ecosinergys/eaip-full-skeleton-validate:v0.3.0
+    build:
+      context: ../services/validate
+      dockerfile: Dockerfile
     container_name: eaip-validate-local
     hostname: validate
     ports: ["8002:8002"]

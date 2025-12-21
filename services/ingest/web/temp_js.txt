@@ -1,0 +1,2 @@
+// Word Validation Functions 
+function showWordValidationCard() { 

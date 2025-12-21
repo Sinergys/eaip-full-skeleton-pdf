@@ -55,7 +55,7 @@ cp .env.example .env
 ### 3. Запуск сервиса:
 
 ```bash
-uvicorn main:app --reload --port 8003
+uvicorn main:app --reload --port 8002
 ```
 
 ## 📡 API Endpoints
@@ -66,7 +66,7 @@ uvicorn main:app --reload --port 8003
 
 **Request:**
 ```bash
-curl -X POST "http://localhost:8003/api/v1/check-report/" \
+curl -X POST "http://localhost:8002/api/v1/check-report/" \
   -F "file=@report.docx"
 ```
 
@@ -138,8 +138,8 @@ pytest tests/
 ## 📚 Документация API
 
 После запуска доступна по адресу:
-- Swagger UI: http://localhost:8003/docs
-- ReDoc: http://localhost:8003/redoc
+- Swagger UI: http://localhost:8002/docs
+- ReDoc: http://localhost:8002/redoc
 
 ## 🐛 Отладка
 
