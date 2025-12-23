@@ -47,9 +47,14 @@ TARGET_FILENAME_KEYWORDS: Iterable[str] = (
     "расчет газа",
     "отопл",
     "неотпл",
+    "тепл",
+    "heating",
+    "thermal",
     "voda",
+    "water",
     "otoplenie",
     "kotel",
+    "boiler",
 )
 
 
@@ -388,35 +393,118 @@ def aggregate_single_resource_file(workbook_path: Union[str, Path]) -> Optional[
             )
 
     elif resource_type == "heating":
-        # Parse otoplenie.xlsx: building data
-        # This contains building dimensions and volumes, not time-series consumption
-        # We'll store it differently - as building inventory
-        buildings = []
-        for row in sheet.iter_rows(min_row=3, values_only=True):
-            building_name = row[0]
-            if not building_name or not isinstance(building_name, str):
-                continue
+        # Parse otoplenie.xlsx: thermal energy consumption data
+        # Similar structure to gas and water files with monthly data by year
+        current_year = None
 
-            if building_name.lower() in ("общее", "здания"):
-                continue
+        # First, try to determine if this is consumption data or building inventory
+        # Check for year headers in the first few rows
+        has_year_headers = False
+        for row_idx in range(1, min(5, sheet.max_row + 1)):
+            row = list(sheet.iter_rows(min_row=row_idx, max_row=row_idx, values_only=True))[0]
+            for cell_value in row:
+                if isinstance(cell_value, int) and cell_value in (2022, 2023, 2024):
+                    has_year_headers = True
+                    break
+            if has_year_headers:
+                break
 
-            buildings.append(
-                {
-                    "name": building_name,
-                    "width_m": row[1],
-                    "length_m": row[2],
-                    "height_m": row[3],
-                    "area_m2": row[4],
-                    "volume_m3": row[5],
-                }
-            )
+        if has_year_headers:
+            # Parse as consumption data similar to gas/water
+            year_cols = {}
 
-        return {
-            "source": str(path),
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "resource_type": resource_type,
-            "buildings": buildings,
-        }
+            # Find year columns in header rows
+            for row_idx in range(1, min(4, sheet.max_row + 1)):
+                row = list(sheet.iter_rows(min_row=row_idx, max_row=row_idx, values_only=True))[0]
+                for col_idx, cell_value in enumerate(row):
+                    if isinstance(cell_value, int) and cell_value in (2022, 2023, 2024):
+                        year = cell_value
+                        # Determine cost and consumption columns
+                        # Usually: year | cost | gcal (or similar)
+                        cost_col = col_idx + 1 if col_idx + 1 < len(row) else col_idx
+                        consumption_col = col_idx + 2 if col_idx + 2 < len(row) else col_idx + 1
+                        year_cols[year] = {
+                            "cost_sum": cost_col,
+                            "energy_gcal": consumption_col,
+                        }
+
+            # Parse monthly data
+            for row_idx in range(3, sheet.max_row + 1):
+                row = list(sheet.iter_rows(min_row=row_idx, max_row=row_idx, values_only=True))[0]
+
+                # Check for year
+                first_cell = row[0] if len(row) > 0 else None
+                if isinstance(first_cell, int) and first_cell in (2022, 2023, 2024):
+                    current_year = first_cell
+                    continue
+
+                if not current_year:
+                    continue
+
+                month_name = safe_strip(row[0]) if len(row) > 0 else None
+                if not isinstance(month_name, str):
+                    continue
+
+                month_norm = _normalise_month_name(month_name)
+                if month_norm not in MONTH_ALIASES:
+                    continue
+
+                # Process data for each year
+                for year, col_indices in year_cols.items():
+                    quarter = month_to_quarter(MONTH_ALIASES[month_norm])
+                    quarter_key = f"{year}-Q{quarter}"
+                    quarter_entry = result[resource_type].setdefault(
+                        quarter_key, {"year": year, "quarter": quarter, "months": []}
+                    )
+
+                    cost_sum = (
+                        row[col_indices["cost_sum"]]
+                        if len(row) > col_indices["cost_sum"]
+                        else None
+                    )
+                    energy_gcal = (
+                        row[col_indices["energy_gcal"]]
+                        if len(row) > col_indices["energy_gcal"]
+                        else None
+                    )
+
+                    quarter_entry["months"].append(
+                        {
+                            "month": month_norm,
+                            "values": {
+                                "cost_sum": cost_sum,
+                                "energy_gcal": energy_gcal,
+                            },
+                        }
+                    )
+        else:
+            # Fallback to building inventory parsing (original logic)
+            buildings = []
+            for row in sheet.iter_rows(min_row=3, values_only=True):
+                building_name = row[0]
+                if not building_name or not isinstance(building_name, str):
+                    continue
+
+                if building_name.lower() in ("общее", "здания"):
+                    continue
+
+                buildings.append(
+                    {
+                        "name": building_name,
+                        "width_m": row[1],
+                        "length_m": row[2],
+                        "height_m": row[3],
+                        "area_m2": row[4],
+                        "volume_m3": row[5],
+                    }
+                )
+
+            return {
+                "source": str(path),
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "resource_type": resource_type,
+                "buildings": buildings,
+            }
 
     elif resource_type == "boiler":
         # Parse kotel.xlsx: production norms and actual consumption
@@ -470,7 +558,8 @@ def aggregate_energy_data(workbook_path: Union[str, Path]) -> Optional[Dict]:
 
     # Check if this is a single-resource file
     filename = path.name.lower()
-    if any(keyword in filename for keyword in ("gaz", "voda", "otoplenie", "kotel")):
+    single_resource_keywords = ["gaz", "voda", "otoplenie", "kotel", "heating", "water", "boiler"]
+    if any(keyword in filename for keyword in single_resource_keywords):
         return aggregate_single_resource_file(path)
 
     try:
@@ -1898,7 +1987,7 @@ def aggregate_from_db_json(parsed_json: Dict) -> Optional[Dict]:
                                 )
 
                     quarter_entry["months"].append(
-                        {"month": month_key, "values": values}  # Store normalized name
+                        {"month": month_name, "values": values}  # Store normalized name
                     )
                     added_months += 1
                     processed_rows += 1
@@ -2297,4 +2386,3 @@ def write_aggregation_json(
         json.dumps(aggregation_data, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     return target_file
-
