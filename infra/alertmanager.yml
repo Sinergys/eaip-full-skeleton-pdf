@@ -37,14 +37,14 @@ inhibit_rules:
 # Receivers
 receivers:
   - name: 'default-receiver'
-    webhook_configs:
-      - url: 'http://localhost:5001/webhook'
-        send_resolved: true
+    # webhook_configs:
+    #   - url: 'http://localhost:5001/webhook'
+    #     send_resolved: true
 
   - name: 'critical-receiver'
-    webhook_configs:
-      - url: 'http://localhost:5001/webhook'
-        send_resolved: true
+    # webhook_configs:
+    #   - url: 'http://localhost:5001/webhook'
+    #     send_resolved: true
     # Uncomment for email notifications
     # email_configs:
     #   - to: 'admin@eaip.example.com'
@@ -52,7 +52,7 @@ receivers:
     #       Subject: 'EAIP Critical Alert: {{ .GroupLabels.alertname }}'
 
   - name: 'warning-receiver'
-    webhook_configs:
-      - url: 'http://localhost:5001/webhook'
-        send_resolved: true
+    # webhook_configs:
+    #   - url: 'http://localhost:5001/webhook'
+    #     send_resolved: true
 
