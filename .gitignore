@@ -28,6 +28,16 @@ data/
 tmp/
 temp/
 
+# Large files (GitHub limit: 100MB)
+*.zip
+*.tar.gz
+*.7z
+*.rar
+backups/*.zip
+backups/*.tar.gz
+backups/*.7z
+backups/*.rar
+
 # Environment
 .env
 .env.local
@@ -50,4 +60,3 @@ build/
 # Uncomment if you want to exclude fonts:
 # *.ttf
 # *.otf
-
