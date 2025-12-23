@@ -354,21 +354,23 @@ def aggregate_single_resource_file(workbook_path: Union[str, Path]) -> Optional[
 
     elif resource_type == "water":
         # Parse voda.xlsx: simple structure
-        # Row 3 header: None, None, 'Месяцы', 'м3', 'Квартал'
-        # Row 4+: None, None, 'Январь', 800, None
+        # Row 2: '2022', None, None, None, None
+        # Row 3: 'Месяцы', 'м3', 'Квартал', None, None
+        # Row 4+: 'Январь', 800, None, None, None
 
         current_year = None
-        for row in sheet.iter_rows(min_row=2, values_only=True):
-            # Look for year in row
-            if row[2] and isinstance(row[2], int) and row[2] in (2022, 2023, 2024):
-                current_year = row[2]
+        for row in sheet.iter_rows(values_only=True):
+            # Look for year in first column (index 0)
+            first_cell = row[0] if len(row) > 0 else None
+            if isinstance(first_cell, (int, float)) and int(first_cell) in (2022, 2023, 2024):
+                current_year = int(first_cell)
                 continue
 
             if not current_year:
                 continue
 
-            month_name = safe_strip(row[2]) if len(row) > 2 else None
-            volume = row[3] if len(row) > 3 else None
+            month_name = safe_strip(first_cell) if isinstance(first_cell, str) else None
+            volume_m3 = row[1] if len(row) > 1 else None
 
             if not isinstance(month_name, str):
                 continue
@@ -387,7 +389,7 @@ def aggregate_single_resource_file(workbook_path: Union[str, Path]) -> Optional[
                 {
                     "month": month_norm,  # Store normalized name
                     "values": {
-                        "volume_m3": volume,
+                        "volume_m3": volume_m3,
                     },
                 }
             )
@@ -2063,6 +2065,7 @@ def aggregate_from_db_json(parsed_json: Dict) -> Optional[Dict]:
                         "Декабрь",
                     ]
                     month_name = month_names[month_num - 1]
+                    month_key = _normalise_month_name(month_name)
 
                     quarter = month_to_quarter(month_num)
                     quarter_key = f"{current_year}-Q{quarter}"
