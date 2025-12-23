@@ -1,0 +1,254 @@
+{
+  "template_path": "templates\\pcm690\\new_energy_passport.xlsx",
+  "data_path": "data\\aggregated\\aggregated_full_resources_2022_2024.json",
+  "output_path": "test_output_extended\\filled_template.xlsx",
+  "fill_date": "2025-11-15T01:13:34.461263",
+  "results": {
+    "filled_cells": 40,
+    "skipped_cells": 0,
+    "errors": [],
+    "warnings": [],
+    "filled_addresses": [
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "C9",
+        "value": 334564.88,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "D9",
+        "value": 353419.32,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "F9",
+        "value": 29284.0,
+        "data_path": "resources.gas.2022-Q1.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "N9",
+        "value": 2400.0,
+        "data_path": "resources.water.2022-Q1.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "S9",
+        "value": 302567.36,
+        "data_path": "resources.electricity.2022-Q2.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "T9",
+        "value": 321888.59,
+        "data_path": "resources.electricity.2022-Q2.quarter_totals.reactive_kvarh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "V9",
+        "value": 5520.0,
+        "data_path": "resources.gas.2022-Q2.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "AD9",
+        "value": 2400.0,
+        "data_path": "resources.water.2022-Q2.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "AI9",
+        "value": 369448.06,
+        "data_path": "resources.electricity.2022-Q3.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "AJ9",
+        "value": 386401.57,
+        "data_path": "resources.electricity.2022-Q3.quarter_totals.reactive_kvarh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "AL9",
+        "value": 4277.0,
+        "data_path": "resources.gas.2022-Q3.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "AT9",
+        "value": 2657.0,
+        "data_path": "resources.water.2022-Q3.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "AY9",
+        "value": 344624.59,
+        "data_path": "resources.electricity.2022-Q4.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "AZ9",
+        "value": 368416.02,
+        "data_path": "resources.electricity.2022-Q4.quarter_totals.reactive_kvarh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "BB9",
+        "value": 18894.0,
+        "data_path": "resources.gas.2022-Q4.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "BJ9",
+        "value": 2400.0,
+        "data_path": "resources.water.2022-Q4.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "C15",
+        "value": 334564.88,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "M15",
+        "value": 29284.0,
+        "data_path": "resources.gas.2022-Q1.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "D15",
+        "value": 302567.36,
+        "data_path": "resources.electricity.2022-Q2.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "N15",
+        "value": 5520.0,
+        "data_path": "resources.gas.2022-Q2.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "E15",
+        "value": 369448.06,
+        "data_path": "resources.electricity.2022-Q3.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "O15",
+        "value": 4277.0,
+        "data_path": "resources.gas.2022-Q3.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "F15",
+        "value": 344624.59,
+        "data_path": "resources.electricity.2022-Q4.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "P15",
+        "value": 18894.0,
+        "data_path": "resources.gas.2022-Q4.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "C15",
+        "value": 321298.5,
+        "data_path": "resources.electricity.2023-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "M15",
+        "value": 30486.0,
+        "data_path": "resources.gas.2023-Q1.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "D15",
+        "value": 443397.35,
+        "data_path": "resources.electricity.2023-Q2.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "N15",
+        "value": 6956.0,
+        "data_path": "resources.gas.2023-Q2.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "E15",
+        "value": 508604.0,
+        "data_path": "resources.electricity.2023-Q3.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "O15",
+        "value": 2862.0,
+        "data_path": "resources.gas.2023-Q3.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "F15",
+        "value": 499769.19,
+        "data_path": "resources.electricity.2023-Q4.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "P15",
+        "value": 43034.0,
+        "data_path": "resources.gas.2023-Q4.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "C15",
+        "value": 393514.03,
+        "data_path": "resources.electricity.2024-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "M15",
+        "value": 22078.0,
+        "data_path": "resources.gas.2024-Q1.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "D15",
+        "value": 344090.15,
+        "data_path": "resources.electricity.2024-Q2.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "N15",
+        "value": 2708.0,
+        "data_path": "resources.gas.2024-Q2.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "E15",
+        "value": 439160.44,
+        "data_path": "resources.electricity.2024-Q3.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "O15",
+        "value": 2171.0,
+        "data_path": "resources.gas.2024-Q3.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "F15",
+        "value": 473853.694,
+        "data_path": "resources.electricity.2024-Q4.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "P15",
+        "value": 11802.0,
+        "data_path": "resources.gas.2024-Q4.quarter_totals.volume_m3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "template1": {
+    "name": "new_energy_passport",
+    "semantic_types": {
+      "electricity_active": 5,
+      "gas_volume": 1,
+      "electricity_reactive": 2
+    },
+    "total_concepts": 3
+  },
+  "template2": {
+    "name": "unknown",
+    "semantic_types": {},
+    "total_concepts": 0
+  },
+  "common_concepts": [],
+  "unique_to_template1": [
+    "gas_volume",
+    "electricity_active",
+    "electricity_reactive"
+  ],
+  "unique_to_template2": [],
+  "semantic_mapping": {},
+  "conversion_rules": [
+    {
+      "source_concept": "gas_volume",
+      "target_concept": null,
+      "rule_type": "skip",
+      "confidence": 0.0,
+      "description": "Концепт 'gas_volume' не имеет эквивалента в Template 2"
+    },
+    {
+      "source_concept": "electricity_active",
+      "target_concept": null,
+      "rule_type": "skip",
+      "confidence": 0.0,
+      "description": "Концепт 'electricity_active' не имеет эквивалента в Template 2"
+    },
+    {
+      "source_concept": "electricity_reactive",
+      "target_concept": null,
+      "rule_type": "skip",
+      "confidence": 0.0,
+      "description": "Концепт 'electricity_reactive' не имеет эквивалента в Template 2"
+    }
+  ]
+}

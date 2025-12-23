@@ -1,0 +1,297 @@
+{
+  "db_exists": true,
+  "enterprises": 3,
+  "uploads": 64,
+  "parsed_data": 63,
+  "enterprises_list": [
+    {
+      "id": 1,
+      "name": "METIN IRODA",
+      "created_at": "2025-11-09T07:33:27.153812"
+    },
+    {
+      "id": 2,
+      "name": "Тестовое предприятие",
+      "created_at": "2025-11-09T08:36:39.951216"
+    },
+    {
+      "id": 3,
+      "name": "Navoiy IES",
+      "created_at": "2025-11-13T15:19:31.952601"
+    }
+  ],
+  "uploads_list": [
+    {
+      "id": 64,
+      "batch_id": "3ed6fa7b-e3e6-4a29-802d-a73821cadb62",
+      "filename": "Расчет газа для отопл и неотпл.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 18239,
+      "status": "success",
+      "created_at": "2025-11-19T17:23:43.962927",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 63,
+      "batch_id": "d7e42616-2a0b-4981-b294-f03545e807ed",
+      "filename": "voda.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 12574,
+      "status": "success",
+      "created_at": "2025-11-19T17:23:43.759135",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 62,
+      "batch_id": "11019fbd-5c1a-42b1-aab7-558e43a1167a",
+      "filename": "electro act react.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 134983,
+      "status": "success",
+      "created_at": "2025-11-18T14:37:47.761777",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 61,
+      "batch_id": "48000b6d-9b72-4f0b-8c8f-3af90b62f985",
+      "filename": "energopasport_filled.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 35542,
+      "status": "success",
+      "created_at": "2025-11-17T23:39:57.541167",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 60,
+      "batch_id": "472d922a-081a-45c7-bcf4-872dda9260d9",
+      "filename": "pererashod.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 11633,
+      "status": "success",
+      "created_at": "2025-11-17T21:01:25.574000",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 59,
+      "batch_id": "55be5441-a7fa-405d-8c3f-0623bee4c830",
+      "filename": "oborudovanie.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 30681,
+      "status": "success",
+      "created_at": "2025-11-17T20:36:45.029489",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 58,
+      "batch_id": "76e40a53-5a2b-43ec-aa1d-8ac138dcfdd8",
+      "filename": "otchet.docx",
+      "file_type": "Word (DOCX)",
+      "file_size": 14162111,
+      "status": "success",
+      "created_at": "2025-11-17T19:53:11.842779",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 57,
+      "batch_id": "49e7136c-54fe-4640-9712-245668faeb72",
+      "filename": "energopasport.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 44706,
+      "status": "success",
+      "created_at": "2025-11-17T19:53:05.427154",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 56,
+      "batch_id": "ffa920fb-3cef-4ee4-a851-9a7eb3dbeeac",
+      "filename": "energopasport.xlsm",
+      "file_type": "Excel с макросами (XLSM)",
+      "file_size": 645924,
+      "status": "success",
+      "created_at": "2025-11-16T13:55:10.936764",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 55,
+      "batch_id": "a0aeda4a-e110-471c-947a-a08bef55254d",
+      "filename": "electro act react.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 135024,
+      "status": "success",
+      "created_at": "2025-11-15T21:08:44.466549",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 54,
+      "batch_id": "1f8011a4-8a38-4042-856c-7f0a6e1ace4e",
+      "filename": "teploprovodnost.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 12934,
+      "status": "success",
+      "created_at": "2025-11-15T17:42:26.253409",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 53,
+      "batch_id": "a415edf7-6a92-4c3f-913b-7a651e2a805e",
+      "filename": "МЕТИН ИРОДА ОТЧЕТ Финал 3.docx",
+      "file_type": "Word (DOCX)",
+      "file_size": 14224076,
+      "status": "success",
+      "created_at": "2025-11-14T23:30:07.423717",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 52,
+      "batch_id": "a356060f-72fe-410e-aae2-c031e206dcf9",
+      "filename": "kotel.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 16107,
+      "status": "success",
+      "created_at": "2025-11-14T22:43:29.367169",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 51,
+      "batch_id": "93eb3792-2f23-45a9-9c4c-0256ea0dc4c2",
+      "filename": "edenic na  kvt.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 17821,
+      "status": "success",
+      "created_at": "2025-11-14T22:43:29.245425",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 50,
+      "batch_id": "a5fcd47f-0126-4bd3-a472-ed160f2d1d22",
+      "filename": "otoplenie.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 12188,
+      "status": "success",
+      "created_at": "2025-11-14T22:04:05.209878",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 49,
+      "batch_id": "43ec34cd-657e-4ce6-afff-1edda0a4fe12",
+      "filename": "pererashod.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 11388,
+      "status": "success",
+      "created_at": "2025-11-14T21:29:31.487214",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 48,
+      "batch_id": "849e4240-52d1-4d43-ad1a-bfe771b45cbe",
+      "filename": "2022-2024 electroenergiya.xlsx",
+      "file_type": "Excel (XLSX)",
+      "file_size": 52291,
+      "status": "success",
+      "created_at": "2025-11-14T20:32:05.762386",
+      "enterprise_name": "METIN IRODA"
+    },
+    {
+      "id": 47,
+      "batch_id": "ea46967b-22d2-4944-8206-d278539b6c75",
+      "filename": "BYD 087 KBA.PDF",
+      "file_type": "PDF",
+      "file_size": 856060,
+      "status": "success",
+      "created_at": "2025-11-14T17:10:57.939021",
+      "enterprise_name": "Navoiy IES"
+    },
+    {
+      "id": 46,
+      "batch_id": "8d591c4f-f504-4f99-b827-a2817805d7df",
+      "filename": "795ABA faktura.pdf",
+      "file_type": "PDF",
+      "file_size": 2620658,
+      "status": "success",
+      "created_at": "2025-11-14T16:58:09.732887",
+      "enterprise_name": "Navoiy IES"
+    },
+    {
+      "id": 45,
+      "batch_id": "653b802a-8164-4931-98ba-b2d14c7bf0ca",
+      "filename": "2022-2024 темир йўл.PDF",
+      "file_type": "PDF",
+      "file_size": 941320,
+      "status": "success",
+      "created_at": "2025-11-14T16:43:53.378640",
+      "enterprise_name": "Navoiy IES"
+    }
+  ],
+  "parsed_data_summary": [
+    {
+      "upload_id": 64,
+      "filename": "Расчет газа для отопл и неотпл.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 16264,
+      "updated_at": "2025-11-19T17:23:43.974741"
+    },
+    {
+      "upload_id": 63,
+      "filename": "voda.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 4078,
+      "updated_at": "2025-11-19T17:23:43.858134"
+    },
+    {
+      "upload_id": 62,
+      "filename": "electro act react.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 55736,
+      "updated_at": "2025-11-18T14:37:47.777147"
+    },
+    {
+      "upload_id": 61,
+      "filename": "energopasport_filled.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 85812,
+      "updated_at": "2025-11-17T23:39:57.637385"
+    },
+    {
+      "upload_id": 60,
+      "filename": "pererashod.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 5257,
+      "updated_at": "2025-11-17T21:01:25.636467"
+    },
+    {
+      "upload_id": 59,
+      "filename": "oborudovanie.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 44634,
+      "updated_at": "2025-11-17T20:36:45.206077"
+    },
+    {
+      "upload_id": 58,
+      "filename": "otchet.docx",
+      "file_type": "Word (DOCX)",
+      "json_size": 85713,
+      "updated_at": "2025-11-17T19:53:11.858612"
+    },
+    {
+      "upload_id": 57,
+      "filename": "energopasport.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 108788,
+      "updated_at": "2025-11-17T19:53:05.444753"
+    },
+    {
+      "upload_id": 55,
+      "filename": "electro act react.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 55730,
+      "updated_at": "2025-11-15T21:08:44.480902"
+    },
+    {
+      "upload_id": 54,
+      "filename": "teploprovodnost.xlsx",
+      "file_type": "Excel (XLSX)",
+      "json_size": 6133,
+      "updated_at": "2025-11-15T17:42:26.269211"
+    }
+  ]
+}

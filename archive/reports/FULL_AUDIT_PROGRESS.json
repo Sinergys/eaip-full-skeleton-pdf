@@ -1,0 +1,41 @@
+{
+  "audit_started": "2025-01-XX",
+  "status": "completed",
+  "completed_sections": [
+    "architecture_analysis",
+    "error_detection",
+    "technical_debt",
+    "performance_analysis",
+    "ai_integration",
+    "functional_issues",
+    "recommendations",
+    "code_quality_assessment"
+  ],
+  "current_section": "final_report",
+  "findings": {
+    "critical_errors": [
+      "SQLite в ingest service вместо PostgreSQL",
+      "Отсутствие обработки ошибок в main.py:819",
+      "Отсутствие валидации данных в validate service"
+    ],
+    "serious_issues": [
+      "Неполная реализация восстановления формул",
+      "Проблемы с классификацией ресурсов",
+      "Отсутствие обработки ошибок при отмене обработки"
+    ],
+    "moderate_issues": [
+      "Дублирование кода в обработке файлов",
+      "Отсутствие кэширования результатов AI запросов",
+      "Неоптимальная обработка больших PDF файлов"
+    ],
+    "minor_notes": [
+      "Неиспользуемые импорты",
+      "Отсутствие type hints в некоторых функциях",
+      "Длинные функции"
+    ]
+  },
+  "overall_score": 68,
+  "last_save": "2025-01-XX",
+  "report_file": "FULL_TECHNICAL_AUDIT_REPORT.md"
+}
+

@@ -1,0 +1,36 @@
+# Конфигурация OCR модуля
+
+# Пороги confidence для различных типов данных
+confidence_thresholds:
+  text: 0.30      # Минимальный порог для текста (30%)
+  numbers: 0.60   # Минимальный порог для числовых значений (60%)
+  dates: 0.80     # Минимальный порог для дат (80%)
+  tables: 0.70   # Минимальный порог для таблиц (70%)
+
+# Настройки логирования low_confidence
+logging:
+  low_confidence_log: "reports/ocr/low_confidence.log"
+  enabled: true
+
+# Настройки валидации
+validation:
+  # Добавлять validation_flag в результат при low_confidence
+  add_validation_flag: true
+  # Продолжать обработку при low_confidence (не прерывать)
+  continue_on_low_confidence: true
+
+# Настройки API
+api:
+  timeout_seconds: 600        # Таймаут запроса (10 минут)
+  retry_attempts: 3          # Количество попыток при ошибке
+  backoff_base_seconds: 2    # Базовое время задержки для экспоненциального backoff
+  errors_log: "reports/ocr/gemini_errors.log"  # Лог ошибок API
+
+# Настройки адаптивной обработки (повторные попытки при низком confidence)
+adaptive_processing:
+  enabled: true              # Включить адаптивную обработку
+  min_confidence: 0.70       # Минимальный порог confidence для повторной попытки
+  max_retry_attempts: 1      # Максимальное количество повторных попыток (1 = одна дополнительная попытка)
+  enhance_image: true        # Улучшать изображение перед повторной попыткой
+  save_enhanced_images: false # Сохранять улучшенные изображения (для отладки)
+

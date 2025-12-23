@@ -1,0 +1,183 @@
+{
+  "test_date": "2025-11-29T16:42:46.638701",
+  "input_directory": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX",
+  "total_files": 5,
+  "total_pages": 11,
+  "statistics": {
+    "total_time_sec": 526.9,
+    "avg_time_per_page_sec": 47.9,
+    "total_characters": 12926,
+    "total_tables": 9,
+    "total_errors": 1,
+    "error_rate_percent": 9.09,
+    "total_low_confidence": 0,
+    "low_confidence_rate_percent": 0.0
+  },
+  "files": [
+    {
+      "file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\094RAA faktura.pdf",
+      "file_name": "094RAA faktura.pdf",
+      "pages": [
+        {
+          "page": 2,
+          "characters": 968,
+          "tables_count": 1,
+          "time_sec": 23.9,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        },
+        {
+          "page": 3,
+          "characters": 1021,
+          "tables_count": 0,
+          "time_sec": 17.91,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        }
+      ],
+      "total_characters": 1989,
+      "total_tables": 1,
+      "total_time_sec": 97.69,
+      "errors": [
+        {
+          "page": 1,
+          "error": "429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.",
+          "time_sec": 34.48
+        }
+      ],
+      "low_confidence_count": 0,
+      "gemini_retries_count": 0
+    },
+    {
+      "file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\1.pdf",
+      "file_name": "1.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 1063,
+          "tables_count": 1,
+          "time_sec": 14.1,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        }
+      ],
+      "total_characters": 1063,
+      "total_tables": 1,
+      "total_time_sec": 15.42,
+      "errors": [],
+      "low_confidence_count": 0,
+      "gemini_retries_count": 0
+    },
+    {
+      "file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\1944 AA kap remont faktura.pdf",
+      "file_name": "1944 AA kap remont faktura.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 2301,
+          "tables_count": 1,
+          "time_sec": 42.33,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        },
+        {
+          "page": 2,
+          "characters": 2608,
+          "tables_count": 1,
+          "time_sec": 33.69,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        },
+        {
+          "page": 3,
+          "characters": 960,
+          "tables_count": 1,
+          "time_sec": 31.17,
+          "confidence": 0.95,
+          "has_validation_flag": false,
+          "validation_flags": []
+        },
+        {
+          "page": 4,
+          "characters": 1499,
+          "tables_count": 2,
+          "time_sec": 30.86,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        },
+        {
+          "page": 5,
+          "characters": 33,
+          "tables_count": 0,
+          "time_sec": 58.31,
+          "confidence": 0.6,
+          "has_validation_flag": false,
+          "validation_flags": []
+        },
+        {
+          "page": 6,
+          "characters": 35,
+          "tables_count": 0,
+          "time_sec": 57.74,
+          "confidence": 0.7,
+          "has_validation_flag": false,
+          "validation_flags": []
+        }
+      ],
+      "total_characters": 7436,
+      "total_tables": 5,
+      "total_time_sec": 307.83,
+      "errors": [],
+      "low_confidence_count": 0,
+      "gemini_retries_count": 0
+    },
+    {
+      "file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\2.pdf",
+      "file_name": "2.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 1111,
+          "tables_count": 2,
+          "time_sec": 11.25,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        }
+      ],
+      "total_characters": 1111,
+      "total_tables": 2,
+      "total_time_sec": 12.68,
+      "errors": [],
+      "low_confidence_count": 0,
+      "gemini_retries_count": 0
+    },
+    {
+      "file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\2022-2024 темир йўл.PDF",
+      "file_name": "2022-2024 темир йўл.PDF",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 1327,
+          "tables_count": 0,
+          "time_sec": 52.24,
+          "confidence": 0.9,
+          "has_validation_flag": false,
+          "validation_flags": []
+        }
+      ],
+      "total_characters": 1327,
+      "total_tables": 0,
+      "total_time_sec": 53.06,
+      "errors": [],
+      "low_confidence_count": 0,
+      "gemini_retries_count": 0
+    }
+  ]
+}

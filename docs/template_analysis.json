@@ -1,0 +1,4216 @@
+{
+  "template_path": "C:\\eaip\\data\\source_files\\audit_sinergys\\EnergyPassport_PKM690_filled.xlsx",
+  "sheets": [
+    {
+      "name": "_dict",
+      "max_row": 11,
+      "max_column": 2,
+      "merged_cells": [],
+      "formulas": [],
+      "data_regions": [],
+      "data_cells_count": 18,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Эл. энергия (актив.)",
+          "data_type": "s"
+        },
+        {
+          "cell": "B1",
+          "value": "кВт·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "A2",
+          "value": "Эл. энергия (реакт.)",
+          "data_type": "s"
+        },
+        {
+          "cell": "B2",
+          "value": "кВАр·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "Тепловая энергия",
+          "data_type": "s"
+        },
+        {
+          "cell": "B3",
+          "value": "Гкал",
+          "data_type": "s"
+        },
+        {
+          "cell": "A4",
+          "value": "Природный газ",
+          "data_type": "s"
+        },
+        {
+          "cell": "B4",
+          "value": "м³",
+          "data_type": "s"
+        },
+        {
+          "cell": "A5",
+          "value": "Мазут",
+          "data_type": "s"
+        },
+        {
+          "cell": "B5",
+          "value": "т",
+          "data_type": "s"
+        },
+        {
+          "cell": "A6",
+          "value": "Уголь",
+          "data_type": "s"
+        },
+        {
+          "cell": "B6",
+          "value": "л",
+          "data_type": "s"
+        },
+        {
+          "cell": "A7",
+          "value": "Бензин",
+          "data_type": "s"
+        },
+        {
+          "cell": "B7",
+          "value": "шт",
+          "data_type": "s"
+        },
+        {
+          "cell": "A8",
+          "value": "Дизель",
+          "data_type": "s"
+        },
+        {
+          "cell": "A9",
+          "value": "Вода (хол.)",
+          "data_type": "s"
+        },
+        {
+          "cell": "A10",
+          "value": "Вода (гор.)",
+          "data_type": "s"
+        },
+        {
+          "cell": "A11",
+          "value": "Сжатый воздух",
+          "data_type": "s"
+        }
+      ],
+      "field_mapping": {
+        "Эл. энергия (актив.)": "B1",
+        "Эл. энергия (реакт.)": "B2",
+        "Тепловая энергия": "B3",
+        "Природный газ": "B4",
+        "Мазут": "B5",
+        "Уголь": "B6",
+        "Бензин": "B7",
+        "Дизель": "B8",
+        "Вода (хол.)": "B9",
+        "Вода (гор.)": "B10",
+        "Сжатый воздух": "B11"
+      }
+    },
+    {
+      "name": "Титульный лист",
+      "max_row": 10,
+      "max_column": 2,
+      "merged_cells": [
+        "A1:B1"
+      ],
+      "formulas": [],
+      "data_regions": [],
+      "data_cells_count": 17,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "ЭНЕРГЕТИЧЕСКИЙ ПАСПОРТ",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "Элемент",
+          "data_type": "s"
+        },
+        {
+          "cell": "B3",
+          "value": "Значение",
+          "data_type": "s"
+        },
+        {
+          "cell": "A4",
+          "value": "Наименование потребителя",
+          "data_type": "s"
+        },
+        {
+          "cell": "B4",
+          "value": "[Введите наименование]",
+          "data_type": "s"
+        },
+        {
+          "cell": "A5",
+          "value": "Адрес (местонахождение)",
+          "data_type": "s"
+        },
+        {
+          "cell": "B5",
+          "value": "[Введите адрес]",
+          "data_type": "s"
+        },
+        {
+          "cell": "A6",
+          "value": "Идентификационный номер",
+          "data_type": "s"
+        },
+        {
+          "cell": "B6",
+          "value": "[Введите номер]",
+          "data_type": "s"
+        },
+        {
+          "cell": "A7",
+          "value": "ИФУД код",
+          "data_type": "s"
+        },
+        {
+          "cell": "B7",
+          "value": "[Введите код]",
+          "data_type": "s"
+        },
+        {
+          "cell": "A8",
+          "value": "Основание для проведения энергоаудита",
+          "data_type": "s"
+        },
+        {
+          "cell": "B8",
+          "value": "[Введите реквизиты договора]",
+          "data_type": "s"
+        },
+        {
+          "cell": "A9",
+          "value": "Сведения об энергоаудиторе",
+          "data_type": "s"
+        },
+        {
+          "cell": "B9",
+          "value": "[Введите данные]",
+          "data_type": "s"
+        },
+        {
+          "cell": "A10",
+          "value": "Дата составления паспорта",
+          "data_type": "s"
+        },
+        {
+          "cell": "B10",
+          "value": "[Введите дату]",
+          "data_type": "s"
+        }
+      ],
+      "field_mapping": {
+        "ЭНЕРГЕТИЧЕСКИЙ ПАСПОРТ": "B1",
+        "Элемент": "B3",
+        "Наименование потребителя": "B4",
+        "Адрес (местонахождение)": "B5",
+        "Идентификационный номер": "B6",
+        "ИФУД код": "B7",
+        "Основание для проведения энергоаудита": "B8",
+        "Сведения об энергоаудиторе": "B9",
+        "Дата составления паспорта": "B10"
+      }
+    },
+    {
+      "name": "01_Узлы учета",
+      "max_row": 201,
+      "max_column": 11,
+      "merged_cells": [],
+      "formulas": [
+        {
+          "cell": "J5",
+          "formula": "=IFERROR(H5*I5,\"\")",
+          "value": "=IFERROR(H5*I5,\"\")",
+          "row": 5,
+          "column": 10
+        },
+        {
+          "cell": "J6",
+          "formula": "=IFERROR(H6*I6,\"\")",
+          "value": "=IFERROR(H6*I6,\"\")",
+          "row": 6,
+          "column": 10
+        },
+        {
+          "cell": "J7",
+          "formula": "=IFERROR(H7*I7,\"\")",
+          "value": "=IFERROR(H7*I7,\"\")",
+          "row": 7,
+          "column": 10
+        },
+        {
+          "cell": "J8",
+          "formula": "=IFERROR(H8*I8,\"\")",
+          "value": "=IFERROR(H8*I8,\"\")",
+          "row": 8,
+          "column": 10
+        },
+        {
+          "cell": "J9",
+          "formula": "=IFERROR(H9*I9,\"\")",
+          "value": "=IFERROR(H9*I9,\"\")",
+          "row": 9,
+          "column": 10
+        },
+        {
+          "cell": "J10",
+          "formula": "=IFERROR(H10*I10,\"\")",
+          "value": "=IFERROR(H10*I10,\"\")",
+          "row": 10,
+          "column": 10
+        },
+        {
+          "cell": "J11",
+          "formula": "=IFERROR(H11*I11,\"\")",
+          "value": "=IFERROR(H11*I11,\"\")",
+          "row": 11,
+          "column": 10
+        },
+        {
+          "cell": "J12",
+          "formula": "=IFERROR(H12*I12,\"\")",
+          "value": "=IFERROR(H12*I12,\"\")",
+          "row": 12,
+          "column": 10
+        },
+        {
+          "cell": "J13",
+          "formula": "=IFERROR(H13*I13,\"\")",
+          "value": "=IFERROR(H13*I13,\"\")",
+          "row": 13,
+          "column": 10
+        },
+        {
+          "cell": "J14",
+          "formula": "=IFERROR(H14*I14,\"\")",
+          "value": "=IFERROR(H14*I14,\"\")",
+          "row": 14,
+          "column": 10
+        },
+        {
+          "cell": "J15",
+          "formula": "=IFERROR(H15*I15,\"\")",
+          "value": "=IFERROR(H15*I15,\"\")",
+          "row": 15,
+          "column": 10
+        },
+        {
+          "cell": "J16",
+          "formula": "=IFERROR(H16*I16,\"\")",
+          "value": "=IFERROR(H16*I16,\"\")",
+          "row": 16,
+          "column": 10
+        },
+        {
+          "cell": "J17",
+          "formula": "=IFERROR(H17*I17,\"\")",
+          "value": "=IFERROR(H17*I17,\"\")",
+          "row": 17,
+          "column": 10
+        },
+        {
+          "cell": "J18",
+          "formula": "=IFERROR(H18*I18,\"\")",
+          "value": "=IFERROR(H18*I18,\"\")",
+          "row": 18,
+          "column": 10
+        },
+        {
+          "cell": "J19",
+          "formula": "=IFERROR(H19*I19,\"\")",
+          "value": "=IFERROR(H19*I19,\"\")",
+          "row": 19,
+          "column": 10
+        },
+        {
+          "cell": "J20",
+          "formula": "=IFERROR(H20*I20,\"\")",
+          "value": "=IFERROR(H20*I20,\"\")",
+          "row": 20,
+          "column": 10
+        },
+        {
+          "cell": "J21",
+          "formula": "=IFERROR(H21*I21,\"\")",
+          "value": "=IFERROR(H21*I21,\"\")",
+          "row": 21,
+          "column": 10
+        },
+        {
+          "cell": "J22",
+          "formula": "=IFERROR(H22*I22,\"\")",
+          "value": "=IFERROR(H22*I22,\"\")",
+          "row": 22,
+          "column": 10
+        },
+        {
+          "cell": "J23",
+          "formula": "=IFERROR(H23*I23,\"\")",
+          "value": "=IFERROR(H23*I23,\"\")",
+          "row": 23,
+          "column": 10
+        },
+        {
+          "cell": "J24",
+          "formula": "=IFERROR(H24*I24,\"\")",
+          "value": "=IFERROR(H24*I24,\"\")",
+          "row": 24,
+          "column": 10
+        },
+        {
+          "cell": "J25",
+          "formula": "=IFERROR(H25*I25,\"\")",
+          "value": "=IFERROR(H25*I25,\"\")",
+          "row": 25,
+          "column": 10
+        },
+        {
+          "cell": "J26",
+          "formula": "=IFERROR(H26*I26,\"\")",
+          "value": "=IFERROR(H26*I26,\"\")",
+          "row": 26,
+          "column": 10
+        },
+        {
+          "cell": "J27",
+          "formula": "=IFERROR(H27*I27,\"\")",
+          "value": "=IFERROR(H27*I27,\"\")",
+          "row": 27,
+          "column": 10
+        },
+        {
+          "cell": "J28",
+          "formula": "=IFERROR(H28*I28,\"\")",
+          "value": "=IFERROR(H28*I28,\"\")",
+          "row": 28,
+          "column": 10
+        },
+        {
+          "cell": "J29",
+          "formula": "=IFERROR(H29*I29,\"\")",
+          "value": "=IFERROR(H29*I29,\"\")",
+          "row": 29,
+          "column": 10
+        },
+        {
+          "cell": "J30",
+          "formula": "=IFERROR(H30*I30,\"\")",
+          "value": "=IFERROR(H30*I30,\"\")",
+          "row": 30,
+          "column": 10
+        },
+        {
+          "cell": "J31",
+          "formula": "=IFERROR(H31*I31,\"\")",
+          "value": "=IFERROR(H31*I31,\"\")",
+          "row": 31,
+          "column": 10
+        },
+        {
+          "cell": "J32",
+          "formula": "=IFERROR(H32*I32,\"\")",
+          "value": "=IFERROR(H32*I32,\"\")",
+          "row": 32,
+          "column": 10
+        },
+        {
+          "cell": "J33",
+          "formula": "=IFERROR(H33*I33,\"\")",
+          "value": "=IFERROR(H33*I33,\"\")",
+          "row": 33,
+          "column": 10
+        },
+        {
+          "cell": "J34",
+          "formula": "=IFERROR(H34*I34,\"\")",
+          "value": "=IFERROR(H34*I34,\"\")",
+          "row": 34,
+          "column": 10
+        },
+        {
+          "cell": "J35",
+          "formula": "=IFERROR(H35*I35,\"\")",
+          "value": "=IFERROR(H35*I35,\"\")",
+          "row": 35,
+          "column": 10
+        },
+        {
+          "cell": "J36",
+          "formula": "=IFERROR(H36*I36,\"\")",
+          "value": "=IFERROR(H36*I36,\"\")",
+          "row": 36,
+          "column": 10
+        },
+        {
+          "cell": "J37",
+          "formula": "=IFERROR(H37*I37,\"\")",
+          "value": "=IFERROR(H37*I37,\"\")",
+          "row": 37,
+          "column": 10
+        },
+        {
+          "cell": "J38",
+          "formula": "=IFERROR(H38*I38,\"\")",
+          "value": "=IFERROR(H38*I38,\"\")",
+          "row": 38,
+          "column": 10
+        },
+        {
+          "cell": "J39",
+          "formula": "=IFERROR(H39*I39,\"\")",
+          "value": "=IFERROR(H39*I39,\"\")",
+          "row": 39,
+          "column": 10
+        },
+        {
+          "cell": "J40",
+          "formula": "=IFERROR(H40*I40,\"\")",
+          "value": "=IFERROR(H40*I40,\"\")",
+          "row": 40,
+          "column": 10
+        },
+        {
+          "cell": "J41",
+          "formula": "=IFERROR(H41*I41,\"\")",
+          "value": "=IFERROR(H41*I41,\"\")",
+          "row": 41,
+          "column": 10
+        },
+        {
+          "cell": "J42",
+          "formula": "=IFERROR(H42*I42,\"\")",
+          "value": "=IFERROR(H42*I42,\"\")",
+          "row": 42,
+          "column": 10
+        },
+        {
+          "cell": "J43",
+          "formula": "=IFERROR(H43*I43,\"\")",
+          "value": "=IFERROR(H43*I43,\"\")",
+          "row": 43,
+          "column": 10
+        },
+        {
+          "cell": "J44",
+          "formula": "=IFERROR(H44*I44,\"\")",
+          "value": "=IFERROR(H44*I44,\"\")",
+          "row": 44,
+          "column": 10
+        },
+        {
+          "cell": "J45",
+          "formula": "=IFERROR(H45*I45,\"\")",
+          "value": "=IFERROR(H45*I45,\"\")",
+          "row": 45,
+          "column": 10
+        },
+        {
+          "cell": "J46",
+          "formula": "=IFERROR(H46*I46,\"\")",
+          "value": "=IFERROR(H46*I46,\"\")",
+          "row": 46,
+          "column": 10
+        },
+        {
+          "cell": "J47",
+          "formula": "=IFERROR(H47*I47,\"\")",
+          "value": "=IFERROR(H47*I47,\"\")",
+          "row": 47,
+          "column": 10
+        },
+        {
+          "cell": "J48",
+          "formula": "=IFERROR(H48*I48,\"\")",
+          "value": "=IFERROR(H48*I48,\"\")",
+          "row": 48,
+          "column": 10
+        },
+        {
+          "cell": "J49",
+          "formula": "=IFERROR(H49*I49,\"\")",
+          "value": "=IFERROR(H49*I49,\"\")",
+          "row": 49,
+          "column": 10
+        },
+        {
+          "cell": "J50",
+          "formula": "=IFERROR(H50*I50,\"\")",
+          "value": "=IFERROR(H50*I50,\"\")",
+          "row": 50,
+          "column": 10
+        },
+        {
+          "cell": "J51",
+          "formula": "=IFERROR(H51*I51,\"\")",
+          "value": "=IFERROR(H51*I51,\"\")",
+          "row": 51,
+          "column": 10
+        },
+        {
+          "cell": "J52",
+          "formula": "=IFERROR(H52*I52,\"\")",
+          "value": "=IFERROR(H52*I52,\"\")",
+          "row": 52,
+          "column": 10
+        },
+        {
+          "cell": "J53",
+          "formula": "=IFERROR(H53*I53,\"\")",
+          "value": "=IFERROR(H53*I53,\"\")",
+          "row": 53,
+          "column": 10
+        },
+        {
+          "cell": "J54",
+          "formula": "=IFERROR(H54*I54,\"\")",
+          "value": "=IFERROR(H54*I54,\"\")",
+          "row": 54,
+          "column": 10
+        },
+        {
+          "cell": "J55",
+          "formula": "=IFERROR(H55*I55,\"\")",
+          "value": "=IFERROR(H55*I55,\"\")",
+          "row": 55,
+          "column": 10
+        },
+        {
+          "cell": "J56",
+          "formula": "=IFERROR(H56*I56,\"\")",
+          "value": "=IFERROR(H56*I56,\"\")",
+          "row": 56,
+          "column": 10
+        },
+        {
+          "cell": "J57",
+          "formula": "=IFERROR(H57*I57,\"\")",
+          "value": "=IFERROR(H57*I57,\"\")",
+          "row": 57,
+          "column": 10
+        },
+        {
+          "cell": "J58",
+          "formula": "=IFERROR(H58*I58,\"\")",
+          "value": "=IFERROR(H58*I58,\"\")",
+          "row": 58,
+          "column": 10
+        },
+        {
+          "cell": "J59",
+          "formula": "=IFERROR(H59*I59,\"\")",
+          "value": "=IFERROR(H59*I59,\"\")",
+          "row": 59,
+          "column": 10
+        },
+        {
+          "cell": "J60",
+          "formula": "=IFERROR(H60*I60,\"\")",
+          "value": "=IFERROR(H60*I60,\"\")",
+          "row": 60,
+          "column": 10
+        },
+        {
+          "cell": "J61",
+          "formula": "=IFERROR(H61*I61,\"\")",
+          "value": "=IFERROR(H61*I61,\"\")",
+          "row": 61,
+          "column": 10
+        },
+        {
+          "cell": "J62",
+          "formula": "=IFERROR(H62*I62,\"\")",
+          "value": "=IFERROR(H62*I62,\"\")",
+          "row": 62,
+          "column": 10
+        },
+        {
+          "cell": "J63",
+          "formula": "=IFERROR(H63*I63,\"\")",
+          "value": "=IFERROR(H63*I63,\"\")",
+          "row": 63,
+          "column": 10
+        },
+        {
+          "cell": "J64",
+          "formula": "=IFERROR(H64*I64,\"\")",
+          "value": "=IFERROR(H64*I64,\"\")",
+          "row": 64,
+          "column": 10
+        },
+        {
+          "cell": "J65",
+          "formula": "=IFERROR(H65*I65,\"\")",
+          "value": "=IFERROR(H65*I65,\"\")",
+          "row": 65,
+          "column": 10
+        },
+        {
+          "cell": "J66",
+          "formula": "=IFERROR(H66*I66,\"\")",
+          "value": "=IFERROR(H66*I66,\"\")",
+          "row": 66,
+          "column": 10
+        },
+        {
+          "cell": "J67",
+          "formula": "=IFERROR(H67*I67,\"\")",
+          "value": "=IFERROR(H67*I67,\"\")",
+          "row": 67,
+          "column": 10
+        },
+        {
+          "cell": "J68",
+          "formula": "=IFERROR(H68*I68,\"\")",
+          "value": "=IFERROR(H68*I68,\"\")",
+          "row": 68,
+          "column": 10
+        },
+        {
+          "cell": "J69",
+          "formula": "=IFERROR(H69*I69,\"\")",
+          "value": "=IFERROR(H69*I69,\"\")",
+          "row": 69,
+          "column": 10
+        },
+        {
+          "cell": "J70",
+          "formula": "=IFERROR(H70*I70,\"\")",
+          "value": "=IFERROR(H70*I70,\"\")",
+          "row": 70,
+          "column": 10
+        },
+        {
+          "cell": "J71",
+          "formula": "=IFERROR(H71*I71,\"\")",
+          "value": "=IFERROR(H71*I71,\"\")",
+          "row": 71,
+          "column": 10
+        },
+        {
+          "cell": "J72",
+          "formula": "=IFERROR(H72*I72,\"\")",
+          "value": "=IFERROR(H72*I72,\"\")",
+          "row": 72,
+          "column": 10
+        },
+        {
+          "cell": "J73",
+          "formula": "=IFERROR(H73*I73,\"\")",
+          "value": "=IFERROR(H73*I73,\"\")",
+          "row": 73,
+          "column": 10
+        },
+        {
+          "cell": "J74",
+          "formula": "=IFERROR(H74*I74,\"\")",
+          "value": "=IFERROR(H74*I74,\"\")",
+          "row": 74,
+          "column": 10
+        },
+        {
+          "cell": "J75",
+          "formula": "=IFERROR(H75*I75,\"\")",
+          "value": "=IFERROR(H75*I75,\"\")",
+          "row": 75,
+          "column": 10
+        },
+        {
+          "cell": "J76",
+          "formula": "=IFERROR(H76*I76,\"\")",
+          "value": "=IFERROR(H76*I76,\"\")",
+          "row": 76,
+          "column": 10
+        },
+        {
+          "cell": "J77",
+          "formula": "=IFERROR(H77*I77,\"\")",
+          "value": "=IFERROR(H77*I77,\"\")",
+          "row": 77,
+          "column": 10
+        },
+        {
+          "cell": "J78",
+          "formula": "=IFERROR(H78*I78,\"\")",
+          "value": "=IFERROR(H78*I78,\"\")",
+          "row": 78,
+          "column": 10
+        },
+        {
+          "cell": "J79",
+          "formula": "=IFERROR(H79*I79,\"\")",
+          "value": "=IFERROR(H79*I79,\"\")",
+          "row": 79,
+          "column": 10
+        },
+        {
+          "cell": "J80",
+          "formula": "=IFERROR(H80*I80,\"\")",
+          "value": "=IFERROR(H80*I80,\"\")",
+          "row": 80,
+          "column": 10
+        },
+        {
+          "cell": "J81",
+          "formula": "=IFERROR(H81*I81,\"\")",
+          "value": "=IFERROR(H81*I81,\"\")",
+          "row": 81,
+          "column": 10
+        },
+        {
+          "cell": "J82",
+          "formula": "=IFERROR(H82*I82,\"\")",
+          "value": "=IFERROR(H82*I82,\"\")",
+          "row": 82,
+          "column": 10
+        },
+        {
+          "cell": "J83",
+          "formula": "=IFERROR(H83*I83,\"\")",
+          "value": "=IFERROR(H83*I83,\"\")",
+          "row": 83,
+          "column": 10
+        },
+        {
+          "cell": "J84",
+          "formula": "=IFERROR(H84*I84,\"\")",
+          "value": "=IFERROR(H84*I84,\"\")",
+          "row": 84,
+          "column": 10
+        },
+        {
+          "cell": "J85",
+          "formula": "=IFERROR(H85*I85,\"\")",
+          "value": "=IFERROR(H85*I85,\"\")",
+          "row": 85,
+          "column": 10
+        },
+        {
+          "cell": "J86",
+          "formula": "=IFERROR(H86*I86,\"\")",
+          "value": "=IFERROR(H86*I86,\"\")",
+          "row": 86,
+          "column": 10
+        },
+        {
+          "cell": "J87",
+          "formula": "=IFERROR(H87*I87,\"\")",
+          "value": "=IFERROR(H87*I87,\"\")",
+          "row": 87,
+          "column": 10
+        },
+        {
+          "cell": "J88",
+          "formula": "=IFERROR(H88*I88,\"\")",
+          "value": "=IFERROR(H88*I88,\"\")",
+          "row": 88,
+          "column": 10
+        },
+        {
+          "cell": "J89",
+          "formula": "=IFERROR(H89*I89,\"\")",
+          "value": "=IFERROR(H89*I89,\"\")",
+          "row": 89,
+          "column": 10
+        },
+        {
+          "cell": "J90",
+          "formula": "=IFERROR(H90*I90,\"\")",
+          "value": "=IFERROR(H90*I90,\"\")",
+          "row": 90,
+          "column": 10
+        },
+        {
+          "cell": "J91",
+          "formula": "=IFERROR(H91*I91,\"\")",
+          "value": "=IFERROR(H91*I91,\"\")",
+          "row": 91,
+          "column": 10
+        },
+        {
+          "cell": "J92",
+          "formula": "=IFERROR(H92*I92,\"\")",
+          "value": "=IFERROR(H92*I92,\"\")",
+          "row": 92,
+          "column": 10
+        },
+        {
+          "cell": "J93",
+          "formula": "=IFERROR(H93*I93,\"\")",
+          "value": "=IFERROR(H93*I93,\"\")",
+          "row": 93,
+          "column": 10
+        },
+        {
+          "cell": "J94",
+          "formula": "=IFERROR(H94*I94,\"\")",
+          "value": "=IFERROR(H94*I94,\"\")",
+          "row": 94,
+          "column": 10
+        },
+        {
+          "cell": "J95",
+          "formula": "=IFERROR(H95*I95,\"\")",
+          "value": "=IFERROR(H95*I95,\"\")",
+          "row": 95,
+          "column": 10
+        },
+        {
+          "cell": "J96",
+          "formula": "=IFERROR(H96*I96,\"\")",
+          "value": "=IFERROR(H96*I96,\"\")",
+          "row": 96,
+          "column": 10
+        },
+        {
+          "cell": "J97",
+          "formula": "=IFERROR(H97*I97,\"\")",
+          "value": "=IFERROR(H97*I97,\"\")",
+          "row": 97,
+          "column": 10
+        },
+        {
+          "cell": "J98",
+          "formula": "=IFERROR(H98*I98,\"\")",
+          "value": "=IFERROR(H98*I98,\"\")",
+          "row": 98,
+          "column": 10
+        },
+        {
+          "cell": "J99",
+          "formula": "=IFERROR(H99*I99,\"\")",
+          "value": "=IFERROR(H99*I99,\"\")",
+          "row": 99,
+          "column": 10
+        },
+        {
+          "cell": "J100",
+          "formula": "=IFERROR(H100*I100,\"\")",
+          "value": "=IFERROR(H100*I100,\"\")",
+          "row": 100,
+          "column": 10
+        },
+        {
+          "cell": "J101",
+          "formula": "=IFERROR(H101*I101,\"\")",
+          "value": "=IFERROR(H101*I101,\"\")",
+          "row": 101,
+          "column": 10
+        },
+        {
+          "cell": "J102",
+          "formula": "=IFERROR(H102*I102,\"\")",
+          "value": "=IFERROR(H102*I102,\"\")",
+          "row": 102,
+          "column": 10
+        },
+        {
+          "cell": "J103",
+          "formula": "=IFERROR(H103*I103,\"\")",
+          "value": "=IFERROR(H103*I103,\"\")",
+          "row": 103,
+          "column": 10
+        },
+        {
+          "cell": "J104",
+          "formula": "=IFERROR(H104*I104,\"\")",
+          "value": "=IFERROR(H104*I104,\"\")",
+          "row": 104,
+          "column": 10
+        },
+        {
+          "cell": "J105",
+          "formula": "=IFERROR(H105*I105,\"\")",
+          "value": "=IFERROR(H105*I105,\"\")",
+          "row": 105,
+          "column": 10
+        },
+        {
+          "cell": "J106",
+          "formula": "=IFERROR(H106*I106,\"\")",
+          "value": "=IFERROR(H106*I106,\"\")",
+          "row": 106,
+          "column": 10
+        },
+        {
+          "cell": "J107",
+          "formula": "=IFERROR(H107*I107,\"\")",
+          "value": "=IFERROR(H107*I107,\"\")",
+          "row": 107,
+          "column": 10
+        },
+        {
+          "cell": "J108",
+          "formula": "=IFERROR(H108*I108,\"\")",
+          "value": "=IFERROR(H108*I108,\"\")",
+          "row": 108,
+          "column": 10
+        },
+        {
+          "cell": "J109",
+          "formula": "=IFERROR(H109*I109,\"\")",
+          "value": "=IFERROR(H109*I109,\"\")",
+          "row": 109,
+          "column": 10
+        },
+        {
+          "cell": "J110",
+          "formula": "=IFERROR(H110*I110,\"\")",
+          "value": "=IFERROR(H110*I110,\"\")",
+          "row": 110,
+          "column": 10
+        },
+        {
+          "cell": "J111",
+          "formula": "=IFERROR(H111*I111,\"\")",
+          "value": "=IFERROR(H111*I111,\"\")",
+          "row": 111,
+          "column": 10
+        },
+        {
+          "cell": "J112",
+          "formula": "=IFERROR(H112*I112,\"\")",
+          "value": "=IFERROR(H112*I112,\"\")",
+          "row": 112,
+          "column": 10
+        },
+        {
+          "cell": "J113",
+          "formula": "=IFERROR(H113*I113,\"\")",
+          "value": "=IFERROR(H113*I113,\"\")",
+          "row": 113,
+          "column": 10
+        },
+        {
+          "cell": "J114",
+          "formula": "=IFERROR(H114*I114,\"\")",
+          "value": "=IFERROR(H114*I114,\"\")",
+          "row": 114,
+          "column": 10
+        },
+        {
+          "cell": "J115",
+          "formula": "=IFERROR(H115*I115,\"\")",
+          "value": "=IFERROR(H115*I115,\"\")",
+          "row": 115,
+          "column": 10
+        },
+        {
+          "cell": "J116",
+          "formula": "=IFERROR(H116*I116,\"\")",
+          "value": "=IFERROR(H116*I116,\"\")",
+          "row": 116,
+          "column": 10
+        },
+        {
+          "cell": "J117",
+          "formula": "=IFERROR(H117*I117,\"\")",
+          "value": "=IFERROR(H117*I117,\"\")",
+          "row": 117,
+          "column": 10
+        },
+        {
+          "cell": "J118",
+          "formula": "=IFERROR(H118*I118,\"\")",
+          "value": "=IFERROR(H118*I118,\"\")",
+          "row": 118,
+          "column": 10
+        },
+        {
+          "cell": "J119",
+          "formula": "=IFERROR(H119*I119,\"\")",
+          "value": "=IFERROR(H119*I119,\"\")",
+          "row": 119,
+          "column": 10
+        },
+        {
+          "cell": "J120",
+          "formula": "=IFERROR(H120*I120,\"\")",
+          "value": "=IFERROR(H120*I120,\"\")",
+          "row": 120,
+          "column": 10
+        },
+        {
+          "cell": "J121",
+          "formula": "=IFERROR(H121*I121,\"\")",
+          "value": "=IFERROR(H121*I121,\"\")",
+          "row": 121,
+          "column": 10
+        },
+        {
+          "cell": "J122",
+          "formula": "=IFERROR(H122*I122,\"\")",
+          "value": "=IFERROR(H122*I122,\"\")",
+          "row": 122,
+          "column": 10
+        },
+        {
+          "cell": "J123",
+          "formula": "=IFERROR(H123*I123,\"\")",
+          "value": "=IFERROR(H123*I123,\"\")",
+          "row": 123,
+          "column": 10
+        },
+        {
+          "cell": "J124",
+          "formula": "=IFERROR(H124*I124,\"\")",
+          "value": "=IFERROR(H124*I124,\"\")",
+          "row": 124,
+          "column": 10
+        },
+        {
+          "cell": "J125",
+          "formula": "=IFERROR(H125*I125,\"\")",
+          "value": "=IFERROR(H125*I125,\"\")",
+          "row": 125,
+          "column": 10
+        },
+        {
+          "cell": "J126",
+          "formula": "=IFERROR(H126*I126,\"\")",
+          "value": "=IFERROR(H126*I126,\"\")",
+          "row": 126,
+          "column": 10
+        },
+        {
+          "cell": "J127",
+          "formula": "=IFERROR(H127*I127,\"\")",
+          "value": "=IFERROR(H127*I127,\"\")",
+          "row": 127,
+          "column": 10
+        },
+        {
+          "cell": "J128",
+          "formula": "=IFERROR(H128*I128,\"\")",
+          "value": "=IFERROR(H128*I128,\"\")",
+          "row": 128,
+          "column": 10
+        },
+        {
+          "cell": "J129",
+          "formula": "=IFERROR(H129*I129,\"\")",
+          "value": "=IFERROR(H129*I129,\"\")",
+          "row": 129,
+          "column": 10
+        },
+        {
+          "cell": "J130",
+          "formula": "=IFERROR(H130*I130,\"\")",
+          "value": "=IFERROR(H130*I130,\"\")",
+          "row": 130,
+          "column": 10
+        },
+        {
+          "cell": "J131",
+          "formula": "=IFERROR(H131*I131,\"\")",
+          "value": "=IFERROR(H131*I131,\"\")",
+          "row": 131,
+          "column": 10
+        },
+        {
+          "cell": "J132",
+          "formula": "=IFERROR(H132*I132,\"\")",
+          "value": "=IFERROR(H132*I132,\"\")",
+          "row": 132,
+          "column": 10
+        },
+        {
+          "cell": "J133",
+          "formula": "=IFERROR(H133*I133,\"\")",
+          "value": "=IFERROR(H133*I133,\"\")",
+          "row": 133,
+          "column": 10
+        },
+        {
+          "cell": "J134",
+          "formula": "=IFERROR(H134*I134,\"\")",
+          "value": "=IFERROR(H134*I134,\"\")",
+          "row": 134,
+          "column": 10
+        },
+        {
+          "cell": "J135",
+          "formula": "=IFERROR(H135*I135,\"\")",
+          "value": "=IFERROR(H135*I135,\"\")",
+          "row": 135,
+          "column": 10
+        },
+        {
+          "cell": "J136",
+          "formula": "=IFERROR(H136*I136,\"\")",
+          "value": "=IFERROR(H136*I136,\"\")",
+          "row": 136,
+          "column": 10
+        },
+        {
+          "cell": "J137",
+          "formula": "=IFERROR(H137*I137,\"\")",
+          "value": "=IFERROR(H137*I137,\"\")",
+          "row": 137,
+          "column": 10
+        },
+        {
+          "cell": "J138",
+          "formula": "=IFERROR(H138*I138,\"\")",
+          "value": "=IFERROR(H138*I138,\"\")",
+          "row": 138,
+          "column": 10
+        },
+        {
+          "cell": "J139",
+          "formula": "=IFERROR(H139*I139,\"\")",
+          "value": "=IFERROR(H139*I139,\"\")",
+          "row": 139,
+          "column": 10
+        },
+        {
+          "cell": "J140",
+          "formula": "=IFERROR(H140*I140,\"\")",
+          "value": "=IFERROR(H140*I140,\"\")",
+          "row": 140,
+          "column": 10
+        },
+        {
+          "cell": "J141",
+          "formula": "=IFERROR(H141*I141,\"\")",
+          "value": "=IFERROR(H141*I141,\"\")",
+          "row": 141,
+          "column": 10
+        },
+        {
+          "cell": "J142",
+          "formula": "=IFERROR(H142*I142,\"\")",
+          "value": "=IFERROR(H142*I142,\"\")",
+          "row": 142,
+          "column": 10
+        },
+        {
+          "cell": "J143",
+          "formula": "=IFERROR(H143*I143,\"\")",
+          "value": "=IFERROR(H143*I143,\"\")",
+          "row": 143,
+          "column": 10
+        },
+        {
+          "cell": "J144",
+          "formula": "=IFERROR(H144*I144,\"\")",
+          "value": "=IFERROR(H144*I144,\"\")",
+          "row": 144,
+          "column": 10
+        },
+        {
+          "cell": "J145",
+          "formula": "=IFERROR(H145*I145,\"\")",
+          "value": "=IFERROR(H145*I145,\"\")",
+          "row": 145,
+          "column": 10
+        },
+        {
+          "cell": "J146",
+          "formula": "=IFERROR(H146*I146,\"\")",
+          "value": "=IFERROR(H146*I146,\"\")",
+          "row": 146,
+          "column": 10
+        },
+        {
+          "cell": "J147",
+          "formula": "=IFERROR(H147*I147,\"\")",
+          "value": "=IFERROR(H147*I147,\"\")",
+          "row": 147,
+          "column": 10
+        },
+        {
+          "cell": "J148",
+          "formula": "=IFERROR(H148*I148,\"\")",
+          "value": "=IFERROR(H148*I148,\"\")",
+          "row": 148,
+          "column": 10
+        },
+        {
+          "cell": "J149",
+          "formula": "=IFERROR(H149*I149,\"\")",
+          "value": "=IFERROR(H149*I149,\"\")",
+          "row": 149,
+          "column": 10
+        },
+        {
+          "cell": "J150",
+          "formula": "=IFERROR(H150*I150,\"\")",
+          "value": "=IFERROR(H150*I150,\"\")",
+          "row": 150,
+          "column": 10
+        },
+        {
+          "cell": "J151",
+          "formula": "=IFERROR(H151*I151,\"\")",
+          "value": "=IFERROR(H151*I151,\"\")",
+          "row": 151,
+          "column": 10
+        },
+        {
+          "cell": "J152",
+          "formula": "=IFERROR(H152*I152,\"\")",
+          "value": "=IFERROR(H152*I152,\"\")",
+          "row": 152,
+          "column": 10
+        },
+        {
+          "cell": "J153",
+          "formula": "=IFERROR(H153*I153,\"\")",
+          "value": "=IFERROR(H153*I153,\"\")",
+          "row": 153,
+          "column": 10
+        },
+        {
+          "cell": "J154",
+          "formula": "=IFERROR(H154*I154,\"\")",
+          "value": "=IFERROR(H154*I154,\"\")",
+          "row": 154,
+          "column": 10
+        },
+        {
+          "cell": "J155",
+          "formula": "=IFERROR(H155*I155,\"\")",
+          "value": "=IFERROR(H155*I155,\"\")",
+          "row": 155,
+          "column": 10
+        },
+        {
+          "cell": "J156",
+          "formula": "=IFERROR(H156*I156,\"\")",
+          "value": "=IFERROR(H156*I156,\"\")",
+          "row": 156,
+          "column": 10
+        },
+        {
+          "cell": "J157",
+          "formula": "=IFERROR(H157*I157,\"\")",
+          "value": "=IFERROR(H157*I157,\"\")",
+          "row": 157,
+          "column": 10
+        },
+        {
+          "cell": "J158",
+          "formula": "=IFERROR(H158*I158,\"\")",
+          "value": "=IFERROR(H158*I158,\"\")",
+          "row": 158,
+          "column": 10
+        },
+        {
+          "cell": "J159",
+          "formula": "=IFERROR(H159*I159,\"\")",
+          "value": "=IFERROR(H159*I159,\"\")",
+          "row": 159,
+          "column": 10
+        },
+        {
+          "cell": "J160",
+          "formula": "=IFERROR(H160*I160,\"\")",
+          "value": "=IFERROR(H160*I160,\"\")",
+          "row": 160,
+          "column": 10
+        },
+        {
+          "cell": "J161",
+          "formula": "=IFERROR(H161*I161,\"\")",
+          "value": "=IFERROR(H161*I161,\"\")",
+          "row": 161,
+          "column": 10
+        },
+        {
+          "cell": "J162",
+          "formula": "=IFERROR(H162*I162,\"\")",
+          "value": "=IFERROR(H162*I162,\"\")",
+          "row": 162,
+          "column": 10
+        },
+        {
+          "cell": "J163",
+          "formula": "=IFERROR(H163*I163,\"\")",
+          "value": "=IFERROR(H163*I163,\"\")",
+          "row": 163,
+          "column": 10
+        },
+        {
+          "cell": "J164",
+          "formula": "=IFERROR(H164*I164,\"\")",
+          "value": "=IFERROR(H164*I164,\"\")",
+          "row": 164,
+          "column": 10
+        },
+        {
+          "cell": "J165",
+          "formula": "=IFERROR(H165*I165,\"\")",
+          "value": "=IFERROR(H165*I165,\"\")",
+          "row": 165,
+          "column": 10
+        },
+        {
+          "cell": "J166",
+          "formula": "=IFERROR(H166*I166,\"\")",
+          "value": "=IFERROR(H166*I166,\"\")",
+          "row": 166,
+          "column": 10
+        },
+        {
+          "cell": "J167",
+          "formula": "=IFERROR(H167*I167,\"\")",
+          "value": "=IFERROR(H167*I167,\"\")",
+          "row": 167,
+          "column": 10
+        },
+        {
+          "cell": "J168",
+          "formula": "=IFERROR(H168*I168,\"\")",
+          "value": "=IFERROR(H168*I168,\"\")",
+          "row": 168,
+          "column": 10
+        },
+        {
+          "cell": "J169",
+          "formula": "=IFERROR(H169*I169,\"\")",
+          "value": "=IFERROR(H169*I169,\"\")",
+          "row": 169,
+          "column": 10
+        },
+        {
+          "cell": "J170",
+          "formula": "=IFERROR(H170*I170,\"\")",
+          "value": "=IFERROR(H170*I170,\"\")",
+          "row": 170,
+          "column": 10
+        },
+        {
+          "cell": "J171",
+          "formula": "=IFERROR(H171*I171,\"\")",
+          "value": "=IFERROR(H171*I171,\"\")",
+          "row": 171,
+          "column": 10
+        },
+        {
+          "cell": "J172",
+          "formula": "=IFERROR(H172*I172,\"\")",
+          "value": "=IFERROR(H172*I172,\"\")",
+          "row": 172,
+          "column": 10
+        },
+        {
+          "cell": "J173",
+          "formula": "=IFERROR(H173*I173,\"\")",
+          "value": "=IFERROR(H173*I173,\"\")",
+          "row": 173,
+          "column": 10
+        },
+        {
+          "cell": "J174",
+          "formula": "=IFERROR(H174*I174,\"\")",
+          "value": "=IFERROR(H174*I174,\"\")",
+          "row": 174,
+          "column": 10
+        },
+        {
+          "cell": "J175",
+          "formula": "=IFERROR(H175*I175,\"\")",
+          "value": "=IFERROR(H175*I175,\"\")",
+          "row": 175,
+          "column": 10
+        },
+        {
+          "cell": "J176",
+          "formula": "=IFERROR(H176*I176,\"\")",
+          "value": "=IFERROR(H176*I176,\"\")",
+          "row": 176,
+          "column": 10
+        },
+        {
+          "cell": "J177",
+          "formula": "=IFERROR(H177*I177,\"\")",
+          "value": "=IFERROR(H177*I177,\"\")",
+          "row": 177,
+          "column": 10
+        },
+        {
+          "cell": "J178",
+          "formula": "=IFERROR(H178*I178,\"\")",
+          "value": "=IFERROR(H178*I178,\"\")",
+          "row": 178,
+          "column": 10
+        },
+        {
+          "cell": "J179",
+          "formula": "=IFERROR(H179*I179,\"\")",
+          "value": "=IFERROR(H179*I179,\"\")",
+          "row": 179,
+          "column": 10
+        },
+        {
+          "cell": "J180",
+          "formula": "=IFERROR(H180*I180,\"\")",
+          "value": "=IFERROR(H180*I180,\"\")",
+          "row": 180,
+          "column": 10
+        },
+        {
+          "cell": "J181",
+          "formula": "=IFERROR(H181*I181,\"\")",
+          "value": "=IFERROR(H181*I181,\"\")",
+          "row": 181,
+          "column": 10
+        },
+        {
+          "cell": "J182",
+          "formula": "=IFERROR(H182*I182,\"\")",
+          "value": "=IFERROR(H182*I182,\"\")",
+          "row": 182,
+          "column": 10
+        },
+        {
+          "cell": "J183",
+          "formula": "=IFERROR(H183*I183,\"\")",
+          "value": "=IFERROR(H183*I183,\"\")",
+          "row": 183,
+          "column": 10
+        },
+        {
+          "cell": "J184",
+          "formula": "=IFERROR(H184*I184,\"\")",
+          "value": "=IFERROR(H184*I184,\"\")",
+          "row": 184,
+          "column": 10
+        },
+        {
+          "cell": "J185",
+          "formula": "=IFERROR(H185*I185,\"\")",
+          "value": "=IFERROR(H185*I185,\"\")",
+          "row": 185,
+          "column": 10
+        },
+        {
+          "cell": "J186",
+          "formula": "=IFERROR(H186*I186,\"\")",
+          "value": "=IFERROR(H186*I186,\"\")",
+          "row": 186,
+          "column": 10
+        },
+        {
+          "cell": "J187",
+          "formula": "=IFERROR(H187*I187,\"\")",
+          "value": "=IFERROR(H187*I187,\"\")",
+          "row": 187,
+          "column": 10
+        },
+        {
+          "cell": "J188",
+          "formula": "=IFERROR(H188*I188,\"\")",
+          "value": "=IFERROR(H188*I188,\"\")",
+          "row": 188,
+          "column": 10
+        },
+        {
+          "cell": "J189",
+          "formula": "=IFERROR(H189*I189,\"\")",
+          "value": "=IFERROR(H189*I189,\"\")",
+          "row": 189,
+          "column": 10
+        },
+        {
+          "cell": "J190",
+          "formula": "=IFERROR(H190*I190,\"\")",
+          "value": "=IFERROR(H190*I190,\"\")",
+          "row": 190,
+          "column": 10
+        },
+        {
+          "cell": "J191",
+          "formula": "=IFERROR(H191*I191,\"\")",
+          "value": "=IFERROR(H191*I191,\"\")",
+          "row": 191,
+          "column": 10
+        },
+        {
+          "cell": "J192",
+          "formula": "=IFERROR(H192*I192,\"\")",
+          "value": "=IFERROR(H192*I192,\"\")",
+          "row": 192,
+          "column": 10
+        },
+        {
+          "cell": "J193",
+          "formula": "=IFERROR(H193*I193,\"\")",
+          "value": "=IFERROR(H193*I193,\"\")",
+          "row": 193,
+          "column": 10
+        },
+        {
+          "cell": "J194",
+          "formula": "=IFERROR(H194*I194,\"\")",
+          "value": "=IFERROR(H194*I194,\"\")",
+          "row": 194,
+          "column": 10
+        },
+        {
+          "cell": "J195",
+          "formula": "=IFERROR(H195*I195,\"\")",
+          "value": "=IFERROR(H195*I195,\"\")",
+          "row": 195,
+          "column": 10
+        },
+        {
+          "cell": "J196",
+          "formula": "=IFERROR(H196*I196,\"\")",
+          "value": "=IFERROR(H196*I196,\"\")",
+          "row": 196,
+          "column": 10
+        },
+        {
+          "cell": "J197",
+          "formula": "=IFERROR(H197*I197,\"\")",
+          "value": "=IFERROR(H197*I197,\"\")",
+          "row": 197,
+          "column": 10
+        },
+        {
+          "cell": "J198",
+          "formula": "=IFERROR(H198*I198,\"\")",
+          "value": "=IFERROR(H198*I198,\"\")",
+          "row": 198,
+          "column": 10
+        },
+        {
+          "cell": "J199",
+          "formula": "=IFERROR(H199*I199,\"\")",
+          "value": "=IFERROR(H199*I199,\"\")",
+          "row": 199,
+          "column": 10
+        },
+        {
+          "cell": "J200",
+          "formula": "=IFERROR(H200*I200,\"\")",
+          "value": "=IFERROR(H200*I200,\"\")",
+          "row": 200,
+          "column": 10
+        },
+        {
+          "cell": "J201",
+          "formula": "=IFERROR(H201*I201,\"\")",
+          "value": "=IFERROR(H201*I201,\"\")",
+          "row": 201,
+          "column": 10
+        }
+      ],
+      "data_regions": [],
+      "data_cells_count": 231,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "№ п/п",
+          "data_type": "s"
+        },
+        {
+          "cell": "B1",
+          "value": "Наименование точки учета",
+          "data_type": "s"
+        },
+        {
+          "cell": "C1",
+          "value": "Вид энергоресурса",
+          "data_type": "s"
+        },
+        {
+          "cell": "D1",
+          "value": "Тип, номер прибора учета",
+          "data_type": "s"
+        },
+        {
+          "cell": "E1",
+          "value": "Класс точности",
+          "data_type": "s"
+        },
+        {
+          "cell": "F1",
+          "value": "Диапазон измерений",
+          "data_type": "s"
+        },
+        {
+          "cell": "G1",
+          "value": "Место установки ТТ, КТ",
+          "data_type": "s"
+        },
+        {
+          "cell": "H1",
+          "value": "kI",
+          "data_type": "s"
+        },
+        {
+          "cell": "I1",
+          "value": "kU",
+          "data_type": "s"
+        },
+        {
+          "cell": "J1",
+          "value": "K",
+          "data_type": "s"
+        },
+        {
+          "cell": "A2",
+          "value": "1",
+          "data_type": "n"
+        },
+        {
+          "cell": "B2",
+          "value": "Трёхфазый счётчик ЕХ518 124200393818",
+          "data_type": "s"
+        },
+        {
+          "cell": "C2",
+          "value": "Электрическая энергия",
+          "data_type": "s"
+        },
+        {
+          "cell": "D2",
+          "value": "EX518",
+          "data_type": "s"
+        },
+        {
+          "cell": "G2",
+          "value": "ТП-1 (ПС «Каракамиш» 35/6 кВ)",
+          "data_type": "s"
+        },
+        {
+          "cell": "H2",
+          "value": "240",
+          "data_type": "n"
+        },
+        {
+          "cell": "J2",
+          "value": "240",
+          "data_type": "n"
+        },
+        {
+          "cell": "K2",
+          "value": "год пломбировки: 2024; дата: 12.2024",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "2",
+          "data_type": "n"
+        },
+        {
+          "cell": "B3",
+          "value": "Трёхфазый счётчик ЕХ518 124200507111",
+          "data_type": "s"
+        },
+        {
+          "cell": "C3",
+          "value": "Электрическая энергия",
+          "data_type": "s"
+        },
+        {
+          "cell": "D3",
+          "value": "EX518",
+          "data_type": "s"
+        },
+        {
+          "cell": "G3",
+          "value": "ТП-2 (ПС «Каракамиш» 35/6 кВ)",
+          "data_type": "s"
+        },
+        {
+          "cell": "H3",
+          "value": "240",
+          "data_type": "n"
+        },
+        {
+          "cell": "J3",
+          "value": "240",
+          "data_type": "n"
+        },
+        {
+          "cell": "K3",
+          "value": "год пломбировки: 2024; дата: 12.2024",
+          "data_type": "s"
+        },
+        {
+          "cell": "A4",
+          "value": "3",
+          "data_type": "n"
+        },
+        {
+          "cell": "B4",
+          "value": "Трёхфазый счётчик ЕХ518 124200573458",
+          "data_type": "s"
+        },
+        {
+          "cell": "C4",
+          "value": "Электрическая энергия",
+          "data_type": "s"
+        },
+        {
+          "cell": "D4",
+          "value": "EX518",
+          "data_type": "s"
+        },
+        {
+          "cell": "G4",
+          "value": "ТП-3 (ПС «Каракамиш» 35/6 кВ)",
+          "data_type": "s"
+        },
+        {
+          "cell": "H4",
+          "value": "300",
+          "data_type": "n"
+        },
+        {
+          "cell": "J4",
+          "value": "300",
+          "data_type": "n"
+        },
+        {
+          "cell": "K4",
+          "value": "год пломбировки: 2024; дата: 12.2024",
+          "data_type": "s"
+        },
+        {
+          "cell": "J5",
+          "value": "=IFERROR(H5*I5,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J6",
+          "value": "=IFERROR(H6*I6,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J7",
+          "value": "=IFERROR(H7*I7,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J8",
+          "value": "=IFERROR(H8*I8,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J9",
+          "value": "=IFERROR(H9*I9,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J10",
+          "value": "=IFERROR(H10*I10,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J11",
+          "value": "=IFERROR(H11*I11,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J12",
+          "value": "=IFERROR(H12*I12,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J13",
+          "value": "=IFERROR(H13*I13,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J14",
+          "value": "=IFERROR(H14*I14,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J15",
+          "value": "=IFERROR(H15*I15,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J16",
+          "value": "=IFERROR(H16*I16,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J17",
+          "value": "=IFERROR(H17*I17,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J18",
+          "value": "=IFERROR(H18*I18,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J19",
+          "value": "=IFERROR(H19*I19,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "J20",
+          "value": "=IFERROR(H20*I20,\"\")",
+          "data_type": "f"
+        }
+      ],
+      "field_mapping": {
+        "№ п/п": "B1"
+      }
+    },
+    {
+      "name": "02_Исходные данные",
+      "max_row": 501,
+      "max_column": 9,
+      "merged_cells": [],
+      "formulas": [],
+      "data_regions": [],
+      "data_cells_count": 9,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Год",
+          "data_type": "s"
+        },
+        {
+          "cell": "B1",
+          "value": "Квартал",
+          "data_type": "s"
+        },
+        {
+          "cell": "C1",
+          "value": "Вид энергоресурса",
+          "data_type": "s"
+        },
+        {
+          "cell": "D1",
+          "value": "Ед. изм.",
+          "data_type": "s"
+        },
+        {
+          "cell": "E1",
+          "value": "Общее потребление",
+          "data_type": "s"
+        },
+        {
+          "cell": "F1",
+          "value": "в т.ч. технологические нужды",
+          "data_type": "s"
+        },
+        {
+          "cell": "G1",
+          "value": "в т.ч. собственные нужды",
+          "data_type": "s"
+        },
+        {
+          "cell": "H1",
+          "value": "в т.ч. производственные нужды",
+          "data_type": "s"
+        },
+        {
+          "cell": "I1",
+          "value": "в т.ч. хозяйственно-бытовые нужды",
+          "data_type": "s"
+        }
+      ],
+      "field_mapping": {
+        "Год": "B1"
+      }
+    },
+    {
+      "name": "03_Потребление",
+      "max_row": 3,
+      "max_column": 5,
+      "merged_cells": [],
+      "formulas": [
+        {
+          "cell": "E3",
+          "formula": "=SUMIFS('02_Исходные данные'!E:E,'02_Исходные данные'!A:A,A3,'02_Исходные данные'!B:B,B3,'02_Исходные данные'!C:C,C3)",
+          "value": "=SUMIFS('02_Исходные данные'!E:E,'02_Исходные данные'!A:A,A3,'02_Исходные данные'!B:B,B3,'02_Исходные данные'!C:C,C3)",
+          "row": 3,
+          "column": 5
+        }
+      ],
+      "data_regions": [],
+      "data_cells_count": 10,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Год",
+          "data_type": "s"
+        },
+        {
+          "cell": "B1",
+          "value": "Квартал",
+          "data_type": "s"
+        },
+        {
+          "cell": "C1",
+          "value": "Ресурс",
+          "data_type": "s"
+        },
+        {
+          "cell": "D1",
+          "value": "Ед.",
+          "data_type": "s"
+        },
+        {
+          "cell": "E1",
+          "value": "Итого потребление",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "2023",
+          "data_type": "s"
+        },
+        {
+          "cell": "B3",
+          "value": "I",
+          "data_type": "s"
+        },
+        {
+          "cell": "C3",
+          "value": "Эл. энергия (актив.)",
+          "data_type": "s"
+        },
+        {
+          "cell": "D3",
+          "value": "кВт·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "E3",
+          "value": "=SUMIFS('02_Исходные данные'!E:E,'02_Исходные данные'!A:A,A3,'02_Исходные данные'!B:B,B3,'02_Исходны",
+          "data_type": "f"
+        }
+      ],
+      "field_mapping": {
+        "Год": "B1",
+        "2023": "B3"
+      }
+    },
+    {
+      "name": "04_Баланс",
+      "max_row": 4,
+      "max_column": 5,
+      "merged_cells": [],
+      "formulas": [
+        {
+          "cell": "B2",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "row": 2,
+          "column": 2
+        },
+        {
+          "cell": "C2",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "row": 2,
+          "column": 3
+        },
+        {
+          "cell": "D2",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "row": 2,
+          "column": 4
+        },
+        {
+          "cell": "B3",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "row": 3,
+          "column": 2
+        },
+        {
+          "cell": "C3",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "row": 3,
+          "column": 3
+        },
+        {
+          "cell": "D3",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "row": 3,
+          "column": 4
+        },
+        {
+          "cell": "B4",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "row": 4,
+          "column": 2
+        },
+        {
+          "cell": "C4",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "row": 4,
+          "column": 3
+        },
+        {
+          "cell": "D4",
+          "formula": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "row": 4,
+          "column": 4
+        }
+      ],
+      "data_regions": [],
+      "data_cells_count": 20,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Показатель",
+          "data_type": "s"
+        },
+        {
+          "cell": "B1",
+          "value": "2022",
+          "data_type": "s"
+        },
+        {
+          "cell": "C1",
+          "value": "2023",
+          "data_type": "s"
+        },
+        {
+          "cell": "D1",
+          "value": "2024",
+          "data_type": "s"
+        },
+        {
+          "cell": "E1",
+          "value": "Ед.",
+          "data_type": "s"
+        },
+        {
+          "cell": "A2",
+          "value": "Общее потребление (эл. энергия актив.)",
+          "data_type": "s"
+        },
+        {
+          "cell": "B2",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "C2",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "D2",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "E2",
+          "value": "кВт·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "Общее потребление (эл. энергия реактив.)",
+          "data_type": "s"
+        },
+        {
+          "cell": "B3",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "C3",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "D3",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "E3",
+          "value": "кВт·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "A4",
+          "value": "Потери (если выделены)",
+          "data_type": "s"
+        },
+        {
+          "cell": "B4",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2022,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "C4",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2023,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "D4",
+          "value": "=SUMIFS('03_Потребление'!E:E,'03_Потребление'!A:A,2024,'03_Потребление'!C:C,$A$2)",
+          "data_type": "f"
+        },
+        {
+          "cell": "E4",
+          "value": "кВт·ч",
+          "data_type": "s"
+        }
+      ],
+      "field_mapping": {
+        "Показатель": "B1",
+        "Общее потребление (эл. энергия актив.)": "B2",
+        "Общее потребление (эл. энергия реактив.)": "B3",
+        "Потери (если выделены)": "B4"
+      }
+    },
+    {
+      "name": "05_Динамика",
+      "max_row": 5,
+      "max_column": 6,
+      "merged_cells": [],
+      "formulas": [
+        {
+          "cell": "B3",
+          "formula": "='04_Баланс'!B2",
+          "value": "='04_Баланс'!B2",
+          "row": 3,
+          "column": 2
+        },
+        {
+          "cell": "C3",
+          "formula": "='04_Баланс'!C2",
+          "value": "='04_Баланс'!C2",
+          "row": 3,
+          "column": 3
+        },
+        {
+          "cell": "D3",
+          "formula": "='04_Баланс'!D2",
+          "value": "='04_Баланс'!D2",
+          "row": 3,
+          "column": 4
+        },
+        {
+          "cell": "B4",
+          "formula": "=IFERROR(B3/B2,\"\")",
+          "value": "=IFERROR(B3/B2,\"\")",
+          "row": 4,
+          "column": 2
+        },
+        {
+          "cell": "C4",
+          "formula": "=IFERROR(C3/C2,\"\")",
+          "value": "=IFERROR(C3/C2,\"\")",
+          "row": 4,
+          "column": 3
+        },
+        {
+          "cell": "D4",
+          "formula": "=IFERROR(D3/D2,\"\")",
+          "value": "=IFERROR(D3/D2,\"\")",
+          "row": 4,
+          "column": 4
+        },
+        {
+          "cell": "C5",
+          "formula": "=IFERROR((C4-B4)/B4,\"\")",
+          "value": "=IFERROR((C4-B4)/B4,\"\")",
+          "row": 5,
+          "column": 3
+        },
+        {
+          "cell": "D5",
+          "formula": "=IFERROR((D4-C4)/C4,\"\")",
+          "value": "=IFERROR((D4-C4)/C4,\"\")",
+          "row": 5,
+          "column": 4
+        }
+      ],
+      "data_regions": [],
+      "data_cells_count": 20,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Показатель",
+          "data_type": "s"
+        },
+        {
+          "cell": "B1",
+          "value": "2022",
+          "data_type": "s"
+        },
+        {
+          "cell": "C1",
+          "value": "2023",
+          "data_type": "s"
+        },
+        {
+          "cell": "D1",
+          "value": "2024",
+          "data_type": "s"
+        },
+        {
+          "cell": "E1",
+          "value": "Ед.",
+          "data_type": "s"
+        },
+        {
+          "cell": "F1",
+          "value": "Примечание",
+          "data_type": "s"
+        },
+        {
+          "cell": "A2",
+          "value": "Объем продукции",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "Потребление э/э",
+          "data_type": "s"
+        },
+        {
+          "cell": "B3",
+          "value": "='04_Баланс'!B2",
+          "data_type": "f"
+        },
+        {
+          "cell": "C3",
+          "value": "='04_Баланс'!C2",
+          "data_type": "f"
+        },
+        {
+          "cell": "D3",
+          "value": "='04_Баланс'!D2",
+          "data_type": "f"
+        },
+        {
+          "cell": "A4",
+          "value": "Удельный расход",
+          "data_type": "s"
+        },
+        {
+          "cell": "B4",
+          "value": "=IFERROR(B3/B2,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "C4",
+          "value": "=IFERROR(C3/C2,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D4",
+          "value": "=IFERROR(D3/D2,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "E4",
+          "value": "кВт·ч/ед.",
+          "data_type": "s"
+        },
+        {
+          "cell": "A5",
+          "value": "Изменение, %",
+          "data_type": "s"
+        },
+        {
+          "cell": "C5",
+          "value": "=IFERROR((C4-B4)/B4,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D5",
+          "value": "=IFERROR((D4-C4)/C4,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "E5",
+          "value": "%",
+          "data_type": "s"
+        }
+      ],
+      "field_mapping": {
+        "Показатель": "B1",
+        "Объем продукции": "B2",
+        "Потребление э/э": "B3",
+        "Удельный расход": "B4",
+        "Изменение, %": "B5"
+      }
+    },
+    {
+      "name": "06_Мероприятия",
+      "max_row": 201,
+      "max_column": 4,
+      "merged_cells": [],
+      "formulas": [
+        {
+          "cell": "D2",
+          "formula": "=IFERROR(B2/C2,\"\")",
+          "value": "=IFERROR(B2/C2,\"\")",
+          "row": 2,
+          "column": 4
+        },
+        {
+          "cell": "D3",
+          "formula": "=IFERROR(B3/C3,\"\")",
+          "value": "=IFERROR(B3/C3,\"\")",
+          "row": 3,
+          "column": 4
+        },
+        {
+          "cell": "D4",
+          "formula": "=IFERROR(B4/C4,\"\")",
+          "value": "=IFERROR(B4/C4,\"\")",
+          "row": 4,
+          "column": 4
+        },
+        {
+          "cell": "D5",
+          "formula": "=IFERROR(B5/C5,\"\")",
+          "value": "=IFERROR(B5/C5,\"\")",
+          "row": 5,
+          "column": 4
+        },
+        {
+          "cell": "D6",
+          "formula": "=IFERROR(B6/C6,\"\")",
+          "value": "=IFERROR(B6/C6,\"\")",
+          "row": 6,
+          "column": 4
+        },
+        {
+          "cell": "D7",
+          "formula": "=IFERROR(B7/C7,\"\")",
+          "value": "=IFERROR(B7/C7,\"\")",
+          "row": 7,
+          "column": 4
+        },
+        {
+          "cell": "D8",
+          "formula": "=IFERROR(B8/C8,\"\")",
+          "value": "=IFERROR(B8/C8,\"\")",
+          "row": 8,
+          "column": 4
+        },
+        {
+          "cell": "D9",
+          "formula": "=IFERROR(B9/C9,\"\")",
+          "value": "=IFERROR(B9/C9,\"\")",
+          "row": 9,
+          "column": 4
+        },
+        {
+          "cell": "D10",
+          "formula": "=IFERROR(B10/C10,\"\")",
+          "value": "=IFERROR(B10/C10,\"\")",
+          "row": 10,
+          "column": 4
+        },
+        {
+          "cell": "D11",
+          "formula": "=IFERROR(B11/C11,\"\")",
+          "value": "=IFERROR(B11/C11,\"\")",
+          "row": 11,
+          "column": 4
+        },
+        {
+          "cell": "D12",
+          "formula": "=IFERROR(B12/C12,\"\")",
+          "value": "=IFERROR(B12/C12,\"\")",
+          "row": 12,
+          "column": 4
+        },
+        {
+          "cell": "D13",
+          "formula": "=IFERROR(B13/C13,\"\")",
+          "value": "=IFERROR(B13/C13,\"\")",
+          "row": 13,
+          "column": 4
+        },
+        {
+          "cell": "D14",
+          "formula": "=IFERROR(B14/C14,\"\")",
+          "value": "=IFERROR(B14/C14,\"\")",
+          "row": 14,
+          "column": 4
+        },
+        {
+          "cell": "D15",
+          "formula": "=IFERROR(B15/C15,\"\")",
+          "value": "=IFERROR(B15/C15,\"\")",
+          "row": 15,
+          "column": 4
+        },
+        {
+          "cell": "D16",
+          "formula": "=IFERROR(B16/C16,\"\")",
+          "value": "=IFERROR(B16/C16,\"\")",
+          "row": 16,
+          "column": 4
+        },
+        {
+          "cell": "D17",
+          "formula": "=IFERROR(B17/C17,\"\")",
+          "value": "=IFERROR(B17/C17,\"\")",
+          "row": 17,
+          "column": 4
+        },
+        {
+          "cell": "D18",
+          "formula": "=IFERROR(B18/C18,\"\")",
+          "value": "=IFERROR(B18/C18,\"\")",
+          "row": 18,
+          "column": 4
+        },
+        {
+          "cell": "D19",
+          "formula": "=IFERROR(B19/C19,\"\")",
+          "value": "=IFERROR(B19/C19,\"\")",
+          "row": 19,
+          "column": 4
+        },
+        {
+          "cell": "D20",
+          "formula": "=IFERROR(B20/C20,\"\")",
+          "value": "=IFERROR(B20/C20,\"\")",
+          "row": 20,
+          "column": 4
+        },
+        {
+          "cell": "D21",
+          "formula": "=IFERROR(B21/C21,\"\")",
+          "value": "=IFERROR(B21/C21,\"\")",
+          "row": 21,
+          "column": 4
+        },
+        {
+          "cell": "D22",
+          "formula": "=IFERROR(B22/C22,\"\")",
+          "value": "=IFERROR(B22/C22,\"\")",
+          "row": 22,
+          "column": 4
+        },
+        {
+          "cell": "D23",
+          "formula": "=IFERROR(B23/C23,\"\")",
+          "value": "=IFERROR(B23/C23,\"\")",
+          "row": 23,
+          "column": 4
+        },
+        {
+          "cell": "D24",
+          "formula": "=IFERROR(B24/C24,\"\")",
+          "value": "=IFERROR(B24/C24,\"\")",
+          "row": 24,
+          "column": 4
+        },
+        {
+          "cell": "D25",
+          "formula": "=IFERROR(B25/C25,\"\")",
+          "value": "=IFERROR(B25/C25,\"\")",
+          "row": 25,
+          "column": 4
+        },
+        {
+          "cell": "D26",
+          "formula": "=IFERROR(B26/C26,\"\")",
+          "value": "=IFERROR(B26/C26,\"\")",
+          "row": 26,
+          "column": 4
+        },
+        {
+          "cell": "D27",
+          "formula": "=IFERROR(B27/C27,\"\")",
+          "value": "=IFERROR(B27/C27,\"\")",
+          "row": 27,
+          "column": 4
+        },
+        {
+          "cell": "D28",
+          "formula": "=IFERROR(B28/C28,\"\")",
+          "value": "=IFERROR(B28/C28,\"\")",
+          "row": 28,
+          "column": 4
+        },
+        {
+          "cell": "D29",
+          "formula": "=IFERROR(B29/C29,\"\")",
+          "value": "=IFERROR(B29/C29,\"\")",
+          "row": 29,
+          "column": 4
+        },
+        {
+          "cell": "D30",
+          "formula": "=IFERROR(B30/C30,\"\")",
+          "value": "=IFERROR(B30/C30,\"\")",
+          "row": 30,
+          "column": 4
+        },
+        {
+          "cell": "D31",
+          "formula": "=IFERROR(B31/C31,\"\")",
+          "value": "=IFERROR(B31/C31,\"\")",
+          "row": 31,
+          "column": 4
+        },
+        {
+          "cell": "D32",
+          "formula": "=IFERROR(B32/C32,\"\")",
+          "value": "=IFERROR(B32/C32,\"\")",
+          "row": 32,
+          "column": 4
+        },
+        {
+          "cell": "D33",
+          "formula": "=IFERROR(B33/C33,\"\")",
+          "value": "=IFERROR(B33/C33,\"\")",
+          "row": 33,
+          "column": 4
+        },
+        {
+          "cell": "D34",
+          "formula": "=IFERROR(B34/C34,\"\")",
+          "value": "=IFERROR(B34/C34,\"\")",
+          "row": 34,
+          "column": 4
+        },
+        {
+          "cell": "D35",
+          "formula": "=IFERROR(B35/C35,\"\")",
+          "value": "=IFERROR(B35/C35,\"\")",
+          "row": 35,
+          "column": 4
+        },
+        {
+          "cell": "D36",
+          "formula": "=IFERROR(B36/C36,\"\")",
+          "value": "=IFERROR(B36/C36,\"\")",
+          "row": 36,
+          "column": 4
+        },
+        {
+          "cell": "D37",
+          "formula": "=IFERROR(B37/C37,\"\")",
+          "value": "=IFERROR(B37/C37,\"\")",
+          "row": 37,
+          "column": 4
+        },
+        {
+          "cell": "D38",
+          "formula": "=IFERROR(B38/C38,\"\")",
+          "value": "=IFERROR(B38/C38,\"\")",
+          "row": 38,
+          "column": 4
+        },
+        {
+          "cell": "D39",
+          "formula": "=IFERROR(B39/C39,\"\")",
+          "value": "=IFERROR(B39/C39,\"\")",
+          "row": 39,
+          "column": 4
+        },
+        {
+          "cell": "D40",
+          "formula": "=IFERROR(B40/C40,\"\")",
+          "value": "=IFERROR(B40/C40,\"\")",
+          "row": 40,
+          "column": 4
+        },
+        {
+          "cell": "D41",
+          "formula": "=IFERROR(B41/C41,\"\")",
+          "value": "=IFERROR(B41/C41,\"\")",
+          "row": 41,
+          "column": 4
+        },
+        {
+          "cell": "D42",
+          "formula": "=IFERROR(B42/C42,\"\")",
+          "value": "=IFERROR(B42/C42,\"\")",
+          "row": 42,
+          "column": 4
+        },
+        {
+          "cell": "D43",
+          "formula": "=IFERROR(B43/C43,\"\")",
+          "value": "=IFERROR(B43/C43,\"\")",
+          "row": 43,
+          "column": 4
+        },
+        {
+          "cell": "D44",
+          "formula": "=IFERROR(B44/C44,\"\")",
+          "value": "=IFERROR(B44/C44,\"\")",
+          "row": 44,
+          "column": 4
+        },
+        {
+          "cell": "D45",
+          "formula": "=IFERROR(B45/C45,\"\")",
+          "value": "=IFERROR(B45/C45,\"\")",
+          "row": 45,
+          "column": 4
+        },
+        {
+          "cell": "D46",
+          "formula": "=IFERROR(B46/C46,\"\")",
+          "value": "=IFERROR(B46/C46,\"\")",
+          "row": 46,
+          "column": 4
+        },
+        {
+          "cell": "D47",
+          "formula": "=IFERROR(B47/C47,\"\")",
+          "value": "=IFERROR(B47/C47,\"\")",
+          "row": 47,
+          "column": 4
+        },
+        {
+          "cell": "D48",
+          "formula": "=IFERROR(B48/C48,\"\")",
+          "value": "=IFERROR(B48/C48,\"\")",
+          "row": 48,
+          "column": 4
+        },
+        {
+          "cell": "D49",
+          "formula": "=IFERROR(B49/C49,\"\")",
+          "value": "=IFERROR(B49/C49,\"\")",
+          "row": 49,
+          "column": 4
+        },
+        {
+          "cell": "D50",
+          "formula": "=IFERROR(B50/C50,\"\")",
+          "value": "=IFERROR(B50/C50,\"\")",
+          "row": 50,
+          "column": 4
+        },
+        {
+          "cell": "D51",
+          "formula": "=IFERROR(B51/C51,\"\")",
+          "value": "=IFERROR(B51/C51,\"\")",
+          "row": 51,
+          "column": 4
+        },
+        {
+          "cell": "D52",
+          "formula": "=IFERROR(B52/C52,\"\")",
+          "value": "=IFERROR(B52/C52,\"\")",
+          "row": 52,
+          "column": 4
+        },
+        {
+          "cell": "D53",
+          "formula": "=IFERROR(B53/C53,\"\")",
+          "value": "=IFERROR(B53/C53,\"\")",
+          "row": 53,
+          "column": 4
+        },
+        {
+          "cell": "D54",
+          "formula": "=IFERROR(B54/C54,\"\")",
+          "value": "=IFERROR(B54/C54,\"\")",
+          "row": 54,
+          "column": 4
+        },
+        {
+          "cell": "D55",
+          "formula": "=IFERROR(B55/C55,\"\")",
+          "value": "=IFERROR(B55/C55,\"\")",
+          "row": 55,
+          "column": 4
+        },
+        {
+          "cell": "D56",
+          "formula": "=IFERROR(B56/C56,\"\")",
+          "value": "=IFERROR(B56/C56,\"\")",
+          "row": 56,
+          "column": 4
+        },
+        {
+          "cell": "D57",
+          "formula": "=IFERROR(B57/C57,\"\")",
+          "value": "=IFERROR(B57/C57,\"\")",
+          "row": 57,
+          "column": 4
+        },
+        {
+          "cell": "D58",
+          "formula": "=IFERROR(B58/C58,\"\")",
+          "value": "=IFERROR(B58/C58,\"\")",
+          "row": 58,
+          "column": 4
+        },
+        {
+          "cell": "D59",
+          "formula": "=IFERROR(B59/C59,\"\")",
+          "value": "=IFERROR(B59/C59,\"\")",
+          "row": 59,
+          "column": 4
+        },
+        {
+          "cell": "D60",
+          "formula": "=IFERROR(B60/C60,\"\")",
+          "value": "=IFERROR(B60/C60,\"\")",
+          "row": 60,
+          "column": 4
+        },
+        {
+          "cell": "D61",
+          "formula": "=IFERROR(B61/C61,\"\")",
+          "value": "=IFERROR(B61/C61,\"\")",
+          "row": 61,
+          "column": 4
+        },
+        {
+          "cell": "D62",
+          "formula": "=IFERROR(B62/C62,\"\")",
+          "value": "=IFERROR(B62/C62,\"\")",
+          "row": 62,
+          "column": 4
+        },
+        {
+          "cell": "D63",
+          "formula": "=IFERROR(B63/C63,\"\")",
+          "value": "=IFERROR(B63/C63,\"\")",
+          "row": 63,
+          "column": 4
+        },
+        {
+          "cell": "D64",
+          "formula": "=IFERROR(B64/C64,\"\")",
+          "value": "=IFERROR(B64/C64,\"\")",
+          "row": 64,
+          "column": 4
+        },
+        {
+          "cell": "D65",
+          "formula": "=IFERROR(B65/C65,\"\")",
+          "value": "=IFERROR(B65/C65,\"\")",
+          "row": 65,
+          "column": 4
+        },
+        {
+          "cell": "D66",
+          "formula": "=IFERROR(B66/C66,\"\")",
+          "value": "=IFERROR(B66/C66,\"\")",
+          "row": 66,
+          "column": 4
+        },
+        {
+          "cell": "D67",
+          "formula": "=IFERROR(B67/C67,\"\")",
+          "value": "=IFERROR(B67/C67,\"\")",
+          "row": 67,
+          "column": 4
+        },
+        {
+          "cell": "D68",
+          "formula": "=IFERROR(B68/C68,\"\")",
+          "value": "=IFERROR(B68/C68,\"\")",
+          "row": 68,
+          "column": 4
+        },
+        {
+          "cell": "D69",
+          "formula": "=IFERROR(B69/C69,\"\")",
+          "value": "=IFERROR(B69/C69,\"\")",
+          "row": 69,
+          "column": 4
+        },
+        {
+          "cell": "D70",
+          "formula": "=IFERROR(B70/C70,\"\")",
+          "value": "=IFERROR(B70/C70,\"\")",
+          "row": 70,
+          "column": 4
+        },
+        {
+          "cell": "D71",
+          "formula": "=IFERROR(B71/C71,\"\")",
+          "value": "=IFERROR(B71/C71,\"\")",
+          "row": 71,
+          "column": 4
+        },
+        {
+          "cell": "D72",
+          "formula": "=IFERROR(B72/C72,\"\")",
+          "value": "=IFERROR(B72/C72,\"\")",
+          "row": 72,
+          "column": 4
+        },
+        {
+          "cell": "D73",
+          "formula": "=IFERROR(B73/C73,\"\")",
+          "value": "=IFERROR(B73/C73,\"\")",
+          "row": 73,
+          "column": 4
+        },
+        {
+          "cell": "D74",
+          "formula": "=IFERROR(B74/C74,\"\")",
+          "value": "=IFERROR(B74/C74,\"\")",
+          "row": 74,
+          "column": 4
+        },
+        {
+          "cell": "D75",
+          "formula": "=IFERROR(B75/C75,\"\")",
+          "value": "=IFERROR(B75/C75,\"\")",
+          "row": 75,
+          "column": 4
+        },
+        {
+          "cell": "D76",
+          "formula": "=IFERROR(B76/C76,\"\")",
+          "value": "=IFERROR(B76/C76,\"\")",
+          "row": 76,
+          "column": 4
+        },
+        {
+          "cell": "D77",
+          "formula": "=IFERROR(B77/C77,\"\")",
+          "value": "=IFERROR(B77/C77,\"\")",
+          "row": 77,
+          "column": 4
+        },
+        {
+          "cell": "D78",
+          "formula": "=IFERROR(B78/C78,\"\")",
+          "value": "=IFERROR(B78/C78,\"\")",
+          "row": 78,
+          "column": 4
+        },
+        {
+          "cell": "D79",
+          "formula": "=IFERROR(B79/C79,\"\")",
+          "value": "=IFERROR(B79/C79,\"\")",
+          "row": 79,
+          "column": 4
+        },
+        {
+          "cell": "D80",
+          "formula": "=IFERROR(B80/C80,\"\")",
+          "value": "=IFERROR(B80/C80,\"\")",
+          "row": 80,
+          "column": 4
+        },
+        {
+          "cell": "D81",
+          "formula": "=IFERROR(B81/C81,\"\")",
+          "value": "=IFERROR(B81/C81,\"\")",
+          "row": 81,
+          "column": 4
+        },
+        {
+          "cell": "D82",
+          "formula": "=IFERROR(B82/C82,\"\")",
+          "value": "=IFERROR(B82/C82,\"\")",
+          "row": 82,
+          "column": 4
+        },
+        {
+          "cell": "D83",
+          "formula": "=IFERROR(B83/C83,\"\")",
+          "value": "=IFERROR(B83/C83,\"\")",
+          "row": 83,
+          "column": 4
+        },
+        {
+          "cell": "D84",
+          "formula": "=IFERROR(B84/C84,\"\")",
+          "value": "=IFERROR(B84/C84,\"\")",
+          "row": 84,
+          "column": 4
+        },
+        {
+          "cell": "D85",
+          "formula": "=IFERROR(B85/C85,\"\")",
+          "value": "=IFERROR(B85/C85,\"\")",
+          "row": 85,
+          "column": 4
+        },
+        {
+          "cell": "D86",
+          "formula": "=IFERROR(B86/C86,\"\")",
+          "value": "=IFERROR(B86/C86,\"\")",
+          "row": 86,
+          "column": 4
+        },
+        {
+          "cell": "D87",
+          "formula": "=IFERROR(B87/C87,\"\")",
+          "value": "=IFERROR(B87/C87,\"\")",
+          "row": 87,
+          "column": 4
+        },
+        {
+          "cell": "D88",
+          "formula": "=IFERROR(B88/C88,\"\")",
+          "value": "=IFERROR(B88/C88,\"\")",
+          "row": 88,
+          "column": 4
+        },
+        {
+          "cell": "D89",
+          "formula": "=IFERROR(B89/C89,\"\")",
+          "value": "=IFERROR(B89/C89,\"\")",
+          "row": 89,
+          "column": 4
+        },
+        {
+          "cell": "D90",
+          "formula": "=IFERROR(B90/C90,\"\")",
+          "value": "=IFERROR(B90/C90,\"\")",
+          "row": 90,
+          "column": 4
+        },
+        {
+          "cell": "D91",
+          "formula": "=IFERROR(B91/C91,\"\")",
+          "value": "=IFERROR(B91/C91,\"\")",
+          "row": 91,
+          "column": 4
+        },
+        {
+          "cell": "D92",
+          "formula": "=IFERROR(B92/C92,\"\")",
+          "value": "=IFERROR(B92/C92,\"\")",
+          "row": 92,
+          "column": 4
+        },
+        {
+          "cell": "D93",
+          "formula": "=IFERROR(B93/C93,\"\")",
+          "value": "=IFERROR(B93/C93,\"\")",
+          "row": 93,
+          "column": 4
+        },
+        {
+          "cell": "D94",
+          "formula": "=IFERROR(B94/C94,\"\")",
+          "value": "=IFERROR(B94/C94,\"\")",
+          "row": 94,
+          "column": 4
+        },
+        {
+          "cell": "D95",
+          "formula": "=IFERROR(B95/C95,\"\")",
+          "value": "=IFERROR(B95/C95,\"\")",
+          "row": 95,
+          "column": 4
+        },
+        {
+          "cell": "D96",
+          "formula": "=IFERROR(B96/C96,\"\")",
+          "value": "=IFERROR(B96/C96,\"\")",
+          "row": 96,
+          "column": 4
+        },
+        {
+          "cell": "D97",
+          "formula": "=IFERROR(B97/C97,\"\")",
+          "value": "=IFERROR(B97/C97,\"\")",
+          "row": 97,
+          "column": 4
+        },
+        {
+          "cell": "D98",
+          "formula": "=IFERROR(B98/C98,\"\")",
+          "value": "=IFERROR(B98/C98,\"\")",
+          "row": 98,
+          "column": 4
+        },
+        {
+          "cell": "D99",
+          "formula": "=IFERROR(B99/C99,\"\")",
+          "value": "=IFERROR(B99/C99,\"\")",
+          "row": 99,
+          "column": 4
+        },
+        {
+          "cell": "D100",
+          "formula": "=IFERROR(B100/C100,\"\")",
+          "value": "=IFERROR(B100/C100,\"\")",
+          "row": 100,
+          "column": 4
+        },
+        {
+          "cell": "D101",
+          "formula": "=IFERROR(B101/C101,\"\")",
+          "value": "=IFERROR(B101/C101,\"\")",
+          "row": 101,
+          "column": 4
+        },
+        {
+          "cell": "D102",
+          "formula": "=IFERROR(B102/C102,\"\")",
+          "value": "=IFERROR(B102/C102,\"\")",
+          "row": 102,
+          "column": 4
+        },
+        {
+          "cell": "D103",
+          "formula": "=IFERROR(B103/C103,\"\")",
+          "value": "=IFERROR(B103/C103,\"\")",
+          "row": 103,
+          "column": 4
+        },
+        {
+          "cell": "D104",
+          "formula": "=IFERROR(B104/C104,\"\")",
+          "value": "=IFERROR(B104/C104,\"\")",
+          "row": 104,
+          "column": 4
+        },
+        {
+          "cell": "D105",
+          "formula": "=IFERROR(B105/C105,\"\")",
+          "value": "=IFERROR(B105/C105,\"\")",
+          "row": 105,
+          "column": 4
+        },
+        {
+          "cell": "D106",
+          "formula": "=IFERROR(B106/C106,\"\")",
+          "value": "=IFERROR(B106/C106,\"\")",
+          "row": 106,
+          "column": 4
+        },
+        {
+          "cell": "D107",
+          "formula": "=IFERROR(B107/C107,\"\")",
+          "value": "=IFERROR(B107/C107,\"\")",
+          "row": 107,
+          "column": 4
+        },
+        {
+          "cell": "D108",
+          "formula": "=IFERROR(B108/C108,\"\")",
+          "value": "=IFERROR(B108/C108,\"\")",
+          "row": 108,
+          "column": 4
+        },
+        {
+          "cell": "D109",
+          "formula": "=IFERROR(B109/C109,\"\")",
+          "value": "=IFERROR(B109/C109,\"\")",
+          "row": 109,
+          "column": 4
+        },
+        {
+          "cell": "D110",
+          "formula": "=IFERROR(B110/C110,\"\")",
+          "value": "=IFERROR(B110/C110,\"\")",
+          "row": 110,
+          "column": 4
+        },
+        {
+          "cell": "D111",
+          "formula": "=IFERROR(B111/C111,\"\")",
+          "value": "=IFERROR(B111/C111,\"\")",
+          "row": 111,
+          "column": 4
+        },
+        {
+          "cell": "D112",
+          "formula": "=IFERROR(B112/C112,\"\")",
+          "value": "=IFERROR(B112/C112,\"\")",
+          "row": 112,
+          "column": 4
+        },
+        {
+          "cell": "D113",
+          "formula": "=IFERROR(B113/C113,\"\")",
+          "value": "=IFERROR(B113/C113,\"\")",
+          "row": 113,
+          "column": 4
+        },
+        {
+          "cell": "D114",
+          "formula": "=IFERROR(B114/C114,\"\")",
+          "value": "=IFERROR(B114/C114,\"\")",
+          "row": 114,
+          "column": 4
+        },
+        {
+          "cell": "D115",
+          "formula": "=IFERROR(B115/C115,\"\")",
+          "value": "=IFERROR(B115/C115,\"\")",
+          "row": 115,
+          "column": 4
+        },
+        {
+          "cell": "D116",
+          "formula": "=IFERROR(B116/C116,\"\")",
+          "value": "=IFERROR(B116/C116,\"\")",
+          "row": 116,
+          "column": 4
+        },
+        {
+          "cell": "D117",
+          "formula": "=IFERROR(B117/C117,\"\")",
+          "value": "=IFERROR(B117/C117,\"\")",
+          "row": 117,
+          "column": 4
+        },
+        {
+          "cell": "D118",
+          "formula": "=IFERROR(B118/C118,\"\")",
+          "value": "=IFERROR(B118/C118,\"\")",
+          "row": 118,
+          "column": 4
+        },
+        {
+          "cell": "D119",
+          "formula": "=IFERROR(B119/C119,\"\")",
+          "value": "=IFERROR(B119/C119,\"\")",
+          "row": 119,
+          "column": 4
+        },
+        {
+          "cell": "D120",
+          "formula": "=IFERROR(B120/C120,\"\")",
+          "value": "=IFERROR(B120/C120,\"\")",
+          "row": 120,
+          "column": 4
+        },
+        {
+          "cell": "D121",
+          "formula": "=IFERROR(B121/C121,\"\")",
+          "value": "=IFERROR(B121/C121,\"\")",
+          "row": 121,
+          "column": 4
+        },
+        {
+          "cell": "D122",
+          "formula": "=IFERROR(B122/C122,\"\")",
+          "value": "=IFERROR(B122/C122,\"\")",
+          "row": 122,
+          "column": 4
+        },
+        {
+          "cell": "D123",
+          "formula": "=IFERROR(B123/C123,\"\")",
+          "value": "=IFERROR(B123/C123,\"\")",
+          "row": 123,
+          "column": 4
+        },
+        {
+          "cell": "D124",
+          "formula": "=IFERROR(B124/C124,\"\")",
+          "value": "=IFERROR(B124/C124,\"\")",
+          "row": 124,
+          "column": 4
+        },
+        {
+          "cell": "D125",
+          "formula": "=IFERROR(B125/C125,\"\")",
+          "value": "=IFERROR(B125/C125,\"\")",
+          "row": 125,
+          "column": 4
+        },
+        {
+          "cell": "D126",
+          "formula": "=IFERROR(B126/C126,\"\")",
+          "value": "=IFERROR(B126/C126,\"\")",
+          "row": 126,
+          "column": 4
+        },
+        {
+          "cell": "D127",
+          "formula": "=IFERROR(B127/C127,\"\")",
+          "value": "=IFERROR(B127/C127,\"\")",
+          "row": 127,
+          "column": 4
+        },
+        {
+          "cell": "D128",
+          "formula": "=IFERROR(B128/C128,\"\")",
+          "value": "=IFERROR(B128/C128,\"\")",
+          "row": 128,
+          "column": 4
+        },
+        {
+          "cell": "D129",
+          "formula": "=IFERROR(B129/C129,\"\")",
+          "value": "=IFERROR(B129/C129,\"\")",
+          "row": 129,
+          "column": 4
+        },
+        {
+          "cell": "D130",
+          "formula": "=IFERROR(B130/C130,\"\")",
+          "value": "=IFERROR(B130/C130,\"\")",
+          "row": 130,
+          "column": 4
+        },
+        {
+          "cell": "D131",
+          "formula": "=IFERROR(B131/C131,\"\")",
+          "value": "=IFERROR(B131/C131,\"\")",
+          "row": 131,
+          "column": 4
+        },
+        {
+          "cell": "D132",
+          "formula": "=IFERROR(B132/C132,\"\")",
+          "value": "=IFERROR(B132/C132,\"\")",
+          "row": 132,
+          "column": 4
+        },
+        {
+          "cell": "D133",
+          "formula": "=IFERROR(B133/C133,\"\")",
+          "value": "=IFERROR(B133/C133,\"\")",
+          "row": 133,
+          "column": 4
+        },
+        {
+          "cell": "D134",
+          "formula": "=IFERROR(B134/C134,\"\")",
+          "value": "=IFERROR(B134/C134,\"\")",
+          "row": 134,
+          "column": 4
+        },
+        {
+          "cell": "D135",
+          "formula": "=IFERROR(B135/C135,\"\")",
+          "value": "=IFERROR(B135/C135,\"\")",
+          "row": 135,
+          "column": 4
+        },
+        {
+          "cell": "D136",
+          "formula": "=IFERROR(B136/C136,\"\")",
+          "value": "=IFERROR(B136/C136,\"\")",
+          "row": 136,
+          "column": 4
+        },
+        {
+          "cell": "D137",
+          "formula": "=IFERROR(B137/C137,\"\")",
+          "value": "=IFERROR(B137/C137,\"\")",
+          "row": 137,
+          "column": 4
+        },
+        {
+          "cell": "D138",
+          "formula": "=IFERROR(B138/C138,\"\")",
+          "value": "=IFERROR(B138/C138,\"\")",
+          "row": 138,
+          "column": 4
+        },
+        {
+          "cell": "D139",
+          "formula": "=IFERROR(B139/C139,\"\")",
+          "value": "=IFERROR(B139/C139,\"\")",
+          "row": 139,
+          "column": 4
+        },
+        {
+          "cell": "D140",
+          "formula": "=IFERROR(B140/C140,\"\")",
+          "value": "=IFERROR(B140/C140,\"\")",
+          "row": 140,
+          "column": 4
+        },
+        {
+          "cell": "D141",
+          "formula": "=IFERROR(B141/C141,\"\")",
+          "value": "=IFERROR(B141/C141,\"\")",
+          "row": 141,
+          "column": 4
+        },
+        {
+          "cell": "D142",
+          "formula": "=IFERROR(B142/C142,\"\")",
+          "value": "=IFERROR(B142/C142,\"\")",
+          "row": 142,
+          "column": 4
+        },
+        {
+          "cell": "D143",
+          "formula": "=IFERROR(B143/C143,\"\")",
+          "value": "=IFERROR(B143/C143,\"\")",
+          "row": 143,
+          "column": 4
+        },
+        {
+          "cell": "D144",
+          "formula": "=IFERROR(B144/C144,\"\")",
+          "value": "=IFERROR(B144/C144,\"\")",
+          "row": 144,
+          "column": 4
+        },
+        {
+          "cell": "D145",
+          "formula": "=IFERROR(B145/C145,\"\")",
+          "value": "=IFERROR(B145/C145,\"\")",
+          "row": 145,
+          "column": 4
+        },
+        {
+          "cell": "D146",
+          "formula": "=IFERROR(B146/C146,\"\")",
+          "value": "=IFERROR(B146/C146,\"\")",
+          "row": 146,
+          "column": 4
+        },
+        {
+          "cell": "D147",
+          "formula": "=IFERROR(B147/C147,\"\")",
+          "value": "=IFERROR(B147/C147,\"\")",
+          "row": 147,
+          "column": 4
+        },
+        {
+          "cell": "D148",
+          "formula": "=IFERROR(B148/C148,\"\")",
+          "value": "=IFERROR(B148/C148,\"\")",
+          "row": 148,
+          "column": 4
+        },
+        {
+          "cell": "D149",
+          "formula": "=IFERROR(B149/C149,\"\")",
+          "value": "=IFERROR(B149/C149,\"\")",
+          "row": 149,
+          "column": 4
+        },
+        {
+          "cell": "D150",
+          "formula": "=IFERROR(B150/C150,\"\")",
+          "value": "=IFERROR(B150/C150,\"\")",
+          "row": 150,
+          "column": 4
+        },
+        {
+          "cell": "D151",
+          "formula": "=IFERROR(B151/C151,\"\")",
+          "value": "=IFERROR(B151/C151,\"\")",
+          "row": 151,
+          "column": 4
+        },
+        {
+          "cell": "D152",
+          "formula": "=IFERROR(B152/C152,\"\")",
+          "value": "=IFERROR(B152/C152,\"\")",
+          "row": 152,
+          "column": 4
+        },
+        {
+          "cell": "D153",
+          "formula": "=IFERROR(B153/C153,\"\")",
+          "value": "=IFERROR(B153/C153,\"\")",
+          "row": 153,
+          "column": 4
+        },
+        {
+          "cell": "D154",
+          "formula": "=IFERROR(B154/C154,\"\")",
+          "value": "=IFERROR(B154/C154,\"\")",
+          "row": 154,
+          "column": 4
+        },
+        {
+          "cell": "D155",
+          "formula": "=IFERROR(B155/C155,\"\")",
+          "value": "=IFERROR(B155/C155,\"\")",
+          "row": 155,
+          "column": 4
+        },
+        {
+          "cell": "D156",
+          "formula": "=IFERROR(B156/C156,\"\")",
+          "value": "=IFERROR(B156/C156,\"\")",
+          "row": 156,
+          "column": 4
+        },
+        {
+          "cell": "D157",
+          "formula": "=IFERROR(B157/C157,\"\")",
+          "value": "=IFERROR(B157/C157,\"\")",
+          "row": 157,
+          "column": 4
+        },
+        {
+          "cell": "D158",
+          "formula": "=IFERROR(B158/C158,\"\")",
+          "value": "=IFERROR(B158/C158,\"\")",
+          "row": 158,
+          "column": 4
+        },
+        {
+          "cell": "D159",
+          "formula": "=IFERROR(B159/C159,\"\")",
+          "value": "=IFERROR(B159/C159,\"\")",
+          "row": 159,
+          "column": 4
+        },
+        {
+          "cell": "D160",
+          "formula": "=IFERROR(B160/C160,\"\")",
+          "value": "=IFERROR(B160/C160,\"\")",
+          "row": 160,
+          "column": 4
+        },
+        {
+          "cell": "D161",
+          "formula": "=IFERROR(B161/C161,\"\")",
+          "value": "=IFERROR(B161/C161,\"\")",
+          "row": 161,
+          "column": 4
+        },
+        {
+          "cell": "D162",
+          "formula": "=IFERROR(B162/C162,\"\")",
+          "value": "=IFERROR(B162/C162,\"\")",
+          "row": 162,
+          "column": 4
+        },
+        {
+          "cell": "D163",
+          "formula": "=IFERROR(B163/C163,\"\")",
+          "value": "=IFERROR(B163/C163,\"\")",
+          "row": 163,
+          "column": 4
+        },
+        {
+          "cell": "D164",
+          "formula": "=IFERROR(B164/C164,\"\")",
+          "value": "=IFERROR(B164/C164,\"\")",
+          "row": 164,
+          "column": 4
+        },
+        {
+          "cell": "D165",
+          "formula": "=IFERROR(B165/C165,\"\")",
+          "value": "=IFERROR(B165/C165,\"\")",
+          "row": 165,
+          "column": 4
+        },
+        {
+          "cell": "D166",
+          "formula": "=IFERROR(B166/C166,\"\")",
+          "value": "=IFERROR(B166/C166,\"\")",
+          "row": 166,
+          "column": 4
+        },
+        {
+          "cell": "D167",
+          "formula": "=IFERROR(B167/C167,\"\")",
+          "value": "=IFERROR(B167/C167,\"\")",
+          "row": 167,
+          "column": 4
+        },
+        {
+          "cell": "D168",
+          "formula": "=IFERROR(B168/C168,\"\")",
+          "value": "=IFERROR(B168/C168,\"\")",
+          "row": 168,
+          "column": 4
+        },
+        {
+          "cell": "D169",
+          "formula": "=IFERROR(B169/C169,\"\")",
+          "value": "=IFERROR(B169/C169,\"\")",
+          "row": 169,
+          "column": 4
+        },
+        {
+          "cell": "D170",
+          "formula": "=IFERROR(B170/C170,\"\")",
+          "value": "=IFERROR(B170/C170,\"\")",
+          "row": 170,
+          "column": 4
+        },
+        {
+          "cell": "D171",
+          "formula": "=IFERROR(B171/C171,\"\")",
+          "value": "=IFERROR(B171/C171,\"\")",
+          "row": 171,
+          "column": 4
+        },
+        {
+          "cell": "D172",
+          "formula": "=IFERROR(B172/C172,\"\")",
+          "value": "=IFERROR(B172/C172,\"\")",
+          "row": 172,
+          "column": 4
+        },
+        {
+          "cell": "D173",
+          "formula": "=IFERROR(B173/C173,\"\")",
+          "value": "=IFERROR(B173/C173,\"\")",
+          "row": 173,
+          "column": 4
+        },
+        {
+          "cell": "D174",
+          "formula": "=IFERROR(B174/C174,\"\")",
+          "value": "=IFERROR(B174/C174,\"\")",
+          "row": 174,
+          "column": 4
+        },
+        {
+          "cell": "D175",
+          "formula": "=IFERROR(B175/C175,\"\")",
+          "value": "=IFERROR(B175/C175,\"\")",
+          "row": 175,
+          "column": 4
+        },
+        {
+          "cell": "D176",
+          "formula": "=IFERROR(B176/C176,\"\")",
+          "value": "=IFERROR(B176/C176,\"\")",
+          "row": 176,
+          "column": 4
+        },
+        {
+          "cell": "D177",
+          "formula": "=IFERROR(B177/C177,\"\")",
+          "value": "=IFERROR(B177/C177,\"\")",
+          "row": 177,
+          "column": 4
+        },
+        {
+          "cell": "D178",
+          "formula": "=IFERROR(B178/C178,\"\")",
+          "value": "=IFERROR(B178/C178,\"\")",
+          "row": 178,
+          "column": 4
+        },
+        {
+          "cell": "D179",
+          "formula": "=IFERROR(B179/C179,\"\")",
+          "value": "=IFERROR(B179/C179,\"\")",
+          "row": 179,
+          "column": 4
+        },
+        {
+          "cell": "D180",
+          "formula": "=IFERROR(B180/C180,\"\")",
+          "value": "=IFERROR(B180/C180,\"\")",
+          "row": 180,
+          "column": 4
+        },
+        {
+          "cell": "D181",
+          "formula": "=IFERROR(B181/C181,\"\")",
+          "value": "=IFERROR(B181/C181,\"\")",
+          "row": 181,
+          "column": 4
+        },
+        {
+          "cell": "D182",
+          "formula": "=IFERROR(B182/C182,\"\")",
+          "value": "=IFERROR(B182/C182,\"\")",
+          "row": 182,
+          "column": 4
+        },
+        {
+          "cell": "D183",
+          "formula": "=IFERROR(B183/C183,\"\")",
+          "value": "=IFERROR(B183/C183,\"\")",
+          "row": 183,
+          "column": 4
+        },
+        {
+          "cell": "D184",
+          "formula": "=IFERROR(B184/C184,\"\")",
+          "value": "=IFERROR(B184/C184,\"\")",
+          "row": 184,
+          "column": 4
+        },
+        {
+          "cell": "D185",
+          "formula": "=IFERROR(B185/C185,\"\")",
+          "value": "=IFERROR(B185/C185,\"\")",
+          "row": 185,
+          "column": 4
+        },
+        {
+          "cell": "D186",
+          "formula": "=IFERROR(B186/C186,\"\")",
+          "value": "=IFERROR(B186/C186,\"\")",
+          "row": 186,
+          "column": 4
+        },
+        {
+          "cell": "D187",
+          "formula": "=IFERROR(B187/C187,\"\")",
+          "value": "=IFERROR(B187/C187,\"\")",
+          "row": 187,
+          "column": 4
+        },
+        {
+          "cell": "D188",
+          "formula": "=IFERROR(B188/C188,\"\")",
+          "value": "=IFERROR(B188/C188,\"\")",
+          "row": 188,
+          "column": 4
+        },
+        {
+          "cell": "D189",
+          "formula": "=IFERROR(B189/C189,\"\")",
+          "value": "=IFERROR(B189/C189,\"\")",
+          "row": 189,
+          "column": 4
+        },
+        {
+          "cell": "D190",
+          "formula": "=IFERROR(B190/C190,\"\")",
+          "value": "=IFERROR(B190/C190,\"\")",
+          "row": 190,
+          "column": 4
+        },
+        {
+          "cell": "D191",
+          "formula": "=IFERROR(B191/C191,\"\")",
+          "value": "=IFERROR(B191/C191,\"\")",
+          "row": 191,
+          "column": 4
+        },
+        {
+          "cell": "D192",
+          "formula": "=IFERROR(B192/C192,\"\")",
+          "value": "=IFERROR(B192/C192,\"\")",
+          "row": 192,
+          "column": 4
+        },
+        {
+          "cell": "D193",
+          "formula": "=IFERROR(B193/C193,\"\")",
+          "value": "=IFERROR(B193/C193,\"\")",
+          "row": 193,
+          "column": 4
+        },
+        {
+          "cell": "D194",
+          "formula": "=IFERROR(B194/C194,\"\")",
+          "value": "=IFERROR(B194/C194,\"\")",
+          "row": 194,
+          "column": 4
+        },
+        {
+          "cell": "D195",
+          "formula": "=IFERROR(B195/C195,\"\")",
+          "value": "=IFERROR(B195/C195,\"\")",
+          "row": 195,
+          "column": 4
+        },
+        {
+          "cell": "D196",
+          "formula": "=IFERROR(B196/C196,\"\")",
+          "value": "=IFERROR(B196/C196,\"\")",
+          "row": 196,
+          "column": 4
+        },
+        {
+          "cell": "D197",
+          "formula": "=IFERROR(B197/C197,\"\")",
+          "value": "=IFERROR(B197/C197,\"\")",
+          "row": 197,
+          "column": 4
+        },
+        {
+          "cell": "D198",
+          "formula": "=IFERROR(B198/C198,\"\")",
+          "value": "=IFERROR(B198/C198,\"\")",
+          "row": 198,
+          "column": 4
+        },
+        {
+          "cell": "D199",
+          "formula": "=IFERROR(B199/C199,\"\")",
+          "value": "=IFERROR(B199/C199,\"\")",
+          "row": 199,
+          "column": 4
+        },
+        {
+          "cell": "D200",
+          "formula": "=IFERROR(B200/C200,\"\")",
+          "value": "=IFERROR(B200/C200,\"\")",
+          "row": 200,
+          "column": 4
+        },
+        {
+          "cell": "D201",
+          "formula": "=IFERROR(B201/C201,\"\")",
+          "value": "=IFERROR(B201/C201,\"\")",
+          "row": 201,
+          "column": 4
+        }
+      ],
+      "data_regions": [],
+      "data_cells_count": 204,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Мероприятие",
+          "data_type": "s"
+        },
+        {
+          "cell": "B1",
+          "value": "Затраты на реализацию, сум",
+          "data_type": "s"
+        },
+        {
+          "cell": "C1",
+          "value": "Годовая экономия, тыс. сум",
+          "data_type": "s"
+        },
+        {
+          "cell": "D1",
+          "value": "Срок окупаемости, лет",
+          "data_type": "s"
+        },
+        {
+          "cell": "D2",
+          "value": "=IFERROR(B2/C2,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D3",
+          "value": "=IFERROR(B3/C3,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D4",
+          "value": "=IFERROR(B4/C4,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D5",
+          "value": "=IFERROR(B5/C5,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D6",
+          "value": "=IFERROR(B6/C6,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D7",
+          "value": "=IFERROR(B7/C7,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D8",
+          "value": "=IFERROR(B8/C8,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D9",
+          "value": "=IFERROR(B9/C9,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D10",
+          "value": "=IFERROR(B10/C10,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D11",
+          "value": "=IFERROR(B11/C11,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D12",
+          "value": "=IFERROR(B12/C12,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D13",
+          "value": "=IFERROR(B13/C13,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D14",
+          "value": "=IFERROR(B14/C14,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D15",
+          "value": "=IFERROR(B15/C15,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D16",
+          "value": "=IFERROR(B16/C16,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D17",
+          "value": "=IFERROR(B17/C17,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D18",
+          "value": "=IFERROR(B18/C18,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D19",
+          "value": "=IFERROR(B19/C19,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D20",
+          "value": "=IFERROR(B20/C20,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D21",
+          "value": "=IFERROR(B21/C21,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D22",
+          "value": "=IFERROR(B22/C22,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D23",
+          "value": "=IFERROR(B23/C23,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D24",
+          "value": "=IFERROR(B24/C24,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D25",
+          "value": "=IFERROR(B25/C25,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D26",
+          "value": "=IFERROR(B26/C26,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D27",
+          "value": "=IFERROR(B27/C27,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D28",
+          "value": "=IFERROR(B28/C28,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D29",
+          "value": "=IFERROR(B29/C29,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D30",
+          "value": "=IFERROR(B30/C30,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D31",
+          "value": "=IFERROR(B31/C31,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D32",
+          "value": "=IFERROR(B32/C32,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D33",
+          "value": "=IFERROR(B33/C33,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D34",
+          "value": "=IFERROR(B34/C34,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D35",
+          "value": "=IFERROR(B35/C35,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D36",
+          "value": "=IFERROR(B36/C36,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D37",
+          "value": "=IFERROR(B37/C37,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D38",
+          "value": "=IFERROR(B38/C38,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D39",
+          "value": "=IFERROR(B39/C39,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D40",
+          "value": "=IFERROR(B40/C40,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D41",
+          "value": "=IFERROR(B41/C41,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D42",
+          "value": "=IFERROR(B42/C42,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D43",
+          "value": "=IFERROR(B43/C43,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D44",
+          "value": "=IFERROR(B44/C44,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D45",
+          "value": "=IFERROR(B45/C45,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D46",
+          "value": "=IFERROR(B46/C46,\"\")",
+          "data_type": "f"
+        },
+        {
+          "cell": "D47",
+          "value": "=IFERROR(B47/C47,\"\")",
+          "data_type": "f"
+        }
+      ],
+      "field_mapping": {
+        "Мероприятие": "B1"
+      }
+    },
+    {
+      "name": "07_Выводы",
+      "max_row": 5,
+      "max_column": 1,
+      "merged_cells": [],
+      "formulas": [],
+      "data_regions": [],
+      "data_cells_count": 2,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Выводы:",
+          "data_type": "s"
+        },
+        {
+          "cell": "A4",
+          "value": "Предложения:",
+          "data_type": "s"
+        }
+      ],
+      "field_mapping": {
+        "Выводы:": "B1",
+        "Предложения:": "B4"
+      }
+    },
+    {
+      "name": "Help",
+      "max_row": 5,
+      "max_column": 1,
+      "merged_cells": [],
+      "formulas": [],
+      "data_regions": [],
+      "data_cells_count": 3,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Пример записи формулы (как текст, скопируйте вручную):",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "СУММЕСЛИМН('02_Исходные данные'!E:E; '02_Исходные данные'!A:A; 2023; '02_Исходные данные'!B:B; \"I\"; ",
+          "data_type": "s"
+        },
+        {
+          "cell": "A5",
+          "value": "Примечание: не ставьте знак '=' в начале при хранении примера на этом листе. Вставляйте '=' уже в це",
+          "data_type": "s"
+        }
+      ],
+      "field_mapping": {
+        "Пример записи формулы (как текст, скопируйте вручную):": "B1",
+        "СУММЕСЛИМН('02_Исходные данные'!E:E; '02_Исходные данные'!A:A; 2023; '02_Исходные данные'!B:B; \"I\"; '02_Исходные данные'!C:C; \"Эл. энергия (актив.)\")": "B3",
+        "Примечание: не ставьте знак '=' в начале при хранении примера на этом листе. Вставляйте '=' уже в целевой ячейке.": "B5"
+      }
+    },
+    {
+      "name": "08_Потери_электроэнергии",
+      "max_row": 12,
+      "max_column": 2,
+      "merged_cells": [],
+      "formulas": [
+        {
+          "cell": "B8",
+          "formula": "=IF(B3*B6>0,B4/(B3*B6)*100,0)",
+          "value": "=IF(B3*B6>0,B4/(B3*B6)*100,0)",
+          "row": 8,
+          "column": 2
+        },
+        {
+          "cell": "B9",
+          "formula": "=IF(B3*B6>0,B5/(B3*B6)*100,0)",
+          "value": "=IF(B3*B6>0,B5/(B3*B6)*100,0)",
+          "row": 9,
+          "column": 2
+        }
+      ],
+      "data_regions": [],
+      "data_cells_count": 17,
+      "sample_data_cells": [
+        {
+          "cell": "A1",
+          "value": "Расчёт потерь трансформатора",
+          "data_type": "s"
+        },
+        {
+          "cell": "A3",
+          "value": "Мощность трансформатора, kVA",
+          "data_type": "s"
+        },
+        {
+          "cell": "B3",
+          "value": "1000",
+          "data_type": "n"
+        },
+        {
+          "cell": "A4",
+          "value": "Потери активной энергии за месяц, кВт·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "B4",
+          "value": "3200",
+          "data_type": "n"
+        },
+        {
+          "cell": "A5",
+          "value": "Потери реактивной энергии за месяц, кВАр·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "B5",
+          "value": "13600",
+          "data_type": "n"
+        },
+        {
+          "cell": "A6",
+          "value": "Количество часов в месяце",
+          "data_type": "s"
+        },
+        {
+          "cell": "B6",
+          "value": "720",
+          "data_type": "n"
+        },
+        {
+          "cell": "A8",
+          "value": "Процент потерь активной энергии",
+          "data_type": "s"
+        },
+        {
+          "cell": "B8",
+          "value": "=IF(B3*B6>0,B4/(B3*B6)*100,0)",
+          "data_type": "f"
+        },
+        {
+          "cell": "A9",
+          "value": "Процент потерь реактивной энергии",
+          "data_type": "s"
+        },
+        {
+          "cell": "B9",
+          "value": "=IF(B3*B6>0,B5/(B3*B6)*100,0)",
+          "data_type": "f"
+        },
+        {
+          "cell": "A11",
+          "value": "Потери активной энергии за квартал, кВт·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "B11",
+          "value": "9600",
+          "data_type": "n"
+        },
+        {
+          "cell": "A12",
+          "value": "Потери реактивной энергии за квартал, кВАр·ч",
+          "data_type": "s"
+        },
+        {
+          "cell": "B12",
+          "value": "40800",
+          "data_type": "n"
+        }
+      ],
+      "field_mapping": {
+        "Расчёт потерь трансформатора": "B1",
+        "Мощность трансформатора, kVA": "B3",
+        "Потери активной энергии за месяц, кВт·ч": "B4",
+        "Потери реактивной энергии за месяц, кВАр·ч": "B5",
+        "Количество часов в месяце": "B6",
+        "Процент потерь активной энергии": "B8",
+        "Процент потерь реактивной энергии": "B9",
+        "Потери активной энергии за квартал, кВт·ч": "B11",
+        "Потери реактивной энергии за квартал, кВАр·ч": "B12"
+      }
+    }
+  ],
+  "named_ranges": [
+    {
+      "name": "RES_TYPES",
+      "definition": "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='RES_TYPES', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='_dict!$A$1:$A$11'",
+      "scope": "workbook"
+    },
+    {
+      "name": "UNITS",
+      "definition": "<openpyxl.workbook.defined_name.DefinedName object>\nParameters:\nname='UNITS', comment=None, customMenu=None, description=None, help=None, statusBar=None, localSheetId=None, hidden=None, function=None, vbProcedure=None, xlm=None, functionGroupId=None, shortcutKey=None, publishToServer=None, workbookParameter=None, attr_text='_dict!$B$1:$B$7'",
+      "scope": "workbook"
+    }
+  ],
+  "total_sheets": 11
+}

@@ -1,0 +1,40 @@
+{
+  "test_date": "2025-11-29",
+  "source_file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\CamScanner 17-04-2025 15.17.pdf",
+  "total_pages": 4,
+  "low_confidence_count": 0,
+  "results": [
+    {
+      "page": 1,
+      "confidence": 0.9,
+      "has_validation_flag": false,
+      "validation_flags": [],
+      "characters": 107,
+      "tables_count": 0
+    },
+    {
+      "page": 2,
+      "confidence": 0.9,
+      "has_validation_flag": false,
+      "validation_flags": [],
+      "characters": 2293,
+      "tables_count": 1
+    },
+    {
+      "page": 3,
+      "confidence": 0.9,
+      "has_validation_flag": false,
+      "validation_flags": [],
+      "characters": 1065,
+      "tables_count": 1
+    },
+    {
+      "page": 4,
+      "confidence": 0.9,
+      "has_validation_flag": false,
+      "validation_flags": [],
+      "characters": 1229,
+      "tables_count": 1
+    }
+  ]
+}

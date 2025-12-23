@@ -1,0 +1,52 @@
+🤝 ПРОМПТ ДЛЯ AGENT-2: БЫСТРЫЙ СТАРТ
+
+Ты работаешь вместе с Agent-1 (Auto) в проекте EAIP.
+
+📋 ЧТО СДЕЛАТЬ СЕЙЧАС:
+
+1. Прочитай: docs/AGENT_2_START_PROMPT.md (полный промпт)
+2. Изучи: docs/AGENT_SYNC_SYSTEM.md (правила работы)
+3. Загрузи утилиты: from tools.agent_sync_utils import *
+
+ПЕРЕД НАЧАЛОМ РАБОТЫ:
+
+```python
+from tools.agent_sync_utils import (
+    select_task_for_agent, lock_task, 
+    update_task_status, unlock_task
+)
+
+# 1. Выбрать задачу
+task = select_task_for_agent("agent_2", priority="P0")
+
+# 2. Заблокировать на 15 минут
+if task and lock_task(task["id"], "agent_2", duration_minutes=15):
+    # 3. Обновить статус
+    update_task_status(task["id"], "in_progress", "agent_2")
+    
+    # 4. РАБОТАТЬ (максимум 10 минут!)
+    # ... твой код ...
+    
+    # 5. После блока
+    unlock_task(task["id"])
+    # 6. TLDV отчёт + ожидание указаний
+```
+
+ПРАВИЛА:
+- ⏱️ Работа в блоке: 10 минут
+- 🔒 Блокировка: 15 минут
+- ✅ Всегда проверяй блокировки перед началом
+- ✅ Обновляй статус после блока
+
+ПРИОРИТЕТЫ:
+- P0: Импорт данных (B4-B9)
+- P1: OCR, интеграция
+- P2: Оптимизация
+
+ФАЙЛЫ:
+- docs/AGENT_TASK_STATUS.json - статус задач
+- docs/AGENT_LOCKS.json - блокировки
+- docs/AGENT_WORK_LOG.jsonl - лог работы
+
+🚀 НАЧИНАЙ С ЗАДАЧИ P0!
+

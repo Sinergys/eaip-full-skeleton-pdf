@@ -1,0 +1,71 @@
+{
+  "validation_date": "2025-11-15T00:39:47.258357",
+  "source_template": "new_energy_passport",
+  "target_template": "template_metin",
+  "overall_compatibility": {
+    "status": "low",
+    "score": 0.0,
+    "confidence": 0.0
+  },
+  "structural_compatibility": {
+    "status": "low",
+    "score": 0.0,
+    "issues": [],
+    "warnings": [
+      "Значительная разница в количестве листов: 4",
+      "В source template есть 8 уникальных листов, которые будут пропущены",
+      "В target template есть 4 уникальных листов, которые будут созданы пустыми"
+    ],
+    "details": {
+      "common_sheets_count": 0,
+      "unique_sheets_source": 8,
+      "unique_sheets_target": 4,
+      "sheet_name_similarity": 0.0,
+      "structural_similarity": 0.0
+    }
+  },
+  "semantic_compatibility": {
+    "status": "low",
+    "score": 0.0,
+    "issues": [
+      "В source template есть 3 уникальных концептов без эквивалентов"
+    ],
+    "details": {
+      "common_concepts_count": 0,
+      "unique_concepts_source": 3,
+      "unique_concepts_target": 0,
+      "total_concepts": 3
+    }
+  },
+  "adapter_validation": {
+    "status": "low",
+    "score": 0.0,
+    "issues": [
+      "8 листов будут пропущены при конвертации"
+    ],
+    "warnings": [
+      "4 листов будут созданы пустыми"
+    ],
+    "details": {
+      "total_adapters": 12,
+      "skip_count": 8,
+      "create_count": 4,
+      "map_count": 0
+    }
+  },
+  "issues": [],
+  "warnings": [],
+  "recommendations": [],
+  "conversion_feasibility": {
+    "is_feasible": false,
+    "confidence": 0.0,
+    "recommended_approach": "manual",
+    "challenges": [
+      "Значительные структурные различия"
+    ],
+    "recommendations": [
+      "Требуется детальный анализ и создание специальных адаптеров",
+      "Низкая совместимость - требуется ручная проверка и корректировка"
+    ]
+  }
+}

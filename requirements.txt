@@ -1,0 +1,4 @@
+PyQt6==6.6.0
+xxhash==3.4.1
+python-magic-bin==0.4.14
+PyInstaller==6.3.0

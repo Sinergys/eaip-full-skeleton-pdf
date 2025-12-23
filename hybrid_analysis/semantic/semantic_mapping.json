@@ -1,0 +1,893 @@
+{
+  "template_name": "new_energy_passport",
+  "mappings": [
+    {
+      "cell_address": "B4",
+      "sheet": "Мериаприятия 1 ",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "confidence": 0.3333333333333333
+    },
+    {
+      "cell_address": "B6",
+      "sheet": "Мериаприятия 1 ",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q1.quarter_totals.volume_m3",
+      "confidence": 0.5
+    },
+    {
+      "cell_address": "C2",
+      "sheet": "Узел учета ",
+      "semantic_type": "electricity_reactive",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh",
+      "confidence": 0.5
+    },
+    {
+      "cell_address": "C6",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "confidence": 0.16666666666666666
+    },
+    {
+      "cell_address": "D6",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_reactive",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh",
+      "confidence": 0.25
+    },
+    {
+      "cell_address": "A13",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "confidence": 0.16666666666666666
+    },
+    {
+      "cell_address": "A15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "confidence": 0.16666666666666666
+    },
+    {
+      "cell_address": "A17",
+      "sheet": "мазут,уголь 5 ",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "confidence": 0.16666666666666666
+    }
+  ],
+  "unmapped_cells": [
+    {
+      "cell_address": "B1",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B2",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B3",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B5",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B7",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B8",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B9",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B10",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B11",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B12",
+      "semantic_type": "heat_energy",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B13",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B14",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B15",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B16",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B17",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B18",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B19",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B20",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B21",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B22",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B23",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B24",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B25",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B26",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B27",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B28",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B29",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B30",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B31",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B32",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B33",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B34",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B35",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B36",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B37",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B38",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B39",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B40",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B41",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B42",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B43",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B44",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B45",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B46",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B47",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B48",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B49",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B50",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B51",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B52",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B53",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B54",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B55",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B56",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B57",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B58",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B59",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B60",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B61",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B62",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B63",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B64",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B65",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B66",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B67",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B68",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B69",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B70",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B71",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B72",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B73",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B74",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B75",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B76",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B77",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B78",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B79",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B80",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B81",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B82",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B83",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B84",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B85",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B86",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B87",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B88",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B89",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B90",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B91",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B92",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B93",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B94",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B95",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B96",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B97",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B98",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B99",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B100",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B101",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B102",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B103",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B104",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B105",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B106",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B107",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B108",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B109",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B110",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B111",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B112",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B113",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B114",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B115",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B116",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B117",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B118",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B119",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B120",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "B121",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "C4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "D4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "E4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "F4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "N4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "C5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "D5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "E6",
+      "semantic_type": "heat_energy",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "O4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "E7",
+      "semantic_type": "heat_energy",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A10",
+      "semantic_type": "technological",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A11",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A12",
+      "semantic_type": "technological",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A14",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "C3",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "H3",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "M3",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "G4",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "H4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "I4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "J4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "K4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "L4",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "M4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "P4",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "Q4",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A9",
+      "semantic_type": "technological",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A1",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "E5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "F5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "G5",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "H5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "I5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "J5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "K5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "L5",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "M5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "N5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "O5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "P5",
+      "semantic_type": "quarter",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "Q5",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A3",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "A16",
+      "semantic_type": "total_consumption",
+      "reason": "No matching data found"
+    },
+    {
+      "cell_address": "D2",
+      "semantic_type": "year",
+      "reason": "No matching data found"
+    }
+  ],
+  "statistics": {
+    "total_cells": 173,
+    "mapped_cells": 8,
+    "unmapped_cells": 165
+  }
+}

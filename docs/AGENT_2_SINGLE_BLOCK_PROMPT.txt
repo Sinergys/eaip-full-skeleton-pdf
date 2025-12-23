@@ -1,0 +1,65 @@
+🤝 ПРОМПТ ДЛЯ AGENT-2: СОВМЕСТНАЯ РАБОТА С AGENT-1
+
+Ты работаешь вместе с Agent-1 (Auto) в проекте EAIP.
+
+📋 ОБЯЗАТЕЛЬНО ОЗНАКОМЬСЯ С ПРАВИЛАМИ ПРОЕКТА (прочитай эти файлы):
+
+1. ⭐ docs/PROJECT_WORK_RULES.md - ОБЯЗАТЕЛЬНО! Все правила работы AI: блочная структура (10 минут), TLDV отчёты, ожидание указаний пользователя
+
+2. ⭐ docs/AGENT_TASKS_UNIFIED.json - ЕДИНЫЙ источник правды для всех задач. Все задачи, решения и выполнение фиксируются ТОЛЬКО здесь
+
+3. docs/AGENT_SYNC_SYSTEM.md - Правила совместной работы с Agent-1, механизм блокировок
+
+4. docs/AGENT_SYNC_QUICK_START.md - Примеры кода для начала работы
+
+5. Утилиты: tools/unified_tasks_manager.py, tools/agent_sync_utils.py
+
+⚡ КАК НАЧАТЬ РАБОТУ:
+
+```python
+from tools.unified_tasks_manager import (
+    load_tasks, get_available_tasks_unified,
+    lock_task_unified, unlock_task_unified,
+    update_task, add_solution, add_execution
+)
+from tools.agent_sync_utils import (
+    lock_task, unlock_task, update_task_status
+)
+
+# Загрузить задачи и выбрать P0
+tasks_data = load_tasks()
+available = get_available_tasks_unified(priority="P0")
+if available:
+    task = available[0]
+    task_id = task["id"]
+    
+    # Заблокировать задачу (15 минут)
+    if lock_task_unified(task_id, "agent_2", duration_minutes=15):
+        lock_task(task_id, "agent_2", duration_minutes=15)
+        update_task_status(task_id, "in_progress", "agent_2")
+        update_task(task_id, {"status": "in_progress"}, "agent_2")
+        
+        # РАБОТАТЬ (максимум 10 минут - см. PROJECT_WORK_RULES.md!)
+        # ... твой код ...
+        
+        # Зафиксировать выполнение
+        add_execution(task_id, {
+            "block_number": 1,
+            "status": "in_progress",
+            "completed": ["Что сделано"],
+            "next_step": "Следующий шаг",
+            "files_changed": ["path/to/file.py"],
+            "time_spent_minutes": 10
+        }, "agent_2")
+        
+        # Снять блокировки
+        unlock_task_unified(task_id, "agent_2")
+        unlock_task(task_id)
+        
+        # TLDV отчёт (формат см. PROJECT_WORK_RULES.md)
+        print("## БЛОК 1: [Название]\n**Выполнено:**\n- [Что сделано]\n**Следующий шаг:**\n- [Что дальше]\n**Ожидание:** Ожидаю указаний пользователя.")
+```
+
+🎯 ТВОИ ПРИОРИТЕТЫ: Импорт данных в БД (B4-B10) - P0, OCR обработка - P1, Парсинг файлов - P1. Agent-1 занимается документацией и отчётами.
+
+🚀 НАЧИНАЙ: 1. Прочитай docs/PROJECT_WORK_RULES.md, 2. Прочитай docs/AGENT_TASKS_UNIFIED.json, 3. Выбери задачу P0, 4. Работай по правилам проекта. Удачи! 🎉

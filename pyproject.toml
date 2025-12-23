@@ -1,0 +1,41 @@
+[tool.ruff]
+exclude = [
+    ".venv",
+    "**/.venv/**",
+    "venv",
+    "**/venv/**",
+    "**/tools/**",
+    "**/__pycache__/**",
+    "**/node_modules/**",
+    "**/.git/**",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint]
+exclude = [
+    ".venv",
+    "**/.venv/**",
+    "venv",
+    "**/venv/**",
+]
+
+[tool.mypy]
+exclude = [
+    ".*venv.*",
+    ".*tools.*",
+    ".*__pycache__.*",
+]
+
+[tool.black]
+exclude = '''
+/(
+    \.venv
+    | venv
+    | \.git
+    | __pycache__
+)/
+'''
+

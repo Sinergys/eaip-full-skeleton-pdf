@@ -1,0 +1,2466 @@
+{
+  "template_name": "new_energy_passport",
+  "number_formats": {},
+  "text_patterns": {},
+  "filling_patterns": {
+    "format_changes": [],
+    "filling_statistics": {}
+  },
+  "statistics": {
+    "total_number_formats": 0,
+    "format_distribution": {},
+    "text_pattern_distribution": {
+      "text": 283,
+      "header": 10,
+      "placeholder_underscore": 5,
+      "category_label": 20
+    }
+  },
+  "template_patterns": {
+    "sheets": {
+      "Sheet1": {
+        "number_formats": {
+          "integer": [
+            {
+              "address": "A6",
+              "value": 1,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A7",
+              "value": 2,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A8",
+              "value": 3,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A9",
+              "value": 4,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A10",
+              "value": 5,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A11",
+              "value": 6,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A12",
+              "value": 7,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A13",
+              "value": 8,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A14",
+              "value": 9,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A15",
+              "value": 10,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A16",
+              "value": 11,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A17",
+              "value": 12,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A18",
+              "value": 13,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A19",
+              "value": 14,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A20",
+              "value": 15,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A21",
+              "value": 16,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A22",
+              "value": 17,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A23",
+              "value": 18,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A24",
+              "value": 19,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A25",
+              "value": 20,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A26",
+              "value": 21,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A27",
+              "value": 22,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A28",
+              "value": 23,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A29",
+              "value": 24,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A30",
+              "value": 25,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A31",
+              "value": 26,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A32",
+              "value": 27,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A33",
+              "value": 28,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A34",
+              "value": 29,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A35",
+              "value": 30,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A36",
+              "value": 31,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A37",
+              "value": 32,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A38",
+              "value": 33,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A39",
+              "value": 34,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A40",
+              "value": 35,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A41",
+              "value": 36,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A42",
+              "value": 37,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A43",
+              "value": 38,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A44",
+              "value": 39,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A45",
+              "value": 40,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A46",
+              "value": 41,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A47",
+              "value": 42,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A48",
+              "value": 43,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A49",
+              "value": 44,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A50",
+              "value": 45,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A51",
+              "value": 46,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A52",
+              "value": 47,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A53",
+              "value": 48,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A54",
+              "value": 49,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A55",
+              "value": 50,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A56",
+              "value": 51,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A57",
+              "value": 52,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A58",
+              "value": 53,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A59",
+              "value": 54,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A60",
+              "value": 55,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A61",
+              "value": 56,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A62",
+              "value": 57,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A63",
+              "value": 58,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A64",
+              "value": 59,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A65",
+              "value": 60,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A66",
+              "value": 61,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A67",
+              "value": 62,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A68",
+              "value": 63,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A69",
+              "value": 64,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A70",
+              "value": 65,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A71",
+              "value": 66,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A72",
+              "value": 67,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A73",
+              "value": 68,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A74",
+              "value": 69,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A75",
+              "value": 70,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A76",
+              "value": 71,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A77",
+              "value": 72,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A78",
+              "value": 73,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A79",
+              "value": 74,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A80",
+              "value": 75,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A81",
+              "value": 76,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A82",
+              "value": 77,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A83",
+              "value": 78,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A84",
+              "value": 79,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A85",
+              "value": 80,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A86",
+              "value": 81,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A87",
+              "value": 82,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A88",
+              "value": 83,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A89",
+              "value": 84,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A90",
+              "value": 85,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A91",
+              "value": 86,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A92",
+              "value": 87,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A93",
+              "value": 88,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A94",
+              "value": 89,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A95",
+              "value": 90,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A96",
+              "value": 91,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A97",
+              "value": 92,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A98",
+              "value": 93,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A99",
+              "value": 94,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A100",
+              "value": 95,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A101",
+              "value": 96,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A102",
+              "value": 97,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A103",
+              "value": 98,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A104",
+              "value": 99,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A105",
+              "value": 100,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A106",
+              "value": 101,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A107",
+              "value": 102,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A108",
+              "value": 103,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A109",
+              "value": 104,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A110",
+              "value": 105,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A111",
+              "value": 106,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A112",
+              "value": 107,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A113",
+              "value": 108,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A114",
+              "value": 109,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A115",
+              "value": 110,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A116",
+              "value": 111,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A117",
+              "value": 112,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A118",
+              "value": 113,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A119",
+              "value": 114,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A120",
+              "value": 115,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            },
+            {
+              "address": "A121",
+              "value": 116,
+              "format": {
+                "type": "integer",
+                "precision": 0,
+                "number_format": "General",
+                "magnitude": "units"
+              }
+            }
+          ]
+        },
+        "text_patterns": {
+          "text": 121
+        },
+        "data_regions": []
+      },
+      "Узел учета ": {
+        "number_formats": {},
+        "text_patterns": {
+          "header": 1,
+          "text": 13
+        },
+        "data_regions": []
+      },
+      "Структура пр 2 ": {
+        "number_formats": {},
+        "text_patterns": {
+          "header": 3,
+          "placeholder_underscore": 1,
+          "text": 29,
+          "category_label": 1
+        },
+        "data_regions": []
+      },
+      "Баланс": {
+        "number_formats": {},
+        "text_patterns": {
+          "header": 3,
+          "text": 26,
+          "category_label": 5
+        },
+        "data_regions": []
+      },
+      "Динамика ср": {
+        "number_formats": {},
+        "text_patterns": {
+          "text": 29,
+          "header": 1,
+          "category_label": 5
+        },
+        "data_regions": []
+      },
+      "мазут,уголь 5 ": {
+        "number_formats": {},
+        "text_patterns": {
+          "placeholder_underscore": 1,
+          "header": 1,
+          "text": 22,
+          "category_label": 5
+        },
+        "data_regions": []
+      },
+      "Расход  на ед.п": {
+        "number_formats": {},
+        "text_patterns": {
+          "text": 32,
+          "header": 1,
+          "placeholder_underscore": 3,
+          "category_label": 4
+        },
+        "data_regions": []
+      },
+      "Мериаприятия 1 ": {
+        "number_formats": {},
+        "text_patterns": {
+          "text": 11
+        },
+        "data_regions": []
+      }
+    },
+    "number_formats": {
+      "integer": [
+        {
+          "address": "A6",
+          "value": 1,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A7",
+          "value": 2,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A8",
+          "value": 3,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A9",
+          "value": 4,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A10",
+          "value": 5,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A11",
+          "value": 6,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A12",
+          "value": 7,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A13",
+          "value": 8,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A14",
+          "value": 9,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A15",
+          "value": 10,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A16",
+          "value": 11,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A17",
+          "value": 12,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A18",
+          "value": 13,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A19",
+          "value": 14,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A20",
+          "value": 15,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A21",
+          "value": 16,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A22",
+          "value": 17,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A23",
+          "value": 18,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A24",
+          "value": 19,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A25",
+          "value": 20,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A26",
+          "value": 21,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A27",
+          "value": 22,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A28",
+          "value": 23,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A29",
+          "value": 24,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A30",
+          "value": 25,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A31",
+          "value": 26,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A32",
+          "value": 27,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A33",
+          "value": 28,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A34",
+          "value": 29,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A35",
+          "value": 30,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A36",
+          "value": 31,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A37",
+          "value": 32,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A38",
+          "value": 33,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A39",
+          "value": 34,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A40",
+          "value": 35,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A41",
+          "value": 36,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A42",
+          "value": 37,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A43",
+          "value": 38,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A44",
+          "value": 39,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A45",
+          "value": 40,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A46",
+          "value": 41,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A47",
+          "value": 42,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A48",
+          "value": 43,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A49",
+          "value": 44,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A50",
+          "value": 45,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A51",
+          "value": 46,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A52",
+          "value": 47,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A53",
+          "value": 48,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A54",
+          "value": 49,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A55",
+          "value": 50,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A56",
+          "value": 51,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A57",
+          "value": 52,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A58",
+          "value": 53,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A59",
+          "value": 54,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A60",
+          "value": 55,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A61",
+          "value": 56,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A62",
+          "value": 57,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A63",
+          "value": 58,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A64",
+          "value": 59,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A65",
+          "value": 60,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A66",
+          "value": 61,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A67",
+          "value": 62,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A68",
+          "value": 63,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A69",
+          "value": 64,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A70",
+          "value": 65,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A71",
+          "value": 66,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A72",
+          "value": 67,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A73",
+          "value": 68,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A74",
+          "value": 69,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A75",
+          "value": 70,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A76",
+          "value": 71,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A77",
+          "value": 72,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A78",
+          "value": 73,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A79",
+          "value": 74,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A80",
+          "value": 75,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A81",
+          "value": 76,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A82",
+          "value": 77,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A83",
+          "value": 78,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A84",
+          "value": 79,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A85",
+          "value": 80,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A86",
+          "value": 81,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A87",
+          "value": 82,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A88",
+          "value": 83,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A89",
+          "value": 84,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A90",
+          "value": 85,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A91",
+          "value": 86,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A92",
+          "value": 87,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A93",
+          "value": 88,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A94",
+          "value": 89,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A95",
+          "value": 90,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A96",
+          "value": 91,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A97",
+          "value": 92,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A98",
+          "value": 93,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A99",
+          "value": 94,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A100",
+          "value": 95,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A101",
+          "value": 96,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A102",
+          "value": 97,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A103",
+          "value": 98,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A104",
+          "value": 99,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A105",
+          "value": 100,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A106",
+          "value": 101,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A107",
+          "value": 102,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A108",
+          "value": 103,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A109",
+          "value": 104,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A110",
+          "value": 105,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A111",
+          "value": 106,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A112",
+          "value": 107,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A113",
+          "value": 108,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A114",
+          "value": 109,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A115",
+          "value": 110,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A116",
+          "value": 111,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A117",
+          "value": 112,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A118",
+          "value": 113,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A119",
+          "value": 114,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A120",
+          "value": 115,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        },
+        {
+          "address": "A121",
+          "value": 116,
+          "format": {
+            "type": "integer",
+            "precision": 0,
+            "number_format": "General",
+            "magnitude": "units"
+          }
+        }
+      ]
+    },
+    "text_patterns": {}
+  },
+  "filled_patterns": {
+    "sheets": {
+      "Sheet1": {
+        "filled_cells": 237,
+        "empty_cells": 852,
+        "fill_rate": 0.21763085399449036
+      },
+      "Узел учета ": {
+        "filled_cells": 14,
+        "empty_cells": 92,
+        "fill_rate": 0.1320754716981132
+      },
+      "Структура пр 2 ": {
+        "filled_cells": 38,
+        "empty_cells": 378,
+        "fill_rate": 0.09134615384615384
+      },
+      "Баланс": {
+        "filled_cells": 37,
+        "empty_cells": 401,
+        "fill_rate": 0.08447488584474885
+      },
+      "Динамика ср": {
+        "filled_cells": 45,
+        "empty_cells": 170,
+        "fill_rate": 0.20930232558139536
+      },
+      "мазут,уголь 5 ": {
+        "filled_cells": 29,
+        "empty_cells": 203,
+        "fill_rate": 0.125
+      },
+      "Расход  на ед.п": {
+        "filled_cells": 40,
+        "empty_cells": 226,
+        "fill_rate": 0.15037593984962405
+      },
+      "Мериаприятия 1 ": {
+        "filled_cells": 11,
+        "empty_cells": 41,
+        "fill_rate": 0.21153846153846154
+      }
+    },
+    "filling_statistics": {}
+  }
+}

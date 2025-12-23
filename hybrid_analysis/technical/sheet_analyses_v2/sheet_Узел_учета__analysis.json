@@ -1,0 +1,327 @@
+{
+  "sheet_name": "Узел учета ",
+  "structural_analysis": {
+    "max_row": 12,
+    "max_column": 10,
+    "merged_ranges": [
+      "I2:I4",
+      "C2:D2",
+      "E2:F2",
+      "G2:G4",
+      "E3:E4",
+      "J2:J4",
+      "F3:F4",
+      "H2:H4",
+      "B2:B4"
+    ],
+    "data_region": {
+      "start_row": 1,
+      "end_row": 4,
+      "start_column": 10,
+      "end_column": 10,
+      "start_address": "J1",
+      "end_address": "J4"
+    },
+    "cells_count": 14
+  },
+  "table_structure_analysis": {
+    "sheet_name": "Узел учета ",
+    "structure": {
+      "max_row": 12,
+      "max_column": 10,
+      "data_region": {
+        "start_row": 1,
+        "end_row": 4,
+        "start_column": 10,
+        "end_column": 10
+      },
+      "headers": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "column": 10,
+              "column_letter": "J",
+              "value": "Таблица 1",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "Пункты учёта",
+              "is_merged": false
+            },
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "Вид учёта мощности электроэнергии (активная, реактивная)",
+              "is_merged": false
+            },
+            {
+              "column": 5,
+              "column_letter": "E",
+              "value": "Место установки измерительных трансформаторов",
+              "is_merged": false
+            },
+            {
+              "column": 7,
+              "column_letter": "G",
+              "value": "Коэффициент учёта",
+              "is_merged": false
+            },
+            {
+              "column": 8,
+              "column_letter": "H",
+              "value": "Дата пломбировки",
+              "is_merged": false
+            },
+            {
+              "column": 9,
+              "column_letter": "I",
+              "value": "Дата пломбировки поставщика",
+              "is_merged": false
+            },
+            {
+              "column": 10,
+              "column_letter": "J",
+              "value": "Примечание",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "P",
+              "is_merged": false
+            },
+            {
+              "column": 4,
+              "column_letter": "D",
+              "value": "Q",
+              "is_merged": false
+            },
+            {
+              "column": 5,
+              "column_letter": "E",
+              "value": "TT",
+              "is_merged": false
+            },
+            {
+              "column": 6,
+              "column_letter": "F",
+              "value": "КT",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "кВт·ч",
+              "is_merged": false
+            },
+            {
+              "column": 4,
+              "column_letter": "D",
+              "value": "кВАр·ч",
+              "is_merged": false
+            }
+          ]
+        }
+      ],
+      "cells_info": {
+        "J1": {
+          "address": "J1",
+          "row": 1,
+          "column": 10,
+          "value": "Таблица 1",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B2": {
+          "address": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "Пункты учёта",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C2": {
+          "address": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "Вид учёта мощности электроэнергии (активная, реактивная)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "E2": {
+          "address": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "Место установки измерительных трансформаторов",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "G2": {
+          "address": "G2",
+          "row": 2,
+          "column": 7,
+          "value": "Коэффициент учёта",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "H2": {
+          "address": "H2",
+          "row": 2,
+          "column": 8,
+          "value": "Дата пломбировки",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "I2": {
+          "address": "I2",
+          "row": 2,
+          "column": 9,
+          "value": "Дата пломбировки поставщика",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "J2": {
+          "address": "J2",
+          "row": 2,
+          "column": 10,
+          "value": "Примечание",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C3": {
+          "address": "C3",
+          "row": 3,
+          "column": 3,
+          "value": "P",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "D3": {
+          "address": "D3",
+          "row": 3,
+          "column": 4,
+          "value": "Q",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "E3": {
+          "address": "E3",
+          "row": 3,
+          "column": 5,
+          "value": "TT",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "F3": {
+          "address": "F3",
+          "row": 3,
+          "column": 6,
+          "value": "КT",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C4": {
+          "address": "C4",
+          "row": 4,
+          "column": 3,
+          "value": " кВт·ч",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "D4": {
+          "address": "D4",
+          "row": 4,
+          "column": 4,
+          "value": "кВАр·ч",
+          "data_type": "s",
+          "has_formula": false
+        }
+      }
+    },
+    "tables": [
+      {
+        "table_range": {
+          "start_row": 1,
+          "end_row": 4,
+          "start_column": 10,
+          "end_column": 10,
+          "start_address": "J1",
+          "end_address": "J4"
+        },
+        "header_rows": [
+          {
+            "row": 1,
+            "cells": [
+              {
+                "column": 10,
+                "column_letter": "J",
+                "value": "Таблица 1",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "cells": [
+              {
+                "column": 10,
+                "column_letter": "J",
+                "value": "Примечание",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "data_rows": [],
+        "column_types": [],
+        "row_count": 0,
+        "column_count": 1
+      }
+    ],
+    "semantic_analysis": {
+      "sheet_purpose": "metering_nodes",
+      "resource_types": [
+        "electricity"
+      ],
+      "time_periods": [],
+      "data_categories": [],
+      "key_indicators": []
+    },
+    "summary": {
+      "total_tables": 1,
+      "total_rows": 12,
+      "total_columns": 10,
+      "data_regions": 0
+    }
+  },
+  "summary": {
+    "total_tables": 1,
+    "total_rows": 12,
+    "total_columns": 10,
+    "sheet_purpose": "metering_nodes",
+    "resource_types": [
+      "electricity"
+    ],
+    "time_periods": []
+  }
+}

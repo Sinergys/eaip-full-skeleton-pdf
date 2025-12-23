@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "795ABA faktura.pdf",
+    "ocr_file": "C:\\eaip\\reports\\ocr\\import_plan\\debug_files\\ocr_results\\8d591c4f-f504-4f99-b827-a2817805d7df_ocr_result.json",
+    "tables_analyzed": 1,
+    "table_results": [
+      {
+        "table_index": 0,
+        "resource_type": "electricity",
+        "period_type": "month",
+        "dates_extracted": {
+          "period_type": "month",
+          "dates_count": 6,
+          "years": [
+            2025
+          ],
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "quarters": [
+            1,
+            2
+          ]
+        },
+        "values_extracted": {
+          "values_count": 7,
+          "total_consumption": 5.7436074006e+16,
+          "total_cost": 13520640.0,
+          "columns": {
+            "consumption_col": 1,
+            "cost_col": 6,
+            "active_kwh_col": null,
+            "reactive_kvarh_col": null,
+            "volume_m3_col": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "filename": "BYD 087 KBA.PDF",
+    "ocr_file": "C:\\eaip\\reports\\ocr\\import_plan\\debug_files\\ocr_results\\ea46967b-22d2-4944-8206-d278539b6c75_ocr_result.json",
+    "tables_analyzed": 1,
+    "table_results": [
+      {
+        "table_index": 0,
+        "resource_type": "electricity",
+        "period_type": null,
+        "dates_extracted": {
+          "period_type": null,
+          "dates_count": 0,
+          "years": [
+            2025
+          ],
+          "months": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "quarters": [
+            1,
+            2
+          ]
+        },
+        "values_extracted": {
+          "values_count": 5,
+          "total_consumption": 3.7917005004e+16,
+          "total_cost": 12046720.0,
+          "columns": {
+            "consumption_col": 1,
+            "cost_col": 6,
+            "active_kwh_col": null,
+            "reactive_kvarh_col": null,
+            "volume_m3_col": null
+          }
+        }
+      }
+    ]
+  }
+]

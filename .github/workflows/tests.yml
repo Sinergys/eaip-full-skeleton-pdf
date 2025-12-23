@@ -1,0 +1,82 @@
+name: Reference Enterprise Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'tools/fill_energy_passport.py'
+      - 'eaip_full_skeleton/services/ingest/domain/energy_passport_calculations.py'
+      - 'eaip_full_skeleton/services/ingest/domain/energy_units.py'
+      - 'eaip_full_skeleton/services/ingest/utils/word_report_generator.py'
+      - 'eaip_full_skeleton/services/ingest/domain/report_data.py'
+      - 'scripts/test_reference_enterprise.py'
+      - 'scripts/test_reference_word_reports.py'
+      - 'scripts/test_excel_word_consistency.py'
+      - 'data/fixtures/reference_enterprise_*.json'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'tools/fill_energy_passport.py'
+      - 'eaip_full_skeleton/services/ingest/domain/energy_passport_calculations.py'
+      - 'eaip_full_skeleton/services/ingest/domain/energy_units.py'
+      - 'eaip_full_skeleton/services/ingest/utils/word_report_generator.py'
+      - 'eaip_full_skeleton/services/ingest/domain/report_data.py'
+      - 'scripts/test_reference_enterprise.py'
+      - 'scripts/test_reference_word_reports.py'
+      - 'scripts/test_excel_word_consistency.py'
+      - 'data/fixtures/reference_enterprise_*.json'
+  workflow_dispatch:
+
+jobs:
+  test-reference-enterprises:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl pytest
+          # Установка зависимостей для fill_energy_passport.py и Word-генератора
+          pip install python-docx || true
+      
+      - name: Check template exists
+        run: |
+          if [ ! -f "templates/pcm690/new_energy_passport.xlsx" ] && [ ! -f "templates/pcm690/energy_passport_template.xlsx" ]; then
+            echo "⚠️ Template not found, tests may fail"
+          fi
+      
+      - name: Run Excel passport tests
+        run: |
+          python scripts/test_reference_enterprise.py
+        continue-on-error: false
+      
+      - name: Run Word report tests
+        run: |
+          python scripts/test_reference_word_reports.py
+        continue-on-error: false
+      
+      - name: Test Excel-Word consistency
+        run: |
+          python scripts/test_excel_word_consistency.py
+        continue-on-error: false
+      
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: |
+            test_output/test_report.json
+            test_output/word_reports/test_report.json
+            test_output/consistency_report.json
+          if-no-files-found: ignore
+

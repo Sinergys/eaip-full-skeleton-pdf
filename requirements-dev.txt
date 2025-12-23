@@ -1,0 +1,45 @@
+# Инструменты для проверки качества кода
+
+# Линтеры
+ruff>=0.1.0
+flake8>=6.0.0
+pylint>=2.17.0
+
+# Проверка типов
+mypy>=1.5.0
+types-openpyxl>=0.1.0
+
+# Форматтеры
+black>=23.0.0
+isort>=5.12.0
+
+# Безопасность
+bandit>=1.7.5
+safety>=2.3.0
+pip-audit>=2.6.0
+
+# Анализ сложности
+radon>=6.0.0
+xenon>=0.9.0
+
+# Документация
+pydocstyle>=6.3.0
+darglint>=1.8.0
+
+# Мертвый код
+vulture>=2.10.0
+autoflake>=2.2.0
+
+# Покрытие тестами
+coverage>=7.3.0
+pytest-cov>=4.1.0
+
+# Профилирование
+py-spy>=0.3.14
+line-profiler>=4.1.0
+memory-profiler>=0.61.0
+
+# Зависимости
+pipdeptree>=2.5.0
+pipreqs>=0.4.13
+

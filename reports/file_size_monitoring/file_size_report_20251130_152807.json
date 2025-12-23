@@ -1,0 +1,253 @@
+{
+  "report_date": "2025-11-30T15:28:07.696991",
+  "current_sizes": {
+    "timestamp": "2025-11-30T15:28:07.663097",
+    "files": {
+      "context": {
+        "path": "C:\\eaip\\docs\\AGENT_CONTEXT.json",
+        "filename": "AGENT_CONTEXT.json",
+        "size_bytes": 7231,
+        "size_kb": 7.06,
+        "limit_bytes": 1048576,
+        "limit_kb": 1024.0,
+        "percentage_used": 0.69,
+        "exceeds_limit": false,
+        "category": "critical"
+      },
+      "tasks": {
+        "path": "C:\\eaip\\docs\\AGENT_TASKS_UNIFIED.json",
+        "filename": "AGENT_TASKS_UNIFIED.json",
+        "size_bytes": 48190,
+        "size_kb": 47.06,
+        "limit_bytes": 1048576,
+        "limit_kb": 1024.0,
+        "percentage_used": 4.6,
+        "exceeds_limit": false,
+        "category": "critical"
+      },
+      "task_status": {
+        "path": "C:\\eaip\\docs\\AGENT_TASK_STATUS.json",
+        "filename": "AGENT_TASK_STATUS.json",
+        "size_bytes": 673,
+        "size_kb": 0.66,
+        "limit_bytes": 1048576,
+        "limit_kb": 1024.0,
+        "percentage_used": 0.06,
+        "exceeds_limit": false,
+        "category": "optional"
+      },
+      "locks": {
+        "path": "C:\\eaip\\docs\\AGENT_LOCKS.json",
+        "filename": "AGENT_LOCKS.json",
+        "size_bytes": 19,
+        "size_kb": 0.02,
+        "limit_bytes": 1048576,
+        "limit_kb": 1024.0,
+        "percentage_used": 0.0,
+        "exceeds_limit": false,
+        "category": "optional"
+      },
+      "session_state": {
+        "path": "C:\\eaip\\docs\\AGENT_SESSION_STATE.json",
+        "filename": "AGENT_SESSION_STATE.json",
+        "size_bytes": 2673,
+        "size_kb": 2.61,
+        "limit_bytes": 1048576,
+        "limit_kb": 1024.0,
+        "percentage_used": 0.25,
+        "exceeds_limit": false,
+        "category": "optional"
+      },
+      "knowledge_base": {
+        "path": "C:\\eaip\\docs\\AGENT_KNOWLEDGE_BASE.md",
+        "filename": "AGENT_KNOWLEDGE_BASE.md",
+        "size_bytes": 11268,
+        "size_kb": 11.0,
+        "limit_bytes": 512000,
+        "limit_kb": 500.0,
+        "percentage_used": 2.2,
+        "exceeds_limit": false,
+        "category": "optional"
+      },
+      "critical_settings": {
+        "path": "C:\\eaip\\docs\\PROJECT_CRITICAL_SETTINGS.md",
+        "filename": "PROJECT_CRITICAL_SETTINGS.md",
+        "size_bytes": 6765,
+        "size_kb": 6.61,
+        "limit_bytes": 512000,
+        "limit_kb": 500.0,
+        "percentage_used": 1.32,
+        "exceeds_limit": false,
+        "category": "optional"
+      }
+    }
+  },
+  "growth_analysis_7d": {
+    "period_days": 7,
+    "analysis_date": "2025-11-30T15:28:07.672268",
+    "files_analyzed": 7,
+    "growth": {
+      "context": {
+        "filename": "AGENT_CONTEXT.json",
+        "first_size_kb": 7.06,
+        "last_size_kb": 7.06,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "critical",
+        "trend": "stable"
+      },
+      "tasks": {
+        "filename": "AGENT_TASKS_UNIFIED.json",
+        "first_size_kb": 46.78,
+        "last_size_kb": 47.06,
+        "growth_kb": 0.29,
+        "growth_percent": 0.61,
+        "category": "critical",
+        "trend": "increasing"
+      },
+      "task_status": {
+        "filename": "AGENT_TASK_STATUS.json",
+        "first_size_kb": 0.54,
+        "last_size_kb": 0.66,
+        "growth_kb": 0.12,
+        "growth_percent": 22.36,
+        "category": "optional",
+        "trend": "increasing"
+      },
+      "locks": {
+        "filename": "AGENT_LOCKS.json",
+        "first_size_kb": 0.02,
+        "last_size_kb": 0.02,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      },
+      "session_state": {
+        "filename": "AGENT_SESSION_STATE.json",
+        "first_size_kb": 2.61,
+        "last_size_kb": 2.61,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      },
+      "knowledge_base": {
+        "filename": "AGENT_KNOWLEDGE_BASE.md",
+        "first_size_kb": 11.0,
+        "last_size_kb": 11.0,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      },
+      "critical_settings": {
+        "filename": "PROJECT_CRITICAL_SETTINGS.md",
+        "first_size_kb": 6.61,
+        "last_size_kb": 6.61,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      }
+    },
+    "first_check": "2025-11-30T15:22:07.458093",
+    "last_check": "2025-11-30T15:28:07.663097"
+  },
+  "growth_analysis_30d": {
+    "period_days": 30,
+    "analysis_date": "2025-11-30T15:28:07.674255",
+    "files_analyzed": 7,
+    "growth": {
+      "context": {
+        "filename": "AGENT_CONTEXT.json",
+        "first_size_kb": 7.06,
+        "last_size_kb": 7.06,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "critical",
+        "trend": "stable"
+      },
+      "tasks": {
+        "filename": "AGENT_TASKS_UNIFIED.json",
+        "first_size_kb": 46.78,
+        "last_size_kb": 47.06,
+        "growth_kb": 0.29,
+        "growth_percent": 0.61,
+        "category": "critical",
+        "trend": "increasing"
+      },
+      "task_status": {
+        "filename": "AGENT_TASK_STATUS.json",
+        "first_size_kb": 0.54,
+        "last_size_kb": 0.66,
+        "growth_kb": 0.12,
+        "growth_percent": 22.36,
+        "category": "optional",
+        "trend": "increasing"
+      },
+      "locks": {
+        "filename": "AGENT_LOCKS.json",
+        "first_size_kb": 0.02,
+        "last_size_kb": 0.02,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      },
+      "session_state": {
+        "filename": "AGENT_SESSION_STATE.json",
+        "first_size_kb": 2.61,
+        "last_size_kb": 2.61,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      },
+      "knowledge_base": {
+        "filename": "AGENT_KNOWLEDGE_BASE.md",
+        "first_size_kb": 11.0,
+        "last_size_kb": 11.0,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      },
+      "critical_settings": {
+        "filename": "PROJECT_CRITICAL_SETTINGS.md",
+        "first_size_kb": 6.61,
+        "last_size_kb": 6.61,
+        "growth_kb": 0.0,
+        "growth_percent": 0.0,
+        "category": "optional",
+        "trend": "stable"
+      }
+    },
+    "first_check": "2025-11-30T15:22:07.458093",
+    "last_check": "2025-11-30T15:28:07.663097"
+  },
+  "alerts": [],
+  "disk_metrics": {
+    "timestamp": "2025-11-30T15:28:07.696991",
+    "disk_total_gb": 476.1,
+    "disk_used_gb": 190.55,
+    "disk_free_gb": 285.55,
+    "disk_usage_percent": 40.02,
+    "context_files_size_kb": 75.02,
+    "history_size_kb": 32.05,
+    "archive_size_kb": 19.03,
+    "reports_size_kb": 14.2,
+    "total_context_related_kb": 140.3,
+    "context_usage_percent_of_disk": 2.8e-05
+  },
+  "summary": {
+    "total_files": 7,
+    "files_exceeding_limit": 0,
+    "files_approaching_limit": 0,
+    "active_alerts": 0,
+    "critical_alerts": 0,
+    "warning_alerts": 0,
+    "total_context_size_kb": 140.3,
+    "disk_usage_percent": 40.02
+  }
+}

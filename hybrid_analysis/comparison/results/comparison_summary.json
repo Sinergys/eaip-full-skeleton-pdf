@@ -1,0 +1,65 @@
+{
+  "pipeline_start": "2025-11-15T00:39:47.238302",
+  "template1": {
+    "path": "templates\\pcm690\\new_energy_passport.xlsx",
+    "name": "new_energy_passport"
+  },
+  "template2": {
+    "path": "templates\\pcm690\\template_metin.xlsx",
+    "name": "template_metin"
+  },
+  "stages": {
+    "structural_comparison": {
+      "status": "completed",
+      "output_file": "hybrid_analysis\\comparison\\results\\template_structure_comparison.json",
+      "summary": {
+        "overall_similarity": 0.0,
+        "common_sheets": 0,
+        "unique_to_template1": 8,
+        "unique_to_template2": 4,
+        "feasibility_confidence": 0.0
+      }
+    },
+    "semantic_comparison": {
+      "status": "completed",
+      "output_file": "hybrid_analysis\\comparison\\results\\semantic_comparison.json",
+      "summary": {
+        "common_concepts": 0,
+        "unique_to_template1": 3,
+        "unique_to_template2": 0,
+        "conversion_rules": 3
+      }
+    },
+    "adapter_generation": {
+      "status": "completed",
+      "output_file": "hybrid_analysis\\comparison\\results\\template_adapters.json",
+      "summary": {
+        "total_adapters": 12,
+        "confidence": 0.0,
+        "skip_count": 8,
+        "create_count": 4,
+        "map_count": 0
+      }
+    },
+    "validation": {
+      "status": "completed",
+      "output_file": "hybrid_analysis\\comparison\\results\\compatibility_validation_report.json",
+      "summary": {
+        "overall_compatibility": "low",
+        "compatibility_score": 0.0,
+        "is_feasible": false,
+        "recommended_approach": "manual",
+        "issues_count": 0,
+        "warnings_count": 0
+      }
+    }
+  },
+  "pipeline_end": "2025-11-15T00:39:47.258357",
+  "overall_summary": {
+    "compatibility_status": "low",
+    "compatibility_score": 0.0,
+    "conversion_feasible": false,
+    "recommended_approach": "manual",
+    "confidence": 0.0
+  }
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "filename": "795ABA faktura.pdf",
+    "ocr_file": "C:\\eaip\\reports\\ocr\\import_plan\\debug_files\\ocr_results\\8d591c4f-f504-4f99-b827-a2817805d7df_ocr_result.json",
+    "tables_analyzed": 1,
+    "table_results": [
+      {
+        "table_index": 0,
+        "initial_resource_type": "electricity",
+        "identified_resource_type": "electricity",
+        "identified_period_type": "month",
+        "table_headers": [
+          "No",
+          "Идентификационный код и название по\nЕдиному электронному национальному каталогу товаров (услуг)",
+          "Наименование товаров (услуг)"
+        ],
+        "table_rows_count": 8
+      }
+    ]
+  },
+  {
+    "filename": "BYD 087 KBA.PDF",
+    "ocr_file": "C:\\eaip\\reports\\ocr\\import_plan\\debug_files\\ocr_results\\ea46967b-22d2-4944-8206-d278539b6c75_ocr_result.json",
+    "tables_analyzed": 1,
+    "table_results": [
+      {
+        "table_index": 0,
+        "initial_resource_type": "electricity",
+        "identified_resource_type": "electricity",
+        "identified_period_type": null,
+        "table_headers": [
+          "№",
+          "Идентификационный код и название по\nЕдиному электронному национальному\nкаталогу товаров (услуг)",
+          "Наименование товаров (услуг)"
+        ],
+        "table_rows_count": 5
+      }
+    ]
+  }
+]

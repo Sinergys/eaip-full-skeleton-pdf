@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "template_path": "templates\\pcm690\\new_energy_passport.xlsx",
+    "template_name": "new_energy_passport",
+    "total_sheets": 8,
+    "analyzed_sheets": 8,
+    "ontology_version": "1.0",
+    "created_at": 1763150478.182256
+  },
+  "ontology": {
+    "resource_types": {
+      "electricity": {
+        "name": "Электроэнергия",
+        "units": [
+          "кВт·ч",
+          "кВтч",
+          "тыс. кВт·ч",
+          "кВАр·ч"
+        ],
+        "categories": [
+          "active",
+          "reactive",
+          "total"
+        ]
+      },
+      "gas": {
+        "name": "Природный газ",
+        "units": [
+          "м³",
+          "м3",
+          "тыс. м³"
+        ],
+        "categories": [
+          "volume",
+          "cost"
+        ]
+      },
+      "water": {
+        "name": "Вода",
+        "units": [
+          "м³",
+          "м3",
+          "тыс. м³"
+        ],
+        "categories": [
+          "volume",
+          "cost"
+        ]
+      },
+      "fuel": {
+        "name": "Мазут",
+        "units": [
+          "т",
+          "тонн",
+          "кг"
+        ],
+        "categories": [
+          "volume",
+          "cost"
+        ]
+      },
+      "coal": {
+        "name": "Уголь",
+        "units": [
+          "т",
+          "тонн",
+          "кг"
+        ],
+        "categories": [
+          "volume",
+          "cost"
+        ]
+      },
+      "heat": {
+        "name": "Тепловая энергия",
+        "units": [
+          "Гкал",
+          "Мкал"
+        ],
+        "categories": [
+          "energy",
+          "cost"
+        ]
+      }
+    },
+    "consumption_categories": {
+      "technological": "Технологические нужды",
+      "own_needs": "Собственные нужды",
+      "production": "Производственные нужды",
+      "household": "Хозяйственно-бытовые нужды"
+    },
+    "time_periods": {
+      "year": "Год",
+      "quarter": "Квартал",
+      "month": "Месяц"
+    },
+    "sheet_purposes": {
+      "regulatory_documentation": "Нормативно-правовая документация",
+      "metering_nodes": "Узлы учета энергоресурсов",
+      "structure": "Структура потребления энергоресурсов",
+      "balance": "Баланс энергоресурсов",
+      "dynamics": "Динамика потребления",
+      "fuel_consumption": "Потребление топлива",
+      "consumption_per_unit": "Расход на единицу продукции",
+      "measures": "Энергосберегающие мероприятия",
+      "summary": "Сводные данные"
+    }
+  },
+  "sheets": {
+    "Sheet1": {
+      "name": "Sheet1",
+      "purpose": "regulatory_documentation",
+      "purpose_description": "Нормативно-правовая документация",
+      "resource_types": [],
+      "time_periods": [],
+      "structural_info": {
+        "total_tables": 1,
+        "total_rows": 121,
+        "total_columns": 9
+      },
+      "data_categories": [],
+      "key_indicators": []
+    },
+    "Узел учета ": {
+      "name": "Узел учета ",
+      "purpose": "metering_nodes",
+      "purpose_description": "Узлы учета энергоресурсов",
+      "resource_types": [
+        "electricity"
+      ],
+      "time_periods": [],
+      "structural_info": {
+        "total_tables": 1,
+        "total_rows": 12,
+        "total_columns": 10
+      },
+      "data_categories": [],
+      "key_indicators": []
+    },
+    "Структура пр 2 ": {
+      "name": "Структура пр 2 ",
+      "purpose": "balance",
+      "purpose_description": "Баланс энергоресурсов",
+      "resource_types": [
+        "electricity",
+        "gas",
+        "water",
+        "fuel",
+        "coal"
+      ],
+      "time_periods": [
+        "year",
+        "quarter"
+      ],
+      "structural_info": {
+        "total_tables": 1,
+        "total_rows": 31,
+        "total_columns": 15
+      },
+      "data_categories": [
+        "technological"
+      ],
+      "key_indicators": []
+    },
+    "Баланс": {
+      "name": "Баланс",
+      "purpose": "balance",
+      "purpose_description": "Баланс энергоресурсов",
+      "resource_types": [
+        "gas",
+        "water",
+        "fuel",
+        "coal"
+      ],
+      "time_periods": [],
+      "structural_info": {
+        "total_tables": 1,
+        "total_rows": 33,
+        "total_columns": 16
+      },
+      "data_categories": [],
+      "key_indicators": []
+    },
+    "Динамика ср": {
+      "name": "Динамика ср",
+      "purpose": "dynamics",
+      "purpose_description": "Динамика потребления",
+      "resource_types": [
+        "electricity",
+        "gas"
+      ],
+      "time_periods": [
+        "year",
+        "quarter"
+      ],
+      "structural_info": {
+        "total_tables": 2,
+        "total_rows": 16,
+        "total_columns": 17
+      },
+      "data_categories": [
+        "technological"
+      ],
+      "key_indicators": []
+    },
+    "мазут,уголь 5 ": {
+      "name": "мазут,уголь 5 ",
+      "purpose": "dynamics",
+      "purpose_description": "Динамика потребления",
+      "resource_types": [
+        "fuel",
+        "coal"
+      ],
+      "time_periods": [
+        "year",
+        "quarter"
+      ],
+      "structural_info": {
+        "total_tables": 1,
+        "total_rows": 18,
+        "total_columns": 17
+      },
+      "data_categories": [
+        "technological"
+      ],
+      "key_indicators": []
+    },
+    "Расход  на ед.п": {
+      "name": "Расход  на ед.п",
+      "purpose": "dynamics",
+      "purpose_description": "Динамика потребления",
+      "resource_types": [
+        "electricity"
+      ],
+      "time_periods": [
+        "year",
+        "quarter"
+      ],
+      "structural_info": {
+        "total_tables": 3,
+        "total_rows": 18,
+        "total_columns": 17
+      },
+      "data_categories": [
+        "production"
+      ],
+      "key_indicators": []
+    },
+    "Мериаприятия 1 ": {
+      "name": "Мериаприятия 1 ",
+      "purpose": "measures",
+      "purpose_description": "Энергосберегающие мероприятия",
+      "resource_types": [
+        "electricity",
+        "gas",
+        "coal"
+      ],
+      "time_periods": [
+        "year"
+      ],
+      "structural_info": {
+        "total_tables": 1,
+        "total_rows": 13,
+        "total_columns": 6
+      },
+      "data_categories": [],
+      "key_indicators": []
+    }
+  },
+  "relationships": {
+    "data_flow": [
+      {
+        "from": "Структура пр 2 ",
+        "to": "Баланс",
+        "type": "consumption_data",
+        "description": "Данные о потреблении передаются из структуры в баланс"
+      },
+      {
+        "from": "Структура пр 2 ",
+        "to": "Динамика ср",
+        "type": "time_series_data",
+        "description": "Квартальные данные используются для анализа динамики"
+      },
+      {
+        "from": "Баланс",
+        "to": "Динамика ср",
+        "type": "aggregated_data",
+        "description": "Сводные данные баланса используются в динамике"
+      },
+      {
+        "from": "Структура пр 2 ",
+        "to": "Расход  на ед.п",
+        "type": "specific_consumption",
+        "description": "Данные потребления используются для расчета удельных показателей"
+      }
+    ],
+    "dependencies": [
+      {
+        "dependent": "Структура пр 2 ",
+        "depends_on": "Узел учета ",
+        "reason": "Информация об узлах учета необходима для правильного распределения потребления"
+      },
+      {
+        "dependent": "Баланс",
+        "depends_on": "Структура пр 2 ",
+        "reason": "Баланс формируется на основе данных структуры потребления"
+      },
+      {
+        "dependent": "Динамика ср",
+        "depends_on": "Баланс",
+        "reason": "Динамика строится на основе данных баланса"
+      }
+    ],
+    "references": []
+  },
+  "data_mapping": {
+    "by_resource_type": {
+      "electricity": [
+        "Узел учета ",
+        "Структура пр 2 ",
+        "Динамика ср",
+        "Расход  на ед.п",
+        "Мериаприятия 1 "
+      ],
+      "gas": [
+        "Структура пр 2 ",
+        "Баланс",
+        "Динамика ср",
+        "Мериаприятия 1 "
+      ],
+      "water": [
+        "Структура пр 2 ",
+        "Баланс"
+      ],
+      "fuel": [
+        "Структура пр 2 ",
+        "Баланс",
+        "мазут,уголь 5 "
+      ],
+      "coal": [
+        "Структура пр 2 ",
+        "Баланс",
+        "мазут,уголь 5 ",
+        "Мериаприятия 1 "
+      ]
+    },
+    "by_time_period": {
+      "year": [
+        "Структура пр 2 ",
+        "Динамика ср",
+        "мазут,уголь 5 ",
+        "Расход  на ед.п",
+        "Мериаприятия 1 "
+      ],
+      "quarter": [
+        "Структура пр 2 ",
+        "Динамика ср",
+        "мазут,уголь 5 ",
+        "Расход  на ед.п"
+      ]
+    },
+    "by_consumption_category": {
+      "technological": [
+        "Структура пр 2 ",
+        "Динамика ср",
+        "мазут,уголь 5 "
+      ],
+      "production": [
+        "Расход  на ед.п"
+      ]
+    }
+  }
+}

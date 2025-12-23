@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Анализ листа '04_Баланс' в файле EnergyPassport_PKM690_filled.xlsx"""
+
+from openpyxl import load_workbook
+from pathlib import Path
+
+file_path = Path("data/source_files/audit_sinergys/Новая папка/EnergyPassport_PKM690_filled.xlsx")
+
+if not file_path.exists():
+    print(f"Файл не найден: {file_path}")
+    exit(1)
+
+print("=" * 80)
+print(f"АНАЛИЗ ФАЙЛА: {file_path.name}")
+print("=" * 80 + "\n")
+
+wb = load_workbook(file_path, data_only=True)
+
+print(f"Все листы: {wb.sheetnames}\n")
+
+# Ищем лист '04_Баланс'
+balance_sheet = None
+for sheet_name in ["04_Баланс", "Баланс", "Balans"]:
+    if sheet_name in wb.sheetnames:
+        balance_sheet = wb[sheet_name]
+        print(f"✅ Найден лист: '{sheet_name}'")
+        break
+
+if not balance_sheet:
+    print("❌ Лист '04_Баланс' не найден!")
+    wb.close()
+    exit(1)
+
+print(f"Размер листа: {balance_sheet.max_row} строк, {balance_sheet.max_column} столбцов\n")
+
+# Анализируем структуру листа
+print("=" * 80)
+print("СТРУКТУРА ЛИСТА '04_Баланс'")
+print("=" * 80 + "\n")
+
+# Показываем первые 30 строк
+print("Первые 30 строк листа:\n")
+for row_idx in range(1, min(31, balance_sheet.max_row + 1)):
+    row = []
+    for col_idx in range(1, min(11, balance_sheet.max_column + 1)):  # Первые 10 столбцов
+        cell = balance_sheet.cell(row=row_idx, column=col_idx)
+        value = cell.value
+        if value is not None:
+            row.append(f"{cell.column_letter}{row_idx}:{str(value)[:40]}")
+    
+    if row:
+        print(f"Строка {row_idx:3d}: {' | '.join(row)}")
+
+# Ищем ключевые слова, связанные с категориями использования
+print("\n" + "=" * 80)
+print("ПОИСК КЛЮЧЕВЫХ СЛОВ (категории использования)")
+print("=" * 80 + "\n")
+
+keywords = {
+    "технологич": ["тех", "технологич", "тех-потер"],
+    "хоз-бытов": ["хоз", "бытов", "хоз-быт"],
+    "производств": ["производств", "произв"],
+    "собствен": ["собствен", "с.н.", "нужды"],
+    "электроэнерг": ["электроэнерг", "электр", "кВтч", "кВт·ч"],
+    "квартал": ["квартал", "Q1", "Q2", "Q3", "Q4", "2022", "2023", "2024"],
+}
+
+found_keywords = {kw: [] for kw in keywords.keys()}
+
+for row_idx in range(1, balance_sheet.max_row + 1):
+    for col_idx in range(1, balance_sheet.max_column + 1):
+        cell = balance_sheet.cell(row=row_idx, column=col_idx)
+        if cell.value:
+            cell_text = str(cell.value).lower()
+            for keyword_group, patterns in keywords.items():
+                for pattern in patterns:
+                    if pattern in cell_text:
+                        found_keywords[keyword_group].append(f"{cell.column_letter}{row_idx}: {cell.value}")
+                        break
+
+for keyword_group, matches in found_keywords.items():
+    if matches:
+        print(f"\n{keyword_group.upper()}:")
+        for match in matches[:5]:  # Показываем первые 5 совпадений
+            print(f"  {match}")
+
+# Ищем формулы
+print("\n" + "=" * 80)
+print("ПОИСК ФОРМУЛ")
+print("=" * 80 + "\n")
+
+wb_formulas = load_workbook(file_path, data_only=False)  # Загружаем с формулами
+balance_sheet_formulas = wb_formulas[balance_sheet.title]
+
+formulas_found = []
+for row_idx in range(1, min(50, balance_sheet.max_row + 1)):
+    for col_idx in range(1, min(11, balance_sheet.max_column + 1)):
+        cell = balance_sheet_formulas.cell(row=row_idx, column=col_idx)
+        if cell.value and str(cell.value).startswith("="):
+            formulas_found.append(f"{cell.column_letter}{row_idx}: {cell.value[:60]}")
+            if len(formulas_found) >= 10:
+                break
+    if len(formulas_found) >= 10:
+        break
+
+if formulas_found:
+    print("Найдены формулы:")
+    for formula in formulas_found:
+        print(f"  {formula}")
+else:
+    print("Формулы не найдены в первых 50 строках")
+
+wb.close()
+wb_formulas.close()
+
+print("\n" + "=" * 80)
+print("АНАЛИЗ ЗАВЕРШЕН")
+print("=" * 80)
+

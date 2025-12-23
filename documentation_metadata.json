@@ -1,0 +1,4695 @@
+[
+    {
+        "path": "ACTIVE_KWH_CALCULATION_IMPLEMENTATION.md",
+        "name": "ACTIVE_KWH_CALCULATION_IMPLEMENTATION.md",
+        "ext": ".md",
+        "size_bytes": 6994,
+        "size_human": "6.83 KB",
+        "last_modified": "2025-11-16 00:49:11",
+        "mod_timestamp": 1763236151.499423,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "AI_CONTENT_CLASSIFIER_IMPLEMENTATION.md",
+        "name": "AI_CONTENT_CLASSIFIER_IMPLEMENTATION.md",
+        "ext": ".md",
+        "size_bytes": 5905,
+        "size_human": "5.77 KB",
+        "last_modified": "2025-11-16 00:42:03",
+        "mod_timestamp": 1763235723.2439609,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "AI_FORMULA_RESTORATION_PLAN.md",
+        "name": "AI_FORMULA_RESTORATION_PLAN.md",
+        "ext": ".md",
+        "size_bytes": 17142,
+        "size_human": "16.74 KB",
+        "last_modified": "2025-11-15 23:54:47",
+        "mod_timestamp": 1763232887.149301,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "AI_INTEGRATION_ANALYSIS.md",
+        "name": "AI_INTEGRATION_ANALYSIS.md",
+        "ext": ".md",
+        "size_bytes": 14987,
+        "size_human": "14.64 KB",
+        "last_modified": "2025-11-15 23:18:09",
+        "mod_timestamp": 1763230689.0063672,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "AI_INTEGRATION_DONE.md",
+        "name": "AI_INTEGRATION_DONE.md",
+        "ext": ".md",
+        "size_bytes": 2905,
+        "size_human": "2.84 KB",
+        "last_modified": "2025-11-09 00:19:59",
+        "mod_timestamp": 1762629599.8723006,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "AI_INTEGRATION_PLAN.md",
+        "name": "AI_INTEGRATION_PLAN.md",
+        "ext": ".md",
+        "size_bytes": 17894,
+        "size_human": "17.47 KB",
+        "last_modified": "2025-11-09 00:18:21",
+        "mod_timestamp": 1762629501.3311083,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "AI_PROMPT_WEB_UPLOAD.md",
+        "name": "AI_PROMPT_WEB_UPLOAD.md",
+        "ext": ".md",
+        "size_bytes": 1878,
+        "size_human": "1.83 KB",
+        "last_modified": "2025-11-08 21:45:16",
+        "mod_timestamp": 1762620316.7575333,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "analyze_passport.py",
+        "name": "analyze_passport.py",
+        "ext": ".py",
+        "size_bytes": 2114,
+        "size_human": "2.06 KB",
+        "last_modified": "2025-11-16 00:03:02",
+        "mod_timestamp": 1763233382.4759307,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "apply_restored_formula.py",
+        "name": "apply_restored_formula.py",
+        "ext": ".py",
+        "size_bytes": 1766,
+        "size_human": "1.72 KB",
+        "last_modified": "2025-11-16 00:05:21",
+        "mod_timestamp": 1763233521.6220348,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "CHANGELOG.md",
+        "name": "CHANGELOG.md",
+        "ext": ".md",
+        "size_bytes": 10835,
+        "size_human": "10.58 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0432074,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "create_test_image.py",
+        "name": "create_test_image.py",
+        "ext": ".py",
+        "size_bytes": 3165,
+        "size_human": "3.09 KB",
+        "last_modified": "2025-11-15 22:16:33",
+        "mod_timestamp": 1763226993.9640636,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "CRITICAL_FIX_AGGREGATION.md",
+        "name": "CRITICAL_FIX_AGGREGATION.md",
+        "ext": ".md",
+        "size_bytes": 2603,
+        "size_human": "2.54 KB",
+        "last_modified": "2025-11-16 01:27:48",
+        "mod_timestamp": 1763238468.8690093,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "CURRENT_STATUS.md",
+        "name": "CURRENT_STATUS.md",
+        "ext": ".md",
+        "size_bytes": 2811,
+        "size_human": "2.75 KB",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.780636,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "cursor.json",
+        "name": "cursor.json",
+        "ext": ".json",
+        "size_bytes": 403,
+        "size_human": "403 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "DB_SETUP_DONE.md",
+        "name": "DB_SETUP_DONE.md",
+        "ext": ".md",
+        "size_bytes": 2827,
+        "size_human": "2.76 KB",
+        "last_modified": "2025-11-09 00:37:47",
+        "mod_timestamp": 1762630667.305199,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "DEBUG_STEPS.md",
+        "name": "DEBUG_STEPS.md",
+        "ext": ".md",
+        "size_bytes": 4869,
+        "size_human": "4.75 KB",
+        "last_modified": "2025-11-16 01:58:18",
+        "mod_timestamp": 1763240298.8743072,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "DEEPSEEK_TEST_RESULT.md",
+        "name": "DEEPSEEK_TEST_RESULT.md",
+        "ext": ".md",
+        "size_bytes": 3306,
+        "size_human": "3.23 KB",
+        "last_modified": "2025-11-09 00:29:11",
+        "mod_timestamp": 1762630151.549933,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "DEPLOYMENT_CHECKLIST.md",
+        "name": "DEPLOYMENT_CHECKLIST.md",
+        "ext": ".md",
+        "size_bytes": 10262,
+        "size_human": "10.02 KB",
+        "last_modified": "2025-11-09 00:18:21",
+        "mod_timestamp": 1762629501.3311083,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "DEPLOYMENT_GUIDE.md",
+        "name": "DEPLOYMENT_GUIDE.md",
+        "ext": ".md",
+        "size_bytes": 10493,
+        "size_human": "10.25 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9847841,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "DIAGNOSTIC_GUIDE.md",
+        "name": "DIAGNOSTIC_GUIDE.md",
+        "ext": ".md",
+        "size_bytes": 1509,
+        "size_human": "1.47 KB",
+        "last_modified": "2025-11-16 01:58:18",
+        "mod_timestamp": 1763240298.8743072,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "DOCKER_FIX_WINDOWS.md",
+        "name": "DOCKER_FIX_WINDOWS.md",
+        "ext": ".md",
+        "size_bytes": 10727,
+        "size_human": "10.48 KB",
+        "last_modified": "2025-11-09 02:02:40",
+        "mod_timestamp": 1762635760.6488795,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "ELECTRICITY_FORMAT_FIX.md",
+        "name": "ELECTRICITY_FORMAT_FIX.md",
+        "ext": ".md",
+        "size_bytes": 2698,
+        "size_human": "2.63 KB",
+        "last_modified": "2025-11-16 01:43:18",
+        "mod_timestamp": 1763239398.9682612,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "ERROR_ANALYSIS_AI.md",
+        "name": "ERROR_ANALYSIS_AI.md",
+        "ext": ".md",
+        "size_bytes": 11087,
+        "size_human": "10.83 KB",
+        "last_modified": "2025-11-16 00:54:12",
+        "mod_timestamp": 1763236452.2159119,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_analysis_step1.json",
+        "name": "formula_analysis_step1.json",
+        "ext": ".json",
+        "size_bytes": 836,
+        "size_human": "836 B",
+        "last_modified": "2025-11-16 00:03:09",
+        "mod_timestamp": 1763233389.3059418,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_analysis_step1_result.json",
+        "name": "formula_analysis_step1_result.json",
+        "ext": ".json",
+        "size_bytes": 2065,
+        "size_human": "2.02 KB",
+        "last_modified": "2025-11-15 23:58:55",
+        "mod_timestamp": 1763233135.9373603,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_analysis_step2.py",
+        "name": "formula_analysis_step2.py",
+        "ext": ".py",
+        "size_bytes": 4616,
+        "size_human": "4.51 KB",
+        "last_modified": "2025-11-16 00:03:02",
+        "mod_timestamp": 1763233382.489347,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_analysis_step2_result.json",
+        "name": "formula_analysis_step2_result.json",
+        "ext": ".json",
+        "size_bytes": 27241,
+        "size_human": "26.60 KB",
+        "last_modified": "2025-11-15 23:59:48",
+        "mod_timestamp": 1763233188.7611046,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_analysis_step3.py",
+        "name": "formula_analysis_step3.py",
+        "ext": ".py",
+        "size_bytes": 3369,
+        "size_human": "3.29 KB",
+        "last_modified": "2025-11-16 00:03:02",
+        "mod_timestamp": 1763233382.489347,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_analysis_step3_result.json",
+        "name": "formula_analysis_step3_result.json",
+        "ext": ".json",
+        "size_bytes": 2319,
+        "size_human": "2.26 KB",
+        "last_modified": "2025-11-16 00:00:38",
+        "mod_timestamp": 1763233238.660183,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_analysis_step4.py",
+        "name": "formula_analysis_step4.py",
+        "ext": ".py",
+        "size_bytes": 3298,
+        "size_human": "3.22 KB",
+        "last_modified": "2025-11-16 00:03:02",
+        "mod_timestamp": 1763233382.492272,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_restoration_af13.json",
+        "name": "formula_restoration_af13.json",
+        "ext": ".json",
+        "size_bytes": 633,
+        "size_human": "633 B",
+        "last_modified": "2025-11-16 00:01:48",
+        "mod_timestamp": 1763233308.7190294,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "FORMULA_RESTORATION_COMPLETE.md",
+        "name": "FORMULA_RESTORATION_COMPLETE.md",
+        "ext": ".md",
+        "size_bytes": 6672,
+        "size_human": "6.52 KB",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.7816362,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "formula_restoration_report.json",
+        "name": "formula_restoration_report.json",
+        "ext": ".json",
+        "size_bytes": 662,
+        "size_human": "662 B",
+        "last_modified": "2025-11-16 00:04:34",
+        "mod_timestamp": 1763233474.6289775,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "formula_templates.json",
+        "name": "formula_templates.json",
+        "ext": ".json",
+        "size_bytes": 10124,
+        "size_human": "9.89 KB",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.780636,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "GITHUB_AUTH.md",
+        "name": "GITHUB_AUTH.md",
+        "ext": ".md",
+        "size_bytes": 3001,
+        "size_human": "2.93 KB",
+        "last_modified": "2025-11-05 12:44:13",
+        "mod_timestamp": 1762328653.4919977,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "GITHUB_TOKEN_SETUP.md",
+        "name": "GITHUB_TOKEN_SETUP.md",
+        "ext": ".md",
+        "size_bytes": 2261,
+        "size_human": "2.21 KB",
+        "last_modified": "2025-11-05 17:32:26",
+        "mod_timestamp": 1762345946.1635566,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "HEALTH_MONITORING.md",
+        "name": "HEALTH_MONITORING.md",
+        "ext": ".md",
+        "size_bytes": 8015,
+        "size_human": "7.83 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9847841,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "ISSUE_WEB_UPLOAD_INTERFACE.md",
+        "name": "ISSUE_WEB_UPLOAD_INTERFACE.md",
+        "ext": ".md",
+        "size_bytes": 7019,
+        "size_human": "6.85 KB",
+        "last_modified": "2025-11-08 21:45:16",
+        "mod_timestamp": 1762620316.7575333,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "MISSING_TASKS_REPORT.md",
+        "name": "MISSING_TASKS_REPORT.md",
+        "ext": ".md",
+        "size_bytes": 12798,
+        "size_human": "12.50 KB",
+        "last_modified": "2025-11-14 23:33:05",
+        "mod_timestamp": 1763145185.9634705,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "NEW_SESSION_PROMPT.md",
+        "name": "NEW_SESSION_PROMPT.md",
+        "ext": ".md",
+        "size_bytes": 27718,
+        "size_human": "27.07 KB",
+        "last_modified": "2025-11-09 00:37:47",
+        "mod_timestamp": 1762630667.3061967,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "NEW_SESSION_START.md",
+        "name": "NEW_SESSION_START.md",
+        "ext": ".md",
+        "size_bytes": 3961,
+        "size_human": "3.87 KB",
+        "last_modified": "2025-11-08 12:28:13",
+        "mod_timestamp": 1762586893.2954967,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "P1_TASKS_COMPLETED.md",
+        "name": "P1_TASKS_COMPLETED.md",
+        "ext": ".md",
+        "size_bytes": 5945,
+        "size_human": "5.81 KB",
+        "last_modified": "2025-11-16 01:04:56",
+        "mod_timestamp": 1763237096.650496,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "PERFORMANCE_OPTIMIZATION.md",
+        "name": "PERFORMANCE_OPTIMIZATION.md",
+        "ext": ".md",
+        "size_bytes": 11982,
+        "size_human": "11.70 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9847841,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "PRODUCTION_READY_SUMMARY.md",
+        "name": "PRODUCTION_READY_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 9535,
+        "size_human": "9.31 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9938416,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "PROGRESS_FORMULA_RESTORATION.md",
+        "name": "PROGRESS_FORMULA_RESTORATION.md",
+        "ext": ".md",
+        "size_bytes": 2470,
+        "size_human": "2.41 KB",
+        "last_modified": "2025-11-16 00:03:02",
+        "mod_timestamp": 1763233382.4913845,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "pyrightconfig.json",
+        "name": "pyrightconfig.json",
+        "ext": ".json",
+        "size_bytes": 84,
+        "size_human": "84 B",
+        "last_modified": "2025-12-08 08:08:15",
+        "mod_timestamp": 1765163295.3446112,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "QUARTER_CALCULATION_FIX.md",
+        "name": "QUARTER_CALCULATION_FIX.md",
+        "ext": ".md",
+        "size_bytes": 3893,
+        "size_human": "3.80 KB",
+        "last_modified": "2025-11-16 01:13:58",
+        "mod_timestamp": 1763237638.9823139,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "QUICK_CONTEXT.md",
+        "name": "QUICK_CONTEXT.md",
+        "ext": ".md",
+        "size_bytes": 1409,
+        "size_human": "1.38 KB",
+        "last_modified": "2025-11-08 20:12:58",
+        "mod_timestamp": 1762614778.0885167,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "QUICK_RELEASE.md",
+        "name": "QUICK_RELEASE.md",
+        "ext": ".md",
+        "size_bytes": 1471,
+        "size_human": "1.44 KB",
+        "last_modified": "2025-11-05 17:40:32",
+        "mod_timestamp": 1762346432.7787602,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "QUICK_START_PROMPT.txt",
+        "name": "QUICK_START_PROMPT.txt",
+        "ext": ".txt",
+        "size_bytes": 6564,
+        "size_human": "6.41 KB",
+        "last_modified": "2025-11-09 00:37:47",
+        "mod_timestamp": 1762630667.3071983,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "QUICK_TEST_PDF.md",
+        "name": "QUICK_TEST_PDF.md",
+        "ext": ".md",
+        "size_bytes": 5313,
+        "size_human": "5.19 KB",
+        "last_modified": "2025-11-08 23:44:25",
+        "mod_timestamp": 1762627465.5823467,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 4584,
+        "size_human": "4.48 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0432074,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "REAGGREGATION_INSTRUCTIONS.md",
+        "name": "REAGGREGATION_INSTRUCTIONS.md",
+        "ext": ".md",
+        "size_bytes": 1951,
+        "size_human": "1.91 KB",
+        "last_modified": "2025-11-16 01:58:18",
+        "mod_timestamp": 1763240298.8743072,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "RELEASE_DATA.txt",
+        "name": "RELEASE_DATA.txt",
+        "ext": ".txt",
+        "size_bytes": 952,
+        "size_human": "952 B",
+        "last_modified": "2025-11-05 17:27:17",
+        "mod_timestamp": 1762345637.7490387,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "RELEASE_INSTRUCTIONS.md",
+        "name": "RELEASE_INSTRUCTIONS.md",
+        "ext": ".md",
+        "size_bytes": 2094,
+        "size_human": "2.04 KB",
+        "last_modified": "2025-11-05 17:24:28",
+        "mod_timestamp": 1762345468.9822326,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "RESTORED_FORMULAS_SUMMARY.md",
+        "name": "RESTORED_FORMULAS_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 1822,
+        "size_human": "1.78 KB",
+        "last_modified": "2025-11-16 00:05:21",
+        "mod_timestamp": 1763233521.6220348,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "SERVER_REQUIREMENTS.md",
+        "name": "SERVER_REQUIREMENTS.md",
+        "ext": ".md",
+        "size_bytes": 11555,
+        "size_human": "11.28 KB",
+        "last_modified": "2025-11-09 00:31:13",
+        "mod_timestamp": 1762630273.4220922,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "SERVICE_RESTART_INSTRUCTIONS.md",
+        "name": "SERVICE_RESTART_INSTRUCTIONS.md",
+        "ext": ".md",
+        "size_bytes": 685,
+        "size_human": "685 B",
+        "last_modified": "2025-11-16 01:58:18",
+        "mod_timestamp": 1763240298.8743072,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "SESSION_SUMMARY.md",
+        "name": "SESSION_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 2241,
+        "size_human": "2.19 KB",
+        "last_modified": "2025-11-16 01:56:02",
+        "mod_timestamp": 1763240162.0752902,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "START_HERE.md",
+        "name": "START_HERE.md",
+        "ext": ".md",
+        "size_bytes": 1843,
+        "size_human": "1.80 KB",
+        "last_modified": "2025-11-08 12:28:13",
+        "mod_timestamp": 1762586893.2954967,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "STEP10_TEMPLATE_CREATED.md",
+        "name": "STEP10_TEMPLATE_CREATED.md",
+        "ext": ".md",
+        "size_bytes": 1099,
+        "size_human": "1.07 KB",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.780636,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "STEP5_MODULE_CREATED.md",
+        "name": "STEP5_MODULE_CREATED.md",
+        "ext": ".md",
+        "size_bytes": 1122,
+        "size_human": "1.10 KB",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.7766323,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "STEP6_MODULE_FIXED.md",
+        "name": "STEP6_MODULE_FIXED.md",
+        "ext": ".md",
+        "size_bytes": 551,
+        "size_human": "551 B",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.778636,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "STEP7_PARSING_FIXED.md",
+        "name": "STEP7_PARSING_FIXED.md",
+        "ext": ".md",
+        "size_bytes": 690,
+        "size_human": "690 B",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.778636,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "STEP8_SHEET_NAME_FIXED.md",
+        "name": "STEP8_SHEET_NAME_FIXED.md",
+        "ext": ".md",
+        "size_bytes": 736,
+        "size_human": "736 B",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.7796352,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "STEP9_SUCCESS.md",
+        "name": "STEP9_SUCCESS.md",
+        "ext": ".md",
+        "size_bytes": 1131,
+        "size_human": "1.10 KB",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.7796352,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "temp_import.py",
+        "name": "temp_import.py",
+        "ext": ".py",
+        "size_bytes": 358,
+        "size_human": "358 B",
+        "last_modified": "2025-12-05 00:53:10",
+        "mod_timestamp": 1764877990.6049273,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "test_deepseek_connection.py",
+        "name": "test_deepseek_connection.py",
+        "ext": ".py",
+        "size_bytes": 9618,
+        "size_human": "9.39 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.797093,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "test_deepseek_simple.py",
+        "name": "test_deepseek_simple.py",
+        "ext": ".py",
+        "size_bytes": 3236,
+        "size_human": "3.16 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.802375,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "test_formula_restorer.py",
+        "name": "test_formula_restorer.py",
+        "ext": ".py",
+        "size_bytes": 1296,
+        "size_human": "1.27 KB",
+        "last_modified": "2025-11-16 00:13:22",
+        "mod_timestamp": 1763234002.7766323,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "TEST_IMAGE_OCR.md",
+        "name": "TEST_IMAGE_OCR.md",
+        "ext": ".md",
+        "size_bytes": 6938,
+        "size_human": "6.78 KB",
+        "last_modified": "2025-11-13 20:09:47",
+        "mod_timestamp": 1763046587.3492756,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "test_image_ocr.py",
+        "name": "test_image_ocr.py",
+        "ext": ".py",
+        "size_bytes": 9154,
+        "size_human": "8.94 KB",
+        "last_modified": "2025-11-15 21:30:57",
+        "mod_timestamp": 1763224257.552998,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "TEST_PDF_OCR.md",
+        "name": "TEST_PDF_OCR.md",
+        "ext": ".md",
+        "size_bytes": 5401,
+        "size_human": "5.27 KB",
+        "last_modified": "2025-11-08 23:44:25",
+        "mod_timestamp": 1762627465.5823467,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "test_pdf_ocr.py",
+        "name": "test_pdf_ocr.py",
+        "ext": ".py",
+        "size_bytes": 8596,
+        "size_human": "8.39 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.8153648,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "TROUBLESHOOTING.md",
+        "name": "TROUBLESHOOTING.md",
+        "ext": ".md",
+        "size_bytes": 12737,
+        "size_human": "12.44 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9847841,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "URGENT_FIX_SUMMARY.md",
+        "name": "URGENT_FIX_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 3736,
+        "size_human": "3.65 KB",
+        "last_modified": "2025-11-16 01:27:48",
+        "mod_timestamp": 1763238468.8690093,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "WEB_INTERFACE_FIXES.md",
+        "name": "WEB_INTERFACE_FIXES.md",
+        "ext": ".md",
+        "size_bytes": 8850,
+        "size_human": "8.64 KB",
+        "last_modified": "2025-11-09 01:18:00",
+        "mod_timestamp": 1762633080.1638916,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": ".github\\workflows\\ci-ingest-tests.yml",
+        "name": "ci-ingest-tests.yml",
+        "ext": ".yml",
+        "size_bytes": 904,
+        "size_human": "904 B",
+        "last_modified": "2025-12-02 22:51:59",
+        "mod_timestamp": 1764697919.9859693,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": ".github\\workflows\\docker.yml",
+        "name": "docker.yml",
+        "ext": ".yml",
+        "size_bytes": 5128,
+        "size_human": "5.01 KB",
+        "last_modified": "2025-11-06 15:54:23",
+        "mod_timestamp": 1762426463.0513687,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": ".github\\workflows\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 2708,
+        "size_human": "2.64 KB",
+        "last_modified": "2025-11-05 17:59:06",
+        "mod_timestamp": 1762347546.9040895,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": ".github\\workflows\\release.yml",
+        "name": "release.yml",
+        "ext": ".yml",
+        "size_bytes": 3726,
+        "size_human": "3.64 KB",
+        "last_modified": "2025-11-06 16:41:42",
+        "mod_timestamp": 1762429302.528813,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": ".github\\workflows\\smoke.yml",
+        "name": "smoke.yml",
+        "ext": ".yml",
+        "size_bytes": 1808,
+        "size_human": "1.77 KB",
+        "last_modified": "2025-11-06 21:32:48",
+        "mod_timestamp": 1762446768.68825,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": ".vscode\\settings.json",
+        "name": "settings.json",
+        "ext": ".json",
+        "size_bytes": 347,
+        "size_human": "347 B",
+        "last_modified": "2025-11-16 12:28:13",
+        "mod_timestamp": 1763278093.83803,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "backups\\main_py_restore\\restore_log.txt",
+        "name": "restore_log.txt",
+        "ext": ".txt",
+        "size_bytes": 275,
+        "size_human": "275 B",
+        "last_modified": "2025-12-05 04:50:15",
+        "mod_timestamp": 1764892215.5729742,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "client\\server.py",
+        "name": "server.py",
+        "ext": ".py",
+        "size_bytes": 2164,
+        "size_human": "2.11 KB",
+        "last_modified": "2025-11-15 22:16:33",
+        "mod_timestamp": 1763226993.9640636,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "code_check_logs\\code_check_report_20251115_212446.txt",
+        "name": "code_check_report_20251115_212446.txt",
+        "ext": ".txt",
+        "size_bytes": 91878,
+        "size_human": "89.72 KB",
+        "last_modified": "2025-11-15 21:24:52",
+        "mod_timestamp": 1763223892.0810695,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "code_check_logs\\code_check_report_20251115_212850.txt",
+        "name": "code_check_report_20251115_212850.txt",
+        "ext": ".txt",
+        "size_bytes": 39391,
+        "size_human": "38.47 KB",
+        "last_modified": "2025-11-15 21:28:51",
+        "mod_timestamp": 1763224131.761928,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "docs\\EXCEL_PIPELINE_OVERVIEW.md",
+        "name": "EXCEL_PIPELINE_OVERVIEW.md",
+        "ext": ".md",
+        "size_bytes": 9708,
+        "size_human": "9.48 KB",
+        "last_modified": "2025-11-16 18:05:00",
+        "mod_timestamp": 1763298300.5105088,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "docs\\database\\audits\\DATABASE_AUDIT_PHASE0_REPORT.md",
+        "name": "DATABASE_AUDIT_PHASE0_REPORT.md",
+        "ext": ".md",
+        "size_bytes": 11469,
+        "size_human": "11.20 KB",
+        "last_modified": "2025-12-09 00:33:50",
+        "mod_timestamp": 1765222430.976602,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "docs\\database\\cleanup\\BACKUP_RESTORE_PROCEDURE.md",
+        "name": "BACKUP_RESTORE_PROCEDURE.md",
+        "ext": ".md",
+        "size_bytes": 3338,
+        "size_human": "3.26 KB",
+        "last_modified": "2025-12-09 00:31:32",
+        "mod_timestamp": 1765222292.3302772,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "docs\\database\\cleanup\\PHASE1_COMPLETION_REPORT.md",
+        "name": "PHASE1_COMPLETION_REPORT.md",
+        "ext": ".md",
+        "size_bytes": 5652,
+        "size_human": "5.52 KB",
+        "last_modified": "2025-12-09 00:35:15",
+        "mod_timestamp": 1765222515.3836138,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "infra\\alertmanager.yml",
+        "name": "alertmanager.yml",
+        "ext": ".yml",
+        "size_bytes": 1501,
+        "size_human": "1.47 KB",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.1136599,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\alerts.yml",
+        "name": "alerts.yml",
+        "ext": ".yml",
+        "size_bytes": 6230,
+        "size_human": "6.08 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.3266494,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\docker-compose.local.yml",
+        "name": "docker-compose.local.yml",
+        "ext": ".yml",
+        "size_bytes": 7219,
+        "size_human": "7.05 KB",
+        "last_modified": "2025-11-15 14:43:07",
+        "mod_timestamp": 1763199787.089279,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\docker-compose.monitoring.yml",
+        "name": "docker-compose.monitoring.yml",
+        "ext": ".yml",
+        "size_bytes": 5362,
+        "size_human": "5.24 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.3029313,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\docker-compose.prod.yml",
+        "name": "docker-compose.prod.yml",
+        "ext": ".yml",
+        "size_bytes": 8974,
+        "size_human": "8.76 KB",
+        "last_modified": "2025-11-13 16:23:02",
+        "mod_timestamp": 1763032982.3280797,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\docker-compose.staging.yml",
+        "name": "docker-compose.staging.yml",
+        "ext": ".yml",
+        "size_bytes": 3996,
+        "size_human": "3.90 KB",
+        "last_modified": "2025-11-09 00:37:47",
+        "mod_timestamp": 1762630667.3011975,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\docker-compose.yml",
+        "name": "docker-compose.yml",
+        "ext": ".yml",
+        "size_bytes": 1799,
+        "size_human": "1.76 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0432074,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\LOCAL_DEPLOYMENT_READY.md",
+        "name": "LOCAL_DEPLOYMENT_READY.md",
+        "ext": ".md",
+        "size_bytes": 2412,
+        "size_human": "2.36 KB",
+        "last_modified": "2025-11-08 19:12:23",
+        "mod_timestamp": 1762611143.1072173,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "infra\\LOCAL_MINI_PROD.md",
+        "name": "LOCAL_MINI_PROD.md",
+        "ext": ".md",
+        "size_bytes": 5871,
+        "size_human": "5.73 KB",
+        "last_modified": "2025-11-08 19:12:23",
+        "mod_timestamp": 1762611143.102185,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\LOCAL_SETUP_SUMMARY.md",
+        "name": "LOCAL_SETUP_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 2469,
+        "size_human": "2.41 KB",
+        "last_modified": "2025-11-08 19:12:23",
+        "mod_timestamp": 1762611143.102185,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "infra\\loki-config.yml",
+        "name": "loki-config.yml",
+        "ext": ".yml",
+        "size_bytes": 1071,
+        "size_human": "1.05 KB",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.1136599,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "infra\\MONITORING.md",
+        "name": "MONITORING.md",
+        "ext": ".md",
+        "size_bytes": 11076,
+        "size_human": "10.82 KB",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.1217043,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\OBSERVABILITY_BUNDLE.md",
+        "name": "OBSERVABILITY_BUNDLE.md",
+        "ext": ".md",
+        "size_bytes": 14957,
+        "size_human": "14.61 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.4418824,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\OBSERVABILITY_DEPLOYMENT_GUIDE.md",
+        "name": "OBSERVABILITY_DEPLOYMENT_GUIDE.md",
+        "ext": ".md",
+        "size_bytes": 9340,
+        "size_human": "9.12 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.4474218,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "infra\\OBSERVABILITY_SUMMARY.md",
+        "name": "OBSERVABILITY_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 6127,
+        "size_human": "5.98 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.448421,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\passport_demo1.pdf",
+        "name": "passport_demo1.pdf",
+        "ext": ".pdf",
+        "size_bytes": 207,
+        "size_human": "207 B",
+        "last_modified": "2025-11-04 14:27:58",
+        "mod_timestamp": 1762248478.6146934,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "infra\\passport_demo1_full.pdf",
+        "name": "passport_demo1_full.pdf",
+        "ext": ".pdf",
+        "size_bytes": 47500,
+        "size_human": "46.39 KB",
+        "last_modified": "2025-11-05 11:55:03",
+        "mod_timestamp": 1762325703.5756042,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "infra\\PRODUCTION_SERVER_REQUIREMENTS.md",
+        "name": "PRODUCTION_SERVER_REQUIREMENTS.md",
+        "ext": ".md",
+        "size_bytes": 12212,
+        "size_human": "11.93 KB",
+        "last_modified": "2025-11-13 16:25:29",
+        "mod_timestamp": 1763033129.1524138,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\prometheus.yml",
+        "name": "prometheus.yml",
+        "ext": ".yml",
+        "size_bytes": 4664,
+        "size_human": "4.55 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.3029313,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\promtail-config.yml",
+        "name": "promtail-config.yml",
+        "ext": ".yml",
+        "size_bytes": 1915,
+        "size_human": "1.87 KB",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.1136599,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "infra\\QUICK_LOCAL.md",
+        "name": "QUICK_LOCAL.md",
+        "ext": ".md",
+        "size_bytes": 894,
+        "size_human": "894 B",
+        "last_modified": "2025-11-08 19:12:23",
+        "mod_timestamp": 1762611143.1062138,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\QUICK_MONITORING.md",
+        "name": "QUICK_MONITORING.md",
+        "ext": ".md",
+        "size_bytes": 1303,
+        "size_human": "1.27 KB",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.122708,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\QUICK_OBSERVABILITY.md",
+        "name": "QUICK_OBSERVABILITY.md",
+        "ext": ".md",
+        "size_bytes": 1352,
+        "size_human": "1.32 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.4444215,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\QUICK_STAGING.md",
+        "name": "QUICK_STAGING.md",
+        "ext": ".md",
+        "size_bytes": 1397,
+        "size_human": "1.36 KB",
+        "last_modified": "2025-11-08 12:21:25",
+        "mod_timestamp": 1762586485.8376,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\RUN_LOCAL.md",
+        "name": "RUN_LOCAL.md",
+        "ext": ".md",
+        "size_bytes": 2723,
+        "size_human": "2.66 KB",
+        "last_modified": "2025-11-08 20:06:47",
+        "mod_timestamp": 1762614407.2591238,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\SERVER_REQUIREMENTS_SHORT.md",
+        "name": "SERVER_REQUIREMENTS_SHORT.md",
+        "ext": ".md",
+        "size_bytes": 4553,
+        "size_human": "4.45 KB",
+        "last_modified": "2025-11-13 16:26:35",
+        "mod_timestamp": 1763033195.5843036,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\STAGING_DEPLOYMENT.md",
+        "name": "STAGING_DEPLOYMENT.md",
+        "ext": ".md",
+        "size_bytes": 10618,
+        "size_human": "10.37 KB",
+        "last_modified": "2025-11-08 12:21:25",
+        "mod_timestamp": 1762586485.8345742,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "infra\\Документ Microsoft Word.docx",
+        "name": "Документ Microsoft Word.docx",
+        "ext": ".docx",
+        "size_bytes": 0,
+        "size_human": "0 B",
+        "last_modified": "2025-11-05 13:15:52",
+        "mod_timestamp": 1762330552.5368454,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\2458dc3a-91e8-4e5b-863b-2fbde7693267__TTZ 133AA faktura.pdf",
+        "name": "2458dc3a-91e8-4e5b-863b-2fbde7693267__TTZ 133AA faktura.pdf",
+        "ext": ".pdf",
+        "size_bytes": 7750250,
+        "size_human": "7.39 MB",
+        "last_modified": "2025-11-08 23:02:53",
+        "mod_timestamp": 1762624973.8378975,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\31bc9bc9-beb2-4fa3-8823-48c7c14c1022__gaz.xlsx",
+        "name": "31bc9bc9-beb2-4fa3-8823-48c7c14c1022__gaz.xlsx",
+        "ext": ".xlsx",
+        "size_bytes": 18003,
+        "size_human": "17.58 KB",
+        "last_modified": "2025-11-09 03:28:39",
+        "mod_timestamp": 1762640919.370705,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\544acc8c-8831-4caf-a60d-d4b8bf622f8c__oborudovanie.xlsx",
+        "name": "544acc8c-8831-4caf-a60d-d4b8bf622f8c__oborudovanie.xlsx",
+        "ext": ".xlsx",
+        "size_bytes": 30656,
+        "size_human": "29.94 KB",
+        "last_modified": "2025-11-09 03:41:30",
+        "mod_timestamp": 1762641690.8847213,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\54b0facd-0677-47a9-94ba-0b0a851e4e85__TTZ 133AA faktura.pdf",
+        "name": "54b0facd-0677-47a9-94ba-0b0a851e4e85__TTZ 133AA faktura.pdf",
+        "ext": ".pdf",
+        "size_bytes": 7750250,
+        "size_human": "7.39 MB",
+        "last_modified": "2025-11-08 22:53:24",
+        "mod_timestamp": 1762624404.644816,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\9bcff6c2-4c70-46b7-b50b-f43f42cec8ad__TTZ 133AA faktura.pdf",
+        "name": "9bcff6c2-4c70-46b7-b50b-f43f42cec8ad__TTZ 133AA faktura.pdf",
+        "ext": ".pdf",
+        "size_bytes": 7750250,
+        "size_human": "7.39 MB",
+        "last_modified": "2025-11-08 22:46:55",
+        "mod_timestamp": 1762624015.8777754,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\a772bb9f-137d-40d9-93f6-1aa3602be74a__oborudovanie.xlsx",
+        "name": "a772bb9f-137d-40d9-93f6-1aa3602be74a__oborudovanie.xlsx",
+        "ext": ".xlsx",
+        "size_bytes": 30656,
+        "size_human": "29.94 KB",
+        "last_modified": "2025-11-09 03:18:46",
+        "mod_timestamp": 1762640326.7935214,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\b8222301-48f3-45d0-8583-d0e59e4a383b__TTZ 133AA faktura.pdf",
+        "name": "b8222301-48f3-45d0-8583-d0e59e4a383b__TTZ 133AA faktura.pdf",
+        "ext": ".pdf",
+        "size_bytes": 7750250,
+        "size_human": "7.39 MB",
+        "last_modified": "2025-11-08 22:49:52",
+        "mod_timestamp": 1762624192.2647164,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\data\\inbox\\e3b7e1df-a01d-407d-ba48-7951a9c98b33__ograjdayuschie_konstrukcii.xlsx",
+        "name": "e3b7e1df-a01d-407d-ba48-7951a9c98b33__ograjdayuschie_konstrukcii.xlsx",
+        "ext": ".xlsx",
+        "size_bytes": 12934,
+        "size_human": "12.63 KB",
+        "last_modified": "2025-11-09 03:48:32",
+        "mod_timestamp": 1762642112.350593,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\db\\APPLY_INIT.md",
+        "name": "APPLY_INIT.md",
+        "ext": ".md",
+        "size_bytes": 2202,
+        "size_human": "2.15 KB",
+        "last_modified": "2025-11-09 00:37:47",
+        "mod_timestamp": 1762630667.305199,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\db\\DATABASE_SCHEMA.md",
+        "name": "DATABASE_SCHEMA.md",
+        "ext": ".md",
+        "size_bytes": 8368,
+        "size_human": "8.17 KB",
+        "last_modified": "2025-11-09 00:37:47",
+        "mod_timestamp": 1762630667.303198,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\db\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 2339,
+        "size_human": "2.28 KB",
+        "last_modified": "2025-11-09 00:37:47",
+        "mod_timestamp": 1762630667.3021982,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\grafana-dashboards\\dashboards.yml",
+        "name": "dashboards.yml",
+        "ext": ".yml",
+        "size_bytes": 298,
+        "size_human": "298 B",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.1136599,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\grafana-dashboards\\eaip-services.json",
+        "name": "eaip-services.json",
+        "ext": ".json",
+        "size_bytes": 1737,
+        "size_human": "1.70 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.4454224,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\grafana-datasources\\datasources.yml",
+        "name": "datasources.yml",
+        "ext": ".yml",
+        "size_bytes": 349,
+        "size_human": "349 B",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.1136599,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\helm\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 35,
+        "size_human": "35 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\CHANGELOG.md",
+        "name": "CHANGELOG.md",
+        "ext": ".md",
+        "size_bytes": 5115,
+        "size_human": "5.00 KB",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.365366,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\docker-compose.local.monitoring.yml",
+        "name": "docker-compose.local.monitoring.yml",
+        "ext": ".yml",
+        "size_bytes": 5088,
+        "size_human": "4.97 KB",
+        "last_modified": "2025-11-08 21:17:22",
+        "mod_timestamp": 1762618642.2304876,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\docker-compose.prod.monitoring.yml",
+        "name": "docker-compose.prod.monitoring.yml",
+        "ext": ".yml",
+        "size_bytes": 5222,
+        "size_human": "5.10 KB",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.345152,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\FINAL_LAUNCH.md",
+        "name": "FINAL_LAUNCH.md",
+        "ext": ".md",
+        "size_bytes": 2789,
+        "size_human": "2.72 KB",
+        "last_modified": "2025-11-08 19:01:15",
+        "mod_timestamp": 1762610475.0411744,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\LAUNCH_INSTRUCTIONS.md",
+        "name": "LAUNCH_INSTRUCTIONS.md",
+        "ext": ".md",
+        "size_bytes": 3273,
+        "size_human": "3.20 KB",
+        "last_modified": "2025-11-08 18:56:25",
+        "mod_timestamp": 1762610185.3633418,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\PRE_DEPLOY_CHECKLIST.md",
+        "name": "PRE_DEPLOY_CHECKLIST.md",
+        "ext": ".md",
+        "size_bytes": 529,
+        "size_human": "529 B",
+        "last_modified": "2025-11-08 19:05:17",
+        "mod_timestamp": 1762610717.5672996,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\PRODUCTION_DEPLOYMENT.md",
+        "name": "PRODUCTION_DEPLOYMENT.md",
+        "ext": ".md",
+        "size_bytes": 9942,
+        "size_human": "9.71 KB",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.3603013,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 3445,
+        "size_human": "3.36 KB",
+        "last_modified": "2025-11-08 18:56:25",
+        "mod_timestamp": 1762610185.3633418,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\VALIDATION_REPORT.md",
+        "name": "VALIDATION_REPORT.md",
+        "ext": ".md",
+        "size_bytes": 3026,
+        "size_human": "2.96 KB",
+        "last_modified": "2025-11-08 19:05:17",
+        "mod_timestamp": 1762610717.5672996,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\alertmanager\\alertmanager.yml",
+        "name": "alertmanager.yml",
+        "ext": ".yml",
+        "size_bytes": 805,
+        "size_human": "805 B",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0432074,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\grafana\\dashboards\\eaip-services.json",
+        "name": "eaip-services.json",
+        "ext": ".json",
+        "size_bytes": 1737,
+        "size_human": "1.70 KB",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.4454224,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\grafana\\provisioning\\dashboards\\dashboards.yml",
+        "name": "dashboards.yml",
+        "ext": ".yml",
+        "size_bytes": 289,
+        "size_human": "289 B",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.3557184,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\grafana\\provisioning\\datasources\\datasources.yml",
+        "name": "datasources.yml",
+        "ext": ".yml",
+        "size_bytes": 349,
+        "size_human": "349 B",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.3557184,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\loki\\loki-config.yml",
+        "name": "loki-config.yml",
+        "ext": ".yml",
+        "size_bytes": 1103,
+        "size_human": "1.08 KB",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.3501608,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\prometheus\\blackbox.yml",
+        "name": "blackbox.yml",
+        "ext": ".yml",
+        "size_bytes": 571,
+        "size_human": "571 B",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.3029313,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\prometheus\\prometheus.local.yml",
+        "name": "prometheus.local.yml",
+        "ext": ".yml",
+        "size_bytes": 2599,
+        "size_human": "2.54 KB",
+        "last_modified": "2025-11-08 19:12:23",
+        "mod_timestamp": 1762611143.102185,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\prometheus\\prometheus.yml",
+        "name": "prometheus.yml",
+        "ext": ".yml",
+        "size_bytes": 2609,
+        "size_human": "2.55 KB",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.345594,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\prometheus\\rules\\health.yml",
+        "name": "health.yml",
+        "ext": ".yml",
+        "size_bytes": 2217,
+        "size_human": "2.17 KB",
+        "last_modified": "2025-11-08 18:50:55",
+        "mod_timestamp": 1762609855.3481443,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\monitoring\\promtail\\promtail-config.yml",
+        "name": "promtail-config.yml",
+        "ext": ".yml",
+        "size_bytes": 1915,
+        "size_human": "1.87 KB",
+        "last_modified": "2025-11-08 12:23:44",
+        "mod_timestamp": 1762586624.1136599,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "infra\\prometheus\\blackbox.yml",
+        "name": "blackbox.yml",
+        "ext": ".yml",
+        "size_bytes": 571,
+        "size_human": "571 B",
+        "last_modified": "2025-11-08 18:28:34",
+        "mod_timestamp": 1762608514.3029313,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "infra\\prometheus\\rules\\rules-health.yml",
+        "name": "rules-health.yml",
+        "ext": ".yml",
+        "size_bytes": 6230,
+        "size_human": "6.08 KB",
+        "last_modified": "2025-11-08 18:26:40",
+        "mod_timestamp": 1762608400.760297,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\analytics\\main.py",
+        "name": "main.py",
+        "ext": ".py",
+        "size_bytes": 1098,
+        "size_human": "1.07 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0432074,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\analytics\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 192,
+        "size_human": "192 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\analytics\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 115,
+        "size_human": "115 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\gateway-auth\\main.py",
+        "name": "main.py",
+        "ext": ".py",
+        "size_bytes": 186,
+        "size_human": "186 B",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0432074,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\gateway-auth\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 195,
+        "size_human": "195 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\gateway-auth\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 115,
+        "size_human": "115 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_anomaly_detector.py",
+        "name": "ai_anomaly_detector.py",
+        "ext": ".py",
+        "size_bytes": 15139,
+        "size_human": "14.78 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1879225,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_api_clients.py",
+        "name": "ai_api_clients.py",
+        "ext": ".py",
+        "size_bytes": 18626,
+        "size_human": "18.19 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2009485,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\AI_ARCHITECTURE.md",
+        "name": "AI_ARCHITECTURE.md",
+        "ext": ".md",
+        "size_bytes": 10005,
+        "size_human": "9.77 KB",
+        "last_modified": "2025-11-14 23:13:42",
+        "mod_timestamp": 1763144022.2259922,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_base_client.py",
+        "name": "ai_base_client.py",
+        "ext": ".py",
+        "size_bytes": 4169,
+        "size_human": "4.07 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.208494,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_client_factory.py",
+        "name": "ai_client_factory.py",
+        "ext": ".py",
+        "size_bytes": 7604,
+        "size_human": "7.43 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2250304,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_compliance_checker.py",
+        "name": "ai_compliance_checker.py",
+        "ext": ".py",
+        "size_bytes": 14544,
+        "size_human": "14.20 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.237395,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_config.py",
+        "name": "ai_config.py",
+        "ext": ".py",
+        "size_bytes": 4424,
+        "size_human": "4.32 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3214345,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_data_validator.py",
+        "name": "ai_data_validator.py",
+        "ext": ".py",
+        "size_bytes": 13776,
+        "size_human": "13.45 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3254895,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_efficiency_analyzer.py",
+        "name": "ai_efficiency_analyzer.py",
+        "ext": ".py",
+        "size_bytes": 12176,
+        "size_human": "11.89 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1578221,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\AI_ENERGY_ANALYSIS.md",
+        "name": "AI_ENERGY_ANALYSIS.md",
+        "ext": ".md",
+        "size_bytes": 12651,
+        "size_human": "12.35 KB",
+        "last_modified": "2025-11-14 23:04:42",
+        "mod_timestamp": 1763143482.0104337,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_energy_analysis.py",
+        "name": "ai_energy_analysis.py",
+        "ext": ".py",
+        "size_bytes": 4814,
+        "size_human": "4.70 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1867087,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_energy_verifier.py",
+        "name": "ai_energy_verifier.py",
+        "ext": ".py",
+        "size_bytes": 15127,
+        "size_human": "14.77 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2044628,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\AI_INTEGRATION_COMPLETE.md",
+        "name": "AI_INTEGRATION_COMPLETE.md",
+        "ext": ".md",
+        "size_bytes": 10859,
+        "size_human": "10.60 KB",
+        "last_modified": "2025-11-14 23:08:51",
+        "mod_timestamp": 1763143731.1352339,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_local_client.py",
+        "name": "ai_local_client.py",
+        "ext": ".py",
+        "size_bytes": 7893,
+        "size_human": "7.71 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.208494,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\AI_OCR_ENHANCEMENT.md",
+        "name": "AI_OCR_ENHANCEMENT.md",
+        "ext": ".md",
+        "size_bytes": 5828,
+        "size_human": "5.69 KB",
+        "last_modified": "2025-11-14 22:42:34",
+        "mod_timestamp": 1763142154.7588289,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_ocr_enhancer.py",
+        "name": "ai_ocr_enhancer.py",
+        "ext": ".py",
+        "size_bytes": 11920,
+        "size_human": "11.64 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2310607,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_parser.py",
+        "name": "ai_parser.py",
+        "ext": ".py",
+        "size_bytes": 17901,
+        "size_human": "17.48 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2250304,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_quality_reporter.py",
+        "name": "ai_quality_reporter.py",
+        "ext": ".py",
+        "size_bytes": 14846,
+        "size_human": "14.50 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.238428,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "services\\ingest\\AI_SETUP.md",
+        "name": "AI_SETUP.md",
+        "ext": ".md",
+        "size_bytes": 6785,
+        "size_human": "6.63 KB",
+        "last_modified": "2025-11-09 00:19:59",
+        "mod_timestamp": 1762629599.8723006,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai_table_parser.py",
+        "name": "ai_table_parser.py",
+        "ext": ".py",
+        "size_bytes": 10149,
+        "size_human": "9.91 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2404394,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\conftest.py",
+        "name": "conftest.py",
+        "ext": ".py",
+        "size_bytes": 976,
+        "size_human": "976 B",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0741224,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\database.py",
+        "name": "database.py",
+        "ext": ".py",
+        "size_bytes": 76799,
+        "size_human": "75.00 KB",
+        "last_modified": "2025-12-07 05:07:50",
+        "mod_timestamp": 1765066070.2906625,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ENHANCED_MODULES.md",
+        "name": "ENHANCED_MODULES.md",
+        "ext": ".md",
+        "size_bytes": 11325,
+        "size_human": "11.06 KB",
+        "last_modified": "2025-11-13 22:16:16",
+        "mod_timestamp": 1763054176.0629866,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\file_parser.py",
+        "name": "file_parser.py",
+        "ext": ".py",
+        "size_bytes": 72955,
+        "size_human": "71.25 KB",
+        "last_modified": "2025-12-05 16:54:44",
+        "mod_timestamp": 1764935684.9506855,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\FORCE_RESTART.md",
+        "name": "FORCE_RESTART.md",
+        "ext": ".md",
+        "size_bytes": 2360,
+        "size_human": "2.30 KB",
+        "last_modified": "2025-11-16 02:47:44",
+        "mod_timestamp": 1763243264.4481487,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\IMPLEMENTATION_MATRIX.md",
+        "name": "IMPLEMENTATION_MATRIX.md",
+        "ext": ".md",
+        "size_bytes": 6531,
+        "size_human": "6.38 KB",
+        "last_modified": "2025-11-14 23:17:57",
+        "mod_timestamp": 1763144277.3233857,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\INSTALL_POPPLER.md",
+        "name": "INSTALL_POPPLER.md",
+        "ext": ".md",
+        "size_bytes": 2532,
+        "size_human": "2.47 KB",
+        "last_modified": "2025-11-13 21:39:39",
+        "mod_timestamp": 1763051979.0464842,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "services\\ingest\\INSTALL_TESSERACT.md",
+        "name": "INSTALL_TESSERACT.md",
+        "ext": ".md",
+        "size_bytes": 4973,
+        "size_human": "4.86 KB",
+        "last_modified": "2025-11-14 00:07:53",
+        "mod_timestamp": 1763060873.2282915,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "services\\ingest\\main.py",
+        "name": "main.py",
+        "ext": ".py",
+        "size_bytes": 209494,
+        "size_human": "204.58 KB",
+        "last_modified": "2025-12-08 07:05:32",
+        "mod_timestamp": 1765159532.8985941,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\main_async.py",
+        "name": "main_async.py",
+        "ext": ".py",
+        "size_bytes": 212702,
+        "size_human": "207.72 KB",
+        "last_modified": "2025-12-05 00:59:11",
+        "mod_timestamp": 1764878351.996538,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\main_new.py",
+        "name": "main_new.py",
+        "ext": ".py",
+        "size_bytes": 212653,
+        "size_human": "207.67 KB",
+        "last_modified": "2025-12-05 00:55:02",
+        "mod_timestamp": 1764878102.894065,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\main_temp.py",
+        "name": "main_temp.py",
+        "ext": ".py",
+        "size_bytes": 212655,
+        "size_human": "207.67 KB",
+        "last_modified": "2025-12-05 00:53:45",
+        "mod_timestamp": 1764878025.463552,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\main_temp2.py",
+        "name": "main_temp2.py",
+        "ext": ".py",
+        "size_bytes": 212617,
+        "size_human": "207.63 KB",
+        "last_modified": "2025-12-05 00:54:11",
+        "mod_timestamp": 1764878051.7477431,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PARSING_FEATURES.md",
+        "name": "PARSING_FEATURES.md",
+        "ext": ".md",
+        "size_bytes": 5651,
+        "size_human": "5.52 KB",
+        "last_modified": "2025-11-08 22:49:26",
+        "mod_timestamp": 1762624166.5605273,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PDF_DIAGNOSTICS_GUIDE.md",
+        "name": "PDF_DIAGNOSTICS_GUIDE.md",
+        "ext": ".md",
+        "size_bytes": 11468,
+        "size_human": "11.20 KB",
+        "last_modified": "2025-11-13 22:05:52",
+        "mod_timestamp": 1763053552.2665153,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PDF_DIAGNOSTICS_SUMMARY.md",
+        "name": "PDF_DIAGNOSTICS_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 6728,
+        "size_human": "6.57 KB",
+        "last_modified": "2025-11-13 22:05:52",
+        "mod_timestamp": 1763053552.2715147,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PDF_ENHANCED_ARCHITECTURE.md",
+        "name": "PDF_ENHANCED_ARCHITECTURE.md",
+        "ext": ".md",
+        "size_bytes": 7181,
+        "size_human": "7.01 KB",
+        "last_modified": "2025-11-14 22:19:28",
+        "mod_timestamp": 1763140768.919994,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PDF_PROCESSING_IMPROVEMENTS.md",
+        "name": "PDF_PROCESSING_IMPROVEMENTS.md",
+        "ext": ".md",
+        "size_bytes": 8076,
+        "size_human": "7.89 KB",
+        "last_modified": "2025-11-14 22:19:28",
+        "mod_timestamp": 1763140768.919994,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PROGRESS_TRACKER.md",
+        "name": "PROGRESS_TRACKER.md",
+        "ext": ".md",
+        "size_bytes": 5453,
+        "size_human": "5.33 KB",
+        "last_modified": "2025-11-13 21:25:31",
+        "mod_timestamp": 1763051131.7917945,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PROGRESS_TRACKER_QA.md",
+        "name": "PROGRESS_TRACKER_QA.md",
+        "ext": ".md",
+        "size_bytes": 12592,
+        "size_human": "12.30 KB",
+        "last_modified": "2025-11-13 21:30:41",
+        "mod_timestamp": 1763051441.137983,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PROJECT_AUDIT_REPORT.md",
+        "name": "PROJECT_AUDIT_REPORT.md",
+        "ext": ".md",
+        "size_bytes": 23228,
+        "size_human": "22.68 KB",
+        "last_modified": "2025-11-14 23:17:57",
+        "mod_timestamp": 1763144277.3233857,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "services\\ingest\\PROJECT_STATUS_SUMMARY.md",
+        "name": "PROJECT_STATUS_SUMMARY.md",
+        "ext": ".md",
+        "size_bytes": 3771,
+        "size_human": "3.68 KB",
+        "last_modified": "2025-11-14 23:17:57",
+        "mod_timestamp": 1763144277.3233857,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\QUICK_INSTALL_TESSERACT.md",
+        "name": "QUICK_INSTALL_TESSERACT.md",
+        "ext": ".md",
+        "size_bytes": 2615,
+        "size_human": "2.55 KB",
+        "last_modified": "2025-11-14 00:07:53",
+        "mod_timestamp": 1763060873.2272937,
+        "pre_classification": [
+            "setup"
+        ]
+    },
+    {
+        "path": "services\\ingest\\QUICK_START_PDF.md",
+        "name": "QUICK_START_PDF.md",
+        "ext": ".md",
+        "size_bytes": 3897,
+        "size_human": "3.81 KB",
+        "last_modified": "2025-11-14 22:19:28",
+        "mod_timestamp": 1763140768.9219952,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\READINESS_SYSTEM_README.md",
+        "name": "READINESS_SYSTEM_README.md",
+        "ext": ".md",
+        "size_bytes": 7502,
+        "size_human": "7.33 KB",
+        "last_modified": "2025-11-15 02:23:34",
+        "mod_timestamp": 1763155414.8859012,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 6746,
+        "size_human": "6.59 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0504382,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 773,
+        "size_human": "773 B",
+        "last_modified": "2025-12-05 16:54:38",
+        "mod_timestamp": 1764935678.816065,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\requirements_enhanced.txt",
+        "name": "requirements_enhanced.txt",
+        "ext": ".txt",
+        "size_bytes": 1200,
+        "size_human": "1.17 KB",
+        "last_modified": "2025-11-13 22:16:16",
+        "mod_timestamp": 1763054176.0629866,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\RESTART_SERVER.md",
+        "name": "RESTART_SERVER.md",
+        "ext": ".md",
+        "size_bytes": 2743,
+        "size_human": "2.68 KB",
+        "last_modified": "2025-11-16 02:40:26",
+        "mod_timestamp": 1763242826.0004568,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\START_HERE.md",
+        "name": "START_HERE.md",
+        "ext": ".md",
+        "size_bytes": 2928,
+        "size_human": "2.86 KB",
+        "last_modified": "2025-11-30 20:46:14",
+        "mod_timestamp": 1764517574.095447,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\test_full_output.txt",
+        "name": "test_full_output.txt",
+        "ext": ".txt",
+        "size_bytes": 14569,
+        "size_human": "14.23 KB",
+        "last_modified": "2025-11-18 06:17:58",
+        "mod_timestamp": 1763428678.9400918,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\test_output.txt",
+        "name": "test_output.txt",
+        "ext": ".txt",
+        "size_bytes": 14505,
+        "size_human": "14.17 KB",
+        "last_modified": "2025-11-18 05:53:56",
+        "mod_timestamp": 1763427236.0448878,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\test_output_full.txt",
+        "name": "test_output_full.txt",
+        "ext": ".txt",
+        "size_bytes": 14059,
+        "size_human": "13.73 KB",
+        "last_modified": "2025-11-18 19:11:39",
+        "mod_timestamp": 1763475099.85098,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\test_output_latest.txt",
+        "name": "test_output_latest.txt",
+        "ext": ".txt",
+        "size_bytes": 15373,
+        "size_human": "15.01 KB",
+        "last_modified": "2025-11-18 19:37:49",
+        "mod_timestamp": 1763476669.7332232,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\TZ_IMPLEMENTATION.md",
+        "name": "TZ_IMPLEMENTATION.md",
+        "ext": ".md",
+        "size_bytes": 5844,
+        "size_human": "5.71 KB",
+        "last_modified": "2025-11-08 22:27:52",
+        "mod_timestamp": 1762622872.5430257,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\.pytest_cache\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 310,
+        "size_human": "310 B",
+        "last_modified": "2025-11-18 05:32:14",
+        "mod_timestamp": 1763425934.2750754,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai\\ai_excel_semantic_parser.py",
+        "name": "ai_excel_semantic_parser.py",
+        "ext": ".py",
+        "size_bytes": 20566,
+        "size_human": "20.08 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.176601,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\ai\\__init__.py",
+        "name": "__init__.py",
+        "ext": ".py",
+        "size_bytes": 82,
+        "size_human": "82 B",
+        "last_modified": "2025-11-16 16:59:57",
+        "mod_timestamp": 1763294397.141648,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\config\\required_data_matrix.py",
+        "name": "required_data_matrix.py",
+        "ext": ".py",
+        "size_bytes": 14884,
+        "size_human": "14.54 KB",
+        "last_modified": "2025-12-01 04:19:22",
+        "mod_timestamp": 1764544762.0185382,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\config\\__init__.py",
+        "name": "__init__.py",
+        "ext": ".py",
+        "size_bytes": 83,
+        "size_human": "83 B",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.242455,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\06d2ab5d-2bc2-46bf-909b-bb1b49fb3599_aggregated.json",
+        "name": "06d2ab5d-2bc2-46bf-909b-bb1b49fb3599_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.641719,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\0bebb988-518b-40d1-a572-330d83db1a1a_aggregated.json",
+        "name": "0bebb988-518b-40d1-a572-330d83db1a1a_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.6204784,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\1f8011a4-8a38-4042-856c-7f0a6e1ace4e_aggregated.json",
+        "name": "1f8011a4-8a38-4042-856c-7f0a6e1ace4e_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.4240625,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\2602e105-0f8e-403f-85d7-1351608f9e16_aggregated.json",
+        "name": "2602e105-0f8e-403f-85d7-1351608f9e16_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.6291058,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\38bf62db-932c-4e0e-bec4-85aca217cc0c_aggregated.json",
+        "name": "38bf62db-932c-4e0e-bec4-85aca217cc0c_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.5463016,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\43ec34cd-657e-4ce6-afff-1edda0a4fe12_aggregated.json",
+        "name": "43ec34cd-657e-4ce6-afff-1edda0a4fe12_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.4918325,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\5946260e-fe30-4b57-a6c9-ef60301d0953_aggregated.json",
+        "name": "5946260e-fe30-4b57-a6c9-ef60301d0953_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.5636628,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\849e4240-52d1-4d43-ad1a-bfe771b45cbe_aggregated.json",
+        "name": "849e4240-52d1-4d43-ad1a-bfe771b45cbe_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 13558,
+        "size_human": "13.24 KB",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.5200608,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\93eb3792-2f23-45a9-9c4c-0256ea0dc4c2_aggregated.json",
+        "name": "93eb3792-2f23-45a9-9c4c-0256ea0dc4c2_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.4668088,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\9e0d7d5a-b62b-4f5f-92f6-4b08573e45c0_aggregated.json",
+        "name": "9e0d7d5a-b62b-4f5f-92f6-4b08573e45c0_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.6711729,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\a356060f-72fe-410e-aae2-c031e206dcf9_aggregated.json",
+        "name": "a356060f-72fe-410e-aae2-c031e206dcf9_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 238,
+        "size_human": "238 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.452566,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\a412f6ba-46a3-468b-83f3-cbb26edd7e4a_aggregated.json",
+        "name": "a412f6ba-46a3-468b-83f3-cbb26edd7e4a_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.6830456,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\a5fcd47f-0126-4bd3-a472-ed160f2d1d22_aggregated.json",
+        "name": "a5fcd47f-0126-4bd3-a472-ed160f2d1d22_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 238,
+        "size_human": "238 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.4747982,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\b04e6907-75fd-4c37-a306-40e7e21f3dff_aggregated.json",
+        "name": "b04e6907-75fd-4c37-a306-40e7e21f3dff_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.608489,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\bb2e9573-1c88-4003-b2e4-0ecadd2370ae_aggregated.json",
+        "name": "bb2e9573-1c88-4003-b2e4-0ecadd2370ae_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 7299,
+        "size_human": "7.13 KB",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.5758202,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\c17a2fe5-5b7d-4df9-ba39-cfd3501f0250_aggregated.json",
+        "name": "c17a2fe5-5b7d-4df9-ba39-cfd3501f0250_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.7049654,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\e1f9ce34-5e7f-4f2b-bac0-bd9cd9ffb49a_aggregated.json",
+        "name": "e1f9ce34-5e7f-4f2b-bac0-bd9cd9ffb49a_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.532184,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\e839e7d5-24f9-48e9-a31c-ea12b0583c02_aggregated.json",
+        "name": "e839e7d5-24f9-48e9-a31c-ea12b0583c02_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 404,
+        "size_human": "404 B",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.6535006,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\data\\inbox\\aggregated\\f192f3f7-b247-4e4b-ad25-e938df3aeec9_aggregated.json",
+        "name": "f192f3f7-b247-4e4b-ad25-e938df3aeec9_aggregated.json",
+        "ext": ".json",
+        "size_bytes": 18349,
+        "size_human": "17.92 KB",
+        "last_modified": "2025-11-16 01:58:58",
+        "mod_timestamp": 1763240338.5959277,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\docs\\BALANCE_SHEET_BY_USAGE_ISSUE.md",
+        "name": "BALANCE_SHEET_BY_USAGE_ISSUE.md",
+        "ext": ".md",
+        "size_bytes": 9114,
+        "size_human": "8.90 KB",
+        "last_modified": "2025-11-18 02:08:16",
+        "mod_timestamp": 1763413696.1568391,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\docs\\BY_USAGE_DIAGNOSTICS_ADDED.md",
+        "name": "BY_USAGE_DIAGNOSTICS_ADDED.md",
+        "ext": ".md",
+        "size_bytes": 5740,
+        "size_human": "5.61 KB",
+        "last_modified": "2025-11-18 02:15:59",
+        "mod_timestamp": 1763414159.4239125,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\docs\\ELECTRICITY_USAGE_CLASSIFICATION.md",
+        "name": "ELECTRICITY_USAGE_CLASSIFICATION.md",
+        "ext": ".md",
+        "size_bytes": 12219,
+        "size_human": "11.93 KB",
+        "last_modified": "2025-11-18 01:16:37",
+        "mod_timestamp": 1763410597.7937515,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\docs\\EQUIPMENT_FILE_STRUCTURE_ANALYSIS.md",
+        "name": "EQUIPMENT_FILE_STRUCTURE_ANALYSIS.md",
+        "ext": ".md",
+        "size_bytes": 16130,
+        "size_human": "15.75 KB",
+        "last_modified": "2025-11-18 01:35:09",
+        "mod_timestamp": 1763411709.8828413,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\docs\\PROJECT_VISION.md",
+        "name": "PROJECT_VISION.md",
+        "ext": ".md",
+        "size_bytes": 15398,
+        "size_human": "15.04 KB",
+        "last_modified": "2025-12-06 16:28:26",
+        "mod_timestamp": 1765020506.8673794,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\docs\\USAGE_CATEGORIES_DATA_SOURCE.md",
+        "name": "USAGE_CATEGORIES_DATA_SOURCE.md",
+        "ext": ".md",
+        "size_bytes": 9171,
+        "size_human": "8.96 KB",
+        "last_modified": "2025-11-18 02:00:23",
+        "mod_timestamp": 1763413223.7551794,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\electricity_usage_classifier.py",
+        "name": "electricity_usage_classifier.py",
+        "ext": ".py",
+        "size_bytes": 9737,
+        "size_human": "9.51 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1578221,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\energy_passport_calculations.py",
+        "name": "energy_passport_calculations.py",
+        "ext": ".py",
+        "size_bytes": 28335,
+        "size_human": "27.67 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.17257,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\energy_units.py",
+        "name": "energy_units.py",
+        "ext": ".py",
+        "size_bytes": 12574,
+        "size_human": "12.28 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.183944,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\normative_importer.py",
+        "name": "normative_importer.py",
+        "ext": ".py",
+        "size_bytes": 21608,
+        "size_human": "21.10 KB",
+        "last_modified": "2025-12-01 17:35:26",
+        "mod_timestamp": 1764592526.0829372,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\normative_integration.py",
+        "name": "normative_integration.py",
+        "ext": ".py",
+        "size_bytes": 10940,
+        "size_human": "10.68 KB",
+        "last_modified": "2025-12-01 18:37:55",
+        "mod_timestamp": 1764596275.2297454,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\normative_monitor.py",
+        "name": "normative_monitor.py",
+        "ext": ".py",
+        "size_bytes": 10535,
+        "size_human": "10.29 KB",
+        "last_modified": "2025-12-01 19:27:37",
+        "mod_timestamp": 1764599257.0094647,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\normative_validator.py",
+        "name": "normative_validator.py",
+        "ext": ".py",
+        "size_bytes": 10672,
+        "size_human": "10.42 KB",
+        "last_modified": "2025-12-01 18:15:36",
+        "mod_timestamp": 1764594936.8807173,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\passport_field_map.py",
+        "name": "passport_field_map.py",
+        "ext": ".py",
+        "size_bytes": 7957,
+        "size_human": "7.77 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.208494,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\passport_field_mapping.py",
+        "name": "passport_field_mapping.py",
+        "ext": ".py",
+        "size_bytes": 22757,
+        "size_human": "22.22 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2250304,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\passport_requirements.py",
+        "name": "passport_requirements.py",
+        "ext": ".py",
+        "size_bytes": 27353,
+        "size_human": "26.71 KB",
+        "last_modified": "2025-11-26 10:23:32",
+        "mod_timestamp": 1764134612.877561,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\passport_validator.py",
+        "name": "passport_validator.py",
+        "ext": ".py",
+        "size_bytes": 14117,
+        "size_human": "13.79 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3214345,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\pkm690_sections.py",
+        "name": "pkm690_sections.py",
+        "ext": ".py",
+        "size_bytes": 17035,
+        "size_human": "16.64 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3254895,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\report_data.py",
+        "name": "report_data.py",
+        "ext": ".py",
+        "size_bytes": 16019,
+        "size_human": "15.64 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3275058,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\unit_converters.py",
+        "name": "unit_converters.py",
+        "ext": ".py",
+        "size_bytes": 16033,
+        "size_human": "15.66 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2591922,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\domain\\__init__.py",
+        "name": "__init__.py",
+        "ext": ".py",
+        "size_bytes": 89,
+        "size_human": "89 B",
+        "last_modified": "2025-11-15 05:34:35",
+        "mod_timestamp": 1763166875.0617597,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\models\\schemas.py",
+        "name": "schemas.py",
+        "ext": ".py",
+        "size_bytes": 711,
+        "size_human": "711 B",
+        "last_modified": "2025-12-05 15:05:37",
+        "mod_timestamp": 1764929137.1012647,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\models\\__init__.py",
+        "name": "__init__.py",
+        "ext": ".py",
+        "size_bytes": 283,
+        "size_human": "283 B",
+        "last_modified": "2025-12-05 15:05:49",
+        "mod_timestamp": 1764929149.991026,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\parsers\\excel_passport_parser.py",
+        "name": "excel_passport_parser.py",
+        "ext": ".py",
+        "size_bytes": 21547,
+        "size_human": "21.04 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3733096,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\settings\\ai_settings.py",
+        "name": "ai_settings.py",
+        "ext": ".py",
+        "size_bytes": 10065,
+        "size_human": "9.83 KB",
+        "last_modified": "2025-12-01 22:18:53",
+        "mod_timestamp": 1764609533.8679357,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "services\\ingest\\settings\\excel_semantic_settings.py",
+        "name": "excel_semantic_settings.py",
+        "ext": ".py",
+        "size_bytes": 463,
+        "size_human": "463 B",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3084018,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "services\\ingest\\settings\\__init__.py",
+        "name": "__init__.py",
+        "ext": ".py",
+        "size_bytes": 62,
+        "size_human": "62 B",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3343985,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\conftest.py",
+        "name": "conftest.py",
+        "ext": ".py",
+        "size_bytes": 14555,
+        "size_human": "14.21 KB",
+        "last_modified": "2025-12-07 05:00:46",
+        "mod_timestamp": 1765065646.8567302,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\README_E2E_TEST.md",
+        "name": "README_E2E_TEST.md",
+        "ext": ".md",
+        "size_bytes": 5961,
+        "size_human": "5.82 KB",
+        "last_modified": "2025-11-18 05:25:25",
+        "mod_timestamp": 1763425525.9961238,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\run_tests_manual.py",
+        "name": "run_tests_manual.py",
+        "ext": ".py",
+        "size_bytes": 20648,
+        "size_human": "20.16 KB",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.9601655,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_api_e2e.py",
+        "name": "test_api_e2e.py",
+        "ext": ".py",
+        "size_bytes": 30597,
+        "size_human": "29.88 KB",
+        "last_modified": "2025-12-06 15:11:16",
+        "mod_timestamp": 1765015876.1406345,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_canonical_balance_by_usage.py",
+        "name": "test_canonical_balance_by_usage.py",
+        "ext": ".py",
+        "size_bytes": 7731,
+        "size_human": "7.55 KB",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.964903,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_canonical_to_passport_payload.py",
+        "name": "test_canonical_to_passport_payload.py",
+        "ext": ".py",
+        "size_bytes": 2597,
+        "size_human": "2.54 KB",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.9453025,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_check_ingest_db_pytest.py",
+        "name": "test_check_ingest_db_pytest.py",
+        "ext": ".py",
+        "size_bytes": 1555,
+        "size_human": "1.52 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0741224,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_docx_parsing_fix.py",
+        "name": "test_docx_parsing_fix.py",
+        "ext": ".py",
+        "size_bytes": 2727,
+        "size_human": "2.66 KB",
+        "last_modified": "2025-11-30 21:53:06",
+        "mod_timestamp": 1764521586.2684402,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_docx_quick.py",
+        "name": "test_docx_quick.py",
+        "ext": ".py",
+        "size_bytes": 934,
+        "size_human": "934 B",
+        "last_modified": "2025-11-30 22:01:58",
+        "mod_timestamp": 1764522118.8220816,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_electricity_usage_classifier.py",
+        "name": "test_electricity_usage_classifier.py",
+        "ext": ".py",
+        "size_bytes": 6916,
+        "size_human": "6.75 KB",
+        "last_modified": "2025-11-26 10:18:11",
+        "mod_timestamp": 1764134291.190977,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_import_functionality.py",
+        "name": "test_import_functionality.py",
+        "ext": ".py",
+        "size_bytes": 3562,
+        "size_human": "3.48 KB",
+        "last_modified": "2025-11-30 22:11:17",
+        "mod_timestamp": 1764522677.574895,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_navoiy_classification_pytest.py",
+        "name": "test_navoiy_classification_pytest.py",
+        "ext": ".py",
+        "size_bytes": 2279,
+        "size_human": "2.23 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0741224,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_normative_deduplication.py",
+        "name": "test_normative_deduplication.py",
+        "ext": ".py",
+        "size_bytes": 11941,
+        "size_human": "11.66 KB",
+        "last_modified": "2025-12-01 17:35:26",
+        "mod_timestamp": 1764592526.0829372,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_normative_importer_ai.py",
+        "name": "test_normative_importer_ai.py",
+        "ext": ".py",
+        "size_bytes": 18638,
+        "size_human": "18.20 KB",
+        "last_modified": "2025-12-01 17:08:41",
+        "mod_timestamp": 1764590921.7134662,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_normative_importer_basic.py",
+        "name": "test_normative_importer_basic.py",
+        "ext": ".py",
+        "size_bytes": 15685,
+        "size_human": "15.32 KB",
+        "last_modified": "2025-12-01 17:08:41",
+        "mod_timestamp": 1764590921.7124662,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_normative_importer_references.py",
+        "name": "test_normative_importer_references.py",
+        "ext": ".py",
+        "size_bytes": 8798,
+        "size_human": "8.59 KB",
+        "last_modified": "2025-12-01 18:26:33",
+        "mod_timestamp": 1764595593.1695206,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_normative_importer_validation.py",
+        "name": "test_normative_importer_validation.py",
+        "ext": ".py",
+        "size_bytes": 8028,
+        "size_human": "7.84 KB",
+        "last_modified": "2025-12-01 18:26:33",
+        "mod_timestamp": 1764595593.1733017,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_normative_validator.py",
+        "name": "test_normative_validator.py",
+        "ext": ".py",
+        "size_bytes": 8361,
+        "size_human": "8.17 KB",
+        "last_modified": "2025-12-01 18:15:36",
+        "mod_timestamp": 1764594936.8807173,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_passport_e2e_audit_sinergys.py",
+        "name": "test_passport_e2e_audit_sinergys.py",
+        "ext": ".py",
+        "size_bytes": 26814,
+        "size_human": "26.19 KB",
+        "last_modified": "2025-12-07 05:00:46",
+        "mod_timestamp": 1765065646.8567302,
+        "pre_classification": [
+            "spec",
+            "audit"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_passport_readiness.py",
+        "name": "test_passport_readiness.py",
+        "ext": ".py",
+        "size_bytes": 2610,
+        "size_human": "2.55 KB",
+        "last_modified": "2025-11-26 10:18:11",
+        "mod_timestamp": 1764134291.1979058,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_quarter_by_usage_distribution.py",
+        "name": "test_quarter_by_usage_distribution.py",
+        "ext": ".py",
+        "size_bytes": 9641,
+        "size_human": "9.42 KB",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.966932,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_query_navoiy_pytest.py",
+        "name": "test_query_navoiy_pytest.py",
+        "ext": ".py",
+        "size_bytes": 1283,
+        "size_human": "1.25 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0741224,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\TEST_REPORT_E2E.md",
+        "name": "TEST_REPORT_E2E.md",
+        "ext": ".md",
+        "size_bytes": 7482,
+        "size_human": "7.31 KB",
+        "last_modified": "2025-11-18 05:55:52",
+        "mod_timestamp": 1763427352.3626032,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_upload_equipment.py",
+        "name": "test_upload_equipment.py",
+        "ext": ".py",
+        "size_bytes": 9446,
+        "size_human": "9.22 KB",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.9601655,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tests\\test_validation_improved.py",
+        "name": "test_validation_improved.py",
+        "ext": ".py",
+        "size_bytes": 4128,
+        "size_human": "4.03 KB",
+        "last_modified": "2025-11-30 22:08:24",
+        "mod_timestamp": 1764522504.3945491,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\batch_import_aggregated.py",
+        "name": "batch_import_aggregated.py",
+        "ext": ".py",
+        "size_bytes": 2867,
+        "size_human": "2.80 KB",
+        "last_modified": "2025-11-30 15:54:06",
+        "mod_timestamp": 1764500046.8643162,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_aggregation_issue.py",
+        "name": "check_aggregation_issue.py",
+        "ext": ".py",
+        "size_bytes": 3207,
+        "size_human": "3.13 KB",
+        "last_modified": "2025-11-30 23:03:01",
+        "mod_timestamp": 1764525781.6860812,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_database_status.py",
+        "name": "check_database_status.py",
+        "ext": ".py",
+        "size_bytes": 7892,
+        "size_human": "7.71 KB",
+        "last_modified": "2025-12-01 00:35:51",
+        "mod_timestamp": 1764531351.0551174,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_enterprise_type.py",
+        "name": "check_enterprise_type.py",
+        "ext": ".py",
+        "size_bytes": 8981,
+        "size_human": "8.77 KB",
+        "last_modified": "2025-12-01 01:03:23",
+        "mod_timestamp": 1764533003.9583151,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_import_status.py",
+        "name": "check_import_status.py",
+        "ext": ".py",
+        "size_bytes": 8836,
+        "size_human": "8.63 KB",
+        "last_modified": "2025-11-30 16:15:45",
+        "mod_timestamp": 1764501345.9084094,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_navoiy_data.py",
+        "name": "check_navoiy_data.py",
+        "ext": ".py",
+        "size_bytes": 5754,
+        "size_human": "5.62 KB",
+        "last_modified": "2025-12-01 01:03:23",
+        "mod_timestamp": 1764533003.9583151,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_nodes_file.py",
+        "name": "check_nodes_file.py",
+        "ext": ".py",
+        "size_bytes": 2427,
+        "size_human": "2.37 KB",
+        "last_modified": "2025-11-30 22:51:15",
+        "mod_timestamp": 1764525075.1145918,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_nodes_in_db.py",
+        "name": "check_nodes_in_db.py",
+        "ext": ".py",
+        "size_bytes": 2745,
+        "size_human": "2.68 KB",
+        "last_modified": "2025-11-30 23:07:43",
+        "mod_timestamp": 1764526063.7577426,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_skipped_file.py",
+        "name": "check_skipped_file.py",
+        "ext": ".py",
+        "size_bytes": 2095,
+        "size_human": "2.05 KB",
+        "last_modified": "2025-11-30 22:28:05",
+        "mod_timestamp": 1764523685.9544296,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\check_task_status.py",
+        "name": "check_task_status.py",
+        "ext": ".py",
+        "size_bytes": 2682,
+        "size_human": "2.62 KB",
+        "last_modified": "2025-12-01 04:08:11",
+        "mod_timestamp": 1764544091.9546454,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\comprehensive_passport_test.py",
+        "name": "comprehensive_passport_test.py",
+        "ext": ".py",
+        "size_bytes": 17418,
+        "size_human": "17.01 KB",
+        "last_modified": "2025-12-01 03:40:58",
+        "mod_timestamp": 1764542458.1301272,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\find_java.py",
+        "name": "find_java.py",
+        "ext": ".py",
+        "size_bytes": 9488,
+        "size_human": "9.27 KB",
+        "last_modified": "2025-12-01 18:16:24",
+        "mod_timestamp": 1764594984.1023345,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\migrate_aggregated_table.py",
+        "name": "migrate_aggregated_table.py",
+        "ext": ".py",
+        "size_bytes": 3425,
+        "size_human": "3.34 KB",
+        "last_modified": "2025-11-30 15:53:47",
+        "mod_timestamp": 1764500027.631765,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\test_auto_classify.py",
+        "name": "test_auto_classify.py",
+        "ext": ".py",
+        "size_bytes": 1463,
+        "size_human": "1.43 KB",
+        "last_modified": "2025-12-01 01:20:58",
+        "mod_timestamp": 1764534058.3262086,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\test_enterprise_functions.py",
+        "name": "test_enterprise_functions.py",
+        "ext": ".py",
+        "size_bytes": 1226,
+        "size_human": "1.20 KB",
+        "last_modified": "2025-12-01 01:17:33",
+        "mod_timestamp": 1764533853.686126,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\test_java_tabula.py",
+        "name": "test_java_tabula.py",
+        "ext": ".py",
+        "size_bytes": 2077,
+        "size_human": "2.03 KB",
+        "last_modified": "2025-12-01 02:51:12",
+        "mod_timestamp": 1764539472.7706604,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\test_navoiy_classification.py",
+        "name": "test_navoiy_classification.py",
+        "ext": ".py",
+        "size_bytes": 3758,
+        "size_human": "3.67 KB",
+        "last_modified": "2025-12-01 01:27:39",
+        "mod_timestamp": 1764534459.16469,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\test_resource_classification.py",
+        "name": "test_resource_classification.py",
+        "ext": ".py",
+        "size_bytes": 3163,
+        "size_human": "3.09 KB",
+        "last_modified": "2025-12-01 04:19:22",
+        "mod_timestamp": 1764544762.0185382,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\test_tabula_extraction.py",
+        "name": "test_tabula_extraction.py",
+        "ext": ".py",
+        "size_bytes": 10221,
+        "size_human": "9.98 KB",
+        "last_modified": "2025-12-01 03:23:36",
+        "mod_timestamp": 1764541416.185762,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\tools\\test_tabula_quick.py",
+        "name": "test_tabula_quick.py",
+        "ext": ".py",
+        "size_bytes": 1765,
+        "size_human": "1.72 KB",
+        "last_modified": "2025-12-01 03:29:03",
+        "mod_timestamp": 1764541743.1355858,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\aggregation_log.py",
+        "name": "aggregation_log.py",
+        "ext": ".py",
+        "size_bytes": 1198,
+        "size_human": "1.17 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.310415,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\ai_cache.py",
+        "name": "ai_cache.py",
+        "ext": ".py",
+        "size_bytes": 8976,
+        "size_human": "8.77 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3151977,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\ai_content_classifier.py",
+        "name": "ai_content_classifier.py",
+        "ext": ".py",
+        "size_bytes": 15388,
+        "size_human": "15.03 KB",
+        "last_modified": "2025-11-26 10:23:32",
+        "mod_timestamp": 1764134612.877561,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\AI_CONTENT_CLASSIFIER_README.md",
+        "name": "AI_CONTENT_CLASSIFIER_README.md",
+        "ext": ".md",
+        "size_bytes": 7506,
+        "size_human": "7.33 KB",
+        "last_modified": "2025-11-16 00:42:03",
+        "mod_timestamp": 1763235723.2419443,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\ai_formula_restorer.py",
+        "name": "ai_formula_restorer.py",
+        "ext": ".py",
+        "size_bytes": 13334,
+        "size_human": "13.02 KB",
+        "last_modified": "2025-11-26 10:18:11",
+        "mod_timestamp": 1764134291.1979058,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\balance_sheet_detector.py",
+        "name": "balance_sheet_detector.py",
+        "ext": ".py",
+        "size_bytes": 8356,
+        "size_human": "8.16 KB",
+        "last_modified": "2025-12-01 00:27:41",
+        "mod_timestamp": 1764530861.4086757,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\balance_sheet_node_extractor.py",
+        "name": "balance_sheet_node_extractor.py",
+        "ext": ".py",
+        "size_bytes": 61342,
+        "size_human": "59.90 KB",
+        "last_modified": "2025-12-01 02:12:07",
+        "mod_timestamp": 1764537127.9889598,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\batch_processor.py",
+        "name": "batch_processor.py",
+        "ext": ".py",
+        "size_bytes": 6168,
+        "size_human": "6.02 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1578221,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\building_envelope_parser.py",
+        "name": "building_envelope_parser.py",
+        "ext": ".py",
+        "size_bytes": 7229,
+        "size_human": "7.06 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1665554,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\canonical_collector.py",
+        "name": "canonical_collector.py",
+        "ext": ".py",
+        "size_bytes": 4166,
+        "size_human": "4.07 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1798384,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\canonical_to_passport.py",
+        "name": "canonical_to_passport.py",
+        "ext": ".py",
+        "size_bytes": 20181,
+        "size_human": "19.71 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.194857,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\check_aggregated_file.py",
+        "name": "check_aggregated_file.py",
+        "ext": ".py",
+        "size_bytes": 1003,
+        "size_human": "1003 B",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.9710014,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\check_electricity_data.py",
+        "name": "check_electricity_data.py",
+        "ext": ".py",
+        "size_bytes": 5083,
+        "size_human": "4.96 KB",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.968978,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\connection_pool.py",
+        "name": "connection_pool.py",
+        "ext": ".py",
+        "size_bytes": 7626,
+        "size_human": "7.45 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.2044628,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\content_analyzer.py",
+        "name": "content_analyzer.py",
+        "ext": ".py",
+        "size_bytes": 19320,
+        "size_human": "18.87 KB",
+        "last_modified": "2025-12-01 04:19:49",
+        "mod_timestamp": 1764544789.4251463,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\data_validator.py",
+        "name": "data_validator.py",
+        "ext": ".py",
+        "size_bytes": 15134,
+        "size_human": "14.78 KB",
+        "last_modified": "2025-12-01 19:34:16",
+        "mod_timestamp": 1764599656.1403766,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\diagnose_aggregation.py",
+        "name": "diagnose_aggregation.py",
+        "ext": ".py",
+        "size_bytes": 8481,
+        "size_human": "8.28 KB",
+        "last_modified": "2025-11-26 10:18:11",
+        "mod_timestamp": 1764134291.190977,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\energy_aggregator.py",
+        "name": "energy_aggregator.py",
+        "ext": ".py",
+        "size_bytes": 107166,
+        "size_human": "104.65 KB",
+        "last_modified": "2025-12-08 09:38:28",
+        "mod_timestamp": 1765168708.3758166,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\enterprise_classifier.py",
+        "name": "enterprise_classifier.py",
+        "ext": ".py",
+        "size_bytes": 10856,
+        "size_human": "10.60 KB",
+        "last_modified": "2025-12-01 18:37:03",
+        "mod_timestamp": 1764596223.6261413,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\environmental_measures_parser.py",
+        "name": "environmental_measures_parser.py",
+        "ext": ".py",
+        "size_bytes": 13604,
+        "size_human": "13.29 KB",
+        "last_modified": "2025-11-30 12:18:02",
+        "mod_timestamp": 1764487082.502141,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\equipment_parser.py",
+        "name": "equipment_parser.py",
+        "ext": ".py",
+        "size_bytes": 10645,
+        "size_human": "10.40 KB",
+        "last_modified": "2025-11-30 12:09:20",
+        "mod_timestamp": 1764486560.5148695,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\gemini_vision_ocr.py",
+        "name": "gemini_vision_ocr.py",
+        "ext": ".py",
+        "size_bytes": 45480,
+        "size_human": "44.41 KB",
+        "last_modified": "2025-11-30 00:49:28",
+        "mod_timestamp": 1764445768.7902484,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\id_code_validator.py",
+        "name": "id_code_validator.py",
+        "ext": ".py",
+        "size_bytes": 7376,
+        "size_human": "7.20 KB",
+        "last_modified": "2025-11-30 00:49:35",
+        "mod_timestamp": 1764445775.4505043,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\image_enhancement.py",
+        "name": "image_enhancement.py",
+        "ext": ".py",
+        "size_bytes": 23340,
+        "size_human": "22.79 KB",
+        "last_modified": "2025-11-29 22:13:54",
+        "mod_timestamp": 1764436434.0882378,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\intelligent_router.py",
+        "name": "intelligent_router.py",
+        "ext": ".py",
+        "size_bytes": 41024,
+        "size_human": "40.06 KB",
+        "last_modified": "2025-12-01 06:36:05",
+        "mod_timestamp": 1764552965.089156,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\nodes_parser.py",
+        "name": "nodes_parser.py",
+        "ext": ".py",
+        "size_bytes": 5914,
+        "size_human": "5.78 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3151977,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\number_postprocessor.py",
+        "name": "number_postprocessor.py",
+        "ext": ".py",
+        "size_bytes": 7411,
+        "size_human": "7.24 KB",
+        "last_modified": "2025-11-30 00:45:13",
+        "mod_timestamp": 1764445513.1172292,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\ocr_data_adapter.py",
+        "name": "ocr_data_adapter.py",
+        "ext": ".py",
+        "size_bytes": 43082,
+        "size_human": "42.07 KB",
+        "last_modified": "2025-12-01 18:55:46",
+        "mod_timestamp": 1764597346.800534,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\ocr_integration.py",
+        "name": "ocr_integration.py",
+        "ext": ".py",
+        "size_bytes": 10430,
+        "size_human": "10.19 KB",
+        "last_modified": "2025-11-30 13:00:02",
+        "mod_timestamp": 1764489602.4372287,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\ocr_memory_optimizer.py",
+        "name": "ocr_memory_optimizer.py",
+        "ext": ".py",
+        "size_bytes": 4950,
+        "size_human": "4.83 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3214345,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\ocr_table_extractor.py",
+        "name": "ocr_table_extractor.py",
+        "ext": ".py",
+        "size_bytes": 11052,
+        "size_human": "10.79 KB",
+        "last_modified": "2025-12-01 18:55:46",
+        "mod_timestamp": 1764597346.800534,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\passport_diagnostics.py",
+        "name": "passport_diagnostics.py",
+        "ext": ".py",
+        "size_bytes": 9774,
+        "size_human": "9.54 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3821023,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\pdf_classifier.py",
+        "name": "pdf_classifier.py",
+        "ext": ".py",
+        "size_bytes": 10602,
+        "size_human": "10.35 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3275058,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\pdf_diagnostics.py",
+        "name": "pdf_diagnostics.py",
+        "ext": ".py",
+        "size_bytes": 16171,
+        "size_human": "15.79 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3920271,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\progress_tracker.py",
+        "name": "progress_tracker.py",
+        "ext": ".py",
+        "size_bytes": 11060,
+        "size_human": "10.80 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3784504,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\readiness_validator.py",
+        "name": "readiness_validator.py",
+        "ext": ".py",
+        "size_bytes": 81034,
+        "size_human": "79.13 KB",
+        "last_modified": "2025-11-26 17:46:31",
+        "mod_timestamp": 1764161191.848819,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\reaggregate_all.py",
+        "name": "reaggregate_all.py",
+        "ext": ".py",
+        "size_bytes": 5673,
+        "size_human": "5.54 KB",
+        "last_modified": "2025-11-26 10:18:11",
+        "mod_timestamp": 1764134291.195791,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\reference_tables_loader.py",
+        "name": "reference_tables_loader.py",
+        "ext": ".py",
+        "size_bytes": 9923,
+        "size_human": "9.69 KB",
+        "last_modified": "2025-12-01 18:37:03",
+        "mod_timestamp": 1764596223.6261413,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\resource_classifier.py",
+        "name": "resource_classifier.py",
+        "ext": ".py",
+        "size_bytes": 9609,
+        "size_human": "9.38 KB",
+        "last_modified": "2025-11-26 10:23:32",
+        "mod_timestamp": 1764134612.8737133,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\section_template_filler.py",
+        "name": "section_template_filler.py",
+        "ext": ".py",
+        "size_bytes": 8507,
+        "size_human": "8.31 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3753233,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\table_detector.py",
+        "name": "table_detector.py",
+        "ext": ".py",
+        "size_bytes": 35951,
+        "size_human": "35.11 KB",
+        "last_modified": "2025-12-01 03:29:03",
+        "mod_timestamp": 1764541743.1355858,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\table_validator.py",
+        "name": "table_validator.py",
+        "ext": ".py",
+        "size_bytes": 10717,
+        "size_human": "10.47 KB",
+        "last_modified": "2025-11-29 19:47:27",
+        "mod_timestamp": 1764427647.6994932,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\test_pdf_scenarios.py",
+        "name": "test_pdf_scenarios.py",
+        "ext": ".py",
+        "size_bytes": 5279,
+        "size_human": "5.16 KB",
+        "last_modified": "2025-11-26 10:18:08",
+        "mod_timestamp": 1764134288.964903,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\word_readiness_validator.py",
+        "name": "word_readiness_validator.py",
+        "ext": ".py",
+        "size_bytes": 11597,
+        "size_human": "11.33 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.1578221,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\word_report_generator.py",
+        "name": "word_report_generator.py",
+        "ext": ".py",
+        "size_bytes": 52541,
+        "size_human": "51.31 KB",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.177746,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "services\\ingest\\utils\\__init__.py",
+        "name": "__init__.py",
+        "ext": ".py",
+        "size_bytes": 50,
+        "size_human": "50 B",
+        "last_modified": "2025-11-26 09:56:16",
+        "mod_timestamp": 1764132976.3084018,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\management\\main.py",
+        "name": "main.py",
+        "ext": ".py",
+        "size_bytes": 182,
+        "size_human": "182 B",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0504382,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\management\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 193,
+        "size_human": "193 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\management\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 115,
+        "size_human": "115 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\recommend\\main.py",
+        "name": "main.py",
+        "ext": ".py",
+        "size_bytes": 1848,
+        "size_human": "1.80 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0504382,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\recommend\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 192,
+        "size_human": "192 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\recommend\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 115,
+        "size_human": "115 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\reports\\main.py",
+        "name": "main.py",
+        "ext": ".py",
+        "size_bytes": 7654,
+        "size_human": "7.47 KB",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0537956,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\reports\\PDF_GENERATION.md",
+        "name": "PDF_GENERATION.md",
+        "ext": ".md",
+        "size_bytes": 2649,
+        "size_human": "2.59 KB",
+        "last_modified": "2025-11-05 12:09:30",
+        "mod_timestamp": 1762326570.546955,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\reports\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 190,
+        "size_human": "190 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\reports\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 132,
+        "size_human": "132 B",
+        "last_modified": "2025-11-05 00:04:05",
+        "mod_timestamp": 1762283045.6949682,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\validate\\main.py",
+        "name": "main.py",
+        "ext": ".py",
+        "size_bytes": 930,
+        "size_human": "930 B",
+        "last_modified": "2025-12-02 18:40:03",
+        "mod_timestamp": 1764682803.0548117,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\validate\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 191,
+        "size_human": "191 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "services\\validate\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 115,
+        "size_human": "115 B",
+        "last_modified": "2025-11-04 07:04:56",
+        "mod_timestamp": 1762221896.0,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\conftest.py",
+        "name": "conftest.py",
+        "ext": ".py",
+        "size_bytes": 4909,
+        "size_human": "4.79 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.8133652,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\README.md",
+        "name": "README.md",
+        "ext": ".md",
+        "size_bytes": 5104,
+        "size_human": "4.98 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9938416,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\requirements.txt",
+        "name": "requirements.txt",
+        "ext": ".txt",
+        "size_bytes": 134,
+        "size_human": "134 B",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9929125,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\__init__.py",
+        "name": "__init__.py",
+        "ext": ".py",
+        "size_bytes": 74,
+        "size_human": "74 B",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9769185,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\fixtures\\mock_energy_passport_data.py",
+        "name": "mock_energy_passport_data.py",
+        "ext": ".py",
+        "size_bytes": 9629,
+        "size_human": "9.40 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9847841,
+        "pre_classification": [
+            "spec"
+        ]
+    },
+    {
+        "path": "tests\\integration\\test_pdf_pipeline.py",
+        "name": "test_pdf_pipeline.py",
+        "ext": ".py",
+        "size_bytes": 3531,
+        "size_human": "3.45 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.81737,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\performance\\test_ai_performance.py",
+        "name": "test_ai_performance.py",
+        "ext": ".py",
+        "size_bytes": 2816,
+        "size_human": "2.75 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9847841,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\performance\\test_ocr_performance.py",
+        "name": "test_ocr_performance.py",
+        "ext": ".py",
+        "size_bytes": 3399,
+        "size_human": "3.32 KB",
+        "last_modified": "2025-11-15 21:30:57",
+        "mod_timestamp": 1763224257.552998,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_anomaly_detector.py",
+        "name": "test_ai_anomaly_detector.py",
+        "ext": ".py",
+        "size_bytes": 3862,
+        "size_human": "3.77 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.8153648,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_base_client.py",
+        "name": "test_ai_base_client.py",
+        "ext": ".py",
+        "size_bytes": 1360,
+        "size_human": "1.33 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.81737,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_client_factory.py",
+        "name": "test_ai_client_factory.py",
+        "ext": ".py",
+        "size_bytes": 1180,
+        "size_human": "1.15 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.819367,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_compliance_checker.py",
+        "name": "test_ai_compliance_checker.py",
+        "ext": ".py",
+        "size_bytes": 1185,
+        "size_human": "1.16 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9774506,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_config.py",
+        "name": "test_ai_config.py",
+        "ext": ".py",
+        "size_bytes": 2095,
+        "size_human": "2.05 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.8250148,
+        "pre_classification": [
+            "config"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_data_validator.py",
+        "name": "test_ai_data_validator.py",
+        "ext": ".py",
+        "size_bytes": 3316,
+        "size_human": "3.24 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9774506,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_efficiency_analyzer.py",
+        "name": "test_ai_efficiency_analyzer.py",
+        "ext": ".py",
+        "size_bytes": 1445,
+        "size_human": "1.41 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9774506,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_energy_verifier.py",
+        "name": "test_ai_energy_verifier.py",
+        "ext": ".py",
+        "size_bytes": 1175,
+        "size_human": "1.15 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9774506,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_ocr_enhancer.py",
+        "name": "test_ai_ocr_enhancer.py",
+        "ext": ".py",
+        "size_bytes": 1711,
+        "size_human": "1.67 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9774506,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_parser.py",
+        "name": "test_ai_parser.py",
+        "ext": ".py",
+        "size_bytes": 5645,
+        "size_human": "5.51 KB",
+        "last_modified": "2025-11-15 21:27:35",
+        "mod_timestamp": 1763224055.7680435,
+        "pre_classification": [
+            "unknown"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_quality_reporter.py",
+        "name": "test_ai_quality_reporter.py",
+        "ext": ".py",
+        "size_bytes": 1217,
+        "size_human": "1.19 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9774506,
+        "pre_classification": [
+            "audit"
+        ]
+    },
+    {
+        "path": "tests\\unit\\test_ai_table_parser.py",
+        "name": "test_ai_table_parser.py",
+        "ext": ".py",
+        "size_bytes": 1066,
+        "size_human": "1.04 KB",
+        "last_modified": "2025-11-14 23:29:38",
+        "mod_timestamp": 1763144978.9774506,
+        "pre_classification": [
+            "unknown"
+        ]
+    }
+]

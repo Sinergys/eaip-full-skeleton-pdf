@@ -1,0 +1,3109 @@
+{
+  "file_name": "акт выполненых работ май.PDF",
+  "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\акт выполненых работ май.PDF",
+  "comparison_date": null,
+  "automatic_results": {
+    "confidence": 0.95,
+    "tables_count": 1,
+    "text_length": 853,
+    "adaptive_retry_used": true
+  },
+  "manual_results": {
+    "source": "Вариант 2",
+    "tables_count": 1,
+    "text_length": 0
+  },
+  "table_comparisons": [
+    {
+      "table_number": 1,
+      "auto_rows": 34,
+      "manual_rows": 125,
+      "auto_cols": 10,
+      "manual_cols": 1,
+      "row_count_match": false,
+      "col_count_match": false,
+      "header_matches": [
+        {
+          "column": 0,
+          "auto": "№",
+          "manual": "┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 1,
+          "auto": "Идентификационный код и название по Единому электронному\nкаталогу товаров (услуг)",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 2,
+          "auto": "Наименование товаров (услуг)",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 3,
+          "auto": "Единица измерения",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 4,
+          "auto": "Количество",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 5,
+          "auto": "Цена",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 6,
+          "auto": "Стоимость поставки",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 7,
+          "auto": "НДС",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 8,
+          "auto": "Сумма",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        },
+        {
+          "column": 9,
+          "auto": "Стоимость поставки с учетом НДС",
+          "manual": "",
+          "match": false,
+          "similarity": 0.0
+        }
+      ],
+      "row_differences": [
+        {
+          "row": 1,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "1",
+              "manual": "┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "НЕКСИЯ 3 S05300 ТАА",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "Услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "0.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "0.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "0.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "0.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "2",
+              "manual": "│                                                АКТ ВЫПОЛНЕННЫХ РАБОТ № 454                                                 │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Свеча 1 контакт",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "4.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "37.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "150.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "18.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "168.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "3",
+              "manual": "│                                                     от 15.05.2024                                                          │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Помпа",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "265.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "265.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "31.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "296.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "4",
+              "manual": "├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Клапан крышка прокладка",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "75.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "75.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "9.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "84.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "5",
+              "manual": "│Исполнитель: XURSHID AVTO SERVIS MCHJ                                                                                       │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Масляный фильтр",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "19.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "19.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "2.376.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "22.176.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "6",
+              "manual": "│Заказчик:   NAVOIYISSIOLIK ELEKTR STANSIYASI AJ                                                                            │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "32140001010000000 - Антифриз (всех видов)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Термостат",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "25.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "51.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "6.120.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "57.120.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "7",
+              "manual": "│Дата:       13.05.2024                                                                                                      │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "05206005062000000 - Синтетическое моторное масло",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Масло моторное 5/30",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "литр.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "4.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "57.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "230.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "27.600.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "257.600.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "8",
+              "manual": "├─────┬──────────────────────────────────────────────────────┬──────────┬─────────┬───────────┬──────────┬─────────┬──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Дол 10",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "16.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "33.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "3.960.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "36.960.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "9",
+              "manual": "│  №  │           Наименование товаров (услуг)               │   Ед.    │ Кол-во  │   Цена    │ Стоимость│  НДС   │ Стоимость│",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Сальник задний с КПП",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "149.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "149.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "17.880.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "166.880.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "10",
+              "manual": "│     │                                                      │ измерения│         │ поставки  │          │         │ с учетом │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Сальник пер/ней(GM)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "19.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "19.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "2.280.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "21.280.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "11",
+              "manual": "│     │                                                      │          │         │           │          │         │   НДС    │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Мотор клап",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "комплект/подбор.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "325.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "325.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "39.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "364.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "12",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Клапан клапанчик",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "92.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "92.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "11.040.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "103.040.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "13",
+              "manual": "│  1  │Услуги по диагностике, ремонту и техническому         │ услуга   │   100   │   0.00    │   0.00   │   0.00  │   0.00   │",
+              "similarity": 0.015503875968992248,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Генератор ремень",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "95.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "95.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "11.400.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "106.400.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "14",
+              "manual": "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Натяжитель",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "190.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "190.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "22.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "212.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "15",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Воздушный фильтр",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "25.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "25.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "3.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "28.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "16",
+              "manual": "│  2  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   4.00  │ 37 500.00 │150 000.00│18 000.00│168 000.00│",
+              "similarity": 0.031007751937984496,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Салон фильтр",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "30.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "30.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "3.600.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "33.600.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "17",
+              "manual": "│     │и грузовых автомобилей (Свеча 1 контакт)              │          │         │           │          │         │          │",
+              "similarity": 0.015503875968992248,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Амортизатор передний",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "491.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "982.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "117.840.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "1.099.840.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "18",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Амортизатор зад.на GM",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "295.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "590.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "70.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "660.800.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "19",
+              "manual": "│  3  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   100   │ 265 000.00│26 500.00 │ 3 100.00│ 29 680.00│",
+              "similarity": 0.031007751937984496,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Чашка 35(GM)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "52.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "104.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "12.480.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "116.480.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "20",
+              "manual": "│     │и грузовых автомобилей (Помпа)                        │          │         │           │          │         │          │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Задний амортизатор резинка",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "15.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "30.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "3.600.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "33.600.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "21",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Задний амортизатор втулка",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "21.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "42.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "5.040.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "47.040.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 22,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "22",
+              "manual": "│  4  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   100   │  75 000.00│ 75 000.00│ 9 000.00│ 84 000.00│",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Головка прокладка GM-Tepmir",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "шт.",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "168.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "168.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "20.160.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "188.160.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "23",
+              "manual": "│     │и грузовых автомобилей (Клапан крышка прокладка)      │          │         │           │          │         │          │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Колодка передний",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "комплект(сбор)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "185.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "185.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "22.200.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "207.200.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "24",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "80200100160000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Балансировка(GM)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "4.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "25.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "100.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "12.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "112.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "25",
+              "manual": "│  5  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   100   │  19 000.00│ 19 000.00│ 2 280.00│ 21 280.00│",
+              "similarity": 0.015503875968992248,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Замена прокладки",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "4.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "18.750.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "75.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "9.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "84.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 26,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "26",
+              "manual": "│     │и грузовых автомобилей (Масленный фильтр)             │          │         │           │          │         │          │",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Услуга по шина монтажу",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "2.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "18.750.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "37.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "4.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "42.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "27",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Услуга по мойке деталей\nдвигатели",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "75.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "75.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "9.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "84.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "28",
+              "manual": "│  6  │Герметик универсальный (Герметик)                     │   шт.    │   200   │  15 000.00│ 30 000.00│ 3 600.00│ 33 600.00│",
+              "similarity": 0.015503875968992248,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Ремонт головка",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "500.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "500.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "60.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "560.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "29",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Фрезеровка блока",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "187.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "187.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "22.500.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "210.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 30,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "30",
+              "manual": "│  7  │Антифризы (всех видов) (Антифриз)                     │  литр    │   76    │  27 500.00│  2090.00 │  250.80 │  2340.80 │",
+              "similarity": 0.031007751937984496,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Фрезеровка головки",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "125.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "125.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "15.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "140.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "31",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Услуга по замена зап частей(GM\nХодовка)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "1.150.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "1.150.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "138.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "1.288.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 32,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "32",
+              "manual": "│  8  │Полусинтетическое моторное масло (Масло моторное 5/30)│  литр    │   4.00  │ 57 500.00 │230 000.00│27 600.00│257 600.00│",
+              "similarity": 0.031007751937984496,
+              "match": false
+            },
+            {
+              "column": 1,
+              "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 2,
+              "auto": "Услуга по ремонт двигатели",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "услуга (раз)",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 4,
+              "auto": "1.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 5,
+              "auto": "350.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "350.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 7,
+              "auto": "12%",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "42.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "392.000.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        },
+        {
+          "row": 33,
+          "cell_differences": [
+            {
+              "column": 0,
+              "auto": "33",
+              "manual": "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 3,
+              "auto": "Итого:",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 6,
+              "auto": "6.621.300.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 8,
+              "auto": "794.556.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            },
+            {
+              "column": 9,
+              "auto": "7.415.856.00",
+              "manual": "",
+              "similarity": 0.0,
+              "match": false
+            }
+          ]
+        }
+      ],
+      "missing_rows": [
+        {
+          "row": 34,
+          "data": [
+            "│  9  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   2.00  │  16 500.00│ 33 000.00│ 3 960.00│ 36 960.00│"
+          ]
+        },
+        {
+          "row": 35,
+          "data": [
+            "│     │и грузовых автомобилей (Литон 100 г)                  │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 36,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 37,
+          "data": [
+            "│ 10  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   1.00  │ 149 000.00│149 000.00│17 880.00│166 880.00│"
+          ]
+        },
+        {
+          "row": 38,
+          "data": [
+            "│     │и грузовых автомобилей (Сальник задний с крышка)      │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 39,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 40,
+          "data": [
+            "│ 11  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   100   │  19 000.00│ 19 000.00│ 2 280.00│ 21 280.00│"
+          ]
+        },
+        {
+          "row": 41,
+          "data": [
+            "│     │и грузовых автомобилей (Сальник передний GM)          │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 42,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 43,
+          "data": [
+            "│ 12  │Прочие запчасти, детали и комплектующие для легковых  │ комплект/│   100   │ 325 000.00│325 000.00│39 000.00│364 000.00│"
+          ]
+        },
+        {
+          "row": 44,
+          "data": [
+            "│     │и грузовых автомобилей (Мотор клапан)                 │  набор   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 45,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 46,
+          "data": [
+            "│ 13  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   1.00  │  92 000.00│ 92 000.00│11 040.00│103 040.00│"
+          ]
+        },
+        {
+          "row": 47,
+          "data": [
+            "│     │и грузовых автомобилей (Клапан сальник)               │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 48,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 49,
+          "data": [
+            "│ 14  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   1.00  │  95 000.00│ 95 000.00│11 400.00│106 400.00│"
+          ]
+        },
+        {
+          "row": 50,
+          "data": [
+            "│     │и грузовых автомобилей (Генератор ремень)             │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 51,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 52,
+          "data": [
+            "│ 15  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   1.00  │ 190 000.00│190 000.00│22 800.00│212 800.00│"
+          ]
+        },
+        {
+          "row": 53,
+          "data": [
+            "│     │и грузовых автомобилей (Натяжитель)                   │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 54,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 55,
+          "data": [
+            "│ 16  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   1.00  │  25 000.00│ 25 000.00│ 3 000.00│ 28 000.00│"
+          ]
+        },
+        {
+          "row": 56,
+          "data": [
+            "│     │и грузовых автомобилей (Воздушный фильтр)             │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 57,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 58,
+          "data": [
+            "│ 17  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   1.00  │  30 000.00│ 30 000.00│ 3 600.00│ 33 600.00│"
+          ]
+        },
+        {
+          "row": 59,
+          "data": [
+            "│     │и грузовых автомобилей (Салонный фильтр)              │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 60,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 61,
+          "data": [
+            "│ 18  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   200   │ 491 000.00│982 000.00│117 840.00│1 099 840.00│"
+          ]
+        },
+        {
+          "row": 62,
+          "data": [
+            "│     │и грузовых автомобилей (Амортизатор передний)         │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 63,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 64,
+          "data": [
+            "│ 19  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   2.00  │ 295 000.00│590 000.00│70 800.00│660 800.00│"
+          ]
+        },
+        {
+          "row": 65,
+          "data": [
+            "│     │и грузовых автомобилей (Амортизатор задний GM)        │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 66,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 67,
+          "data": [
+            "│ 20  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   2.00  │  52 000.00│104 000.00│12 480.00│116 480.00│"
+          ]
+        },
+        {
+          "row": 68,
+          "data": [
+            "│     │и грузовых автомобилей (Чашка задний)                 │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 69,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 70,
+          "data": [
+            "│ 21  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   2.00  │  15 000.00│ 30 000.00│ 3 600.00│ 33 600.00│"
+          ]
+        },
+        {
+          "row": 71,
+          "data": [
+            "│     │и грузовых автомобилей (Задний амортизатор резина)    │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 72,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 73,
+          "data": [
+            "│ 22  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   2.00  │  21 000.00│ 42 000.00│ 5 040.00│ 47 040.00│"
+          ]
+        },
+        {
+          "row": 74,
+          "data": [
+            "│     │и грузовых автомобилей (Задний амортизатор пыльник)   │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 75,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 76,
+          "data": [
+            "│ 23  │Прочие запчасти, детали и комплектующие для легковых  │   шт.    │   1.00  │ 168 000.00│168 000.00│20 160.00│188 160.00│"
+          ]
+        },
+        {
+          "row": 77,
+          "data": [
+            "│     │и грузовых автомобилей (Головка и накладка GM Temir)  │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 78,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 79,
+          "data": [
+            "│ 24  │Прочие запчасти, детали и комплектующие для легковых  │ комплект/│   1.00  │ 185 000.00│185 000.00│22 200.00│207 200.00│"
+          ]
+        },
+        {
+          "row": 80,
+          "data": [
+            "│     │и грузовых автомобилей (Накладка передний)            │  набор   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 81,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 82,
+          "data": [
+            "│ 25  │Услуги по диагностике, ремонту и техническому         │ услуга   │   4.00  │  25 000.00│100 000.00│12 000.00│112 000.00│"
+          ]
+        },
+        {
+          "row": 83,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 84,
+          "data": [
+            "│     │(Развал схождения)                                    │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 85,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 86,
+          "data": [
+            "│ 26  │Услуги по диагностике, ремонту и техническому         │ услуга   │   4.00  │  18 750.00│ 75 000.00│ 9 000.00│ 84 000.00│"
+          ]
+        },
+        {
+          "row": 87,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 88,
+          "data": [
+            "│     │(Балансировка шин)                                    │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 89,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 90,
+          "data": [
+            "│ 27  │Услуги по диагностике, ремонту и техническому         │ услуга   │   2.00  │  18 750.00│ 37 500.00│ 4 500.00│ 42 000.00│"
+          ]
+        },
+        {
+          "row": 91,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 92,
+          "data": [
+            "│     │(Услуга по шиномонтажу)                               │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 93,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 94,
+          "data": [
+            "│ 28  │Услуги по диагностике, ремонту и техническому         │ услуга   │   100   │   7 500.00│ 75 000.00│ 9 000.00│ 84 000.00│"
+          ]
+        },
+        {
+          "row": 95,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 96,
+          "data": [
+            "│     │(Услуги по мойке деталей двигателя)                   │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 97,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 98,
+          "data": [
+            "│ 29  │Услуги по диагностике, ремонту и техническому         │ услуга   │   1.00  │ 500 000.00│500 000.00│60 000.00│560 000.00│"
+          ]
+        },
+        {
+          "row": 99,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 100,
+          "data": [
+            "│     │(Ремонт головки)                                      │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 101,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 102,
+          "data": [
+            "│ 30  │Услуги по диагностике, ремонту и техническому         │ услуга   │   1.00  │ 187 500.00│187 500.00│22 500.00│210 000.00│"
+          ]
+        },
+        {
+          "row": 103,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 104,
+          "data": [
+            "│     │(Фрезеровка блока)                                    │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 105,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 106,
+          "data": [
+            "│ 31  │Услуги по диагностике, ремонту и техническому         │ услуга   │   100   │ 125 000.00│125 000.00│15 000.00│140 000.00│"
+          ]
+        },
+        {
+          "row": 107,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 108,
+          "data": [
+            "│     │(Фрезеровка головки)                                  │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 109,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 110,
+          "data": [
+            "│ 32  │Услуги по диагностике, ремонту и техническому         │ услуга   │   1.00  │1 150 000.00│1 150 000.00│138 000.00│1 288 000.00│"
+          ]
+        },
+        {
+          "row": 111,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │           │          │           │"
+          ]
+        },
+        {
+          "row": 112,
+          "data": [
+            "│     │(Услуга по замене запчастей (диаг. ходовой))          │          │         │           │           │          │           │"
+          ]
+        },
+        {
+          "row": 113,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 114,
+          "data": [
+            "│ 33  │Услуги по диагностике, ремонту и техническому         │ услуга   │   1.00  │ 350 000.00│350 000.00│42 000.00│392 000.00│"
+          ]
+        },
+        {
+          "row": 115,
+          "data": [
+            "│     │обслуживанию легковых автомобилей и мотоциклов        │  (раз)   │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 116,
+          "data": [
+            "│     │(Услуга по ремонту двигателя)                         │          │         │           │          │         │          │"
+          ]
+        },
+        {
+          "row": 117,
+          "data": [
+            "├─────┼──────────────────────────────────────────────────────┼──────────┼─────────┼───────────┼──────────┼─────────┼──────────┤"
+          ]
+        },
+        {
+          "row": 118,
+          "data": [
+            "│     │                                                      │          │  ИТОГО: │6 621 300.00│          │794 556.00│7 415 856.00│"
+          ]
+        },
+        {
+          "row": 119,
+          "data": [
+            "└─────┴──────────────────────────────────────────────────────┴──────────┴─────────┴───────────┴──────────┴─────────┴──────────┘"
+          ]
+        },
+        {
+          "row": 120,
+          "data": [
+            "Стоимость принятой работы по акту составляет: 7 415 856.00"
+          ]
+        },
+        {
+          "row": 121,
+          "data": [
+            "(Семь миллионов четыреста пятнадцать тысяч восемьсот пятьдесят шесть сум 00 тийин)"
+          ]
+        },
+        {
+          "row": 122,
+          "data": [
+            "В т.ч. НДС: 794 556.00"
+          ]
+        },
+        {
+          "row": 123,
+          "data": [
+            "Стороны претензий друг к другу не имеют."
+          ]
+        },
+        {
+          "row": 124,
+          "data": [
+            "Исполнитель: ORZIYEV SUNNATULLA"
+          ]
+        },
+        {
+          "row": 125,
+          "data": [
+            "XURSHID AVTO SERVIS MCHJ"
+          ]
+        }
+      ],
+      "extra_rows": [],
+      "cell_differences": []
+    }
+  ],
+  "text_comparison": null,
+  "summary": {
+    "total_differences": 125,
+    "critical_differences": [
+      "Таблица 1: Несоответствие количества строк (34 vs 125)",
+      "Таблица 1: Несоответствие количества столбцов (10 vs 1)"
+    ],
+    "warnings": [],
+    "recommendations": [
+      "Обнаружены расхождения в данных. Требуется ручная проверка критических различий."
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "tesseract": {
+    "time_sec": 8.52,
+    "characters": 1303,
+    "readable_chars": 1124,
+    "readable_percent": 86.3,
+    "tables_count": 1,
+    "tables": [
+      {
+        "page": 1,
+        "table_index": 0,
+        "method": "ocr_numeric",
+        "rows": [
+          [
+            "8 вх ies",
+            "9х",
+            "хо ча И НВ"
+          ],
+          [
+            "Е Ee Ё. an ge ge",
+            "",
+            "1"
+          ],
+          [
+            "$",
+            ".3 to a ve 5",
+            ":"
+          ],
+          [
+            "с",
+            "hoe My aoe pre ae и",
+            "+"
+          ],
+          [
+            ": ei 4 ei 23 4 229 2: 3 2 27",
+            "[88"
+          ],
+          [
+            "$: ete 4: até gee E 2 & t)",
+            "5"
+          ],
+          [
+            "; Я #83] #88 238 #81",
+            "1 $"
+          ],
+          [
+            "Я Е",
+            "23"
+          ],
+          [
+            "g 2 3",
+            "§"
+          ],
+          [
+            "2",
+            "Я Е"
+          ],
+          [
+            "aE 8 B (8",
+            "B de $8",
+            "3"
+          ],
+          [
+            "Siz}",
+            "4я"
+          ],
+          [
+            "4 818",
+            "513"
+          ],
+          [
+            "Py >",
+            "ze"
+          ],
+          [
+            "4]",
+            "4"
+          ],
+          [
+            "3 3",
+            "<"
+          ],
+          [
+            "В",
+            "в"
+          ],
+          [
+            "ЕЯ z",
+            "13/4"
+          ],
+          [
+            "= $",
+            ">"
+          ],
+          [
+            "3 м >",
+            "3 2"
+          ],
+          [
+            "oe",
+            "г. t"
+          ]
+        ],
+        "row_count": 21,
+        "col_count": 3,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "gemini": {
+    "time_sec": 19.61,
+    "characters": 5801,
+    "readable_chars": 5221,
+    "readable_percent": 90.0,
+    "tables_count": 0,
+    "tables": []
+  },
+  "winner": "Gemini",
+  "test_date": "2025-11-29 12:37:10",
+  "source_file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\CamScanner 17-04-2025 15.17.pdf",
+  "page": 1
+}

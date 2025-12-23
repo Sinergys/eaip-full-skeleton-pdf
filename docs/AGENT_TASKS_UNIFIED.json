@@ -1,0 +1,1566 @@
+{
+  "metadata": {
+    "created_at": "2025-01-15T12:00:00",
+    "last_updated": "2025-12-01T02:21:51.164152",
+    "version": "1.0",
+    "total_tasks": 42,
+    "description": "Единый файл задач проекта EAIP - источник правды для всех агентов"
+  },
+  "tasks": {
+    "CRIT_1": {
+      "id": "CRIT_1",
+      "name": "Электроэнергия - по узлам учёта",
+      "status": "in_progress",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Данные",
+      "stage": "Блоки импорта",
+      "assigned_to": "agent_2",
+      "locked_by": "agent_2",
+      "locked_until": "2025-11-30T22:04:30.655478",
+      "solutions": [],
+      "execution": [
+        {
+          "timestamp": "2025-11-30T22:06:26.568660",
+          "agent": "agent_2",
+          "block_number": 1,
+          "status": "completed",
+          "completed": [
+            "Создана таблица node_consumption в БД для хранения потребления электроэнергии по узлам учёта",
+            "Таблица включает: enterprise_id, batch_id, node_name, period, active_energy_kwh, reactive_energy_kvarh, cost_sum, data_json",
+            "Добавлена функция import_node_consumption_to_db() для импорта данных потребления по узлам",
+            "Добавлена функция get_node_consumption() для получения данных потребления по узлам из БД",
+            "Проверен синтаксис кода - ошибок не обнаружено"
+          ],
+          "next_step": "Интегрировать импорт данных потребления по узлам в процесс обработки файлов",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/database.py"
+          ],
+          "time_spent_minutes": 10
+        },
+        {
+          "timestamp": "2025-11-30T22:10:38.264817",
+          "agent": "agent_2",
+          "block_number": 2,
+          "status": "completed",
+          "completed": [
+            "Интегрирован импорт данных потребления по узлам учёта в процесс обработки файлов",
+            "Добавлен вызов import_node_consumption_to_db() после парсинга узлов в main.py",
+            "Реализована логика преобразования данных узлов в формат для импорта в БД",
+            "Добавлено логирование успешного импорта данных по узлам",
+            "Обработка ошибок импорта не прерывает основной процесс обработки файла"
+          ],
+          "next_step": "Реализовать получение данных потребления по узлам за периоды из актов балансов (OCR)",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/main.py"
+          ],
+          "time_spent_minutes": 10
+        },
+        {
+          "timestamp": "2025-11-30T22:32:44.220841",
+          "agent": "agent_2",
+          "block_number": 3,
+          "status": "completed",
+          "completed": [
+            "Создан модуль balance_sheet_detector.py для определения актов балансов",
+            "Создан модуль balance_sheet_node_extractor.py для извлечения данных по узлам из актов балансов",
+            "Реализована поддержка Excel, PDF (через OCR) и Word файлов актов балансов",
+            "Интегрирована обработка актов балансов в процесс загрузки файлов в main.py",
+            "Добавлено автоматическое извлечение и импорт данных потребления по узлам из актов балансов в БД",
+            "Реализовано извлечение периодов из названий файлов/листов (год-квартал)"
+          ],
+          "next_step": "Протестировать на реальных файлах актов балансов (согласно рекомендации QA Engineer)",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/utils/balance_sheet_detector.py",
+            "eaip_full_skeleton/services/ingest/utils/balance_sheet_node_extractor.py",
+            "eaip_full_skeleton/services/ingest/main.py"
+          ],
+          "time_spent_minutes": 10
+        },
+        {
+          "timestamp": "2025-11-30T22:55:08.949281",
+          "agent": "agent_2",
+          "block_number": 4,
+          "status": "completed",
+          "completed": [
+            "Добавлена валидация извлеченных данных по узлам (согласно рекомендации QA Engineer)",
+            "Реализована дедупликация узлов при объединении данных",
+            "Улучшено извлечение периодов из названий файлов, листов и заголовков таблиц",
+            "Добавлена статистика извлечения данных (количество узлов, периоды, суммарные значения)",
+            "Улучшена обработка ошибок и логирование процесса извлечения",
+            "Добавлена проверка на отрицательные и нереалистично большие значения",
+            "Проверен синтаксис кода - ошибок не обнаружено"
+          ],
+          "next_step": "Протестировать на реальных файлах актов балансов",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/utils/balance_sheet_node_extractor.py"
+          ],
+          "time_spent_minutes": 10
+        }
+      ],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-11-30T21:49:30.655478",
+          "agent": "agent_2",
+          "action": "locked",
+          "duration_minutes": 15
+        },
+        {
+          "timestamp": "2025-11-30T21:49:30.655478",
+          "agent": "agent_2",
+          "action": "update",
+          "changes": {
+            "status": "in_progress"
+          },
+          "previous_status": "not_started",
+          "new_status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T22:06:26.568660",
+          "agent": "agent_2",
+          "action": "execution_added",
+          "block_number": 1,
+          "status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T22:10:38.264817",
+          "agent": "agent_2",
+          "action": "execution_added",
+          "block_number": 2,
+          "status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T22:32:44.220841",
+          "agent": "agent_2",
+          "action": "execution_added",
+          "block_number": 3,
+          "status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T22:55:08.949281",
+          "agent": "agent_2",
+          "action": "execution_added",
+          "block_number": 4,
+          "status": "completed"
+        }
+      ],
+      "expert_recommendations": {
+        "data_scientist": "Запросить у предприятия",
+        "software_engineer": "Использовать OCR для извлечения из PDF актов",
+        "qa_engineer": "Валидировать после получения"
+      }
+    },
+    "CRIT_2": {
+      "id": "CRIT_2",
+      "name": "Электроэнергия - активная/реактивная",
+      "status": "not_started",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Данные",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "data_scientist": "Критично для расчётов",
+        "software_engineer": "Парсить из коммерческих отчётов",
+        "ml_engineer": "Использовать специализированные промпты для разделения"
+      }
+    },
+    "CRIT_3": {
+      "id": "CRIT_3",
+      "name": "Газ - поквартальные данные (полные)",
+      "status": "partial",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Данные",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "data_scientist": "Дополнить недостающие кварталы",
+        "software_engineer": "Использовать агрегатор для объединения данных",
+        "qa_engineer": "Проверить целостность временных рядов"
+      }
+    },
+    "CRIT_4": {
+      "id": "CRIT_4",
+      "name": "Импорт агрегированных данных в БД",
+      "status": "in_progress",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-11-30T15:41:20.074779",
+          "agent": "agent-1",
+          "action": "update",
+          "changes": {
+            "status": "in_progress"
+          },
+          "previous_status": "in_progress",
+          "new_status": "in_progress"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Реализовать batch-импорт в aggregated_data",
+        "data_scientist": "Добавить валидацию перед импортом",
+        "qa_engineer": "Тестировать на больших объёмах"
+      }
+    },
+    "CRIT_5": {
+      "id": "CRIT_5",
+      "name": "Оборудование - импорт в БД",
+      "status": "partial",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Использовать существующий парсер equipment_parser.py",
+        "data_scientist": "Проверить полноту данных",
+        "qa_engineer": "Валидировать структуру JSON"
+      }
+    },
+    "CRIT_6": {
+      "id": "CRIT_6",
+      "name": "Узлы учёта - импорт в БД",
+      "status": "partial",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Импортировать из schetchiki.json",
+        "data_scientist": "Связать с данными потребления",
+        "qa_engineer": "Проверить соответствие узлов и данных"
+      }
+    },
+    "CRIT_7": {
+      "id": "CRIT_7",
+      "name": "Узлы учёта - данные потребления",
+      "status": "not_started",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Данные",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "data_scientist": "Критично для энергобаланса",
+        "software_engineer": "Использовать OCR для извлечения из актов",
+        "ml_engineer": "Специализированные промпты для таблиц учёта"
+      }
+    },
+    "CRIT_8": {
+      "id": "CRIT_8",
+      "name": "Акты балансов - обработка",
+      "status": "partial",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Данные",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Распаковать и обработать через OCR модуль",
+        "ml_engineer": "Использовать Gemini Vision (95% confidence)",
+        "qa_engineer": "Тестировать на нескольких файлах сначала"
+      }
+    },
+    "CRIT_9": {
+      "id": "CRIT_9",
+      "name": "Расчёты балансов",
+      "status": "completed",
+      "priority": "P0",
+      "category": "critical",
+      "area": "Функциональность",
+      "stage": "Stage 2",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [
+        {
+          "timestamp": "2025-11-30T14:37:56.231445",
+          "agent": "agent_1",
+          "block_number": 1,
+          "status": "completed",
+          "completed": [
+            "Проверена интеграция расчётов балансов в fill_energy_passport.py",
+            "Добавлена валидация через calculate_balance_total() перед созданием формул",
+            "Улучшено использование централизованных формул из energy_passport_calculations",
+            "Добавлено логирование для отладки расчётов"
+          ],
+          "next_step": "Протестировать расчёты балансов на эталонных данных",
+          "files_changed": [
+            "tools/fill_energy_passport.py"
+          ],
+          "time_spent_minutes": 10
+        },
+        {
+          "timestamp": "2025-11-30T14:44:54.063711",
+          "agent": "agent_1",
+          "block_number": 2,
+          "status": "completed",
+          "completed": [
+            "Создан тестовый скрипт для проверки расчётов балансов",
+            "Все тесты calculate_balance_total() пройдены успешно",
+            "Все тесты distribute_quarter_by_usage_categories() пройдены успешно",
+            "Проверена корректность обработки edge-кейсов (нули, отрицательные значения)",
+            "Подтверждена работоспособность централизованных формул"
+          ],
+          "next_step": "Проверить интеграцию fill_balance_sheet в основной код генерации паспорта",
+          "files_changed": [
+            "tools/test_balance_calculations.py"
+          ],
+          "time_spent_minutes": 10
+        }
+      ],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-11-30T14:37:56.231445",
+          "agent": "agent_1",
+          "action": "execution_added",
+          "block_number": 1,
+          "status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T14:37:56.250997",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "in_progress"
+          },
+          "previous_status": "in_progress",
+          "new_status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T14:41:17.959971",
+          "agent": "agent_1",
+          "action": "locked",
+          "duration_minutes": 15
+        },
+        {
+          "timestamp": "2025-11-30T14:44:54.064677",
+          "agent": "agent_1",
+          "action": "execution_added",
+          "block_number": 2,
+          "status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T14:45:18.601736",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T14:45:18.623734",
+          "agent": "agent_1",
+          "action": "unlocked"
+        }
+      ],
+      "expert_recommendations": {
+        "data_scientist": "Использовать централизованные формулы",
+        "software_engineer": "Интегрировать в fill_energy_passport.py",
+        "qa_engineer": "Проверить корректность расчётов на эталонных данных"
+      }
+    },
+    "B4": {
+      "id": "B4",
+      "name": "Импорт электроэнергии",
+      "status": "completed",
+      "priority": "P0",
+      "category": "import_block",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [
+        {
+          "timestamp": "2025-11-30T13:44:54.648023",
+          "agent": "agent_1",
+          "block_number": 1,
+          "status": "in_progress",
+          "completed": [
+            "Создана таблица aggregated_data в БД",
+            "Добавлена структура для хранения агрегированных данных электроэнергии",
+            "Таблица включает: enterprise_id, batch_id, resource_type, period, data_json"
+          ],
+          "next_step": "Создать функцию import_electricity_to_db() для импорта данных",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/database.py"
+          ],
+          "time_spent_minutes": 10
+        },
+        {
+          "timestamp": "2025-11-30T13:59:01.185635",
+          "agent": "agent_1",
+          "block_number": 2,
+          "status": "in_progress",
+          "completed": [
+            "Создана функция import_electricity_to_db() для импорта данных электроэнергии",
+            "Создана функция get_aggregated_electricity() для получения данных из БД",
+            "Функции поддерживают оба формата данных (прямой и из aggregated JSON)",
+            "Реализована логика создания/обновления записей в aggregated_data"
+          ],
+          "next_step": "Интегрировать импорт в процесс обработки файлов в main.py",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/database.py"
+          ],
+          "time_spent_minutes": 10
+        },
+        {
+          "timestamp": "2025-11-30T14:17:14.180749",
+          "agent": "agent_1",
+          "block_number": 3,
+          "status": "completed",
+          "completed": [
+            "Интегрирован импорт электроэнергии в процесс обработки файлов",
+            "Добавлен вызов import_electricity_to_db() после сохранения aggregated JSON",
+            "Добавлена обработка ошибок при импорте",
+            "Добавлено логирование успешного импорта"
+          ],
+          "next_step": "Протестировать импорт на реальных данных",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/main.py"
+          ],
+          "time_spent_minutes": 10
+        }
+      ],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-11-30T13:39:38.397986",
+          "agent": "agent_1",
+          "action": "locked",
+          "duration_minutes": 15
+        },
+        {
+          "timestamp": "2025-11-30T13:39:38.408658",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "in_progress"
+          },
+          "previous_status": "in_progress",
+          "new_status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T13:44:54.653305",
+          "agent": "agent_1",
+          "action": "execution_added",
+          "block_number": 1,
+          "status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T13:59:01.185635",
+          "agent": "agent_1",
+          "action": "execution_added",
+          "block_number": 2,
+          "status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T14:03:24.803527",
+          "agent": "agent_1",
+          "action": "locked",
+          "duration_minutes": 15
+        },
+        {
+          "timestamp": "2025-11-30T14:17:14.180749",
+          "agent": "agent_1",
+          "action": "execution_added",
+          "block_number": 3,
+          "status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T14:17:17.132783",
+          "agent": "agent_1",
+          "action": "unlocked"
+        },
+        {
+          "timestamp": "2025-11-30T14:19:07.692980",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Критично, использовать OCR для PDF",
+        "data_scientist": "Валидировать данные",
+        "ml_engineer": "Специализированные промпты"
+      }
+    },
+    "B5": {
+      "id": "B5",
+      "name": "Импорт газа",
+      "status": "completed",
+      "priority": "P0",
+      "category": "import_block",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [
+        {
+          "timestamp": "2025-11-30T14:22:03.181078",
+          "agent": "agent_1",
+          "block_number": 1,
+          "status": "completed",
+          "completed": [
+            "Создана универсальная функция import_resource_to_db() для всех ресурсов",
+            "Обновлена функция import_electricity_to_db() для использования универсальной",
+            "Обновлен импорт в main.py для импорта всех ресурсов (electricity, gas, water, heat, fuel)",
+            "Импорт газа теперь работает автоматически вместе с другими ресурсами"
+          ],
+          "next_step": "Протестировать импорт всех ресурсов",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/database.py",
+            "eaip_full_skeleton/services/ingest/main.py"
+          ],
+          "time_spent_minutes": 10
+        }
+      ],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-11-30T14:22:03.181078",
+          "agent": "agent_1",
+          "action": "execution_added",
+          "block_number": 1,
+          "status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T14:22:03.196183",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Использовать агрегатор gaz.xlsx",
+        "data_scientist": "Проверить единицы измерения",
+        "qa_engineer": "Тестировать на реальных данных"
+      }
+    },
+    "B6": {
+      "id": "B6",
+      "name": "Импорт воды",
+      "status": "pending",
+      "priority": "P1",
+      "category": "import_block",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Использовать агрегатор voda.xlsx",
+        "data_scientist": "Группировать по кварталам",
+        "qa_engineer": "Валидировать объёмы"
+      }
+    },
+    "B7": {
+      "id": "B7",
+      "name": "Импорт тепла",
+      "status": "pending",
+      "priority": "P0",
+      "category": "import_block",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Использовать агрегатор otoplenie.xlsx",
+        "data_scientist": "Проверить данные по зданиям",
+        "qa_engineer": "Валидировать площади"
+      }
+    },
+    "B8": {
+      "id": "B8",
+      "name": "Импорт оборудования",
+      "status": "pending",
+      "priority": "P0",
+      "category": "import_block",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Использовать equipment_parser.py",
+        "data_scientist": "Проверить полноту данных",
+        "qa_engineer": "Валидировать структуру"
+      }
+    },
+    "B9": {
+      "id": "B9",
+      "name": "Импорт узлов учёта",
+      "status": "pending",
+      "priority": "P0",
+      "category": "import_block",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Использовать парсер schetchiki.xlsx",
+        "data_scientist": "Связать с данными потребления",
+        "qa_engineer": "Проверить соответствие"
+      }
+    },
+    "B10": {
+      "id": "B10",
+      "name": "Импорт ограждающих конструкций",
+      "status": "pending",
+      "priority": "P1",
+      "category": "import_block",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-01-15T12:00:00",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {
+        "software_engineer": "Использовать building_envelope_parser.py",
+        "data_scientist": "Проверить нормализацию",
+        "qa_engineer": "Валидировать теплопотери"
+      }
+    },
+    "IMPORTANT_1": {
+      "id": "IMPORTANT_1",
+      "name": "Данные предприятия - полнота",
+      "status": "partial",
+      "priority": "P1",
+      "category": "important",
+      "area": "Данные",
+      "stage": "Stage 1",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_2": {
+      "id": "IMPORTANT_2",
+      "name": "Газ - по месяцам",
+      "status": "not_started",
+      "priority": "P1",
+      "category": "important",
+      "area": "Данные",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_3": {
+      "id": "IMPORTANT_3",
+      "name": "Вода - импорт в БД",
+      "status": "partial",
+      "priority": "P1",
+      "category": "important",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_4": {
+      "id": "IMPORTANT_4",
+      "name": "Топливо/ГСМ - обработка",
+      "status": "partial",
+      "priority": "P1",
+      "category": "important",
+      "area": "Данные",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_5": {
+      "id": "IMPORTANT_5",
+      "name": "Оборудование - стоимость",
+      "status": "not_started",
+      "priority": "P1",
+      "category": "important",
+      "area": "Данные",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_6": {
+      "id": "IMPORTANT_6",
+      "name": "Оболочка зданий - импорт в БД",
+      "status": "partial",
+      "priority": "P1",
+      "category": "important",
+      "area": "Инфраструктура",
+      "stage": "Блоки импорта",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_7": {
+      "id": "IMPORTANT_7",
+      "name": "Потери электроэнергии",
+      "status": "not_started",
+      "priority": "P1",
+      "category": "important",
+      "area": "Данные",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_8": {
+      "id": "IMPORTANT_8",
+      "name": "Экологические данные - обработка",
+      "status": "partial",
+      "priority": "P1",
+      "category": "important",
+      "area": "Данные",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_9": {
+      "id": "IMPORTANT_9",
+      "name": "OCR модуль - интеграция",
+      "status": "partial",
+      "priority": "P1",
+      "category": "important",
+      "area": "Функциональность",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "IMPORTANT_10": {
+      "id": "IMPORTANT_10",
+      "name": "Система ручной идентификации",
+      "status": "not_started",
+      "priority": "P1",
+      "category": "important",
+      "area": "Функциональность",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "RECOMMENDED_1": {
+      "id": "RECOMMENDED_1",
+      "name": "Категория энергоэффективности",
+      "status": "completed",
+      "priority": "P2",
+      "category": "recommended",
+      "area": "Структура данных",
+      "stage": "Stage 2",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "RECOMMENDED_2": {
+      "id": "RECOMMENDED_2",
+      "name": "Экологические нормативы",
+      "status": "completed",
+      "priority": "P2",
+      "category": "recommended",
+      "area": "Структура данных",
+      "stage": "Stage 2",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "RECOMMENDED_3": {
+      "id": "RECOMMENDED_3",
+      "name": "План экологических мероприятий",
+      "status": "completed",
+      "priority": "P2",
+      "category": "recommended",
+      "area": "Парсер",
+      "stage": "Stage 2",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "RECOMMENDED_4": {
+      "id": "RECOMMENDED_4",
+      "name": "Централизованные формулы",
+      "status": "completed",
+      "priority": "P2",
+      "category": "recommended",
+      "area": "Функциональность",
+      "stage": "Stage 2",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "RECOMMENDED_5": {
+      "id": "RECOMMENDED_5",
+      "name": "Readiness-проверка",
+      "status": "completed",
+      "priority": "P2",
+      "category": "recommended",
+      "area": "QA",
+      "stage": "Stage 2",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE1_1": {
+      "id": "STAGE1_1",
+      "name": "Веб-интерфейс загрузки файлов",
+      "status": "completed",
+      "priority": "P0",
+      "category": "stage1",
+      "area": "UI",
+      "stage": "Stage 1",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE1_2": {
+      "id": "STAGE1_2",
+      "name": "Парсинг Excel/PDF/Word",
+      "status": "completed",
+      "priority": "P0",
+      "category": "stage1",
+      "area": "Функциональность",
+      "stage": "Stage 1",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE1_3": {
+      "id": "STAGE1_3",
+      "name": "Редактирование данных",
+      "status": "completed",
+      "priority": "P0",
+      "category": "stage1",
+      "area": "UI",
+      "stage": "Stage 1",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE1_4": {
+      "id": "STAGE1_4",
+      "name": "Сохранение в SQLite БД",
+      "status": "completed",
+      "priority": "P0",
+      "category": "stage1",
+      "area": "Инфраструктура",
+      "stage": "Stage 1",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE1_5": {
+      "id": "STAGE1_5",
+      "name": "Привязка к предприятиям",
+      "status": "completed",
+      "priority": "P0",
+      "category": "stage1",
+      "area": "Инфраструктура",
+      "stage": "Stage 1",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE1_6": {
+      "id": "STAGE1_6",
+      "name": "Дедупликация загрузок",
+      "status": "completed",
+      "priority": "P0",
+      "category": "stage1",
+      "area": "Функциональность",
+      "stage": "Stage 1",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE2_7_1": {
+      "id": "STAGE2_7_1",
+      "name": "Обновить DEVELOPMENT_PLAN_2025.md",
+      "status": "completed",
+      "priority": "P1",
+      "category": "stage2",
+      "area": "Документация",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-12-01T02:21:51.136757",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE2_7_2": {
+      "id": "STAGE2_7_2",
+      "name": "Создать тестовый чеклист",
+      "status": "completed",
+      "priority": "P1",
+      "category": "stage2",
+      "area": "QA",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-12-01T02:00:36.951501",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "STAGE2_7_3": {
+      "id": "STAGE2_7_3",
+      "name": "Финальное тестирование",
+      "status": "completed",
+      "priority": "P1",
+      "category": "stage2",
+      "area": "QA",
+      "stage": "Stage 2",
+      "assigned_to": "agent_1",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [
+        {
+          "timestamp": "2025-12-01T03:00:00.000000",
+          "agent": "agent_1",
+          "block_number": 1,
+          "status": "completed",
+          "completed": [
+            "Создан комплексный тестовый скрипт comprehensive_passport_test.py",
+            "Протестирован файл 'Метин Ирода': 1527 формул без ошибок",
+            "Проверены все блоки тестирования (1-4)",
+            "Создан отчет о тестировании TESTING_REPORT_METIN_IRODA_2025_12_01.md"
+          ],
+          "next_step": "Задача завершена",
+          "files_changed": [
+            "eaip_full_skeleton/services/ingest/tools/comprehensive_passport_test.py",
+            "docs/TESTING_REPORT_METIN_IRODA_2025_12_01.md"
+          ],
+          "time_spent_minutes": 30
+        }
+      ],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:18:19.586118",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена в единый файл"
+        },
+        {
+          "timestamp": "2025-12-01T03:00:00.000000",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "in_progress",
+          "new_status": "completed"
+        }
+      ],
+      "expert_recommendations": {}
+    },
+    "CONTEXT_1": {
+      "id": "CONTEXT_1",
+      "name": "Поддержание файлов контекста в оптимальном размере",
+      "status": "completed",
+      "priority": "P1",
+      "category": "context_management",
+      "area": "Инфраструктура",
+      "stage": "Stage 2",
+      "assigned_to": null,
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [],
+      "history": [
+        {
+          "timestamp": "2025-11-30T13:59:30.708473",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача добавлена для поддержания оптимального размера файлов контекста"
+        },
+        {
+          "timestamp": "2025-11-30T14:36:52.197949",
+          "agent": "agent-1",
+          "action": "update",
+          "changes": {
+            "status": "in_progress"
+          },
+          "previous_status": "in_progress",
+          "new_status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T14:44:17.287535",
+          "agent": "agent-1",
+          "action": "update",
+          "changes": {
+            "status": "in_progress"
+          },
+          "previous_status": "in_progress",
+          "new_status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T14:45:03.131382",
+          "agent": "agent-1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T14:45:10.376095",
+          "agent": "agent-1",
+          "action": "update",
+          "changes": {
+            "status": "in_progress"
+          },
+          "previous_status": "in_progress",
+          "new_status": "in_progress"
+        },
+        {
+          "timestamp": "2025-11-30T14:46:03.979167",
+          "agent": "agent-1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T15:27:33.145993",
+          "agent": "agent-1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        }
+      ],
+      "expert_recommendations": {
+        "ai_specialist": "Создать утилиту для проверки и оптимизации размера файлов",
+        "software_engineer": "Реализовать автоматическую архивацию старых данных",
+        "data_scientist": "Определить оптимальные размеры файлов на основе анализа использования",
+        "qa_engineer": "Протестировать работу с файлами разных размеров"
+      }
+    },
+    "CONTEXT_2": {
+      "id": "CONTEXT_2",
+      "name": "Оптимизация списка файлов для чтения при старте работы агентов",
+      "status": "completed",
+      "priority": "P1",
+      "category": "context_optimization",
+      "area": "Инфраструктура",
+      "stage": "Stage 2",
+      "assigned_to": "ai_specialist",
+      "locked_by": null,
+      "locked_until": null,
+      "solutions": [],
+      "execution": [
+        {
+          "timestamp": "2025-11-30T14:16:28.123684",
+          "agent": "agent_1",
+          "block_number": 1,
+          "status": "completed",
+          "completed": [
+            "Обновлены правила в PROJECT_WORK_RULES.md",
+            "Создана утилита context_loader.py",
+            "Обновлена документация AGENT_CONTEXT.json и AGENT_KNOWLEDGE_BASE.md"
+          ],
+          "next_step": "Тестирование работы агентов с оптимизированным списком файлов",
+          "files_changed": [
+            "docs/PROJECT_WORK_RULES.md",
+            "tools/context_loader.py",
+            "docs/AGENT_CONTEXT.json",
+            "docs/AGENT_KNOWLEDGE_BASE.md"
+          ],
+          "time_spent_minutes": 15
+        }
+      ],
+      "history": [
+        {
+          "timestamp": "2025-11-30T14:01:31.276827",
+          "agent": "system",
+          "action": "created",
+          "details": "Задача создана для оптимизации списка файлов для чтения при старте"
+        },
+        {
+          "timestamp": "2025-11-30T14:16:28.123684",
+          "agent": "agent_1",
+          "action": "update",
+          "changes": {
+            "status": "completed"
+          },
+          "previous_status": "completed",
+          "new_status": "completed"
+        },
+        {
+          "timestamp": "2025-11-30T14:16:28.123684",
+          "agent": "agent_1",
+          "action": "execution_added",
+          "block_number": 1,
+          "status": "completed"
+        }
+      ],
+      "expert_recommendations": {
+        "ai_specialist": "Проанализировать необходимость каждого файла, создать минимальный обязательный список и опциональный список",
+        "data_scientist": "Определить приоритеты файлов на основе частоты использования",
+        "software_engineer": "Создать единый файл-индекс для быстрой загрузки",
+        "ml_engineer": "Оптимизировать порядок чтения файлов для минимизации времени загрузки",
+        "qa_engineer": "Протестировать работу с минимальным набором файлов"
+      },
+      "requirements": {
+        "must_agree_with": [
+          "data_scientist",
+          "software_engineer",
+          "ml_engineer",
+          "qa_engineer"
+        ],
+        "must_confirm_with": "user",
+        "output": "Оптимизированный список файлов с обоснованием"
+      }
+    }
+  }
+}

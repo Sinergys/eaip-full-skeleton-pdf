@@ -1,0 +1,103 @@
+[
+  {
+    "filename": "795ABA faktura.pdf",
+    "ocr_file": "C:\\eaip\\reports\\ocr\\import_plan\\debug_files\\ocr_results\\8d591c4f-f504-4f99-b827-a2817805d7df_ocr_result.json",
+    "tables_processed": 1,
+    "table_results": [
+      {
+        "table_index": 0,
+        "resource_type": "electricity",
+        "period_type": "month",
+        "aggregator_format": {
+          "electricity": {
+            "2025-Q1": {
+              "year": 2025,
+              "quarter": 1,
+              "months": [
+                {
+                  "month": "январь",
+                  "values": {
+                    "cost_sum": 6760320.0
+                  }
+                },
+                {
+                  "month": "февраль",
+                  "values": {
+                    "cost_sum": 6760320.0
+                  }
+                },
+                {
+                  "month": "март",
+                  "values": {
+                    "cost_sum": 6760320.0
+                  }
+                }
+              ]
+            },
+            "2025-Q2": {
+              "year": 2025,
+              "quarter": 2,
+              "months": [
+                {
+                  "month": "апрель",
+                  "values": {
+                    "cost_sum": 6760320.0
+                  }
+                },
+                {
+                  "month": "май",
+                  "values": {
+                    "cost_sum": 6760320.0
+                  }
+                },
+                {
+                  "month": "июнь",
+                  "values": {
+                    "cost_sum": 6760320.0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "validation": {
+          "is_valid": true,
+          "errors": [],
+          "warnings": [],
+          "statistics": {
+            "resources": 1,
+            "quarters": 2,
+            "months": 6,
+            "total_values": 6
+          }
+        }
+      }
+    ]
+  },
+  {
+    "filename": "BYD 087 KBA.PDF",
+    "ocr_file": "C:\\eaip\\reports\\ocr\\import_plan\\debug_files\\ocr_results\\ea46967b-22d2-4944-8206-d278539b6c75_ocr_result.json",
+    "tables_processed": 1,
+    "table_results": [
+      {
+        "table_index": 0,
+        "resource_type": "electricity",
+        "period_type": null,
+        "aggregator_format": {
+          "electricity": {}
+        },
+        "validation": {
+          "is_valid": true,
+          "errors": [],
+          "warnings": [],
+          "statistics": {
+            "resources": 1,
+            "quarters": 0,
+            "months": 0,
+            "total_values": 0
+          }
+        }
+      }
+    ]
+  }
+]

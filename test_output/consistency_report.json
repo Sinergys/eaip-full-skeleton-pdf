@@ -1,0 +1,70 @@
+{
+  "total_tests": 4,
+  "successful": 4,
+  "results": [
+    {
+      "success": true,
+      "enterprise": "reference_enterprise_1",
+      "report_data_kpis": {
+        "electricity_total": 630000.0,
+        "gas_total": 43000.0,
+        "water_total": 21500.0,
+        "total_energy_cost": 34725000.0,
+        "equipment_power": 660.0
+      },
+      "excel_kpis": {},
+      "differences": [
+        "Excel-паспорт не найден для сравнения"
+      ],
+      "error": null
+    },
+    {
+      "success": true,
+      "enterprise": "reference_enterprise_2_heat_intensive",
+      "report_data_kpis": {
+        "electricity_total": 198000.0,
+        "gas_total": 165000.0,
+        "water_total": 28500.0,
+        "total_energy_cost": 19575000.0,
+        "equipment_power": 20370.0
+      },
+      "excel_kpis": {},
+      "differences": [
+        "Excel-паспорт не найден для сравнения"
+      ],
+      "error": null
+    },
+    {
+      "success": true,
+      "enterprise": "reference_enterprise_3_electric_intensive",
+      "report_data_kpis": {
+        "electricity_total": 2060000.0,
+        "gas_total": 19500.0,
+        "water_total": 11800.0,
+        "total_energy_cost": 104565000.0,
+        "equipment_power": 6500.0
+      },
+      "excel_kpis": {},
+      "differences": [
+        "Excel-паспорт не найден для сравнения"
+      ],
+      "error": null
+    },
+    {
+      "success": true,
+      "enterprise": "reference_enterprise_4_services",
+      "report_data_kpis": {
+        "electricity_total": 330000.0,
+        "gas_total": 46000.0,
+        "water_total": 46000.0,
+        "total_energy_cost": 21100000.0,
+        "equipment_power": 380.0
+      },
+      "excel_kpis": {},
+      "differences": [
+        "Excel-паспорт не найден для сравнения"
+      ],
+      "error": null
+    }
+  ]
+}

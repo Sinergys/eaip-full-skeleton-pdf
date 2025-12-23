@@ -1,0 +1,51 @@
+{
+  "pipeline_start": "2025-11-15T00:53:13.453161",
+  "template_path": "templates\\pcm690\\template_metin.xlsx",
+  "data_path": "data\\aggregated\\aggregated_full_resources_2022_2024.json",
+  "stages": {
+    "filling": {
+      "status": "completed",
+      "output_file": "test_output_metin\\filled_template.xlsx",
+      "summary": {
+        "filled_cells": 0,
+        "skipped_cells": 0,
+        "total_attempted": 0,
+        "success_rate": 0,
+        "errors_count": 0,
+        "warnings_count": 0
+      }
+    },
+    "validation": {
+      "status": "completed",
+      "output_file": "test_output_metin\\validation_report.json",
+      "summary": {
+        "status": "excellent",
+        "score": 0.975517890772128,
+        "issues_count": 0,
+        "warnings_count": 0,
+        "validations": {
+          "structural": {
+            "status": "passed"
+          },
+          "filling": {
+            "status": "good"
+          },
+          "formats": {
+            "status": "passed"
+          },
+          "units": {
+            "status": "passed"
+          }
+        }
+      }
+    }
+  },
+  "pipeline_end": "2025-11-15T00:53:13.534229",
+  "overall_summary": {
+    "filling_success_rate": 0,
+    "validation_status": "excellent",
+    "validation_score": 0.975517890772128,
+    "overall_status": "acceptable",
+    "ready_for_use": false
+  }
+}

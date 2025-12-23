@@ -1,0 +1,100 @@
+{
+  "validation_date": "2025-11-15T01:13:34.463250",
+  "filled_template": "test_output_extended\\filled_template.xlsx",
+  "status": "good",
+  "score": 0.7768087099040037,
+  "validations": {
+    "structural": {
+      "status": "passed",
+      "issues": [],
+      "warnings": [],
+      "details": {
+        "sheet_comparison": {
+          "original_sheets_count": 8,
+          "filled_sheets_count": 8,
+          "missing_sheets": [],
+          "extra_sheets": []
+        }
+      }
+    },
+    "filling": {
+      "status": "poor",
+      "filled_cells": 458,
+      "empty_cells": 3813,
+      "issues": [],
+      "warnings": [
+        "Низкий процент заполнения: 10.7%"
+      ],
+      "details": {
+        "Sheet1": {
+          "filled_cells": 237,
+          "empty_cells": 852
+        },
+        "Узел учета ": {
+          "filled_cells": 14,
+          "empty_cells": 92
+        },
+        "Структура пр 2 ": {
+          "filled_cells": 50,
+          "empty_cells": 1823
+        },
+        "Баланс": {
+          "filled_cells": 34,
+          "empty_cells": 404
+        },
+        "Динамика ср": {
+          "filled_cells": 43,
+          "empty_cells": 172
+        },
+        "мазут,уголь 5 ": {
+          "filled_cells": 29,
+          "empty_cells": 203
+        },
+        "Расход  на ед.п": {
+          "filled_cells": 40,
+          "empty_cells": 226
+        },
+        "Мериаприятия 1 ": {
+          "filled_cells": 11,
+          "empty_cells": 41
+        },
+        "fill_rate": 10.723483961601499,
+        "total_cells": 4271
+      }
+    },
+    "formats": {
+      "status": "passed",
+      "issues": [],
+      "warnings": [],
+      "details": {
+        "format_errors": 0,
+        "format_warnings": 0
+      }
+    },
+    "units": {
+      "status": "passed",
+      "issues": [],
+      "warnings": [],
+      "details": {}
+    },
+    "semantic": {
+      "status": "good",
+      "mapped_cells": 40,
+      "unmapped_cells": 0,
+      "issues": [],
+      "warnings": [],
+      "details": {
+        "mapping_rate": 100.0
+      }
+    }
+  },
+  "issues": [],
+  "warnings": [
+    "Низкий процент заполнения: 10.7%"
+  ],
+  "statistics": {
+    "total_issues": 0,
+    "total_warnings": 1,
+    "validations_count": 5
+  }
+}

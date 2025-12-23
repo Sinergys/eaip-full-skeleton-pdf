@@ -1,0 +1,163 @@
+{
+  "source_template": "new_energy_passport",
+  "target_template": "template_metin",
+  "adapters": {
+    "Узел учета ": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "Мериаприятия 1 ": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "Баланс": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "Структура пр 2 ": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "Расход  на ед.п": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "мазут,уголь 5 ": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "Sheet1": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "Динамика ср": {
+      "type": "skip",
+      "reason": "Лист существует только в source template",
+      "target_sheet": null
+    },
+    "Gas": {
+      "type": "create",
+      "reason": "Лист существует только в target template",
+      "source_sheet": null,
+      "target_sheet": "Gas"
+    },
+    "Electricity": {
+      "type": "create",
+      "reason": "Лист существует только в target template",
+      "source_sheet": null,
+      "target_sheet": "Electricity"
+    },
+    "Analytics": {
+      "type": "create",
+      "reason": "Лист существует только в target template",
+      "source_sheet": null,
+      "target_sheet": "Analytics"
+    },
+    "Summary": {
+      "type": "create",
+      "reason": "Лист существует только в target template",
+      "source_sheet": null,
+      "target_sheet": "Summary"
+    }
+  },
+  "conversion_rules": {
+    "common_sheets": [],
+    "unique_sheets": [
+      {
+        "sheet_name": "Узел учета ",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "Мериаприятия 1 ",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "Баланс",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "Структура пр 2 ",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "Расход  на ед.п",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "мазут,уголь 5 ",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "Sheet1",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "Динамика ср",
+        "rule": "skip",
+        "reason": "Лист отсутствует в target template"
+      },
+      {
+        "sheet_name": "Gas",
+        "rule": "create_empty",
+        "reason": "Новый лист в target template"
+      },
+      {
+        "sheet_name": "Electricity",
+        "rule": "create_empty",
+        "reason": "Новый лист в target template"
+      },
+      {
+        "sheet_name": "Analytics",
+        "rule": "create_empty",
+        "reason": "Новый лист в target template"
+      },
+      {
+        "sheet_name": "Summary",
+        "rule": "create_empty",
+        "reason": "Новый лист в target template"
+      }
+    ],
+    "cell_rules": [],
+    "semantic_rules": [
+      {
+        "source_concept": "gas_volume",
+        "target_concept": null,
+        "rule_type": "skip",
+        "confidence": 0.0,
+        "description": "Концепт 'gas_volume' не имеет эквивалента в Template 2"
+      },
+      {
+        "source_concept": "electricity_active",
+        "target_concept": null,
+        "rule_type": "skip",
+        "confidence": 0.0,
+        "description": "Концепт 'electricity_active' не имеет эквивалента в Template 2"
+      },
+      {
+        "source_concept": "electricity_reactive",
+        "target_concept": null,
+        "rule_type": "skip",
+        "confidence": 0.0,
+        "description": "Концепт 'electricity_reactive' не имеет эквивалента в Template 2"
+      }
+    ]
+  },
+  "metadata": {
+    "generation_date": null,
+    "confidence": 0.0
+  }
+}

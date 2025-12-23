@@ -1,0 +1,55 @@
+{
+  "template_path": "C:\\eaip\\templates\\pcm690\\new_energy_passport.xlsx",
+  "template_name": "new_energy_passport",
+  "sheets": {
+    "Sheet1": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    },
+    "Узел учета ": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    },
+    "Структура пр 2 ": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    },
+    "Баланс": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    },
+    "Динамика ср": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    },
+    "мазут,уголь 5 ": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    },
+    "Расход  на ед.п": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    },
+    "Мериаприятия 1 ": {
+      "formulas": [],
+      "dependencies": [],
+      "named_ranges": [],
+      "formulas_count": 0
+    }
+  },
+  "total_formulas": 0
+}

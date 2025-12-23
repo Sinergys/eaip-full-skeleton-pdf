@@ -1,0 +1,91 @@
+{
+  "check_date": "2025-11-30T14:33:02.464113",
+  "files": [
+    {
+      "path": "C:\\eaip\\docs\\AGENT_CONTEXT.json",
+      "exists": true,
+      "size_bytes": 7231,
+      "size_kb": 7.06,
+      "limit_bytes": 1048576,
+      "limit_kb": 1024.0,
+      "exceeds_limit": false,
+      "percentage_used": 0.69
+    },
+    {
+      "path": "C:\\eaip\\docs\\AGENT_TASKS_UNIFIED.json",
+      "exists": true,
+      "size_bytes": 43057,
+      "size_kb": 42.05,
+      "limit_bytes": 1048576,
+      "limit_kb": 1024.0,
+      "exceeds_limit": false,
+      "percentage_used": 4.11
+    },
+    {
+      "path": "C:\\eaip\\docs\\AGENT_SESSION_STATE.json",
+      "exists": true,
+      "size_bytes": 2673,
+      "size_kb": 2.61,
+      "limit_bytes": 1048576,
+      "limit_kb": 1024.0,
+      "exceeds_limit": false,
+      "percentage_used": 0.25
+    },
+    {
+      "path": "C:\\eaip\\docs\\AGENT_TASK_STATUS.json",
+      "exists": true,
+      "size_bytes": 406,
+      "size_kb": 0.4,
+      "limit_bytes": 1048576,
+      "limit_kb": 1024.0,
+      "exceeds_limit": false,
+      "percentage_used": 0.04
+    },
+    {
+      "path": "C:\\eaip\\docs\\AGENT_LOCKS.json",
+      "exists": true,
+      "size_bytes": 19,
+      "size_kb": 0.02,
+      "limit_bytes": 1048576,
+      "limit_kb": 1024.0,
+      "exceeds_limit": false,
+      "percentage_used": 0.0
+    },
+    {
+      "path": "C:\\eaip\\docs\\AGENT_WORK_LOG.jsonl",
+      "exists": true,
+      "size_bytes": 941,
+      "size_kb": 0.92,
+      "limit_bytes": 10485760,
+      "limit_kb": 10240.0,
+      "exceeds_limit": false,
+      "percentage_used": 0.01
+    },
+    {
+      "path": "C:\\eaip\\docs\\AGENT_KNOWLEDGE_BASE.md",
+      "exists": true,
+      "size_bytes": 10116,
+      "size_kb": 9.88,
+      "limit_bytes": 512000,
+      "limit_kb": 500.0,
+      "exceeds_limit": false,
+      "percentage_used": 1.98
+    },
+    {
+      "path": "C:\\eaip\\docs\\PROJECT_CRITICAL_SETTINGS.md",
+      "exists": true,
+      "size_bytes": 6765,
+      "size_kb": 6.61,
+      "limit_bytes": 512000,
+      "limit_kb": 500.0,
+      "exceeds_limit": false,
+      "percentage_used": 1.32
+    }
+  ],
+  "summary": {
+    "total_files": 8,
+    "files_exceeding_limit": 0,
+    "total_size_bytes": 71208,
+    "total_size_kb": 69.54
+  }
+}

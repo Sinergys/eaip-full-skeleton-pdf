@@ -1,0 +1,153 @@
+{
+  "name": "Energy Passport Ontology",
+  "version": "1.0",
+  "concepts": {
+    "resource_heat": {
+      "name": "heat",
+      "type": "resource",
+      "description": "Энергетический ресурс: heat",
+      "properties": [
+        "volume",
+        "consumption",
+        "cost"
+      ]
+    },
+    "resource_gas": {
+      "name": "gas",
+      "type": "resource",
+      "description": "Энергетический ресурс: gas",
+      "properties": [
+        "volume",
+        "consumption",
+        "cost"
+      ]
+    },
+    "resource_electricity": {
+      "name": "electricity",
+      "type": "resource",
+      "description": "Энергетический ресурс: electricity",
+      "properties": [
+        "volume",
+        "consumption",
+        "cost"
+      ]
+    },
+    "category_energy_consumption": {
+      "name": "energy_consumption",
+      "type": "category",
+      "description": "Категория: energy_consumption"
+    },
+    "category_aggregate": {
+      "name": "aggregate",
+      "type": "category",
+      "description": "Категория: aggregate"
+    },
+    "category_temporal": {
+      "name": "temporal",
+      "type": "category",
+      "description": "Категория: temporal"
+    },
+    "category_consumption_category": {
+      "name": "consumption_category",
+      "type": "category",
+      "description": "Категория: consumption_category"
+    },
+    "temporal_year": {
+      "name": "year",
+      "type": "temporal",
+      "description": "Временной период: year"
+    },
+    "temporal_quarter": {
+      "name": "quarter",
+      "type": "temporal",
+      "description": "Временной период: quarter"
+    },
+    "energy_passport": {
+      "name": "Energy Passport",
+      "type": "document",
+      "description": "Энергетический паспорт предприятия"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "type": "entity",
+      "description": "Предприятие"
+    },
+    "consumption": {
+      "name": "Consumption",
+      "type": "measurement",
+      "description": "Потребление энергоресурсов"
+    }
+  },
+  "relationships": [
+    {
+      "from": "enterprise",
+      "to": "consumption",
+      "type": "has",
+      "description": "Предприятие имеет потребление"
+    },
+    {
+      "from": "consumption",
+      "to": "resource",
+      "type": "includes",
+      "description": "Потребление включает ресурсы"
+    },
+    {
+      "from": "consumption",
+      "to": "category",
+      "type": "categorized_by",
+      "description": "Потребление категоризируется"
+    },
+    {
+      "from": "consumption",
+      "to": "temporal",
+      "type": "measured_in",
+      "description": "Потребление измеряется во времени"
+    }
+  ],
+  "properties": {
+    "resource": [
+      "volume",
+      "consumption",
+      "cost",
+      "unit"
+    ],
+    "category": [
+      "name",
+      "description"
+    ],
+    "temporal": [
+      "year",
+      "quarter",
+      "month",
+      "period"
+    ],
+    "consumption": [
+      "value",
+      "unit",
+      "category",
+      "resource_type",
+      "temporal"
+    ]
+  },
+  "hierarchy": {
+    "root": "energy_passport",
+    "levels": {
+      "level_1": [
+        "enterprise",
+        "consumption",
+        "temporal"
+      ],
+      "level_2": {
+        "consumption": [
+          "resource",
+          "category"
+        ],
+        "temporal": [
+          "year",
+          "quarter",
+          "month"
+        ]
+      }
+    }
+  }
+}

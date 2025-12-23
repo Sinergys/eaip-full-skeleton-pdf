@@ -1,0 +1,3570 @@
+{
+  "sheet_name": "Sheet1",
+  "structural_analysis": {
+    "max_row": 121,
+    "max_column": 9,
+    "merged_ranges": [],
+    "data_region": {
+      "start_row": 1,
+      "end_row": 121,
+      "start_column": 2,
+      "end_column": 2,
+      "start_address": "B1",
+      "end_address": "B121"
+    },
+    "cells_count": 237
+  },
+  "table_structure_analysis": {
+    "sheet_name": "Sheet1",
+    "structure": {
+      "max_row": 121,
+      "max_column": 9,
+      "data_region": {
+        "start_row": 1,
+        "end_row": 121,
+        "start_column": 2,
+        "end_column": 2
+      },
+      "headers": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "D A S T U R I",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "1. Dastur quyidagi hujjatlar asosida ishlab chiqilgan:",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "Vazirlar Mahkamasining 2024 yil 19 oktyabrdagi “Yoqilg‘i-energetika resurslari iste’molchilarini hamda bino va inshootlarni energiya iste’molini energiya auditidan o‘tkazish tartiblarini belgilash to‘g‘risida”gi 690-sonli qarori;",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "O‘zbekiston Respublikasining 2024 yil 7 avgustda qabul qilingan “Energiya tejash, undan oqilona foydalanish va energiya samaradorligini oshirish to‘g‘risida”gi 940-sonli Qonuni;",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "O‘zbekistan Respublikasi Prezidentining 2019 yil 22 avgustdagi \"Iqtisodiyot tarmoqlari va ijtimoiy sohaning energiya samaradorligini oshirish, energiya tejovchi texnologiyalarni joriy etish va qayta tiklanuvchi energiya manbalarini rivojlantirishning tezkor chora-tadbirlari to‘g‘risida\"gi PQ-4422-son qaror;",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "1",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "O‘zbekiston Respublikasi Vazirlar Mahkamasining 2024 yil 31-maydagi “Elektr energiyasi va tabiiy gazdan foydalanish qoidalarini tasdiqlash to‘g‘risida”gi 319-sonli qarori;",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "2",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "(joylashgan manzili, uning identifikatsiya raqami va IFUD kodi)shaklidagi korxonasining energiya xo‘jaligi ob’yektlarida davriy energetika tekshiruvi (energoaudit) o‘tkazish to‘g‘risidagi shartnoma;",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "3",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "1.1. Energiya auditidan o‘tkazish dasturining amal qilish muddati O‘zenergoinspeksiya tomonidan tasdiqlangan kundan boshlab dastlabki va davriy energiya auditidan o‘tkazishda bir yildan ko‘p bo‘lmagan hamda ekspress energiya auditidan ikki oydan ko‘p bo‘lmagan muddatga teng bo‘ladi.",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "4",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "1.2. Yiliga besh yuz va undan ortiq tonna shartli yoqilg‘ini va (yoki) ikki yuz ellik va undan ortiq tonna motor yoqilg‘isini sarflaydigan yoqilg‘i-energetika resurslari iste’molchilari tomonidan belgilangan muddatlarda majburiy energetika tekshiruvlarini o‘tkazmaslik yoki ular tomonidan majburiy energetika tekshiruvlari natijasida belgilangan chora-tadbirlarni bajarmaslik - o‘rtacha oylik energiya iste’moli qiymatining uch foizi miqdorida jarima solishga sabab bo‘ladi",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "5",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "2. Energetika tekshiruvi (energoaudit) o‘tkazishda quyidagilar o‘rganiladi:",
+              "is_merged": false
+            }
+          ]
+        }
+      ],
+      "cells_info": {
+        "B1": {
+          "address": "B1",
+          "row": 1,
+          "column": 2,
+          "value": "D A S T U R I",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B2": {
+          "address": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "1. Dastur quyidagi hujjatlar asosida ishlab chiqilgan:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B3": {
+          "address": "B3",
+          "row": 3,
+          "column": 2,
+          "value": "Vazirlar Mahkamasining 2024 yil 19 oktyabrdagi “Yoqilg‘i-energetika resurslari iste’molchilarini hamda bino va inshootlarni energiya iste’molini energiya auditidan o‘tkazish tartiblarini belgilash to‘g‘risida”gi 690-sonli qarori;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B4": {
+          "address": "B4",
+          "row": 4,
+          "column": 2,
+          "value": "O‘zbekiston Respublikasining 2024 yil 7 avgustda qabul qilingan “Energiya tejash, undan oqilona foydalanish va energiya samaradorligini oshirish to‘g‘risida”gi 940-sonli Qonuni;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B5": {
+          "address": "B5",
+          "row": 5,
+          "column": 2,
+          "value": "O‘zbekistan Respublikasi Prezidentining 2019 yil 22 avgustdagi \"Iqtisodiyot tarmoqlari va ijtimoiy sohaning energiya samaradorligini oshirish, energiya tejovchi texnologiyalarni joriy etish va qayta tiklanuvchi energiya manbalarini rivojlantirishning tezkor chora-tadbirlari to‘g‘risida\"gi PQ-4422-son qaror;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A6": {
+          "address": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "1",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B6": {
+          "address": "B6",
+          "row": 6,
+          "column": 2,
+          "value": "O‘zbekiston Respublikasi Vazirlar Mahkamasining 2024 yil 31-maydagi “Elektr energiyasi va tabiiy gazdan foydalanish qoidalarini tasdiqlash to‘g‘risida”gi 319-sonli qarori;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A7": {
+          "address": "A7",
+          "row": 7,
+          "column": 1,
+          "value": "2",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B7": {
+          "address": "B7",
+          "row": 7,
+          "column": 2,
+          "value": " (joylashgan manzili, uning identifikatsiya raqami va IFUD kodi)shaklidagi korxonasining energiya xo‘jaligi ob’yektlarida davriy energetika tekshiruvi (energoaudit) o‘tkazish to‘g‘risidagi shartnoma;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A8": {
+          "address": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "3",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B8": {
+          "address": "B8",
+          "row": 8,
+          "column": 2,
+          "value": "1.1. Energiya auditidan o‘tkazish dasturining amal qilish muddati O‘zenergoinspeksiya tomonidan tasdiqlangan kundan boshlab dastlabki va davriy energiya auditidan o‘tkazishda bir yildan ko‘p bo‘lmagan hamda ekspress energiya auditidan ikki oydan ko‘p bo‘lmagan muddatga teng bo‘ladi.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A9": {
+          "address": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "4",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B9": {
+          "address": "B9",
+          "row": 9,
+          "column": 2,
+          "value": "1.2. Yiliga besh yuz va undan ortiq tonna shartli yoqilg‘ini va (yoki) ikki yuz ellik va undan ortiq tonna motor yoqilg‘isini sarflaydigan yoqilg‘i-energetika resurslari iste’molchilari tomonidan belgilangan muddatlarda majburiy energetika tekshiruvlarini o‘tkazmaslik yoki ular tomonidan majburiy energetika tekshiruvlari natijasida belgilangan chora-tadbirlarni bajarmaslik - o‘rtacha oylik energiya iste’moli qiymatining uch foizi miqdorida jarima solishga sabab bo‘ladi",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A10": {
+          "address": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "5",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B10": {
+          "address": "B10",
+          "row": 10,
+          "column": 2,
+          "value": "2. Energetika tekshiruvi (energoaudit) o‘tkazishda quyidagilar o‘rganiladi:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A11": {
+          "address": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "6",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B11": {
+          "address": "B11",
+          "row": 11,
+          "column": 2,
+          "value": "Elektr ta’minoti:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A12": {
+          "address": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "7",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B12": {
+          "address": "B12",
+          "row": 12,
+          "column": 2,
+          "value": "elektr iste’moli rejimlari va elektr balansini tuzish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A13": {
+          "address": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "8",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B13": {
+          "address": "B13",
+          "row": 13,
+          "column": 2,
+          "value": "elektr qabul qilgichlarning parametrlarini tekshirish va o‘lchash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A14": {
+          "address": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "9",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B14": {
+          "address": "B14",
+          "row": 14,
+          "column": 2,
+          "value": "sexlarni bug‘ bilan ta’minlash ichki tizimining bug‘-kondensat balansini tuzish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A15": {
+          "address": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "10",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B15": {
+          "address": "B15",
+          "row": 15,
+          "column": 2,
+          "value": "kondensatni manbaga qaytarish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A16": {
+          "address": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "11",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B16": {
+          "address": "B16",
+          "row": 16,
+          "column": 2,
+          "value": "Yoqilg‘i energiya resurslari (keyingi o‘rinda YoER deb yuritiladi) iste’molchisining tuzilmasi va bo‘linmalardagi energiya iste’moli tavsifi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A17": {
+          "address": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "12",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B17": {
+          "address": "B17",
+          "row": 17,
+          "column": 2,
+          "value": "energiya resurslari turlari bo‘yicha xususiy energiya balanslari;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A18": {
+          "address": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "13",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B18": {
+          "address": "B18",
+          "row": 18,
+          "column": 2,
+          "value": "texnologik ishlab chiqarishlarda energiya iste’molining holati (ishlab chiqarish ehtiyojlari uchun amalda iste’mol qilingan YoER, texnologiya ob’yektlari energiya iste’molining normativ tavsiflari);",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A19": {
+          "address": "A19",
+          "row": 19,
+          "column": 1,
+          "value": "14",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B19": {
+          "address": "B19",
+          "row": 19,
+          "column": 2,
+          "value": "energiya resurslari va energiya manbalarining alohida turlari bo‘yicha barcha iste’mol qilinadigan energiyaning taqsimlanish xususiyatlari (buning uchun energiya iste’moli bo‘yicha ma’lumotlar o‘lchovning yagona tizimiga keltiriladi);",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A20": {
+          "address": "A20",
+          "row": 20,
+          "column": 1,
+          "value": "15",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B20": {
+          "address": "B20",
+          "row": 20,
+          "column": 2,
+          "value": "energiya iste’moli rejimi (kunlik, oylik, yillik);",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A21": {
+          "address": "A21",
+          "row": 21,
+          "column": 1,
+          "value": "16",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B21": {
+          "address": "B21",
+          "row": 21,
+          "column": 2,
+          "value": "har bir ob’yekt uchun energiya iste’moliga ta’sir ko‘rsatadigan omillar (masalan, isitish tizimi uchun tashqi harorat, elektr yuritmalar uchun quvvat koeffisiyenti (cosφ) va hokazolar);",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A22": {
+          "address": "A22",
+          "row": 22,
+          "column": 1,
+          "value": "17",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B22": {
+          "address": "B22",
+          "row": 22,
+          "column": 2,
+          "value": "energiya iste’molining ta’sir ko‘rsatuvchi omilga (masalan, unumdorlikka, tashqi havo haroratiga va hokazolarga) bog‘liqligi hisobidan resurslar va ob’yektlarning alohida turlari bo‘yicha solishtirma energiya iste’moli;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A23": {
+          "address": "A23",
+          "row": 23,
+          "column": 1,
+          "value": "18",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B23": {
+          "address": "B23",
+          "row": 23,
+          "column": 2,
+          "value": "energiya tashuvchilardagi yo‘qotishlar, izolyasiyaning buzilishi, nooqilona loyiha yechimlari, noto‘g‘ri foydalanish, qurilish va montaj ishlarining sifatsiz bajarilishi hisobiga to‘g‘ridan-to‘g‘ri energiya isroflari;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A24": {
+          "address": "A24",
+          "row": 24,
+          "column": 1,
+          "value": "19",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B24": {
+          "address": "B24",
+          "row": 24,
+          "column": 2,
+          "value": "texnologik jarayonda (agregat, sex) bevosita foydalaniladigan energiya manbalari (elektr energiyasi, texnik suv, qisilgan havo, bug‘, texnik gazlar) sarfi to‘g‘risidagi ma’lumotlar bazasi va ishlab chiqarilgan mahsulot hajmi, shuningdek, bir birlikda ishlab chiqariladigan mahsulot hajmi uchun sarflanadigan energiya iste’moli tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A25": {
+          "address": "A25",
+          "row": 25,
+          "column": 1,
+          "value": "20",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B25": {
+          "address": "B25",
+          "row": 25,
+          "column": 2,
+          "value": "texnologik parametrlari va mavsumiy tavsiflari bir xil bo‘lgan sharoitda solishtirma ko‘rsatkichlarning o‘zgarish dinamikasini taqqoslash yo‘li bilan energiya resurslarini iste’mol qilish samaradorligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A26": {
+          "address": "A26",
+          "row": 26,
+          "column": 1,
+          "value": "21",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B26": {
+          "address": "B26",
+          "row": 26,
+          "column": 2,
+          "value": "mahsulot ishlab chiqarishning texnologik sxemasi (asosiy va yordamchi ishlab chiqarish, xom ashyo, materiallar, energiya oqimlari);",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A27": {
+          "address": "A27",
+          "row": 27,
+          "column": 1,
+          "value": "22",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B27": {
+          "address": "B27",
+          "row": 27,
+          "column": 2,
+          "value": "energiyani hisobiy va texnik hisobga olish asboblari, shuningdek chetga berish hisobga oladigan hisoblagichlarni jiddiy ravishda joy-joyiga qo‘ygan holda energiya ta’minoti sxemasi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A28": {
+          "address": "A28",
+          "row": 28,
+          "column": 1,
+          "value": "23",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B28": {
+          "address": "B28",
+          "row": 28,
+          "column": 2,
+          "value": "shartnoma hujjatlari;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A29": {
+          "address": "A29",
+          "row": 29,
+          "column": 1,
+          "value": "24",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B29": {
+          "address": "B29",
+          "row": 29,
+          "column": 2,
+          "value": "oxirgi 5 yil va joriy yilning o‘tgan davri uchun amaldagi statistika hisobotlari (choraklik, yillik), shuningdek boshqa zarur hisobotlar;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A30": {
+          "address": "A30",
+          "row": 30,
+          "column": 1,
+          "value": "25",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B30": {
+          "address": "B30",
+          "row": 30,
+          "column": 2,
+          "value": "mahsulot birligi uchun sarflanadigan energiya resurslarini turlari bo‘yicha sarf meʼyorlarini ishlab chiqilganligi hamda korxonaning 5 yillik energosig‘imi dinamikasi o‘zgarish tahlillari;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A31": {
+          "address": "A31",
+          "row": 31,
+          "column": 1,
+          "value": "26",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B31": {
+          "address": "B31",
+          "row": 31,
+          "column": 2,
+          "value": "energiyani tejash bo‘yicha tashkiliy-texnik chora-tadbirlar rejalari va ularning bajarilishi holati, energiya iste’molini kamaytirish yuzasidan topshiriqlarning mavjudligi va uning ijrosi bajarilishi tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A32": {
+          "address": "A32",
+          "row": 32,
+          "column": 1,
+          "value": "27",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B32": {
+          "address": "B32",
+          "row": 32,
+          "column": 2,
+          "value": "qayta tiklanuvchan va muqobil energiya manbalaridan foydalanish holatlari va ularning tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A33": {
+          "address": "A33",
+          "row": 33,
+          "column": 1,
+          "value": "28",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B33": {
+          "address": "B33",
+          "row": 33,
+          "column": 2,
+          "value": "ishlab chiqariladigan mahsulotni hisobga olish usullari hamda ishlab chiqarilgan maxsulot birligiga sarflangan energiya miqdori;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A34": {
+          "address": "A34",
+          "row": 34,
+          "column": 1,
+          "value": "29",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B34": {
+          "address": "B34",
+          "row": 34,
+          "column": 2,
+          "value": "energiyaning amaldagi sarfi ustidan nazorat qilish va uning sarfi normalarining bajarilishi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A35": {
+          "address": "A35",
+          "row": 35,
+          "column": 1,
+          "value": "30",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B35": {
+          "address": "B35",
+          "row": 35,
+          "column": 2,
+          "value": "energetik qurilmalarini ta’mirlash reja-jadvalining bajarilishi to‘g‘risidagi hisobotlar;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A36": {
+          "address": "A36",
+          "row": 36,
+          "column": 1,
+          "value": "31",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B36": {
+          "address": "B36",
+          "row": 36,
+          "column": 2,
+          "value": "Umumiy YoER iste’moli hamda yirik texnologik agregatlari bo‘yicha energiya iste’moli balansini tuzish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A37": {
+          "address": "A37",
+          "row": 37,
+          "column": 1,
+          "value": "32",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B37": {
+          "address": "B37",
+          "row": 37,
+          "column": 2,
+          "value": "joriy va texnik hisobning holati;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A38": {
+          "address": "A38",
+          "row": 38,
+          "column": 1,
+          "value": "33",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B38": {
+          "address": "B38",
+          "row": 38,
+          "column": 2,
+          "value": "eksperimental va statistik olingan ma’lumotlar asosida har bir ob’yekt uchun sarflanadigan elektr energiyasi haqiqiy meьyorini aniqlash, ularni tasdiqlangan va ilg‘or xorijiy mamlakatlarning meьyorlari bilan solishtirish, farqining sabablarini ko‘rsatish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A39": {
+          "address": "A39",
+          "row": 39,
+          "column": 1,
+          "value": "34",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B39": {
+          "address": "B39",
+          "row": 39,
+          "column": 2,
+          "value": "energetik tekshiruv natijalariga ko‘ra har bir ob’yekt uchun haqiqiy solishtirma elektr energiya me’yorini rivojlangan mamlakatlar elektr energiya me’yorlari bilan solishtirib tahlil qilish va ularning o‘zgarish kamchiliklarini aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A40": {
+          "address": "A40",
+          "row": 40,
+          "column": 1,
+          "value": "35",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B40": {
+          "address": "B40",
+          "row": 40,
+          "column": 2,
+          "value": "O‘zbekiston Respublikasining elektr qurilmalarni loyihalashtirish, ekspluatatsiya va montaj qilish bilan shug‘ullanuvchi muhandis-texnik xodimlar uchun mo‘ljallangan elektr uskunalarning tuzilish qoidalari, reaktiv quvvat kompensatsiyasi holati, “O‘zdavenergonazorat” inspeksiyasi boshlig‘ining 2008 yil 10 oktyabrdagi 1864-sonli buyrug‘i bilan tasdiqlangan, Reaktiv quvvat kompensatsiyasi bo‘yicha ishlarni tashkil etish tartibi to‘g‘risidagi Nizom talablariga rioya qilinishi.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A41": {
+          "address": "A41",
+          "row": 41,
+          "column": 1,
+          "value": "36",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B41": {
+          "address": "B41",
+          "row": 41,
+          "column": 2,
+          "value": "ikkilamchi energiya resurslari va utilizatsiya tizimlarining mavjudligi va ulardan foydalanish, samaradorligini baholash.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A42": {
+          "address": "A42",
+          "row": 42,
+          "column": 1,
+          "value": "37",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B42": {
+          "address": "B42",
+          "row": 42,
+          "column": 2,
+          "value": "yoqilg‘i va issiqlik iste’mol qiladigan uskunalarning ishchi ko‘rsatkichlari, yuklanganlik darajasi tahlillari;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A43": {
+          "address": "A43",
+          "row": 43,
+          "column": 1,
+          "value": "38",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B43": {
+          "address": "B43",
+          "row": 43,
+          "column": 2,
+          "value": "Zahira yoqilg‘isini mavjudligi va undan foydalanish holatlari;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A44": {
+          "address": "A44",
+          "row": 44,
+          "column": 1,
+          "value": "39",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B44": {
+          "address": "B44",
+          "row": 44,
+          "column": 2,
+          "value": "Yoritish tizimlari:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A45": {
+          "address": "A45",
+          "row": 45,
+          "column": 1,
+          "value": "40",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B45": {
+          "address": "B45",
+          "row": 45,
+          "column": 2,
+          "value": "Energiya tejamkor yorug‘lik manbalarini o‘rnatish yo‘li bilan mavjud yoritish tizimlarini rekonstruksiya qilish orqali yoritish maqsadlarida energiya sarfini kamaytirish holati;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A46": {
+          "address": "A46",
+          "row": 46,
+          "column": 1,
+          "value": "41",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B46": {
+          "address": "B46",
+          "row": 46,
+          "column": 2,
+          "value": "Eski uslubdagi lyuminestsent lampalarni past quvvatli yangi avlod lampalar bilan almashtirilganligi tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A47": {
+          "address": "A47",
+          "row": 47,
+          "column": 1,
+          "value": "42",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B47": {
+          "address": "B47",
+          "row": 47,
+          "column": 2,
+          "value": "An’anaviy yoritish tizimlarini LEDlar bilan almashtirilganligi tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A48": {
+          "address": "A48",
+          "row": 48,
+          "column": 1,
+          "value": "43",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B48": {
+          "address": "B48",
+          "row": 48,
+          "column": 2,
+          "value": "Binolarning devorlari yengilroq tonlarda bo‘yalganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A49": {
+          "address": "A49",
+          "row": 49,
+          "column": 1,
+          "value": "44",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B49": {
+          "address": "B49",
+          "row": 49,
+          "column": 2,
+          "value": "Bir nechta kalitlarni o‘rnatish va yoritish maydonini kerakli zonalarga bo‘lish orqali yoritishni markazsizlashtirilganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A50": {
+          "address": "A50",
+          "row": 50,
+          "column": 1,
+          "value": "45",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B50": {
+          "address": "B50",
+          "row": 50,
+          "column": 2,
+          "value": "Ko‘cha va hududlarni yoritishda quyosh panellari orqali ishlaydigan zamonaviy ko‘cha yoritgich chiroqlaridan foydalanilganligi.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A51": {
+          "address": "A51",
+          "row": 51,
+          "column": 1,
+          "value": "46",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B51": {
+          "address": "B51",
+          "row": 51,
+          "column": 2,
+          "value": "Issiqlik ta’minoti:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A52": {
+          "address": "A52",
+          "row": 52,
+          "column": 1,
+          "value": "47",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B52": {
+          "address": "B52",
+          "row": 52,
+          "column": 2,
+          "value": "texnologik jarayonlar va isitishda energiya iste’moli ko‘rsatkichlarini aniqlash maqsadida issiqlikdan foydalanishdagi iste’mollarning mavsumiy o‘zgarishi tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A53": {
+          "address": "A53",
+          "row": 53,
+          "column": 1,
+          "value": "48",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B53": {
+          "address": "B53",
+          "row": 53,
+          "column": 2,
+          "value": "tarmoq va qurilmalarda issiqlik isroflarini aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A54": {
+          "address": "A54",
+          "row": 54,
+          "column": 1,
+          "value": "49",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B54": {
+          "address": "B54",
+          "row": 54,
+          "column": 2,
+          "value": "texnologiya, isitish va issiq suv ta’minotiga issiqlik miqdorini aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A55": {
+          "address": "A55",
+          "row": 55,
+          "column": 1,
+          "value": "50",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B55": {
+          "address": "B55",
+          "row": 55,
+          "column": 2,
+          "value": "ichki yonish va bug‘ qozonlarining ish rejimlarini boshqarish tizimlarini tekshirish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A56": {
+          "address": "A56",
+          "row": 56,
+          "column": 1,
+          "value": "51",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B56": {
+          "address": "B56",
+          "row": 56,
+          "column": 2,
+          "value": "qozon qurilmalarning ish rejimlari bilan tanishish va tahlil qilish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A57": {
+          "address": "A57",
+          "row": 57,
+          "column": 1,
+          "value": "52",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B57": {
+          "address": "B57",
+          "row": 57,
+          "column": 2,
+          "value": "iste’molchi qurilmalarini tekshirish, yoqilg‘i iste’molini hisobga olish tizimlar tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A58": {
+          "address": "A58",
+          "row": 58,
+          "column": 1,
+          "value": "53",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B58": {
+          "address": "B58",
+          "row": 58,
+          "column": 2,
+          "value": "qozon qurilmalarning texnik holatini baholash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A59": {
+          "address": "A59",
+          "row": 59,
+          "column": 1,
+          "value": "54",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B59": {
+          "address": "B59",
+          "row": 59,
+          "column": 2,
+          "value": "yoqilg‘ini iqtisod qilish zahiralarini aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A60": {
+          "address": "A60",
+          "row": 60,
+          "column": 1,
+          "value": "55",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B60": {
+          "address": "B60",
+          "row": 60,
+          "column": 2,
+          "value": "Qayta tiklanadigan energiya manbalari:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A61": {
+          "address": "A61",
+          "row": 61,
+          "column": 1,
+          "value": "56",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B61": {
+          "address": "B61",
+          "row": 61,
+          "column": 2,
+          "value": "O‘zbekiston Respublikasi Prezidentining 2023 yil 16 fevraldagi PQ 57-son qarori bilan belgilangan vazifalarni bajarilganligi va quyosh fotoelektr stansiyalari, quyoshli issiq suv ta’minoti hamda energiya tejaydigan qurulmalar, yoritish lampalari, harakat va sizuvchi dachiklardan foydalanish holatlari tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A62": {
+          "address": "A62",
+          "row": 62,
+          "column": 1,
+          "value": "57",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B62": {
+          "address": "B62",
+          "row": 62,
+          "column": 2,
+          "value": "Ventilyasiya va havo ta’minoti:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A63": {
+          "address": "A63",
+          "row": 63,
+          "column": 1,
+          "value": "58",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B63": {
+          "address": "B63",
+          "row": 63,
+          "column": 2,
+          "value": "ventilyasiya va kompressor qurilmalari elektr yuritmalarning elektr energiya iste’moli parametrlarini o‘lchash va tahlil qilish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A64": {
+          "address": "A64",
+          "row": 64,
+          "column": 1,
+          "value": "59",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B64": {
+          "address": "B64",
+          "row": 64,
+          "column": 2,
+          "value": "havo quvurlarining tashqi texnik holatini aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A65": {
+          "address": "A65",
+          "row": 65,
+          "column": 1,
+          "value": "60",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B65": {
+          "address": "B65",
+          "row": 65,
+          "column": 2,
+          "value": "ventilyasiya tizimining ish parametrlarini aniqlash, me’yorlangan texnik ko‘rsatkichlar (yuklantirish va ulanishning haqiqiy koeffisiyenti, qurilmaning kun (sutka) davomida ishlagan vaqti) bilan solishtirish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A66": {
+          "address": "A66",
+          "row": 66,
+          "column": 1,
+          "value": "61",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B66": {
+          "address": "B66",
+          "row": 66,
+          "column": 2,
+          "value": "yo‘nalishi va bosimi ko‘rsatilgan holda siqilgan havoning tarqatish sxemasi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A67": {
+          "address": "A67",
+          "row": 67,
+          "column": 1,
+          "value": "62",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B67": {
+          "address": "B67",
+          "row": 67,
+          "column": 2,
+          "value": "siqilgan havoning iste’molchilari ro‘yxati;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A68": {
+          "address": "A68",
+          "row": 68,
+          "column": 1,
+          "value": "63",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B68": {
+          "address": "B68",
+          "row": 68,
+          "column": 2,
+          "value": "siqilgan havoning sizish joyi va miqdori;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A69": {
+          "address": "A69",
+          "row": 69,
+          "column": 1,
+          "value": "64",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B69": {
+          "address": "B69",
+          "row": 69,
+          "column": 2,
+          "value": "kompressorlarning ish rejimlarining tadqiqoti;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A70": {
+          "address": "A70",
+          "row": 70,
+          "column": 1,
+          "value": "65",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B70": {
+          "address": "B70",
+          "row": 70,
+          "column": 2,
+          "value": "elektr yuritmalarning tavsiflari  va tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A71": {
+          "address": "A71",
+          "row": 71,
+          "column": 1,
+          "value": "66",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B71": {
+          "address": "B71",
+          "row": 71,
+          "column": 2,
+          "value": "iste’molchidagi kompressorlarning yuklanganligi, bosimni nazorat qilish tizimi, havo sarfiga havo quvurlari diametrlarining mosligi, kondensat, sizishning mavjudligi, bosim miqdori.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A72": {
+          "address": "A72",
+          "row": 72,
+          "column": 1,
+          "value": "67",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B72": {
+          "address": "B72",
+          "row": 72,
+          "column": 2,
+          "value": "Konditsioner tizimlari:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A73": {
+          "address": "A73",
+          "row": 73,
+          "column": 1,
+          "value": "68",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B73": {
+          "address": "B73",
+          "row": 73,
+          "column": 2,
+          "value": "Konditsionerlarning faqat kerak bo'lgan hollarda ishlashi ta’minlanganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A74": {
+          "address": "A74",
+          "row": 74,
+          "column": 1,
+          "value": "69",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B74": {
+          "address": "B74",
+          "row": 74,
+          "column": 2,
+          "value": "Xonalarda havoning haddan tashqari qizib ketishi va haddan tashqari sovib ketishini",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A75": {
+          "address": "A75",
+          "row": 75,
+          "column": 1,
+          "value": "70",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B75": {
+          "address": "B75",
+          "row": 75,
+          "column": 2,
+          "value": "oldi olinganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A76": {
+          "address": "A76",
+          "row": 76,
+          "column": 1,
+          "value": "71",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B76": {
+          "address": "B76",
+          "row": 76,
+          "column": 2,
+          "value": "Regulyatorlar, issiqlik almashtirgich yuzalar va jihozlar ish holatida saqlanganligi.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A77": {
+          "address": "A77",
+          "row": 77,
+          "column": 1,
+          "value": "72",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B77": {
+          "address": "B77",
+          "row": 77,
+          "column": 2,
+          "value": "Suv iste‘moli:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A78": {
+          "address": "A78",
+          "row": 78,
+          "column": 1,
+          "value": "73",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B78": {
+          "address": "B78",
+          "row": 78,
+          "column": 2,
+          "value": "Eskirgan po‘lat suv quvurlari almashtirilganligi holati;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A79": {
+          "address": "A79",
+          "row": 79,
+          "column": 1,
+          "value": "74",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B79": {
+          "address": "B79",
+          "row": 79,
+          "column": 2,
+          "value": "Suvni qayta ishlash tizimlarining joriy etilganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A80": {
+          "address": "A80",
+          "row": 80,
+          "column": 1,
+          "value": "75",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B80": {
+          "address": "B80",
+          "row": 80,
+          "column": 2,
+          "value": "Suvni tozalash tizimlarining mavjudligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A81": {
+          "address": "A81",
+          "row": 81,
+          "column": 1,
+          "value": "76",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B81": {
+          "address": "B81",
+          "row": 81,
+          "column": 2,
+          "value": "Suv xarajatlari va yo‘qotishlarning holati.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A82": {
+          "address": "A82",
+          "row": 82,
+          "column": 1,
+          "value": "77",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B82": {
+          "address": "B82",
+          "row": 82,
+          "column": 2,
+          "value": "Nasos agregatlari:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A83": {
+          "address": "A83",
+          "row": 83,
+          "column": 1,
+          "value": "78",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B83": {
+          "address": "B83",
+          "row": 83,
+          "column": 2,
+          "value": "Nasos agregatlarining modernizatsiya qilinganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A84": {
+          "address": "A84",
+          "row": 84,
+          "column": 1,
+          "value": "79",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B84": {
+          "address": "B84",
+          "row": 84,
+          "column": 2,
+          "value": "Elektr nasos haydovchisini modernizatsiya qilinganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A85": {
+          "address": "A85",
+          "row": 85,
+          "column": 1,
+          "value": "80",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B85": {
+          "address": "B85",
+          "row": 85,
+          "column": 2,
+          "value": "Shlang hamda quvurlarda bosimni barqarorlashtirilganlik holati.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A86": {
+          "address": "A86",
+          "row": 86,
+          "column": 1,
+          "value": "81",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B86": {
+          "address": "B86",
+          "row": 86,
+          "column": 2,
+          "value": "Bino va inshootlar:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A87": {
+          "address": "A87",
+          "row": 87,
+          "column": 1,
+          "value": "82",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B87": {
+          "address": "B87",
+          "row": 87,
+          "column": 2,
+          "value": "Binolarda mikroklimat ta’minoti tizimlari va ularni rostlash usullari tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A88": {
+          "address": "A88",
+          "row": 88,
+          "column": 1,
+          "value": "83",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B88": {
+          "address": "B88",
+          "row": 88,
+          "column": 2,
+          "value": "binoning issiqlik himoyasi hamda energetik tavsiflari, shu bilan birga alohida to‘siqlar va to‘liq binoning keltirilgan issiqlik uzatish qarshiligi to‘g‘risida tahliliy ma’lumotlar;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A89": {
+          "address": "A89",
+          "row": 89,
+          "column": 1,
+          "value": "84",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B89": {
+          "address": "B89",
+          "row": 89,
+          "column": 2,
+          "value": "isitish mavsumidagi va bir gradus-kuniga to‘g‘ri keladigan binoni isitishga sarflanadigan maksimal va nisbiy energiya sarfi, shuningdek rivojlangan davlatlar bilan energiya samaradorligi taqqoslangan tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A90": {
+          "address": "A90",
+          "row": 90,
+          "column": 1,
+          "value": "85",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B90": {
+          "address": "B90",
+          "row": 90,
+          "column": 2,
+          "value": "binoning yoritish tizimi to‘g‘risida tahliliy ma’lumotlar;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A91": {
+          "address": "A91",
+          "row": 91,
+          "column": 1,
+          "value": "86",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B91": {
+          "address": "B91",
+          "row": 91,
+          "column": 2,
+          "value": "bino va inshootning suv ta’minoti tizimi to‘g‘risida tahliliy ma’lumotlar.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A92": {
+          "address": "A92",
+          "row": 92,
+          "column": 1,
+          "value": "87",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B92": {
+          "address": "B92",
+          "row": 92,
+          "column": 2,
+          "value": "Yoqilg‘i va yoqilg‘i moylash materiallari (YoMM):",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A93": {
+          "address": "A93",
+          "row": 93,
+          "column": 1,
+          "value": "88",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B93": {
+          "address": "B93",
+          "row": 93,
+          "column": 2,
+          "value": "Ekspluatatsiya jarayonida neft mahsulotlari (avtobenzin, dizel yonilg‘i, har xil turdagi texnika moylari), suyultirilgan va siqilgan metan gazdan foydalanadigan avtotransport vositalari, texnika-mexanizmlar va boshqa uskunalar texnik holati, ishlab chiqarilgan yili, rusumi, ishlatishdagi sarf me’yorlari va boshqa ko‘rsatkichlar belgilangan holdagi ro‘yxati;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A94": {
+          "address": "A94",
+          "row": 94,
+          "column": 1,
+          "value": "89",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B94": {
+          "address": "B94",
+          "row": 94,
+          "column": 2,
+          "value": "korxona tomonidan oxirgi 5 yil va joriy yilning o‘tgan hisobot davridagi neft mahsulotlari, tabiiy va suyultirilgan gaz hamda moylash mahsulotlari (keyingi o‘rinda YoMM deb yuritiladi) ning hisobiy va me’yoriy iste’moli kirim-chiqim harakatlari tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A95": {
+          "address": "A95",
+          "row": 95,
+          "column": 1,
+          "value": "90",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B95": {
+          "address": "B95",
+          "row": 95,
+          "column": 2,
+          "value": "korxona tomonidan YoMMning ishlatilishida bugungi kunda amalda bo‘lgan me’yoriy-huquqiy hujjatlarga rioya qilinishi, yoqilg‘i sarf me’yorlari amalda bo‘lgan talablar asosida ishlab chiqarilganligi va ularga rioya qilinishi, hisobotlarning yuritilishi hamda belgilangan sarf me’yorlarining qonuniyligi holati;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A96": {
+          "address": "A96",
+          "row": 96,
+          "column": 1,
+          "value": "91",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B96": {
+          "address": "B96",
+          "row": 96,
+          "column": 2,
+          "value": "korxonada neft mahsulotlari haqiqiy iste’molini aniqlash hamda tarqatish varaqalari orqali olingan yoqilg‘i hajmi bilan haqiqatda sarflangan yoqilg‘i hajmi (yo‘l varaqalari yoki boshqa ish hajmi bajarilishi uchun asos bo‘luvchi hujjat) larini solishtirish;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A97": {
+          "address": "A97",
+          "row": 97,
+          "column": 1,
+          "value": "92",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B97": {
+          "address": "B97",
+          "row": 97,
+          "column": 2,
+          "value": "suyultirilgan va siqilgan gaz va neft mahsulotlari sarfini iqtisod qilishga qaratilgan tavsiyalar ishlab chiqish.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A98": {
+          "address": "A98",
+          "row": 98,
+          "column": 1,
+          "value": "93",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B98": {
+          "address": "B98",
+          "row": 98,
+          "column": 2,
+          "value": "transformator va boshqa turdagi texnik moylarning joriy sarfi, ularga belgilangan sarf me’yorlari mavjudligi va sarf me’yorlarini belgilangan tartibda ishlab chiqilganligi holati tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A99": {
+          "address": "A99",
+          "row": 99,
+          "column": 1,
+          "value": "94",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B99": {
+          "address": "B99",
+          "row": 99,
+          "column": 2,
+          "value": "Gaz tarmoqlari:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A100": {
+          "address": "A100",
+          "row": 100,
+          "column": 1,
+          "value": "95",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B100": {
+          "address": "B100",
+          "row": 100,
+          "column": 2,
+          "value": "gaz taqsimlash tarmoqlari holati tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A101": {
+          "address": "A101",
+          "row": 101,
+          "column": 1,
+          "value": "96",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B101": {
+          "address": "B101",
+          "row": 101,
+          "column": 2,
+          "value": "ichki gaz taqsimlash tarmoqlari holati tahlili;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A102": {
+          "address": "A102",
+          "row": 102,
+          "column": 1,
+          "value": "97",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B102": {
+          "address": "B102",
+          "row": 102,
+          "column": 2,
+          "value": "tabiiy gaz ko‘rsatkichlarini aniqlash uchun o‘rnatilgan hisoblagich va boshqa barcha turdagi o‘lchash vositalarining texnik va metrologik holatlarni baholash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A103": {
+          "address": "A103",
+          "row": 103,
+          "column": 1,
+          "value": "98",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B103": {
+          "address": "B103",
+          "row": 103,
+          "column": 2,
+          "value": "korxonada o‘z ehtiyoji va texnologik jarayonlar uchun sarflanadigan tabiiy gaz hajmi, o‘rnatilgan uskuna va qozonlar, gaz quvurlari tarmoqlarida yo‘qotishlarni aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A104": {
+          "address": "A104",
+          "row": 104,
+          "column": 1,
+          "value": "99",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B104": {
+          "address": "B104",
+          "row": 104,
+          "column": 2,
+          "value": "Avtomobillar",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A105": {
+          "address": "A105",
+          "row": 105,
+          "column": 1,
+          "value": "100",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B105": {
+          "address": "B105",
+          "row": 105,
+          "column": 2,
+          "value": "avtomobilni benzindan gazga aylantirilganligi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A106": {
+          "address": "A106",
+          "row": 106,
+          "column": 1,
+          "value": "101",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B106": {
+          "address": "B106",
+          "row": 106,
+          "column": 2,
+          "value": "shinalarda bir xil havo bosimining saqlanganligi.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A107": {
+          "address": "A107",
+          "row": 107,
+          "column": 1,
+          "value": "102",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B107": {
+          "address": "B107",
+          "row": 107,
+          "column": 2,
+          "value": "3. Energetika tekshiruvi natijalariga ko‘ra qayd etiladi.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A108": {
+          "address": "A108",
+          "row": 108,
+          "column": 1,
+          "value": "103",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B108": {
+          "address": "B108",
+          "row": 108,
+          "column": 2,
+          "value": "yoqilg‘i-energetika resurslaridan foydalanish samaradorligini baholash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A109": {
+          "address": "A109",
+          "row": 109,
+          "column": 1,
+          "value": "104",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B109": {
+          "address": "B109",
+          "row": 109,
+          "column": 2,
+          "value": "yoqilg‘i-energetika resurslaridan foydalanishda kamchiliklar mavjud bo‘lsa, ularni bartaraf qilishda aniq va sodda usullari bilan aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A110": {
+          "address": "A110",
+          "row": 110,
+          "column": 1,
+          "value": "105",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B110": {
+          "address": "B110",
+          "row": 110,
+          "column": 2,
+          "value": "yoqilg‘i-energetika resurslarining mavjud zahiralarini aniqlsh;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A111": {
+          "address": "A111",
+          "row": 111,
+          "column": 1,
+          "value": "106",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B111": {
+          "address": "B111",
+          "row": 111,
+          "column": 2,
+          "value": "asoslangan va tegishli hisob-kitoblar bilan tasdiqlangan tashkiliy va texnik-tadbirlarda energiya tejaydigan yechimlar taklif qilish, bunda prognoz qilingan tejashni fizik va pul ifodasini chiqarish, shu jumladan ikkilamchi energiya manbalari va qayta tiklanadigan energiya manbalarini joriy etish, shuningdek, ularni amalga oshirish qiymatini ko‘rsatish.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A112": {
+          "address": "A112",
+          "row": 112,
+          "column": 1,
+          "value": "107",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B112": {
+          "address": "B112",
+          "row": 112,
+          "column": 2,
+          "value": "energiya resurslariga  bo‘lgan talab-ehtiyojlarni turlar bo‘yicha aniqlash;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A113": {
+          "address": "A113",
+          "row": 113,
+          "column": 1,
+          "value": "108",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B113": {
+          "address": "B113",
+          "row": 113,
+          "column": 2,
+          "value": "4. Energoauditor o‘tkazish yakuni bo‘yicha hujjatlar majmuasini tayyorlash:",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A114": {
+          "address": "A114",
+          "row": 114,
+          "column": 1,
+          "value": "109",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B114": {
+          "address": "B114",
+          "row": 114,
+          "column": 2,
+          "value": "korxonaning instrumental tasdiqlangan yoqilg‘i-energetika balansi (barcha ishlatiladigan energiya turlari bo‘yicha);",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A115": {
+          "address": "A115",
+          "row": 115,
+          "column": 1,
+          "value": "110",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B115": {
+          "address": "B115",
+          "row": 115,
+          "column": 2,
+          "value": " ning energetik pasporti;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A116": {
+          "address": "A116",
+          "row": 116,
+          "column": 1,
+          "value": "111",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B116": {
+          "address": "B116",
+          "row": 116,
+          "column": 2,
+          "value": "ishlab chiqarishda energiya samaradorligini oshirish hamda yoqilg‘i va energiya ta’minoti xarajatlarini kamaytirish (shu bilan birga taklif etilgan chora-tadbirlarning joriy etish narxini va ularning qoplanish muddatini iqtisodiy asoslash) bo‘yicha tavsiyalar;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A117": {
+          "address": "A117",
+          "row": 117,
+          "column": 1,
+          "value": "112",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B117": {
+          "address": "B117",
+          "row": 117,
+          "column": 2,
+          "value": "yoqilg‘i energetika resurslari sarfini kamaytirish hamda ishlab chiqarishda energiya samaradorlikni oshirish bo‘yicha korxonaning tashkiliy-texnik chora-tadbirlar rejasi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A118": {
+          "address": "A118",
+          "row": 118,
+          "column": 1,
+          "value": "113",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B118": {
+          "address": "B118",
+          "row": 118,
+          "column": 2,
+          "value": "korxonaning energiya xo‘jaligi ob’yektlarida birlamchi energetika tekshiruvi natijasi bo‘yicha texnik hisobot (audit o‘tkazish hisobot davrida);",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A119": {
+          "address": "A119",
+          "row": 119,
+          "column": 1,
+          "value": "114",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B119": {
+          "address": "B119",
+          "row": 119,
+          "column": 2,
+          "value": "davlat nazorati idoralariga korxonaning energetik pasporti, texnik hisoboti hamda yoqilg‘i energetika resurslarini tejash bo‘yicha tashkiliy-texnik chora-tadbirlar rejasi nusxalari taqdim etilishi;",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A120": {
+          "address": "A120",
+          "row": 120,
+          "column": 1,
+          "value": "115",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B120": {
+          "address": "B120",
+          "row": 120,
+          "column": 2,
+          "value": "energetik audit o‘tkazish yakuni bo‘yicha amalga oshirilayotgan iqtisod va uning korxona tomonidan bajarilishi har chorak yakuni bilan O‘zenergoinspeksiyaning hududiy boshqarmalariga yozma ravishda doimiy taqdim etib borilishi.",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A121": {
+          "address": "A121",
+          "row": 121,
+          "column": 1,
+          "value": "116",
+          "data_type": "n",
+          "has_formula": false
+        },
+        "B121": {
+          "address": "B121",
+          "row": 121,
+          "column": 2,
+          "value": "4.1. Energiya auditi natijasi bo‘yicha hisobot va energetika pasporti O‘zenergoinspeksiyaning hududiy boshqarmalari tomonidan belgilangan tartibda qabul qilinmagunga qadar iste’molchida energiya auditi tamomlangan deb hisoblanmaydi.",
+          "data_type": "s",
+          "has_formula": false
+        }
+      }
+    },
+    "tables": [
+      {
+        "table_range": {
+          "start_row": 1,
+          "end_row": 121,
+          "start_column": 2,
+          "end_column": 2,
+          "start_address": "B1",
+          "end_address": "B121"
+        },
+        "header_rows": [
+          {
+            "row": 1,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "D A S T U R I",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "1. Dastur quyidagi hujjatlar asosida ishlab chiqilgan:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Vazirlar Mahkamasining 2024 yil 19 oktyabrdagi “Yoqilg‘i-energetika resurslari iste’molchilarini hamda bino va inshootlarni energiya iste’molini energiya auditidan o‘tkazish tartiblarini belgilash to‘g‘risida”gi 690-sonli qarori;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "O‘zbekiston Respublikasining 2024 yil 7 avgustda qabul qilingan “Energiya tejash, undan oqilona foydalanish va energiya samaradorligini oshirish to‘g‘risida”gi 940-sonli Qonuni;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "data_rows": [
+          {
+            "row": 5,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "O‘zbekistan Respublikasi Prezidentining 2019 yil 22 avgustdagi \"Iqtisodiyot tarmoqlari va ijtimoiy sohaning energiya samaradorligini oshirish, energiya tejovchi texnologiyalarni joriy etish va qayta tiklanuvchi energiya manbalarini rivojlantirishning tezkor chora-tadbirlari to‘g‘risida\"gi PQ-4422-son qaror;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "O‘zbekiston Respublikasi Vazirlar Mahkamasining 2024 yil 31-maydagi “Elektr energiyasi va tabiiy gazdan foydalanish qoidalarini tasdiqlash to‘g‘risida”gi 319-sonli qarori;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "(joylashgan manzili, uning identifikatsiya raqami va IFUD kodi)shaklidagi korxonasining energiya xo‘jaligi ob’yektlarida davriy energetika tekshiruvi (energoaudit) o‘tkazish to‘g‘risidagi shartnoma;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "1.1. Energiya auditidan o‘tkazish dasturining amal qilish muddati O‘zenergoinspeksiya tomonidan tasdiqlangan kundan boshlab dastlabki va davriy energiya auditidan o‘tkazishda bir yildan ko‘p bo‘lmagan hamda ekspress energiya auditidan ikki oydan ko‘p bo‘lmagan muddatga teng bo‘ladi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "1.2. Yiliga besh yuz va undan ortiq tonna shartli yoqilg‘ini va (yoki) ikki yuz ellik va undan ortiq tonna motor yoqilg‘isini sarflaydigan yoqilg‘i-energetika resurslari iste’molchilari tomonidan belgilangan muddatlarda majburiy energetika tekshiruvlarini o‘tkazmaslik yoki ular tomonidan majburiy energetika tekshiruvlari natijasida belgilangan chora-tadbirlarni bajarmaslik - o‘rtacha oylik energiya iste’moli qiymatining uch foizi miqdorida jarima solishga sabab bo‘ladi",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "2. Energetika tekshiruvi (energoaudit) o‘tkazishda quyidagilar o‘rganiladi:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Elektr ta’minoti:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "elektr iste’moli rejimlari va elektr balansini tuzish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "elektr qabul qilgichlarning parametrlarini tekshirish va o‘lchash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "sexlarni bug‘ bilan ta’minlash ichki tizimining bug‘-kondensat balansini tuzish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "kondensatni manbaga qaytarish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 16,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Yoqilg‘i energiya resurslari (keyingi o‘rinda YoER deb yuritiladi) iste’molchisining tuzilmasi va bo‘linmalardagi energiya iste’moli tavsifi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 17,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiya resurslari turlari bo‘yicha xususiy energiya balanslari;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 18,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "texnologik ishlab chiqarishlarda energiya iste’molining holati (ishlab chiqarish ehtiyojlari uchun amalda iste’mol qilingan YoER, texnologiya ob’yektlari energiya iste’molining normativ tavsiflari);",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 19,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiya resurslari va energiya manbalarining alohida turlari bo‘yicha barcha iste’mol qilinadigan energiyaning taqsimlanish xususiyatlari (buning uchun energiya iste’moli bo‘yicha ma’lumotlar o‘lchovning yagona tizimiga keltiriladi);",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 20,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiya iste’moli rejimi (kunlik, oylik, yillik);",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 21,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "har bir ob’yekt uchun energiya iste’moliga ta’sir ko‘rsatadigan omillar (masalan, isitish tizimi uchun tashqi harorat, elektr yuritmalar uchun quvvat koeffisiyenti (cosφ) va hokazolar);",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 22,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiya iste’molining ta’sir ko‘rsatuvchi omilga (masalan, unumdorlikka, tashqi havo haroratiga va hokazolarga) bog‘liqligi hisobidan resurslar va ob’yektlarning alohida turlari bo‘yicha solishtirma energiya iste’moli;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 23,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiya tashuvchilardagi yo‘qotishlar, izolyasiyaning buzilishi, nooqilona loyiha yechimlari, noto‘g‘ri foydalanish, qurilish va montaj ishlarining sifatsiz bajarilishi hisobiga to‘g‘ridan-to‘g‘ri energiya isroflari;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 24,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "texnologik jarayonda (agregat, sex) bevosita foydalaniladigan energiya manbalari (elektr energiyasi, texnik suv, qisilgan havo, bug‘, texnik gazlar) sarfi to‘g‘risidagi ma’lumotlar bazasi va ishlab chiqarilgan mahsulot hajmi, shuningdek, bir birlikda ishlab chiqariladigan mahsulot hajmi uchun sarflanadigan energiya iste’moli tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 25,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "texnologik parametrlari va mavsumiy tavsiflari bir xil bo‘lgan sharoitda solishtirma ko‘rsatkichlarning o‘zgarish dinamikasini taqqoslash yo‘li bilan energiya resurslarini iste’mol qilish samaradorligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 26,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "mahsulot ishlab chiqarishning texnologik sxemasi (asosiy va yordamchi ishlab chiqarish, xom ashyo, materiallar, energiya oqimlari);",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 27,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiyani hisobiy va texnik hisobga olish asboblari, shuningdek chetga berish hisobga oladigan hisoblagichlarni jiddiy ravishda joy-joyiga qo‘ygan holda energiya ta’minoti sxemasi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 28,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "shartnoma hujjatlari;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 29,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "oxirgi 5 yil va joriy yilning o‘tgan davri uchun amaldagi statistika hisobotlari (choraklik, yillik), shuningdek boshqa zarur hisobotlar;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 30,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "mahsulot birligi uchun sarflanadigan energiya resurslarini turlari bo‘yicha sarf meʼyorlarini ishlab chiqilganligi hamda korxonaning 5 yillik energosig‘imi dinamikasi o‘zgarish tahlillari;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 31,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiyani tejash bo‘yicha tashkiliy-texnik chora-tadbirlar rejalari va ularning bajarilishi holati, energiya iste’molini kamaytirish yuzasidan topshiriqlarning mavjudligi va uning ijrosi bajarilishi tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 32,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "qayta tiklanuvchan va muqobil energiya manbalaridan foydalanish holatlari va ularning tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 33,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ishlab chiqariladigan mahsulotni hisobga olish usullari hamda ishlab chiqarilgan maxsulot birligiga sarflangan energiya miqdori;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 34,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiyaning amaldagi sarfi ustidan nazorat qilish va uning sarfi normalarining bajarilishi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 35,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energetik qurilmalarini ta’mirlash reja-jadvalining bajarilishi to‘g‘risidagi hisobotlar;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 36,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Umumiy YoER iste’moli hamda yirik texnologik agregatlari bo‘yicha energiya iste’moli balansini tuzish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 37,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "joriy va texnik hisobning holati;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 38,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "eksperimental va statistik olingan ma’lumotlar asosida har bir ob’yekt uchun sarflanadigan elektr energiyasi haqiqiy meьyorini aniqlash, ularni tasdiqlangan va ilg‘or xorijiy mamlakatlarning meьyorlari bilan solishtirish, farqining sabablarini ko‘rsatish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 39,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energetik tekshiruv natijalariga ko‘ra har bir ob’yekt uchun haqiqiy solishtirma elektr energiya me’yorini rivojlangan mamlakatlar elektr energiya me’yorlari bilan solishtirib tahlil qilish va ularning o‘zgarish kamchiliklarini aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 40,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "O‘zbekiston Respublikasining elektr qurilmalarni loyihalashtirish, ekspluatatsiya va montaj qilish bilan shug‘ullanuvchi muhandis-texnik xodimlar uchun mo‘ljallangan elektr uskunalarning tuzilish qoidalari, reaktiv quvvat kompensatsiyasi holati, “O‘zdavenergonazorat” inspeksiyasi boshlig‘ining 2008 yil 10 oktyabrdagi 1864-sonli buyrug‘i bilan tasdiqlangan, Reaktiv quvvat kompensatsiyasi bo‘yicha ishlarni tashkil etish tartibi to‘g‘risidagi Nizom talablariga rioya qilinishi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 41,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ikkilamchi energiya resurslari va utilizatsiya tizimlarining mavjudligi va ulardan foydalanish, samaradorligini baholash.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 42,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "yoqilg‘i va issiqlik iste’mol qiladigan uskunalarning ishchi ko‘rsatkichlari, yuklanganlik darajasi tahlillari;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 43,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Zahira yoqilg‘isini mavjudligi va undan foydalanish holatlari;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 44,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Yoritish tizimlari:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 45,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Energiya tejamkor yorug‘lik manbalarini o‘rnatish yo‘li bilan mavjud yoritish tizimlarini rekonstruksiya qilish orqali yoritish maqsadlarida energiya sarfini kamaytirish holati;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 46,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Eski uslubdagi lyuminestsent lampalarni past quvvatli yangi avlod lampalar bilan almashtirilganligi tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 47,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "An’anaviy yoritish tizimlarini LEDlar bilan almashtirilganligi tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 48,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Binolarning devorlari yengilroq tonlarda bo‘yalganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 49,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Bir nechta kalitlarni o‘rnatish va yoritish maydonini kerakli zonalarga bo‘lish orqali yoritishni markazsizlashtirilganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 50,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Ko‘cha va hududlarni yoritishda quyosh panellari orqali ishlaydigan zamonaviy ko‘cha yoritgich chiroqlaridan foydalanilganligi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 51,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Issiqlik ta’minoti:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 52,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "texnologik jarayonlar va isitishda energiya iste’moli ko‘rsatkichlarini aniqlash maqsadida issiqlikdan foydalanishdagi iste’mollarning mavsumiy o‘zgarishi tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 53,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "tarmoq va qurilmalarda issiqlik isroflarini aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 54,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "texnologiya, isitish va issiq suv ta’minotiga issiqlik miqdorini aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 55,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ichki yonish va bug‘ qozonlarining ish rejimlarini boshqarish tizimlarini tekshirish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 56,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "qozon qurilmalarning ish rejimlari bilan tanishish va tahlil qilish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 57,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "iste’molchi qurilmalarini tekshirish, yoqilg‘i iste’molini hisobga olish tizimlar tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 58,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "qozon qurilmalarning texnik holatini baholash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 59,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "yoqilg‘ini iqtisod qilish zahiralarini aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 60,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Qayta tiklanadigan energiya manbalari:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 61,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "O‘zbekiston Respublikasi Prezidentining 2023 yil 16 fevraldagi PQ 57-son qarori bilan belgilangan vazifalarni bajarilganligi va quyosh fotoelektr stansiyalari, quyoshli issiq suv ta’minoti hamda energiya tejaydigan qurulmalar, yoritish lampalari, harakat va sizuvchi dachiklardan foydalanish holatlari tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 62,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Ventilyasiya va havo ta’minoti:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 63,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ventilyasiya va kompressor qurilmalari elektr yuritmalarning elektr energiya iste’moli parametrlarini o‘lchash va tahlil qilish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 64,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "havo quvurlarining tashqi texnik holatini aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 65,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ventilyasiya tizimining ish parametrlarini aniqlash, me’yorlangan texnik ko‘rsatkichlar (yuklantirish va ulanishning haqiqiy koeffisiyenti, qurilmaning kun (sutka) davomida ishlagan vaqti) bilan solishtirish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 66,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "yo‘nalishi va bosimi ko‘rsatilgan holda siqilgan havoning tarqatish sxemasi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 67,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "siqilgan havoning iste’molchilari ro‘yxati;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 68,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "siqilgan havoning sizish joyi va miqdori;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 69,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "kompressorlarning ish rejimlarining tadqiqoti;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 70,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "elektr yuritmalarning tavsiflari  va tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 71,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "iste’molchidagi kompressorlarning yuklanganligi, bosimni nazorat qilish tizimi, havo sarfiga havo quvurlari diametrlarining mosligi, kondensat, sizishning mavjudligi, bosim miqdori.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 72,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Konditsioner tizimlari:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 73,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Konditsionerlarning faqat kerak bo'lgan hollarda ishlashi ta’minlanganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 74,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Xonalarda havoning haddan tashqari qizib ketishi va haddan tashqari sovib ketishini",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 75,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "oldi olinganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 76,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Regulyatorlar, issiqlik almashtirgich yuzalar va jihozlar ish holatida saqlanganligi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 77,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Suv iste‘moli:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 78,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Eskirgan po‘lat suv quvurlari almashtirilganligi holati;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 79,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Suvni qayta ishlash tizimlarining joriy etilganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 80,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Suvni tozalash tizimlarining mavjudligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 81,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Suv xarajatlari va yo‘qotishlarning holati.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 82,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Nasos agregatlari:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 83,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Nasos agregatlarining modernizatsiya qilinganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 84,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Elektr nasos haydovchisini modernizatsiya qilinganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 85,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Shlang hamda quvurlarda bosimni barqarorlashtirilganlik holati.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 86,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Bino va inshootlar:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 87,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Binolarda mikroklimat ta’minoti tizimlari va ularni rostlash usullari tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 88,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "binoning issiqlik himoyasi hamda energetik tavsiflari, shu bilan birga alohida to‘siqlar va to‘liq binoning keltirilgan issiqlik uzatish qarshiligi to‘g‘risida tahliliy ma’lumotlar;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 89,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "isitish mavsumidagi va bir gradus-kuniga to‘g‘ri keladigan binoni isitishga sarflanadigan maksimal va nisbiy energiya sarfi, shuningdek rivojlangan davlatlar bilan energiya samaradorligi taqqoslangan tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 90,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "binoning yoritish tizimi to‘g‘risida tahliliy ma’lumotlar;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 91,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "bino va inshootning suv ta’minoti tizimi to‘g‘risida tahliliy ma’lumotlar.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 92,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Yoqilg‘i va yoqilg‘i moylash materiallari (YoMM):",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 93,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Ekspluatatsiya jarayonida neft mahsulotlari (avtobenzin, dizel yonilg‘i, har xil turdagi texnika moylari), suyultirilgan va siqilgan metan gazdan foydalanadigan avtotransport vositalari, texnika-mexanizmlar va boshqa uskunalar texnik holati, ishlab chiqarilgan yili, rusumi, ishlatishdagi sarf me’yorlari va boshqa ko‘rsatkichlar belgilangan holdagi ro‘yxati;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 94,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "korxona tomonidan oxirgi 5 yil va joriy yilning o‘tgan hisobot davridagi neft mahsulotlari, tabiiy va suyultirilgan gaz hamda moylash mahsulotlari (keyingi o‘rinda YoMM deb yuritiladi) ning hisobiy va me’yoriy iste’moli kirim-chiqim harakatlari tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 95,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "korxona tomonidan YoMMning ishlatilishida bugungi kunda amalda bo‘lgan me’yoriy-huquqiy hujjatlarga rioya qilinishi, yoqilg‘i sarf me’yorlari amalda bo‘lgan talablar asosida ishlab chiqarilganligi va ularga rioya qilinishi, hisobotlarning yuritilishi hamda belgilangan sarf me’yorlarining qonuniyligi holati;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 96,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "korxonada neft mahsulotlari haqiqiy iste’molini aniqlash hamda tarqatish varaqalari orqali olingan yoqilg‘i hajmi bilan haqiqatda sarflangan yoqilg‘i hajmi (yo‘l varaqalari yoki boshqa ish hajmi bajarilishi uchun asos bo‘luvchi hujjat) larini solishtirish;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 97,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "suyultirilgan va siqilgan gaz va neft mahsulotlari sarfini iqtisod qilishga qaratilgan tavsiyalar ishlab chiqish.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 98,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "transformator va boshqa turdagi texnik moylarning joriy sarfi, ularga belgilangan sarf me’yorlari mavjudligi va sarf me’yorlarini belgilangan tartibda ishlab chiqilganligi holati tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 99,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Gaz tarmoqlari:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 100,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "gaz taqsimlash tarmoqlari holati tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 101,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ichki gaz taqsimlash tarmoqlari holati tahlili;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 102,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "tabiiy gaz ko‘rsatkichlarini aniqlash uchun o‘rnatilgan hisoblagich va boshqa barcha turdagi o‘lchash vositalarining texnik va metrologik holatlarni baholash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 103,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "korxonada o‘z ehtiyoji va texnologik jarayonlar uchun sarflanadigan tabiiy gaz hajmi, o‘rnatilgan uskuna va qozonlar, gaz quvurlari tarmoqlarida yo‘qotishlarni aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 104,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Avtomobillar",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 105,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "avtomobilni benzindan gazga aylantirilganligi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 106,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "shinalarda bir xil havo bosimining saqlanganligi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 107,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "3. Energetika tekshiruvi natijalariga ko‘ra qayd etiladi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 108,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "yoqilg‘i-energetika resurslaridan foydalanish samaradorligini baholash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 109,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "yoqilg‘i-energetika resurslaridan foydalanishda kamchiliklar mavjud bo‘lsa, ularni bartaraf qilishda aniq va sodda usullari bilan aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 110,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "yoqilg‘i-energetika resurslarining mavjud zahiralarini aniqlsh;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 111,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "asoslangan va tegishli hisob-kitoblar bilan tasdiqlangan tashkiliy va texnik-tadbirlarda energiya tejaydigan yechimlar taklif qilish, bunda prognoz qilingan tejashni fizik va pul ifodasini chiqarish, shu jumladan ikkilamchi energiya manbalari va qayta tiklanadigan energiya manbalarini joriy etish, shuningdek, ularni amalga oshirish qiymatini ko‘rsatish.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 112,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energiya resurslariga  bo‘lgan talab-ehtiyojlarni turlar bo‘yicha aniqlash;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 113,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "4. Energoauditor o‘tkazish yakuni bo‘yicha hujjatlar majmuasini tayyorlash:",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 114,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "korxonaning instrumental tasdiqlangan yoqilg‘i-energetika balansi (barcha ishlatiladigan energiya turlari bo‘yicha);",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 115,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ning energetik pasporti;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 116,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "ishlab chiqarishda energiya samaradorligini oshirish hamda yoqilg‘i va energiya ta’minoti xarajatlarini kamaytirish (shu bilan birga taklif etilgan chora-tadbirlarning joriy etish narxini va ularning qoplanish muddatini iqtisodiy asoslash) bo‘yicha tavsiyalar;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 117,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "yoqilg‘i energetika resurslari sarfini kamaytirish hamda ishlab chiqarishda energiya samaradorlikni oshirish bo‘yicha korxonaning tashkiliy-texnik chora-tadbirlar rejasi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 118,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "korxonaning energiya xo‘jaligi ob’yektlarida birlamchi energetika tekshiruvi natijasi bo‘yicha texnik hisobot (audit o‘tkazish hisobot davrida);",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 119,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "davlat nazorati idoralariga korxonaning energetik pasporti, texnik hisoboti hamda yoqilg‘i energetika resurslarini tejash bo‘yicha tashkiliy-texnik chora-tadbirlar rejasi nusxalari taqdim etilishi;",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 120,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "energetik audit o‘tkazish yakuni bo‘yicha amalga oshirilayotgan iqtisod va uning korxona tomonidan bajarilishi har chorak yakuni bilan O‘zenergoinspeksiyaning hududiy boshqarmalariga yozma ravishda doimiy taqdim etib borilishi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 121,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "4.1. Energiya auditi natijasi bo‘yicha hisobot va energetika pasporti O‘zenergoinspeksiyaning hududiy boshqarmalari tomonidan belgilangan tartibda qabul qilinmagunga qadar iste’molchida energiya auditi tamomlangan deb hisoblanmaydi.",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "column_types": [
+          {
+            "column": 2,
+            "column_letter": "B",
+            "header": "D A S T U R I",
+            "type": "text",
+            "semantic_type": "unknown"
+          }
+        ],
+        "row_count": 117,
+        "column_count": 1
+      }
+    ],
+    "semantic_analysis": {
+      "sheet_purpose": "unknown",
+      "resource_types": [],
+      "time_periods": [],
+      "data_categories": [],
+      "key_indicators": []
+    },
+    "summary": {
+      "total_tables": 1,
+      "total_rows": 121,
+      "total_columns": 9,
+      "data_regions": 1
+    }
+  },
+  "summary": {
+    "total_tables": 1,
+    "total_rows": 121,
+    "total_columns": 9,
+    "sheet_purpose": "unknown",
+    "resource_types": [],
+    "time_periods": []
+  }
+}

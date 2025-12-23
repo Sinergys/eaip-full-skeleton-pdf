@@ -1,0 +1,238 @@
+{
+  "file_name": "акт выполненых работ май.PDF",
+  "analysis_date": null,
+  "summary": {
+    "total_differences": 293,
+    "confidence": 0.95,
+    "structure_issues": {
+      "row_mismatch": true,
+      "col_mismatch": false,
+      "missing_rows": 3,
+      "extra_rows": 0
+    }
+  },
+  "analysis": {
+    "differences_by_column": {
+      "0": 33,
+      "1": 33,
+      "2": 33,
+      "3": 26,
+      "4": 27,
+      "5": 33,
+      "6": 33,
+      "7": 9,
+      "8": 33,
+      "9": 33
+    },
+    "differences_by_similarity": {
+      "low": 103,
+      "medium": 118,
+      "high": 72
+    },
+    "numeric_errors_count": 196,
+    "text_errors_count": 97,
+    "error_patterns_count": 141
+  },
+  "structure_issues": {
+    "row_count_mismatch": true,
+    "col_count_mismatch": false,
+    "header_mismatches": [
+      {
+        "column": 0,
+        "auto": "№",
+        "manual": "",
+        "similarity": 0.0
+      },
+      {
+        "column": 1,
+        "auto": "Идентификационный код и название по Единому электронному\nкаталогу товаров (услуг)",
+        "manual": "Идентификационный кой и название по Единому электронному национальному каталогу товаров (услуг)",
+        "similarity": 0.8977272727272727
+      },
+      {
+        "column": 2,
+        "auto": "Наименование товаров (услуг)",
+        "manual": "Наименование товаров (углу г}",
+        "similarity": 0.9122807017543859
+      },
+      {
+        "column": 5,
+        "auto": "Цена",
+        "manual": "Цена.",
+        "similarity": 0.8888888888888888
+      },
+      {
+        "column": 7,
+        "auto": "НДС",
+        "manual": "Ставка",
+        "similarity": 0.2222222222222222
+      },
+      {
+        "column": 8,
+        "auto": "Сумма",
+        "manual": "НДС Сумма",
+        "similarity": 0.7142857142857143
+      }
+    ],
+    "missing_rows": 3,
+    "extra_rows": 0
+  },
+  "recommendations": [
+    "✅ Confidence 95% - отличный результат, превышает цель (80%+)",
+    "⚠️ Несоответствие количества строк - проверить логику определения конца таблицы",
+    "⚠️ 2 заголовков имеют низкое сходство - проверить распознавание заголовков",
+    "📊 Столбец 0 имеет больше всего ошибок (33) - приоритет для улучшения",
+    "🔢 Больше ошибок в числовых значениях - улучшить распознавание чисел",
+    "⚠️ 103 различий с низким сходством (<30%) - требуется детальный анализ"
+  ],
+  "detailed_analysis": {
+    "top_error_columns": [
+      [
+        0,
+        33
+      ],
+      [
+        1,
+        33
+      ],
+      [
+        2,
+        33
+      ],
+      [
+        5,
+        33
+      ],
+      [
+        6,
+        33
+      ]
+    ],
+    "sample_numeric_errors": [
+      {
+        "column": 0,
+        "auto": "1",
+        "manual": "",
+        "similarity": 0.0
+      },
+      {
+        "column": 4,
+        "auto": "1.00",
+        "manual": "Количество",
+        "similarity": 0.0
+      },
+      {
+        "column": 5,
+        "auto": "0.00",
+        "manual": "Цена.",
+        "similarity": 0.2222222222222222
+      },
+      {
+        "column": 6,
+        "auto": "0.00",
+        "manual": "Стоимость поставки",
+        "similarity": 0.0
+      },
+      {
+        "column": 8,
+        "auto": "0.00",
+        "manual": "НДС Сумма",
+        "similarity": 0.0
+      }
+    ],
+    "sample_text_errors": [
+      {
+        "column": 1,
+        "auto": "11302001010000000 - Услуги по диагностике, ремонту и\nтехническому обслуживанию легковых автомобилей и\nмотоциклов (все виды услуг)",
+        "manual": "Идентификационный кой и название по Единому электронному национальному каталогу товаров (услуг)",
+        "similarity": 0.25892857142857145
+      },
+      {
+        "column": 2,
+        "auto": "НЕКСИЯ 3 S05300 ТАА",
+        "manual": "Наименование товаров (углу г}",
+        "similarity": 0.25
+      },
+      {
+        "column": 3,
+        "auto": "Услуга (раз)",
+        "manual": "Единица измерения",
+        "similarity": 0.20689655172413793
+      },
+      {
+        "column": 7,
+        "auto": "12%",
+        "manual": "Ставка",
+        "similarity": 0.0
+      },
+      {
+        "column": 1,
+        "auto": "08708001374000000 - Прочие запчасти, детали и\nкомплектующие для легковых и грузовых автомобилей",
+        "manual": "",
+        "similarity": 0.0
+      }
+    ],
+    "sample_error_patterns": [
+      {
+        "type": "low_similarity",
+        "column": 0,
+        "auto": "1",
+        "manual": ""
+      },
+      {
+        "type": "low_similarity",
+        "column": 1,
+        "auto": "11302001010000000 - Услуги по диагностике, ремонту",
+        "manual": "Идентификационный кой и название по Единому электр"
+      },
+      {
+        "type": "low_similarity",
+        "column": 2,
+        "auto": "НЕКСИЯ 3 S05300 ТАА",
+        "manual": "Наименование товаров (углу г}"
+      },
+      {
+        "type": "low_similarity",
+        "column": 3,
+        "auto": "Услуга (раз)",
+        "manual": "Единица измерения"
+      },
+      {
+        "type": "low_similarity",
+        "column": 4,
+        "auto": "1.00",
+        "manual": "Количество"
+      },
+      {
+        "type": "low_similarity",
+        "column": 5,
+        "auto": "0.00",
+        "manual": "Цена."
+      },
+      {
+        "type": "low_similarity",
+        "column": 6,
+        "auto": "0.00",
+        "manual": "Стоимость поставки"
+      },
+      {
+        "type": "low_similarity",
+        "column": 7,
+        "auto": "12%",
+        "manual": "Ставка"
+      },
+      {
+        "type": "low_similarity",
+        "column": 8,
+        "auto": "0.00",
+        "manual": "НДС Сумма"
+      },
+      {
+        "type": "low_similarity",
+        "column": 9,
+        "auto": "0.00",
+        "manual": "Стоимость поставки с учетом НДС"
+      }
+    ]
+  }
+}

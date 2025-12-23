@@ -1,0 +1,721 @@
+{
+  "sheet_name": "Баланс",
+  "structural_analysis": {
+    "max_row": 33,
+    "max_column": 16,
+    "merged_ranges": [
+      "A15:B15",
+      "C15:D15",
+      "P4:P7",
+      "A11:B11",
+      "C14:D14",
+      "H4:I6",
+      "C4:D4",
+      "G4:G6",
+      "L5:L6",
+      "N5:N6",
+      "A16:B16",
+      "C10:D10",
+      "C16:D16",
+      "M5:M6",
+      "C9:D9",
+      "A4:B7",
+      "F4:F6",
+      "J4:N4",
+      "A12:B12",
+      "C12:D12",
+      "A2:B2",
+      "A1:P1",
+      "C11:D11",
+      "H7:I7",
+      "J7:N7",
+      "E4:E6",
+      "A14:B14",
+      "A17:B17",
+      "C17:D17",
+      "A8:B8",
+      "D5:D6",
+      "O2:P2",
+      "O4:O6",
+      "J5:J6",
+      "B3:P3",
+      "A10:B10",
+      "A13:B13",
+      "C13:D13",
+      "A9:B9",
+      "K5:K6",
+      "C5:C6"
+    ],
+    "data_region": {
+      "start_row": 1,
+      "end_row": 17,
+      "start_column": 1,
+      "end_column": 16,
+      "start_address": "A1",
+      "end_address": "P17"
+    },
+    "cells_count": 34
+  },
+  "table_structure_analysis": {
+    "sheet_name": "Баланс",
+    "structure": {
+      "max_row": 33,
+      "max_column": 16,
+      "data_region": {
+        "start_row": 1,
+        "end_row": 17,
+        "start_column": 1,
+        "end_column": 16
+      },
+      "headers": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Энергетический баланс предприятия",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "column": 15,
+              "column_letter": "O",
+              "value": "Таблица 3",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Структура параметров баланса",
+              "is_merged": false
+            },
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "Электр энергияси",
+              "is_merged": false
+            },
+            {
+              "column": 5,
+              "column_letter": "E",
+              "value": "Тепловая энергия",
+              "is_merged": false
+            },
+            {
+              "column": 6,
+              "column_letter": "F",
+              "value": "Газ",
+              "is_merged": false
+            },
+            {
+              "column": 7,
+              "column_letter": "G",
+              "value": "Мазут",
+              "is_merged": false
+            },
+            {
+              "column": 8,
+              "column_letter": "H",
+              "value": "Уголь",
+              "is_merged": false
+            },
+            {
+              "column": 10,
+              "column_letter": "J",
+              "value": "Нефтепродукты",
+              "is_merged": false
+            },
+            {
+              "column": 15,
+              "column_letter": "O",
+              "value": "Вода",
+              "is_merged": false
+            },
+            {
+              "column": 16,
+              "column_letter": "P",
+              "value": "Примечание",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "актив      Р",
+              "is_merged": false
+            },
+            {
+              "column": 4,
+              "column_letter": "D",
+              "value": "реактив Q",
+              "is_merged": false
+            },
+            {
+              "column": 10,
+              "column_letter": "J",
+              "value": "Бензин",
+              "is_merged": false
+            },
+            {
+              "column": 11,
+              "column_letter": "K",
+              "value": "Дизель",
+              "is_merged": false
+            },
+            {
+              "column": 12,
+              "column_letter": "L",
+              "value": "Керосин",
+              "is_merged": false
+            },
+            {
+              "column": 13,
+              "column_letter": "M",
+              "value": "ГСМ (Горюче-смазочные материалы)",
+              "is_merged": false
+            },
+            {
+              "column": 14,
+              "column_letter": "N",
+              "value": "Прочее",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "column": 5,
+              "column_letter": "E",
+              "value": "Гкал",
+              "is_merged": false
+            },
+            {
+              "column": 6,
+              "column_letter": "F",
+              "value": "тыс. м",
+              "is_merged": false
+            },
+            {
+              "column": 7,
+              "column_letter": "G",
+              "value": "тонна",
+              "is_merged": false
+            },
+            {
+              "column": 8,
+              "column_letter": "H",
+              "value": "тонна",
+              "is_merged": false
+            },
+            {
+              "column": 10,
+              "column_letter": "J",
+              "value": "тонна",
+              "is_merged": false
+            },
+            {
+              "column": 15,
+              "column_letter": "O",
+              "value": "м³",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Установленная электрическая мощность",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Транзитным абониментам",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Общее потребление по предприятию",
+              "is_merged": false
+            }
+          ]
+        }
+      ],
+      "cells_info": {
+        "A1": {
+          "address": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Энергетический баланс предприятия",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "O2": {
+          "address": "O2",
+          "row": 2,
+          "column": 15,
+          "value": "Таблица 3",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A4": {
+          "address": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "Структура параметров баланса",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C4": {
+          "address": "C4",
+          "row": 4,
+          "column": 3,
+          "value": "Электр энергияси",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "E4": {
+          "address": "E4",
+          "row": 4,
+          "column": 5,
+          "value": "Тепловая энергия",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "F4": {
+          "address": "F4",
+          "row": 4,
+          "column": 6,
+          "value": "Газ",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "G4": {
+          "address": "G4",
+          "row": 4,
+          "column": 7,
+          "value": "Мазут",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "H4": {
+          "address": "H4",
+          "row": 4,
+          "column": 8,
+          "value": "Уголь",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "J4": {
+          "address": "J4",
+          "row": 4,
+          "column": 10,
+          "value": "Нефтепродукты",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "O4": {
+          "address": "O4",
+          "row": 4,
+          "column": 15,
+          "value": "Вода",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "P4": {
+          "address": "P4",
+          "row": 4,
+          "column": 16,
+          "value": "Примечание",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C5": {
+          "address": "C5",
+          "row": 5,
+          "column": 3,
+          "value": "актив      Р",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "D5": {
+          "address": "D5",
+          "row": 5,
+          "column": 4,
+          "value": "реактив Q",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "J5": {
+          "address": "J5",
+          "row": 5,
+          "column": 10,
+          "value": "Бензин",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "K5": {
+          "address": "K5",
+          "row": 5,
+          "column": 11,
+          "value": "Дизель",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "L5": {
+          "address": "L5",
+          "row": 5,
+          "column": 12,
+          "value": "Керосин",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "M5": {
+          "address": "M5",
+          "row": 5,
+          "column": 13,
+          "value": "ГСМ (Горюче-смазочные материалы)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "N5": {
+          "address": "N5",
+          "row": 5,
+          "column": 14,
+          "value": "Прочее",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "E7": {
+          "address": "E7",
+          "row": 7,
+          "column": 5,
+          "value": "Гкал",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "F7": {
+          "address": "F7",
+          "row": 7,
+          "column": 6,
+          "value": "тыс. м",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "G7": {
+          "address": "G7",
+          "row": 7,
+          "column": 7,
+          "value": "тонна",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "H7": {
+          "address": "H7",
+          "row": 7,
+          "column": 8,
+          "value": "тонна",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "J7": {
+          "address": "J7",
+          "row": 7,
+          "column": 10,
+          "value": "тонна",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "O7": {
+          "address": "O7",
+          "row": 7,
+          "column": 15,
+          "value": "м³",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A8": {
+          "address": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Установленная электрическая мощность",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A9": {
+          "address": "A9",
+          "row": 9,
+          "column": 1,
+          "value": "Транзитным абониментам",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A10": {
+          "address": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "Общее потребление по предприятию",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A11": {
+          "address": "A11",
+          "row": 11,
+          "column": 1,
+          "value": "– на технологические нужды",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A12": {
+          "address": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "– на собственные нужды предприятия",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A13": {
+          "address": "A13",
+          "row": 13,
+          "column": 1,
+          "value": "– на производственные нужды",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A14": {
+          "address": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "– на хозяйственно-бытовые нужды",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A15": {
+          "address": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "В разрезе видов выпускаемой продукции (основной и побочной) ",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A16": {
+          "address": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "1. Продукция (услуга)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A17": {
+          "address": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "......",
+          "data_type": "s",
+          "has_formula": false
+        }
+      }
+    },
+    "tables": [
+      {
+        "table_range": {
+          "start_row": 4,
+          "end_row": 5,
+          "start_column": 1,
+          "end_column": 16,
+          "start_address": "A4",
+          "end_address": "P5"
+        },
+        "header_rows": [
+          {
+            "row": 4,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Структура параметров баланса",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 3,
+                "column_letter": "C",
+                "value": "Электр энергияси",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 5,
+                "column_letter": "E",
+                "value": "Тепловая энергия",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 6,
+                "column_letter": "F",
+                "value": "Газ",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 7,
+                "column_letter": "G",
+                "value": "Мазут",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 8,
+                "column_letter": "H",
+                "value": "Уголь",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 10,
+                "column_letter": "J",
+                "value": "Нефтепродукты",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 15,
+                "column_letter": "O",
+                "value": "Вода",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 16,
+                "column_letter": "P",
+                "value": "Примечание",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "cells": [
+              {
+                "column": 3,
+                "column_letter": "C",
+                "value": "актив      Р",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 4,
+                "column_letter": "D",
+                "value": "реактив Q",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 10,
+                "column_letter": "J",
+                "value": "Бензин",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 11,
+                "column_letter": "K",
+                "value": "Дизель",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 12,
+                "column_letter": "L",
+                "value": "Керосин",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 13,
+                "column_letter": "M",
+                "value": "ГСМ (Горюче-смазочные материалы)",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 14,
+                "column_letter": "N",
+                "value": "Прочее",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "data_rows": [],
+        "column_types": [],
+        "row_count": 0,
+        "column_count": 16
+      }
+    ],
+    "semantic_analysis": {
+      "sheet_purpose": "structure",
+      "resource_types": [
+        "gas",
+        "water",
+        "fuel",
+        "coal"
+      ],
+      "time_periods": [],
+      "data_categories": [],
+      "key_indicators": []
+    },
+    "summary": {
+      "total_tables": 1,
+      "total_rows": 33,
+      "total_columns": 16,
+      "data_regions": 0
+    }
+  },
+  "summary": {
+    "total_tables": 1,
+    "total_rows": 33,
+    "total_columns": 16,
+    "sheet_purpose": "structure",
+    "resource_types": [
+      "gas",
+      "water",
+      "fuel",
+      "coal"
+    ],
+    "time_periods": []
+  }
+}

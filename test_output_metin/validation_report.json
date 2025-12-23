@@ -1,0 +1,70 @@
+{
+  "validation_date": "2025-11-15T00:53:13.494742",
+  "filled_template": "test_output_metin\\filled_template.xlsx",
+  "status": "excellent",
+  "score": 0.975517890772128,
+  "validations": {
+    "structural": {
+      "status": "passed",
+      "issues": [],
+      "warnings": [],
+      "details": {
+        "sheet_comparison": {
+          "original_sheets_count": 4,
+          "filled_sheets_count": 4,
+          "missing_sheets": [],
+          "extra_sheets": []
+        }
+      }
+    },
+    "filling": {
+      "status": "good",
+      "filled_cells": 164,
+      "empty_cells": 13,
+      "issues": [],
+      "warnings": [],
+      "details": {
+        "Summary": {
+          "filled_cells": 13,
+          "empty_cells": 3
+        },
+        "Gas": {
+          "filled_cells": 66,
+          "empty_cells": 4
+        },
+        "Electricity": {
+          "filled_cells": 66,
+          "empty_cells": 4
+        },
+        "Analytics": {
+          "filled_cells": 19,
+          "empty_cells": 2
+        },
+        "fill_rate": 92.65536723163842,
+        "total_cells": 177
+      }
+    },
+    "formats": {
+      "status": "passed",
+      "issues": [],
+      "warnings": [],
+      "details": {
+        "format_errors": 0,
+        "format_warnings": 0
+      }
+    },
+    "units": {
+      "status": "passed",
+      "issues": [],
+      "warnings": [],
+      "details": {}
+    }
+  },
+  "issues": [],
+  "warnings": [],
+  "statistics": {
+    "total_issues": 0,
+    "total_warnings": 0,
+    "validations_count": 4
+  }
+}

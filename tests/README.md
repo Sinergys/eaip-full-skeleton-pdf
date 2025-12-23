@@ -1,182 +1,146 @@
-# 🧪 Тестовый пакет проекта АТЛАС
+# ТЕСТЫ OCR МОДУЛЯ
 
-## 📋 Структура тестов
+## Структура тестов
 
 ```
 tests/
-├── __init__.py
-├── conftest.py              # Конфигурация pytest и фикстуры
-├── pytest.ini              # Настройки pytest
-├── requirements.txt        # Зависимости для тестов
-├── unit/                   # Unit-тесты
-│   ├── test_ai_parser.py
-│   ├── test_ai_anomaly_detector.py
-│   ├── test_ai_data_validator.py
-│   ├── test_ai_compliance_checker.py
-│   ├── test_ai_efficiency_analyzer.py
-│   ├── test_ai_energy_verifier.py
-│   ├── test_ai_ocr_enhancer.py
-│   ├── test_ai_table_parser.py
-│   ├── test_ai_quality_reporter.py
-│   ├── test_ai_base_client.py
-│   ├── test_ai_client_factory.py
-│   └── test_ai_config.py
-├── integration/            # Интеграционные тесты
-│   └── test_pdf_pipeline.py
-├── performance/            # Тесты производительности
-│   ├── test_ocr_performance.py
-│   └── test_ai_performance.py
-└── fixtures/               # Mock-данные
-    └── mock_energy_passport_data.py
+├── README.md                    # Этот файл
+├── test_fix_string_content.py   # Unit-тесты для fix_string_content()
+├── test_confidence_thresholds.py # Unit-тесты для порогов confidence
+├── test_gemini_retry.py         # Integration-тесты для retry логики
+└── test_ocr_integration.py      # Integration-тесты для полного пайплайна
 ```
 
-## 🚀 Запуск тестов
+## Запуск тестов локально
 
-### Установка зависимостей
+### Предварительные требования
 
-```bash
-cd tests
-pip install -r requirements.txt
-```
+1. Установлены зависимости:
+   ```bash
+   pip install pytest pytest-cov google-generativeai pillow pytesseract pdf2image
+   ```
+
+2. Настроен Tesseract OCR (для локальных тестов)
+
+3. Настроен API ключ Gemini (для integration-тестов):
+   - Ключ должен быть в `eaip_full_skeleton/services/ingest/utils/gemini_vision_ocr.py`
 
 ### Запуск всех тестов
 
 ```bash
 # Из корня проекта
-pytest tests/
+pytest tests/ -v
 
 # С покрытием кода
-pytest tests/ --cov=services/ingest --cov-report=html
+pytest tests/ --cov=eaip_full_skeleton/services/ingest --cov-report=html
 ```
 
-### Запуск конкретных тестов
+### Запуск конкретного теста
 
 ```bash
-# Только unit-тесты
-pytest tests/unit/ -m unit
+# Unit-тесты
+pytest tests/test_fix_string_content.py -v
 
-# Только интеграционные тесты
-pytest tests/integration/ -m integration
-
-# Только тесты производительности
-pytest tests/performance/ -m performance
-
-# Конкретный тест
-pytest tests/unit/test_ai_parser.py::TestAIParser::test_init_deepseek
+# Integration-тесты
+pytest tests/test_ocr_integration.py -v
 ```
 
-### Запуск с verbose выводом
+### Запуск с фильтрацией
 
 ```bash
-pytest tests/ -v
+# Только быстрые тесты (без API вызовов)
+pytest tests/ -v -m "not slow"
+
+# Только тесты с API
+pytest tests/ -v -m "api"
 ```
 
-## 📊 Покрытие кода
+## Запуск в CI
+
+### GitHub Actions (пример)
+
+```yaml
+name: OCR Tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - run: pip install -r requirements.txt
+      - run: pytest tests/ -v --cov
+```
+
+### Локальный CI-симулятор
 
 ```bash
-# Генерация отчета о покрытии
-pytest tests/ --cov=services/ingest --cov-report=term-missing
-
-# HTML отчет
-pytest tests/ --cov=services/ingest --cov-report=html
-# Откройте htmlcov/index.html в браузере
+# Запуск с теми же параметрами, что в CI
+pytest tests/ -v --cov --cov-report=xml --junitxml=test-results.xml
 ```
 
-## 🔧 Настройка тестов
-
-### Переменные окружения
-
-Тесты используют тестовые переменные окружения из `conftest.py`:
-
-```python
-os.environ.setdefault("AI_ENABLED", "false")
-os.environ.setdefault("POSTGRES_USER", "test_user")
-```
-
-### Mock-данные
-
-Используйте фикстуры из `conftest.py`:
-
-```python
-def test_example(sample_energy_passport_data, mock_ai_client):
-    # Используйте mock-данные
-    data = sample_energy_passport_data
-    # Используйте mock AI клиент
-    client = mock_ai_client
-```
-
-## 📝 Написание новых тестов
-
-### Структура теста
+## Структура тестового кейса
 
 ```python
 import pytest
-from unittest.mock import Mock, patch
+from eaip_full_skeleton.services.ingest.utils.gemini_vision_ocr import extract_with_gemini_vision
 
-class TestMyModule:
-    """Тесты для MyModule"""
-    
-    @pytest.fixture
-    def my_fixture(self):
-        """Фикстура для теста"""
-        return {"test": "data"}
-    
-    def test_basic_functionality(self, my_fixture):
-        """Тест базовой функциональности"""
-        assert my_fixture["test"] == "data"
-    
-    @patch('module.external_dependency')
-    def test_with_mock(self, mock_dependency):
-        """Тест с моком"""
-        mock_dependency.return_value = "mocked"
-        result = function_under_test()
-        assert result == "mocked"
+class TestExample:
+    def test_basic_case(self):
+        """Описание теста"""
+        # Arrange
+        input_data = "..."
+        
+        # Act
+        result = function_under_test(input_data)
+        
+        # Assert
+        assert result == expected_output
 ```
 
-### Маркеры тестов
+## Маркеры тестов
 
-Используйте маркеры для категоризации:
+- `@pytest.mark.unit` - Unit-тесты (быстрые, без внешних зависимостей)
+- `@pytest.mark.integration` - Integration-тесты (требуют API/файлы)
+- `@pytest.mark.slow` - Медленные тесты (API вызовы, большие файлы)
+- `@pytest.mark.api` - Тесты с внешними API
 
-```python
-@pytest.mark.unit
-def test_unit():
-    pass
-
-@pytest.mark.integration
-def test_integration():
-    pass
-
-@pytest.mark.performance
-def test_performance():
-    pass
-
-@pytest.mark.slow
-def test_slow():
-    pass
-```
-
-## 🎯 Цели покрытия
-
-- **Unit-тесты**: > 80% покрытие всех модулей
-- **Интеграционные тесты**: Все основные пайплайны
-- **Тесты производительности**: Критические операции
-
-## 🔍 Отладка тестов
+## Отладка тестов
 
 ```bash
-# Запуск с отладкой
-pytest tests/ --pdb
+# Запуск с выводом print()
+pytest tests/ -v -s
+
+# Запуск конкретного теста с отладкой
+pytest tests/test_example.py::TestClass::test_method -v -s
 
 # Остановка на первой ошибке
-pytest tests/ -x
-
-# Детальный вывод
-pytest tests/ -vv
+pytest tests/ -v -x
 ```
 
-## 📚 Дополнительная информация
+## Покрытие кода
 
-- [Документация pytest](https://docs.pytest.org/)
-- [Mock объекты](https://docs.python.org/3/library/unittest.mock.html)
-- [Fixtures](https://docs.pytest.org/en/stable/fixture.html)
+```bash
+# Генерация HTML отчёта
+pytest tests/ --cov=eaip_full_skeleton/services/ingest --cov-report=html
+
+# Открыть отчёт
+# Windows: start htmlcov/index.html
+# Linux/Mac: open htmlcov/index.html
+```
+
+## Известные проблемы
+
+1. **Tesseract не найден:** Убедитесь, что Tesseract установлен и доступен в PATH
+2. **Gemini API таймаут:** Некоторые тесты могут падать из-за таймаутов API
+3. **Зависимости:** Все зависимости должны быть установлены перед запуском
+
+## Контакты
+
+При проблемах с тестами проверьте:
+- Логи в `reports/ocr/`
+- Конфигурацию в `config/ocr.yml`
+- Статус внешних сервисов (Gemini API)
 

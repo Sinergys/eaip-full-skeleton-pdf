@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "created_at": "2025-11-30T13:52:00",
+    "last_updated": "2025-11-30T13:52:00",
+    "version": "1.0",
+    "description": "Единый файл контекста для всех AI-агентов проекта EAIP"
+  },
+  "project_info": {
+    "name": "EAIP - Energy Audit Information Platform",
+    "root_path": "C:\\eaip\\",
+    "location": "C:\\eaip\\",
+    "moved_from": "C:\\Users\\DELL\\Downloads\\eaip_full_skeleton_cursor_ready\\",
+    "move_date": "2025-11-10"
+  },
+  "critical_paths": {
+    "database": {
+      "sqlite": "eaip_full_skeleton/services/ingest/ingest_data.db",
+      "env_variable": "INGEST_DB_PATH",
+      "default": "ingest_data.db"
+    },
+    "aggregated_data": "C:\\eaip\\eaip_full_skeleton\\services\\ingest\\data\\inbox\\aggregated\\",
+    "source_files": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\",
+    "config_ocr": "config/ocr.yml",
+    "tasks_file": "docs/AGENT_TASKS_UNIFIED.json",
+    "sync_files": {
+      "status": "docs/AGENT_TASK_STATUS.json",
+      "locks": "docs/AGENT_LOCKS.json",
+      "log": "docs/AGENT_WORK_LOG.jsonl"
+    }
+  },
+  "api_keys": {
+    "note": "API ключи хранятся в infra/.env (НЕ в git!)",
+    "deepseek": {
+      "variable": "DEEPSEEK_API_KEY",
+      "file": "infra/.env",
+      "model": "deepseek-chat",
+      "documentation": "eaip_full_skeleton/services/ingest/AI_SETUP.md"
+    },
+    "gemini": {
+      "variable": "GOOGLE_API_KEY",
+      "file": "infra/.env",
+      "model": "gemini-2.0-flash",
+      "usage": "eaip_full_skeleton/services/ingest/utils/gemini_vision_ocr.py"
+    }
+  },
+  "ocr_config": {
+    "file": "config/ocr.yml",
+    "confidence_thresholds": {
+      "text": 0.30,
+      "numbers": 0.60,
+      "dates": 0.80,
+      "tables": 0.70
+    },
+    "api": {
+      "timeout_seconds": 600,
+      "retry_attempts": 3,
+      "backoff_base_seconds": 2
+    },
+    "adaptive_processing": {
+      "enabled": true,
+      "min_confidence": 0.70,
+      "max_retry_attempts": 1
+    }
+  },
+  "key_modules": {
+    "ingest_service": {
+      "main": "eaip_full_skeleton/services/ingest/main.py",
+      "database": "eaip_full_skeleton/services/ingest/database.py",
+      "file_parser": "eaip_full_skeleton/services/ingest/file_parser.py"
+    },
+    "ocr": {
+      "gemini_vision": "eaip_full_skeleton/services/ingest/utils/gemini_vision_ocr.py",
+      "data_adapter": "eaip_full_skeleton/services/ingest/utils/ocr_data_adapter.py",
+      "integration": "eaip_full_skeleton/services/ingest/utils/ocr_integration.py"
+    },
+    "aggregation": {
+      "energy_aggregator": "eaip_full_skeleton/services/ingest/utils/energy_aggregator.py",
+      "aggregation_log": "eaip_full_skeleton/services/ingest/utils/aggregation_log.py"
+    },
+    "parsers": {
+      "equipment": "eaip_full_skeleton/services/ingest/utils/equipment_parser.py",
+      "building_envelope": "eaip_full_skeleton/services/ingest/utils/building_envelope_parser.py",
+      "nodes": "eaip_full_skeleton/services/ingest/utils/nodes_parser.py"
+    },
+    "tools": {
+      "fill_passport": "tools/fill_energy_passport.py",
+      "unified_tasks": "tools/unified_tasks_manager.py",
+      "agent_sync": "tools/agent_sync_utils.py"
+    }
+  },
+  "agent_roles": {
+    "agent_1": {
+      "name": "Agent-1 (Auto)",
+      "role": "Основной координатор, создатель отчетов, интегратор",
+      "priorities": ["Критические задачи", "Документация", "Отчёты"],
+      "not_responsible": ["Импорт данных в БД (B4-B10)", "OCR обработка", "Парсинг файлов"]
+    },
+    "agent_2": {
+      "name": "Agent-2",
+      "role": "Реализация функциональности, импорт данных, OCR",
+      "priorities": ["Блоки импорта", "Парсинг", "Интеграция модулей"],
+      "not_responsible": ["Документация", "Отчёты"]
+    }
+  },
+  "work_rules": {
+    "block_duration_minutes": 10,
+    "lock_duration_minutes": 15,
+    "tldv_required": true,
+    "wait_for_user": true,
+    "rules_file": "docs/PROJECT_WORK_RULES.md"
+  },
+  "sync_system": {
+    "status_file": "docs/AGENT_TASK_STATUS.json",
+    "locks_file": "docs/AGENT_LOCKS.json",
+    "log_file": "docs/AGENT_WORK_LOG.jsonl",
+    "tasks_file": "docs/AGENT_TASKS_UNIFIED.json"
+  },
+  "documentation": {
+    "critical_settings": "docs/PROJECT_CRITICAL_SETTINGS.md",
+    "work_rules": "docs/PROJECT_WORK_RULES.md",
+    "sync_system": "docs/AGENT_SYNC_SYSTEM.md",
+    "quick_start": "docs/AGENT_SYNC_QUICK_START.md",
+    "knowledge_base": "docs/AGENT_KNOWLEDGE_BASE.md"
+  },
+  "file_loading": {
+    "critical_files": {
+      "description": "Обязательные файлы для чтения при старте работы агента",
+      "files": [
+        {
+          "key": "context",
+          "path": "docs/AGENT_CONTEXT.json",
+          "size_kb": 4.66,
+          "required": true,
+          "reason": "Единый файл контекста со всеми настройками"
+        },
+        {
+          "key": "tasks",
+          "path": "docs/AGENT_TASKS_UNIFIED.json",
+          "size_kb": 37.72,
+          "required": true,
+          "reason": "Источник правды для всех задач"
+        }
+      ],
+      "total_size_kb": 42.38
+    },
+    "optional_files": {
+      "description": "Опциональные файлы, загружаемые по требованию",
+      "loader": "tools/context_loader.py",
+      "files": [
+        {
+          "key": "task_status",
+          "path": "docs/AGENT_TASK_STATUS.json",
+          "size_kb": 0.40,
+          "when": "При выборе задачи или проверке статуса"
+        },
+        {
+          "key": "locks",
+          "path": "docs/AGENT_LOCKS.json",
+          "size_kb": 0.17,
+          "when": "При блокировке задачи"
+        },
+        {
+          "key": "session_state",
+          "path": "docs/AGENT_SESSION_STATE.json",
+          "size_kb": 2.61,
+          "when": "При восстановлении состояния"
+        },
+        {
+          "key": "knowledge_base",
+          "path": "docs/AGENT_KNOWLEDGE_BASE.md",
+          "size_kb": 7.70,
+          "when": "При необходимости справки"
+        },
+        {
+          "key": "critical_settings",
+          "path": "docs/PROJECT_CRITICAL_SETTINGS.md",
+          "size_kb": 6.61,
+          "when": "Как справочник (дублирует AGENT_CONTEXT.json)"
+        }
+      ]
+    },
+    "loader_utility": {
+      "path": "tools/context_loader.py",
+      "functions": [
+        "load_critical_context() - загрузка обязательных файлов",
+        "load_optional_file(file_key) - загрузка опционального файла",
+        "get_file_info(file_key) - информация о файле",
+        "get_startup_summary() - сводка о файлах"
+      ]
+    }
+  }
+}
+

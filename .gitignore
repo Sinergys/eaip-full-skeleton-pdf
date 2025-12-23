@@ -1,20 +1,3 @@
-# Environment variables and secrets
-.env
-*.env
-!*.env.example
-GITHUB_TOKEN
-*.token
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
 # Python
 __pycache__/
 *.py[cod]
@@ -24,61 +7,47 @@ __pycache__/
 .venv/
 venv/
 ENV/
+env/
 
-# Logs
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docker
+.dockerignore
+
+# Data & temp files
+*.csv
+*.pdf
 *.log
-
-# Local databases and large data files
-ingest_data.db
 *.db
-*.sqlite
-*.sqlite3
+data/
+tmp/
+temp/
 
-# Database backups and cleanup
-backups/
-quarantine/
+# Environment
+.env
+.env.local
+.env.*.local
 
-# Test / cache directories
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Build / packaging
+# Build artifacts
+*.egg-info/
 dist/
 build/
-*.egg-info/
 
-# Temporary / editor
-*.tmp
-*.bak
+# Helm
+*.tgz
 
-# Runtime logs
-*.jsonl
-logs/
+# Fonts (keep structure but ignore large binaries if needed)
+# Uncomment if you want to exclude fonts:
+# *.ttf
+# *.otf
 
-# Backup files
-*.backup
-
-# ========================================
-# AUDIT & ANALYSIS (Added 2025-12-12)
-# ========================================
-
-# Temporary analysis files
-*_analysis_temp.md
-*_scratch.md
-wave*_draft*.json
-audit_temp/
-
-# Intermediate group analysis (keep final reports)
-group_*_analysis.md
-intermediate_*.json
-
-# Scripts for one-time operations
-cleanup_*.sh
-analyze_*.sh
-temp_*.py
-
-# Personal notes (not project documentation)
-NOTES_*.md
-TODO_personal.md
-scratch/

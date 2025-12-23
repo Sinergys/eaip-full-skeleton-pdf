@@ -1,0 +1,86 @@
+{
+  "analysis_date": "2025-11-30T14:04:09.048933",
+  "files": [
+    {
+      "filename": "AGENT_CONTEXT.json",
+      "path": "C:\\eaip\\docs\\AGENT_CONTEXT.json",
+      "size_bytes": 4774,
+      "size_kb": 4.66,
+      "exists": true,
+      "category": "critical",
+      "reason": "Критически необходим для работы агентов"
+    },
+    {
+      "filename": "AGENT_KNOWLEDGE_BASE.md",
+      "path": "C:\\eaip\\docs\\AGENT_KNOWLEDGE_BASE.md",
+      "size_bytes": 7886,
+      "size_kb": 7.7,
+      "exists": true,
+      "category": "optional",
+      "reason": "Может быть загружен по требованию"
+    },
+    {
+      "filename": "PROJECT_CRITICAL_SETTINGS.md",
+      "path": "C:\\eaip\\docs\\PROJECT_CRITICAL_SETTINGS.md",
+      "size_bytes": 6765,
+      "size_kb": 6.61,
+      "exists": true,
+      "category": "optional",
+      "reason": "Может быть загружен по требованию"
+    },
+    {
+      "filename": "AGENT_SESSION_STATE.json",
+      "path": "C:\\eaip\\docs\\AGENT_SESSION_STATE.json",
+      "size_bytes": 2673,
+      "size_kb": 2.61,
+      "exists": true,
+      "category": "important",
+      "reason": "Важен для синхронизации и состояния"
+    },
+    {
+      "filename": "AGENT_TASK_STATUS.json",
+      "path": "C:\\eaip\\docs\\AGENT_TASK_STATUS.json",
+      "size_bytes": 406,
+      "size_kb": 0.4,
+      "exists": true,
+      "category": "important",
+      "reason": "Важен для синхронизации и состояния"
+    },
+    {
+      "filename": "AGENT_LOCKS.json",
+      "path": "C:\\eaip\\docs\\AGENT_LOCKS.json",
+      "size_bytes": 170,
+      "size_kb": 0.17,
+      "exists": true,
+      "category": "important",
+      "reason": "Важен для синхронизации и состояния"
+    },
+    {
+      "filename": "AGENT_TASKS_UNIFIED.json",
+      "path": "C:\\eaip\\docs\\AGENT_TASKS_UNIFIED.json",
+      "size_bytes": 38629,
+      "size_kb": 37.72,
+      "exists": true,
+      "category": "critical",
+      "reason": "Критически необходим для работы агентов"
+    }
+  ],
+  "total_size_bytes": 61303,
+  "total_size_kb": 59.87,
+  "categories": {
+    "critical": [
+      "AGENT_CONTEXT.json",
+      "AGENT_TASKS_UNIFIED.json"
+    ],
+    "important": [
+      "AGENT_SESSION_STATE.json",
+      "AGENT_TASK_STATUS.json",
+      "AGENT_LOCKS.json"
+    ],
+    "optional": [
+      "AGENT_KNOWLEDGE_BASE.md",
+      "PROJECT_CRITICAL_SETTINGS.md"
+    ]
+  },
+  "total_size_mb": 0.06
+}

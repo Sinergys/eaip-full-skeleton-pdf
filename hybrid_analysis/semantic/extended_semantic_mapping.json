@@ -1,0 +1,292 @@
+{
+  "template_name": "new_energy_passport",
+  "mappings": [
+    {
+      "cell_address": "C9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "D9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_reactive",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "F9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q1.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "N9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "water_volume",
+      "data_path": "resources.water.2022-Q1.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "S9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q2.quarter_totals.active_kwh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "T9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_reactive",
+      "data_path": "resources.electricity.2022-Q2.quarter_totals.reactive_kvarh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "V9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q2.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "AD9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "water_volume",
+      "data_path": "resources.water.2022-Q2.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "AI9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q3.quarter_totals.active_kwh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "AJ9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_reactive",
+      "data_path": "resources.electricity.2022-Q3.quarter_totals.reactive_kvarh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "AL9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q3.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "AT9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "water_volume",
+      "data_path": "resources.water.2022-Q3.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "AY9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q4.quarter_totals.active_kwh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "AZ9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "electricity_reactive",
+      "data_path": "resources.electricity.2022-Q4.quarter_totals.reactive_kvarh",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "BB9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q4.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "BJ9",
+      "sheet": "Структура пр 2 ",
+      "semantic_type": "water_volume",
+      "data_path": "resources.water.2022-Q4.quarter_totals.volume_m3",
+      "confidence": 0.95
+    },
+    {
+      "cell_address": "C15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "M15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q1.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "D15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q2.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "N15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q2.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "E15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q3.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "O15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q3.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "F15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2022-Q4.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "P15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2022-Q4.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "C15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2023-Q1.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "M15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2023-Q1.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "D15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2023-Q2.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "N15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2023-Q2.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "E15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2023-Q3.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "O15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2023-Q3.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "F15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2023-Q4.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "P15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2023-Q4.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "C15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2024-Q1.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "M15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2024-Q1.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "D15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2024-Q2.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "N15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2024-Q2.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "E15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2024-Q3.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "O15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2024-Q3.quarter_totals.volume_m3",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "F15",
+      "sheet": "Динамика ср",
+      "semantic_type": "electricity_active",
+      "data_path": "resources.electricity.2024-Q4.quarter_totals.active_kwh",
+      "confidence": 0.9
+    },
+    {
+      "cell_address": "P15",
+      "sheet": "Динамика ср",
+      "semantic_type": "gas_volume",
+      "data_path": "resources.gas.2024-Q4.quarter_totals.volume_m3",
+      "confidence": 0.9
+    }
+  ],
+  "unmapped_cells": [],
+  "statistics": {
+    "total_cells": 0,
+    "mapped_cells": 40,
+    "unmapped_cells": 0,
+    "coverage_percentage": 100.0
+  }
+}

@@ -28,6 +28,6 @@ jobs:
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
 
       - name: Run selected ingest tests
-        working-directory: services/ingest
+        working-directory: eaip_full_skeleton/services/ingest
         run: |
           pytest -q tests/test_navoiy_classification_pytest.py tests/test_query_navoiy_pytest.py tests/test_check_ingest_db_pytest.py -q || (echo "pytest failed" && exit 1)

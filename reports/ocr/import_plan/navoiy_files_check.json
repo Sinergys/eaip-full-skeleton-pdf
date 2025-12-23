@@ -1,0 +1,165 @@
+{
+  "check_date": "2025-11-30T11:43:21.246443",
+  "navoiy_enterprise": {
+    "id": 3,
+    "name": "Navoiy IES",
+    "uploads_count": 10,
+    "batch_ids": [
+      "ea46967b-22d2-4944-8206-d278539b6c75",
+      "8d591c4f-f504-4f99-b827-a2817805d7df",
+      "653b802a-8164-4931-98ba-b2d14c7bf0ca",
+      "09c2f709-b2cb-48ba-a846-c5c3222739f4",
+      "9ac5d80e-0cd4-44d5-8526-f26814c7e984",
+      "fcafaee1-e5e4-4967-b53a-5137afa2ea19",
+      "c7d1e609-e833-46a4-9172-3e48cd9d96eb",
+      "18114b16-ea95-4066-9acf-457b08686d66",
+      "559a95ee-b8ce-42c8-83b9-c779b1ed3ca6",
+      "817ff2ec-a044-4f20-a4cd-b2ca6c2c6679"
+    ]
+  },
+  "files_analysis": {
+    "total_files": 19,
+    "navoiy_files": [],
+    "other_files": [
+      {
+        "filename": "06d2ab5d-2bc2-46bf-909b-bb1b49fb3599_aggregated.json",
+        "batch_id": "06d2ab5d-2bc2-46bf-909b-bb1b49fb3599",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "0bebb988-518b-40d1-a572-330d83db1a1a_aggregated.json",
+        "batch_id": "0bebb988-518b-40d1-a572-330d83db1a1a",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "1f8011a4-8a38-4042-856c-7f0a6e1ace4e_aggregated.json",
+        "batch_id": "1f8011a4-8a38-4042-856c-7f0a6e1ace4e",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "2602e105-0f8e-403f-85d7-1351608f9e16_aggregated.json",
+        "batch_id": "2602e105-0f8e-403f-85d7-1351608f9e16",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "38bf62db-932c-4e0e-bec4-85aca217cc0c_aggregated.json",
+        "batch_id": "38bf62db-932c-4e0e-bec4-85aca217cc0c",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "43ec34cd-657e-4ce6-afff-1edda0a4fe12_aggregated.json",
+        "batch_id": "43ec34cd-657e-4ce6-afff-1edda0a4fe12",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "5946260e-fe30-4b57-a6c9-ef60301d0953_aggregated.json",
+        "batch_id": "5946260e-fe30-4b57-a6c9-ef60301d0953",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "849e4240-52d1-4d43-ad1a-bfe771b45cbe_aggregated.json",
+        "batch_id": "849e4240-52d1-4d43-ad1a-bfe771b45cbe",
+        "enterprise": "METIN IRODA",
+        "size_kb": 13.24,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "93eb3792-2f23-45a9-9c4c-0256ea0dc4c2_aggregated.json",
+        "batch_id": "93eb3792-2f23-45a9-9c4c-0256ea0dc4c2",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "9e0d7d5a-b62b-4f5f-92f6-4b08573e45c0_aggregated.json",
+        "batch_id": "9e0d7d5a-b62b-4f5f-92f6-4b08573e45c0",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "a356060f-72fe-410e-aae2-c031e206dcf9_aggregated.json",
+        "batch_id": "a356060f-72fe-410e-aae2-c031e206dcf9",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.23,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "a412f6ba-46a3-468b-83f3-cbb26edd7e4a_aggregated.json",
+        "batch_id": "a412f6ba-46a3-468b-83f3-cbb26edd7e4a",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "a5fcd47f-0126-4bd3-a472-ed160f2d1d22_aggregated.json",
+        "batch_id": "a5fcd47f-0126-4bd3-a472-ed160f2d1d22",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.23,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "b04e6907-75fd-4c37-a306-40e7e21f3dff_aggregated.json",
+        "batch_id": "b04e6907-75fd-4c37-a306-40e7e21f3dff",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "bb2e9573-1c88-4003-b2e4-0ecadd2370ae_aggregated.json",
+        "batch_id": "bb2e9573-1c88-4003-b2e4-0ecadd2370ae",
+        "enterprise": "METIN IRODA",
+        "size_kb": 7.13,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "c17a2fe5-5b7d-4df9-ba39-cfd3501f0250_aggregated.json",
+        "batch_id": "c17a2fe5-5b7d-4df9-ba39-cfd3501f0250",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "e1f9ce34-5e7f-4f2b-bac0-bd9cd9ffb49a_aggregated.json",
+        "batch_id": "e1f9ce34-5e7f-4f2b-bac0-bd9cd9ffb49a",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "e839e7d5-24f9-48e9-a31c-ea12b0583c02_aggregated.json",
+        "batch_id": "e839e7d5-24f9-48e9-a31c-ea12b0583c02",
+        "enterprise": "METIN IRODA",
+        "size_kb": 0.39,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      },
+      {
+        "filename": "f192f3f7-b247-4e4b-ad25-e938df3aeec9_aggregated.json",
+        "batch_id": "f192f3f7-b247-4e4b-ad25-e938df3aeec9",
+        "enterprise": "METIN IRODA",
+        "size_kb": 17.92,
+        "status": "⚠️ Другое предприятие: METIN IRODA"
+      }
+    ],
+    "unknown_files": []
+  },
+  "recommendation": {
+    "status": "error",
+    "navoiy_files_count": 0,
+    "expected_count": 10
+  }
+}

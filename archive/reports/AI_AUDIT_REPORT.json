@@ -1,0 +1,543 @@
+{
+  "audit_date": "2025-01-XX",
+  "project_version": "v0.3.0",
+  "overall_score": 6,
+  "summary": {
+    "status": "basic_integration_complete",
+    "ready_for_production": false,
+    "main_findings": [
+      "Базовая интеграция AI реализована в ingest service",
+      "AI не интегрирован в validate, recommend, analytics сервисы",
+      "Отсутствует кэширование результатов AI запросов",
+      "Нет мониторинга использования и стоимости AI"
+    ]
+  },
+  "ai_components_found": [
+    {
+      "module": "services/ingest/ai_parser.py",
+      "type": "api_integration",
+      "provider": ["deepseek", "openai", "anthropic"],
+      "status": "working",
+      "functionality": "Распознавание PDF и изображений через Vision API, структурирование данных",
+      "lines_of_code": 356,
+      "score": 8,
+      "features": [
+        "Поддержка DeepSeek API (OpenAI-совместимый)",
+        "Поддержка OpenAI GPT-4 Vision",
+        "Поддержка Anthropic Claude",
+        "Распознавание PDF через Vision API",
+        "Распознавание изображений (JPG, PNG)",
+        "Структурирование данных через AI",
+        "Автоматический fallback на традиционные методы"
+      ],
+      "issues": [
+        "Нет обработки rate limits API",
+        "Нет timeout для долгих запросов",
+        "Нет валидации размера изображений",
+        "Ограничение текста до 8000 символов в structure_data()"
+      ]
+    },
+    {
+      "module": "services/ingest/file_parser.py",
+      "type": "integration",
+      "provider": "multiple",
+      "status": "working",
+      "functionality": "Интеграция AI парсера в процесс парсинга файлов",
+      "score": 7,
+      "integration_points": [
+        "Строка 836-865: AI для PDF файлов",
+        "Строка 867-917: AI для изображений"
+      ],
+      "features": [
+        "Автоматическое использование AI для PDF (если AI_PREFER_FOR_PDF=true)",
+        "Автоматическое использование AI для изображений",
+        "Fallback на традиционный парсинг при ошибках",
+        "Флаг ai_used в результатах"
+      ],
+      "issues": [
+        "Нет обработки ошибок AI парсера",
+        "Нет логирования стоимости запросов",
+        "Нет метрик производительности"
+      ]
+    },
+    {
+      "module": "services/validate/main.py",
+      "type": "api_integration",
+      "provider": "none",
+      "status": "not_implemented",
+      "functionality": "AI валидация данных - не реализована",
+      "score": 1,
+      "current_implementation": "Заглушка: всегда возвращает passed: true",
+      "planned_features": [
+        "Интеллектуальная валидация данных",
+        "Проверка соответствия требованиям ПКМ №690",
+        "Генерация рекомендаций по исправлению"
+      ]
+    },
+    {
+      "module": "services/recommend/main.py",
+      "type": "api_integration",
+      "provider": "none",
+      "status": "not_implemented",
+      "functionality": "AI генерация рекомендаций - не реализована",
+      "score": 1,
+      "current_implementation": "Статические рекомендации (hardcoded)",
+      "planned_features": [
+        "AI генерация рекомендаций на основе данных аудита",
+        "Расчет ROI мероприятий",
+        "Приоритизация рекомендаций"
+      ]
+    },
+    {
+      "module": "services/analytics/main.py",
+      "type": "api_integration",
+      "provider": "none",
+      "status": "not_implemented",
+      "functionality": "AI прогнозирование и анализ - не реализовано",
+      "score": 1,
+      "current_implementation": "Простой прогноз (последнее значение)",
+      "planned_features": [
+        "ML-модель для прогнозирования энергопотребления",
+        "Выявление аномалий через AI",
+        "Анализ трендов"
+      ]
+    },
+    {
+      "module": "services/reports/main.py",
+      "type": "api_integration",
+      "provider": "none",
+      "status": "not_implemented",
+      "functionality": "AI генерация отчетов - не реализована",
+      "score": 2,
+      "current_implementation": "Шаблонная генерация PDF",
+      "planned_features": [
+        "AI генерация текста отчетов",
+        "Кастомизация отчетов на основе данных",
+        "Автоматическое создание выводов и рекомендаций"
+      ]
+    }
+  ],
+  "missing_components": [
+    {
+      "component": "AI кэширование",
+      "priority": "P0",
+      "description": "Кэширование результатов AI запросов для экономии средств",
+      "estimated_effort": "1-2 дня",
+      "impact": "high",
+      "benefits": [
+        "Экономия средств на повторных запросах",
+        "Ускорение обработки одинаковых файлов",
+        "Снижение нагрузки на API"
+      ]
+    },
+    {
+      "component": "Retry логика",
+      "priority": "P0",
+      "description": "Повторные попытки при ошибках API",
+      "estimated_effort": "1 день",
+      "impact": "high",
+      "benefits": [
+        "Обработка временных сбоев API",
+        "Повышение надежности системы",
+        "Улучшение пользовательского опыта"
+      ]
+    },
+    {
+      "component": "Мониторинг AI",
+      "priority": "P0",
+      "description": "Метрики использования, стоимости, ошибок",
+      "estimated_effort": "2 дня",
+      "impact": "high",
+      "benefits": [
+        "Отслеживание расходов на AI",
+        "Мониторинг производительности",
+        "Выявление проблем"
+      ]
+    },
+    {
+      "component": "AI валидация",
+      "priority": "P1",
+      "description": "Интеллектуальная валидация данных в validate service",
+      "estimated_effort": "3-5 дней",
+      "impact": "medium",
+      "benefits": [
+        "Улучшение качества данных",
+        "Автоматическая проверка соответствия требованиям",
+        "Генерация рекомендаций по исправлению"
+      ]
+    },
+    {
+      "component": "AI рекомендации",
+      "priority": "P1",
+      "description": "Генерация рекомендаций через AI в recommend service",
+      "estimated_effort": "3-5 дней",
+      "impact": "medium",
+      "benefits": [
+        "Персонализированные рекомендации",
+        "Расчет ROI мероприятий",
+        "Приоритизация по эффективности"
+      ]
+    },
+    {
+      "component": "Rate limiting",
+      "priority": "P1",
+      "description": "Ограничение запросов к AI API",
+      "estimated_effort": "1-2 дня",
+      "impact": "medium",
+      "benefits": [
+        "Защита от превышения лимитов API",
+        "Контроль расходов",
+        "Предотвращение блокировок"
+      ]
+    },
+    {
+      "component": "AI аналитика",
+      "priority": "P2",
+      "description": "ML-модель для прогнозирования в analytics service",
+      "estimated_effort": "5-7 дней",
+      "impact": "low",
+      "benefits": [
+        "Точное прогнозирование энергопотребления",
+        "Выявление аномалий",
+        "Анализ трендов"
+      ]
+    },
+    {
+      "component": "Система промптов",
+      "priority": "P2",
+      "description": "Шаблоны и версионирование промптов",
+      "estimated_effort": "2-3 дня",
+      "impact": "low",
+      "benefits": [
+        "Управление промптами",
+        "Версионирование",
+        "A/B тестирование"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "action": "Добавить кэширование результатов AI запросов",
+      "reason": "Экономия средств, ускорение обработки",
+      "effort": "1-2 дня",
+      "implementation": "Использовать Redis для кэша, ключ - хеш файла"
+    },
+    {
+      "priority": "P0",
+      "action": "Реализовать retry логику для AI API",
+      "reason": "Обработка временных сбоев API",
+      "effort": "1 день",
+      "implementation": "Экспоненциальный backoff, максимум 3 попытки"
+    },
+    {
+      "priority": "P0",
+      "action": "Добавить мониторинг использования AI",
+      "reason": "Отслеживание расходов и производительности",
+      "effort": "2 дня",
+      "implementation": "Метрики Prometheus: количество запросов, токены, стоимость, ошибки"
+    },
+    {
+      "priority": "P1",
+      "action": "Интегрировать AI в validate service",
+      "reason": "Интеллектуальная валидация данных",
+      "effort": "3-5 дней",
+      "implementation": "Создать ai_validator.py, интегрировать в validate/run endpoint"
+    },
+    {
+      "priority": "P1",
+      "action": "Интегрировать AI в recommend service",
+      "reason": "Генерация рекомендаций на основе данных",
+      "effort": "3-5 дней",
+      "implementation": "Создать ai_recommender.py, использовать данные аудита для генерации"
+    },
+    {
+      "priority": "P1",
+      "action": "Добавить rate limiting для AI API",
+      "reason": "Защита от превышения лимитов",
+      "effort": "1-2 дня",
+      "implementation": "Использовать Redis для счетчиков, ограничение по провайдеру"
+    },
+    {
+      "priority": "P2",
+      "action": "Интегрировать AI в analytics service",
+      "reason": "ML-модель для прогнозирования",
+      "effort": "5-7 дней",
+      "implementation": "Создать ML модель или использовать AI для прогнозирования"
+    },
+    {
+      "priority": "P2",
+      "action": "Создать систему промптов",
+      "reason": "Управление промптами для разных задач",
+      "effort": "2-3 дня",
+      "implementation": "Хранить промпты в БД или конфигурационных файлах, версионирование"
+    }
+  ],
+  "providers_support": {
+    "deepseek": {
+      "status": "fully_supported",
+      "tested": true,
+      "api_key_configured": true,
+      "cost": "very_low",
+      "api_key_location": "test_deepseek_simple.py (hardcoded for testing)",
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-chat",
+      "notes": "Рекомендуется как основной провайдер из-за низкой стоимости"
+    },
+    "openai": {
+      "status": "fully_supported",
+      "tested": false,
+      "api_key_configured": false,
+      "cost": "high",
+      "models": {
+        "vision": "gpt-4-vision-preview",
+        "text": "gpt-4"
+      },
+      "notes": "Высокое качество, но дорого"
+    },
+    "anthropic": {
+      "status": "fully_supported",
+      "tested": false,
+      "api_key_configured": false,
+      "cost": "medium",
+      "model": "claude-3-opus-20240229",
+      "notes": "Хорошее качество, средняя стоимость"
+    },
+    "google_gemini": {
+      "status": "stub_only",
+      "tested": false,
+      "api_key_configured": false,
+      "cost": "low",
+      "notes": "Заглушка в коде, не реализован"
+    }
+  },
+  "integration_status": {
+    "ingest_service": {
+      "status": "implemented",
+      "score": 7,
+      "features": [
+        "AI распознавание PDF",
+        "AI распознавание изображений",
+        "Структурирование данных",
+        "Fallback на традиционные методы"
+      ],
+      "missing": [
+        "Кэширование",
+        "Retry логика",
+        "Мониторинг",
+        "Rate limiting"
+      ],
+      "file": "services/ingest/file_parser.py",
+      "lines": [836, 867]
+    },
+    "validate_service": {
+      "status": "not_implemented",
+      "score": 1,
+      "features": [],
+      "missing": [
+        "AI валидация данных",
+        "Проверка соответствия ПКМ №690",
+        "Генерация рекомендаций по исправлению"
+      ],
+      "file": "services/validate/main.py",
+      "current_code": "Заглушка: всегда возвращает passed: true"
+    },
+    "recommend_service": {
+      "status": "not_implemented",
+      "score": 1,
+      "features": [],
+      "missing": [
+        "AI генерация рекомендаций",
+        "Расчет ROI",
+        "Приоритизация рекомендаций"
+      ],
+      "file": "services/recommend/main.py",
+      "current_code": "Статические рекомендации (hardcoded)"
+    },
+    "analytics_service": {
+      "status": "not_implemented",
+      "score": 1,
+      "features": [],
+      "missing": [
+        "ML-модель прогнозирования",
+        "Выявление аномалий",
+        "Анализ трендов"
+      ],
+      "file": "services/analytics/main.py",
+      "current_code": "Простой прогноз: последнее значение"
+    },
+    "reports_service": {
+      "status": "not_implemented",
+      "score": 2,
+      "features": [
+        "Генерация PDF"
+      ],
+      "missing": [
+        "AI генерация текста отчетов",
+        "Кастомизация отчетов",
+        "Автоматические выводы"
+      ],
+      "file": "services/reports/main.py"
+    }
+  },
+  "code_quality": {
+    "architecture": 8,
+    "error_handling": 6,
+    "logging": 7,
+    "testing": 2,
+    "documentation": 9,
+    "security": 5,
+    "overall": 6,
+    "notes": {
+      "architecture": "Хорошая структура классов, четкое разделение ответственности",
+      "error_handling": "Базовая обработка ошибок, но нет retry логики",
+      "logging": "Хорошее логирование, но нет структурированных логов",
+      "testing": "Только ручные тесты, нет unit/integration тестов",
+      "documentation": "Отличная документация, подробные инструкции",
+      "security": "API ключи в env, но нет ротации и шифрования"
+    }
+  },
+  "cost_analysis": {
+    "current_provider": "deepseek",
+    "estimated_monthly_cost": "$5-20",
+    "cost_per_file": "$0.01-0.05",
+    "monitoring": false,
+    "recommendation": "Добавить мониторинг для отслеживания расходов",
+    "cost_comparison": {
+      "deepseek": {
+        "per_1k_tokens": 0.00014,
+        "per_10_pages_pdf": "0.01-0.05",
+        "advantage": "В 200+ раз дешевле OpenAI"
+      },
+      "openai": {
+        "per_image": "0.01-0.03",
+        "per_1k_tokens": 0.03,
+        "per_10_pages_pdf": "0.30-0.50"
+      },
+      "anthropic": {
+        "per_image": 0.015,
+        "per_1k_tokens": 0.015,
+        "per_10_pages_pdf": "0.20-0.40"
+      }
+    }
+  },
+  "dependencies": {
+    "installed": [
+      "openai>=1.0.0"
+    ],
+    "missing": [
+      "anthropic (используется в коде, но не в requirements.txt)",
+      "google-generativeai (заглушка в коде)"
+    ],
+    "recommendation": "Добавить anthropic в requirements.txt если планируется использование"
+  },
+  "configuration": {
+    "environment_variables": [
+      "AI_PROVIDER",
+      "AI_ENABLED",
+      "AI_PREFER_FOR_PDF",
+      "DEEPSEEK_API_KEY",
+      "DEEPSEEK_MODEL",
+      "OPENAI_API_KEY",
+      "OPENAI_MODEL_VISION",
+      "OPENAI_MODEL_TEXT",
+      "ANTHROPIC_API_KEY",
+      "ANTHROPIC_MODEL"
+    ],
+    "missing_variables": [
+      "AI_RATE_LIMIT",
+      "AI_CACHE_TTL",
+      "AI_MAX_RETRIES",
+      "AI_TIMEOUT"
+    ]
+  },
+  "testing": {
+    "test_files": [
+      "test_deepseek_simple.py (работает)",
+      "test_deepseek_connection.py (требует обновления openai)"
+    ],
+    "coverage": "manual_only",
+    "missing": [
+      "Unit тесты для ai_parser.py",
+      "Integration тесты для AI интеграции",
+      "E2E тесты для полного цикла"
+    ]
+  },
+  "documentation": {
+    "files": [
+      "AI_INTEGRATION_DONE.md",
+      "AI_INTEGRATION_PLAN.md",
+      "AI_SETUP.md",
+      "DEEPSEEK_TEST_RESULT.md"
+    ],
+    "quality": "excellent",
+    "score": 9
+  },
+  "security_issues": [
+    {
+      "severity": "medium",
+      "issue": "API ключ hardcoded в test_deepseek_simple.py",
+      "recommendation": "Использовать переменные окружения даже в тестах"
+    },
+    {
+      "severity": "low",
+      "issue": "Нет ротации API ключей",
+      "recommendation": "Реализовать систему ротации ключей"
+    },
+    {
+      "severity": "low",
+      "issue": "Нет шифрования ключей в БД (если будут храниться)",
+      "recommendation": "Использовать шифрование для хранения ключей"
+    }
+  ],
+  "performance_issues": [
+    {
+      "issue": "Нет кэширования результатов",
+      "impact": "high",
+      "solution": "Добавить Redis кэш"
+    },
+    {
+      "issue": "Синхронная обработка больших файлов",
+      "impact": "medium",
+      "solution": "Добавить асинхронную обработку или очередь задач"
+    },
+    {
+      "issue": "Нет ограничения на количество страниц",
+      "impact": "medium",
+      "solution": "Добавить лимит страниц для AI обработки"
+    }
+  ],
+  "next_steps": [
+    {
+      "step": 1,
+      "action": "Добавить кэширование AI результатов",
+      "priority": "P0",
+      "estimated_time": "1-2 дня"
+    },
+    {
+      "step": 2,
+      "action": "Реализовать retry логику",
+      "priority": "P0",
+      "estimated_time": "1 день"
+    },
+    {
+      "step": 3,
+      "action": "Добавить мониторинг AI",
+      "priority": "P0",
+      "estimated_time": "2 дня"
+    },
+    {
+      "step": 4,
+      "action": "Интегрировать AI в validate service",
+      "priority": "P1",
+      "estimated_time": "3-5 дней"
+    },
+    {
+      "step": 5,
+      "action": "Интегрировать AI в recommend service",
+      "priority": "P1",
+      "estimated_time": "3-5 дней"
+    }
+  ]
+}
+

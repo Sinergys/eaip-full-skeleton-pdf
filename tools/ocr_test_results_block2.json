@@ -1,0 +1,70 @@
+{
+  "test_date": "2025-11-29T07:42:54.168063",
+  "block": "BLOCK_2_OCR_RECOGNITION",
+  "results": [
+    {
+      "file_info": {
+        "name": "CamScanner 17-04-2025 15.17.pdf",
+        "path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\CamScanner 17-04-2025 15.17.pdf",
+        "description": "Сканированный документ (CamScanner), 4 страницы"
+      },
+      "ocr_info": {
+        "file_name": "CamScanner 17-04-2025 15.17.pdf",
+        "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\CamScanner 17-04-2025 15.17.pdf",
+        "file_size_kb": 1772.9,
+        "processing_time_sec": 35.08,
+        "parsed": true,
+        "file_type": "pdf",
+        "ocr_used": true,
+        "ocr_success": true,
+        "ocr_attempted": true,
+        "total_characters": 2598,
+        "total_tables": 0,
+        "pages": 4,
+        "is_scanned": false,
+        "scanned_confidence": "unknown",
+        "pdf_type": "image_based",
+        "processing_strategy": "ocr_first",
+        "text_preview": "--- Страница 1 ---\nСчет. флитура\n№ 367 от 09.04.2025\nк porowopy № 11 oF 24.02.2025\n\nков AVTC 5ЕРУТС\" MCH! “NAVONY ISSOLIN ELEKTR ЗТАМЫУАЗ А)\n\nApex MAR IW “WAS OR NACTR КАГМАНИНСКИЙ РАЙОН VARQ МГУ Нлеомйгиля 76 ran КАРАЛАНИНГКИИ РАЙОНЫ Yaoot МФИ. Уйрот нучаси. ЗОО-уй\nИрентибикацисныый womer TITRA ME (iH) 371$5417° 319822513\nPerec 7a memes вод п-т mes НОО [LSD] WTP RES че ртифинат ветмечый]\n\n312119224488 (coated war амтивымй}\n\nP/E [am paRe 3046 2951 400) 292 100007956 72006001\nMOO lanesa loons0  —",
+        "text_length": 2598,
+        "tables": []
+      },
+      "parsing_result": {
+        "parsed": true,
+        "file_type": "pdf"
+      }
+    },
+    {
+      "file_info": {
+        "name": "Navoiy IES 06. 2023.PDF",
+        "path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\Акт баланс 2023\\акт реализация НЭС 2023\\Navoiy IES 06. 2023.PDF",
+        "description": "Акт баланс (реализация НЭС) за июнь 2023, 1 страница"
+      },
+      "ocr_info": {
+        "file_name": "Navoiy IES 06. 2023.PDF",
+        "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\Акт баланс 2023\\акт реализация НЭС 2023\\Navoiy IES 06. 2023.PDF",
+        "file_size_kb": 559.8,
+        "processing_time_sec": 2.74,
+        "parsed": true,
+        "file_type": "pdf",
+        "ocr_used": false,
+        "ocr_success": false,
+        "ocr_attempted": false,
+        "total_characters": 783,
+        "total_tables": 0,
+        "pages": 1,
+        "is_scanned": false,
+        "scanned_confidence": "low",
+        "pdf_type": "text_based",
+        "processing_strategy": "text_first",
+        "text_preview": "\"O'zbekiston MET\" AJning 2019 yil\n28 iyundagi 2;3-son buyrug'iga\n2-ilova\n2023 yil I iyul\nl-E shakt\no'Issiqlik\nelektr stansiyalari', AJ tarkibidagi\nooNavoiy\nissiqlik elektr stansiyasi\" filiari tomonidan\n2023 yil Iyun oyida\ntarmoqq a uzatilgan elektr en ergiyasi b o 6 yi ch a\n6-son DALOLATNOMA\nnomi:\n1. Sotib oluvchi tashkilot <O'zbekiston mittiy elektr turmoqlari> AJ\n)\nAsos: 2022 yil 30 dekubrdagi rEs-2L23-sonli shartnomszu\n2023 ilun 30 \"uupmduzu l-connu lffuruuvu Kenuruye\n3. Hisobot davri: Iyun o",
+        "text_length": 783,
+        "tables": []
+      },
+      "parsing_result": {
+        "parsed": true,
+        "file_type": "pdf"
+      }
+    }
+  ]
+}

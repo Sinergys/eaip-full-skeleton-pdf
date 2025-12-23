@@ -1,0 +1,146 @@
+{
+  "template1": {
+    "name": "new_energy_passport",
+    "path": "C:\\eaip\\templates\\pcm690\\new_energy_passport.xlsx",
+    "total_sheets": 8
+  },
+  "template2": {
+    "name": "template_metin",
+    "path": "templates\\pcm690\\template_metin.xlsx",
+    "total_sheets": 4
+  },
+  "sheet_comparison": [
+    {
+      "sheet_name": "Узел учета ",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 12,
+        "max_column": 10,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "Мериаприятия 1 ",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 13,
+        "max_column": 6,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "Баланс",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 33,
+        "max_column": 16,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "Структура пр 2 ",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 31,
+        "max_column": 15,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "Расход  на ед.п",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 18,
+        "max_column": 17,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "мазут,уголь 5 ",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 18,
+        "max_column": 17,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "Sheet1",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 121,
+        "max_column": 9,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "Динамика ср",
+      "status": "unique_to_template1",
+      "template1": {
+        "max_row": 16,
+        "max_column": 17,
+        "cells_with_data": 0
+      }
+    },
+    {
+      "sheet_name": "Gas",
+      "status": "unique_to_template2",
+      "template2": {
+        "max_row": 14,
+        "max_column": 5,
+        "cells_with_data": 66
+      }
+    },
+    {
+      "sheet_name": "Electricity",
+      "status": "unique_to_template2",
+      "template2": {
+        "max_row": 14,
+        "max_column": 5,
+        "cells_with_data": 66
+      }
+    },
+    {
+      "sheet_name": "Analytics",
+      "status": "unique_to_template2",
+      "template2": {
+        "max_row": 7,
+        "max_column": 3,
+        "cells_with_data": 19
+      }
+    },
+    {
+      "sheet_name": "Summary",
+      "status": "unique_to_template2",
+      "template2": {
+        "max_row": 8,
+        "max_column": 2,
+        "cells_with_data": 13
+      }
+    }
+  ],
+  "structural_differences": {
+    "sheet_count_diff": 4,
+    "total_cells_diff": -164,
+    "complexity_diff": {
+      "template1_total_cells": 0,
+      "template2_total_cells": 164,
+      "relative_complexity": 0.0
+    }
+  },
+  "similarity_metrics": {
+    "sheet_name_similarity": 0.0,
+    "structural_similarity": 0.0,
+    "overall_similarity": 0.0
+  },
+  "conversion_feasibility": {
+    "is_feasible": true,
+    "confidence": 0.0,
+    "challenges": [
+      "Значительные структурные различия"
+    ],
+    "recommendations": [
+      "Требуется детальный анализ и создание специальных адаптеров"
+    ]
+  }
+}

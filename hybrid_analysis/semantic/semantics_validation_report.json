@@ -1,0 +1,41 @@
+{
+  "validation_date": "1763148117.5895953",
+  "checks": [
+    {
+      "name": "Semantic Profiles Integrity",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Mapping Correctness",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Coverage Check",
+      "status": "failed",
+      "details": [
+        "Coverage: 4.62%"
+      ]
+    },
+    {
+      "name": "Units Consistency",
+      "status": "warning",
+      "details": [
+        "Resource electricity: multiple units {'кВар·ч', 'т', 'кВт·ч'}"
+      ]
+    }
+  ],
+  "errors": [
+    "Low coverage: 4.62% (expected > 10%)"
+  ],
+  "warnings": [
+    "Resource electricity has inconsistent units: {'кВар·ч', 'т', 'кВт·ч'}"
+  ],
+  "summary": {
+    "total_checks": 4,
+    "passed": 2,
+    "failed": 1,
+    "warnings_count": 1
+  }
+}

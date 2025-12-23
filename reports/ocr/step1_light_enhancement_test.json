@@ -1,0 +1,23 @@
+{
+  "file": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\акт выполненых работ май.PDF",
+  "before": {
+    "confidence": 0.5,
+    "tables_count": 0,
+    "characters": 6380,
+    "time_sec": 56.385050535202026
+  },
+  "after": {
+    "confidence": 0.95,
+    "tables_count": 1,
+    "characters": 847,
+    "time_sec": 91.27912306785583,
+    "adaptive_retry_used": true,
+    "confidence_improvement": 0.44999999999999996
+  },
+  "improvement": {
+    "confidence_delta": 0.44999999999999996,
+    "confidence_percent": 89.99999999999999,
+    "tables_delta": 1,
+    "time_delta": 34.89407253265381
+  }
+}

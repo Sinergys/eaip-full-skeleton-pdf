@@ -1,0 +1,317 @@
+{
+  "sheet_name": "Мериаприятия 1 ",
+  "structural_analysis": {
+    "max_row": 13,
+    "max_column": 6,
+    "merged_ranges": [
+      "B4:F4",
+      "B12:F12",
+      "B6:F6",
+      "C2:C3",
+      "B10:F10",
+      "A2:A3",
+      "B2:B3",
+      "B8:F8",
+      "D2:D3",
+      "F2:F3",
+      "E2:E3"
+    ],
+    "data_region": {
+      "start_row": 2,
+      "end_row": 12,
+      "start_column": 1,
+      "end_column": 6,
+      "start_address": "A2",
+      "end_address": "F12"
+    },
+    "cells_count": 11
+  },
+  "table_structure_analysis": {
+    "sheet_name": "Мериаприятия 1 ",
+    "structure": {
+      "max_row": 13,
+      "max_column": 6,
+      "data_region": {
+        "start_row": 2,
+        "end_row": 12,
+        "start_column": 1,
+        "end_column": 6
+      },
+      "headers": [
+        {
+          "row": 2,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "№ п/п",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "Наименование объекта реализации мероприятия",
+              "is_merged": false
+            },
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "Наименование организационно-технического мероприятия",
+              "is_merged": false
+            },
+            {
+              "column": 4,
+              "column_letter": "D",
+              "value": "Ожидаемая годовая экономия энергоресурсов (в т.у.т.)",
+              "is_merged": false
+            },
+            {
+              "column": 5,
+              "column_letter": "E",
+              "value": "Экономия по видам энергоресурсов",
+              "is_merged": false
+            },
+            {
+              "column": 6,
+              "column_letter": "F",
+              "value": "Срок реализации",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "Электроэнергия (тыс. кВт·ч)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "Природный газ (тыс. м³)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "Нефтепродукты (т)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "Уголь (т)",
+              "is_merged": false
+            }
+          ]
+        }
+      ],
+      "cells_info": {
+        "A2": {
+          "address": "A2",
+          "row": 2,
+          "column": 1,
+          "value": "№ п/п",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B2": {
+          "address": "B2",
+          "row": 2,
+          "column": 2,
+          "value": "Наименование объекта реализации мероприятия",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C2": {
+          "address": "C2",
+          "row": 2,
+          "column": 3,
+          "value": "Наименование организационно-технического мероприятия",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "D2": {
+          "address": "D2",
+          "row": 2,
+          "column": 4,
+          "value": "Ожидаемая годовая экономия энергоресурсов (в т.у.т.)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "E2": {
+          "address": "E2",
+          "row": 2,
+          "column": 5,
+          "value": "Экономия по видам энергоресурсов",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "F2": {
+          "address": "F2",
+          "row": 2,
+          "column": 6,
+          "value": "Срок реализации\n",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B4": {
+          "address": "B4",
+          "row": 4,
+          "column": 2,
+          "value": "Электроэнергия (тыс. кВт·ч)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B6": {
+          "address": "B6",
+          "row": 6,
+          "column": 2,
+          "value": "Природный газ (тыс. м³)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B8": {
+          "address": "B8",
+          "row": 8,
+          "column": 2,
+          "value": "Нефтепродукты (т)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B10": {
+          "address": "B10",
+          "row": 10,
+          "column": 2,
+          "value": "Уголь (т)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B12": {
+          "address": "B12",
+          "row": 12,
+          "column": 2,
+          "value": "Тепловая энергия (Гкал)",
+          "data_type": "s",
+          "has_formula": false
+        }
+      }
+    },
+    "tables": [
+      {
+        "table_range": {
+          "start_row": 2,
+          "end_row": 2,
+          "start_column": 1,
+          "end_column": 6,
+          "start_address": "A2",
+          "end_address": "F2"
+        },
+        "header_rows": [
+          {
+            "row": 2,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "№ п/п",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "Наименование объекта реализации мероприятия",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 3,
+                "column_letter": "C",
+                "value": "Наименование организационно-технического мероприятия",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 4,
+                "column_letter": "D",
+                "value": "Ожидаемая годовая экономия энергоресурсов (в т.у.т.)",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 5,
+                "column_letter": "E",
+                "value": "Экономия по видам энергоресурсов",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 6,
+                "column_letter": "F",
+                "value": "Срок реализации",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "data_rows": [],
+        "column_types": [],
+        "row_count": 0,
+        "column_count": 6
+      }
+    ],
+    "semantic_analysis": {
+      "sheet_purpose": "measures",
+      "resource_types": [
+        "electricity",
+        "gas",
+        "coal"
+      ],
+      "time_periods": [
+        "year"
+      ],
+      "data_categories": [],
+      "key_indicators": []
+    },
+    "summary": {
+      "total_tables": 1,
+      "total_rows": 13,
+      "total_columns": 6,
+      "data_regions": 0
+    }
+  },
+  "summary": {
+    "total_tables": 1,
+    "total_rows": 13,
+    "total_columns": 6,
+    "sheet_purpose": "measures",
+    "resource_types": [
+      "electricity",
+      "gas",
+      "coal"
+    ],
+    "time_periods": [
+      "year"
+    ]
+  }
+}

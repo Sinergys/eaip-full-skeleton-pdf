@@ -1,0 +1,62 @@
+{
+  "ocr_text_length": 2598,
+  "tables_method1": 1,
+  "tables_method2": 0,
+  "tables_method3": 0,
+  "tables_parse_file": 2,
+  "details": {
+    "method1_tables": [
+      {
+        "page": 1,
+        "table_index": 0,
+        "method": "ocr_numeric",
+        "rows": [
+          [
+            "Perec 7a memes вод п-т mes НОО",
+            "LSD",
+            "WTP RES че ртифинат ветмечый"
+          ],
+          [
+            "P/E",
+            "am paRe 3046 2951 400) 292 100007956 72006001"
+          ],
+          [
+            "ус OTT DAW тм DEVEL RS ES WES as",
+            "ae-w rene Pe OM Ob NEY и MOTO MANOS (BCE"
+          ],
+          [
+            "[750.000 [ 1800",
+            "168000"
+          ],
+          [
+            "550",
+            "650",
+            "61600"
+          ],
+          [
+            "м Г 4000 [4000",
+            "4800",
+            "44800"
+          ],
+          [
+            "1’ 2000",
+            "2000",
+            "240",
+            "22400"
+          ],
+          [
+            "м Г",
+            "3500 [ 3500",
+            "4200",
+            "39200"
+          ]
+        ],
+        "row_count": 8,
+        "col_count": 4,
+        "confidence": "medium"
+      }
+    ],
+    "method2_tables": [],
+    "method3_tables": []
+  }
+}

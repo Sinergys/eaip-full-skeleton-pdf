@@ -1,0 +1,35 @@
+{
+  "validation_date": "1763148352.3304079",
+  "checks": [
+    {
+      "name": "Model Correctness",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Format Prediction Accuracy",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Prediction Coverage",
+      "status": "passed",
+      "details": [
+        "Coverage: 100.00%"
+      ]
+    },
+    {
+      "name": "Rules Consistency",
+      "status": "passed",
+      "details": []
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "total_checks": 4,
+    "passed": 4,
+    "failed": 0,
+    "warnings_count": 0
+  }
+}

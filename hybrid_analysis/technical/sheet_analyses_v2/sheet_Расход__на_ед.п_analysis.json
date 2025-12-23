@@ -1,0 +1,1049 @@
+{
+  "sheet_name": "Расход  на ед.п",
+  "structural_analysis": {
+    "max_row": 18,
+    "max_column": 17,
+    "merged_ranges": [
+      "A4:B4",
+      "H3:L3",
+      "A8:A9",
+      "A2:B2",
+      "M2:Q2",
+      "A12:A13",
+      "A5:B5",
+      "A6:A7",
+      "A10:A11",
+      "M3:Q3",
+      "A3:B3",
+      "A1:Q1",
+      "C3:G3"
+    ],
+    "data_region": {
+      "start_row": 1,
+      "end_row": 18,
+      "start_column": 1,
+      "end_column": 17,
+      "start_address": "A1",
+      "end_address": "Q18"
+    },
+    "cells_count": 40
+  },
+  "table_structure_analysis": {
+    "sheet_name": "Расход  на ед.п",
+    "structure": {
+      "max_row": 18,
+      "max_column": 17,
+      "data_region": {
+        "start_row": 1,
+        "end_row": 18,
+        "start_column": 1,
+        "end_column": 17
+      },
+      "headers": [
+        {
+          "row": 1,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Динамика изменения энергетических показателей по годам",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "cells": [
+            {
+              "column": 13,
+              "column_letter": "M",
+              "value": "Таблица 6",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Год",
+              "is_merged": false
+            },
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "20__ год",
+              "is_merged": false
+            },
+            {
+              "column": 8,
+              "column_letter": "H",
+              "value": "20__ год",
+              "is_merged": false
+            },
+            {
+              "column": 13,
+              "column_letter": "M",
+              "value": "20__ год",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Квартал",
+              "is_merged": false
+            },
+            {
+              "column": 3,
+              "column_letter": "C",
+              "value": "I",
+              "is_merged": false
+            },
+            {
+              "column": 4,
+              "column_letter": "D",
+              "value": "II",
+              "is_merged": false
+            },
+            {
+              "column": 5,
+              "column_letter": "E",
+              "value": "II",
+              "is_merged": false
+            },
+            {
+              "column": 6,
+              "column_letter": "F",
+              "value": "IV",
+              "is_merged": false
+            },
+            {
+              "column": 7,
+              "column_letter": "G",
+              "value": "год",
+              "is_merged": false
+            },
+            {
+              "column": 8,
+              "column_letter": "H",
+              "value": "I",
+              "is_merged": false
+            },
+            {
+              "column": 9,
+              "column_letter": "I",
+              "value": "II",
+              "is_merged": false
+            },
+            {
+              "column": 10,
+              "column_letter": "J",
+              "value": "III",
+              "is_merged": false
+            },
+            {
+              "column": 11,
+              "column_letter": "K",
+              "value": "IV",
+              "is_merged": false
+            },
+            {
+              "column": 12,
+              "column_letter": "L",
+              "value": "год",
+              "is_merged": false
+            },
+            {
+              "column": 13,
+              "column_letter": "M",
+              "value": "I",
+              "is_merged": false
+            },
+            {
+              "column": 14,
+              "column_letter": "N",
+              "value": "II",
+              "is_merged": false
+            },
+            {
+              "column": 15,
+              "column_letter": "O",
+              "value": "III",
+              "is_merged": false
+            },
+            {
+              "column": 16,
+              "column_letter": "P",
+              "value": "IV",
+              "is_merged": false
+            },
+            {
+              "column": 17,
+              "column_letter": "Q",
+              "value": "год",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Установленная электрическая мощность в часы максимума энергосистемы (кВт)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Основной вид продукции (услуги)",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "удельный расход за прошлый год (факт)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "удельный расход за отчётный год (факт)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Дополнительная продукция (услуга)",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "удельный расход за прошлый год (факт)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "cells": [
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "удельный расход за отчётный год (факт)",
+              "is_merged": false
+            }
+          ]
+        },
+        {
+          "row": 10,
+          "cells": [
+            {
+              "column": 1,
+              "column_letter": "A",
+              "value": "Производственный и общий расход (в т.у.т.)",
+              "is_merged": false
+            },
+            {
+              "column": 2,
+              "column_letter": "B",
+              "value": "удельный расход за прошлый год (факт)",
+              "is_merged": false
+            }
+          ]
+        }
+      ],
+      "cells_info": {
+        "A1": {
+          "address": "A1",
+          "row": 1,
+          "column": 1,
+          "value": "Динамика изменения энергетических показателей по годам",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "M2": {
+          "address": "M2",
+          "row": 2,
+          "column": 13,
+          "value": "Таблица 6",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A3": {
+          "address": "A3",
+          "row": 3,
+          "column": 1,
+          "value": "Год",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C3": {
+          "address": "C3",
+          "row": 3,
+          "column": 3,
+          "value": "20__ год",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "H3": {
+          "address": "H3",
+          "row": 3,
+          "column": 8,
+          "value": "20__ год",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "M3": {
+          "address": "M3",
+          "row": 3,
+          "column": 13,
+          "value": "20__ год",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A4": {
+          "address": "A4",
+          "row": 4,
+          "column": 1,
+          "value": "Квартал",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "C4": {
+          "address": "C4",
+          "row": 4,
+          "column": 3,
+          "value": "I",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "D4": {
+          "address": "D4",
+          "row": 4,
+          "column": 4,
+          "value": "II",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "E4": {
+          "address": "E4",
+          "row": 4,
+          "column": 5,
+          "value": "II",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "F4": {
+          "address": "F4",
+          "row": 4,
+          "column": 6,
+          "value": "IV",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "G4": {
+          "address": "G4",
+          "row": 4,
+          "column": 7,
+          "value": "год",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "H4": {
+          "address": "H4",
+          "row": 4,
+          "column": 8,
+          "value": "I",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "I4": {
+          "address": "I4",
+          "row": 4,
+          "column": 9,
+          "value": "II",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "J4": {
+          "address": "J4",
+          "row": 4,
+          "column": 10,
+          "value": "III",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "K4": {
+          "address": "K4",
+          "row": 4,
+          "column": 11,
+          "value": "IV",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "L4": {
+          "address": "L4",
+          "row": 4,
+          "column": 12,
+          "value": "год",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "M4": {
+          "address": "M4",
+          "row": 4,
+          "column": 13,
+          "value": "I",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "N4": {
+          "address": "N4",
+          "row": 4,
+          "column": 14,
+          "value": "II",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "O4": {
+          "address": "O4",
+          "row": 4,
+          "column": 15,
+          "value": "III",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "P4": {
+          "address": "P4",
+          "row": 4,
+          "column": 16,
+          "value": "IV",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "Q4": {
+          "address": "Q4",
+          "row": 4,
+          "column": 17,
+          "value": "год",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A5": {
+          "address": "A5",
+          "row": 5,
+          "column": 1,
+          "value": "Установленная электрическая мощность в часы максимума энергосистемы (кВт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A6": {
+          "address": "A6",
+          "row": 6,
+          "column": 1,
+          "value": "Основной вид продукции (услуги)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B6": {
+          "address": "B6",
+          "row": 6,
+          "column": 2,
+          "value": "удельный расход за прошлый год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B7": {
+          "address": "B7",
+          "row": 7,
+          "column": 2,
+          "value": " удельный расход за отчётный год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A8": {
+          "address": "A8",
+          "row": 8,
+          "column": 1,
+          "value": "Дополнительная продукция (услуга)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B8": {
+          "address": "B8",
+          "row": 8,
+          "column": 2,
+          "value": "удельный расход за прошлый год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B9": {
+          "address": "B9",
+          "row": 9,
+          "column": 2,
+          "value": "удельный расход за отчётный год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A10": {
+          "address": "A10",
+          "row": 10,
+          "column": 1,
+          "value": "Производственный и общий расход (в т.у.т.)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B10": {
+          "address": "B10",
+          "row": 10,
+          "column": 2,
+          "value": "удельный расход за прошлый год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B11": {
+          "address": "B11",
+          "row": 11,
+          "column": 2,
+          "value": "удельный расход за отчётный год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A12": {
+          "address": "A12",
+          "row": 12,
+          "column": 1,
+          "value": "Технологическое потребление",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B12": {
+          "address": "B12",
+          "row": 12,
+          "column": 2,
+          "value": "удельный расход за прошлый год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "B13": {
+          "address": "B13",
+          "row": 13,
+          "column": 2,
+          "value": " удельный расход за отчётный год (факт)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A14": {
+          "address": "A14",
+          "row": 14,
+          "column": 1,
+          "value": "Изменение фактического удельного энергопотребления в отчётном году по сравнению с фактическим удельным расходом прошлого года, % (увеличение или снижение*)",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A15": {
+          "address": "A15",
+          "row": 15,
+          "column": 1,
+          "value": "Хозяйственно-бытовое потребление",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A16": {
+          "address": "A16",
+          "row": 16,
+          "column": 1,
+          "value": "Общее потребление энергоресурсов",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A17": {
+          "address": "A17",
+          "row": 17,
+          "column": 1,
+          "value": "Нормативное потребление, %",
+          "data_type": "s",
+          "has_formula": false
+        },
+        "A18": {
+          "address": "A18",
+          "row": 18,
+          "column": 1,
+          "value": "Транзитный передачи ",
+          "data_type": "s",
+          "has_formula": false
+        }
+      }
+    },
+    "tables": [
+      {
+        "table_range": {
+          "start_row": 3,
+          "end_row": 5,
+          "start_column": 1,
+          "end_column": 17,
+          "start_address": "A3",
+          "end_address": "Q5"
+        },
+        "header_rows": [
+          {
+            "row": 3,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Год",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 3,
+                "column_letter": "C",
+                "value": "20__ год",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 8,
+                "column_letter": "H",
+                "value": "20__ год",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 13,
+                "column_letter": "M",
+                "value": "20__ год",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Квартал",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 3,
+                "column_letter": "C",
+                "value": "I",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 4,
+                "column_letter": "D",
+                "value": "II",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 5,
+                "column_letter": "E",
+                "value": "II",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 6,
+                "column_letter": "F",
+                "value": "IV",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 7,
+                "column_letter": "G",
+                "value": "год",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 8,
+                "column_letter": "H",
+                "value": "I",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 9,
+                "column_letter": "I",
+                "value": "II",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 10,
+                "column_letter": "J",
+                "value": "III",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 11,
+                "column_letter": "K",
+                "value": "IV",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 12,
+                "column_letter": "L",
+                "value": "год",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 13,
+                "column_letter": "M",
+                "value": "I",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 14,
+                "column_letter": "N",
+                "value": "II",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 15,
+                "column_letter": "O",
+                "value": "III",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 16,
+                "column_letter": "P",
+                "value": "IV",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 17,
+                "column_letter": "Q",
+                "value": "год",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Установленная электрическая мощность в часы максимума энергосистемы (кВт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "data_rows": [],
+        "column_types": [],
+        "row_count": 0,
+        "column_count": 17
+      },
+      {
+        "table_range": {
+          "start_row": 6,
+          "end_row": 9,
+          "start_column": 1,
+          "end_column": 17,
+          "start_address": "A6",
+          "end_address": "Q9"
+        },
+        "header_rows": [
+          {
+            "row": 6,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Основной вид продукции (услуги)",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за прошлый год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за отчётный год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Дополнительная продукция (услуга)",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за прошлый год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за отчётный год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "data_rows": [],
+        "column_types": [],
+        "row_count": 0,
+        "column_count": 17
+      },
+      {
+        "table_range": {
+          "start_row": 10,
+          "end_row": 18,
+          "start_column": 1,
+          "end_column": 17,
+          "start_address": "A10",
+          "end_address": "Q18"
+        },
+        "header_rows": [
+          {
+            "row": 10,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Производственный и общий расход (в т.у.т.)",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за прошлый год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за отчётный год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Технологическое потребление",
+                "data_type": "s",
+                "has_formula": false
+              },
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за прошлый год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "cells": [
+              {
+                "column": 2,
+                "column_letter": "B",
+                "value": "удельный расход за отчётный год (факт)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "data_rows": [
+          {
+            "row": 14,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Изменение фактического удельного энергопотребления в отчётном году по сравнению с фактическим удельным расходом прошлого года, % (увеличение или снижение*)",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Хозяйственно-бытовое потребление",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 16,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Общее потребление энергоресурсов",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 17,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Нормативное потребление, %",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          },
+          {
+            "row": 18,
+            "cells": [
+              {
+                "column": 1,
+                "column_letter": "A",
+                "value": "Транзитный передачи",
+                "data_type": "s",
+                "has_formula": false
+              }
+            ]
+          }
+        ],
+        "column_types": [
+          {
+            "column": 1,
+            "column_letter": "A",
+            "header": "Производственный и общий расход (в т.у.т.)",
+            "type": "text",
+            "semantic_type": "unknown"
+          },
+          {
+            "column": 2,
+            "column_letter": "B",
+            "header": "удельный расход за прошлый год (факт)",
+            "type": "number",
+            "semantic_type": "year"
+          }
+        ],
+        "row_count": 5,
+        "column_count": 17
+      }
+    ],
+    "semantic_analysis": {
+      "sheet_purpose": "dynamics",
+      "resource_types": [
+        "electricity"
+      ],
+      "time_periods": [
+        "year",
+        "quarter"
+      ],
+      "data_categories": [
+        "production"
+      ],
+      "key_indicators": []
+    },
+    "summary": {
+      "total_tables": 3,
+      "total_rows": 18,
+      "total_columns": 17,
+      "data_regions": 1
+    }
+  },
+  "summary": {
+    "total_tables": 3,
+    "total_rows": 18,
+    "total_columns": 17,
+    "sheet_purpose": "dynamics",
+    "resource_types": [
+      "electricity"
+    ],
+    "time_periods": [
+      "year",
+      "quarter"
+    ]
+  }
+}

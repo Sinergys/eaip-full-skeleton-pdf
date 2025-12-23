@@ -1,0 +1,86 @@
+{
+  "template_name": "new_energy_passport",
+  "predictions": {
+    "B4": {
+      "format": "number",
+      "precision": 0,
+      "units": "кВт·ч",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "data_source": "electricity"
+    },
+    "B6": {
+      "format": "number",
+      "precision": 2,
+      "units": "тыс. м³",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.gas.2022-Q1.quarter_totals.volume_m3",
+      "data_source": "gas"
+    },
+    "C2": {
+      "format": "number",
+      "precision": 0,
+      "units": "кВАр·ч",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh",
+      "data_source": "electricity"
+    },
+    "C6": {
+      "format": "number",
+      "precision": 0,
+      "units": "кВт·ч",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "data_source": "electricity"
+    },
+    "D6": {
+      "format": "number",
+      "precision": 0,
+      "units": "кВАр·ч",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh",
+      "data_source": "electricity"
+    },
+    "A13": {
+      "format": "number",
+      "precision": 0,
+      "units": "кВт·ч",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "data_source": "electricity",
+      "magnitude": "units"
+    },
+    "A15": {
+      "format": "number",
+      "precision": 0,
+      "units": "кВт·ч",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "data_source": "electricity",
+      "magnitude": "units"
+    },
+    "A17": {
+      "format": "number",
+      "precision": 0,
+      "units": "кВт·ч",
+      "display_format": "thousands",
+      "scale_factor": 1000,
+      "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh",
+      "data_source": "electricity",
+      "magnitude": "units"
+    }
+  },
+  "statistics": {
+    "total_predictions": 8,
+    "by_format_type": {
+      "thousands": 8
+    }
+  }
+}

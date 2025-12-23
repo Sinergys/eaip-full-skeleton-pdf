@@ -1,0 +1,197 @@
+{
+  "test_date": "20251130_005304",
+  "total_files": 5,
+  "total_pages": 7,
+  "total_characters": 8020,
+  "total_tables": 7,
+  "total_processing_time_sec": 85.27264199999999,
+  "total_errors": 0,
+  "files_with_errors": 0,
+  "improvements_applied": {
+    "number_postprocessing": 4,
+    "id_code_postprocessing": 4
+  },
+  "files": [
+    {
+      "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\1.pdf",
+      "file_name": "1.pdf",
+      "file_size_kb": 103.3427734375,
+      "pages": [
+        {
+          "page_number": 1,
+          "characters": 1055,
+          "tables_count": 1,
+          "confidence": 0.95,
+          "processing_time_sec": 10.757846,
+          "error": null,
+          "low_confidence": false,
+          "adaptive_retry_used": false,
+          "numbers_postprocessed": true,
+          "id_codes_postprocessed": true,
+          "parse_level": "N/A"
+        }
+      ],
+      "total_characters": 1055,
+      "total_tables": 1,
+      "total_pages": 1,
+      "processing_time_sec": 11.436562,
+      "errors": [],
+      "improvements_applied": {
+        "light_image_enhancement": true,
+        "json_parser_improvement": true,
+        "number_postprocessing": true,
+        "id_code_postprocessing": true
+      }
+    },
+    {
+      "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\2.pdf",
+      "file_name": "2.pdf",
+      "file_size_kb": 481.46484375,
+      "pages": [
+        {
+          "page_number": 1,
+          "characters": 1111,
+          "tables_count": 2,
+          "confidence": 0.95,
+          "processing_time_sec": 11.148114,
+          "error": null,
+          "low_confidence": false,
+          "adaptive_retry_used": false,
+          "numbers_postprocessed": true,
+          "id_codes_postprocessed": true,
+          "parse_level": "N/A"
+        }
+      ],
+      "total_characters": 1111,
+      "total_tables": 2,
+      "total_pages": 1,
+      "processing_time_sec": 11.954725,
+      "errors": [],
+      "improvements_applied": {
+        "light_image_enhancement": true,
+        "json_parser_improvement": true,
+        "number_postprocessing": true,
+        "id_code_postprocessing": true
+      }
+    },
+    {
+      "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\2022-2024 темир йўл.PDF",
+      "file_name": "2022-2024 темир йўл.PDF",
+      "file_size_kb": 919.2578125,
+      "pages": [
+        {
+          "page_number": 1,
+          "characters": 1324,
+          "tables_count": 0,
+          "confidence": 0.95,
+          "processing_time_sec": 18.446922,
+          "error": null,
+          "low_confidence": false,
+          "adaptive_retry_used": false,
+          "numbers_postprocessed": false,
+          "id_codes_postprocessed": false,
+          "parse_level": "N/A"
+        }
+      ],
+      "total_characters": 1324,
+      "total_tables": 0,
+      "total_pages": 1,
+      "processing_time_sec": 18.993717,
+      "errors": [],
+      "improvements_applied": {
+        "light_image_enhancement": true,
+        "json_parser_improvement": true,
+        "number_postprocessing": false,
+        "id_code_postprocessing": false
+      }
+    },
+    {
+      "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\224 RAA.PDF",
+      "file_name": "224 RAA.PDF",
+      "file_size_kb": 381.162109375,
+      "pages": [
+        {
+          "page_number": 1,
+          "characters": 1587,
+          "tables_count": 1,
+          "confidence": 0.95,
+          "processing_time_sec": 12.619691,
+          "error": null,
+          "low_confidence": false,
+          "adaptive_retry_used": false,
+          "numbers_postprocessed": true,
+          "id_codes_postprocessed": true,
+          "parse_level": "N/A"
+        },
+        {
+          "page_number": 2,
+          "characters": 927,
+          "tables_count": 1,
+          "confidence": 0.95,
+          "processing_time_sec": 10.111541,
+          "error": null,
+          "low_confidence": false,
+          "adaptive_retry_used": false,
+          "numbers_postprocessed": true,
+          "id_codes_postprocessed": true,
+          "parse_level": "N/A"
+        },
+        {
+          "page_number": 3,
+          "characters": 1009,
+          "tables_count": 0,
+          "confidence": 0.95,
+          "processing_time_sec": 6.612201,
+          "error": null,
+          "low_confidence": false,
+          "adaptive_retry_used": false,
+          "numbers_postprocessed": false,
+          "id_codes_postprocessed": false,
+          "parse_level": "N/A"
+        }
+      ],
+      "total_characters": 3523,
+      "total_tables": 2,
+      "total_pages": 3,
+      "processing_time_sec": 30.110505,
+      "errors": [],
+      "improvements_applied": {
+        "light_image_enhancement": true,
+        "json_parser_improvement": true,
+        "number_postprocessing": true,
+        "id_code_postprocessing": true
+      }
+    },
+    {
+      "file_path": "C:\\AUDIT\\OBJECTS\\Navoiy IES\\INBOX\\3.pdf",
+      "file_name": "3.pdf",
+      "file_size_kb": 538.669921875,
+      "pages": [
+        {
+          "page_number": 1,
+          "characters": 1007,
+          "tables_count": 2,
+          "confidence": 0.95,
+          "processing_time_sec": 11.882934,
+          "error": null,
+          "low_confidence": false,
+          "adaptive_retry_used": false,
+          "numbers_postprocessed": true,
+          "id_codes_postprocessed": true,
+          "parse_level": "N/A"
+        }
+      ],
+      "total_characters": 1007,
+      "total_tables": 2,
+      "total_pages": 1,
+      "processing_time_sec": 12.777133,
+      "errors": [],
+      "improvements_applied": {
+        "light_image_enhancement": true,
+        "json_parser_improvement": true,
+        "number_postprocessing": true,
+        "id_code_postprocessing": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "template_path": "templates\\pcm690\\new_energy_passport.xlsx",
+  "total_sheets": 8,
+  "sheet_names": [
+    "Sheet1",
+    "Узел учета ",
+    "Структура пр 2 ",
+    "Баланс",
+    "Динамика ср",
+    "мазут,уголь 5 ",
+    "Расход  на ед.п",
+    "Мериаприятия 1 "
+  ],
+  "function_coverage": {
+    "covered": {
+      "fill_nodes_sheet": [
+        "Узел учета "
+      ],
+      "fill_struktura_pr2": [
+        "Структура пр 2 "
+      ],
+      "fill_balans_sheet": [
+        "Баланс"
+      ],
+      "fill_dinamika_sheet": [
+        "Динамика ср"
+      ],
+      "fill_meropriyatiya_sheet": [
+        "Мериаприятия 1 "
+      ]
+    },
+    "uncovered": [
+      "Sheet1",
+      "мазут,уголь 5 ",
+      "Расход  на ед.п"
+    ]
+  },
+  "mapping_coverage": {
+    "mapped_sheets": [
+      "Динамика ср",
+      "Структура пр 2 "
+    ],
+    "unmapped_sheets": [
+      "Sheet1",
+      "Баланс",
+      "Мериаприятия 1 ",
+      "Расход  на ед.п",
+      "Узел учета ",
+      "мазут,уголь 5 "
+    ],
+    "total_mappings": 40,
+    "mappings_by_sheet": {
+      "Структура пр 2 ": 16,
+      "Динамика ср": 24
+    }
+  },
+  "data_coverage": {
+    "Sheet1": {
+      "total_cells": 900,
+      "filled_cells": 195,
+      "empty_cells": 705,
+      "fill_percentage": 21.67,
+      "max_row": 121,
+      "max_column": 9
+    },
+    "Узел учета ": {
+      "total_cells": 120,
+      "filled_cells": 14,
+      "empty_cells": 106,
+      "fill_percentage": 11.67,
+      "max_row": 12,
+      "max_column": 10
+    },
+    "Структура пр 2 ": {
+      "total_cells": 465,
+      "filled_cells": 34,
+      "empty_cells": 431,
+      "fill_percentage": 7.31,
+      "max_row": 31,
+      "max_column": 15
+    },
+    "Баланс": {
+      "total_cells": 528,
+      "filled_cells": 34,
+      "empty_cells": 494,
+      "fill_percentage": 6.44,
+      "max_row": 33,
+      "max_column": 16
+    },
+    "Динамика ср": {
+      "total_cells": 272,
+      "filled_cells": 35,
+      "empty_cells": 237,
+      "fill_percentage": 12.87,
+      "max_row": 16,
+      "max_column": 17
+    },
+    "мазут,уголь 5 ": {
+      "total_cells": 306,
+      "filled_cells": 29,
+      "empty_cells": 277,
+      "fill_percentage": 9.48,
+      "max_row": 18,
+      "max_column": 17
+    },
+    "Расход  на ед.п": {
+      "total_cells": 306,
+      "filled_cells": 40,
+      "empty_cells": 266,
+      "fill_percentage": 13.07,
+      "max_row": 18,
+      "max_column": 17
+    },
+    "Мериаприятия 1 ": {
+      "total_cells": 78,
+      "filled_cells": 11,
+      "empty_cells": 67,
+      "fill_percentage": 14.1,
+      "max_row": 13,
+      "max_column": 6
+    }
+  },
+  "summary": {
+    "covered_by_functions": 5,
+    "uncovered_by_functions": 3,
+    "covered_by_mapping": 2,
+    "uncovered_by_mapping": 6,
+    "sheets_requiring_attention": [
+      "Sheet1",
+      "Баланс",
+      "Расход  на ед.п",
+      "Структура пр 2 ",
+      "мазут,уголь 5 "
+    ]
+  }
+}

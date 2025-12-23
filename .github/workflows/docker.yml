@@ -4,47 +4,22 @@ on:
   push:
     branches: [ "main" ]
     tags: [ "v*.*.*" ]
-  workflow_dispatch:
-
-env:
-  DOCKERHUB_REPOSITORY: ecosinergys/eaip-full-skeleton
+    paths:
+      - 'services/**/Dockerfile'
+      - 'services/**/*.py'
+      - 'services/**/requirements.txt'
+      - 'infra/docker-compose.yml'
+      - '.github/workflows/docker.yml'
 
 jobs:
-  detect-changes:
-    runs-on: ubuntu-latest
-    outputs:
-      changed: ${{ steps.filter.outputs.changed }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Check for Dockerfile changes
-        uses: dorny/paths-filter@v2
-        id: filter
-        with:
-          filters: |
-            dockerfiles:
-              - 'services/**/Dockerfile'
-              - 'infra/docker-compose.yml'
-              - '.github/workflows/docker.yml'
-
   build:
-    needs: detect-changes
-    if: needs.detect-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        service:
-          - gateway-auth
-          - ingest
-          - validate
-          - analytics
-          - recommend
-          - reports
-          - management
+    
+    # Skip if only documentation files changed
+    if: |
+      !contains(github.event.head_commit.message, '[skip ci]') &&
+      !contains(github.event.head_commit.message, '[ci skip]')
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -52,72 +27,123 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
+      - name: Extract metadata
+        id: meta
+        run: |
+          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+            VERSION="${{ github.ref_name }}"
+            IS_TAG=true
+          else
+            VERSION="latest"
+            IS_TAG=false
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "is_tag=$IS_TAG" >> $GITHUB_OUTPUT
+          echo "Docker Hub repository: ecosinergys/eaip-full-skeleton"
+          echo "Version: $VERSION"
+
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Extract metadata and generate tags
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ env.DOCKERHUB_REPOSITORY }}-${{ matrix.service }}
-          tags: |
-            type=ref,event=branch
-            type=ref,event=tag
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch' }}
-            type=sha,prefix={{branch}}-,format=short
-
-      - name: Build and push Docker image
+      - name: Build and push gateway-auth
         uses: docker/build-push-action@v5
         with:
-          context: ./services/${{ matrix.service }}
-          file: ./services/${{ matrix.service }}/Dockerfile
+          context: ./services/gateway-auth
+          file: ./services/gateway-auth/Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: |
+            ecosinergys/eaip-full-skeleton:gateway-auth-${{ steps.meta.outputs.version }}
+            ecosinergys/eaip-full-skeleton:gateway-auth-latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          platforms: linux/amd64
 
-  build-summary:
-    needs: [detect-changes, build]
-    if: always() && (needs.detect-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main'))
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Summary
+      - name: Build and push ingest
+        uses: docker/build-push-action@v5
+        with:
+          context: ./services/ingest
+          file: ./services/ingest/Dockerfile
+          push: true
+          tags: |
+            ecosinergys/eaip-full-skeleton:ingest-${{ steps.meta.outputs.version }}
+            ecosinergys/eaip-full-skeleton:ingest-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build and push validate
+        uses: docker/build-push-action@v5
+        with:
+          context: ./services/validate
+          file: ./services/validate/Dockerfile
+          push: true
+          tags: |
+            ecosinergys/eaip-full-skeleton:validate-${{ steps.meta.outputs.version }}
+            ecosinergys/eaip-full-skeleton:validate-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build and push analytics
+        uses: docker/build-push-action@v5
+        with:
+          context: ./services/analytics
+          file: ./services/analytics/Dockerfile
+          push: true
+          tags: |
+            ecosinergys/eaip-full-skeleton:analytics-${{ steps.meta.outputs.version }}
+            ecosinergys/eaip-full-skeleton:analytics-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build and push recommend
+        uses: docker/build-push-action@v5
+        with:
+          context: ./services/recommend
+          file: ./services/recommend/Dockerfile
+          push: true
+          tags: |
+            ecosinergys/eaip-full-skeleton:recommend-${{ steps.meta.outputs.version }}
+            ecosinergys/eaip-full-skeleton:recommend-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build and push reports
+        uses: docker/build-push-action@v5
+        with:
+          context: ./services/reports
+          file: ./services/reports/Dockerfile
+          push: true
+          tags: |
+            ecosinergys/eaip-full-skeleton:reports-${{ steps.meta.outputs.version }}
+            ecosinergys/eaip-full-skeleton:reports-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build and push management
+        uses: docker/build-push-action@v5
+        with:
+          context: ./services/management
+          file: ./services/management/Dockerfile
+          push: true
+          tags: |
+            ecosinergys/eaip-full-skeleton:management-${{ steps.meta.outputs.version }}
+            ecosinergys/eaip-full-skeleton:management-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Summary
         run: |
           echo "## 🐳 Docker Images Published" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
-            VERSION="${{ github.ref_name }}"
-            echo "Version: **$VERSION**" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "### Published Images:" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-gateway-auth:$VERSION\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-ingest:$VERSION\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-validate:$VERSION\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-analytics:$VERSION\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-recommend:$VERSION\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-reports:$VERSION\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-management:$VERSION\`" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "All images also tagged as \`latest\`" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "Branch: **${{ github.ref_name }}**" >> $GITHUB_STEP_SUMMARY
-            echo "Commit: **${{ github.sha }}**" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "### Built Images:" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-gateway-auth:latest\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-ingest:latest\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-validate:latest\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-analytics:latest\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-recommend:latest\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-reports:latest\`" >> $GITHUB_STEP_SUMMARY
-            echo "- \`ecosinergys/eaip-full-skeleton-management:latest\`" >> $GITHUB_STEP_SUMMARY
-          fi
+          echo "Version: **${{ steps.meta.outputs.version }}**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Images:" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ecosinergys/eaip-full-skeleton:gateway-auth-${{ steps.meta.outputs.version }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ecosinergys/eaip-full-skeleton:ingest-${{ steps.meta.outputs.version }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ecosinergys/eaip-full-skeleton:validate-${{ steps.meta.outputs.version }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ecosinergys/eaip-full-skeleton:analytics-${{ steps.meta.outputs.version }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ecosinergys/eaip-full-skeleton:recommend-${{ steps.meta.outputs.version }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ecosinergys/eaip-full-skeleton:reports-${{ steps.meta.outputs.version }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ecosinergys/eaip-full-skeleton:management-${{ steps.meta.outputs.version }}\`" >> $GITHUB_STEP_SUMMARY
 

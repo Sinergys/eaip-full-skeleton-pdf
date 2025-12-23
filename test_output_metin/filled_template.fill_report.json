@@ -1,0 +1,13 @@
+{
+  "template_path": "templates\\pcm690\\template_metin.xlsx",
+  "data_path": "data\\aggregated\\aggregated_full_resources_2022_2024.json",
+  "output_path": "test_output_metin\\filled_template.xlsx",
+  "fill_date": "2025-11-15T00:53:13.494742",
+  "results": {
+    "filled_cells": 0,
+    "skipped_cells": 0,
+    "errors": [],
+    "warnings": [],
+    "filled_addresses": []
+  }
+}

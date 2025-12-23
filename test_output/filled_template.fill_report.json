@@ -1,0 +1,62 @@
+{
+  "template_path": "templates\\pcm690\\new_energy_passport.xlsx",
+  "data_path": "data\\aggregated\\aggregated_full_resources_2022_2024.json",
+  "output_path": "test_output\\filled_template.xlsx",
+  "fill_date": "2025-11-15T00:52:07.841782",
+  "results": {
+    "filled_cells": 8,
+    "skipped_cells": 0,
+    "errors": [],
+    "warnings": [],
+    "filled_addresses": [
+      {
+        "sheet": "Мериаприятия 1 ",
+        "address": "B4",
+        "value": 334564.88,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Мериаприятия 1 ",
+        "address": "B6",
+        "value": 29284.0,
+        "data_path": "resources.gas.2022-Q1.quarter_totals.volume_m3"
+      },
+      {
+        "sheet": "Узел учета ",
+        "address": "C2",
+        "value": 353419.32,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "C6",
+        "value": 334564.88,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Структура пр 2 ",
+        "address": "D6",
+        "value": 353419.32,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.reactive_kvarh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "A13",
+        "value": 334564.88,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "Динамика ср",
+        "address": "A15",
+        "value": 334564.88,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh"
+      },
+      {
+        "sheet": "мазут,уголь 5 ",
+        "address": "A17",
+        "value": 334564.88,
+        "data_path": "resources.electricity.2022-Q1.quarter_totals.active_kwh"
+      }
+    ]
+  }
+}
