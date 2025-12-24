@@ -38,6 +38,23 @@ backups/*.tar.gz
 backups/*.7z
 backups/*.rar
 
+# Database files (SQLite, etc.)
+*.db
+*.sqlite
+*.sqlite3
+backups/*.db
+backups/*.sqlite*
+data/*.db
+data/*.sqlite*
+
+# Temp files
+page*_temp.png
+page*_diag*.png
+*ocr_test*.json
+*test_result*.json
+*.temp
+*.tmp
+
 # Environment
 .env
 .env.local
